@@ -657,6 +657,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
       var th=a.photos&&a.photos[0]?a.photos[0].replace('img/akce/','img/akce/t/'):a.poster;
       return '<li class="ev past"><a class="evl" href="#akce/'+a.id+'"><div class="d">'+d(a.date)+'</div><div><h3>'+esc(a.title)+'</h3><div class="meta">'+[a.poster?'plakát':'',a.photos&&a.photos.length?a.photos.length+' fotek':''].filter(Boolean).join(' · ')+'</div></div>'+(th?'<img class="th" src="'+th+'" alt="" loading="lazy">':'<span></span>')+'</a></li>';
     }).join('');
+    var R=window.ROKY||{}; if(R[y]) list.insertAdjacentHTML('afterbegin','<li class="ev past"><a class="evl" href="'+R[y]+'" target="_blank" rel="noopener"><div class="d">'+y+'</div><div><h3>Plakát sezóny '+y+'</h3><div class="meta">celý program roku</div></div><img class="th" src="'+R[y]+'" alt="" loading="lazy" style="object-fit:cover;object-position:top"></a></li>');
   }
   yearsEl.innerHTML=years.map(function(y){return '<button role="tab" data-y="'+y+'">'+y+'</button>'}).join('');
   yearsEl.addEventListener('click',function(e){var b=e.target.closest('button');if(b)renderYear(b.dataset.y)});

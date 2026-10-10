@@ -1,0 +1,106 @@
+// Archiv akcí. Přidání akce = nový řádek; fotky do img/akce/, plakát do img/plakaty/.
+window.ROKY={"2017": "img/plakaty/2017_zzt_program.jpg", "2025": "img/plakaty/2025_sezona25.jpg", "2026": "img/plakaty/2026_sezona26.jpg"};
+window.HERO=[
+ {
+  "src": "img/nadvori.jpg",
+  "alt": "Nádvoří zámku s krytým pódiem",
+  "cap": "Nádvoří s pódiem, zastřešeným v roce 2019"
+ },
+ {
+  "src": "img/akce/2025-08-23-1.jpg",
+  "alt": "Noční prohlídka s pochodněmi",
+  "cap": "Hradozámecká noc, 23. 8. 2025"
+ },
+ {
+  "src": "img/h-2024-carodejnice.jpg",
+  "alt": "Děti u ohně při pálení čarodějnic",
+  "cap": "Pálení čarodějnic, 30. 4. 2024"
+ },
+ {
+  "src": "img/h-2024-kostymy.jpg",
+  "alt": "Lidé v historických kostýmech na nádvoří",
+  "cap": "Na nádvoří, 29. 6. 2024"
+ },
+ {
+  "src": "img/h-2025-country.jpg",
+  "alt": "Country tance pod pódiem",
+  "cap": "Pelmel muziky, 2. 8. 2025"
+ },
+ {
+  "src": "img/akce/2025-06-28-1.jpg",
+  "alt": "Historický den na nádvoří",
+  "cap": "Historický den, 28. 6. 2025"
+ }
+];
+window.AKCE=[
+{"id": "2015-10-17", "date": "2015-10-17", "title": "Brigáda na nádvoří", "photos": ["img/akce/2015-10-17-1.jpg", "img/akce/2015-10-17-2.jpg"]},
+{"id": "2015-12-12", "date": "2015-12-12", "title": "Vánoční setkání na zámku se svařákem", "poster": "img/plakaty/2016_vanocni_setkani.jpg"},
+{"id": "2016-03-07", "date": "2016-03-07", "title": "Jarní úklid nádvoří", "titleTodo": true, "photos": ["img/akce/2016-03-07-1.jpg"]},
+{"id": "2016-06-11", "date": "2016-06-11", "title": "Perseidy: první zámecký koncert country kapely", "poster": "img/plakaty/2016_zamek_plakat_06.jpg"},
+{"id": "2016-07-02", "date": "2016-07-02", "title": "Tvořivý víkend na zámku", "end": "2016-07-03", "poster": "img/plakaty/2016_zivy_zamek_plakat.jpg", "text": "Sobota: zkrášlovací brigáda, dobrovolníci vítáni. Neděle: tvorba šperků a ozdob pro děti i dospělé, sousedské občerstvení."},
+{"id": "2016-07-06", "date": "2016-07-06", "title": "Den Mistra Jana Husa", "poster": "img/plakaty/2016_dmh_dmt_zamek.jpg"},
+{"id": "2016-07-08", "date": "2016-07-08", "title": "Den města Toužimi", "poster": "img/plakaty/2016_dmh_dmt_zamek.jpg"},
+{"id": "2017-03-17", "date": "2017-03-17", "title": "Brigáda", "titleTodo": true, "photos": ["img/akce/2017-03-17-1.jpg", "img/akce/2017-03-17-2.jpg", "img/akce/2017-03-17-3.jpg"]},
+{"id": "2017-03-26", "date": "2017-03-26", "title": "Brigáda", "titleTodo": true, "photos": ["img/akce/2017-03-26-1.jpg", "img/akce/2017-03-26-2.jpg"]},
+{"id": "2017-07-06", "date": "2017-07-06", "title": "Program na zámku 2017", "titleTodo": true, "poster": "img/plakaty/2017_zzt_program.jpg"},
+{"id": "2017-09-05", "date": "2017-09-05", "title": "Ve sklepení a interiérech zámku", "titleTodo": true, "photos": ["img/akce/2017-09-05-1.jpg", "img/akce/2017-09-05-2.jpg", "img/akce/2017-09-05-3.jpg", "img/akce/2017-09-05-4.jpg"]},
+{"id": "2018-04-30", "date": "2018-04-30", "title": "Pálení čarodějnic", "photos": ["img/akce/2018-04-30-1.jpg"]},
+{"id": "2018-07-28", "date": "2018-07-28", "title": "Letní kino: Špunti na vodě", "poster": "img/plakaty/2018_letni_kino.jpg"},
+{"id": "2018-08-18", "date": "2018-08-18", "title": "Letní kino: Loupež za bílého dne", "poster": "img/plakaty/2018_letni_kino.jpg"},
+{"id": "2018-09-08", "date": "2018-09-08", "title": "Punkovice na zámku", "poster": "img/plakaty/2018_punkovice.jpg", "text": "Hráli Plusmlíko, Stamp Out System, Prasex, Já Ještě Nevim a ŠpuntQaně."},
+{"id": "2018-09-15", "date": "2018-09-15", "title": "Brigáda", "end": "2018-09-16", "titleTodo": true, "photos": ["img/akce/2018-09-15-1.jpg", "img/akce/2018-09-15-2.jpg", "img/akce/2018-09-15-3.jpg", "img/akce/2018-09-15-4.jpg", "img/akce/2018-09-15-5.jpg", "img/akce/2018-09-15-6.jpg"]},
+{"id": "2019-04-27", "date": "2019-04-27", "title": "Slet čarodějnic", "poster": "img/plakaty/2019_palenicarodejnic.jpg", "photos": ["img/akce/2019-04-27-1.jpg", "img/akce/2019-04-27-2.jpg", "img/akce/2019-04-27-3.jpg", "img/akce/2019-04-27-4.jpg"], "text": "Odpoledne jsme si vyrobili čarodějnice a zabavili se."},
+{"id": "2019-04-30", "date": "2019-04-30", "title": "Pálení čarodějnic", "poster": "img/plakaty/2019_palenicarodejnic.jpg", "photos": ["img/akce/2019-04-30-1.jpg", "img/akce/2019-04-30-2.jpg"]},
+{"id": "2019-07-20", "date": "2019-07-20", "title": "Koncert na nádvoří", "titleTodo": true, "photos": ["img/akce/2019-07-20-1.jpg", "img/akce/2019-07-20-2.jpg", "img/akce/2019-07-20-3.jpg", "img/akce/2019-07-20-4.jpg", "img/akce/2019-07-20-5.jpg"]},
+{"id": "2019-08-24", "date": "2019-08-24", "title": "Stavba zastřešení pódia", "photos": ["img/akce/2019-08-24-1.jpg", "img/akce/2019-08-24-2.jpg", "img/akce/2019-08-24-3.jpg", "img/akce/2019-08-24-4.jpg", "img/akce/2019-08-24-5.jpg", "img/akce/2019-08-24-6.jpg"], "text": "Dobrovolníci v létě 2019 postavili dřevěné zastřešení pódia na nádvoří."},
+{"id": "2020-07-25", "date": "2020-07-25", "title": "Akce na nádvoří", "titleTodo": true, "photos": ["img/akce/2020-07-25-1.jpg", "img/akce/2020-07-25-2.jpg", "img/akce/2020-07-25-3.jpg", "img/akce/2020-07-25-4.jpg"]},
+{"id": "2021-07-05", "date": "2021-07-05", "title": "Brigáda", "titleTodo": true, "photos": ["img/akce/2021-07-05-1.jpg", "img/akce/2021-07-05-2.jpg"]},
+{"id": "2022-03-26", "date": "2022-03-26", "title": "Brigáda", "titleTodo": true, "photos": ["img/akce/2022-03-26-1.jpg", "img/akce/2022-03-26-2.jpg"]},
+{"id": "2023-06-03", "date": "2023-06-03", "title": "Dětský den", "poster": "img/plakaty/2023_dd_plakat.jpg"},
+{"id": "2023-06-24", "date": "2023-06-24", "title": "Výstava obrazů z puzzlí, Jan Policar", "end": "2023-07-30", "poster": "img/plakaty/2023_vystava_plakat.jpg"},
+{"id": "2023-09-09", "date": "2023-09-09", "title": "Punkovice 2023", "poster": "img/plakaty/2023_punkovice.jpg", "text": "Hráli Znouzectnost, ŠpuntQaně, Stamp Out System, ADHD Helmut, Vypitý lahváče a Adult Misery."},
+{"id": "2024-04-30", "date": "2024-04-30", "title": "Pálení čarodějnic", "photos": ["img/akce/2024-04-30-1.jpg", "img/akce/2024-04-30-2.jpg", "img/akce/2024-04-30-3.jpg"]},
+{"id": "2024-05-02", "date": "2024-05-02", "title": "Brigáda", "titleTodo": true, "photos": ["img/akce/2024-05-02-1.jpg", "img/akce/2024-05-02-2.jpg"]},
+{"id": "2024-06-15", "date": "2024-06-15", "title": "Akce na nádvoří", "titleTodo": true, "photos": ["img/akce/2024-06-15-1.jpg", "img/akce/2024-06-15-2.jpg", "img/akce/2024-06-15-3.jpg", "img/akce/2024-06-15-4.jpg"]},
+{"id": "2024-06-29", "date": "2024-06-29", "title": "Akce v historických kostýmech", "titleTodo": true, "photos": ["img/akce/2024-06-29-1.jpg", "img/akce/2024-06-29-2.jpg", "img/akce/2024-06-29-3.jpg", "img/akce/2024-06-29-4.jpg", "img/akce/2024-06-29-5.jpg", "img/akce/2024-06-29-6.jpg"]},
+{"id": "2024-08-31", "date": "2024-08-31", "title": "Punkovice 2024", "poster": "img/plakaty/2024_punkovice.jpg"},
+{"id": "2024-09-07", "date": "2024-09-07", "title": "Akce na nádvoří", "titleTodo": true, "photos": ["img/akce/2024-09-07-1.jpg", "img/akce/2024-09-07-2.jpg", "img/akce/2024-09-07-3.jpg", "img/akce/2024-09-07-4.jpg"]},
+{"id": "2024-10-26", "date": "2024-10-26", "title": "Strašidelné sklepení", "titleTodo": true, "photos": ["img/akce/2024-10-26-1.jpg", "img/akce/2024-10-26-2.jpg", "img/akce/2024-10-26-3.jpg", "img/akce/2024-10-26-4.jpg", "img/akce/2024-10-26-5.jpg", "img/akce/2024-10-26-6.jpg", "img/akce/2024-10-26-7.jpg", "img/akce/2024-10-26-8.jpg"]},
+{"id": "2024-12-14", "date": "2024-12-14", "title": "Vystoupení ve sklepení", "titleTodo": true, "photos": ["img/akce/2024-12-14-1.jpg", "img/akce/2024-12-14-2.jpg", "img/akce/2024-12-14-3.jpg", "img/akce/2024-12-14-4.jpg"]},
+{"id": "2025-04-30", "date": "2025-04-30", "title": "Pálení čarodějnic a stavění máje", "poster": "img/plakaty/2025_carodejnice_a3.jpg"},
+{"id": "2025-05-31", "date": "2025-05-31", "title": "Dětský den", "poster": "img/plakaty/2025_detsky_den.jpg"},
+{"id": "2025-06-28", "date": "2025-06-28", "title": "Historický den", "poster": "img/plakaty/2025_historicky_den.jpg", "photos": ["img/akce/2025-06-28-1.jpg", "img/akce/2025-06-28-2.jpg", "img/akce/2025-06-28-3.jpg", "img/akce/2025-06-28-4.jpg"]},
+{"id": "2025-07-04", "date": "2025-07-04", "title": "Hudba u ohně", "titleTodo": true, "photos": ["img/akce/2025-07-04-1.jpg"]},
+{"id": "2025-07-26", "date": "2025-07-26", "title": "Zámecký jarmark", "poster": "img/plakaty/2025_jarmark.jpg", "photos": ["img/akce/2025-07-26-1.jpg", "img/akce/2025-07-26-2.jpg", "img/akce/2025-07-26-3.jpg", "img/akce/2025-07-26-4.jpg"]},
+{"id": "2025-08-02", "date": "2025-08-02", "title": "Pelmel muziky", "poster": "img/plakaty/2025_pelmel_muziky.jpg", "photos": ["img/akce/2025-08-02-1.jpg", "img/akce/2025-08-02-2.jpg", "img/akce/2025-08-02-3.jpg", "img/akce/2025-08-02-4.jpg"], "text": "Hudební odpoledne s ukázkami country tanců."},
+{"id": "2025-08-23", "date": "2025-08-23", "title": "Hradozámecká noc", "poster": "img/plakaty/2025_hzn_plakat_a2_bezorez.jpg", "photos": ["img/akce/2025-08-23-1.jpg", "img/akce/2025-08-23-2.jpg", "img/akce/2025-08-23-3.jpg", "img/akce/2025-08-23-4.jpg", "img/akce/2025-08-23-5.jpg", "img/akce/2025-08-23-6.jpg"]},
+{"id": "2025-09-06", "date": "2025-09-06", "title": "Divadlo na zámku", "poster": "img/plakaty/2025_divadlo_na_zamku.jpg", "photos": ["img/akce/2025-09-06-1.jpg", "img/akce/2025-09-06-2.jpg", "img/akce/2025-09-06-3.jpg", "img/akce/2025-09-06-4.jpg"]},
+{"id": "2025-09-13", "date": "2025-09-13", "title": "Punkovice 2025", "poster": "img/plakaty/2025_punkovice.jpg", "photos": ["img/akce/2025-09-13-1.jpg", "img/akce/2025-09-13-2.jpg", "img/akce/2025-09-13-3.jpg", "img/akce/2025-09-13-4.jpg"]},
+{"id": "2025-09-28", "date": "2025-09-28", "title": "Ukázka starých tiskařských štočků", "titleTodo": true, "photos": ["img/akce/2025-09-28-1.jpg", "img/akce/2025-09-28-2.jpg", "img/akce/2025-09-28-3.jpg", "img/akce/2025-09-28-4.jpg"]},
+{"id": "2025-10-11", "date": "2025-10-11", "title": "Zámecké CITO, podzimní brigáda", "photos": ["img/akce/2025-10-11-1.jpg", "img/akce/2025-10-11-2.jpg", "img/akce/2025-10-11-3.jpg", "img/akce/2025-10-11-4.jpg"]},
+{"id": "2025-11-08", "date": "2025-11-08", "title": "Halloween po páté na zámku", "poster": "img/plakaty/2025_halloween.jpg"},
+{"id": "2025-12-14", "date": "2025-12-14", "title": "Vánoční setkání", "poster": "img/plakaty/2025_vanoce.jpg"},
+{"id": "2026-03-21", "date": "2026-03-21", "title": "Zámecká hostina", "poster": "img/plakaty/2026_hostina.jpg", "text": "Komunitní setkání na zámku."},
+{"id": "2026-03-30", "date": "2026-03-30", "title": "Začátek prací na zámecké zahradě", "end": "2026-04-04", "photos": ["img/akce/2026-03-30-1.jpg", "img/akce/2026-03-30-2.jpg", "img/akce/2026-03-30-3.jpg", "img/akce/2026-03-30-4.jpg", "img/akce/2026-03-30-5.jpg", "img/akce/2026-03-30-6.jpg", "img/akce/2026-03-30-7.jpg"], "text": "Minibagr, pařezy ven a první terénní úpravy. Při pracích jsme narazili na původní hradební zeď."},
+{"id": "2026-04-25", "date": "2026-04-25", "title": "Dny dobrovolnictví", "end": "2026-04-26", "poster": "img/plakaty/2026_dny_dobrovolnictvi.jpg", "text": "Jarní úklid, příprava na sezónu, drobné udržovací práce a pomoc s realizací zámecké zahrady."},
+{"id": "2026-04-30", "date": "2026-04-30", "title": "Pálení čarodějnic a stavění máje", "poster": "img/plakaty/2026_carodejnice_a4.jpg"},
+{"id": "2026-05-16", "date": "2026-05-16", "title": "Zámecké CITO, jarní", "end": "2026-05-17", "poster": "img/plakaty/2026_poznej_pomoz_16_5_cito.jpg"},
+{"id": "2026-05-30", "date": "2026-05-30", "title": "Den dětí na palubě", "poster": "img/plakaty/2026_dd.jpg"},
+{"id": "2026-06-20", "date": "2026-06-20", "title": "Rockový festival, 10. ročník"},
+{"id": "2026-06-27", "date": "2026-06-27", "title": "Historický den, 557 let města", "poster": "img/plakaty/2026_historicky_den.jpg"},
+{"id": "2026-07-06", "date": "2026-07-06", "title": "Paranormální jevy aneb Je na zámku strašidlo?", "poster": "img/plakaty/2026_ducharina.jpg"},
+{"id": "2026-07-10", "date": "2026-07-10", "title": "Hudební večer s Milanem Pitkinem a Františkem Nedvědem", "poster": "img/plakaty/2026_hudebni_vecer_charita.jpg"},
+{"id": "2026-07-25", "date": "2026-07-25", "title": "Zámecký jarmark", "poster": "img/plakaty/2026_jarmark.jpg"},
+{"id": "2026-08-08", "date": "2026-08-08", "title": "Pelmel muziky", "poster": "img/plakaty/2026_pelmel_a3.jpg"},
+{"id": "2026-08-16", "date": "2026-08-16", "title": "Boj s plevelem na zámecké zahradě", "end": "2026-09-06", "poster": "img/plakaty/2026_boj_s_plevelem.jpg", "text": "Plecí brigády 16. 8., 23. 8., 30. 8. a 6. 9. 2026."},
+{"id": "2026-08-21", "date": "2026-08-21", "title": "Letní kino: Po večeřce", "poster": "img/plakaty/2026_letni_kino.jpg"},
+{"id": "2026-08-22", "date": "2026-08-22", "title": "Hradozámecká noc", "poster": "img/plakaty/2026_hzn_program_a2.jpg"},
+{"id": "2026-08-29", "date": "2026-08-29", "title": "Rapcastle"},
+{"id": "2026-09-05", "date": "2026-09-05", "title": "Divadlo na zámku: Dívčí válka", "poster": "img/plakaty/2026_divci_valka_a3.jpg"},
+{"id": "2026-09-12", "date": "2026-09-12", "title": "Punkovice, 9. ročník", "poster": "img/plakaty/2026_punkovice.jpg"},
+{"id": "2026-09-26", "date": "2026-09-26", "title": "Poznej & pomoz: brigáda na zámku", "end": "2026-09-28", "poster": "img/plakaty/2026_poznej_pomoz_26_28_9.jpg"},
+{"id": "2026-10-17", "date": "2026-10-17", "title": "Zámecké CITO, podzimní brigáda", "end": "2026-10-18"},
+{"id": "2026-10-24", "date": "2026-10-24", "title": "Bass Castle × Halloween"},
+{"id": "2026-10-31", "date": "2026-10-31", "title": "Halloween na zámku", "poster": "img/plakat-halloween-2026.jpg"},
+{"id": "2026-12-13", "date": "2026-12-13", "title": "Vánoční setkání"}
+];
