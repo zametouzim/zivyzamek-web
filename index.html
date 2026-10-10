@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Živý zámek Toužim – návrh webu</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -198,7 +203,10 @@ footer .cols>*{min-width:0}
 footer img{width:160px;filter:invert(1)}
 footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--sun)}
 @media (max-width:760px){footer .cols{grid-template-columns:1fr 1fr}}
+[id]{scroll-margin-top:100px}
 </style>
+</head>
+<body>
 
 <div class="proto">Náhled návrhu nového webu, ne skutečný web. Fialově jsou místa, kde ještě chybí informace.</div>
 
@@ -251,7 +259,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
           <li class="ev" data-end="2026-10-31"><div class="d">31. 10.<small>sobota · 14:30–17:00</small></div><div><h3>Halloween na zámku</h3><p>Strašidelné sklepení, Bubu komnata, dílničky a hry na nádvoří, soutěž o nejkrásnější dýni a v 17 h lampionový průvod městem. Od 18:30 stezka pro dospělé.</p></div><span class="tag kids">Pro děti</span></li>
           <li class="ev" data-end="2026-12-13"><div class="d">13. 12.<small>neděle</small></div><div><h3>Vánoční setkání se svařákem</h3><p>Tradiční konec sezóny na nádvoří.</p></div><span class="tag">Pro všechny</span></li>
         </ul>
-        <a href="#program">Celý program 2026 a archiv akcí</a>
+        <a href="#program">Celý program 2026</a> · <a href="#archiv">Proběhlé akce</a>
       </div>
     </div>
 
@@ -299,7 +307,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 <!-- PROGRAM -->
 <section data-page="program" hidden>
   <div class="wrap">
-    <div class="page-head"><span class="eyebrow">Sezóna 2026</span><h2>Program na zámku</h2><p>Všechny akce jsou na nádvoří zámku, náměstí Jiřího z Poděbrad 1. Změna programu vyhrazena.</p></div>
+    <div class="page-head"><span class="eyebrow">Sezóna 2026</span><h2>Program na zámku</h2><p>Všechny akce jsou na nádvoří zámku, náměstí Jiřího z Poděbrad 1. Změna programu vyhrazena.</p><nav class="subnav"><a href="#archiv">Proběhlé akce ↓</a></nav></div>
     <ul class="events">
       <li class="ev" data-end="2026-10-18"><div class="d">17.–18. 10.<small>so–ne</small></div><div><h3>Zámecké CITO, podzimní brigáda</h3><p>Uklízíme horní polovinu zahrady, rovnáme herní svah a zakrýváme plochu fólií. Kdo může, vezměte rýč nebo kolečko.</p></div><span class="tag help">Přijďte pomoct</span></li>
       <li class="ev" data-end="2026-10-24"><div class="d">24. 10.<small>sobota</small></div><div><h3>Bass Castle × Halloween</h3></div><span class="tag">Hudba</span></li>
@@ -307,7 +315,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
       <li class="ev" data-end="2026-12-13"><div class="d">13. 12.<small>neděle</small></div><div><h3>Vánoční setkání se svařákem</h3></div><span class="tag">Pro všechny</span></li>
     </ul>
 
-    <div class="block">
+    <div class="block" id="archiv">
       <div class="lab"><span class="eyebrow">Proběhlo</span><h2>Letos už jsme stihli</h2></div>
       <div class="body">
         <ul class="events" id="archList">
@@ -577,11 +585,13 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   var nav=document.getElementById('mainNav'), btn=document.getElementById('menuBtn');
   function show(){
     var id=(location.hash||'#domu').slice(1);
+    var jump=null; if(id==='archiv'){id='program';jump='archiv';}
     if(!pages.some(function(p){return p.dataset.page===id})) id='domu';
     pages.forEach(function(p){p.hidden=p.dataset.page!==id});
     links.forEach(function(a){ if(a.getAttribute('href')==='#'+id) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
     nav.classList.remove('open'); btn.setAttribute('aria-expanded','false');
     window.scrollTo(0,0);
+    if(jump){var t=document.getElementById(jump);if(t)setTimeout(function(){t.scrollIntoView({block:'start'})},0);}
   }
   window.addEventListener('hashchange',show); show();
   btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false')});
@@ -608,3 +618,5 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   });
 })();
 </script>
+</body>
+</html>
