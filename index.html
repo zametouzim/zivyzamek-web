@@ -170,8 +170,10 @@ dl.facts dd{margin:0}
 .goods b{font-family:var(--cond);font-weight:600;font-size:22px;color:var(--accent)}
 @media (max-width:700px){.goods{grid-template-columns:1fr 1fr}}
 
-.partners{display:flex;flex-wrap:wrap;gap:10px}
-.partners span{border:1px solid color-mix(in srgb,var(--line) 35%,transparent);padding:8px 14px;font-size:16px}
+.partners{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.partners>*{display:flex;align-items:center;justify-content:center;background:#fff;border-radius:6px;height:96px;padding:14px;color:#16303f;text-decoration:none;font-weight:700;font-size:17px;text-align:center}
+.partners img{max-width:100%;max-height:100%;object-fit:contain}
+.partners a:hover{outline:2px solid var(--accent)}
 
 .subnav{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 .subnav a{font-family:var(--cond);font-weight:600;font-size:17px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:1px solid var(--line);padding:5px 12px}
@@ -215,7 +217,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     </nav>
   </div>
 </header>
-<div class="season"><div class="wrap"><b>Mimo sezónu</b><span>Prohlídky po domluvě na +420 724 859 799. Otevřené víkendy opět od července.</span><a href="#navsteva">Otevírací doba</a></div></div>
+<div class="season"><div class="wrap"><b id="seasonLab">Mimo sezónu</b><span id="seasonTxt">Prohlídky po domluvě na +420 724 859 799. Otevřené víkendy opět od července.</span><a href="#navsteva">Otevírací doba</a></div></div>
 
 <main>
 <!-- ÚVOD -->
@@ -244,10 +246,10 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
       <div class="lab"><span class="eyebrow">Nejbližší akce</span><h2>Program</h2></div>
       <div class="body">
         <ul class="events">
-          <li class="ev"><div class="d">17.–18. 10.<small>so–ne</small></div><div><h3>Zámecké CITO, podzimní brigáda</h3><p>Uklízíme horní polovinu zahrady a rovnáme herní svah. Nářadí půjčíme.</p></div><span class="tag help">Přijďte pomoct</span></li>
-          <li class="ev"><div class="d">24. 10.<small>sobota</small></div><div><h3>Bass Castle × Halloween</h3><p><span class="todo">krátký popis</span></p></div><span class="tag">Hudba</span></li>
-          <li class="ev"><div class="d">31. 10.<small>sobota · 14:30–17:00</small></div><div><h3>Halloween na zámku</h3><p>Strašidelné sklepení, Bubu komnata, dílničky a hry na nádvoří, soutěž o nejkrásnější dýni a v 17 h lampionový průvod městem. Od 18:30 stezka pro dospělé.</p></div><span class="tag kids">Pro děti</span></li>
-          <li class="ev"><div class="d">13. 12.<small>neděle</small></div><div><h3>Vánoční setkání se svařákem</h3><p>Tradiční konec sezóny na nádvoří.</p></div><span class="tag">Pro všechny</span></li>
+          <li class="ev" data-end="2026-10-18"><div class="d">17.–18. 10.<small>so–ne</small></div><div><h3>Zámecké CITO, podzimní brigáda</h3><p>Uklízíme horní polovinu zahrady a rovnáme herní svah. Nářadí půjčíme.</p></div><span class="tag help">Přijďte pomoct</span></li>
+          <li class="ev" data-end="2026-10-24"><div class="d">24. 10.<small>sobota</small></div><div><h3>Bass Castle × Halloween</h3><p><span class="todo">krátký popis</span></p></div><span class="tag">Hudba</span></li>
+          <li class="ev" data-end="2026-10-31"><div class="d">31. 10.<small>sobota · 14:30–17:00</small></div><div><h3>Halloween na zámku</h3><p>Strašidelné sklepení, Bubu komnata, dílničky a hry na nádvoří, soutěž o nejkrásnější dýni a v 17 h lampionový průvod městem. Od 18:30 stezka pro dospělé.</p></div><span class="tag kids">Pro děti</span></li>
+          <li class="ev" data-end="2026-12-13"><div class="d">13. 12.<small>neděle</small></div><div><h3>Vánoční setkání se svařákem</h3><p>Tradiční konec sezóny na nádvoří.</p></div><span class="tag">Pro všechny</span></li>
         </ul>
         <a href="#program">Celý program 2026 a archiv akcí</a>
       </div>
@@ -299,27 +301,27 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   <div class="wrap">
     <div class="page-head"><span class="eyebrow">Sezóna 2026</span><h2>Program na zámku</h2><p>Všechny akce jsou na nádvoří zámku, náměstí Jiřího z Poděbrad 1. Změna programu vyhrazena.</p></div>
     <ul class="events">
-      <li class="ev"><div class="d">17.–18. 10.<small>so–ne</small></div><div><h3>Zámecké CITO, podzimní brigáda</h3><p>Uklízíme horní polovinu zahrady, rovnáme herní svah a zakrýváme plochu fólií. Kdo může, vezměte rýč nebo kolečko.</p></div><span class="tag help">Přijďte pomoct</span></li>
-      <li class="ev"><div class="d">24. 10.<small>sobota</small></div><div><h3>Bass Castle × Halloween</h3></div><span class="tag">Hudba</span></li>
-      <li class="ev"><div class="d">31. 10.<small>sobota · 14:30–17:00</small></div><div class="ev-poster"><div><h3>Halloween na zámku</h3><p><b>14:30–17:00</b> strašidelné sklepení, Bubu komnata, dílničky a hry na nádvoří, malování na obličej.<br><b>17:00</b> lampionový průvod městem, trasa přizpůsobená kočárkům.<br><b>Soutěž o nejkrásnější vydlabanou dýni:</b> registrace do 16:30 u zámeckého pána, vyhlášení v 16:45.<br>Návštěvníci v maskách vítáni. Občerstvení zajištěno, vstupné dobrovolné.</p><p style="margin-top:10px"><b>Letos mimořádně: halloweenská stezka pro dospělé od 18:30.</b> Registrace do 24. 10. na zivyzamektouzim@email.cz, vstupné 100 Kč. Není vhodná pro slabší povahy.</p></div><img src="img/plakat-halloween-2026.jpg" alt="Plakát Halloween na zámku Toužim 31. 10. 2026"></div><span class="tag kids">Pro děti</span></li>
-      <li class="ev"><div class="d">13. 12.<small>neděle</small></div><div><h3>Vánoční setkání se svařákem</h3></div><span class="tag">Pro všechny</span></li>
+      <li class="ev" data-end="2026-10-18"><div class="d">17.–18. 10.<small>so–ne</small></div><div><h3>Zámecké CITO, podzimní brigáda</h3><p>Uklízíme horní polovinu zahrady, rovnáme herní svah a zakrýváme plochu fólií. Kdo může, vezměte rýč nebo kolečko.</p></div><span class="tag help">Přijďte pomoct</span></li>
+      <li class="ev" data-end="2026-10-24"><div class="d">24. 10.<small>sobota</small></div><div><h3>Bass Castle × Halloween</h3></div><span class="tag">Hudba</span></li>
+      <li class="ev" data-end="2026-10-31"><div class="d">31. 10.<small>sobota · 14:30–17:00</small></div><div class="ev-poster"><div><h3>Halloween na zámku</h3><p><b>14:30–17:00</b> strašidelné sklepení, Bubu komnata, dílničky a hry na nádvoří, malování na obličej.<br><b>17:00</b> lampionový průvod městem, trasa přizpůsobená kočárkům.<br><b>Soutěž o nejkrásnější vydlabanou dýni:</b> registrace do 16:30 u zámeckého pána, vyhlášení v 16:45.<br>Návštěvníci v maskách vítáni. Občerstvení zajištěno, vstupné dobrovolné.</p><p style="margin-top:10px"><b>Letos mimořádně: halloweenská stezka pro dospělé od 18:30.</b> Registrace do 24. 10. na zivyzamektouzim@email.cz, vstupné 100 Kč. Není vhodná pro slabší povahy.</p></div><img src="img/plakat-halloween-2026.jpg" alt="Plakát Halloween na zámku Toužim 31. 10. 2026"></div><span class="tag kids">Pro děti</span></li>
+      <li class="ev" data-end="2026-12-13"><div class="d">13. 12.<small>neděle</small></div><div><h3>Vánoční setkání se svařákem</h3></div><span class="tag">Pro všechny</span></li>
     </ul>
 
     <div class="block">
       <div class="lab"><span class="eyebrow">Proběhlo</span><h2>Letos už jsme stihli</h2></div>
       <div class="body">
-        <ul class="events">
-          <li class="ev past"><div class="d">12. 9.</div><div><h3>Punkovice, 9. ročník</h3></div><span class="tag">Fotky</span></li>
-          <li class="ev past"><div class="d">5. 9.</div><div><h3>Divadlo na zámku a Dívčí válka</h3></div><span class="tag">Fotky</span></li>
-          <li class="ev past"><div class="d">29. 8.</div><div><h3>Rapcastle</h3></div><span class="tag">Fotky</span></li>
-          <li class="ev past"><div class="d">22. 8.</div><div><h3>Hradozámecká noc</h3></div><span class="tag">Fotky</span></li>
-          <li class="ev past"><div class="d">8. 8.</div><div><h3>Pelmel muziky</h3></div><span class="tag">Fotky</span></li>
-          <li class="ev past"><div class="d">25. 7.</div><div><h3>Zámecký jarmark</h3></div><span class="tag">Fotky</span></li>
-          <li class="ev past"><div class="d">27. 6.</div><div><h3>Historický den, 557 let města</h3></div><span class="tag">Fotky</span></li>
-          <li class="ev past"><div class="d">20. 6.</div><div><h3>Rockový festival, 10. ročník</h3></div><span class="tag">Fotky</span></li>
-          <li class="ev past"><div class="d">30. 5.</div><div><h3>Dětský den</h3></div><span class="tag">Fotky</span></li>
-          <li class="ev past"><div class="d">16. 5.</div><div><h3>Zámecké CITO, jarní</h3></div><span class="tag">Fotky</span></li>
-          <li class="ev past"><div class="d">30. 4.</div><div><h3>Pálení čarodějnic</h3></div><span class="tag">Fotky</span></li>
+        <ul class="events" id="archList">
+          <li class="ev past"><div class="d">12. 9.</div><div><h3>Punkovice, 9. ročník</h3></div></li>
+          <li class="ev past"><div class="d">5. 9.</div><div><h3>Divadlo na zámku a Dívčí válka</h3></div></li>
+          <li class="ev past"><div class="d">29. 8.</div><div><h3>Rapcastle</h3></div></li>
+          <li class="ev past"><div class="d">22. 8.</div><div><h3>Hradozámecká noc</h3></div></li>
+          <li class="ev past"><div class="d">8. 8.</div><div><h3>Pelmel muziky</h3></div></li>
+          <li class="ev past"><div class="d">25. 7.</div><div><h3>Zámecký jarmark</h3></div></li>
+          <li class="ev past"><div class="d">27. 6.</div><div><h3>Historický den, 557 let města</h3></div></li>
+          <li class="ev past"><div class="d">20. 6.</div><div><h3>Rockový festival, 10. ročník</h3></div></li>
+          <li class="ev past"><div class="d">30. 5.</div><div><h3>Dětský den</h3></div></li>
+          <li class="ev past"><div class="d">16. 5.</div><div><h3>Zámecké CITO, jarní</h3></div></li>
+          <li class="ev past"><div class="d">30. 4.</div><div><h3>Pálení čarodějnic</h3></div></li>
         </ul>
         <p style="color:var(--grey)">Starší roky: 2025 · 2024 · 2023 · … · 2015. U každé akce krátký popis a pár fotek.</p>
       </div>
@@ -392,7 +394,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
           <figure class="p-c3"><div class="r"><img src="img/studie-8.jpg" alt="Vizualizace herního svahu"></div></figure>
           <figure class="p-c3"><div class="r"><img src="img/zahrada-vizualizace.jpg" alt="Vizualizace celé zahrady"></div></figure>
         </div>
-        <p style="color:var(--grey);font-size:16px">Na hotovém webu bude ke stažení celá studie v PDF (osazovací plány, situace, vizualizace).</p>
+        <p><a class="btn" href="docs/studie-zahrady-2025.pdf" target="_blank" rel="noopener">Celá studie zahrady (PDF, 3 MB)</a></p>
       </div>
     </div>
 
@@ -499,15 +501,22 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
         <figure class="p-c3"><div class="r"><img src="img/h-2024-vanoce.jpg" alt="Vystoupení s vějíři ve sklepení" loading="lazy"></div><figcaption>Vystoupení ve sklepení, 14. 12. 2024 <span class="todo">název akce?</span></figcaption></figure>
         <figure class="p-c3"><div class="r"><img src="img/h-2025-country.jpg" alt="Tanečnice v kovbojských kloboucích pod pódiem" loading="lazy"></div><figcaption>Country tance pod pódiem, srpen 2025</figcaption></figure>
       </div></div>
-    </div><figcaption>Zázemí při akci, 2024</figcaption></figure>
     </div>
     <div class="block">
       <div class="lab"><span class="eyebrow">Děkujeme</span><h2>Partneři</h2></div>
       <div class="body">
         <div class="partners">
-          <span>Město Toužim</span><span>Karlovarský kraj</span><span>Nadace VIA</span><span>Nadace ČEZ</span><span>MAS Kraj živých vod</span><span>Hospůdka U Havlů, Sokolovna Toužim</span><span>Postřelí.cz</span><span>Dílna Umnicha</span><span>Kudyznudy.cz</span><span>Givt.cz</span>
+          <a href="https://www.touzim.cz/" target="_blank" rel="noopener" title="Město Toužim"><img src="img/partneri/touzim.png" alt="Město Toužim" loading="lazy"></a>
+          <a href="https://www.kr-karlovarsky.cz/" target="_blank" rel="noopener" title="Karlovarský kraj"><img src="img/partneri/karlovarsky-kraj.png" alt="Karlovarský kraj" loading="lazy"></a>
+          <a href="https://www.nadacevia.cz/" target="_blank" rel="noopener" title="Nadace VIA"><img src="img/partneri/nadace-via.png" alt="Nadace VIA" loading="lazy"></a>
+          <a href="https://www.nadacecez.cz/" target="_blank" rel="noopener" title="Nadace ČEZ"><img src="img/partneri/nadace-cez.png" alt="Nadace ČEZ" loading="lazy"></a>
+          <a href="https://www.krajzivychvod.cz/" target="_blank" rel="noopener" title="MAS Kraj živých vod"><img src="img/partneri/mas-kraj-zivych-vod.png" alt="MAS Kraj živých vod" loading="lazy"></a>
+          <span title="Hospůdka U Havlů, Sokolovna Toužim"><img src="img/partneri/u-havlu.png" alt="Hospůdka U Havlů, Sokolovna Toužim" loading="lazy"></span>
+          <a href="https://www.postreli.cz/" target="_blank" rel="noopener" title="Postřelí.cz"><img src="img/partneri/postreli.png" alt="Postřelí.cz" loading="lazy"></a>
+          <a class="txt" href="http://www.dilnaumnicha.cz/" target="_blank" rel="noopener">Dílna Umnicha</a>
+          <a class="txt" href="https://www.kudyznudy.cz/" target="_blank" rel="noopener">Kudyznudy.cz</a>
+          <a class="txt" href="https://givt.cz/" target="_blank" rel="noopener">Givt.cz</a>
         </div>
-        <p style="color:var(--grey);font-size:16px">Na hotovém webu budou loga s odkazy.</p>
       </div>
     </div>
   </div>
@@ -557,7 +566,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     <div><img src="img/logo.png" alt="Živý zámek Toužim"></div>
     <div><h4>Zámek</h4><p>náměstí Jiřího z Poděbrad 1<br>364 01 Toužim<br>Otevřené víkendy červenec–září</p></div>
     <div><h4>Kontakt</h4><p>Pavla Vokurková, předsedkyně<br>+420 724 859 799<br>Alena Šlajerová, místopředsedkyně<br>+420 728 290 280<br>zivyzamektouzim@email.cz</p></div>
-    <div><h4>Spolek</h4><p>Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Účet 2301034510/2010<br><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></p></div>
+    <div><h4>Spolek</h4><p>Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Účet 2301034510/2010<br><a href="https://www.facebook.com/%C5%BDiv%C3%BD-z%C3%A1mek-Tou%C5%BEim-1674033056143744/" target="_blank" rel="noopener">Facebook</a></p></div>
   </div>
 </footer>
 
@@ -577,6 +586,20 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   window.addEventListener('hashchange',show); show();
   btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false')});
   document.addEventListener('click',function(e){var a=e.target.closest('[data-jump]');if(!a)return;e.preventDefault();var t=document.getElementById(a.dataset.jump);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});});
+
+  // sezónní pruh: červenec–září otevřené víkendy, jinak po domluvě
+  var now=new Date(), m=now.getMonth()+1;
+  if(m>=7&&m<=9){document.getElementById('seasonLab').textContent='Otevřeno';document.getElementById('seasonTxt').textContent='So–ne 10–12 a 13–17 h, komentované prohlídky v 11, 14 a 16 h.';}
+  else if(m<7){document.getElementById('seasonTxt').textContent='Prohlídky po domluvě na +420 724 859 799. Otevřené víkendy od července.';}
+  // proběhlé akce se samy přesunou do archivu
+  var today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+  var arch=document.getElementById('archList');
+  [].slice.call(document.querySelectorAll('li.ev[data-end]')).forEach(function(li){
+    var e=new Date(li.dataset.end+'T23:59:59'); if(e>=today) return;
+    if(arch && li.closest('section[data-page="program"]')){var c=document.createElement('li');c.className='ev past';c.innerHTML='<div class="d">'+li.querySelector('.d').firstChild.textContent+'</div><div><h3>'+li.querySelector('h3').textContent+'</h3></div>';arch.insertBefore(c,arch.firstChild);}
+    li.remove();
+  });
+  [].slice.call(document.querySelectorAll('ul.events:not(#archList)')).forEach(function(u){if(!u.children.length)u.innerHTML='<li class="ev"><div><p>Program na další sezónu připravujeme. Sledujte náš Facebook.</p></div></li>';});
   var cb=document.getElementById('copyBtn');
   cb.addEventListener('click',function(){
     var el=document.getElementById('acct'), t=el.textContent;
