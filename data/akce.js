@@ -76,7 +76,6 @@ window.AKCE=[
 {"id": "2025-08-23", "date": "2025-08-23", "title": "Hradozámecká noc", "poster": "img/plakaty/2025_hzn_plakat_a2_bezorez.jpg", "photos": ["img/akce/2025-08-23-1.jpg", "img/akce/2025-08-23-2.jpg", "img/akce/2025-08-23-3.jpg", "img/akce/2025-08-23-4.jpg", "img/akce/2025-08-23-5.jpg", "img/akce/2025-08-23-6.jpg"]},
 {"id": "2025-09-06", "date": "2025-09-06", "title": "Divadlo na zámku", "poster": "img/plakaty/2025_divadlo_na_zamku.jpg", "photos": ["img/akce/2025-09-06-1.jpg", "img/akce/2025-09-06-2.jpg", "img/akce/2025-09-06-3.jpg", "img/akce/2025-09-06-4.jpg"]},
 {"id": "2025-09-13", "date": "2025-09-13", "title": "Punkovice 2025", "poster": "img/plakaty/2025_punkovice.jpg", "photos": ["img/akce/2025-09-13-1.jpg", "img/akce/2025-09-13-2.jpg", "img/akce/2025-09-13-3.jpg", "img/akce/2025-09-13-4.jpg"]},
-{"id": "2025-09-28", "date": "2025-09-28", "title": "Ukázka starých tiskařských štočků", "titleTodo": true, "photos": ["img/akce/2025-09-28-1.jpg", "img/akce/2025-09-28-2.jpg", "img/akce/2025-09-28-3.jpg", "img/akce/2025-09-28-4.jpg"]},
 {"id": "2025-10-11", "date": "2025-10-11", "title": "Zámecké CITO, podzimní brigáda", "photos": ["img/akce/2025-10-11-1.jpg", "img/akce/2025-10-11-2.jpg", "img/akce/2025-10-11-3.jpg", "img/akce/2025-10-11-4.jpg"]},
 {"id": "2025-11-08", "date": "2025-11-08", "title": "Halloween po páté na zámku", "poster": "img/plakaty/2025_halloween.jpg"},
 {"id": "2025-12-14", "date": "2025-12-14", "title": "Vánoční setkání", "poster": "img/plakaty/2025_vanoce.jpg"},
@@ -99,8 +98,8 @@ window.AKCE=[
 {"id": "2026-09-05", "date": "2026-09-05", "title": "Divadlo na zámku: Dívčí válka", "poster": "img/plakaty/2026_divci_valka_a3.jpg"},
 {"id": "2026-09-12", "date": "2026-09-12", "title": "Punkovice, 9. ročník", "poster": "img/plakaty/2026_punkovice.jpg"},
 {"id": "2026-09-26", "date": "2026-09-26", "title": "Poznej & pomoz: brigáda na zámku", "end": "2026-09-28", "poster": "img/plakaty/2026_poznej_pomoz_26_28_9.jpg"},
-{"id": "2026-10-17", "date": "2026-10-17", "title": "Zámecké CITO, podzimní brigáda", "end": "2026-10-18"},
-{"id": "2026-10-24", "date": "2026-10-24", "title": "Bass Castle × Halloween"},
-{"id": "2026-10-31", "date": "2026-10-31", "title": "Halloween na zámku", "poster": "img/plakat-halloween-2026.jpg"},
-{"id": "2026-12-13", "date": "2026-12-13", "title": "Vánoční setkání"}
+{"id": "2026-10-17", "date": "2026-10-17", "title": "Zámecké CITO, podzimní brigáda", "end": "2026-10-18", "when": "so–ne", "short": "Uklízíme horní polovinu zahrady a rovnáme herní svah. Nářadí půjčíme.", "html": "Uklízíme horní polovinu zahrady, rovnáme herní svah a zakrýváme plochu fólií. Kdo může, vezměte rýč nebo kolečko. Nářadí půjčíme a o jídlo se postaráme.", "tag": "Přijďte pomoct", "tagc": "help"},
+{"id": "2026-10-24", "date": "2026-10-24", "title": "Bass Castle × Halloween", "when": "sobota", "tag": "Hudba"},
+{"id": "2026-10-31", "date": "2026-10-31", "title": "Halloween na zámku", "poster": "img/plakat-halloween-2026.jpg", "when": "sobota · 14:30–17:00", "short": "Strašidelné sklepení, dílničky, lampionový průvod a soutěž o nejkrásnější dýni. Večer stezka pro dospělé.", "html": "<b>14:30–17:00</b> strašidelné sklepení, Bubu komnata, dílničky a hry na nádvoří, malování na obličej.<br><b>17:00</b> lampionový průvod městem, trasa přizpůsobená kočárkům.<br><b>Soutěž o nejkrásnější vydlabanou dýni:</b> registrace do 16:30 u zámeckého pána, vyhlášení v 16:45.<br>Návštěvníci v maskách vítáni. Občerstvení zajištěno, vstupné dobrovolné.\n<b>Letos mimořádně: halloweenská stezka pro dospělé od 18:30.</b> Registrace do 24. 10. na zivyzamektouzim@email.cz, vstupné 100 Kč. Není vhodná pro slabší povahy.", "tag": "Pro děti", "tagc": "kids"},
+{"id": "2026-12-13", "date": "2026-12-13", "title": "Vánoční setkání se svařákem", "when": "neděle", "short": "Tradiční konec sezóny na nádvoří se svařákem.", "tag": "Pro všechny"}
 ];

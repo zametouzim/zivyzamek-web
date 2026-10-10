@@ -204,6 +204,30 @@ footer img{width:160px;filter:invert(1)}
 footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--sun)}
 @media (max-width:760px){footer .cols{grid-template-columns:1fr 1fr}}
 [id]{scroll-margin-top:100px}
+.upcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:14px}
+@media (max-width:620px){.upcards{grid-template-columns:1fr}}
+.upcard{display:grid;grid-template-columns:92px 1fr auto;background:var(--panel);color:inherit;text-decoration:none;border-left:4px solid var(--accent);min-height:120px;transition:transform .15s}
+.upcard:hover{transform:translateY(-2px)}
+.upcard .cal{background:var(--navy);color:var(--navy-ink);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px 6px;gap:2px}
+.upcard .cal b{font-family:var(--cond);font-weight:600;font-size:30px;line-height:1;color:var(--sun)}
+.upcard .cal span{font-size:14px;text-transform:uppercase;letter-spacing:.06em}
+.upcard .cal small{font-size:13px;opacity:.75}
+.upcard .tx{padding:14px 16px;display:grid;gap:5px;align-content:start;min-width:0}
+.upcard h3{font-size:20px;line-height:1.2}
+.upcard p{font-size:15px;color:var(--grey);line-height:1.4}
+.upcard .go{font-weight:700;font-size:15px}
+.upcard .pt{width:96px;height:100%;object-fit:cover;object-position:top;display:block}
+@media (max-width:620px){.upcard{grid-template-columns:78px 1fr auto}.upcard .cal b{font-size:24px}.upcard .pt{width:72px}.upcard h3{font-size:18px}}
+.more{display:flex;gap:24px;flex-wrap:wrap;margin-top:18px;font-weight:700}
+.more a{color:inherit}
+.up .ev{grid-template-columns:140px 1fr 150px auto;align-items:start}
+.up .ev h3 a{color:inherit;text-decoration:none}.up .ev h3 a:hover{text-decoration:underline;text-decoration-color:var(--accent)}
+.up .pz{padding:0;border:0;background:none;cursor:zoom-in;display:block;width:150px}
+.up .pz img{width:100%;display:block;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+.up .det{display:inline-block;margin-top:8px;font-weight:700;color:inherit}
+@media (max-width:760px){.up .ev{grid-template-columns:1fr}.up .pz{width:160px}}
+.ak-when{color:var(--grey);font-size:17px;margin-top:4px}
+.ak-body .poster{padding:0;border:0;background:none;cursor:zoom-in;display:block}
 .years{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
 .years button{font-family:var(--cond);font-weight:600;font-size:18px;letter-spacing:.04em;background:none;color:inherit;border:1px solid color-mix(in srgb,var(--line) 40%,transparent);padding:6px 14px;cursor:pointer}
 .years button[aria-selected="true"]{background:var(--navy);color:var(--navy-ink);border-color:var(--navy)}
@@ -284,21 +308,12 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     <div class="block">
       <div class="lab"><span class="eyebrow">Nejbližší akce</span><h2>Program</h2></div>
       <div class="body">
-        <ul class="events">
-          <li class="ev" data-end="2026-10-18"><div class="d">17.–18. 10.<small>so–ne</small></div><div><h3>Zámecké CITO, podzimní brigáda</h3><p>Uklízíme horní polovinu zahrady a rovnáme herní svah. Nářadí půjčíme.</p></div><span class="tag help">Přijďte pomoct</span></li>
-          <li class="ev" data-end="2026-10-24"><div class="d">24. 10.<small>sobota</small></div><div><h3>Bass Castle × Halloween</h3><p><span class="todo">krátký popis</span></p></div><span class="tag">Hudba</span></li>
-          <li class="ev" data-end="2026-10-31"><div class="d">31. 10.<small>sobota · 14:30–17:00</small></div><div><h3>Halloween na zámku</h3><p>Strašidelné sklepení, Bubu komnata, dílničky a hry na nádvoří, soutěž o nejkrásnější dýni a v 17 h lampionový průvod městem. Od 18:30 stezka pro dospělé.</p></div><span class="tag kids">Pro děti</span></li>
-          <li class="ev" data-end="2026-12-13"><div class="d">13. 12.<small>neděle</small></div><div><h3>Vánoční setkání se svařákem</h3><p>Tradiční konec sezóny na nádvoří.</p></div><span class="tag">Pro všechny</span></li>
-        </ul>
-        <a href="#program">Celý program 2026</a> · <a href="#archiv">Proběhlé akce</a>
+        <div class="upcards" id="homeUp"></div>
+        <p class="more"><a href="#program">Celý program 2026 →</a><a href="#archiv">Proběhlé akce →</a></p>
       </div>
     </div>
 
-    <div class="photos" style="margin-top:32px">
-      <figure class="p-h"><div class="r"><img src="img/noc.jpg" alt="Noční prohlídka zámku s lucernami"></div><figcaption>Hradozámecká noc, 23. 8. 2025</figcaption></figure>
-      <figure class="p-h"><div class="r"><img src="img/h-2024-carodejnice.jpg" alt="Děti u ohně při pálení čarodějnic na nádvoří"></div><figcaption>Pálení čarodějnic, 30. 4. 2024</figcaption></figure>
-    </div>
-
+    
     <div class="block">
       <div class="lab"><span class="eyebrow">Deset let práce</span><h2>Co se už povedlo</h2></div>
       <div class="body">
@@ -339,12 +354,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 <section data-page="program" hidden>
   <div class="wrap">
     <div class="page-head"><span class="eyebrow">Sezóna 2026</span><h2>Program na zámku</h2><p>Všechny akce jsou na nádvoří zámku, náměstí Jiřího z Poděbrad 1. Změna programu vyhrazena.</p><nav class="subnav"><a href="#archiv">Proběhlé akce ↓</a></nav></div>
-    <ul class="events">
-      <li class="ev" data-end="2026-10-18"><div class="d">17.–18. 10.<small>so–ne</small></div><div><h3>Zámecké CITO, podzimní brigáda</h3><p>Uklízíme horní polovinu zahrady, rovnáme herní svah a zakrýváme plochu fólií. Kdo může, vezměte rýč nebo kolečko.</p></div><span class="tag help">Přijďte pomoct</span></li>
-      <li class="ev" data-end="2026-10-24"><div class="d">24. 10.<small>sobota</small></div><div><h3>Bass Castle × Halloween</h3></div><span class="tag">Hudba</span></li>
-      <li class="ev" data-end="2026-10-31"><div class="d">31. 10.<small>sobota · 14:30–17:00</small></div><div class="ev-poster"><div><h3>Halloween na zámku</h3><p><b>14:30–17:00</b> strašidelné sklepení, Bubu komnata, dílničky a hry na nádvoří, malování na obličej.<br><b>17:00</b> lampionový průvod městem, trasa přizpůsobená kočárkům.<br><b>Soutěž o nejkrásnější vydlabanou dýni:</b> registrace do 16:30 u zámeckého pána, vyhlášení v 16:45.<br>Návštěvníci v maskách vítáni. Občerstvení zajištěno, vstupné dobrovolné.</p><p style="margin-top:10px"><b>Letos mimořádně: halloweenská stezka pro dospělé od 18:30.</b> Registrace do 24. 10. na zivyzamektouzim@email.cz, vstupné 100 Kč. Není vhodná pro slabší povahy.</p></div><img src="img/plakat-halloween-2026.jpg" alt="Plakát Halloween na zámku Toužim 31. 10. 2026"></div><span class="tag kids">Pro děti</span></li>
-      <li class="ev" data-end="2026-12-13"><div class="d">13. 12.<small>neděle</small></div><div><h3>Vánoční setkání se svařákem</h3></div><span class="tag">Pro všechny</span></li>
-    </ul>
+    <ul class="events up" id="upList"></ul>
 
     <div class="block" id="archiv">
       <div class="lab"><span class="eyebrow">Proběhlo</span><h2>Archiv akcí</h2><p style="color:var(--grey)">Klikněte na akci pro popis, plakát a fotky.</p></div>
@@ -617,20 +627,22 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   function past(a){return new Date((a.end||a.date)+'T23:59:59')<today}
 
   // detail akce
-  var detail=document.getElementById('akceDetail'), lb=document.getElementById('lb'), lbImgs=[], lbI=0;
+  var detail=document.getElementById('akceDetail'), lb=document.getElementById('lb'), lbImgs=[], lbI=0, curPhotos=[];
   function renderDetail(id){
     var a=AKCE.filter(function(x){return x.id===id})[0];
     if(!a){detail.innerHTML='<a class="ak-back" href="#archiv">← Archiv akcí</a><p>Akce nenalezena.</p>';return}
-    var h='<a class="ak-back" href="#archiv">← Archiv akcí</a><div class="ak-head"><div class="ak-date">'+dFull(a)+'</div><h2>'+esc(a.title)+(a.titleTodo?' <span class="todo" style="font-size:18px">název?</span>':'')+'</h2></div>';
-    h+='<div class="ak-body"><div class="ak-text">'+(a.text?a.text.split('\n').map(function(p){return '<p>'+esc(p)+'</p>'}).join(''):'<p><span class="todo">krátký popis akce</span></p>')+'</div>';
-    h+=a.poster?'<a class="poster" href="'+a.poster+'" target="_blank" rel="noopener"><img src="'+a.poster+'" alt="Plakát: '+esc(a.title)+'"></a>':'<div></div>';
+    var h=(past(a)?'<a class="ak-back" href="#archiv">← Archiv akcí</a>':'<a class="ak-back" href="#program">← Program</a>')+'<div class="ak-head"><div class="ak-date">'+dFull(a)+'</div><h2>'+esc(a.title)+(a.titleTodo?' <span class="todo" style="font-size:18px">název?</span>':'')+'</h2>'+(a.when?'<div class="ak-when">'+esc(a.when)+'</div>':'')+'</div>';
+    h+='<div class="ak-body"><div class="ak-text">'+(a.html?a.html.split('\n').map(function(p){return '<p>'+p+'</p>'}).join(''):a.text?a.text.split('\n').map(function(p){return '<p>'+esc(p)+'</p>'}).join(''):'<p><span class="todo">krátký popis akce</span></p>')+'</div>';
+    h+=a.poster?'<button class="poster" data-src="'+a.poster+'" aria-label="Zvětšit plakát"><img src="'+a.poster+'" alt="Plakát: '+esc(a.title)+'"></button>':'<div></div>';
     h+='</div>';
     if(a.photos&&a.photos.length){h+='<div class="ak-gal">'+a.photos.map(function(f,i){return '<button data-i="'+i+'"><img src="'+f+'" alt="Fotka z akce '+esc(a.title)+'" loading="lazy"></button>'}).join('')+'</div>';}
     else h+='<p style="color:var(--grey);margin:24px 0 40px">Fotky doplníme.</p>';
-    detail.innerHTML=h; lbImgs=a.photos||[];
+    detail.innerHTML=h; curPhotos=a.photos||[];
   }
-  function lbShow(i){lbI=(i+lbImgs.length)%lbImgs.length;lb.querySelector('img').src=lbImgs[lbI];lb.hidden=false}
-  detail.addEventListener('click',function(e){var b=e.target.closest('button[data-i]');if(b)lbShow(+b.dataset.i)});
+  function lbShow(i){lbI=(i+lbImgs.length)%lbImgs.length;lb.querySelector('img').src=lbImgs[lbI];var one=lbImgs.length<2;lb.querySelector('.pv').hidden=one;lb.querySelector('.nx').hidden=one;lb.hidden=false}
+  function lbOpen(list,i){lbImgs=list;lbShow(i||0)}
+  detail.addEventListener('click',function(e){var b=e.target.closest('button[data-i]');if(b)lbOpen(curPhotos,+b.dataset.i);var q=e.target.closest('button.poster');if(q)lbOpen([q.dataset.src])});
+  document.addEventListener('click',function(e){var b=e.target.closest('button.pz');if(b)lbOpen([b.dataset.src])});
   lb.addEventListener('click',function(e){if(e.target.classList.contains('pv'))lbShow(lbI-1);else if(e.target.classList.contains('nx'))lbShow(lbI+1);else lb.hidden=true});
   document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowLeft')lbShow(lbI-1);if(e.key==='ArrowRight')lbShow(lbI+1)});
 
@@ -646,6 +658,19 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     window.scrollTo(0,0);
     if(jump){var t=document.getElementById(jump);if(t)setTimeout(function(){t.scrollIntoView({block:'start'})},0);}
   }
+
+  // nejbližší akce: karty na úvodu a seznam v programu
+  var up=AKCE.filter(function(a){return !past(a)}).reverse();
+  function dd(a){var s=a.date.split('-');if(!a.end)return (+s[2])+'. '+(+s[1])+'.';var e=a.end.split('-');return (+s[2])+'.–'+(+e[2])+'. '+(+e[1])+'.'}
+  var hu=document.getElementById('homeUp'), ul=document.getElementById('upList');
+  var MES=['ledna','února','března','dubna','května','června','července','srpna','září','října','listopadu','prosince'];
+  function cal(a){var s=a.date.split('-'),t=(+s[2])+'.';if(a.end){var e=a.end.split('-');t+='–'+(+e[2])+'.';}return '<b>'+t+'</b><span>'+MES[+s[1]-1]+'</span>'+(a.when?'<small>'+esc(a.when.split(' · ')[0])+'</small>':'')}
+  if(hu)hu.innerHTML=up.length?up.slice(0,4).map(function(a){
+    return '<a class="upcard" href="#akce/'+a.id+'"><div class="cal">'+cal(a)+'</div><div class="tx"><h3>'+esc(a.title)+'</h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<span class="go">Detail →</span></div>'+(a.poster?'<img class="pt" src="'+a.poster+'" alt="" loading="lazy">':'')+'</a>';
+  }).join(''):'<p>Program na další sezónu připravujeme. Sledujte náš Facebook.</p>';
+  if(ul)ul.innerHTML=up.length?up.map(function(a){
+    return '<li class="ev"><div class="d">'+dd(a)+(a.when?'<small style="display:block;font-size:15px;color:var(--grey);font-family:var(--font);font-weight:400">'+esc(a.when)+'</small>':'')+'</div><div><h3><a href="#akce/'+a.id+'">'+esc(a.title)+'</a></h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<a class="det" href="#akce/'+a.id+'">Detail akce →</a></div>'+(a.poster?'<button class="pz" data-src="'+a.poster+'" aria-label="Zvětšit plakát"><img src="'+a.poster+'" alt="Plakát: '+esc(a.title)+'" loading="lazy"></button>':'<span></span>')+(a.tag?'<span class="tag '+(a.tagc||'')+'">'+esc(a.tag)+'</span>':'<span></span>')+'</li>';
+  }).join(''):'<li class="ev"><div><p>Program na další sezónu připravujeme. Sledujte náš Facebook.</p></div></li>';
 
   // archiv: roky a seznam
   var yearsEl=document.getElementById('archYears'), list=document.getElementById('archList');
@@ -671,9 +696,6 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   var m=now.getMonth()+1;
   if(m>=7&&m<=9){document.getElementById('seasonLab').textContent='Otevřeno';document.getElementById('seasonTxt').textContent='So–ne 10–12 a 13–17 h, komentované prohlídky v 11, 14 a 16 h.';}
   else if(m<7){document.getElementById('seasonTxt').textContent='Prohlídky po domluvě na +420 724 859 799. Otevřené víkendy od července.';}
-  // proběhlé akce zmizí z programu (v archivu jsou z data/akce.js)
-  [].slice.call(document.querySelectorAll('li.ev[data-end]')).forEach(function(li){if(new Date(li.dataset.end+'T23:59:59')<today)li.remove();});
-  [].slice.call(document.querySelectorAll('ul.events:not(#archList)')).forEach(function(u){if(!u.children.length)u.innerHTML='<li class="ev"><div><p>Program na další sezónu připravujeme. Sledujte náš Facebook.</p></div></li>';});
 
   // rotace fotek na úvodu
   var hp=document.querySelector('.hero-photo'), HERO=window.HERO||[];
