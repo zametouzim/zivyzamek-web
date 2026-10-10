@@ -158,13 +158,13 @@ dl.facts dd{margin:0}
 @media (max-width:620px){.timeline li{grid-template-columns:1fr;gap:2px}}
 
 .steps{list-style:none;margin:0;padding:0;display:grid}
-.steps li{display:grid;grid-template-columns:28px 120px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid color-mix(in srgb,var(--line) 18%,transparent);align-items:baseline}
+.steps li{display:grid;grid-template-columns:28px 150px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid color-mix(in srgb,var(--line) 18%,transparent);align-items:baseline}
 .steps .m{width:14px;height:14px;border:2px solid var(--accent);border-radius:50%;display:inline-block;transform:translateY(2px)}
 .steps .done .m{background:var(--accent)}
 .steps .now .m{background:linear-gradient(90deg,var(--accent) 50%,transparent 50%)}
 .steps .now{font-weight:700}
 .steps .when{color:var(--grey);font-variant-numeric:tabular-nums}
-@media (max-width:620px){.steps li{grid-template-columns:28px 1fr}.steps .when{grid-column:2}}
+@media (max-width:620px){.steps li{grid-template-columns:24px 1fr;gap:2px 10px}.steps .m{grid-row:1/3}.steps li>span:last-child{grid-column:2}}
 
 .acct{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 .acct code{font-family:var(--cond);font-size:clamp(30px,4vw,40px);font-weight:600;letter-spacing:.02em;font-variant-numeric:tabular-nums;user-select:all}
@@ -454,7 +454,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     </div>
 
     <div class="block" id="g-stav">
-      <div class="lab"><span class="eyebrow">Kde jsme</span><h2>Stav prací</h2><p style="color:var(--grey)">Aktualizováno po každé brigádě.</p></div>
+      <div class="lab"><h2>Stav prací</h2><p style="color:var(--grey)">Aktualizováno po každé brigádě.</p></div>
       <div class="body">
         <ol class="steps">
           <li class="done"><span class="m"></span><span class="when">08/2025</span><span>Studie zahrady</span></li>
