@@ -11,7 +11,7 @@
 /* Barvy ze sezónního plakátu 2026 (tmavě modrá, korálová, žlutá) na teplém podkladu jako omítka zámku; linky z loga jako dělicí prvek; písmo Calibri → Carlito, data úzkým písmem jako na plakátu */
 :root{
   --paper:#fbf7ee; --panel:#f3ead6; --ink:#16303f; --grey:#4e5b62; --line:#16303f;
-  --accent:#e04b66; --accent-ink:#ffffff; --sun:#f3ee8a; --sun-soft:#f9f6c6; --sun-ink:#16303f; --navy:#16303f; --navy-ink:#fbf7ee;
+  --accent:#e04b66; --accent-ink:#ffffff; --sun:#f3ee8a; --petrol-soft:#2c5668; --sun-ink:#16303f; --navy:#16303f; --navy-ink:#fbf7ee;
   --todo:#7b3fc4;
   --font:"Carlito","Calibri","Segoe UI",system-ui,sans-serif;
   --cond:"Barlow Condensed","Arial Narrow","Carlito",sans-serif;
@@ -19,11 +19,11 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --paper:#0f2129; --panel:#16303f; --ink:#f6f0e2; --grey:#b9c3c7; --line:#f6f0e2;
-  --accent:#ff7189; --accent-ink:#0f2129; --sun:#e9e37c; --sun-soft:#f5f2bf; --sun-ink:#0f2129; --navy:#0a171d; --navy-ink:#f6f0e2;
+  --accent:#ff7189; --accent-ink:#0f2129; --sun:#e9e37c; --petrol-soft:#2a5263; --sun-ink:#0f2129; --navy:#0a171d; --navy-ink:#f6f0e2;
   --todo:#c9a2ff; --logo-filter:invert(1); color-scheme:dark}}
 :root[data-theme="dark"]{
   --paper:#0f2129; --panel:#16303f; --ink:#f6f0e2; --grey:#b9c3c7; --line:#f6f0e2;
-  --accent:#ff7189; --accent-ink:#0f2129; --sun:#e9e37c; --sun-soft:#f5f2bf; --sun-ink:#0f2129; --navy:#0a171d; --navy-ink:#f6f0e2;
+  --accent:#ff7189; --accent-ink:#0f2129; --sun:#e9e37c; --petrol-soft:#2a5263; --sun-ink:#0f2129; --navy:#0a171d; --navy-ink:#f6f0e2;
   --todo:#c9a2ff; --logo-filter:invert(1); color-scheme:dark}
 
 *{box-sizing:border-box}
@@ -152,7 +152,7 @@ main section[data-page]{padding-block:0 96px}
 @media (max-width:760px){.two,.three{grid-template-columns:1fr}}
 .card{background:var(--panel);padding:28px;display:grid;gap:14px;align-content:start}
 .card.navy{background:var(--navy);color:var(--navy-ink)}
-.card.sun{background:var(--sun-soft);color:var(--sun-ink)}
+.card.sun{background:var(--petrol-soft);color:#fbf7ee}
 
 dl.facts{display:grid;grid-template-columns:auto 1fr;gap:10px 24px;margin:0}
 dl.facts dt{color:var(--grey)}
