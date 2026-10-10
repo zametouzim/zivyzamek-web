@@ -68,13 +68,15 @@ nav.main a.give{background:var(--accent);color:var(--accent-ink);border:0;margin
 
 /* stav sezóny */
 .season{background:var(--sun);color:var(--sun-ink);height:10px}
+section[data-page="domu"]{background:linear-gradient(var(--sun) 0 140px,transparent 140px)}
+.ink-v,.ink-h{z-index:0}
 .season .wrap{display:flex;gap:8px 20px;flex-wrap:wrap;align-items:baseline;padding-block:10px;font-size:16px}
 .season b{font-family:var(--cond);font-weight:600;font-size:18px;letter-spacing:.06em;text-transform:uppercase}
 .season .tag-l{opacity:.85}
 @media (max-width:620px){.season .tag-l{font-size:14px}}
-.hero-copy .open{font-size:16px;opacity:1;border-top:1px solid color-mix(in srgb,var(--navy-ink) 25%,transparent);padding-top:16px;line-height:1.5}
-.hero-copy .open b{font-family:var(--cond);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--sun);margin-right:4px}
-.hero-copy .open a{color:inherit;font-weight:700;white-space:nowrap}
+.open{font-size:17px;background:var(--panel);border-left:4px solid var(--sun);padding:14px 18px;margin-top:22px;line-height:1.5}
+.open b{font-family:var(--cond);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-right:4px}
+.open a{color:inherit;font-weight:700;white-space:nowrap}
 
 main section[data-page]{padding-block:0 96px}
 [id^="g-"]{scroll-margin-top:90px}
@@ -316,7 +318,6 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
           <a class="btn fill" href="#program">Co se chystá</a>
           <a class="btn" href="#podporte">Jak pomoct</a>
         </div>
-        <p class="open"><b id="seasonLab">Mimo sezónu</b> <span id="seasonTxt">Prohlídky po domluvě na <span style="white-space:nowrap">+420 724 859 799</span>. Otevřené víkendy opět od července.</span> <a href="#navsteva">Otevírací doba →</a></p>
       </div>
       <figure class="hero-photo">
         <img src="img/nadvori.jpg" alt="Nádvoří zámku Toužim s krytým pódiem, které postavili dobrovolníci">
@@ -331,6 +332,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
       <div class="body">
         <div class="upcards" id="homeUp"></div>
         <p class="more"><a href="#program">Celý program 2026 →</a><a href="#archiv">Proběhlé akce →</a></p>
+        <p class="open"><b id="seasonLab">Mimo sezónu</b> <span id="seasonTxt">Prohlídky po domluvě na <span style="white-space:nowrap">+420 724 859 799</span>. Otevřené víkendy opět od července.</span> <a href="#navsteva">Otevírací doba →</a></p>
       </div>
     </div>
 
