@@ -67,7 +67,7 @@ nav.main a.give{background:var(--accent);color:var(--accent-ink);border:0;margin
 .give-mobile+.menu-btn{margin-left:0}
 
 /* stav sezóny */
-.season{background:var(--sun);color:var(--sun-ink)}
+.season{background:var(--sun);color:var(--sun-ink);height:10px}
 .season .wrap{display:flex;gap:8px 20px;flex-wrap:wrap;align-items:baseline;padding-block:10px;font-size:16px}
 .season b{font-family:var(--cond);font-weight:600;font-size:18px;letter-spacing:.06em;text-transform:uppercase}
 .season .tag-l{opacity:.85}
@@ -86,6 +86,7 @@ main section[data-page]{padding-block:0 96px}
 .hero-copy{background:var(--navy);color:var(--navy-ink);padding:40px;display:grid;gap:22px;align-content:end;position:relative}
 .hero-copy .eyebrow{color:var(--sun)}
 .hero-copy h1{font-size:clamp(42px,5.6vw,76px);letter-spacing:-.02em}
+.hero-copy .sub{font-size:clamp(22px,2.4vw,30px);font-weight:700;color:var(--sun);opacity:1;line-height:1.2;margin-top:-8px}
 .hero-copy p{font-size:20px;opacity:.9}
 .hero-photo{margin:0;position:relative;min-width:0}
 .hero-photo img{display:block;width:100%;height:100%;min-height:360px;object-fit:cover}
@@ -298,7 +299,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     </nav>
   </div>
 </header>
-<div class="season"><div class="wrap"><b>Živý zámek Toužim z. s.</b><span class="tag-l">spolek dobrovolníků, který od roku 2015 oživuje toužimský zámek</span></div></div>
+<div class="season" aria-hidden="true"></div>
 
 <main>
 <!-- ÚVOD -->
@@ -307,8 +308,9 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     <div class="hero-grid">
       <span class="ink-v"></span><span class="ink-h"></span>
       <div class="hero-copy">
-        <span class="eyebrow">Toužim · od roku 2015</span>
-        <h1>Zámek, který oživují dobrovolníci</h1>
+        <span class="eyebrow">Spolek · Toužim · od roku 2015</span>
+        <h1>Živý zámek Toužim</h1>
+        <p class="sub">Zámek, který oživují dobrovolníci</p>
         <p>Deset let čistíme, opravujeme a otevíráme toužimský zámek. Přijďte na koncert, na prohlídku Janova hradu, nebo s námi na brigádu.</p>
         <div class="ctas">
           <a class="btn fill" href="#program">Co se chystá</a>
