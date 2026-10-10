@@ -204,6 +204,37 @@ footer img{width:160px;filter:invert(1)}
 footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--sun)}
 @media (max-width:760px){footer .cols{grid-template-columns:1fr 1fr}}
 [id]{scroll-margin-top:100px}
+.years{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.years button{font-family:var(--cond);font-weight:600;font-size:18px;letter-spacing:.04em;background:none;color:inherit;border:1px solid color-mix(in srgb,var(--line) 40%,transparent);padding:6px 14px;cursor:pointer}
+.years button[aria-selected="true"]{background:var(--navy);color:var(--navy-ink);border-color:var(--navy)}
+.arch .ev{grid-template-columns:110px 1fr 96px;align-items:center;padding:12px 0}
+.arch a.evl{display:contents;color:inherit;text-decoration:none}
+.arch .ev:hover h3{text-decoration:underline;text-decoration-color:var(--accent)}
+.arch .ev .d{font-size:24px}
+.arch .th{width:96px;height:72px;object-fit:cover;display:block;background:var(--panel)}
+.arch .meta{color:var(--grey);font-size:15px;margin-top:2px}
+@media (max-width:620px){.arch .ev{grid-template-columns:1fr 80px;gap:4px 12px}.arch .ev .d{grid-column:1}.arch .ev>div:nth-child(2){grid-column:1}.arch .th{grid-column:2;grid-row:1/span 2;width:80px;height:60px}}
+.ak-back{display:inline-block;margin:28px 0 10px;font-weight:700;color:inherit}
+.ak-head h2{font-size:clamp(32px,4.5vw,52px)}
+.ak-date{font-family:var(--cond);font-weight:600;font-size:22px;color:var(--accent);letter-spacing:.04em}
+.ak-body{display:grid;grid-template-columns:1fr 300px;gap:32px;margin-top:20px;align-items:start}
+.ak-body .poster img{width:100%;display:block;box-shadow:0 2px 12px rgba(0,0,0,.15)}
+.ak-text p{font-size:19px;margin-bottom:12px}
+.ak-gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin:28px 0 40px}
+.ak-gal button{padding:0;border:0;background:none;cursor:zoom-in}
+.ak-gal img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+@media (max-width:760px){.ak-body{grid-template-columns:1fr}}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.9);display:flex;align-items:center;justify-content:center;z-index:100;padding:16px}
+.lb[hidden]{display:none}
+.lb img{max-width:100%;max-height:100%;object-fit:contain}
+.lb button{position:absolute;background:rgba(255,255,255,.15);color:#fff;border:0;font-size:28px;width:48px;height:48px;cursor:pointer}
+.lb .x{top:12px;right:12px}.lb .pv{left:12px;top:50%}.lb .nx{right:12px;top:50%}
+.hero-photo{overflow:hidden}
+.hero-photo img{transition:opacity 1.2s ease}
+.hero-photo img.slide{position:absolute;inset:0;opacity:0}
+.hero-photo img.slide.on{opacity:1}
+.hero-photo img.slide:first-of-type{position:relative}
+@media (prefers-reduced-motion:reduce){.hero-photo img{transition:none}}
 </style>
 </head>
 <body>
@@ -316,25 +347,18 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     </ul>
 
     <div class="block" id="archiv">
-      <div class="lab"><span class="eyebrow">Proběhlo</span><h2>Letos už jsme stihli</h2></div>
+      <div class="lab"><span class="eyebrow">Proběhlo</span><h2>Archiv akcí</h2><p style="color:var(--grey)">Klikněte na akci pro popis, plakát a fotky.</p></div>
       <div class="body">
-        <ul class="events" id="archList">
-          <li class="ev past"><div class="d">12. 9.</div><div><h3>Punkovice, 9. ročník</h3></div></li>
-          <li class="ev past"><div class="d">5. 9.</div><div><h3>Divadlo na zámku a Dívčí válka</h3></div></li>
-          <li class="ev past"><div class="d">29. 8.</div><div><h3>Rapcastle</h3></div></li>
-          <li class="ev past"><div class="d">22. 8.</div><div><h3>Hradozámecká noc</h3></div></li>
-          <li class="ev past"><div class="d">8. 8.</div><div><h3>Pelmel muziky</h3></div></li>
-          <li class="ev past"><div class="d">25. 7.</div><div><h3>Zámecký jarmark</h3></div></li>
-          <li class="ev past"><div class="d">27. 6.</div><div><h3>Historický den, 557 let města</h3></div></li>
-          <li class="ev past"><div class="d">20. 6.</div><div><h3>Rockový festival, 10. ročník</h3></div></li>
-          <li class="ev past"><div class="d">30. 5.</div><div><h3>Dětský den</h3></div></li>
-          <li class="ev past"><div class="d">16. 5.</div><div><h3>Zámecké CITO, jarní</h3></div></li>
-          <li class="ev past"><div class="d">30. 4.</div><div><h3>Pálení čarodějnic</h3></div></li>
-        </ul>
-        <p style="color:var(--grey)">Starší roky: 2025 · 2024 · 2023 · … · 2015. U každé akce krátký popis a pár fotek.</p>
+        <div class="years" id="archYears" role="tablist" aria-label="Rok"></div>
+        <ul class="events arch" id="archList"></ul>
       </div>
     </div>
   </div>
+</section>
+
+<!-- DETAIL AKCE -->
+<section data-page="akce" hidden>
+  <div class="wrap" id="akceDetail"></div>
 </section>
 
 <!-- NAVŠTĚVA -->
@@ -578,38 +602,88 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   </div>
 </footer>
 
+<div class="lb" id="lb" hidden><img alt=""><button class="x" aria-label="Zavřít">×</button><button class="pv" aria-label="Předchozí">‹</button><button class="nx" aria-label="Další">›</button></div>
+<script src="data/akce.js"></script>
 <script>
 (function(){
+  var AKCE=(window.AKCE||[]).slice().sort(function(a,b){return a.date<b.date?1:-1});
   var pages=[].slice.call(document.querySelectorAll('section[data-page]'));
   var links=[].slice.call(document.querySelectorAll('nav.main a'));
   var nav=document.getElementById('mainNav'), btn=document.getElementById('menuBtn');
+  var now=new Date(), today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+  function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function d(iso){var p=iso.split('-');return (+p[2])+'. '+(+p[1])+'.'}
+  function dFull(a){var s=a.date.split('-'),t=+s[2]+'. '+(+s[1])+'. '+s[0];if(a.end){var e=a.end.split('-');t=+s[2]+'.–'+(+e[2])+'. '+(+e[1])+'. '+e[0];}return t}
+  function past(a){return new Date((a.end||a.date)+'T23:59:59')<today}
+
+  // detail akce
+  var detail=document.getElementById('akceDetail'), lb=document.getElementById('lb'), lbImgs=[], lbI=0;
+  function renderDetail(id){
+    var a=AKCE.filter(function(x){return x.id===id})[0];
+    if(!a){detail.innerHTML='<a class="ak-back" href="#archiv">← Archiv akcí</a><p>Akce nenalezena.</p>';return}
+    var h='<a class="ak-back" href="#archiv">← Archiv akcí</a><div class="ak-head"><div class="ak-date">'+dFull(a)+'</div><h2>'+esc(a.title)+(a.titleTodo?' <span class="todo" style="font-size:18px">název?</span>':'')+'</h2></div>';
+    h+='<div class="ak-body"><div class="ak-text">'+(a.text?a.text.split('\n').map(function(p){return '<p>'+esc(p)+'</p>'}).join(''):'<p><span class="todo">krátký popis akce</span></p>')+'</div>';
+    h+=a.poster?'<a class="poster" href="'+a.poster+'" target="_blank" rel="noopener"><img src="'+a.poster+'" alt="Plakát: '+esc(a.title)+'"></a>':'<div></div>';
+    h+='</div>';
+    if(a.photos&&a.photos.length){h+='<div class="ak-gal">'+a.photos.map(function(f,i){return '<button data-i="'+i+'"><img src="'+f+'" alt="Fotka z akce '+esc(a.title)+'" loading="lazy"></button>'}).join('')+'</div>';}
+    else h+='<p style="color:var(--grey);margin:24px 0 40px">Fotky doplníme.</p>';
+    detail.innerHTML=h; lbImgs=a.photos||[];
+  }
+  function lbShow(i){lbI=(i+lbImgs.length)%lbImgs.length;lb.querySelector('img').src=lbImgs[lbI];lb.hidden=false}
+  detail.addEventListener('click',function(e){var b=e.target.closest('button[data-i]');if(b)lbShow(+b.dataset.i)});
+  lb.addEventListener('click',function(e){if(e.target.classList.contains('pv'))lbShow(lbI-1);else if(e.target.classList.contains('nx'))lbShow(lbI+1);else lb.hidden=true});
+  document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowLeft')lbShow(lbI-1);if(e.key==='ArrowRight')lbShow(lbI+1)});
+
   function show(){
-    var id=(location.hash||'#domu').slice(1);
-    var jump=null; if(id==='archiv'){id='program';jump='archiv';}
+    var id=(location.hash||'#domu').slice(1), jump=null;
+    if(id==='archiv'){id='program';jump='archiv';}
+    if(id.indexOf('akce/')===0){renderDetail(id.slice(5));id='akce';}
     if(!pages.some(function(p){return p.dataset.page===id})) id='domu';
     pages.forEach(function(p){p.hidden=p.dataset.page!==id});
-    links.forEach(function(a){ if(a.getAttribute('href')==='#'+id) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
-    nav.classList.remove('open'); btn.setAttribute('aria-expanded','false');
+    var navId=id==='akce'?'program':id;
+    links.forEach(function(a){ if(a.getAttribute('href')==='#'+navId) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
+    nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); lb.hidden=true;
     window.scrollTo(0,0);
     if(jump){var t=document.getElementById(jump);if(t)setTimeout(function(){t.scrollIntoView({block:'start'})},0);}
   }
+
+  // archiv: roky a seznam
+  var yearsEl=document.getElementById('archYears'), list=document.getElementById('archList');
+  var done=AKCE.filter(past), years=[];
+  done.forEach(function(a){var y=a.date.slice(0,4);if(years.indexOf(y)<0)years.push(y)});
+  function renderYear(y){
+    [].forEach.call(yearsEl.children,function(b){b.setAttribute('aria-selected',b.dataset.y===y?'true':'false')});
+    list.innerHTML=done.filter(function(a){return a.date.slice(0,4)===y}).map(function(a){
+      var th=a.photos&&a.photos[0]?a.photos[0].replace('img/akce/','img/akce/t/'):a.poster;
+      return '<li class="ev past"><a class="evl" href="#akce/'+a.id+'"><div class="d">'+d(a.date)+'</div><div><h3>'+esc(a.title)+'</h3><div class="meta">'+[a.poster?'plakát':'',a.photos&&a.photos.length?a.photos.length+' fotek':''].filter(Boolean).join(' · ')+'</div></div>'+(th?'<img class="th" src="'+th+'" alt="" loading="lazy">':'<span></span>')+'</a></li>';
+    }).join('');
+  }
+  yearsEl.innerHTML=years.map(function(y){return '<button role="tab" data-y="'+y+'">'+y+'</button>'}).join('');
+  yearsEl.addEventListener('click',function(e){var b=e.target.closest('button');if(b)renderYear(b.dataset.y)});
+  if(years.length)renderYear(years[0]);
+
   window.addEventListener('hashchange',show); show();
   btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false')});
   document.addEventListener('click',function(e){var a=e.target.closest('[data-jump]');if(!a)return;e.preventDefault();var t=document.getElementById(a.dataset.jump);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});});
 
   // sezónní pruh: červenec–září otevřené víkendy, jinak po domluvě
-  var now=new Date(), m=now.getMonth()+1;
+  var m=now.getMonth()+1;
   if(m>=7&&m<=9){document.getElementById('seasonLab').textContent='Otevřeno';document.getElementById('seasonTxt').textContent='So–ne 10–12 a 13–17 h, komentované prohlídky v 11, 14 a 16 h.';}
   else if(m<7){document.getElementById('seasonTxt').textContent='Prohlídky po domluvě na +420 724 859 799. Otevřené víkendy od července.';}
-  // proběhlé akce se samy přesunou do archivu
-  var today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
-  var arch=document.getElementById('archList');
-  [].slice.call(document.querySelectorAll('li.ev[data-end]')).forEach(function(li){
-    var e=new Date(li.dataset.end+'T23:59:59'); if(e>=today) return;
-    if(arch && li.closest('section[data-page="program"]')){var c=document.createElement('li');c.className='ev past';c.innerHTML='<div class="d">'+li.querySelector('.d').firstChild.textContent+'</div><div><h3>'+li.querySelector('h3').textContent+'</h3></div>';arch.insertBefore(c,arch.firstChild);}
-    li.remove();
-  });
+  // proběhlé akce zmizí z programu (v archivu jsou z data/akce.js)
+  [].slice.call(document.querySelectorAll('li.ev[data-end]')).forEach(function(li){if(new Date(li.dataset.end+'T23:59:59')<today)li.remove();});
   [].slice.call(document.querySelectorAll('ul.events:not(#archList)')).forEach(function(u){if(!u.children.length)u.innerHTML='<li class="ev"><div><p>Program na další sezónu připravujeme. Sledujte náš Facebook.</p></div></li>';});
+
+  // rotace fotek na úvodu
+  var hp=document.querySelector('.hero-photo'), HERO=window.HERO||[];
+  if(hp&&HERO.length>1){
+    var cap=hp.querySelector('figcaption'), first=hp.querySelector('img'), imgs=[first], k=0;
+    HERO.slice(1).forEach(function(h){var i=new Image();i.src=h.src;i.alt=h.alt;i.className='slide';i.loading='lazy';hp.insertBefore(i,cap);imgs.push(i)});
+    first.classList.add('slide','on'); hp.style.position='relative';
+    var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(!reduce)setInterval(function(){imgs[k].classList.remove('on');k=(k+1)%imgs.length;imgs[k].classList.add('on');cap.textContent=HERO[k].cap},6000);
+  }
+
   var cb=document.getElementById('copyBtn');
   cb.addEventListener('click',function(){
     var el=document.getElementById('acct'), t=el.textContent;
