@@ -623,7 +623,8 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     <div><h4>Kontakt</h4><p>Pavla Vokurková, předsedkyně<br>+420 724 859 799<br>Alena Šlajerová, místopředsedkyně<br>+420 728 290 280<br>zivyzamektouzim@email.cz</p></div>
     <div><h4>Spolek</h4><p>Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Účet 2301034510/2010<br><a href="https://www.facebook.com/%C5%BDiv%C3%BD-z%C3%A1mek-Tou%C5%BEim-1674033056143744/" target="_blank" rel="noopener">Facebook</a></p></div>
   </div>
-  </footer>
+  <div class="wrap" style="margin-top:28px;font-size:14px;opacity:.7">© <span id="cy">2026</span> Živý zámek Toužim z. s. · Web vytvořil Michal Nedvídek s pomocí Claude (AI od Anthropicu)</div>
+</footer>
 
 <div class="lb" id="lb" hidden><img alt=""><button class="x" aria-label="Zavřít">×</button><button class="pv" aria-label="Předchozí">‹</button><button class="nx" aria-label="Další">›</button></div>
 <script src="data/akce.js"></script>
@@ -705,6 +706,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false')});
   document.addEventListener('click',function(e){var a=e.target.closest('[data-jump]');if(!a)return;e.preventDefault();var t=document.getElementById(a.dataset.jump);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});});
 
+  document.getElementById('cy').textContent=now.getFullYear();
   // sezónní pruh: červenec–září otevřené víkendy, jinak po domluvě
   var m=now.getMonth()+1;
   if(m>=7&&m<=9){document.getElementById('seasonLab').textContent='Otevřeno';document.getElementById('seasonTxt').textContent='So–ne 10–12 a 13–17 h, komentované prohlídky v 11, 14 a 16 h.';}
