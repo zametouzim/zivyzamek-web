@@ -68,7 +68,6 @@ nav.main a.give{background:var(--accent);color:var(--accent-ink);border:0;margin
 
 /* stav sezóny */
 .season{background:var(--sun);color:var(--sun-ink);height:10px}
-section[data-page="domu"]{background:linear-gradient(var(--sun) 0 140px,transparent 140px)}
 .ink-v,.ink-h{z-index:0}
 .season .wrap{display:flex;gap:8px 20px;flex-wrap:wrap;align-items:baseline;padding-block:10px;font-size:16px}
 .season b{font-family:var(--cond);font-weight:600;font-size:18px;letter-spacing:.06em;text-transform:uppercase}
@@ -155,7 +154,10 @@ dl.facts dd{margin:0}
 @media (max-width:480px){dl.facts{grid-template-columns:1fr;gap:2px}dl.facts dd{margin-bottom:10px}}
 
 .hours{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.hours div{display:grid;gap:2px}
+.hours>div{display:flex;flex-direction:column;gap:2px}
+.hours .hk{font-weight:700;color:var(--sun);margin-bottom:4px}
+.hours .pr{margin-bottom:0}.hours>div>span:nth-last-child(2){margin-bottom:12px}
+.hours .pr{margin-top:auto;font-weight:700;font-size:18px;border-top:1px solid color-mix(in srgb,currentColor 25%,transparent);padding-top:8px}
 .hours b{font-family:var(--cond);font-weight:600;font-size:30px;line-height:1.05;font-variant-numeric:tabular-nums}
 
 .timeline{list-style:none;margin:0;padding:0 0 0 28px;position:relative;display:grid;gap:22px}
@@ -301,7 +303,6 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     </nav>
   </div>
 </header>
-<div class="season" aria-hidden="true"></div>
 
 <main>
 <!-- ÚVOD -->
@@ -403,12 +404,10 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
         <span class="eyebrow" style="color:var(--sun)">Červenec až září</span>
         <h3>Otevřené víkendy</h3>
         <div class="hours">
-          <div><b>10–12 h</b><span>a</span><b>13–17 h</b><span>sobota a neděle</span></div>
-          <div><b>11 · 14 · 16 h</b><span>komentované prohlídky</span></div>
+          <div><span class="hk">Vstup do areálu</span><b>10–12 h</b><span>a</span><b>13–17 h</b><span>sobota a neděle</span><span class="pr">Vstupné dobrovolné</span></div>
+          <div><span class="hk">Komentovaná prohlídka</span><b>11 · 14 · 16 h</b><span>s průvodcem</span><span class="pr">50 Kč za osobu</span></div>
         </div>
         <dl class="facts">
-          <dt>Vstupné</dt><dd>dobrovolné</dd>
-          <dt>Prohlídka</dt><dd>50 Kč za osobu</dd>
           <dt>Mimo sezónu</dt><dd>po domluvě: Pavla +420 724 859 799, Alena +420 728 290 280</dd>
         </dl>
       </div>
