@@ -203,6 +203,12 @@ dl.facts dd{margin:0}
 .ev-poster>div{min-width:0}
 .ev-poster img{width:150px;display:block;box-shadow:0 2px 10px rgba(0,0,0,.15)}
 @media (max-width:620px){.ev-poster{grid-template-columns:1fr}.ev-poster img{width:60%}}
+.pband{background:#fff;border-top:1px solid var(--line);padding-block:28px 32px}
+.pband h4{margin:0 0 16px;font-family:var(--cond);font-weight:600;font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.pfoot{grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px}
+.pfoot>*{height:72px;padding:10px;background:none;font-size:15px}
+.pfoot img{max-height:52px}
+@media (max-width:620px){.pfoot{grid-template-columns:repeat(3,1fr)}.pfoot>*{height:60px;padding:6px;font-size:13px}.pfoot img{max-height:44px}}
 footer{background:var(--navy);color:var(--navy-ink);padding-block:48px 64px}
 footer .cols{display:grid;grid-template-columns:200px 1fr 1fr 1fr;gap:32px;font-size:16px}
 footer .cols>*{min-width:0}
@@ -550,24 +556,6 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
         <figure class="p-c3"><div class="r"><img src="img/h-2025-country.jpg" alt="Tanečnice v kovbojských kloboucích pod pódiem" loading="lazy"></div><figcaption>Country tance pod pódiem, srpen 2025</figcaption></figure>
       </div></div>
     </div>
-    <div class="block">
-      <div class="lab"><span class="eyebrow">Děkujeme</span><h2>Partneři</h2></div>
-      <div class="body">
-        <div class="partners">
-          <a href="https://www.touzim.cz/" target="_blank" rel="noopener" title="Město Toužim"><img src="img/partneri/touzim.png" alt="Město Toužim" loading="lazy"></a>
-          <a href="https://www.kr-karlovarsky.cz/" target="_blank" rel="noopener" title="Karlovarský kraj"><img src="img/partneri/karlovarsky-kraj.png" alt="Karlovarský kraj" loading="lazy"></a>
-          <a href="https://www.nadacevia.cz/" target="_blank" rel="noopener" title="Nadace VIA"><img src="img/partneri/nadace-via.png" alt="Nadace VIA" loading="lazy"></a>
-          <a href="https://www.nadacecez.cz/" target="_blank" rel="noopener" title="Nadace ČEZ"><img src="img/partneri/nadace-cez.png" alt="Nadace ČEZ" loading="lazy"></a>
-          <a href="https://www.krajzivychvod.cz/" target="_blank" rel="noopener" title="MAS Kraj živých vod"><img src="img/partneri/mas-kraj-zivych-vod.png" alt="MAS Kraj živých vod" loading="lazy"></a>
-          <a href="https://www.facebook.com/restaurace.sokolovna.touzim/" target="_blank" rel="noopener" title="Hospůdka U Havlů, Sokolovna Toužim"><img src="img/partneri/u-havlu.png" alt="Hospůdka U Havlů, Sokolovna Toužim" loading="lazy"></a>
-          <a href="https://www.postreli.cz/" target="_blank" rel="noopener" title="Postřelí.cz"><img src="img/partneri/postreli.png" alt="Postřelí.cz" loading="lazy"></a>
-          <a class="txt" href="http://www.dilnaumnicha.cz/" target="_blank" rel="noopener">Dílna U mnicha</a>
-          <a class="txt" href="https://www.kudyznudy.cz/" target="_blank" rel="noopener">Kudyznudy.cz</a>
-          <a class="txt" href="https://givt.cz/" target="_blank" rel="noopener">Givt.cz</a>
-          <span class="txt" title="Grafika a plakáty spolku" style="flex-direction:column">Gabriela Pilná<small style="font-weight:400;font-size:14px">grafika a plakáty</small></span>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -613,6 +601,21 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 </section>
 </main>
 
+<div class="pband"><div class="wrap"><h4>Podporují nás</h4>
+        <div class="partners pfoot">
+          <a href="https://www.touzim.cz/" target="_blank" rel="noopener" title="Město Toužim"><img src="img/partneri/touzim.png" alt="Město Toužim" loading="lazy"></a>
+          <a href="https://www.kr-karlovarsky.cz/" target="_blank" rel="noopener" title="Karlovarský kraj"><img src="img/partneri/karlovarsky-kraj.png" alt="Karlovarský kraj" loading="lazy"></a>
+          <a href="https://www.nadacevia.cz/" target="_blank" rel="noopener" title="Nadace VIA"><img src="img/partneri/nadace-via.png" alt="Nadace VIA" loading="lazy"></a>
+          <a href="https://www.nadacecez.cz/" target="_blank" rel="noopener" title="Nadace ČEZ"><img src="img/partneri/nadace-cez.png" alt="Nadace ČEZ" loading="lazy"></a>
+          <a href="https://www.krajzivychvod.cz/" target="_blank" rel="noopener" title="MAS Kraj živých vod"><img src="img/partneri/mas-kraj-zivych-vod.png" alt="MAS Kraj živých vod" loading="lazy"></a>
+          <a href="https://www.facebook.com/restaurace.sokolovna.touzim/" target="_blank" rel="noopener" title="Hospůdka U Havlů, Sokolovna Toužim"><img src="img/partneri/u-havlu.png" alt="Hospůdka U Havlů, Sokolovna Toužim" loading="lazy"></a>
+          <a href="https://www.postreli.cz/" target="_blank" rel="noopener" title="Postřelí.cz"><img src="img/partneri/postreli.png" alt="Postřelí.cz" loading="lazy"></a>
+          <a class="txt" href="http://www.dilnaumnicha.cz/" target="_blank" rel="noopener">Dílna U mnicha</a>
+          <a class="txt" href="https://www.kudyznudy.cz/" target="_blank" rel="noopener">Kudyznudy.cz</a>
+          <a class="txt" href="https://givt.cz/" target="_blank" rel="noopener">Givt.cz</a>
+          <span class="txt" title="Grafika a plakáty spolku" style="flex-direction:column">Gabriela Pilná<small style="font-weight:400;font-size:14px">grafika a plakáty</small></span>
+        </div>
+</div></div>
 <footer>
   <div class="wrap cols">
     <div><img src="img/logo.png" alt="Živý zámek Toužim"></div>
@@ -620,8 +623,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     <div><h4>Kontakt</h4><p>Pavla Vokurková, předsedkyně<br>+420 724 859 799<br>Alena Šlajerová, místopředsedkyně<br>+420 728 290 280<br>zivyzamektouzim@email.cz</p></div>
     <div><h4>Spolek</h4><p>Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Účet 2301034510/2010<br><a href="https://www.facebook.com/%C5%BDiv%C3%BD-z%C3%A1mek-Tou%C5%BEim-1674033056143744/" target="_blank" rel="noopener">Facebook</a></p></div>
   </div>
-  <div class="wrap" style="margin-top:20px;font-size:14px;opacity:.75">Grafika a plakáty: Gabriela Pilná</div>
-</footer>
+  </footer>
 
 <div class="lb" id="lb" hidden><img alt=""><button class="x" aria-label="Zavřít">×</button><button class="pv" aria-label="Předchozí">‹</button><button class="nx" aria-label="Další">›</button></div>
 <script src="data/akce.js"></script>
