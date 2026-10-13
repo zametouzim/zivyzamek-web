@@ -268,9 +268,10 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 .ak-body{display:grid;grid-template-columns:1fr 300px;gap:32px;margin-top:20px;align-items:start}
 .ak-body .poster img{width:100%;display:block;box-shadow:0 2px 12px rgba(0,0,0,.15)}
 .ak-text p{font-size:19px;margin-bottom:12px}
-.ak-gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin:28px 0 40px}
-.ak-gal button{padding:0;border:0;background:none;cursor:zoom-in}
-.ak-gal img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.ak-gal{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 40px}
+.ak-gal button{padding:0;border:0;background:none;cursor:zoom-in;max-width:100%}
+.ak-gal img{height:220px;width:auto;max-width:100%;object-fit:contain;display:block}
+@media(max-width:600px){.ak-gal img{height:150px}}
 @media (max-width:760px){.ak-body{grid-template-columns:1fr}}
 .lb{position:fixed;inset:0;background:rgba(0,0,0,.9);display:flex;align-items:center;justify-content:center;z-index:100;padding:16px}
 .lb[hidden]{display:none}
