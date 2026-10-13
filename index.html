@@ -161,6 +161,13 @@ dl.facts dd{margin:0}
 @media (max-width:480px){dl.facts{grid-template-columns:1fr;gap:2px}dl.facts dd{margin-bottom:10px}}
 
 
+.zfig{margin:0 0 20px;background:#fff;padding:12px;border-radius:6px}
+.zfig img{display:block;width:100%;height:auto}
+.zlegend{columns:3 240px;column-gap:28px;margin:0 0 40px;padding-left:28px;font-size:15px;line-height:1.5}
+.zdesc{gap:28px 40px}.zdesc h3{margin:0 0 6px}.zdesc p{margin:0}
+.zown{grid-template-columns:170px 1fr;max-width:640px}
+.zlegenda p{margin:0;max-width:72ch}
+.zsrc{font-size:14px;color:var(--grey);margin-top:24px}
 .timeline{list-style:none;margin:0;padding:0 0 0 28px;position:relative;display:grid;gap:22px}
 .timeline::before{content:"";position:absolute;left:6px;top:8px;bottom:-30px;width:1px;background:var(--line)}
 .timeline li{position:relative;display:grid;grid-template-columns:140px 1fr;gap:16px}
@@ -427,6 +434,10 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
         </div>
       </div>
     </div>
+    <div class="two" style="margin-top:32px;align-items:start">
+      <figure class="zfig" style="margin:0"><img src="img/zamek/mapka-arealu-2022.jpg" alt="Mapka zámeckého areálu: přístupné venkovní a vnitřní prostory a nepřístupné části" loading="lazy"></figure>
+      <div class="card"><h3>Mapka areálu</h3><p>Zeleně je přístupné nádvoří a parkán, modře zpřístupněné vnitřní prostory Horního zámku: hodovní, audienční a rytířský sál, komnata, sklep, pokladnice, archiv a další. Červeně jsou části, kam se zatím nesmí, včetně Dolního zámku a bašty. Pokladna je hned u vstupu.</p></div>
+    </div>
     <div class="photos" style="margin-top:32px">
       <figure class="p-a"><div class="r"><img src="img/arkady.jpg" alt="Arkády Horního zámku"></div><figcaption>Arkády Horního zámku</figcaption></figure>
       <figure class="p-b"><div class="r"><img src="img/podium.jpg" alt="Nádvoří s pódiem a hranicí na pálení čarodějnic"></div><figcaption>Příprava na pálení čarodějnic, duben 2025</figcaption></figure>
@@ -530,19 +541,71 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 <!-- ZÁMEK -->
 <section data-page="zamek" hidden>
   <div class="wrap">
-    <div class="page-head"><span class="eyebrow">Historie</span><h2>Zámek Toužim</h2><p>Z proboštství hrad, z hradu zámek, pak desítky let chátrání. Od roku 2015 se do něj vrací život.</p></div>
+    <div class="page-head"><span class="eyebrow">Historie</span><h2>Zámek Toužim</h2><p>Nejstarší a nejvýznamnější památka Toužimi. Z proboštství hrad, z hradu zámek, pak desítky let chátrání. Od roku 2015 se do něj vrací život.</p></div>
     <ol class="timeline">
-      <li><b>konec 12. stol.</b><span>Premonstrátské proboštství s kostelem sv. Jana Křtitele.</span></li>
+      <li><b>2. pol. 12. stol.</b><span>Krajinu na horním toku Střely dostává od panovníka velmož Jiří z Milevska. Na místě zámku staví dvorec, pojmenovaný asi po prvním správci Túžimovi („vytoužený syn“).</span></li>
+      <li><b>1187</b><span>Jiří zakládá premonstrátský klášter v Milevsku a odkáže mu i Toužimsko. Premonstráti mění dvorec na proboštství s kostelem sv. Jana Křtitele.</span></li>
       <li><b>1354</b><span>První písemná zmínka o Toužimi.</span></li>
-      <li><b>kolem 1437</b><span>Husitský hejtman Jakoubek z Vřesovic přestavuje proboštství na hrad. Odtud jméno Janův hrad.</span></li>
-      <li><b>16.–17. stol.</b><span>Renesanční a barokní přestavby. Vzniká zámecká zahrada s kaplí a letohrádkem.</span></li>
-      <li><b>1620, 1752</b><span>Zámek několikrát vyhořel a byl znovu obnoven.</span></li>
-      <li><b>1945</b><span>Vyhořel pivovar. Zámek přechází na stát a později na město Toužim.</span></li>
-      <li><b>60. léta</b><span>Zahradu zastavělo panelové sídliště.</span></li>
+      <li><b>1394</b><span>Proboštství vyplenili šlechtici bojující proti králi Václavu IV. a zajali probošta Jiřího.</span></li>
+      <li><b>1437</b><span>Král Zikmund dává panství do zástavy husitskému hejtmanovi Jakoubkovi z Vřesovic. S&nbsp;synem Janem přestavují proboštství na gotický hrad, dnešní jádro Horního zámku (Janův hrad).</span></li>
+      <li><b>1469</b><span>Král Jiří z Poděbrad povoluje měšťanům vypleněné Útviny postavit u hradu nové opevněné město. Vzniká Toužim.</span></li>
+      <li><b>kolem 1490</b><span>Panství získávají páni z Plavna. Přistavují pozdně gotický palác a v 1. polovině 16. století hrad renesančně přestavují: vzniká Horní a Dolní zámek, poplužní dvůr a zahrada s kašnou.</span></li>
+      <li><b>1565</b><span>Panství dědí Lobkovicové z Hasištejna.</span></li>
+      <li><b>1620</b><span>Zámek i město vyhořely. O tři roky později kupuje panství vévoda Julius Jindřich Sasko-Lauenburský a přestavuje zámek na raně barokní sídlo s parkem a letohrádkem. Zaniká kostel sv. Jana Křtitele, na jeho místě stojí kaplička sv. Kříže.</span></li>
+      <li><b>1652</b><span>Další požár. Při obnově vzniká nový panský pivovar.</span></li>
+      <li><b>1689</b><span>Panství dědí bádenská markrabata. Zámek už neslouží jako sídlo šlechty, jen hospodářství a správě.</span></li>
+      <li><b>1752</b><span>Zámek znovu vyhořel. Dolní zámek dostává dnešní pozdně barokní podobu.</span></li>
+      <li><b>1789</b><span>Panství připadá panovníkovi. Část chátrajícího zámku je zbořena.</span></li>
+      <li><b>1829</b><span>Horní zámek přichází o celé horní patro s věží a obě křídla. Zaniká i zahrada s letohrádkem.</span></li>
+      <li><b>1837</b><span>Panství kupuje v dražbě vévoda Alfred Beaufort-Spontin. Rod ho drží až do roku 1945.</span></li>
+      <li><b>1945</b><span>Zámek přechází na stát. Využívá ho armáda, státní statek, okresní národní výbor a později město.</span></li>
+      <li><b>1964</b><span>Kvůli panelovému sídlišti jsou zbořeny některé hospodářské budovy.</span></li>
+      <li><b>1989</b><span>Obnova, připravovaná od 70. let, se úplně zastavuje.</span></li>
+      <li><b>1998</b><span>Město zámek prodává soukromé osobě. Zámek chátrá a ničí ho vandalové.</span></li>
+      <li><b>2009</b><span>Město Toužim získává zámek zpět jako ruinu.</span></li>
       <li><b>2015</b><span>První dobrovolnická brigáda na nádvoří.</span></li>
       <li><b>2016</b><span>Vzniká spolek Živý zámek Toužim.</span></li>
       <li><b>2026</b><span>Objev hradební zdi z 15. století.</span></li>
     </ol>
+
+    <div class="page-head" style="margin-top:72px"><span class="eyebrow">Areál zámku</span><h2>Jak zámek vypadal kolem roku 1700</h2><p>Z rozsáhlého panského sídla se dochovalo hlavně jádro: Horní a Dolní zámek, panský pivovar, kašna, kaplička sv. Kříže a část poplužního dvora. Na kresbě jsou žlutě zvýrazněné dochované části.</p></div>
+    <figure class="zfig"><img src="img/zamek/rekonstrukce-1700.jpg" alt="Kresebná rekonstrukce areálu zámku kolem roku 1700 s očíslovanými budovami" loading="lazy"></figure>
+    <ol class="zlegend">
+      <li>Horní zámek (Janův hrad), rezidence</li><li>Dolní zámek, úřední dům</li><li>Dolní městská brána s masnými krámy a zámeckou zbrojnicí</li><li>Jízdárna</li><li>Panská sladovna a pivovar</li><li>Kašna</li><li>Kaplička sv. Kříže</li><li>Dům zahradníka</li><li>Zámecká zahrada</li><li>Zámecký sad</li><li>Letohrádek (lusthaus)</li><li>Vodní nádrž s vodotrysky</li><li>Nádvoří poplužního dvora</li><li>Čeledník s chlévy</li><li>Sýpka</li><li>Stodola</li><li>Stáje</li><li>Holubník</li><li>Vodní nádrž</li><li>Dům hejtmana, správce poplužního dvora</li><li>Tržiště (náměstí) s měšťanskými domy</li>
+    </ol>
+    <div class="two zdesc">
+      <div><h3>Horní zámek</h3><p>Hlavní rezidence. Tvoří ho pozůstatek obytné stavby proboštství, po roce 1437 přestavěné na hrad. Na západě a jihu se dochovaly hradby s válcovou baštou a vstupní brána. Po renesanční přestavbě vznikl honosný zámek, upravovaný i po požárech v letech 1620, 1652 a 1752. Na počátku 19. století přišel o celé patro s věží.</p></div>
+      <div><h3>Dolní zámek</h3><p>Vznikl renesanční přestavbou gotického předhradí a sloužil správě panství. Po požárech v 17. století v něm vznikl malovaný trámový strop, dnešní podoba je z pozdně barokních úprav po roce 1752. Ve sklepení byla cisterna na vodu. Severní křídlo bylo v 19. století zbořeno, zůstala jen jízdárna. Na nádvoří stojí sokl sloupu sv. Jana Nepomuckého z roku 1800.</p></div>
+      <div><h3>Pivovar, kašna a kaplička</h3><p>Panský pivovar stál v zahradě nejpozději od roku 1661, dochoval se jeho sklep. Dnešní budova pivovaru je barokní novostavba z doby po roce 1752. Před ní stojí kamenná kašna ze zámecké zahrady. Kaplička sv. Kříže nahradila proboštský kostel sv. Jana Křtitele.</p></div>
+      <div><h3>Zámecká zahrada</h3><p>Byla založena severně od zámku snad už před rokem 1620 a po roce 1625 výrazně rozšířena. Francouzský park s vodními nádržemi, vodotrysky, sadem, domem zahradníka a renesančním letohrádkem obklopovala kamenná zeď. V 19. století zahrada zanikla, dnes je většina její plochy zastavěná sídlištěm.</p></div>
+      <div><h3>Poplužní dvůr</h3><p>Založen před rokem 1544 severovýchodně od zámku. Kromě hospodářství sloužil i obraně: tříkřídlý komplex u hradební zdi tvořil mohutnou baštu se střílnami. Patřil k němu čeledník, chlévy, sýpka, stodola, stáje, kočárovna, hejtmanství a holubník. Východním křídlem vedla Židovská brána do ghetta na Předměstí.</p></div>
+      <div><h3>Dolní brána, rybník a mlýn</h3><p>Dolní neboli Rybářská brána měla v 17. století v patře zámeckou zbrojnici, zbořena byla v roce 1847. Zámecký rybník v údolí Střely byl součástí opevnění města a zanikl po povodni na konci 19. století. Dochovala se hráz se splavem a kamenným dvouobloukovým můstkem. Zámecký mlýn zanikl po roce 1960.</p></div>
+    </div>
+
+    <div class="page-head" style="margin-top:72px"><span class="eyebrow">Stavební vývoj</span><h2>Od dvorce k ruině</h2></div>
+    <figure class="zfig"><img src="img/zamek/stavebni-vyvoj.jpg" alt="Devět kreseb stavebního vývoje zámku od roku 1200 do roku 1965" loading="lazy"></figure>
+
+    <div class="page-head" style="margin-top:72px"><span class="eyebrow">Majitelé</span><h2>Erby majitelů zámku</h2></div>
+    <figure class="zfig"><img src="img/zamek/erby.jpg" alt="Erby: markrabí Bádenští, vévodové Beaufort-Spontini, vévodové ze Saska-Lauenburska, rytíři z Vřesovic, Lobkovicové z Hasištejna, páni z Plavna" loading="lazy"></figure>
+    <dl class="facts zown">
+      <dt>do 1437</dt><dd>premonstráti z Milevska</dd>
+      <dt>1437–kolem 1490</dt><dd>Vřesovicové (zástava)</dd>
+      <dt>kolem 1490–1565</dt><dd>páni z Plavna, od 1538 dědičně</dd>
+      <dt>1565–1623</dt><dd>Lobkovicové z Hasištejna</dd>
+      <dt>1623–1689</dt><dd>vévodové Sasko-Lauenburští</dd>
+      <dt>1689–1789</dt><dd>bádenská markrabata</dd>
+      <dt>1789–1837</dt><dd>panovník (královská komora)</dd>
+      <dt>1837–1945</dt><dd>Beaufort-Spontinové</dd>
+      <dt>od 1945</dt><dd>stát, později město Toužim (1998–2009 soukromý majitel)</dd>
+    </dl>
+
+    <div class="card navy zlegenda" style="margin-top:72px">
+      <span class="eyebrow" style="color:var(--sun)">Zámecká legenda</span>
+      <h3>Černý mnich</h3>
+      <p>Kdysi dávno, v době přemyslovských králů, spravoval toužimský klášterní statek probošt Dluhoš. Byl velice schopný, ale také velmi chamtivý. Na úkor poddaných i kláštera se obohacoval a nastřádané jmění schovával ve sklepení svého domu. O Dluhošově konání se dozvěděl sám opat. Přijel s bratry kanovníky do Toužimi probošta vyslechnout, ten se bohatství nechtěl vzdát a své činy dál popíral. Za trest Dluhoše oblékli do černého roucha a jako „černou ovci“ řádu jej, i s nakradeným pokladem, zazdili v podzemí proboštství.</p>
+      <p>Z klášterního statku se stal hrad, z hradu zámek. V podzemí napříč staletími bloudí duše „černého mnicha“, jehož vysvobodí až člověk čistých úmyslů, který Dluhošův poklad najde a věnuje potřebným.</p>
+    </div>
+    <p class="zsrc">Texty a kresby podle brožury a turistických cedulí spolku z roku 2021 (grafika Gabriela Pilná, za podpory Karlovarského kraje).</p>
   </div>
 </section>
 
