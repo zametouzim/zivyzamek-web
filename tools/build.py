@@ -130,6 +130,7 @@ def main():
     uvod = load('content/web/uvod.json')
     web = {k: load('content/web/%s.json' % k) for k in ('navsteva', 'suvenyry')}
     web['zahrada'] = load('content/web/zahrada.json')
+    web['cizojazycne'] = load('content/web/cizojazycne.json')
     web['partneri'] = load('content/web/partneri.json').get('partneri', [])
     web['stranky'] = stranky()
     images(items, web)

@@ -179,6 +179,24 @@ window.WEB={
    }
   ]
  },
+ "cizojazycne": {
+  "en": {
+   "sezona": "July to September",
+   "vstup_cas": "Saturday and Sunday 10–12 and 13–17",
+   "vstup_cena": "admission by donation",
+   "prohlidka_cas": "Saturday and Sunday at 11, 14 and 16",
+   "prohlidka_cena": "50 CZK per person",
+   "mimo_sezonu": "by arrangement"
+  },
+  "de": {
+   "sezona": "Juli bis September",
+   "vstup_cas": "Samstag und Sonntag 10–12 und 13–17 Uhr",
+   "vstup_cena": "Eintritt: freiwillige Spende",
+   "prohlidka_cas": "Samstag und Sonntag um 11, 14 und 16 Uhr",
+   "prohlidka_cena": "50 CZK pro Person",
+   "mimo_sezonu": "nach Vereinbarung"
+  }
+ },
  "partneri": [
   {
    "nazev": "Město Toužim",
