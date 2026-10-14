@@ -178,6 +178,14 @@ def demo():
     with open('admin/config.yml', encoding='utf-8') as f:
         cfg = json.loads(''.join(l for l in f if not l.startswith('#')))
     cfg['backend'] = {'name': 'test-repo'}
+    cfg['locale'] = 'cs'
+    # Decap chce řazení jako seznam objektů (Sveltia jako {fields, default})
+    for c in cfg['collections']:
+        sf = c.get('sortable_fields')
+        if isinstance(sf, dict):
+            d = sf.get('default') or {}
+            c['sortable_fields'] = [dict({'field': f}, **({'default_sort': 'desc' if d.get('direction', '').lower() == 'descending' else 'asc'} if f == d.get('field') else {}))
+                                    for f in sf['fields']]
     cfg['load_config_file'] = False
     os.makedirs('admin/demo', exist_ok=True)
     with open('admin/demo/data.js', 'w', encoding='utf-8') as f:

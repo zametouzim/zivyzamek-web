@@ -1,11 +1,10 @@
-# Nastavení administrace (Decap CMS). Formát JSON je platný YAML.
+# Nastavení administrace (Sveltia CMS; ukázka admin/demo běží na Decap CMS, build.py config převádí). Formát JSON je platný YAML.
 {
  "backend": {
   "name": "github",
   "repo": "zametouzim/zivyzamek-web",
   "branch": "main"
  },
- "locale": "cs",
  "site_url": "https://zametouzim.github.io/zivyzamek-web/",
  "display_url": "https://zametouzim.github.io/zivyzamek-web/",
  "logo_url": "https://zametouzim.github.io/zivyzamek-web/img/logo.png",
@@ -24,17 +23,16 @@
    "slug": "{{fields.date}}-{{slug}}",
    "identifier_field": "title",
    "summary": "{{date | date('D. M. YYYY')}}  ·  {{title}}",
-   "sortable_fields": [
-    {
+   "sortable_fields": {
+    "fields": [
+     "date",
+     "title"
+    ],
+    "default": {
      "field": "date",
-     "label": "Datum",
-     "default_sort": "desc"
-    },
-    {
-     "field": "title",
-     "label": "Název"
+     "direction": "descending"
     }
-   ],
+   },
    "view_groups": [
     {
      "label": "Rok",
@@ -473,17 +471,16 @@
    "slug": "{{slug}}",
    "identifier_field": "nazev",
    "summary": "{{nazev}}",
-   "sortable_fields": [
-    {
+   "sortable_fields": {
+    "fields": [
+     "poradi",
+     "nazev"
+    ],
+    "default": {
      "field": "poradi",
-     "label": "Pořadí",
-     "default_sort": "asc"
-    },
-    {
-     "field": "nazev",
-     "label": "Název"
+     "direction": "ascending"
     }
-   ],
+   },
    "description": "Nové stránky s vlastním obsahem. Obsah poskládáte z bloků (nadpis, text, fotka, galerie, tlačítko), vzhled se převezme z webu.",
    "fields": [
     {
