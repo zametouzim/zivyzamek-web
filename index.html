@@ -13,8 +13,8 @@
 /* Barvy ze sezónního plakátu 2026 (tmavě modrá, korálová, žlutá) na teplém podkladu jako omítka zámku; linky z loga jako dělicí prvek; písmo Calibri → Carlito, data úzkým písmem jako na plakátu */
 :root{
   --paper:#fbf7ee; --panel:#f3ead6; --ink:#16303f; --grey:#4e5b62; --line:#16303f;
-  --accent:#e04b66; --accent-ink:#ffffff; --sun:#f3ee8a; --cta-bg:#356a80; --cta-ink:#fbf7ee; --sun-ink:#16303f; --navy:#16303f; --navy-ink:#fbf7ee;
-  --todo:#7b3fc4;
+  --accent:#c22f4d; --accent-ink:#ffffff; --sun:#f3ee8a; --cta-bg:#356a80; --cta-ink:#fbf7ee; --sun-ink:#16303f; --navy:#16303f; --navy-ink:#fbf7ee;
+  --todo:#7b3fc4; --todo-strong:#6a32ad; --todo-ink:#ffffff;
   --font:"Carlito","Calibri","Segoe UI",system-ui,sans-serif;
   --cond:"Barlow Condensed","Arial Narrow","Carlito",sans-serif;
   --logo-filter:none;
@@ -22,11 +22,11 @@
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --paper:#0f2129; --panel:#16303f; --ink:#f6f0e2; --grey:#b9c3c7; --line:#f6f0e2;
   --accent:#ff7189; --accent-ink:#0f2129; --sun:#e9e37c; --cta-bg:#e9e37c; --cta-ink:#0f2129; --sun-ink:#0f2129; --navy:#0a171d; --navy-ink:#f6f0e2;
-  --todo:#c9a2ff; --logo-filter:invert(1); color-scheme:dark}}
+  --todo:#c9a2ff; --todo-strong:#c9a2ff; --todo-ink:#0f2129; --logo-filter:invert(1); color-scheme:dark}}
 :root[data-theme="dark"]{
   --paper:#0f2129; --panel:#16303f; --ink:#f6f0e2; --grey:#b9c3c7; --line:#f6f0e2;
   --accent:#ff7189; --accent-ink:#0f2129; --sun:#e9e37c; --cta-bg:#e9e37c; --cta-ink:#0f2129; --sun-ink:#0f2129; --navy:#0a171d; --navy-ink:#f6f0e2;
-  --todo:#c9a2ff; --logo-filter:invert(1); color-scheme:dark}
+  --todo:#c9a2ff; --todo-strong:#c9a2ff; --todo-ink:#0f2129; --logo-filter:invert(1); color-scheme:dark}
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -36,13 +36,16 @@ a{color:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .wrap{max-width:1180px;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
 h1,h2,h3{line-height:1.08;text-wrap:balance;margin:0;font-weight:700}
-h2{font-size:clamp(34px,5vw,54px);letter-spacing:-.01em}
-h3{font-size:23px}
+h2,.page-head h1,.ak-head h1{font-size:clamp(34px,5vw,54px);letter-spacing:-.01em}
+h3,h2.h3{font-size:23px;letter-spacing:0}
 p{margin:0;max-width:62ch}
 .eyebrow{font-family:var(--cond);font-weight:600;font-size:17px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
 .todo{color:var(--todo);border-bottom:1px dashed var(--todo);font-style:italic}
 
-.proto{background:var(--todo);color:#fff;font-size:14px;text-align:center;padding:8px 16px}
+.skip{position:absolute;left:8px;top:-60px;z-index:100;background:var(--navy);color:var(--navy-ink);padding:12px 16px;font-weight:700;text-decoration:none}
+.skip:focus{top:8px}
+main:focus{outline:none}
+.proto{background:var(--todo);color:var(--todo-ink);font-size:14px;text-align:center;padding:8px 16px}
 
 /* hlavička */
 header.top{border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);background:var(--paper);z-index:10}
@@ -67,10 +70,10 @@ nav.main a.give{background:var(--accent);color:var(--accent-ink);border:0;margin
 }
 .give-mobile{white-space:nowrap;display:none;align-items:center;gap:6px;margin-left:auto;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;font-size:16px;padding:8px 14px}
 .give-mobile+.menu-btn{margin-left:0}
-.theme-btn{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;flex-shrink:0;background:none;border:1px solid var(--line);color:var(--ink);cursor:pointer;padding:0}
+.theme-btn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;flex-shrink:0;background:none;border:1px solid var(--line);color:var(--ink);cursor:pointer;padding:0}
 .theme-btn .i-sun{display:none}
 .langs{display:flex;gap:2px;flex-shrink:0}
-.langs a{text-decoration:none;font-family:var(--cond);font-weight:600;font-size:17px;letter-spacing:.06em;padding:8px 6px;color:var(--ink)}
+.langs a{text-decoration:none;font-family:var(--cond);font-weight:600;font-size:17px;letter-spacing:.06em;padding:0 6px;min-width:40px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;color:var(--ink)}
 .langs a[aria-current="true"]{color:var(--accent);text-decoration:underline;text-underline-offset:4px}
 nav.main a.lang-m{display:none}
 nav.main a.lang-m.cur{display:none!important}
@@ -79,7 +82,7 @@ html.tr-wait body{opacity:0}
 @media (max-width:860px){.langs{display:none}nav.main a.lang-m{display:flex}}
 .dark-on .theme-btn .i-sun{display:block}
 .dark-on .theme-btn .i-moon{display:none}
-@media (max-width:860px){.theme-btn{order:3;width:38px;height:38px}.menu-btn{order:4}.bar{gap:12px}}
+@media (max-width:860px){.theme-btn{order:3;width:44px;height:44px}.menu-btn{order:4}.bar{gap:12px}}
 
 /* stav sezóny */
 .hours{display:grid;gap:0;margin-top:8px;border-bottom:1px solid color-mix(in srgb,currentColor 25%,transparent);margin-bottom:12px}
@@ -138,7 +141,8 @@ main section[data-page]{padding-block:0 96px}
 .ev:first-child{border-top:1px solid color-mix(in srgb,var(--line) 22%,transparent)}
 .ev .d{font-family:var(--cond);font-weight:600;font-size:30px;line-height:1;color:var(--accent);font-variant-numeric:tabular-nums}
 .ev .d small{display:block;font-family:var(--font);font-weight:400;font-size:14px;color:var(--grey);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
-.ev h3{font-size:22px}
+.ev h3,.ev h2.h3{font-size:22px}
+.ev>*,.evl>*{min-width:0}.ev h3,.ev h2.h3,.ev p{overflow-wrap:break-word;hyphens:auto}
 .ev p{color:var(--grey);font-size:17px;margin-top:4px}
 .ev.past .d{color:var(--grey)}
 .tag{font-family:var(--cond);font-weight:600;font-size:15px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);padding:3px 9px;white-space:nowrap}
@@ -227,7 +231,7 @@ dl.facts dd{margin:0}
 .goods .gi{aspect-ratio:4/3;background:color-mix(in srgb,var(--navy) 10%,transparent);display:flex;align-items:center;justify-content:center;overflow:hidden}
 .goods .gi img{width:100%;height:100%;object-fit:cover}
 .goods .g.out{opacity:.55}
-.goods .gi span{color:var(--todo);font-style:italic;font-size:14px}
+.goods .gi span{color:var(--todo-strong);font-style:italic;font-size:14px}
 .goods .gt{padding:12px 14px 16px;display:grid;gap:4px}
 .goods .gt span{font-weight:700;font-size:17px;line-height:1.25}
 .goods .gt p{font-size:14px;color:var(--grey);line-height:1.4}
@@ -250,7 +254,7 @@ dl.facts dd{margin:0}
 .vs .gal button{padding:0;border:0;background:none;cursor:zoom-in}
 .vs .gal img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
 .vs .btn{margin:16px 0}
-.subnav a{font-family:var(--cond);font-weight:600;font-size:17px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:1px solid var(--line);padding:5px 12px}
+.subnav a{font-family:var(--cond);font-weight:600;font-size:17px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:1px solid var(--line);padding:5px 12px;min-height:44px;display:inline-flex;align-items:center}
 .subnav a:hover{background:var(--sun);color:var(--sun-ink);border-color:var(--sun)}
 .p-c3{grid-column:span 4}
 @media (max-width:700px){.p-c3{grid-column:span 1}.p-c3:last-child{grid-column:span 2}}
@@ -267,17 +271,17 @@ dl.facts dd{margin:0}
 .ev-poster img{width:150px;display:block;box-shadow:0 2px 10px rgba(0,0,0,.15)}
 @media (max-width:620px){.ev-poster{grid-template-columns:1fr}.ev-poster img{width:60%}}
 .pband{background:#fff;border-top:1px solid var(--line);padding-block:28px 32px}
-.pband h4{margin:0 0 16px;font-family:var(--cond);font-weight:600;font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.pband h2{margin:0 0 16px;font-family:var(--cond);font-weight:600;font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:#c22f4d}
 .pfoot{grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px}
 .pfoot>*{height:72px;padding:10px;background:none;font-size:15px}
 .pfoot img{max-height:52px}
-@media (max-width:620px){.pfoot{grid-template-columns:repeat(3,1fr)}.pfoot>*{height:60px;padding:6px;font-size:13px}.pfoot img{max-height:44px}}
+@media (max-width:620px){.pfoot{grid-template-columns:repeat(3,1fr)}.pfoot>*{height:60px;padding:6px;font-size:14px}.pfoot img{max-height:44px}}
 footer{background:var(--navy);color:var(--navy-ink);padding-block:48px 40px}
 .copy{background:var(--navy);color:var(--navy-ink);font-size:14px;padding-block:16px 24px}.copy .wrap{opacity:.75}
 footer .cols{display:grid;grid-template-columns:200px 1fr 1fr 1fr;gap:32px;font-size:16px}
 footer .cols>*{min-width:0}
 footer img{width:160px;filter:invert(1)}
-footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--sun)}
+footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--sun)}
 @media (max-width:760px){footer .cols{grid-template-columns:1fr 1fr}}
 [id]{scroll-margin-top:100px}
 .upcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:14px}
@@ -287,7 +291,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 .upcard .cal{background:var(--navy);color:var(--navy-ink);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px 6px;gap:2px}
 .upcard .cal b{font-family:var(--cond);font-weight:600;font-size:30px;line-height:1;color:var(--sun)}
 .upcard .cal span{font-size:14px;text-transform:uppercase;letter-spacing:.06em}
-.upcard .cal small{font-size:13px;opacity:.75}
+.upcard .cal small{font-size:14px;opacity:.85}
 .upcard .tx{padding:14px 16px;display:grid;gap:5px;align-content:start;min-width:0}
 .upcard h3{font-size:20px;line-height:1.2}
 .upcard p{font-size:15px;color:var(--grey);line-height:1.4}
@@ -295,17 +299,19 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 .upcard .pt{width:96px;height:auto;align-self:center;margin:12px 12px 12px 0;display:block;box-shadow:0 2px 8px rgba(0,0,0,.25)}
 @media (max-width:620px){.upcard{grid-template-columns:78px 1fr auto}.upcard .cal b{font-size:24px}.upcard .pt{width:72px;margin:10px 10px 10px 0}.upcard h3{font-size:18px}}
 .more{display:flex;gap:24px;flex-wrap:wrap;margin-top:18px;font-weight:700}
-.more a{color:inherit}
+.more a{color:inherit;display:inline-flex;align-items:center;min-height:44px}
+.card>a:not(.btn),.ak-back{display:inline-flex;align-items:center;min-height:44px}
+.give-mobile,.menu-btn{min-height:44px}
 .up .ev{grid-template-columns:140px 1fr 150px auto;align-items:start}
 .up .ev h3 a{color:inherit;text-decoration:none}.up .ev h3 a:hover{text-decoration:underline;text-decoration-color:var(--accent)}
 .up .pz{padding:0;border:0;background:none;cursor:zoom-in;display:block;width:150px}
 .up .pz img{width:100%;display:block;box-shadow:0 2px 10px rgba(0,0,0,.15)}
-.up .det{display:inline-block;margin-top:8px;font-weight:700;color:inherit}
+.up .det{display:inline-flex;align-items:center;min-height:44px;margin-top:2px;font-weight:700;color:inherit}
 @media (max-width:760px){.up .ev{grid-template-columns:1fr}.up .pz{width:160px}}
 .ak-when{color:var(--grey);font-size:17px;margin-top:4px}
 .ak-body .poster{padding:0;border:0;background:none;cursor:zoom-in;display:block}
 .years{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
-.years button{font-family:var(--cond);font-weight:600;font-size:18px;letter-spacing:.04em;background:none;color:inherit;border:1px solid color-mix(in srgb,var(--line) 40%,transparent);padding:6px 14px;cursor:pointer}
+.years button{font-family:var(--cond);font-weight:600;font-size:18px;letter-spacing:.04em;background:none;color:inherit;border:1px solid color-mix(in srgb,var(--line) 40%,transparent);padding:6px 14px;min-height:44px;min-width:44px;cursor:pointer}
 .years button[aria-selected="true"]{background:var(--navy);color:var(--navy-ink);border-color:var(--navy)}
 .arch .ev{grid-template-columns:110px 1fr 96px;align-items:center;padding:12px 0}
 .arch a.evl{display:contents;color:inherit;text-decoration:none}
@@ -314,8 +320,8 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 .arch .th{width:96px;height:72px;object-fit:cover;display:block;background:var(--panel)}
 .arch .meta{color:var(--grey);font-size:15px;margin-top:2px}
 @media (max-width:620px){.arch .ev{grid-template-columns:1fr 80px;gap:4px 12px}.arch .ev .d{grid-column:1}.arch .ev>div:nth-child(2){grid-column:1}.arch .th{grid-column:2;grid-row:1/span 2;width:80px;height:60px}}
-.ak-back{display:inline-block;margin:28px 0 10px;font-weight:700;color:inherit}
-.ak-head h2{font-size:clamp(32px,4.5vw,52px)}
+.ak-back{margin:28px 0 10px;font-weight:700;color:inherit}
+.ak-head h1{font-size:clamp(32px,4.5vw,52px)}
 .ak-date{font-family:var(--cond);font-weight:600;font-size:22px;color:var(--accent);letter-spacing:.04em}
 .ak-body{display:grid;grid-template-columns:1fr 300px;gap:32px;margin-top:20px;align-items:start}
 .ak-body .poster img{width:100%;display:block;box-shadow:0 2px 12px rgba(0,0,0,.15)}
@@ -340,14 +346,15 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 </head>
 <body>
 
-<div class="proto">Náhled návrhu nového webu, ne skutečný web. Fialově jsou místa, kde ještě chybí informace.</div>
+<div class="proto" role="region" aria-label="Upozornění">Náhled návrhu nového webu, ne skutečný web. Fialově jsou místa, kde ještě chybí informace.</div>
 
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
 <header class="top">
   <div class="wrap bar">
     <a class="brand" href="#domu" aria-label="Živý zámek Toužim, úvod"><img src="img/logo.png" alt="Živý zámek Toužim"></a>
     <a class="give-mobile" href="#podporte">Podpořit ♥</a>
     <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
-    <nav class="main" id="mainNav">
+    <nav class="main" id="mainNav" aria-label="Hlavní menu">
       <a href="#program">Program</a>
       <a href="#navsteva">Navštivte nás</a>
       <a href="#zahrada">Zámecká zahrada</a>
@@ -366,7 +373,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   </div>
 </header>
 
-<main>
+<main id="obsah" tabindex="-1">
 <!-- ÚVOD -->
 <section data-page="domu">
   <div class="wrap hero">
@@ -439,7 +446,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 <!-- PROGRAM -->
 <section data-page="program" hidden>
   <div class="wrap">
-    <div class="page-head"><span class="eyebrow">Sezóna 2026</span><h2>Program na zámku</h2><p>Všechny akce jsou na nádvoří zámku, náměstí Jiřího z Poděbrad 1. Změna programu vyhrazena.</p><nav class="subnav"><a href="#archiv">Proběhlé akce ↓</a></nav></div>
+    <div class="page-head"><span class="eyebrow">Sezóna 2026</span><h1>Program na zámku</h1><p>Všechny akce jsou na nádvoří zámku, náměstí Jiřího z Poděbrad 1. Změna programu vyhrazena.</p><nav class="subnav" aria-label="Na této stránce"><a href="#archiv">Proběhlé akce ↓</a></nav></div>
     <ul class="events up" id="upList"></ul>
 
     <div class="block" id="archiv">
@@ -460,11 +467,11 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 <!-- NAVŠTĚVA -->
 <section data-page="navsteva" hidden>
   <div class="wrap">
-    <div class="page-head"><span class="eyebrow">Pro návštěvníky</span><h2>Navštivte nás</h2><p>Zámek patří městu Toužim, o jeho zpřístupnění se stará náš spolek. Otevřené je nádvoří a interiéry Horního zámku, tedy Janova hradu.</p></div>
+    <div class="page-head"><span class="eyebrow">Pro návštěvníky</span><h1>Navštivte nás</h1><p>Zámek patří městu Toužim, o jeho zpřístupnění se stará náš spolek. Otevřené je nádvoří a interiéry Horního zámku, tedy Janova hradu.</p></div>
     <div class="two">
       <div class="card navy">
         <span class="eyebrow" style="color:var(--sun)">Červenec až září</span>
-        <h3>Otevřené víkendy</h3>
+        <h2 class="h3">Otevřené víkendy</h2>
         <div class="hours" id="hoursBox">
           <div class="hr"><div><span class="hk">Vstup do zámku a na nádvoří</span><span class="ht">sobota a neděle 10–12 a 13–17 h</span></div><b class="pr">dobrovolné vstupné</b></div>
           <div class="hr"><div><span class="hk">Komentovaná prohlídka s průvodcem</span><span class="ht">sobota a neděle v 11, 14 a 16 h</span></div><b class="pr">50 Kč za osobu</b></div>
@@ -474,7 +481,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
         </dl>
       </div>
       <div class="card">
-        <h3>Jak k nám</h3>
+        <h2 class="h3">Jak k nám</h2>
         <dl class="facts">
           <dt>Adresa</dt><dd>náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</dd>
           <dt>Autobus</dt><dd>zastávka na náměstí, asi 100 m od vstupu</dd>
@@ -488,7 +495,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
       </div>
     </div>
     <div class="card ask" id="dotaz">
-      <div><span class="eyebrow">Napište nám</span><h3>Máte dotaz?</h3><p>Chcete se na něco zeptat, domluvit prohlídku mimo sezónu nebo přijít pomoct? Napište nám, ozveme se.</p>
+      <div><span class="eyebrow">Napište nám</span><h2 class="h3">Máte dotaz?</h2><p>Chcete se na něco zeptat, domluvit prohlídku mimo sezónu nebo přijít pomoct? Napište nám, ozveme se.</p>
         <button class="btn fill" type="button" id="askOpen" aria-expanded="false" aria-controls="askForm">Napsat dotaz</button></div>
       <form id="askForm" novalidate hidden>
         <label><span>Jméno</span><input name="jmeno" autocomplete="name" required></label>
@@ -505,7 +512,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     </div>
     <div class="two" style="margin-top:32px;align-items:start">
       <figure class="zfig" style="margin:0"><img src="img/zamek/mapka-arealu-2022.jpg" alt="Mapka zámeckého areálu: přístupné venkovní a vnitřní prostory a nepřístupné části" loading="lazy"></figure>
-      <div class="card"><h3>Mapka areálu</h3><p>Zeleně je přístupné nádvoří a parkán, modře zpřístupněné vnitřní prostory Horního zámku: hodovní, audienční a rytířský sál, komnata, sklep, pokladnice, archiv a další. Červeně jsou části, kam se zatím nesmí, včetně Dolního zámku a bašty. Pokladna je hned u vstupu.</p></div>
+      <div class="card"><h2 class="h3">Mapka areálu</h2><p>Zeleně je přístupné nádvoří a parkán, modře zpřístupněné vnitřní prostory Horního zámku: hodovní, audienční a rytířský sál, komnata, sklep, pokladnice, archiv a další. Červeně jsou části, kam se zatím nesmí, včetně Dolního zámku a bašty. Pokladna je hned u vstupu.</p></div>
     </div>
     <div class="photos" style="margin-top:32px">
       <figure class="p-a"><div class="r"><img src="img/arkady.jpg" alt="Arkády Horního zámku"></div><figcaption>Arkády Horního zámku</figcaption></figure>
@@ -517,8 +524,8 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 <!-- ZAHRADA -->
 <section data-page="zahrada" hidden>
   <div class="wrap">
-    <div class="page-head"><span class="eyebrow">Projekt 2025–2027 · s podporou Nadace VIA</span><h2>Zahrada, která odhalila historii</h2><p>Historická zámecká zahrada ležela severně od zámku a v 60. letech ji zastavělo sídliště. Novou komunitní zahradu zakládáme na zarostlé ploše mezi Horním a Dolním zámkem a hradbami. Bude to místo pro odpočinek, hraní dětí i spolkové akce.</p>
-      <nav class="subnav"><a href="#zahrada" data-jump="g-plan">Návrh</a><a href="#zahrada" data-jump="g-stav">Stav prací</a><a href="#zahrada" data-jump="g-zed">Hradební zeď</a><a href="#zahrada" data-jump="g-rostliny">Rostliny</a><a href="#zahrada" data-jump="g-penize">Financování</a><a href="#zahrada" data-jump="g-foto">Fotky</a></nav>
+    <div class="page-head"><span class="eyebrow">Projekt 2025–2027 · s podporou Nadace VIA</span><h1>Zahrada, která odhalila historii</h1><p>Historická zámecká zahrada ležela severně od zámku a v 60. letech ji zastavělo sídliště. Novou komunitní zahradu zakládáme na zarostlé ploše mezi Horním a Dolním zámkem a hradbami. Bude to místo pro odpočinek, hraní dětí i spolkové akce.</p>
+      <nav class="subnav" aria-label="Na této stránce"><a href="#zahrada" data-jump="g-plan">Návrh</a><a href="#zahrada" data-jump="g-stav">Stav prací</a><a href="#zahrada" data-jump="g-zed">Hradební zeď</a><a href="#zahrada" data-jump="g-rostliny">Rostliny</a><a href="#zahrada" data-jump="g-penize">Financování</a><a href="#zahrada" data-jump="g-foto">Fotky</a></nav>
     </div>
     <div class="photos">
       <figure class="p-a"><div class="r"><img src="img/studie-6.jpg" alt="Kreslená vizualizace budoucí zahrady ze studie"></div><figcaption>Vizualizace ze studie, Ing. arch. Kateřina Svobodová, 2025</figcaption></figure>
@@ -610,7 +617,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 <!-- ZÁMEK -->
 <section data-page="zamek" hidden>
   <div class="wrap">
-    <div class="page-head"><span class="eyebrow">Historie</span><h2>Zámek Toužim</h2><p>Nejstarší a nejvýznamnější památka Toužimi. Z proboštství hrad, z hradu zámek, pak desítky let chátrání. Od roku 2015 se do něj vrací život.</p></div>
+    <div class="page-head"><span class="eyebrow">Historie</span><h1>Zámek Toužim</h1><p>Nejstarší a nejvýznamnější památka Toužimi. Z proboštství hrad, z hradu zámek, pak desítky let chátrání. Od roku 2015 se do něj vrací život.</p></div>
     <ol class="timeline">
       <li><b>2. pol. 12. stol.</b><span>Krajinu na horním toku Střely dostává od panovníka velmož Jiří z Milevska. Na místě zámku staví dvorec, pojmenovaný asi po prvním správci Túžimovi („vytoužený syn“).</span></li>
       <li><b>1187</b><span>Jiří zakládá premonstrátský klášter v Milevsku a odkáže mu i Toužimsko. Premonstráti mění dvorec na proboštství s kostelem sv. Jana Křtitele.</span></li>
@@ -681,10 +688,10 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 <!-- SPOLEK -->
 <section data-page="spolek" hidden>
   <div class="wrap">
-    <div class="page-head"><span class="eyebrow">O nás</span><h2>Spolek Živý zámek Toužim</h2><p>Vznikli jsme v roce 2016 z občanské iniciativy. Chceme zámek chránit, ukazovat lidem a postupně ho obnovit ve spolupráci s městem Toužim, které je jeho vlastníkem.</p></div>
+    <div class="page-head"><span class="eyebrow">O nás</span><h1>Spolek Živý zámek Toužim</h1><p>Vznikli jsme v roce 2016 z občanské iniciativy. Chceme zámek chránit, ukazovat lidem a postupně ho obnovit ve spolupráci s městem Toužim, které je jeho vlastníkem.</p></div>
     <div class="two">
-      <div class="card"><h3>Kdo jsme</h3><p>Jsme parta dobrovolníků, kterým není osud zámku jedno. Spolek vede předsedkyně <b>Pavla Vokurková</b> a místopředsedkyně <b>Alena Šlajerová</b>. O technický stav zámku se stará Zámecký pán. <span class="todo">jméno, fotky?</span></p></div>
-      <div class="card"><h3>Dokumenty</h3><ul class="docs"><li><a href="docs/stanovy.pdf" target="_blank" rel="noopener">Stanovy spolku</a> <small>PDF · platné od 12. 7. 2026</small></li><li><a href="docs/clensky-rad.pdf" target="_blank" rel="noopener">Členský řád</a> <small>PDF</small></li><li><a href="docs/prihlaska.pdf" target="_blank" rel="noopener">Přihláška za člena</a> <small>PDF k vytištění</small></li><li>Výroční zprávy <span class="todo">za které roky?</span></li></ul><p>Spolek je zapsán u Krajského soudu v Plzni, sp. zn. L 7540, IČO 04690770.</p></div>
+      <div class="card"><h2 class="h3">Kdo jsme</h2><p>Jsme parta dobrovolníků, kterým není osud zámku jedno. Spolek vede předsedkyně <b>Pavla Vokurková</b> a místopředsedkyně <b>Alena Šlajerová</b>. O technický stav zámku se stará Zámecký pán. <span class="todo">jméno, fotky?</span></p></div>
+      <div class="card"><h2 class="h3">Dokumenty</h2><ul class="docs"><li><a href="docs/stanovy.pdf" target="_blank" rel="noopener">Stanovy spolku</a> <small>PDF · platné od 12. 7. 2026</small></li><li><a href="docs/clensky-rad.pdf" target="_blank" rel="noopener">Členský řád</a> <small>PDF</small></li><li><a href="docs/prihlaska.pdf" target="_blank" rel="noopener">Přihláška za člena</a> <small>PDF k vytištění</small></li><li>Výroční zprávy <span class="todo">za které roky?</span></li></ul><p>Spolek je zapsán u Krajského soudu v Plzni, sp. zn. L 7540, IČO 04690770.</p></div>
     </div>
     <div class="block">
       <div class="lab"><span class="eyebrow">Ohlédnutí</span><h2>Z našeho archivu</h2><p style="color:var(--grey)">Seřazeno podle data pořízení.</p></div>
@@ -706,19 +713,19 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 <!-- PODPOŘTE -->
 <section data-page="podporte" hidden>
   <div class="wrap">
-    <div class="page-head"><span class="eyebrow">Podpořte nás</span><h2>Bez dobrovolníků a dárců by zámek dál chátral</h2><p>Na zahradu teď potřebujeme hlavně materiál (beton, kámen, dřevo), pronájem strojů a jídlo pro dobrovolníky na brigádách.</p></div>
+    <div class="page-head"><span class="eyebrow">Podpořte nás</span><h1>Bez dobrovolníků a dárců by zámek dál chátral</h1><p>Na zahradu teď potřebujeme hlavně materiál (beton, kámen, dřevo), pronájem strojů a jídlo pro dobrovolníky na brigádách.</p></div>
     <div class="two">
       <div class="card navy">
-        <h3>Transparentní účet</h3>
+        <h2 class="h3">Transparentní účet</h2>
         <div class="acct"><code id="acct">2301034510/2010</code><button class="copy" id="copyBtn" type="button">Kopírovat</button></div>
         <p>Každý pohyb na účtu je veřejně vidět. <span class="todo" style="color:var(--sun);border-color:var(--sun)">potvrzení o daru?</span></p>
         <div class="ctas"><a class="btn fill" href="https://www.givt.cz" target="_blank" rel="noopener">Darovat přes Givt</a></div>
       </div>
       <div class="card sun">
-        <h3>Přijďte pomoct</h3>
+        <h2 class="h3">Přijďte pomoct</h2>
         <p>Brigády jsou několikrát do roka a přijít může každý. Nářadí půjčíme a postaráme se o jídlo.</p>
         <a class="btn" href="#program">Termíny brigád</a>
-        <h3 style="margin-top:12px">Staňte se členem</h3>
+        <h2 class="h3" style="margin-top:12px">Staňte se členem</h2>
         <p>Nejdřív se s námi seznamte: přijďte na brigádu nebo pomoct s akcí. Když vás to chytne, podáte přihlášku a o přijetí rozhodne členská schůze. Členem může být kdokoli od 15 let a členství je zdarma.</p>
         <p class="doclinks"><a href="docs/prihlaska.pdf" target="_blank" rel="noopener">Přihláška (PDF)</a> · <a href="docs/clensky-rad.pdf" target="_blank" rel="noopener">Členský řád</a> · <a href="docs/stanovy.pdf" target="_blank" rel="noopener">Stanovy</a></p>
       </div>
@@ -748,12 +755,12 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 <footer>
   <div class="wrap cols">
     <div><img src="img/logo.png" alt="Živý zámek Toužim"></div>
-    <div><h4>Zámek</h4><p>náměstí Jiřího z Poděbrad 1<br>364 01 Toužim<br><span id="fSezona">Otevřené víkendy červenec–září</span></p></div>
-    <div><h4>Kontakt</h4><p id="fKontakt">Pavla Vokurková, předsedkyně<br>+420 724 859 799<br>Alena Šlajerová, místopředsedkyně<br>+420 728 290 280<br>zivyzamektouzim@email.cz</p><p><a href="#dotaz">Napište nám →</a></p></div>
-    <div><h4>Spolek</h4><p>Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Účet <span id="fUcet">2301034510/2010</span><br><a href="https://www.facebook.com/zivyzamek.touzim" target="_blank" rel="noopener">Facebook</a></p></div>
+    <div><h2>Zámek</h2><p>náměstí Jiřího z Poděbrad 1<br>364 01 Toužim<br><span id="fSezona">Otevřené víkendy červenec–září</span></p></div>
+    <div><h2>Kontakt</h2><p id="fKontakt">Pavla Vokurková, předsedkyně<br><a href="tel:+420724859799">+420 724 859 799</a><br>Alena Šlajerová, místopředsedkyně<br><a href="tel:+420728290280">+420 728 290 280</a><br><a href="mailto:zivyzamektouzim@email.cz">zivyzamektouzim@email.cz</a></p><p><a href="#dotaz">Napište nám →</a></p></div>
+    <div><h2>Spolek</h2><p>Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Účet <span id="fUcet">2301034510/2010</span><br><a href="https://www.facebook.com/zivyzamek.touzim" target="_blank" rel="noopener">Facebook</a></p></div>
   </div>
 </footer>
-<div class="pband"><div class="wrap"><h4>Podporují nás</h4>
+<section class="pband" aria-labelledby="pbandH"><div class="wrap"><h2 id="pbandH">Podporují nás</h2>
         <div class="partners pfoot" id="partnersBox">
           <a href="https://www.touzim.cz/" target="_blank" rel="noopener" title="Město Toužim"><img src="img/partneri/touzim.png" alt="Město Toužim" loading="lazy"></a>
           <a href="https://www.kr-karlovarsky.cz/" target="_blank" rel="noopener" title="Karlovarský kraj"><img src="img/partneri/karlovarsky-kraj.png" alt="Karlovarský kraj" loading="lazy"></a>
@@ -767,8 +774,8 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
           <a class="txt" href="https://givt.cz/" target="_blank" rel="noopener">Givt.cz</a>
           <a class="txt" href="https://gabrielapilna.myportfolio.com/" target="_blank" rel="noopener" title="Gabriela Pilná, grafika a plakáty spolku" style="gap:12px;grid-column:span 2;text-align:left;white-space:nowrap"><img src="img/partneri/gabriela-pilna.png" alt="" loading="lazy" style="height:44px;width:44px"><span style="display:flex;flex-direction:column">Gabriela Pilná<small style="font-weight:400;font-size:14px">grafika a plakáty</small></span></a>
         </div>
-</div></div>
-<div class="copy"><div class="wrap">© <span id="cy">2026</span> Živý zámek Toužim z. s. · Web vytvořil Michal Nedvídek s pomocí Claude (AI od Anthropicu)</div></div>
+</div></section>
+<div class="copy" role="region" aria-label="Autorská práva"><div class="wrap">© <span id="cy">2026</span> Živý zámek Toužim z. s. · Web vytvořil Michal Nedvídek s pomocí Claude (AI od Anthropicu)</div></div>
 
 <div class="lb" id="lb" hidden><img alt=""><button class="x" aria-label="Zavřít">×</button><button class="pv" aria-label="Předchozí">‹</button><button class="nx" aria-label="Další">›</button></div>
 <script src="data/i18n.js"></script>
@@ -831,7 +838,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     function link(u){u=String(u||'');return /^(https?:\/\/|#|mailto:|tel:)/.test(u)?u:'#'}
     ST.forEach(function(p){
       if(document.querySelector('section[data-page="'+p.id+'"]'))return;
-      var h='<div class="page-head">'+(p.nadtitulek?'<span class="eyebrow">'+e(p.nadtitulek)+'</span>':'')+'<h2>'+e(p.nazev)+'</h2>'+(p.perex?'<p>'+e(p.perex)+'</p>':'')+'</div><div class="vs">';
+      var h='<div class="page-head">'+(p.nadtitulek?'<span class="eyebrow">'+e(p.nadtitulek)+'</span>':'')+'<h1>'+e(p.nazev)+'</h1>'+(p.perex?'<p>'+e(p.perex)+'</p>':'')+'</div><div class="vs">';
       (p.bloky||[]).forEach(function(b){
         if(b.type==='nadpis')h+='<h3>'+e(b.text||'')+'</h3>';
         else if(b.type==='text')h+=(b.html||'').split('\n').map(function(t){return '<p>'+t+'</p>'}).join('');
@@ -862,7 +869,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   function renderDetail(id){
     var a=AKCE.filter(function(x){return x.id===id})[0];
     if(!a){detail.innerHTML='<a class="ak-back" href="#archiv">← '+T('Archiv akcí')+'</a><p>'+T('Akce nenalezena.')+'</p>';return}
-    var h=(past(a)?'<a class="ak-back" href="#archiv">← '+T('Archiv akcí')+'</a>':'<a class="ak-back" href="#program">← '+T('Program')+'</a>')+'<div class="ak-head"><div class="ak-date">'+dFull(a)+'</div><h2>'+esc(a.title)+(a.titleTodo?' <span class="todo" style="font-size:18px">název?</span>':'')+'</h2>'+(a.when?'<div class="ak-when">'+esc(a.when)+'</div>':'')+'</div>';
+    var h=(past(a)?'<a class="ak-back" href="#archiv">← '+T('Archiv akcí')+'</a>':'<a class="ak-back" href="#program">← '+T('Program')+'</a>')+'<div class="ak-head"><div class="ak-date">'+dFull(a)+'</div><h1>'+esc(a.title)+(a.titleTodo?' <span class="todo" style="font-size:18px">název?</span>':'')+'</h1>'+(a.when?'<div class="ak-when">'+esc(a.when)+'</div>':'')+'</div>';
     h+='<div class="ak-body"><div class="ak-text">'+(a.html?a.html.split('\n').map(function(p){return '<p>'+p+'</p>'}).join(''):a.text?a.text.split('\n').map(function(p){return '<p>'+esc(p)+'</p>'}).join(''):'<p><span class="todo">'+T('krátký popis akce')+'</span></p>')+'</div>';
     h+=a.poster?'<button class="poster" data-src="'+a.poster+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+a.poster+'" alt="'+T('Plakát')+': '+esc(a.title)+'"></button>':'<div></div>';
     h+='</div>';
@@ -901,7 +908,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     return '<a class="upcard" href="#akce/'+a.id+'"><div class="cal">'+cal(a)+'</div><div class="tx"><h3>'+esc(a.title)+'</h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<span class="go">'+T('Detail')+' →</span></div>'+(a.poster?'<img class="pt" src="'+a.poster+'" alt="" loading="lazy">':'')+'</a>';
   }).join(''):'<p>'+T('Program na další sezónu připravujeme. Sledujte náš Facebook.')+'</p>';
   if(ul)ul.innerHTML=up.length?up.map(function(a){
-    return '<li class="ev"><div class="d">'+dd(a)+(a.when?'<small style="display:block;font-size:15px;color:var(--grey);font-family:var(--font);font-weight:400">'+esc(a.when)+'</small>':'')+'</div><div><h3><a href="#akce/'+a.id+'">'+esc(a.title)+'</a></h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<a class="det" href="#akce/'+a.id+'">'+T('Detail akce')+' →</a></div>'+(a.poster?'<button class="pz" data-src="'+a.poster+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+a.poster+'" alt="'+T('Plakát')+': '+esc(a.title)+'" loading="lazy"></button>':'<span></span>')+(a.tag?'<span class="tag '+(a.tagc||'')+'">'+esc(T(a.tag))+'</span>':'<span></span>')+'</li>';
+    return '<li class="ev"><div class="d">'+dd(a)+(a.when?'<small style="display:block;font-size:15px;color:var(--grey);font-family:var(--font);font-weight:400">'+esc(a.when)+'</small>':'')+'</div><div><h2 class="h3"><a href="#akce/'+a.id+'">'+esc(a.title)+'</a></h2>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<a class="det" href="#akce/'+a.id+'">'+T('Detail akce')+' →</a></div>'+(a.poster?'<button class="pz" data-src="'+a.poster+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+a.poster+'" alt="'+T('Plakát')+': '+esc(a.title)+'" loading="lazy"></button>':'<span></span>')+(a.tag?'<span class="tag '+(a.tagc||'')+'">'+esc(T(a.tag))+'</span>':'<span></span>')+'</li>';
   }).join(''):'<li class="ev"><div><p>'+T('Program na další sezónu připravujeme. Sledujte náš Facebook.')+'</p></div></li>';
 
   // archiv: roky a seznam
@@ -934,13 +941,13 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     f.addEventListener('submit',function(e){
       e.preventDefault();
       var el=f.elements, bad=[];
-      [el.jmeno,el.email,el.telefon,el.zprava].forEach(function(i){i.classList.remove('bad')});
+      [el.jmeno,el.email,el.telefon,el.zprava].forEach(function(i){i.classList.remove('bad');i.removeAttribute('aria-invalid')});
       var em=el.email.value.trim(), tel=el.telefon.value.trim(), noContact=!em&&!tel;
       if(!el.jmeno.value.trim())bad.push(el.jmeno);
       if(noContact)bad.push(el.email,el.telefon);
       else if(em&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em))bad.push(el.email);
       if(!el.zprava.value.trim())bad.push(el.zprava);
-      if(bad.length){bad.forEach(function(i){i.classList.add('bad')});bad[0].focus();
+      if(bad.length){bad.forEach(function(i){i.classList.add('bad');i.setAttribute('aria-invalid','true')});bad[0].focus();
         say(noContact&&bad.length===2?T('Vyplňte prosím e-mail nebo telefon.'):T('Doplňte prosím zvýrazněná políčka.'),'err');return;}
       var b=f.querySelector('button');b.disabled=true;say(T('Odesílám…'));
       fetch('kontakt.php',{method:'POST',body:new FormData(f)}).then(function(r){return r.json()}).then(function(d){
@@ -958,6 +965,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     if(mq.addEventListener)mq.addEventListener('change',sync);
     sync();
   })();
+  document.querySelector('.skip').addEventListener('click',function(e){e.preventDefault();var m=document.getElementById('obsah');m.focus();m.scrollIntoView();});
   document.addEventListener('click',function(e){var a=e.target.closest('[data-jump]');if(!a)return;e.preventDefault();var t=document.getElementById(a.dataset.jump);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});});
 
   document.getElementById('cy').textContent=now.getFullYear();
@@ -968,7 +976,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   var MES=window.LANG==='cs'?['ledna','února','března','dubna','května','června','července','srpna','září','října','listopadu','prosince']:[0,1,2,3,4,5,6,7,8,9,10,11].map(function(i){return new Date(2026,i,15).toLocaleDateString(window.LANG,{month:'long'})});
   var od=NV?NV.sezona_od:7, doo=NV?NV.sezona_do:9, tel=NV&&NV.kontakty[0]?NV.kontakty[0].telefon:'+420 724 859 799';
   if(NV){
-    document.getElementById('fKontakt').innerHTML=NV.kontakty.map(function(k){return esc(k.jmeno)+', '+esc(k.funkce)+'<br>'+esc(k.telefon)}).join('<br>')+'<br>'+esc(NV.email);
+    document.getElementById('fKontakt').innerHTML=NV.kontakty.map(function(k){return esc(k.jmeno)+', '+esc(k.funkce)+'<br><a href="tel:'+esc(k.telefon.replace(/\s/g,''))+'">'+esc(k.telefon)+'</a>'}).join('<br>')+'<br><a href="mailto:'+esc(NV.email)+'">'+esc(NV.email)+'</a>';
     document.getElementById('fSezona').textContent=NV.sezona;
     document.getElementById('fUcet').textContent=NV.ucet;
     var ac=document.getElementById('acct'); if(ac)ac.textContent=NV.ucet;

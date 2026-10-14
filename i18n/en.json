@@ -316,7 +316,9 @@
   "E-mail": "E-mail",
   "Telefon": "Phone",
   "Zpráva": "Message",
-  "Nevyplňujte": "Leave empty"
+  "Nevyplňujte": "Leave empty",
+  "Přeskočit na obsah": "Skip to content",
+  "Pavla Vokurková, předsedkyně<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br>Alena Šlajerová, místopředsedkyně<br><a href=\"tel:+420728290280\">+420 728 290 280</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>": "Pavla Vokurková, chair<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br>Alena Šlajerová, vice-chair<br><a href=\"tel:+420728290280\">+420 728 290 280</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, home",
@@ -363,7 +365,11 @@
   "Gabriela Pilná, grafika a plakáty spolku": "Gabriela Pilná, the association's graphics and posters",
   "Zavřít": "Close",
   "Předchozí": "Previous",
-  "Další": "Next"
+  "Další": "Next",
+  "Upozornění": "Notice",
+  "Hlavní menu": "Main menu",
+  "Na této stránce": "On this page",
+  "Autorská práva": "Copyright"
  },
  "js": {
   "Akce nenalezena.": "Event not found.",
