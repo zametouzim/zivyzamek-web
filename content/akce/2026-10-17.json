@@ -6,5 +6,17 @@
   "short": "Sobota: úklid okolí zámku a pomoc se zahradou, hraje Longway. Neděle: plecí brigáda na svahu pro dětské prvky.",
   "text": "**Sobota 17. 10., 10:00–16:00: XVII. Zámecké CITO.** Uklidíme prostor v okolí zámku a hlavně pomůžeme ve výstavbě zámecké zahrady. Mini výstava věnovaná geocachingu, eventová CWG za 10 Kč. Celý den hraje zámecká kapela Longway.\n**Neděle 18. 10., 10:00–17:00: Zámecká plecí brigáda Poznej &amp; pomoz.** Pomozte s úklidem svahu pro dětské prvky a posuňme společně zámeckou zahradu o krok dál.\nObčerstvení zajištěno po oba dny: guláš, buřty, klobásy, pečivo, káva, čaj, pivo a limo.",
   "poster": "img/plakaty/2026_cito_17_10.jpg",
-  "tag": "Přijďte pomoct"
+  "tag": "Přijďte pomoct",
+  "en": {
+    "title": "17th Castle CITO and Get to Know & Help",
+    "when": "Sat 10–16 · Sun 10–17",
+    "short": "Saturday: clean-up around the castle and help with the garden, with live music by Longway. Sunday: weeding work party on the slope for the children’s play features.",
+    "text": "**Saturday 17 Oct, 10:00–16:00: 17th Castle CITO.** We will clean up the area around the castle and above all help build the castle garden. A small exhibition about geocaching, event CWG for 10 CZK. The castle band Longway plays all day.\n**Sunday 18 Oct, 10:00–17:00: Get to Know & Help weeding work party.** Help us clear the slope for the children’s play features and move the castle garden a step further together.\nRefreshments on both days: goulash, sausages, bread, coffee, tea, beer and soft drinks."
+  },
+  "de": {
+    "title": "XVII. Schloss-CITO und Kennenlernen & Mithelfen",
+    "when": "Sa 10–16 · So 10–17",
+    "short": "Samstag: Aufräumen rund um das Schloss und Hilfe im Garten, es spielt Longway. Sonntag: Jäteinsatz am Hang für die Spielelemente für Kinder.",
+    "text": "**Samstag, 17. 10., 10:00–16:00: XVII. Schloss-CITO.** Wir räumen die Umgebung des Schlosses auf und helfen vor allem beim Bau des Schlossgartens. Kleine Ausstellung zum Geocaching, Event-CWG für 10 CZK. Den ganzen Tag spielt die Schlossband Longway.\n**Sonntag, 18. 10., 10:00–17:00: Jäteinsatz Kennenlernen & Mithelfen.** Helfen Sie beim Aufräumen des Hangs für die Spielelemente für Kinder und bringen wir den Schlossgarten gemeinsam einen Schritt weiter.\nVerpflegung an beiden Tagen: Gulasch, Würstchen, Bratwurst, Brot, Kaffee, Tee, Bier und Limonade."
+  }
 }
