@@ -152,8 +152,12 @@ main section[data-page]{padding-block:0 96px}
 @media (max-width:760px){.two,.three{grid-template-columns:1fr}}
 .card{background:var(--panel);padding:28px;display:grid;gap:14px;align-content:start}
 .ask{margin-top:32px;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:28px}
+.ask>div{display:grid;gap:12px;justify-items:start;align-content:start}
+.ask.open #askOpen{display:none}
 .ask h3{margin:.2em 0}
 .ask form{display:grid;gap:14px}
+.ask form[hidden]{display:none}
+.ask:not(.open){grid-template-columns:1fr}
 .ask label{display:grid;gap:4px;font-weight:700;font-size:16px}
 .ask input,.ask textarea{font:inherit;font-weight:400;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);padding:10px 12px;border-radius:0;width:100%;box-sizing:border-box}
 .ask textarea{resize:vertical}
@@ -461,8 +465,9 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
       </div>
     </div>
     <div class="card ask" id="dotaz">
-      <div><span class="eyebrow">Napište nám</span><h3>Máte dotaz?</h3><p>Chcete se na něco zeptat, domluvit prohlídku mimo sezónu nebo přijít pomoct? Napište nám, ozveme se.</p></div>
-      <form id="askForm" novalidate>
+      <div><span class="eyebrow">Napište nám</span><h3>Máte dotaz?</h3><p>Chcete se na něco zeptat, domluvit prohlídku mimo sezónu nebo přijít pomoct? Napište nám, ozveme se.</p>
+        <button class="btn fill" type="button" id="askOpen" aria-expanded="false" aria-controls="askForm">Napsat dotaz</button></div>
+      <form id="askForm" novalidate hidden>
         <label>Jméno<input name="jmeno" autocomplete="name" required></label>
         <div class="row2">
           <label>E-mail<input name="email" type="email" autocomplete="email"></label>
@@ -845,6 +850,11 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   (function(){
     var f=document.getElementById('askForm'), msg=document.getElementById('askMsg');
     if(!f)return;
+    var card=document.getElementById('dotaz'), ob=document.getElementById('askOpen');
+    function openForm(){f.hidden=false;card.classList.add('open');ob.setAttribute('aria-expanded','true');}
+    ob.addEventListener('click',function(){openForm();f.elements.jmeno.focus();});
+    window.addEventListener('hashchange',function(){if(location.hash==='#dotaz')openForm();});
+    if(location.hash==='#dotaz')openForm();
     function say(t,c){msg.textContent=t;msg.className=c||'';}
     f.addEventListener('submit',function(e){
       e.preventDefault();
