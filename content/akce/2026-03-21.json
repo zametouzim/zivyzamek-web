@@ -5,5 +5,13 @@
   "poster": "img/plakaty/2026_hostina.jpg",
   "photos": [
     "img/akce/2026-03-21-1.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle feast",
+    "text": "The first in a series of castle feasts in the Upper Castle. A gathering for everyone who cares about the castle: what we would like to see at the castle and who wants to get involved."
+  },
+  "de": {
+    "title": "Schlossgelage",
+    "text": "Das erste einer Reihe von Schlossgelagen im Oberen Schloss. Ein Treffen für alle, denen das Schloss nicht gleichgültig ist: Was wir gern im Schloss sehen würden und wer mitmachen möchte."
+  }
 }

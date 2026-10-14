@@ -2,5 +2,13 @@
   "title": "Letní kino: Špunti na vodě",
   "date": "2018-07-28",
   "text": "Promítání rodinné komedie Špunti na vodě na nádvoří.",
-  "poster": "img/plakaty/2018_letni_kino.jpg"
+  "poster": "img/plakaty/2018_letni_kino.jpg",
+  "en": {
+    "title": "Open-air cinema: Špunti na vodě",
+    "text": "Screening of the family comedy Špunti na vodě in the courtyard."
+  },
+  "de": {
+    "title": "Sommerkino: Špunti na vodě",
+    "text": "Vorführung der Familienkomödie Špunti na vodě im Schlosshof."
+  }
 }

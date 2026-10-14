@@ -6,5 +6,13 @@
     "img/akce/2021-06-12-1.jpg",
     "img/akce/2021-06-12-2.jpg",
     "img/akce/2021-06-12-3.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle Festival 2021 (5th year)",
+    "text": "The fifth, anniversary Rockfest with a record attendance of over 400 people. Cerberos Heavy Rock, Rimortis, Kreyson Memorial and Carpatia Castle played."
+  },
+  "de": {
+    "title": "Schlossfestival 2021 (5. Jahrgang)",
+    "text": "Das fünfte Jubiläums-Rockfest mit Rekordbesuch von über 400 Leuten. Es spielten Cerberos Heavy Rock, Rimortis, Kreyson Memorial und Carpatia Castle."
+  }
 }

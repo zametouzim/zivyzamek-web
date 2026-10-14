@@ -4,5 +4,11 @@
   "photos": [
     "img/akce/2016-03-07-1.jpg"
   ],
-  "titleTodo": true
+  "titleTodo": true,
+  "en": {
+    "title": "Spring clean-up of the courtyard"
+  },
+  "de": {
+    "title": "Frühjahrsputz im Schlosshof"
+  }
 }

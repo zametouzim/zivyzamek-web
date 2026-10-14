@@ -7,5 +7,13 @@
     "img/akce/2021-08-14-2.jpg",
     "img/akce/2021-08-14-3.jpg",
     "img/akce/2021-08-14-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Children's afternoon with the Karlovy Vary Puppet Theatre",
+    "text": "The children watched the fairy tale The Rainbow Prince by the Karlovy Vary Puppet Theatre, and their parents looked round the exhibition."
+  },
+  "de": {
+    "title": "Kindernachmittag mit dem Puppentheater Karlovy Vary",
+    "text": "Die Kinder sahen das Märchen „Der Regenbogenprinz“ des Puppentheaters Karlovy Vary, die Eltern besichtigten die Ausstellung."
+  }
 }

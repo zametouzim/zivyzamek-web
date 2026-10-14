@@ -2,5 +2,13 @@
   "title": "Punkovice na zámku",
   "date": "2018-09-08",
   "text": "Hráli Plusmlíko, Stamp Out System, Prasex, Já Ještě Nevim a ŠpuntQaně. Dorazilo přes 200 návštěvníků.",
-  "poster": "img/plakaty/2018_punkovice.jpg"
+  "poster": "img/plakaty/2018_punkovice.jpg",
+  "en": {
+    "title": "Punkovice at the castle",
+    "text": "Plusmlíko, Stamp Out System, Prasex, Já Ještě Nevim and ŠpuntQaně played. Over 200 visitors came."
+  },
+  "de": {
+    "title": "Punkovice auf dem Schloss",
+    "text": "Es spielten Plusmlíko, Stamp Out System, Prasex, Já Ještě Nevim und ŠpuntQaně. Es kamen über 200 Besucher."
+  }
 }

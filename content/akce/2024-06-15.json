@@ -7,5 +7,13 @@
     "img/akce/2024-06-15-2.jpg",
     "img/akce/2024-06-15-3.jpg",
     "img/akce/2024-06-15-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle Festival, 8th year",
+    "text": "A rock festival in the courtyard, organised by Kalimero Agency since 2017. Refreshments were provided by Hospůdka U Havlů."
+  },
+  "de": {
+    "title": "Schlossfestival, 8. Jahrgang",
+    "text": "Ein Rockfestival im Hof, das seit 2017 die Kalimero Agency veranstaltet. Für die Verpflegung sorgte die Hospůdka U Havlů."
+  }
 }

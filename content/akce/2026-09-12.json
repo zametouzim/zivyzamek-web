@@ -5,5 +5,13 @@
   "poster": "img/plakaty/2026_punkovice.jpg",
   "photos": [
     "img/akce/2026-09-12-1.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Punkovice, 9th year",
+    "text": "Výblitek (replacing KT Bandits), Vypitý lahváče, ŠpuntQaně, Plesnivý fazole and P.U.M. played. A signed poster was auctioned for CZK 1,000."
+  },
+  "de": {
+    "title": "Punkovice, 9. Jahrgang",
+    "text": "Es spielten Výblitek (anstelle von KT Bandits), Vypitý lahváče, ŠpuntQaně, Plesnivý fazole und P.U.M. Ein signiertes Plakat wurde für 1 000 Kč versteigert."
+  }
 }

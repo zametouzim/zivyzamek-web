@@ -1,4 +1,10 @@
 {
   "title": "Ukliďme Česko - brigáda",
-  "date": "2019-04-06"
+  "date": "2019-04-06",
+  "en": {
+    "title": "Let's Clean Up the Czech Republic: work party"
+  },
+  "de": {
+    "title": "Räumen wir Tschechien auf: Arbeitseinsatz"
+  }
 }

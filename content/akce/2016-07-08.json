@@ -1,5 +1,11 @@
 {
   "title": "Den města Toužimi",
   "date": "2016-07-08",
-  "poster": "img/plakaty/2016_dmh_dmt_zamek.jpg"
+  "poster": "img/plakaty/2016_dmh_dmt_zamek.jpg",
+  "en": {
+    "title": "Toužim Town Day"
+  },
+  "de": {
+    "title": "Tag der Stadt Toužim"
+  }
 }

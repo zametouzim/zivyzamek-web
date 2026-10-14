@@ -5,5 +5,13 @@
   "photos": [
     "img/akce/2021-09-12-1.jpg",
     "img/akce/2021-09-12-2.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Toužim Summer",
+    "text": "A farewell to summer in the castle courtyard, with music, beer on tap and sausages."
+  },
+  "de": {
+    "title": "Toužimer Sommer",
+    "text": "Abschied vom Sommer im Schlosshof: Es gab Musik, frisch gezapftes Bier und Bratwürste."
+  }
 }

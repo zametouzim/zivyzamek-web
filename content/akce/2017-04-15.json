@@ -1,5 +1,13 @@
 {
   "title": "Úklid, čištění a příprava na čarodějnice",
   "date": "2017-04-15",
-  "text": "Dobrovolníci navozili dřevo na hranici, popálili větve, vyřezali další nálety a natřeli první nový stůl."
+  "text": "Dobrovolníci navozili dřevo na hranici, popálili větve, vyřezali další nálety a natřeli první nový stůl.",
+  "en": {
+    "title": "Clean-up and preparations for the witch-burning",
+    "text": "Volunteers brought in wood for the bonfire, burned branches, cut more self-seeded trees and painted the first new table."
+  },
+  "de": {
+    "title": "Aufräumen, Säubern und Vorbereitung auf das Hexenbrennen",
+    "text": "Die Freiwilligen fuhren Holz für den Scheiterhaufen heran, verbrannten Äste, schnitten weiteren Wildwuchs heraus und strichen den ersten neuen Tisch."
+  }
 }

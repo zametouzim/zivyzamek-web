@@ -6,5 +6,15 @@
   "photos": [
     "img/akce/2020-06-20-1.jpg",
     "img/akce/2020-06-20-2.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle Festival 2020 (4th year)",
+    "when": "Saturday · 14:00",
+    "text": "Despite bad weather, the fourth castle rock festival went ahead in front of about a hundred fans, and the bands played their hearts out. The party was ended around midnight by the police."
+  },
+  "de": {
+    "title": "Schlossfestival 2020 (4. Jahrgang)",
+    "when": "Samstag · 14:00",
+    "text": "Trotz schlechten Wetters fand das vierte Rockfestival im Schloss vor rund hundert Fans statt, und die Bands spielten mit voller Hingabe. Die Party beendete gegen Mitternacht erst die Polizei."
+  }
 }

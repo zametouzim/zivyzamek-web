@@ -1,5 +1,13 @@
 {
   "title": "Brigáda na zámku",
   "date": "2016-05-28",
-  "text": "Podle pozvánky byla v plánu brigáda od 10 hodin: čištění pódia a hlediště a příprava na letní akce."
+  "text": "Podle pozvánky byla v plánu brigáda od 10 hodin: čištění pódia a hlediště a příprava na letní akce.",
+  "en": {
+    "title": "Work party at the castle",
+    "text": "According to the invitation, a work party was planned from 10 am: cleaning the stage and auditorium and preparing for the summer events."
+  },
+  "de": {
+    "title": "Arbeitseinsatz auf dem Schloss",
+    "text": "Laut Einladung war ab 10 Uhr ein Arbeitseinsatz geplant: Reinigung von Bühne und Zuschauerbereich und Vorbereitung auf die Sommerveranstaltungen."
+  }
 }

@@ -8,5 +8,13 @@
     "img/akce/2022-06-11-2.jpg",
     "img/akce/2022-06-11-3.jpg",
     "img/akce/2022-06-11-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle Festival, 6th year",
+    "text": "A rock festival in the courtyard. Cerberos, Loretta, Hlahol and Fata Morgana played."
+  },
+  "de": {
+    "title": "Schlossfestival, 6. Jahrgang",
+    "text": "Ein Rockfestival im Hof. Es spielten Cerberos, Loretta, Hlahol und Fata Morgana."
+  }
 }

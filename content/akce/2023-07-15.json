@@ -8,5 +8,13 @@
     "img/akce/2023-07-15-2.jpg",
     "img/akce/2023-07-15-3.jpg",
     "img/akce/2023-07-15-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Children's afternoon with the Jitule & Dadule theatre",
+    "text": "The fairy tale Hansel and Gretel by the Jitule a Dadule theatre, plus themed games."
+  },
+  "de": {
+    "title": "Kindernachmittag mit dem Theater Jitule & Dadule",
+    "text": "Das Märchen „Hänsel und Gretel“ des Theaters Jitule a Dadule und thematische Spiele."
+  }
 }

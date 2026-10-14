@@ -7,5 +7,11 @@
     "img/akce/2024-08-31-2.jpg",
     "img/akce/2024-08-31-3.jpg",
     "img/akce/2024-08-31-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Punkovice 2024"
+  },
+  "de": {
+    "title": "Punkovice 2024"
+  }
 }

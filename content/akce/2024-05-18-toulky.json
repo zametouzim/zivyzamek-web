@@ -1,5 +1,13 @@
 {
   "title": "Toulky krajem s Jean de Carrem",
   "date": "2024-05-18",
-  "text": "Vystoupení Jeana de Carra na závěr jarní brigády."
+  "text": "Vystoupení Jeana de Carra na závěr jarní brigády.",
+  "en": {
+    "title": "Wandering the region with Jean de Carro",
+    "text": "A performance by Jean de Carro to round off the spring work party."
+  },
+  "de": {
+    "title": "Streifzüge durch die Region mit Jean de Carro",
+    "text": "Auftritt von Jean de Carro zum Abschluss des Frühjahrseinsatzes."
+  }
 }

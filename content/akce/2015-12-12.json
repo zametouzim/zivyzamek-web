@@ -2,5 +2,13 @@
   "title": "Vánoční setkání na zámku se svařákem",
   "date": "2015-12-12",
   "text": "První adventní setkání na zámeckém nádvoří se svařákem a koledami.",
-  "poster": "img/plakaty/2016_vanocni_setkani.jpg"
+  "poster": "img/plakaty/2016_vanocni_setkani.jpg",
+  "en": {
+    "title": "Christmas get-together at the castle with mulled wine",
+    "text": "The first Advent get-together in the castle courtyard with mulled wine and carols."
+  },
+  "de": {
+    "title": "Weihnachtstreffen auf dem Schloss mit Glühwein",
+    "text": "Das erste Adventstreffen im Schlosshof mit Glühwein und Weihnachtsliedern."
+  }
 }

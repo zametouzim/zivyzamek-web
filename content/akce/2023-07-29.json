@@ -9,5 +9,15 @@
     "img/akce/2023-07-29-2.jpg",
     "img/akce/2023-07-29-3.jpg",
     "img/akce/2023-07-29-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle fair",
+    "when": "Saturday · 10:00–18:00",
+    "text": "Despite poor weather, the fair in the courtyard drew plenty of visitors."
+  },
+  "de": {
+    "title": "Schlossmarkt",
+    "when": "Samstag · 10:00–18:00",
+    "text": "Der Markt im Hof lockte trotz ungünstigen Wetters viele Besucher an."
+  }
 }

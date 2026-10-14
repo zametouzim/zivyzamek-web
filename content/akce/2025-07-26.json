@@ -8,5 +8,13 @@
     "img/akce/2025-07-26-2.jpg",
     "img/akce/2025-07-26-3.jpg",
     "img/akce/2025-07-26-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle fair",
+    "text": "Craft stalls, a bread-baking demonstration, a dog handler, a stall by Maminy s rakovinou (Mums with Cancer) and nurses from Toužim home health care. The band Longway played."
+  },
+  "de": {
+    "title": "Schlossmarkt",
+    "text": "Handwerksstände, eine Brotback-Vorführung, eine Hundeführerin, ein Stand von Maminy s rakovinou (Mütter mit Krebs) und Krankenschwestern der häuslichen Krankenpflege Toužim. Es spielte die Band Longway."
+  }
 }

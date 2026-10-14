@@ -1,5 +1,13 @@
 {
   "title": "Zámecké CITO, podzim 2023",
   "date": "2023-10-14",
-  "text": "Dvanácté CITO: vyřezání náletů, úklid areálu a odměnou komentovaná prohlídka."
+  "text": "Dvanácté CITO: vyřezání náletů, úklid areálu a odměnou komentovaná prohlídka.",
+  "en": {
+    "title": "Castle CITO, autumn 2023",
+    "text": "The twelfth CITO: cutting out self-seeded growth, tidying the grounds and, as a reward, a guided tour."
+  },
+  "de": {
+    "title": "Schloss-CITO, Herbst 2023",
+    "text": "Das zwölfte CITO: Wildwuchs entfernen, das Gelände aufräumen und zur Belohnung eine Führung."
+  }
 }

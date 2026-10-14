@@ -9,5 +9,13 @@
     "img/akce/2026-04-25-2.jpg",
     "img/akce/2026-04-25-3.jpg",
     "img/akce/2026-04-25-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Volunteering Days",
+    "text": "A spring clean and help with the castle garden. Over the weekend about a fifth of the terrace was cleared, the bonfire for Witches' Night was prepared, the stage cleaned and the toilet facilities made ready. The band Longway played, and Hospůdka U Havlů cooked goulash."
+  },
+  "de": {
+    "title": "Freiwilligentage",
+    "text": "Frühjahrsputz und Hilfe im Schlossgarten. An dem Wochenende wurde etwa ein Fünftel der Terrasse geräumt, das Feuer für die Hexennacht vorbereitet, die Bühne gereinigt und die Sanitäranlagen hergerichtet. Es spielte die Band Longway, das Gulasch kochte die Hospůdka U Havlů."
+  }
 }

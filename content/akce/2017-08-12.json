@@ -1,4 +1,10 @@
 {
   "title": "Perseidy na zámku",
-  "date": "2017-08-12"
+  "date": "2017-08-12",
+  "en": {
+    "title": "Perseidy at the castle"
+  },
+  "de": {
+    "title": "Perseidy auf dem Schloss"
+  }
 }

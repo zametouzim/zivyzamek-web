@@ -8,5 +8,13 @@
     "img/akce/2019-04-27-2.jpg",
     "img/akce/2019-04-27-3.jpg",
     "img/akce/2019-04-27-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Gathering of witches",
+    "text": "In the afternoon we made witches and had fun."
+  },
+  "de": {
+    "title": "Hexentreffen",
+    "text": "Am Nachmittag bastelten wir Hexen und hatten Spaß."
+  }
 }

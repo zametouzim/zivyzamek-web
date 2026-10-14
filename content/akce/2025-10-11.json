@@ -7,5 +7,13 @@
     "img/akce/2025-10-11-2.jpg",
     "img/akce/2025-10-11-3.jpg",
     "img/akce/2025-10-11-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle CITO, autumn work party",
+    "text": "The 15th Castle CITO: paving cleaned, cellars and chambers cleared of stones and rubble, leaves raked, self-seeded growth removed and the information board repainted. The band Longway played."
+  },
+  "de": {
+    "title": "Schloss-CITO, Herbsteinsatz",
+    "text": "Das XV. Schloss-CITO: Pflaster gereinigt, Keller und Kammern von Steinen und Schutt geräumt, Laub gerecht, Wildwuchs entfernt und die Infotafel gestrichen. Es spielte die Band Longway."
+  }
 }

@@ -7,5 +7,11 @@
     "img/akce/2019-07-20-3.jpg",
     "img/akce/2019-07-20-4.jpg",
     "img/akce/2019-07-20-5.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle Festival 2019 (3rd year)"
+  },
+  "de": {
+    "title": "Schlossfestival 2019 (3. Jahrgang)"
+  }
 }

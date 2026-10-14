@@ -3,5 +3,13 @@
   "date": "2016-07-02",
   "end": "2016-07-03",
   "text": "Sobota: zkrášlovací brigáda, dobrovolníci vítáni. Neděle: tvorba šperků a ozdob pro děti i dospělé, sousedské občerstvení.",
-  "poster": "img/plakaty/2016_zivy_zamek_plakat.jpg"
+  "poster": "img/plakaty/2016_zivy_zamek_plakat.jpg",
+  "en": {
+    "title": "Creative weekend at the castle",
+    "text": "Saturday: a work party to spruce things up, volunteers welcome. Sunday: making jewellery and decorations for children and adults, neighbourly refreshments."
+  },
+  "de": {
+    "title": "Kreatives Wochenende auf dem Schloss",
+    "text": "Samstag: Verschönerungseinsatz, Freiwillige willkommen. Sonntag: Basteln von Schmuck und Dekorationen für Kinder und Erwachsene, nachbarschaftliche Bewirtung."
+  }
 }

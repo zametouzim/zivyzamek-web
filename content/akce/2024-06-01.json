@@ -8,5 +8,13 @@
     "img/akce/2024-06-01-2.jpg",
     "img/akce/2024-06-01-3.jpg",
     "img/akce/2024-06-01-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Children's Day",
+    "text": "Children's Day come rain or shine: contests, workshops and foam from the Toužim volunteer fire brigade, moved inside the castle when it rained."
+  },
+  "de": {
+    "title": "Kindertag",
+    "text": "Kindertag bei jedem Wetter: Wettbewerbe, Werkstätten und Schaum von der Freiwilligen Feuerwehr Toužim, bei Regen im Inneren des Schlosses."
+  }
 }

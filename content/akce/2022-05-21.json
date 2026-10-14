@@ -5,5 +5,13 @@
   "poster": "img/plakaty/2022_gp_05-21.jpg",
   "photos": [
     "img/akce/2022-05-21-1.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle CITO, spring 2022",
+    "text": "The first CITO since we took over the baton from Dílna U mnicha: tidying the courtyard, cutting and burning self-seeded growth, raking leaves."
+  },
+  "de": {
+    "title": "Schloss-CITO, Frühjahr 2022",
+    "text": "Das erste CITO, seit wir den Staffelstab von der Dílna U mnicha übernommen haben: Aufräumen des Hofes, Wildwuchs schneiden und verbrennen, Laub rechen."
+  }
 }

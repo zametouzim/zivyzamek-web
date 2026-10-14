@@ -9,5 +9,15 @@
     "img/akce/2021-07-31-2.jpg",
     "img/akce/2021-07-31-3.jpg",
     "img/akce/2021-07-31-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle Fler Craft Fair",
+    "when": "Saturday · 13:00",
+    "text": "The second craft fair, with handmade goods, jewellery, decorations and refreshments, games and crafts for children, and guided tours of part of the castle. Visitors could also see the new railing on the bastion."
+  },
+  "de": {
+    "title": "Fler-Handwerksmarkt im Schloss",
+    "when": "Samstag · 13:00",
+    "text": "Der zweite Markt mit Handwerk, Schmuck, Dekorationen und Erfrischungen, Spielen und Basteln für Kinder sowie Führungen durch einen Teil der Burg. Die Besucher konnten auch das neue Geländer auf der Bastei sehen."
+  }
 }

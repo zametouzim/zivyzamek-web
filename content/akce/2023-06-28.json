@@ -7,5 +7,13 @@
     "img/akce/2023-06-28-2.jpg",
     "img/akce/2023-06-28-3.jpg",
     "img/akce/2023-06-28-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Graduation ribbons for Year 9 pupils of Toužim Primary School",
+    "text": "Pupils from all three Year 9 classes of the Toužim primary school celebrated the end of their studies here with their teachers."
+  },
+  "de": {
+    "title": "Abschlussfeier der 9. Klassen der Grundschule Toužim",
+    "text": "Die Schüler aller drei neunten Klassen der Toužimer Grundschule feierten bei uns mit ihren Lehrern feierlich ihren Schulabschluss."
+  }
 }

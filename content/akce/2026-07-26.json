@@ -5,5 +5,15 @@
   "text": "Ranní vinyasa jógu s Reginou Pavlíčkovou jsme cvičili na zámeckém nádvoří.",
   "photos": [
     "img/akce/2026-07-26-1.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Morning vinyasa yoga",
+    "when": "Sunday · 8:45",
+    "text": "We practised morning vinyasa yoga with Regina Pavlíčková in the castle courtyard."
+  },
+  "de": {
+    "title": "Vinyasa-Yoga am Morgen",
+    "when": "Sonntag · 8:45",
+    "text": "Morgendliches Vinyasa-Yoga mit Regina Pavlíčková im Schlosshof."
+  }
 }

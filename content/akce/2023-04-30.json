@@ -8,5 +8,13 @@
     "img/akce/2023-04-30-2.jpg",
     "img/akce/2023-04-30-3.jpg",
     "img/akce/2023-04-30-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Witches' Night bonfire",
+    "text": "The band Dáma s hranostajem played as the witch was burned."
+  },
+  "de": {
+    "title": "Hexenverbrennung",
+    "text": "Beim Verbrennen der Hexe spielte die Band Dáma s hranostajem."
+  }
 }

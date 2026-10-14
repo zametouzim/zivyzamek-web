@@ -7,5 +7,13 @@
     "img/akce/2024-04-30-1.jpg",
     "img/akce/2024-04-30-2.jpg",
     "img/akce/2024-04-30-3.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Witches' Night bonfire",
+    "text": "Raising the maypole on the square with the Toužim art school orchestra, then making a witch and a bonfire in the castle courtyard. Organised together with the Toužim volunteer fire brigade."
+  },
+  "de": {
+    "title": "Hexenverbrennung",
+    "text": "Aufstellen des Maibaums auf dem Marktplatz mit dem Orchester der Kunstschule Toužim, danach Hexenbasteln und Feuer im Schlosshof. Gemeinsam mit der Freiwilligen Feuerwehr Toužim veranstaltet."
+  }
 }

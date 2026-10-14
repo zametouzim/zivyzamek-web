@@ -5,5 +5,13 @@
   "photos": [
     "img/akce/2018-12-15-1.jpg",
     "img/akce/2018-12-15-2.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Christmas get-together",
+    "text": "A get-together over mulled wine with baked teas, jams and souvenirs in support of roofing the stage."
+  },
+  "de": {
+    "title": "Weihnachtstreffen",
+    "text": "Treffen bei Glühwein mit gebackenem Tee, Marmeladen und Andenken zur Unterstützung der Bühnenüberdachung."
+  }
 }

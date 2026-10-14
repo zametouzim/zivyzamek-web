@@ -8,5 +8,15 @@
     "img/akce/2021-10-09-2.jpg",
     "img/akce/2021-10-09-3.jpg",
     "img/akce/2021-10-09-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle CITO Toužim 2021: Autumn",
+    "when": "Saturday · 11:00",
+    "text": "The autumn CITO drew so many people that it set an all-time attendance record, and more work got done than planned. Thanks also go to Dílna U mnicha."
+  },
+  "de": {
+    "title": "Schloss-CITO Toužim 2021: Herbst",
+    "when": "Samstag · 11:00",
+    "text": "Das Herbst-CITO lockte so viele Leute an, dass ein historischer Besucherrekord fiel, und es wurde mehr geschafft als geplant. Dank gilt auch der Dílna U mnicha."
+  }
 }

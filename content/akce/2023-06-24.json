@@ -9,5 +9,13 @@
     "img/akce/2023-06-24-2.jpg",
     "img/akce/2023-06-24-3.jpg",
     "img/akce/2023-06-24-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Historical afternoon and an exhibition of jigsaw-puzzle pictures",
+    "text": "Town day with period music by Cavalla Canor, fencing by Alia Tempora, the Shahinez dancers, Eva with her barrel organ and a blacksmith's forge. An exhibition of jigsaw-puzzle pictures by Jan Policar opened in the chambers and ran until 30 July."
+  },
+  "de": {
+    "title": "Historischer Nachmittag und Ausstellung von Puzzlebildern",
+    "text": "Stadtfest mit historischer Musik von Cavalla Canor, Fechten mit Alia Tempora, den Tänzerinnen Shahinez, Eva mit der Drehorgel und einer Schmiedeesse. In den Kammern begann eine Ausstellung von Puzzlebildern von Jan Policar, geöffnet bis 30. 7."
+  }
 }

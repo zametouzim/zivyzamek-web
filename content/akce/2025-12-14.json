@@ -8,5 +8,13 @@
     "img/akce/2025-12-14-2.jpg",
     "img/akce/2025-12-14-3.jpg",
     "img/akce/2025-12-14-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Christmas gathering",
+    "text": "Decorating the tree, a CVČ Kačaba workshop, a trail of Christmas customs, a contest for the best Christmas bread, a fairy tale by the Ostrov amateur players and carols with the Toužim art school."
+  },
+  "de": {
+    "title": "Weihnachtstreffen",
+    "text": "Baumschmücken, eine Werkstatt des CVČ Kačaba, ein Pfad der Weihnachtsbräuche, ein Wettbewerb um den besten Hefezopf, ein Märchen der Laienspieler aus Ostrov und Weihnachtslieder mit der Kunstschule Toužim."
+  }
 }

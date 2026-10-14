@@ -9,5 +9,13 @@
     "img/akce/2026-09-26-2.jpg",
     "img/akce/2026-09-26-3.jpg",
     "img/akce/2026-09-26-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Poznej & pomoz (Discover & Help): work party at the castle",
+    "text": "Another garden work party during European Heritage Days. The first castle flower nursery was started, and on Saturday we celebrated the society's 10 years."
+  },
+  "de": {
+    "title": "Poznej & pomoz (Entdecke & hilf): Einsatz im Schloss",
+    "text": "Ein weiterer Garteneinsatz während der Tage des europäischen Kulturerbes. Es entstand die erste Blumenbaumschule des Schlosses, und am Samstag feierten wir 10 Jahre Vereinsarbeit."
+  }
 }

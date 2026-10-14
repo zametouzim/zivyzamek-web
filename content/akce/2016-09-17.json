@@ -1,4 +1,10 @@
 {
   "title": "Koncert skupiny Cerberos a výtvarné odpoledne",
-  "date": "2016-09-17"
+  "date": "2016-09-17",
+  "en": {
+    "title": "Cerberos concert and an afternoon of art"
+  },
+  "de": {
+    "title": "Konzert der Band Cerberos und ein Kunstnachmittag"
+  }
 }

@@ -1,5 +1,13 @@
 {
   "title": "Přednáška Obrazy ze života jednoho zámku",
   "date": "2016-01-26",
-  "text": "Přednáška o dějinách a stavebním vývoji zámku v Infocentru Toužim."
+  "text": "Přednáška o dějinách a stavebním vývoji zámku v Infocentru Toužim.",
+  "en": {
+    "title": "Talk: Pictures from the life of a castle",
+    "text": "A talk on the history and architectural development of the castle at the Toužim Information Centre."
+  },
+  "de": {
+    "title": "Vortrag: Bilder aus dem Leben eines Schlosses",
+    "text": "Vortrag über die Geschichte und die bauliche Entwicklung des Schlosses im Infozentrum Toužim."
+  }
 }

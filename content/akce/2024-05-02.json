@@ -5,5 +5,11 @@
     "img/akce/2024-05-02-1.jpg",
     "img/akce/2024-05-02-2.jpg"
   ],
-  "titleTodo": true
+  "titleTodo": true,
+  "en": {
+    "title": "Work party"
+  },
+  "de": {
+    "title": "Arbeitseinsatz"
+  }
 }

@@ -8,5 +8,13 @@
     "img/akce/2022-08-13-2.jpg",
     "img/akce/2022-08-13-3.jpg",
     "img/akce/2022-08-13-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Punkovice 2022",
+    "text": "Stamp Out System, Porucha systému, Čekišó, Vypitý lahváče, Já ještě nevim and ŠpuntQaně played."
+  },
+  "de": {
+    "title": "Punkovice 2022",
+    "text": "Es spielten Stamp Out System, Porucha systému, Čekišó, Vypitý lahváče, Já ještě nevim und ŠpuntQaně."
+  }
 }

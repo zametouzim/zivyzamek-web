@@ -7,5 +7,13 @@
     "img/akce/2022-07-30-2.jpg",
     "img/akce/2022-07-30-3.jpg",
     "img/akce/2022-07-30-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle Fler Craft Fair",
+    "text": "A fair with stalls and live music by the band Longway, who gave us a burned CD with our logo. A record number of exhibitors and sellers took part."
+  },
+  "de": {
+    "title": "Fler-Handwerksmarkt im Schloss",
+    "text": "Ein Markt mit Ständen und Livemusik der Band Longway, die uns eine gebrannte CD mit unserem Logo schenkte. Die Zahl der Aussteller und Verkäufer war rekordverdächtig."
+  }
 }

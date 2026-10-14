@@ -3,5 +3,15 @@
   "date": "2023-11-04",
   "when": "sobota · 15:00–17:30",
   "text": "Strašidelné sklepení, letos i s mlhovačem, nový fotokoutek a v 17:30 lampionový průvod.",
-  "poster": "img/plakaty/2023_gp_11-04.jpg"
+  "poster": "img/plakaty/2023_gp_11-04.jpg",
+  "en": {
+    "title": "Halloween at the castle",
+    "when": "Saturday · 15:00–17:30",
+    "text": "A spooky cellar, this year with a fog machine, a new photo corner and a lantern procession at 17:30."
+  },
+  "de": {
+    "title": "Halloween im Schloss",
+    "when": "Samstag · 15:00–17:30",
+    "text": "Ein Gruselkeller, dieses Jahr mit Nebelmaschine, eine neue Fotoecke und um 17:30 ein Laternenumzug."
+  }
 }

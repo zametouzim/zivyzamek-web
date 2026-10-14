@@ -8,5 +8,13 @@
     "img/akce/2025-04-30-2.jpg",
     "img/akce/2025-04-30-3.jpg",
     "img/akce/2025-04-30-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Witches' Night bonfire and raising the maypole",
+    "text": "Raising the maypole and a bonfire with three witches made by children from the CVČ Kačaba clubs."
+  },
+  "de": {
+    "title": "Hexenverbrennung und Maibaumaufstellen",
+    "text": "Maibaumaufstellen und ein Feuer mit drei Hexen, die Kinder aus den Kursen des CVČ Kačaba gebastelt hatten."
+  }
 }

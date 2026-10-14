@@ -5,5 +5,13 @@
   "poster": "img/plakaty/2021_gp_08-21.jpg",
   "photos": [
     "img/akce/2021-08-21-1.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Punkovice at the castle (4th year)",
+    "text": "Another punk party at the castle, where the bands played and the crowd partied."
+  },
+  "de": {
+    "title": "Punkovice im Schloss (4. Jahrgang)",
+    "text": "Eine weitere Punk-Party im Schloss: Die Bands spielten, und das Publikum feierte."
+  }
 }

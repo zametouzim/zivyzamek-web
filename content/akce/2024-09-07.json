@@ -8,5 +8,13 @@
     "img/akce/2024-09-07-2.jpg",
     "img/akce/2024-09-07-3.jpg",
     "img/akce/2024-09-07-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Theatre Day at the castle",
+    "text": "The first theatre day: two performances for young and old, a castle café, a photo corner, face painting and workshops."
+  },
+  "de": {
+    "title": "Theatertag im Schloss",
+    "text": "Der erste Theatertag: zwei Vorstellungen für Klein und Groß, ein Schlosscafé, eine Fotoecke, Kinderschminken und Werkstätten."
+  }
 }

@@ -1,5 +1,13 @@
 {
   "title": "Country fest na zámku (1. ročník)",
   "date": "2020-07-18",
-  "text": "První ročník hudební akce v duchu country & folk, doplněný malým jarmarkem s tradičními rukodělnými výrobky. Počasí vyšlo parádně."
+  "text": "První ročník hudební akce v duchu country & folk, doplněný malým jarmarkem s tradičními rukodělnými výrobky. Počasí vyšlo parádně.",
+  "en": {
+    "title": "Country Fest at the castle (1st year)",
+    "text": "The first country & folk music event, with a small fair of traditional handmade goods. The weather was perfect."
+  },
+  "de": {
+    "title": "Country Fest im Schloss (1. Jahrgang)",
+    "text": "Die erste Musikveranstaltung im Zeichen von Country & Folk, ergänzt durch einen kleinen Markt mit traditionellem Handwerk. Das Wetter war prächtig."
+  }
 }

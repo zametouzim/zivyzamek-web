@@ -2,5 +2,13 @@
   "title": "Dětský den",
   "date": "2021-06-05",
   "text": "Navzdory nepříznivé předpovědi přišla spousta lidí; proběhly soutěže, hry, tanečky a vyrábění. Vše završila Tibetská pohádka Divadla loutek Karlovy Vary.",
-  "poster": "img/plakaty/2021_gp_06-05.jpg"
+  "poster": "img/plakaty/2021_gp_06-05.jpg",
+  "en": {
+    "title": "Children's Day",
+    "text": "Despite a gloomy forecast, lots of people came; there were contests, games, dancing and crafts. It all ended with the Tibetan Fairy Tale by the Karlovy Vary Puppet Theatre."
+  },
+  "de": {
+    "title": "Kindertag",
+    "text": "Trotz ungünstiger Wettervorhersage kamen viele Leute; es gab Wettbewerbe, Spiele, Tänze und Basteln. Zum Abschluss spielte das Puppentheater Karlovy Vary ein tibetisches Märchen."
+  }
 }

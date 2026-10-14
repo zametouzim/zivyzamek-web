@@ -7,5 +7,13 @@
     "img/akce/2016-06-11-1.jpg",
     "img/akce/2016-06-11-2.jpg",
     "img/akce/2016-06-11-3.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Perseidy: the first castle concert by a country band",
+    "text": "The very first concert at the castle. The country band Perseidy played, admission was by donation."
+  },
+  "de": {
+    "title": "Perseidy: das erste Schlosskonzert einer Countryband",
+    "text": "Das allererste Konzert auf dem Schloss. Es spielte die Countryband Perseidy, Eintritt gegen freiwillige Spende."
+  }
 }

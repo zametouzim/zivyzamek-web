@@ -1,4 +1,10 @@
 {
   "title": "Dny evropského dědictví 2022",
-  "date": "2022-09-10"
+  "date": "2022-09-10",
+  "en": {
+    "title": "European Heritage Days 2022"
+  },
+  "de": {
+    "title": "Tage des europäischen Kulturerbes 2022"
+  }
 }

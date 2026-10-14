@@ -7,5 +7,13 @@
     "img/akce/2025-06-21-2.jpg",
     "img/akce/2025-06-21-3.jpg",
     "img/akce/2025-06-21-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle Festival, 9th year",
+    "text": "Carpatia Castle, Krleš, Cerberos and Trojka played."
+  },
+  "de": {
+    "title": "Schlossfestival, 9. Jahrgang",
+    "text": "Es spielten Carpatia Castle, Krleš, Cerberos und Trojka."
+  }
 }

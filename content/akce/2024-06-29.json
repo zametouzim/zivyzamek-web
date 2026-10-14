@@ -9,5 +9,13 @@
     "img/akce/2024-06-29-4.jpg",
     "img/akce/2024-06-29-5.jpg",
     "img/akce/2024-06-29-6.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Town Day: 555 years of Toužim",
+    "text": "Celebrating 555 years since Toužim was raised to a town. Fencing by Alia Tempora, the Shahinez dancers, music by Cavalla Canor, a blacksmith, a beekeeper, creative workshops, games by Jiří Šebesta in the garden and fairy tales by Poutník Hroch."
+  },
+  "de": {
+    "title": "Stadtfest: 555 Jahre Toužim",
+    "text": "Feier zu 555 Jahren seit der Erhebung Toužims zur Stadt. Fechten mit Alia Tempora, die Tänzerinnen Shahinez, Musik von Cavalla Canor, ein Schmied, ein Imker, Kreativwerkstätten, Spiele von Jiří Šebesta im Garten und Märchen von Poutník Hroch."
+  }
 }

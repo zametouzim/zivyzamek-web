@@ -7,5 +7,13 @@
     "img/akce/2016-08-13-2.jpg",
     "img/akce/2016-08-13-3.jpg",
     "img/akce/2016-08-13-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Workshop: making bird boxes and feeders",
+    "text": "In the castle courtyard, participants made bird boxes and feeders from leftover wood, decorated with twigs and natural materials. Two boxes, one of them for bats, and one feeder were made."
+  },
+  "de": {
+    "title": "Workshop: Bau von Nistkästen und Futterhäuschen",
+    "text": "Im Schlosshof bauten die Teilnehmer aus Restholz Nistkästen und Futterhäuschen, verziert mit Zweigen und Naturmaterialien. Es entstanden zwei Kästen, einer davon für Fledermäuse, und ein Futterhäuschen."
+  }
 }
