@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
+<script>(function(){var l=(location.search.match(/[?&]lang=(en|de)\b/)||[])[1]||'cs';window.LANG=l;if(l!=='cs'){document.documentElement.lang=l;document.documentElement.classList.add('tr-wait');setTimeout(function(){document.documentElement.classList.remove('tr-wait')},2500);}})();</script>
 <script>try{var t=localStorage.getItem("vzhled");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script>
 <style>
 /* Barvy ze sezónního plakátu 2026 (tmavě modrá, korálová, žlutá) na teplém podkladu jako omítka zámku; linky z loga jako dělicí prvek; písmo Calibri → Carlito, data úzkým písmem jako na plakátu */
@@ -70,12 +71,10 @@ nav.main a.give{background:var(--accent);color:var(--accent-ink);border:0;margin
 .theme-btn .i-sun{display:none}
 .langs{display:flex;gap:2px;flex-shrink:0}
 .langs a{text-decoration:none;font-family:var(--cond);font-weight:600;font-size:17px;letter-spacing:.06em;padding:8px 6px;color:var(--ink)}
-.langs a[aria-current="page"]{color:var(--accent);text-decoration:underline;text-underline-offset:4px}
-.langback{font-weight:700}
-.steps.langhist li{grid-template-columns:150px minmax(0,1fr)}
-@media (max-width:600px){.steps.langhist li{grid-template-columns:1fr;gap:2px}}
-.langhist .when{white-space:normal}
+.langs a[aria-current="true"]{color:var(--accent);text-decoration:underline;text-underline-offset:4px}
 nav.main a.lang-m{display:none}
+nav.main a.lang-m[aria-current="true"]{display:none!important}
+html.tr-wait body{opacity:0}
 @media (max-width:860px){.langs{display:none}nav.main a.lang-m{display:flex}}
 .dark-on .theme-btn .i-sun{display:block}
 .dark-on .theme-btn .i-moon{display:none}
@@ -354,10 +353,11 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
       <a href="#zamek">Zámek a historie</a>
       <a href="#spolek">Spolek</a>
       <a href="#podporte" class="give">Podpořte nás</a>
-      <a href="#en" class="lang-m" lang="en" hreflang="en">English</a>
-      <a href="#de" class="lang-m" lang="de" hreflang="de">Deutsch</a>
+      <a href="?lang=cs" class="lang-m" data-lang="cs" lang="cs" hreflang="cs" data-notr>Česky</a>
+      <a href="?lang=en" class="lang-m" data-lang="en" lang="en" hreflang="en" data-notr>English</a>
+      <a href="?lang=de" class="lang-m" data-lang="de" lang="de" hreflang="de" data-notr>Deutsch</a>
     </nav>
-    <span class="langs"><a href="#en" lang="en" hreflang="en" title="English">EN</a><a href="#de" lang="de" hreflang="de" title="Deutsch">DE</a></span>
+    <span class="langs" data-notr><a href="?lang=cs" data-lang="cs" lang="cs" hreflang="cs" title="Česky">CZ</a><a href="?lang=en" data-lang="en" lang="en" hreflang="en" title="English">EN</a><a href="?lang=de" data-lang="de" lang="de" hreflang="de" title="Deutsch">DE</a></span>
     <button class="theme-btn" id="themeBtn" type="button" aria-label="Přepnout na tmavý vzhled" title="Světlý / tmavý vzhled">
       <svg class="i-moon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
       <svg class="i-sun" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -509,94 +509,6 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     <div class="photos" style="margin-top:32px">
       <figure class="p-a"><div class="r"><img src="img/arkady.jpg" alt="Arkády Horního zámku"></div><figcaption>Arkády Horního zámku</figcaption></figure>
       <figure class="p-b"><div class="r"><img src="img/podium.jpg" alt="Nádvoří s pódiem a hranicí na pálení čarodějnic"></div><figcaption>Příprava na pálení čarodějnic, duben 2025</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<!-- EN -->
-<section data-page="en" lang="en" hidden>
-  <div class="wrap">
-    <div class="page-head"><span class="eyebrow">For visitors · English</span><h2>Toužim Castle</h2><p>The oldest and most important historic monument of Toužim, a small town in the Karlovy Vary Region of West Bohemia. After decades of decay, volunteers of the association Živý zámek Toužim (“Living Castle Toužim”) have been bringing it back to life since 2015. The courtyard and the interiors of the Upper Castle are open to visitors.</p><p class="langback"><a href="#domu" lang="cs">← Česky</a></p></div>
-    <div class="two">
-      <div class="card navy">
-        <span class="eyebrow" data-k="sezona" style="color:var(--sun)">July to September</span>
-        <h3>Open at weekends</h3>
-        <div class="hours">
-          <div class="hr"><div><span class="hk">Castle and courtyard</span><span class="ht" data-k="vstup_cas">Saturday and Sunday 10–12 and 13–17</span></div><b class="pr" data-k="vstup_cena">admission by donation</b></div>
-          <div class="hr"><div><span class="hk">Guided tour</span><span class="ht" data-k="prohlidka_cas">Saturday and Sunday at 11, 14 and 16</span></div><b class="pr" data-k="prohlidka_cena">50 CZK per person</b></div>
-        </div>
-        <dl class="facts"><dt>Outside the season</dt><dd><span data-k="mimo_sezonu">by arrangement</span>, e-mail <span data-k="email">zivyzamektouzim@email.cz</span></dd></dl>
-      </div>
-      <div class="card">
-        <h3>Getting here</h3>
-        <dl class="facts">
-          <dt>Address</dt><dd>náměstí Jiřího z Poděbrad 1<br>364 01 Toužim, Czech Republic</dd>
-          <dt>Bus</dt><dd>stop on the main square, about 100 m from the entrance</dd>
-          <dt>Parking</dt><dd>on the main square</dd>
-          <dt>Step-free entrance</dt><dd>yes</dd>
-        </dl>
-        <div class="ctas"><a class="btn fill" href="https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim" target="_blank" rel="noopener">Open map</a></div>
-      </div>
-    </div>
-    <div class="block">
-      <div class="lab"><h2>Upcoming events</h2><p style="color:var(--grey)">Event names and details are in Czech.</p></div>
-      <div class="body"><ul class="events up langev" data-loc="en-GB" data-none="The programme for the next season is being prepared."></ul></div>
-    </div>
-    <div class="block">
-      <div class="lab"><h2>A short history</h2></div>
-      <div class="body">
-        <ol class="steps langhist"><li><span class="when">12th century</span><span>A manor is founded on the site; in 1187 it passes to the Premonstratensian monastery of Milevsko and becomes a provostry.</span></li><li><span class="when">1437</span><span>The Hussite captain Jakoubek of Vřesovice and his son Jan rebuild the provostry into a Gothic castle, the core of today’s Upper Castle.</span></li><li><span class="when">1469</span><span>King George of Poděbrady allows a new fortified town to be built next to the castle. Toužim is born.</span></li><li><span class="when">16th century</span><span>The Lords of Plauen rebuild the castle in Renaissance style: the Upper and Lower Castle, a farmyard and a garden with a fountain.</span></li><li><span class="when">1620–1829</span><span>Several fires and rebuildings. In 1829 the Upper Castle loses its top floor, tower and both wings.</span></li><li><span class="when">1945–2009</span><span>State ownership, then a private owner from 1998. The castle decays and the town gets it back as a ruin in 2009.</span></li><li><span class="when">since 2015</span><span>Volunteers clean up and open the castle. In 2016 they found the association Živý zámek Toužim. In 2026 a 15th-century fortification wall was discovered.</span></li></ol>
-        <p>We are also creating a community garden between the Upper and Lower Castle, with support from the VIA Foundation.</p>
-        <figure style="margin:0"><img src="img/arkady.jpg" alt="Arcades of the Upper Castle" loading="lazy" style="width:100%;display:block;max-height:460px;object-fit:cover"><figcaption style="font-size:14px;color:var(--grey);padding-top:6px">Arcades of the Upper Castle</figcaption></figure>
-      </div>
-    </div>
-    <div class="block">
-      <div class="lab"><h2>Contact</h2></div>
-      <div class="body"><p>E-mail: <span data-k="email">zivyzamektouzim@email.cz</span><br>Facebook: <a href="https://www.facebook.com/zivyzamek.touzim" target="_blank" rel="noopener">facebook.com/zivyzamek.touzim</a></p></div>
-    </div>
-  </div>
-</section>
-
-<!-- DE -->
-<section data-page="de" lang="de" hidden>
-  <div class="wrap">
-    <div class="page-head"><span class="eyebrow">Für Besucher · Deutsch</span><h2>Schloss Toužim (Theusing)</h2><p>Das älteste und bedeutendste Baudenkmal der Kleinstadt Toužim (deutsch Theusing) in der Region Karlsbad in Westböhmen. Nach Jahrzehnten des Verfalls erwecken es seit 2015 Freiwillige des Vereins Živý zámek Toužim („Lebendiges Schloss Toužim“) wieder zum Leben. Der Schlosshof und die Innenräume des Oberen Schlosses sind für Besucher geöffnet.</p><p class="langback"><a href="#domu" lang="cs">← Česky</a></p></div>
-    <div class="two">
-      <div class="card navy">
-        <span class="eyebrow" data-k="sezona" style="color:var(--sun)">Juli bis September</span>
-        <h3>Geöffnet an Wochenenden</h3>
-        <div class="hours">
-          <div class="hr"><div><span class="hk">Schloss und Schlosshof</span><span class="ht" data-k="vstup_cas">Samstag und Sonntag 10–12 und 13–17 Uhr</span></div><b class="pr" data-k="vstup_cena">Eintritt: freiwillige Spende</b></div>
-          <div class="hr"><div><span class="hk">Führung</span><span class="ht" data-k="prohlidka_cas">Samstag und Sonntag um 11, 14 und 16 Uhr</span></div><b class="pr" data-k="prohlidka_cena">50 CZK pro Person</b></div>
-        </div>
-        <dl class="facts"><dt>Außerhalb der Saison</dt><dd><span data-k="mimo_sezonu">nach Vereinbarung</span>, E-Mail <span data-k="email">zivyzamektouzim@email.cz</span></dd></dl>
-      </div>
-      <div class="card">
-        <h3>Anfahrt</h3>
-        <dl class="facts">
-          <dt>Adresse</dt><dd>náměstí Jiřího z Poděbrad 1<br>364 01 Toužim, Tschechien</dd>
-          <dt>Bus</dt><dd>Haltestelle am Marktplatz, etwa 100 m vom Eingang</dd>
-          <dt>Parken</dt><dd>direkt am Marktplatz</dd>
-          <dt>Barrierefreier Eingang</dt><dd>ja</dd>
-        </dl>
-        <div class="ctas"><a class="btn fill" href="https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim" target="_blank" rel="noopener">Karte öffnen</a></div>
-      </div>
-    </div>
-    <div class="block">
-      <div class="lab"><h2>Nächste Veranstaltungen</h2><p style="color:var(--grey)">Namen und Beschreibungen der Veranstaltungen sind auf Tschechisch.</p></div>
-      <div class="body"><ul class="events up langev" data-loc="de-DE" data-none="Das Programm für die nächste Saison wird vorbereitet."></ul></div>
-    </div>
-    <div class="block">
-      <div class="lab"><h2>Kurze Geschichte</h2></div>
-      <div class="body">
-        <ol class="steps langhist"><li><span class="when">12. Jahrhundert</span><span>An der Stelle des Schlosses entsteht ein Herrenhof; 1187 geht er an das Prämonstratenserkloster Milevsko und wird zur Propstei.</span></li><li><span class="when">1437</span><span>Der hussitische Hauptmann Jakoubek von Wřesowitz und sein Sohn Jan bauen die Propstei zur gotischen Burg aus, dem Kern des heutigen Oberen Schlosses.</span></li><li><span class="when">1469</span><span>König Georg von Podiebrad erlaubt den Bau einer neuen befestigten Stadt neben der Burg. Toužim entsteht.</span></li><li><span class="when">16. Jahrhundert</span><span>Die Herren von Plauen bauen die Burg im Renaissancestil um: Oberes und Unteres Schloss, Meierhof und Garten mit Brunnen.</span></li><li><span class="when">1620–1829</span><span>Mehrere Brände und Umbauten. 1829 verliert das Obere Schloss das Obergeschoss mit dem Turm und beide Flügel.</span></li><li><span class="when">1945–2009</span><span>Staatsbesitz, ab 1998 ein privater Eigentümer. Das Schloss verfällt, 2009 bekommt es die Stadt als Ruine zurück.</span></li><li><span class="when">seit 2015</span><span>Freiwillige räumen auf und öffnen das Schloss. 2016 gründen sie den Verein Živý zámek Toužim. 2026 wurde eine Befestigungsmauer aus dem 15. Jahrhundert entdeckt.</span></li></ol>
-        <p>Zwischen dem Oberen und dem Unteren Schloss legen wir außerdem einen Gemeinschaftsgarten an, unterstützt von der Stiftung VIA.</p>
-        <figure style="margin:0"><img src="img/arkady.jpg" alt="Arkaden des Oberen Schlosses" loading="lazy" style="width:100%;display:block;max-height:460px;object-fit:cover"><figcaption style="font-size:14px;color:var(--grey);padding-top:6px">Arkaden des Oberen Schlosses</figcaption></figure>
-      </div>
-    </div>
-    <div class="block">
-      <div class="lab"><h2>Kontakt</h2></div>
-      <div class="body"><p>E-Mail: <span data-k="email">zivyzamektouzim@email.cz</span><br>Facebook: <a href="https://www.facebook.com/zivyzamek.touzim" target="_blank" rel="noopener">facebook.com/zivyzamek.touzim</a></p></div>
     </div>
   </div>
 </section>
@@ -858,8 +770,51 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 <div class="copy"><div class="wrap">© <span id="cy">2026</span> Živý zámek Toužim z. s. · Web vytvořil Michal Nedvídek s pomocí Claude (AI od Anthropicu)</div></div>
 
 <div class="lb" id="lb" hidden><img alt=""><button class="x" aria-label="Zavřít">×</button><button class="pv" aria-label="Předchozí">‹</button><button class="nx" aria-label="Další">›</button></div>
+<script src="data/i18n.js"></script>
 <script src="data/akce.js"></script>
 <script src="data/web.js"></script>
+<script>
+// Překlad statických textů stránky (data/i18n.js). Jednotka překladu = prvek, který obsahuje jen text a řádkové značky.
+(function(){
+  var INLINE={B:1,I:1,A:1,BR:1,SPAN:1,SMALL:1,STRONG:1,EM:1,SUP:1,SUB:1,ABBR:1,TIME:1,U:1,S:1,MARK:1,Q:1,CITE:1};
+  var SKIP={SCRIPT:1,STYLE:1,SVG:1,svg:1,TEXTAREA:1,SELECT:1,NOSCRIPT:1,TEMPLATE:1};
+  function norm(h){return h.replace(/\s+/g,' ').trim()}
+  function pureInline(el){
+    for(var c=el.firstElementChild;c;c=c.nextElementSibling){if(!INLINE[c.tagName]||!pureInline(c))return false}
+    return true;
+  }
+  function ownText(el){for(var n=el.firstChild;n;n=n.nextSibling)if(n.nodeType===3&&/\S/.test(n.nodeValue))return true;return false}
+  function units(root,out){
+    for(var el=root.firstElementChild;el;el=el.nextElementSibling){
+      if(SKIP[el.tagName]||el.hasAttribute('data-notr'))continue;
+      if(/[A-Za-zÀ-ž]/.test(el.textContent)&&pureInline(el)&&(ownText(el)||el.childElementCount<2))out.push(el);
+      else units(el,out);
+    }
+    return out;
+  }
+  var ATTR=['alt','title','aria-label','placeholder'];
+  function attrs(root,f){[].forEach.call(root.querySelectorAll('[alt],[title],[aria-label],[placeholder]'),function(el){if(el.closest('[data-notr]'))return;ATTR.forEach(function(a){var v=el.getAttribute(a);if(v&&/\S/.test(v))f(el,a,norm(v))})})}
+  window.I18N_UNITS=function(root){
+    var u=units(root,[]).map(function(el){return norm(el.innerHTML)}), a=[];
+    attrs(root,function(el,n,v){a.push(v)});
+    return {html:u,attr:a};
+  };
+  var D=(window.I18N||{})[window.LANG];
+  window.T=function(s){return D&&D.js&&D.js[s]||s};
+  if(!D){document.documentElement.classList.remove('tr-wait');return;}
+  try{
+    units(document.body,[]).forEach(function(el){var k=norm(el.innerHTML), v=D.html[k];if(v)el.innerHTML=v});
+    attrs(document.body,function(el,n,v){var t=D.attr[v];if(t)el.setAttribute(n,t)});
+    if(D.title)document.title=D.title;
+    var md=document.querySelector('meta[name="description"]');if(md&&D.attr[norm(md.content)])md.content=D.attr[norm(md.content)];
+  }finally{document.documentElement.classList.remove('tr-wait')}
+})();
+// přepínač jazyků: zachová stránku (hash)
+(function(){
+  function upd(){[].forEach.call(document.querySelectorAll('a[data-lang]'),function(a){var l=a.dataset.lang;a.href=(l==='cs'?location.pathname:'?lang='+l)+location.hash;if(l===window.LANG)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current')})}
+  upd();window.addEventListener('hashchange',upd);
+})();
+</script>
 <script>
 (function(){
   // vlastní stránky z administrace (data/web.js): sekce a odkaz v menu
@@ -874,7 +829,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
         if(b.type==='nadpis')h+='<h3>'+e(b.text||'')+'</h3>';
         else if(b.type==='text')h+=(b.html||'').split('\n').map(function(t){return '<p>'+t+'</p>'}).join('');
         else if(b.type==='fotka'&&b.src)h+='<figure><img src="'+e(b.src)+'" alt="'+e(b.popisek||'')+'" loading="lazy">'+(b.popisek?'<figcaption>'+e(b.popisek)+'</figcaption>':'')+'</figure>';
-        else if(b.type==='galerie'&&b.fotky&&b.fotky.length)h+='<div class="gal">'+b.fotky.map(function(f){return '<button class="pz" data-src="'+e(f)+'" aria-label="Zvětšit fotku"><img src="'+e(f)+'" alt="" loading="lazy"></button>'}).join('')+'</div>';
+        else if(b.type==='galerie'&&b.fotky&&b.fotky.length)h+='<div class="gal">'+b.fotky.map(function(f){return '<button class="pz" data-src="'+e(f)+'" aria-label="'+T('Zvětšit fotku')+'"><img src="'+e(f)+'" alt="" loading="lazy"></button>'}).join('')+'</div>';
         else if(b.type==='tlacitko'&&b.text){var u=link(b.odkaz);h+='<p><a class="btn" href="'+e(u)+'"'+(u.charAt(0)==='#'?'':' target="_blank" rel="noopener"')+'>'+e(b.text)+'</a></p>';}
       });
       var sec=document.createElement('section');sec.dataset.page=p.id;sec.hidden=true;sec.innerHTML='<div class="wrap">'+h+'</div></div>';
@@ -888,21 +843,24 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   var nav=document.getElementById('mainNav'), btn=document.getElementById('menuBtn');
   var now=new Date(), today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
   function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-  function d(iso){var p=iso.split('-');return (+p[2])+'. '+(+p[1])+'.'}
-  function dFull(a){var s=a.date.split('-'),t=+s[2]+'. '+(+s[1])+'. '+s[0];if(a.end){var e=a.end.split('-');t=+s[2]+'.–'+(+e[2])+'. '+(+e[1])+'. '+e[0];}return t}
+  var EN=window.LANG==='en';
+  function mon(m){return new Date(2026,m-1,15).toLocaleDateString('en-GB',{month:'short'})}
+  function nFoto(n){if(window.LANG==='cs')return n+(n==1?' fotka':n<5?' fotky':' fotek');return n+' '+T(n==1?'fotka':'fotek')}
+  function d(iso){var p=iso.split('-');return EN?(+p[2])+' '+mon(+p[1]):(+p[2])+'. '+(+p[1])+'.'}
+  function dFull(a){var s=a.date.split('-');if(EN){var t=+s[2]+' '+mon(+s[1])+' '+s[0];if(a.end){var e=a.end.split('-');t=+s[2]+(e[1]!==s[1]?' '+mon(+s[1]):'')+'–'+(+e[2])+' '+mon(+e[1])+' '+e[0];}return t}var t=+s[2]+'. '+(+s[1])+'. '+s[0];if(a.end){var e=a.end.split('-');t=+s[2]+'.–'+(+e[2])+'. '+(+e[1])+'. '+e[0];}return t}
   function past(a){return new Date((a.end||a.date)+'T23:59:59')<today}
 
   // detail akce
   var detail=document.getElementById('akceDetail'), lb=document.getElementById('lb'), lbImgs=[], lbI=0, curPhotos=[];
   function renderDetail(id){
     var a=AKCE.filter(function(x){return x.id===id})[0];
-    if(!a){detail.innerHTML='<a class="ak-back" href="#archiv">← Archiv akcí</a><p>Akce nenalezena.</p>';return}
-    var h=(past(a)?'<a class="ak-back" href="#archiv">← Archiv akcí</a>':'<a class="ak-back" href="#program">← Program</a>')+'<div class="ak-head"><div class="ak-date">'+dFull(a)+'</div><h2>'+esc(a.title)+(a.titleTodo?' <span class="todo" style="font-size:18px">název?</span>':'')+'</h2>'+(a.when?'<div class="ak-when">'+esc(a.when)+'</div>':'')+'</div>';
-    h+='<div class="ak-body"><div class="ak-text">'+(a.html?a.html.split('\n').map(function(p){return '<p>'+p+'</p>'}).join(''):a.text?a.text.split('\n').map(function(p){return '<p>'+esc(p)+'</p>'}).join(''):'<p><span class="todo">krátký popis akce</span></p>')+'</div>';
-    h+=a.poster?'<button class="poster" data-src="'+a.poster+'" aria-label="Zvětšit plakát"><img src="'+a.poster+'" alt="Plakát: '+esc(a.title)+'"></button>':'<div></div>';
+    if(!a){detail.innerHTML='<a class="ak-back" href="#archiv">← '+T('Archiv akcí')+'</a><p>'+T('Akce nenalezena.')+'</p>';return}
+    var h=(past(a)?'<a class="ak-back" href="#archiv">← '+T('Archiv akcí')+'</a>':'<a class="ak-back" href="#program">← '+T('Program')+'</a>')+'<div class="ak-head"><div class="ak-date">'+dFull(a)+'</div><h2>'+esc(a.title)+(a.titleTodo?' <span class="todo" style="font-size:18px">název?</span>':'')+'</h2>'+(a.when?'<div class="ak-when">'+esc(a.when)+'</div>':'')+'</div>';
+    h+='<div class="ak-body"><div class="ak-text">'+(a.html?a.html.split('\n').map(function(p){return '<p>'+p+'</p>'}).join(''):a.text?a.text.split('\n').map(function(p){return '<p>'+esc(p)+'</p>'}).join(''):'<p><span class="todo">'+T('krátký popis akce')+'</span></p>')+'</div>';
+    h+=a.poster?'<button class="poster" data-src="'+a.poster+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+a.poster+'" alt="'+T('Plakát')+': '+esc(a.title)+'"></button>':'<div></div>';
     h+='</div>';
-    if(a.photos&&a.photos.length){h+='<div class="ak-gal">'+a.photos.map(function(f,i){return '<button data-i="'+i+'"><img src="'+f+'" alt="Fotka z akce '+esc(a.title)+'" loading="lazy"></button>'}).join('')+'</div>';}
-    else h+='<p style="color:var(--grey);margin:24px 0 40px">Fotky doplníme.</p>';
+    if(a.photos&&a.photos.length){h+='<div class="ak-gal">'+a.photos.map(function(f,i){return '<button data-i="'+i+'"><img src="'+f+'" alt="'+T('Fotka z akce')+' '+esc(a.title)+'" loading="lazy"></button>'}).join('')+'</div>';}
+    else h+='<p style="color:var(--grey);margin:24px 0 40px">'+T('Fotky doplníme.')+'</p>';
     detail.innerHTML=h; curPhotos=a.photos||[];
   }
   function lbShow(i){lbI=(i+lbImgs.length)%lbImgs.length;lb.querySelector('img').src=lbImgs[lbI];var one=lbImgs.length<2;lb.querySelector('.pv').hidden=one;lb.querySelector('.nx').hidden=one;lb.hidden=false}
@@ -919,8 +877,6 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     if(id.indexOf('akce/')===0){renderDetail(id.slice(5));id='akce';}
     if(!pages.some(function(p){return p.dataset.page===id})) id='domu';
     pages.forEach(function(p){p.hidden=p.dataset.page!==id});
-    document.documentElement.lang=(id==='en'||id==='de')?id:'cs';
-    [].forEach.call(document.querySelectorAll('.langs a'),function(a){if(a.getAttribute('href')==='#'+id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
     var navId=id==='akce'?'program':id;
     links.forEach(function(a){ if(a.getAttribute('href')==='#'+navId) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
     nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); lb.hidden=true;
@@ -930,24 +886,16 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 
   // nejbližší akce: karty na úvodu a seznam v programu
   var up=AKCE.filter(function(a){return !past(a)}).reverse();
-  function dd(a){var s=a.date.split('-');if(!a.end)return (+s[2])+'. '+(+s[1])+'.';var e=a.end.split('-');return (+s[2])+'.–'+(+e[2])+'. '+(+e[1])+'.'}
+  function dd(a){var s=a.date.split('-');if(EN){if(!a.end)return d(a.date);var e=a.end.split('-');return (+s[2])+'–'+(+e[2])+' '+mon(+e[1])}if(!a.end)return (+s[2])+'. '+(+s[1])+'.';var e=a.end.split('-');return (+s[2])+'.–'+(+e[2])+'. '+(+e[1])+'.'}
   var hu=document.getElementById('homeUp'), ul=document.getElementById('upList');
-  var MES=['ledna','února','března','dubna','května','června','července','srpna','září','října','listopadu','prosince'];
-  function cal(a){var s=a.date.split('-'),t=(+s[2])+'.';if(a.end){var e=a.end.split('-');t+='–'+(+e[2])+'.';}return '<b>'+t+'</b><span>'+MES[+s[1]-1]+'</span>'+(a.when?'<small>'+esc(a.when.split(' · ')[0])+'</small>':'')}
+  var MES=window.LANG==='cs'?['ledna','února','března','dubna','května','června','července','srpna','září','října','listopadu','prosince']:[0,1,2,3,4,5,6,7,8,9,10,11].map(function(i){return new Date(2026,i,15).toLocaleDateString(window.LANG,{month:'long'})});
+  function cal(a){var s=a.date.split('-'),dot=EN?'':'.',t=(+s[2])+dot;if(a.end){var e=a.end.split('-');t+='–'+(+e[2])+dot;}return '<b>'+t+'</b><span>'+MES[+s[1]-1]+'</span>'+(a.when?'<small>'+esc(a.when.split(' · ')[0])+'</small>':'')}
   if(hu)hu.innerHTML=up.length?up.slice(0,4).map(function(a){
-    return '<a class="upcard" href="#akce/'+a.id+'"><div class="cal">'+cal(a)+'</div><div class="tx"><h3>'+esc(a.title)+'</h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<span class="go">Detail →</span></div>'+(a.poster?'<img class="pt" src="'+a.poster+'" alt="" loading="lazy">':'')+'</a>';
-  }).join(''):'<p>Program na další sezónu připravujeme. Sledujte náš Facebook.</p>';
+    return '<a class="upcard" href="#akce/'+a.id+'"><div class="cal">'+cal(a)+'</div><div class="tx"><h3>'+esc(a.title)+'</h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<span class="go">'+T('Detail')+' →</span></div>'+(a.poster?'<img class="pt" src="'+a.poster+'" alt="" loading="lazy">':'')+'</a>';
+  }).join(''):'<p>'+T('Program na další sezónu připravujeme. Sledujte náš Facebook.')+'</p>';
   if(ul)ul.innerHTML=up.length?up.map(function(a){
-    return '<li class="ev"><div class="d">'+dd(a)+(a.when?'<small style="display:block;font-size:15px;color:var(--grey);font-family:var(--font);font-weight:400">'+esc(a.when)+'</small>':'')+'</div><div><h3><a href="#akce/'+a.id+'">'+esc(a.title)+'</a></h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<a class="det" href="#akce/'+a.id+'">Detail akce →</a></div>'+(a.poster?'<button class="pz" data-src="'+a.poster+'" aria-label="Zvětšit plakát"><img src="'+a.poster+'" alt="Plakát: '+esc(a.title)+'" loading="lazy"></button>':'<span></span>')+(a.tag?'<span class="tag '+(a.tagc||'')+'">'+esc(a.tag)+'</span>':'<span></span>')+'</li>';
-  }).join(''):'<li class="ev"><div><p>Program na další sezónu připravujeme. Sledujte náš Facebook.</p></div></li>';
-
-  [].forEach.call(document.querySelectorAll('.langev'),function(el){
-    var loc=el.dataset.loc;
-    function f(iso){return new Date(iso+'T12:00:00').toLocaleDateString(loc,{day:'numeric',month:'long'})}
-    el.innerHTML=up.length?up.map(function(a){
-      return '<li class="ev"><div class="d" style="font-size:20px">'+f(a.date)+(a.end?' – '+f(a.end):'')+'</div><div><h3><a href="#akce/'+a.id+'" lang="cs">'+esc(a.title)+'</a></h3></div><span></span><span></span></li>';
-    }).join(''):'<li class="ev"><div><p>'+esc(el.dataset.none)+'</p></div></li>';
-  });
+    return '<li class="ev"><div class="d">'+dd(a)+(a.when?'<small style="display:block;font-size:15px;color:var(--grey);font-family:var(--font);font-weight:400">'+esc(a.when)+'</small>':'')+'</div><div><h3><a href="#akce/'+a.id+'">'+esc(a.title)+'</a></h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<a class="det" href="#akce/'+a.id+'">'+T('Detail akce')+' →</a></div>'+(a.poster?'<button class="pz" data-src="'+a.poster+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+a.poster+'" alt="'+T('Plakát')+': '+esc(a.title)+'" loading="lazy"></button>':'<span></span>')+(a.tag?'<span class="tag '+(a.tagc||'')+'">'+esc(a.tag)+'</span>':'<span></span>')+'</li>';
+  }).join(''):'<li class="ev"><div><p>'+T('Program na další sezónu připravujeme. Sledujte náš Facebook.')+'</p></div></li>';
 
   // archiv: roky a seznam
   var yearsEl=document.getElementById('archYears'), list=document.getElementById('archList');
@@ -957,9 +905,9 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     [].forEach.call(yearsEl.children,function(b){b.setAttribute('aria-selected',b.dataset.y===y?'true':'false')});
     list.innerHTML=done.filter(function(a){return a.date.slice(0,4)===y}).map(function(a){
       var th=a.photos&&a.photos[0]?a.photos[0].replace('img/akce/','img/akce/t/'):a.poster;
-      return '<li class="ev past"><a class="evl" href="#akce/'+a.id+'"><div class="d">'+d(a.date)+'</div><div><h3>'+esc(a.title)+'</h3><div class="meta">'+[a.poster?'plakát':'',a.photos&&a.photos.length?a.photos.length+(a.photos.length==1?' fotka':a.photos.length<5?' fotky':' fotek'):''].filter(Boolean).join(' · ')+'</div></div>'+(th?'<img class="th" src="'+th+'" alt="" loading="lazy">':'<span></span>')+'</a></li>';
+      return '<li class="ev past"><a class="evl" href="#akce/'+a.id+'"><div class="d">'+d(a.date)+'</div><div><h3>'+esc(a.title)+'</h3><div class="meta">'+[a.poster?T('plakát'):'',a.photos&&a.photos.length?nFoto(a.photos.length):''].filter(Boolean).join(' · ')+'</div></div>'+(th?'<img class="th" src="'+th+'" alt="" loading="lazy">':'<span></span>')+'</a></li>';
     }).join('');
-    var R=window.ROKY||{}; if(R[y]) list.insertAdjacentHTML('afterbegin','<li class="ev past"><a class="evl" href="'+R[y]+'" target="_blank" rel="noopener"><div class="d">'+y+'</div><div><h3>Plakát sezóny '+y+'</h3><div class="meta">celý program roku</div></div><img class="th" src="'+R[y]+'" alt="" loading="lazy" style="object-fit:cover;object-position:top"></a></li>');
+    var R=window.ROKY||{}; if(R[y]) list.insertAdjacentHTML('afterbegin','<li class="ev past"><a class="evl" href="'+R[y]+'" target="_blank" rel="noopener"><div class="d">'+y+'</div><div><h3>'+T('Plakát sezóny')+' '+y+'</h3><div class="meta">'+T('celý program roku')+'</div></div><img class="th" src="'+R[y]+'" alt="" loading="lazy" style="object-fit:cover;object-position:top"></a></li>');
   }
   yearsEl.innerHTML=years.map(function(y){return '<button role="tab" data-y="'+y+'">'+y+'</button>'}).join('');
   yearsEl.addEventListener('click',function(e){var b=e.target.closest('button');if(b)renderYear(b.dataset.y)});
@@ -986,19 +934,19 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
       else if(em&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em))bad.push(el.email);
       if(!el.zprava.value.trim())bad.push(el.zprava);
       if(bad.length){bad.forEach(function(i){i.classList.add('bad')});bad[0].focus();
-        say(noContact&&bad.length===2?'Vyplňte prosím e-mail nebo telefon.':'Doplňte prosím zvýrazněná políčka.','err');return;}
-      var b=f.querySelector('button');b.disabled=true;say('Odesílám…');
+        say(noContact&&bad.length===2?T('Vyplňte prosím e-mail nebo telefon.'):T('Doplňte prosím zvýrazněná políčka.'),'err');return;}
+      var b=f.querySelector('button');b.disabled=true;say(T('Odesílám…'));
       fetch('kontakt.php',{method:'POST',body:new FormData(f)}).then(function(r){return r.json()}).then(function(d){
-        if(!d.ok)throw 0;f.reset();say('Děkujeme, zpráva odešla. Ozveme se co nejdřív.','ok');
+        if(!d.ok)throw 0;f.reset();say(T('Děkujeme, zpráva odešla. Ozveme se co nejdřív.'),'ok');
       }).catch(function(){
-        say('Zprávu se nepodařilo odeslat. Napište nám prosím na zivyzamektouzim@email.cz.','err');
+        say(T('Zprávu se nepodařilo odeslat. Napište nám prosím na zivyzamektouzim@email.cz.'),'err');
       }).then(function(){b.disabled=false;});
     });
   })();
   (function(){
     var root=document.documentElement, btn=document.getElementById('themeBtn'), mq=window.matchMedia('(prefers-color-scheme: dark)');
     function isDark(){var t=root.dataset.theme;return t?t==='dark':mq.matches;}
-    function sync(){var d=isDark();root.classList.toggle('dark-on',d);btn.setAttribute('aria-label',d?'Přepnout na světlý vzhled':'Přepnout na tmavý vzhled');}
+    function sync(){var d=isDark();root.classList.toggle('dark-on',d);btn.setAttribute('aria-label',d?T('Přepnout na světlý vzhled'):T('Přepnout na tmavý vzhled'));}
     btn.addEventListener('click',function(){var t=isDark()?'light':'dark';root.dataset.theme=t;try{localStorage.setItem('vzhled',t)}catch(e){}sync();});
     if(mq.addEventListener)mq.addEventListener('change',sync);
     sync();
@@ -1010,36 +958,28 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   var m=now.getMonth()+1;
   // bloky upravované v administraci (data/web.js)
   var WEB=window.WEB||{}, NV=WEB.navsteva;
-  var MES=['ledna','února','března','dubna','května','června','července','srpna','září','října','listopadu','prosince'];
+  var MES=window.LANG==='cs'?['ledna','února','března','dubna','května','června','července','srpna','září','října','listopadu','prosince']:[0,1,2,3,4,5,6,7,8,9,10,11].map(function(i){return new Date(2026,i,15).toLocaleDateString(window.LANG,{month:'long'})});
   var od=NV?NV.sezona_od:7, doo=NV?NV.sezona_do:9, tel=NV&&NV.kontakty[0]?NV.kontakty[0].telefon:'+420 724 859 799';
   if(NV){
     document.getElementById('fKontakt').innerHTML=NV.kontakty.map(function(k){return esc(k.jmeno)+', '+esc(k.funkce)+'<br>'+esc(k.telefon)}).join('<br>')+'<br>'+esc(NV.email);
     document.getElementById('fSezona').textContent=NV.sezona;
     document.getElementById('fUcet').textContent=NV.ucet;
     var ac=document.getElementById('acct'); if(ac)ac.textContent=NV.ucet;
-    document.getElementById('hoursBox').innerHTML='<div class="hr"><div><span class="hk">Vstup do zámku a na nádvoří</span><span class="ht">'+esc(NV.vstup_cas)+'</span></div><b class="pr">'+esc(NV.vstup_cena)+'</b></div><div class="hr"><div><span class="hk">Komentovaná prohlídka s průvodcem</span><span class="ht">'+esc(NV.prohlidka_cas)+'</span></div><b class="pr">'+esc(NV.prohlidka_cena)+'</b></div>';
-    document.getElementById('offSeason').textContent='po domluvě: '+NV.kontakty.map(function(k){return k.jmeno.split(' ')[0]+' '+k.telefon}).join(', ');
+    document.getElementById('hoursBox').innerHTML='<div class="hr"><div><span class="hk">'+T('Vstup do zámku a na nádvoří')+'</span><span class="ht">'+esc(NV.vstup_cas)+'</span></div><b class="pr">'+esc(NV.vstup_cena)+'</b></div><div class="hr"><div><span class="hk">'+T('Komentovaná prohlídka s průvodcem')+'</span><span class="ht">'+esc(NV.prohlidka_cas)+'</span></div><b class="pr">'+esc(NV.prohlidka_cena)+'</b></div>';
+    document.getElementById('offSeason').textContent=T('po domluvě')+': '+NV.kontakty.map(function(k){return k.jmeno.split(' ')[0]+' '+k.telefon}).join(', ');
   }
-  if(m>=od&&m<=doo){document.getElementById('seasonLab').textContent='Otevřeno';document.getElementById('seasonTxt').textContent=NV?('Vstup '+NV.vstup_cas+', komentované prohlídky '+NV.prohlidka_cas+'.'):'So–ne 10–12 a 13–17 h, komentované prohlídky v 11, 14 a 16 h.';}
-  else if(m<od){document.getElementById('seasonTxt').textContent='Prohlídky po domluvě na '+tel.replace(/ /g,' ')+'. Otevřené víkendy od '+MES[od-1]+'.';}
-  else{document.getElementById('seasonTxt').textContent='Prohlídky po domluvě na '+tel.replace(/ /g,' ')+'. Otevřené víkendy opět příští rok.';}
+  if(m>=od&&m<=doo){document.getElementById('seasonLab').textContent=T('Otevřeno');document.getElementById('seasonTxt').textContent=NV?(T('Vstup')+' '+NV.vstup_cas+', '+T('komentované prohlídky')+' '+NV.prohlidka_cas+'.'):T('So–ne 10–12 a 13–17 h, komentované prohlídky v 11, 14 a 16 h.');}
+  else if(m<od){document.getElementById('seasonTxt').textContent=T('Prohlídky po domluvě na')+' '+tel.replace(/ /g,' ')+'. '+T('Otevřené víkendy od')+' '+MES[od-1]+'.';}
+  else{document.getElementById('seasonTxt').textContent=T('Prohlídky po domluvě na')+' '+tel.replace(/ /g,' ')+'. '+T('Otevřené víkendy opět příští rok.');}
   var SV=WEB.suvenyry;
   if(SV){
     document.getElementById('goodsIntro').textContent=SV.uvod;
-    document.getElementById('goods').innerHTML=SV.polozky.map(function(g){return '<div class="g'+(g.skladem?'':' out')+'"><div class="gi">'+(g.foto?'<img src="'+esc(g.foto)+'" alt="'+esc(g.nazev)+'" loading="lazy">':'<span>foto</span>')+'</div><div class="gt"><span>'+esc(g.nazev)+'</span><p>'+esc(g.popis)+'</p><b>'+esc(g.cena)+(g.skladem?'':' · vyprodáno')+'</b></div></div>'}).join('');
+    document.getElementById('goods').innerHTML=SV.polozky.map(function(g){return '<div class="g'+(g.skladem?'':' out')+'"><div class="gi">'+(g.foto?'<img src="'+esc(g.foto)+'" alt="'+esc(g.nazev)+'" loading="lazy">':'<span>'+T('foto')+'</span>')+'</div><div class="gt"><span>'+esc(g.nazev)+'</span><p>'+esc(g.popis)+'</p><b>'+esc(g.cena)+(g.skladem?'':' · '+T('vyprodáno'))+'</b></div></div>'}).join('');
   }
 
   var ZA=WEB.zahrada, gs=document.getElementById('gSteps'), gp=document.getElementById('gPhotos');
   if(ZA&&gs&&ZA.kroky&&ZA.kroky.length)gs.innerHTML=ZA.kroky.map(function(k){var c={'hotovo':'done','probíhá':'now'}[k.stav];return '<li'+(c?' class="'+c+'"':'')+'><span class="m"></span><span class="when">'+esc(k.kdy||'')+'</span><span>'+esc(k.co||'')+'</span></li>'}).join('');
   if(ZA&&gp&&ZA.fotky&&ZA.fotky.length)gp.innerHTML=ZA.fotky.map(function(f){return '<figure class="p-c3"><div class="r"><img src="'+esc(f.src)+'" alt="'+esc(f.popis||f.popisek||'')+'" loading="lazy"></div>'+(f.popisek?'<figcaption>'+esc(f.popisek)+'</figcaption>':'')+'</figure>'}).join('');
-
-  // anglická a německá stránka: otevírací doba a ceny z administrace, e-mail z české verze
-  var CJ=WEB.cizojazycne||{};
-  ['en','de'].forEach(function(l){
-    var sec=document.querySelector('section[data-page="'+l+'"]'), t=CJ[l]||{};
-    if(!sec)return;
-    [].forEach.call(sec.querySelectorAll('[data-k]'),function(el){var k=el.dataset.k, v=k==='email'?(NV&&NV.email):t[k];if(v)el.textContent=v});
-  });
 
   var PA=WEB.partneri, pb=document.getElementById('partnersBox');
   if(PA&&PA.length&&pb){
@@ -1065,7 +1005,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   cb.addEventListener('click',function(){
     var el=document.getElementById('acct'), t=el.textContent;
     function sel(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);}
-    try{navigator.clipboard.writeText(t).then(function(){cb.textContent='Zkopírováno'},sel)}catch(e){sel()}
+    try{navigator.clipboard.writeText(t).then(function(){cb.textContent=T('Zkopírováno')},sel)}catch(e){sel()}
   });
 })();
 </script>
