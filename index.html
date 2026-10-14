@@ -151,6 +151,21 @@ main section[data-page]{padding-block:0 96px}
 .two>*,.three>*{min-width:0}
 @media (max-width:760px){.two,.three{grid-template-columns:1fr}}
 .card{background:var(--panel);padding:28px;display:grid;gap:14px;align-content:start}
+.ask{margin-top:32px;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:28px}
+.ask h3{margin:.2em 0}
+.ask form{display:grid;gap:14px}
+.ask label{display:grid;gap:4px;font-weight:700;font-size:16px}
+.ask input,.ask textarea{font:inherit;font-weight:400;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);padding:10px 12px;border-radius:0;width:100%;box-sizing:border-box}
+.ask textarea{resize:vertical}
+.ask .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ask .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.ask .note,.ask .gdpr{margin:0;font-size:14px;color:var(--grey)}
+.ask .gdpr{font-size:12.5px}
+.ask .send{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.ask .bad{border-color:var(--accent);outline:1px solid var(--accent)}
+#askMsg.err{color:var(--accent);font-weight:700}
+#askMsg.ok{font-weight:700}
+@media (max-width:760px){.ask{grid-template-columns:1fr}.ask .row2{grid-template-columns:1fr}}
 .card.navy{background:var(--navy);color:var(--navy-ink)}
 .card.sun{background:var(--cta-bg);color:var(--cta-ink)}
 
@@ -445,6 +460,21 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
         </div>
       </div>
     </div>
+    <div class="card ask" id="dotaz">
+      <div><span class="eyebrow">Napište nám</span><h3>Máte dotaz?</h3><p>Chcete se na něco zeptat, domluvit prohlídku mimo sezónu nebo přijít pomoct? Napište nám, ozveme se.</p></div>
+      <form id="askForm" novalidate>
+        <label>Jméno<input name="jmeno" autocomplete="name" required></label>
+        <div class="row2">
+          <label>E-mail<input name="email" type="email" autocomplete="email"></label>
+          <label>Telefon<input name="telefon" type="tel" autocomplete="tel"></label>
+        </div>
+        <label>Zpráva<textarea name="zprava" rows="5" required></textarea></label>
+        <label class="hp" aria-hidden="true">Nevyplňujte<input name="web" tabindex="-1" autocomplete="off"></label>
+        <p class="note">Vyplňte prosím e-mail nebo telefon, ať vám můžeme odpovědět.</p>
+        <div class="send"><button class="btn fill" type="submit">Odeslat</button><span id="askMsg" role="status"></span></div>
+        <p class="gdpr">Jméno a kontakt použijeme jen k odpovědi na váš dotaz a nikomu je nepředáme. Správce údajů: Živý zámek Toužim z. s., IČO 04690770.</p>
+      </form>
+    </div>
     <div class="two" style="margin-top:32px;align-items:start">
       <figure class="zfig" style="margin:0"><img src="img/zamek/mapka-arealu-2022.jpg" alt="Mapka zámeckého areálu: přístupné venkovní a vnitřní prostory a nepřístupné části" loading="lazy"></figure>
       <div class="card"><h3>Mapka areálu</h3><p>Zeleně je přístupné nádvoří a parkán, modře zpřístupněné vnitřní prostory Horního zámku: hodovní, audienční a rytířský sál, komnata, sklep, pokladnice, archiv a další. Červeně jsou části, kam se zatím nesmí, včetně Dolního zámku a bašty. Pokladna je hned u vstupu.</p></div>
@@ -691,7 +721,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   <div class="wrap cols">
     <div><img src="img/logo.png" alt="Živý zámek Toužim"></div>
     <div><h4>Zámek</h4><p>náměstí Jiřího z Poděbrad 1<br>364 01 Toužim<br><span id="fSezona">Otevřené víkendy červenec–září</span></p></div>
-    <div><h4>Kontakt</h4><p id="fKontakt">Pavla Vokurková, předsedkyně<br>+420 724 859 799<br>Alena Šlajerová, místopředsedkyně<br>+420 728 290 280<br>zivyzamektouzim@email.cz</p></div>
+    <div><h4>Kontakt</h4><p id="fKontakt">Pavla Vokurková, předsedkyně<br>+420 724 859 799<br>Alena Šlajerová, místopředsedkyně<br>+420 728 290 280<br>zivyzamektouzim@email.cz</p><p><a href="#dotaz">Napište nám →</a></p></div>
     <div><h4>Spolek</h4><p>Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Účet <span id="fUcet">2301034510/2010</span><br><a href="https://www.facebook.com/zivyzamek.touzim" target="_blank" rel="noopener">Facebook</a></p></div>
   </div>
 </footer>
@@ -770,6 +800,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   function show(){
     var id=(location.hash||'#domu').slice(1), jump=null;
     if(id==='archiv'){id='program';jump='archiv';}
+    if(id==='dotaz'){id='navsteva';jump='dotaz';}
     if(id.indexOf('akce/')===0){renderDetail(id.slice(5));id='akce';}
     if(!pages.some(function(p){return p.dataset.page===id})) id='domu';
     pages.forEach(function(p){p.hidden=p.dataset.page!==id});
@@ -811,6 +842,29 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 
   window.addEventListener('hashchange',show); show();
   btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false')});
+  (function(){
+    var f=document.getElementById('askForm'), msg=document.getElementById('askMsg');
+    if(!f)return;
+    function say(t,c){msg.textContent=t;msg.className=c||'';}
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var el=f.elements, bad=[];
+      [el.jmeno,el.email,el.telefon,el.zprava].forEach(function(i){i.classList.remove('bad')});
+      var em=el.email.value.trim(), tel=el.telefon.value.trim(), noContact=!em&&!tel;
+      if(!el.jmeno.value.trim())bad.push(el.jmeno);
+      if(noContact)bad.push(el.email,el.telefon);
+      else if(em&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em))bad.push(el.email);
+      if(!el.zprava.value.trim())bad.push(el.zprava);
+      if(bad.length){bad.forEach(function(i){i.classList.add('bad')});bad[0].focus();
+        say(noContact&&bad.length===2?'Vyplňte prosím e-mail nebo telefon.':'Doplňte prosím zvýrazněná políčka.','err');return;}
+      var b=f.querySelector('button');b.disabled=true;say('Odesílám…');
+      fetch('kontakt.php',{method:'POST',body:new FormData(f)}).then(function(r){return r.json()}).then(function(d){
+        if(!d.ok)throw 0;f.reset();say('Děkujeme, zpráva odešla. Ozveme se co nejdřív.','ok');
+      }).catch(function(){
+        say('Zprávu se nepodařilo odeslat. Napište nám prosím na zivyzamektouzim@email.cz.','err');
+      }).then(function(){b.disabled=false;});
+    });
+  })();
   document.addEventListener('click',function(e){var a=e.target.closest('[data-jump]');if(!a)return;e.preventDefault();var t=document.getElementById(a.dataset.jump);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});});
 
   document.getElementById('cy').textContent=now.getFullYear();
