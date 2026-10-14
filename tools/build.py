@@ -185,8 +185,6 @@ def main():
     for l in LANGS:
         web_l[l]['partneri'] = web_l[l]['partneri'].get('partneri', [])
         web_l[l]['hero'] = localized(uvod, uvod_l.get(l, {})).get('hero', [])
-    # otevírací doba pro stránky #en a #de (dřívější content/web/cizojazycne.json)
-    web['cizojazycne'] = {l: web_l[l]['navsteva'] for l in LANGS}
     web['stranky'] = stranky()
     for l in LANGS:
         web_l[l]['stranky'] = [stranka_l(o, o['_tr'].get(l, {})) for o in web['stranky']]

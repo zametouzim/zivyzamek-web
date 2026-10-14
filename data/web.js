@@ -235,56 +235,6 @@ window.WEB={
    "popis": "grafika a plakáty"
   }
  ],
- "cizojazycne": {
-  "en": {
-   "sezona": "Open at weekends, July to September",
-   "sezona_od": 7,
-   "sezona_do": 9,
-   "vstup_cas": "Saturday and Sunday 10–12 and 13–17",
-   "vstup_cena": "admission by donation",
-   "prohlidka_cas": "Saturday and Sunday at 11, 14 and 16",
-   "prohlidka_cena": "50 CZK per person",
-   "kontakty": [
-    {
-     "jmeno": "Pavla Vokurková",
-     "funkce": "chair",
-     "telefon": "+420 724 859 799"
-    },
-    {
-     "jmeno": "Alena Šlajerová",
-     "funkce": "vice-chair",
-     "telefon": "+420 728 290 280"
-    }
-   ],
-   "email": "zivyzamektouzim@email.cz",
-   "ucet": "2301034510/2010",
-   "mimo_sezonu": "by arrangement"
-  },
-  "de": {
-   "sezona": "Geöffnet an Wochenenden, Juli bis September",
-   "sezona_od": 7,
-   "sezona_do": 9,
-   "vstup_cas": "Samstag und Sonntag 10–12 und 13–17 Uhr",
-   "vstup_cena": "Eintritt: freiwillige Spende",
-   "prohlidka_cas": "Samstag und Sonntag um 11, 14 und 16 Uhr",
-   "prohlidka_cena": "50 CZK pro Person",
-   "kontakty": [
-    {
-     "jmeno": "Pavla Vokurková",
-     "funkce": "Vorsitzende",
-     "telefon": "+420 724 859 799"
-    },
-    {
-     "jmeno": "Alena Šlajerová",
-     "funkce": "stellvertretende Vorsitzende",
-     "telefon": "+420 728 290 280"
-    }
-   ],
-   "email": "zivyzamektouzim@email.cz",
-   "ucet": "2301034510/2010",
-   "mimo_sezonu": "nach Vereinbarung"
-  }
- },
  "stranky": []
 };
 window.L10N={

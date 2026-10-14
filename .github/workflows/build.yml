@@ -3,7 +3,7 @@ name: Sestavení webu
 on:
   push:
     branches: [main]
-    paths: ['content/**', 'img/**', 'admin/config.yml', 'tools/build.py']
+    paths: ['content/**', 'img/**', 'i18n/**', 'admin/config.yml', 'tools/build.py']
   workflow_dispatch:
 permissions:
   contents: write
@@ -19,6 +19,7 @@ jobs:
           python-version: '3.12'
       - run: pip install pillow
       - run: python tools/build.py
+      - run: python i18n/sestav.py
       - name: Uložit sestavená data
         run: |
           git config user.name "Sestavení webu"
