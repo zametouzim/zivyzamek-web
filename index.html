@@ -206,6 +206,16 @@ dl.facts dd{margin:0}
 .partners a:hover{outline:2px solid var(--accent)}
 
 .subnav{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.vs{max-width:760px;padding-bottom:64px}
+.vs h3{font-size:28px;margin:40px 0 12px}
+.vs p{margin:0 0 14px}
+.vs figure{margin:28px 0}
+.vs figure img{display:block;width:100%;height:auto}
+.vs figcaption{color:var(--grey);font-size:16px;margin-top:6px}
+.vs .gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;margin:28px 0}
+.vs .gal button{padding:0;border:0;background:none;cursor:zoom-in}
+.vs .gal img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.vs .btn{margin:16px 0}
 .subnav a{font-family:var(--cond);font-weight:600;font-size:17px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:1px solid var(--line);padding:5px 12px}
 .subnav a:hover{background:var(--sun);color:var(--sun-ink);border-color:var(--sun)}
 .p-c3{grid-column:span 4}
@@ -479,7 +489,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     <div class="block" id="g-stav">
       <div class="lab"><h2>Stav prací</h2><p style="color:var(--grey)">Aktualizováno po každé brigádě.</p></div>
       <div class="body">
-        <ol class="steps">
+        <ol class="steps" id="gSteps">
           <li class="done"><span class="m"></span><span class="when">08/2025</span><span>Studie zahrady</span></li>
           <li class="done"><span class="m"></span><span class="when">09/2025</span><span>Podpora Nadace VIA</span></li>
           <li class="done"><span class="m"></span><span class="when">03/2026</span><span>Začátek prací a objev hradební zdi</span></li>
@@ -524,7 +534,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     <div class="block" id="g-foto">
       <div class="lab"><span class="eyebrow">Fotky</span><h2>Jak to šlo</h2></div>
       <div class="body">
-        <div class="photos">
+        <div class="photos" id="gPhotos">
           <figure class="p-c3"><div class="r"><img src="img/z-2026-03-30.jpg" alt="Ruční úklid zarostlé plochy u plotu" loading="lazy"></div><figcaption>30. 3. 2026: první den prací</figcaption></figure>
           <figure class="p-c3"><div class="r"><img src="img/z-2026-03-31.jpg" alt="Pohled přes hradby na rozkopanou plochu" loading="lazy"></div><figcaption>31. 3. 2026: pohled od hradeb</figcaption></figure>
           <figure class="p-c3"><div class="r"><img src="img/z-2026-04-01.jpg" alt="Minibagr vytahuje starý pařez" loading="lazy"></div><figcaption>1. 4. 2026: pařezy ven</figcaption></figure>
@@ -686,7 +696,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   </div>
 </footer>
 <div class="pband"><div class="wrap"><h4>Podporují nás</h4>
-        <div class="partners pfoot">
+        <div class="partners pfoot" id="partnersBox">
           <a href="https://www.touzim.cz/" target="_blank" rel="noopener" title="Město Toužim"><img src="img/partneri/touzim.png" alt="Město Toužim" loading="lazy"></a>
           <a href="https://www.kr-karlovarsky.cz/" target="_blank" rel="noopener" title="Karlovarský kraj"><img src="img/partneri/karlovarsky-kraj.png" alt="Karlovarský kraj" loading="lazy"></a>
           <a href="https://www.nadacevia.cz/" target="_blank" rel="noopener" title="Nadace VIA"><img src="img/partneri/nadace-via.png" alt="Nadace VIA" loading="lazy"></a>
@@ -707,6 +717,26 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 <script src="data/web.js"></script>
 <script>
 (function(){
+  // vlastní stránky z administrace (data/web.js): sekce a odkaz v menu
+  (function(){
+    var ST=(window.WEB||{}).stranky||[], main=document.querySelector('main'), give=document.querySelector('nav.main a.give');
+    function e(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+    function link(u){u=String(u||'');return /^(https?:\/\/|#|mailto:|tel:)/.test(u)?u:'#'}
+    ST.forEach(function(p){
+      if(document.querySelector('section[data-page="'+p.id+'"]'))return;
+      var h='<div class="page-head">'+(p.nadtitulek?'<span class="eyebrow">'+e(p.nadtitulek)+'</span>':'')+'<h2>'+e(p.nazev)+'</h2>'+(p.perex?'<p>'+e(p.perex)+'</p>':'')+'</div><div class="vs">';
+      (p.bloky||[]).forEach(function(b){
+        if(b.type==='nadpis')h+='<h3>'+e(b.text||'')+'</h3>';
+        else if(b.type==='text')h+=(b.html||'').split('\n').map(function(t){return '<p>'+t+'</p>'}).join('');
+        else if(b.type==='fotka'&&b.src)h+='<figure><img src="'+e(b.src)+'" alt="'+e(b.popisek||'')+'" loading="lazy">'+(b.popisek?'<figcaption>'+e(b.popisek)+'</figcaption>':'')+'</figure>';
+        else if(b.type==='galerie'&&b.fotky&&b.fotky.length)h+='<div class="gal">'+b.fotky.map(function(f){return '<button class="pz" data-src="'+e(f)+'" aria-label="Zvětšit fotku"><img src="'+e(f)+'" alt="" loading="lazy"></button>'}).join('')+'</div>';
+        else if(b.type==='tlacitko'&&b.text){var u=link(b.odkaz);h+='<p><a class="btn" href="'+e(u)+'"'+(u.charAt(0)==='#'?'':' target="_blank" rel="noopener"')+'>'+e(b.text)+'</a></p>';}
+      });
+      var sec=document.createElement('section');sec.dataset.page=p.id;sec.hidden=true;sec.innerHTML='<div class="wrap">'+h+'</div></div>';
+      main.appendChild(sec);
+      if(p.v_menu&&give){var a=document.createElement('a');a.href='#'+p.id;a.textContent=p.menu||p.nazev;give.parentNode.insertBefore(a,give);}
+    });
+  })();
   var AKCE=(window.AKCE||[]).slice().sort(function(a,b){return a.date<b.date?1:-1});
   var pages=[].slice.call(document.querySelectorAll('section[data-page]'));
   var links=[].slice.call(document.querySelectorAll('nav.main a'));
@@ -805,6 +835,20 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   if(SV){
     document.getElementById('goodsIntro').textContent=SV.uvod;
     document.getElementById('goods').innerHTML=SV.polozky.map(function(g){return '<div class="g'+(g.skladem?'':' out')+'"><div class="gi">'+(g.foto?'<img src="'+esc(g.foto)+'" alt="'+esc(g.nazev)+'" loading="lazy">':'<span>foto</span>')+'</div><div class="gt"><span>'+esc(g.nazev)+'</span><p>'+esc(g.popis)+'</p><b>'+esc(g.cena)+(g.skladem?'':' · vyprodáno')+'</b></div></div>'}).join('');
+  }
+
+  var ZA=WEB.zahrada, gs=document.getElementById('gSteps'), gp=document.getElementById('gPhotos');
+  if(ZA&&gs&&ZA.kroky&&ZA.kroky.length)gs.innerHTML=ZA.kroky.map(function(k){var c={'hotovo':'done','probíhá':'now'}[k.stav];return '<li'+(c?' class="'+c+'"':'')+'><span class="m"></span><span class="when">'+esc(k.kdy||'')+'</span><span>'+esc(k.co||'')+'</span></li>'}).join('');
+  if(ZA&&gp&&ZA.fotky&&ZA.fotky.length)gp.innerHTML=ZA.fotky.map(function(f){return '<figure class="p-c3"><div class="r"><img src="'+esc(f.src)+'" alt="'+esc(f.popis||f.popisek||'')+'" loading="lazy"></div>'+(f.popisek?'<figcaption>'+esc(f.popisek)+'</figcaption>':'')+'</figure>'}).join('');
+
+  var PA=WEB.partneri, pb=document.getElementById('partnersBox');
+  if(PA&&PA.length&&pb){
+    pb.innerHTML=PA.map(function(p){
+      var u=/^https?:\/\//.test(p.odkaz||'')?p.odkaz:'', t=u?'a href="'+esc(u)+'" target="_blank" rel="noopener"':'div', c=t==='div'?'div':'a';
+      if(p.logo&&p.popis)return '<'+t+' class="txt" title="'+esc(p.nazev)+'" style="gap:12px;grid-column:span 2;text-align:left;white-space:nowrap"><img src="'+esc(p.logo)+'" alt="" loading="lazy" style="height:44px;width:44px"><span style="display:flex;flex-direction:column">'+esc(p.nazev)+'<small style="font-weight:400;font-size:14px">'+esc(p.popis)+'</small></span></'+c+'>';
+      if(p.logo)return '<'+t+' title="'+esc(p.nazev)+'"><img src="'+esc(p.logo)+'" alt="'+esc(p.nazev)+'" loading="lazy"></'+c+'>';
+      return '<'+t+' class="txt">'+esc(p.nazev)+'</'+c+'>';
+    }).join('');
   }
 
   // rotace fotek na úvodu

@@ -338,6 +338,297 @@ window.DEMO_CONFIG={
        ]
       }
      ]
+    },
+    {
+     "name": "zahrada",
+     "label": "Zámecká zahrada: stav prací a fotky",
+     "file": "content/web/zahrada.json",
+     "format": "json",
+     "fields": [
+      {
+       "label": "Stav prací",
+       "name": "kroky",
+       "widget": "list",
+       "summary": "{{fields.kdy}} · {{fields.co}}",
+       "hint": "Po brigádě přepněte hotový krok na „hotovo“ a další na „probíhá“. Nový krok přidáte tlačítkem Přidat, pořadí přetažením.",
+       "fields": [
+        {
+         "label": "Kdy",
+         "name": "kdy",
+         "widget": "string",
+         "hint": "Např. 10/2026 nebo jaro 2027"
+        },
+        {
+         "label": "Co",
+         "name": "co",
+         "widget": "string"
+        },
+        {
+         "label": "Stav",
+         "name": "stav",
+         "widget": "select",
+         "options": [
+          "hotovo",
+          "probíhá",
+          "plánováno"
+         ],
+         "default": "plánováno"
+        }
+       ]
+      },
+      {
+       "label": "Fotky (Jak to šlo)",
+       "name": "fotky",
+       "widget": "list",
+       "summary": "{{fields.popisek}}",
+       "fields": [
+        {
+         "label": "Fotka",
+         "name": "src",
+         "widget": "image",
+         "media_folder": "/img/zahrada",
+         "public_folder": "img/zahrada",
+         "choose_url": false
+        },
+        {
+         "label": "Popisek pod fotkou",
+         "name": "popisek",
+         "widget": "string",
+         "required": false,
+         "hint": "Např. „1. 4. 2026: pařezy ven“"
+        },
+        {
+         "label": "Co je na fotce (pro nevidomé)",
+         "name": "popis",
+         "widget": "string",
+         "required": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "partneri",
+     "label": "Partneři (pruh „Podporují nás“)",
+     "file": "content/web/partneri.json",
+     "format": "json",
+     "fields": [
+      {
+       "label": "Partneři",
+       "name": "partneri",
+       "widget": "list",
+       "summary": "{{fields.nazev}}",
+       "hint": "Pořadí změníte přetažením. Bez loga se partner ukáže jako text.",
+       "fields": [
+        {
+         "label": "Název",
+         "name": "nazev",
+         "widget": "string"
+        },
+        {
+         "label": "Odkaz na jejich web",
+         "name": "odkaz",
+         "widget": "string",
+         "required": false,
+         "hint": "Celá adresa, např. https://www.touzim.cz/"
+        },
+        {
+         "label": "Logo",
+         "name": "logo",
+         "widget": "image",
+         "required": false,
+         "media_folder": "/img/partneri",
+         "public_folder": "img/partneri",
+         "choose_url": false,
+         "hint": "Nejlépe PNG s průhledným pozadím."
+        },
+        {
+         "label": "Popisek pod názvem",
+         "name": "popis",
+         "widget": "string",
+         "required": false,
+         "hint": "Když ho vyplníte, ukáže se logo vedle názvu a popisku, např. „grafika a plakáty“."
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "editor": {
+    "preview": false
+   }
+  },
+  {
+   "name": "vlastni_stranky",
+   "label": "Vlastní stránky",
+   "label_singular": "stránku",
+   "folder": "content/stranky",
+   "create": true,
+   "delete": true,
+   "format": "json",
+   "extension": "json",
+   "slug": "{{slug}}",
+   "identifier_field": "nazev",
+   "summary": "{{nazev}}",
+   "sortable_fields": [
+    {
+     "field": "poradi",
+     "label": "Pořadí",
+     "default_sort": "asc"
+    },
+    {
+     "field": "nazev",
+     "label": "Název"
+    }
+   ],
+   "description": "Nové stránky s vlastním obsahem. Obsah poskládáte z bloků (nadpis, text, fotka, galerie, tlačítko), vzhled se převezme z webu.",
+   "fields": [
+    {
+     "label": "Název stránky",
+     "name": "nazev",
+     "widget": "string"
+    },
+    {
+     "label": "Text do menu",
+     "name": "menu",
+     "widget": "string",
+     "required": false,
+     "hint": "Krátce, jedno dvě slova. Když zůstane prázdné, použije se název stránky."
+    },
+    {
+     "label": "Ukázat v menu",
+     "name": "v_menu",
+     "widget": "boolean",
+     "default": true,
+     "hint": "Když je vypnuté, stránka existuje, ale v menu není (dá se na ni odkázat)."
+    },
+    {
+     "label": "Pořadí v menu",
+     "name": "poradi",
+     "widget": "number",
+     "value_type": "int",
+     "default": 10,
+     "hint": "Menší číslo = víc vlevo. Vlastní stránky jsou v menu před „Podpořte nás“."
+    },
+    {
+     "label": "Malý nadpis nad názvem",
+     "name": "nadtitulek",
+     "widget": "string",
+     "required": false,
+     "hint": "Např. „Pro školy“."
+    },
+    {
+     "label": "Úvodní odstavec",
+     "name": "perex",
+     "widget": "text",
+     "required": false
+    },
+    {
+     "label": "Obsah",
+     "name": "bloky",
+     "widget": "list",
+     "required": false,
+     "label_singular": "blok",
+     "types": [
+      {
+       "label": "Nadpis",
+       "name": "nadpis",
+       "widget": "object",
+       "summary": "{{fields.text}}",
+       "fields": [
+        {
+         "label": "Nadpis",
+         "name": "text",
+         "widget": "string"
+        }
+       ]
+      },
+      {
+       "label": "Text",
+       "name": "text",
+       "widget": "object",
+       "summary": "{{fields.text}}",
+       "fields": [
+        {
+         "label": "Text",
+         "name": "text",
+         "widget": "markdown",
+         "buttons": [
+          "bold",
+          "italic",
+          "link"
+         ],
+         "editor_components": [],
+         "modes": [
+          "rich_text"
+         ],
+         "hint": "Nový odstavec = nový řádek."
+        }
+       ]
+      },
+      {
+       "label": "Fotka",
+       "name": "fotka",
+       "widget": "object",
+       "summary": "{{fields.popisek}}",
+       "fields": [
+        {
+         "widget": "image",
+         "media_folder": "/img/stranky",
+         "public_folder": "img/stranky",
+         "choose_url": false,
+         "label": "Fotka",
+         "name": "src"
+        },
+        {
+         "label": "Popisek",
+         "name": "popisek",
+         "widget": "string",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Galerie",
+       "name": "galerie",
+       "widget": "object",
+       "summary": "fotky",
+       "fields": [
+        {
+         "label": "Fotky",
+         "name": "fotky",
+         "widget": "list",
+         "field": {
+          "widget": "image",
+          "media_folder": "/img/stranky",
+          "public_folder": "img/stranky",
+          "choose_url": false,
+          "label": "Fotka",
+          "name": "src"
+         }
+        }
+       ]
+      },
+      {
+       "label": "Tlačítko",
+       "name": "tlacitko",
+       "widget": "object",
+       "summary": "{{fields.text}}",
+       "fields": [
+        {
+         "label": "Text tlačítka",
+         "name": "text",
+         "widget": "string"
+        },
+        {
+         "label": "Kam vede",
+         "name": "odkaz",
+         "widget": "string",
+         "hint": "Adresa webu, nebo stránka tohoto webu, např. #program"
+        }
+       ]
+      }
+     ]
     }
    ],
    "editor": {
