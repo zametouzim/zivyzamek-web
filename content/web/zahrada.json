@@ -77,5 +77,167 @@
       "popis": "Upravená plocha u hradeb",
       "popisek": "Hotová plocha u hradeb"
     }
-  ]
+  ],
+  "en": {
+    "kroky": [
+      {
+        "kdy": "08/2025",
+        "co": "Garden study",
+        "stav": "hotovo"
+      },
+      {
+        "kdy": "09/2025",
+        "co": "Support from the VIA Foundation",
+        "stav": "hotovo"
+      },
+      {
+        "kdy": "03/2026",
+        "co": "Work begins, the town wall is discovered",
+        "stav": "hotovo"
+      },
+      {
+        "kdy": "04/2026",
+        "co": "Archaeological survey, Volunteer Days (40 people, 20 % of the area)",
+        "stav": "hotovo"
+      },
+      {
+        "kdy": "05–09/2026",
+        "co": "Five work parties, lower half levelled under foil, two beds marked out",
+        "stav": "hotovo"
+      },
+      {
+        "kdy": "10/2026",
+        "co": "Clearing the upper half and the play slope, work party 17–18 Oct",
+        "stav": "probíhá"
+      },
+      {
+        "kdy": "April 2027",
+        "co": "Concrete foundations under all four beds",
+        "stav": "plánováno"
+      },
+      {
+        "kdy": "April–May 2027",
+        "co": "Stone walls of the beds",
+        "stav": "plánováno"
+      },
+      {
+        "kdy": "summer 2027",
+        "co": "Soil, planting, linden tree, play features, gravel paths",
+        "stav": "plánováno"
+      }
+    ],
+    "fotky": [
+      {
+        "src": "img/z-2026-03-30.jpg",
+        "popis": "Clearing the overgrown area by the fence by hand",
+        "popisek": "30 Mar 2026: first day of work"
+      },
+      {
+        "src": "img/z-2026-03-31.jpg",
+        "popis": "View over the town walls onto the dug-up area",
+        "popisek": "31 Mar 2026: view from the walls"
+      },
+      {
+        "src": "img/z-2026-04-01.jpg",
+        "popis": "A mini excavator pulling out an old stump",
+        "popisek": "1 Apr 2026: out with the stumps"
+      },
+      {
+        "src": "img/z-2026-04-03.jpg",
+        "popis": "Mini excavator in the garden",
+        "popisek": "3 Apr 2026: landscaping"
+      },
+      {
+        "src": "img/zahrada-IMG_6104.jpg",
+        "popis": "Dumper, mini excavator and soil screener in the garden",
+        "popisek": "Machinery at the work party"
+      },
+      {
+        "src": "img/zahrada-IMG_6108.jpg",
+        "popis": "Levelled area by the town walls",
+        "popisek": "Finished area by the walls"
+      }
+    ]
+  },
+  "de": {
+    "kroky": [
+      {
+        "kdy": "08/2025",
+        "co": "Gartenstudie",
+        "stav": "hotovo"
+      },
+      {
+        "kdy": "09/2025",
+        "co": "Förderung durch die Stiftung VIA",
+        "stav": "hotovo"
+      },
+      {
+        "kdy": "03/2026",
+        "co": "Beginn der Arbeiten und Entdeckung der Stadtmauer",
+        "stav": "hotovo"
+      },
+      {
+        "kdy": "04/2026",
+        "co": "Archäologische Untersuchung, Freiwilligentage (40 Leute, 20 % der Fläche)",
+        "stav": "hotovo"
+      },
+      {
+        "kdy": "05–09/2026",
+        "co": "Fünf Arbeitseinsätze, untere Hälfte unter Folie eingeebnet, zwei Beete abgesteckt",
+        "stav": "hotovo"
+      },
+      {
+        "kdy": "10/2026",
+        "co": "Aufräumen der oberen Hälfte und des Spielhangs, Arbeitseinsatz 17.–18. 10.",
+        "stav": "probíhá"
+      },
+      {
+        "kdy": "April 2027",
+        "co": "Betonfundamente unter allen vier Beeten",
+        "stav": "plánováno"
+      },
+      {
+        "kdy": "April–Mai 2027",
+        "co": "Steinmauern der Beete",
+        "stav": "plánováno"
+      },
+      {
+        "kdy": "Sommer 2027",
+        "co": "Erde, Bepflanzung, Linde, Spielelemente, Kieswege",
+        "stav": "plánováno"
+      }
+    ],
+    "fotky": [
+      {
+        "src": "img/z-2026-03-30.jpg",
+        "popis": "Händisches Aufräumen der verwilderten Fläche am Zaun",
+        "popisek": "30. 3. 2026: erster Arbeitstag"
+      },
+      {
+        "src": "img/z-2026-03-31.jpg",
+        "popis": "Blick über die Stadtmauer auf die aufgegrabene Fläche",
+        "popisek": "31. 3. 2026: Blick von der Mauer"
+      },
+      {
+        "src": "img/z-2026-04-01.jpg",
+        "popis": "Minibagger zieht einen alten Baumstumpf heraus",
+        "popisek": "1. 4. 2026: Stümpfe raus"
+      },
+      {
+        "src": "img/z-2026-04-03.jpg",
+        "popis": "Minibagger im Garten",
+        "popisek": "3. 4. 2026: Geländearbeiten"
+      },
+      {
+        "src": "img/zahrada-IMG_6104.jpg",
+        "popis": "Dumper, Minibagger und Erdsieb im Garten",
+        "popisek": "Technik beim Arbeitseinsatz"
+      },
+      {
+        "src": "img/zahrada-IMG_6108.jpg",
+        "popis": "Eingeebnete Fläche an der Stadtmauer",
+        "popisek": "Fertige Fläche an der Mauer"
+      }
+    ]
+  }
 }

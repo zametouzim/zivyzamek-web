@@ -44,5 +44,73 @@
       "rok": "2026",
       "plakat": "img/plakaty/2026_sezona26.jpg"
     }
-  ]
+  ],
+  "en": {
+    "hero": [
+      {
+        "src": "img/nadvori.jpg",
+        "alt": "Castle courtyard with the covered stage",
+        "cap": "The courtyard with the stage, roofed in 2019"
+      },
+      {
+        "src": "img/akce/2025-08-23-1.jpg",
+        "alt": "Night tour with torches",
+        "cap": "Castle Night, 23 Aug 2025"
+      },
+      {
+        "src": "img/h-2024-carodejnice.jpg",
+        "alt": "Children by the fire at the witch-burning",
+        "cap": "Witch-burning night, 30 Apr 2024"
+      },
+      {
+        "src": "img/h-2024-kostymy.jpg",
+        "alt": "People in historical costumes in the courtyard",
+        "cap": "In the courtyard, 29 Jun 2024"
+      },
+      {
+        "src": "img/h-2025-country.jpg",
+        "alt": "Country dancing by the stage",
+        "cap": "Pelmel muziky, 2 Aug 2025"
+      },
+      {
+        "src": "img/akce/2025-06-28-1.jpg",
+        "alt": "Historical day in the courtyard",
+        "cap": "Historical Day, 28 Jun 2025"
+      }
+    ]
+  },
+  "de": {
+    "hero": [
+      {
+        "src": "img/nadvori.jpg",
+        "alt": "Schlosshof mit überdachter Bühne",
+        "cap": "Der Schlosshof mit der Bühne, überdacht 2019"
+      },
+      {
+        "src": "img/akce/2025-08-23-1.jpg",
+        "alt": "Nachtführung mit Fackeln",
+        "cap": "Burg- und Schlossnacht, 23. 8. 2025"
+      },
+      {
+        "src": "img/h-2024-carodejnice.jpg",
+        "alt": "Kinder am Feuer beim Hexenbrennen",
+        "cap": "Hexenbrennen, 30. 4. 2024"
+      },
+      {
+        "src": "img/h-2024-kostymy.jpg",
+        "alt": "Menschen in historischen Kostümen im Schlosshof",
+        "cap": "Im Schlosshof, 29. 6. 2024"
+      },
+      {
+        "src": "img/h-2025-country.jpg",
+        "alt": "Countrytänze vor der Bühne",
+        "cap": "Pelmel muziky, 2. 8. 2025"
+      },
+      {
+        "src": "img/akce/2025-06-28-1.jpg",
+        "alt": "Historischer Tag im Schlosshof",
+        "cap": "Historischer Tag, 28. 6. 2025"
+      }
+    ]
+  }
 }

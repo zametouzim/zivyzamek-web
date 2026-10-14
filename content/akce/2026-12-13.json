@@ -3,5 +3,15 @@
   "date": "2026-12-13",
   "when": "neděle",
   "short": "Tradiční konec sezóny na nádvoří se svařákem.",
-  "tag": "Pro všechny"
+  "tag": "Pro všechny",
+  "en": {
+    "title": "Christmas get-together with mulled wine",
+    "when": "Sunday",
+    "short": "The traditional end of the season in the courtyard with mulled wine."
+  },
+  "de": {
+    "title": "Weihnachtstreffen mit Glühwein",
+    "when": "Sonntag",
+    "short": "Der traditionelle Saisonabschluss im Schlosshof mit Glühwein."
+  }
 }
