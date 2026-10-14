@@ -97,5 +97,142 @@ window.WEB={
     "skladem": true
    }
   ]
- }
+ },
+ "zahrada": {
+  "kroky": [
+   {
+    "kdy": "08/2025",
+    "co": "Studie zahrady",
+    "stav": "hotovo"
+   },
+   {
+    "kdy": "09/2025",
+    "co": "Podpora Nadace VIA",
+    "stav": "hotovo"
+   },
+   {
+    "kdy": "03/2026",
+    "co": "Začátek prací a objev hradební zdi",
+    "stav": "hotovo"
+   },
+   {
+    "kdy": "04/2026",
+    "co": "Archeologický průzkum, Dny dobrovolnictví (40 lidí, 20 % plochy)",
+    "stav": "hotovo"
+   },
+   {
+    "kdy": "05–09/2026",
+    "co": "Pět brigád, spodní polovina srovnaná pod fólií, vytyčené dva záhony",
+    "stav": "hotovo"
+   },
+   {
+    "kdy": "10/2026",
+    "co": "Úklid horní poloviny a herní svah, brigáda 17.–18. 10.",
+    "stav": "probíhá"
+   },
+   {
+    "kdy": "duben 2027",
+    "co": "Betonové základy pod všechny čtyři záhony",
+    "stav": "plánováno"
+   },
+   {
+    "kdy": "duben–květen 2027",
+    "co": "Kamenné zídky záhonů",
+    "stav": "plánováno"
+   },
+   {
+    "kdy": "léto 2027",
+    "co": "Hlína, výsadba, lípa, herní prvky, mlatové cesty",
+    "stav": "plánováno"
+   }
+  ],
+  "fotky": [
+   {
+    "src": "img/z-2026-03-30.jpg",
+    "popis": "Ruční úklid zarostlé plochy u plotu",
+    "popisek": "30. 3. 2026: první den prací"
+   },
+   {
+    "src": "img/z-2026-03-31.jpg",
+    "popis": "Pohled přes hradby na rozkopanou plochu",
+    "popisek": "31. 3. 2026: pohled od hradeb"
+   },
+   {
+    "src": "img/z-2026-04-01.jpg",
+    "popis": "Minibagr vytahuje starý pařez",
+    "popisek": "1. 4. 2026: pařezy ven"
+   },
+   {
+    "src": "img/z-2026-04-03.jpg",
+    "popis": "Minibagr na zahradě",
+    "popisek": "3. 4. 2026: terénní úpravy"
+   },
+   {
+    "src": "img/zahrada-IMG_6104.jpg",
+    "popis": "Dumper, minibagr a prosévačka zeminy na zahradě",
+    "popisek": "Technika na brigádě"
+   },
+   {
+    "src": "img/zahrada-IMG_6108.jpg",
+    "popis": "Upravená plocha u hradeb",
+    "popisek": "Hotová plocha u hradeb"
+   }
+  ]
+ },
+ "partneri": [
+  {
+   "nazev": "Město Toužim",
+   "odkaz": "https://www.touzim.cz/",
+   "logo": "img/partneri/touzim.png"
+  },
+  {
+   "nazev": "Karlovarský kraj",
+   "odkaz": "https://www.kr-karlovarsky.cz/",
+   "logo": "img/partneri/karlovarsky-kraj.png"
+  },
+  {
+   "nazev": "Nadace VIA",
+   "odkaz": "https://www.nadacevia.cz/",
+   "logo": "img/partneri/nadace-via.png"
+  },
+  {
+   "nazev": "Nadace ČEZ",
+   "odkaz": "https://www.nadacecez.cz/",
+   "logo": "img/partneri/nadace-cez.png"
+  },
+  {
+   "nazev": "MAS Kraj živých vod",
+   "odkaz": "https://www.krajzivychvod.cz/",
+   "logo": "img/partneri/mas-kraj-zivych-vod.png"
+  },
+  {
+   "nazev": "Hospůdka U Havlů, Sokolovna Toužim",
+   "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
+   "logo": "img/partneri/u-havlu.png"
+  },
+  {
+   "nazev": "Postřelí.cz",
+   "odkaz": "https://www.postreli.cz/",
+   "logo": "img/partneri/postreli.png"
+  },
+  {
+   "nazev": "Dílna U mnicha",
+   "odkaz": "http://www.dilnaumnicha.cz/"
+  },
+  {
+   "nazev": "Kudyznudy.cz",
+   "odkaz": "https://www.kudyznudy.cz/"
+  },
+  {
+   "nazev": "Givt.cz",
+   "odkaz": "https://givt.cz/"
+  },
+  {
+   "nazev": "Gabriela Pilná",
+   "odkaz": "https://gabrielapilna.myportfolio.com/",
+   "logo": "img/partneri/gabriela-pilna.png",
+   "popis": "grafika a plakáty"
+  }
+ ],
+ "stranky": []
 };

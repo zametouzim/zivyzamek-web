@@ -1,0 +1,15 @@
+{
+  "partneri": [
+    {"nazev": "Město Toužim", "odkaz": "https://www.touzim.cz/", "logo": "img/partneri/touzim.png"},
+    {"nazev": "Karlovarský kraj", "odkaz": "https://www.kr-karlovarsky.cz/", "logo": "img/partneri/karlovarsky-kraj.png"},
+    {"nazev": "Nadace VIA", "odkaz": "https://www.nadacevia.cz/", "logo": "img/partneri/nadace-via.png"},
+    {"nazev": "Nadace ČEZ", "odkaz": "https://www.nadacecez.cz/", "logo": "img/partneri/nadace-cez.png"},
+    {"nazev": "MAS Kraj živých vod", "odkaz": "https://www.krajzivychvod.cz/", "logo": "img/partneri/mas-kraj-zivych-vod.png"},
+    {"nazev": "Hospůdka U Havlů, Sokolovna Toužim", "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/", "logo": "img/partneri/u-havlu.png"},
+    {"nazev": "Postřelí.cz", "odkaz": "https://www.postreli.cz/", "logo": "img/partneri/postreli.png"},
+    {"nazev": "Dílna U mnicha", "odkaz": "http://www.dilnaumnicha.cz/"},
+    {"nazev": "Kudyznudy.cz", "odkaz": "https://www.kudyznudy.cz/"},
+    {"nazev": "Givt.cz", "odkaz": "https://givt.cz/"},
+    {"nazev": "Gabriela Pilná", "odkaz": "https://gabrielapilna.myportfolio.com/", "logo": "img/partneri/gabriela-pilna.png", "popis": "grafika a plakáty"}
+  ]
+}

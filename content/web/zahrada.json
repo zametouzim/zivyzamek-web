@@ -1,0 +1,81 @@
+{
+  "kroky": [
+    {
+      "kdy": "08/2025",
+      "co": "Studie zahrady",
+      "stav": "hotovo"
+    },
+    {
+      "kdy": "09/2025",
+      "co": "Podpora Nadace VIA",
+      "stav": "hotovo"
+    },
+    {
+      "kdy": "03/2026",
+      "co": "Začátek prací a objev hradební zdi",
+      "stav": "hotovo"
+    },
+    {
+      "kdy": "04/2026",
+      "co": "Archeologický průzkum, Dny dobrovolnictví (40 lidí, 20 % plochy)",
+      "stav": "hotovo"
+    },
+    {
+      "kdy": "05–09/2026",
+      "co": "Pět brigád, spodní polovina srovnaná pod fólií, vytyčené dva záhony",
+      "stav": "hotovo"
+    },
+    {
+      "kdy": "10/2026",
+      "co": "Úklid horní poloviny a herní svah, brigáda 17.–18. 10.",
+      "stav": "probíhá"
+    },
+    {
+      "kdy": "duben 2027",
+      "co": "Betonové základy pod všechny čtyři záhony",
+      "stav": "plánováno"
+    },
+    {
+      "kdy": "duben–květen 2027",
+      "co": "Kamenné zídky záhonů",
+      "stav": "plánováno"
+    },
+    {
+      "kdy": "léto 2027",
+      "co": "Hlína, výsadba, lípa, herní prvky, mlatové cesty",
+      "stav": "plánováno"
+    }
+  ],
+  "fotky": [
+    {
+      "src": "img/z-2026-03-30.jpg",
+      "popis": "Ruční úklid zarostlé plochy u plotu",
+      "popisek": "30. 3. 2026: první den prací"
+    },
+    {
+      "src": "img/z-2026-03-31.jpg",
+      "popis": "Pohled přes hradby na rozkopanou plochu",
+      "popisek": "31. 3. 2026: pohled od hradeb"
+    },
+    {
+      "src": "img/z-2026-04-01.jpg",
+      "popis": "Minibagr vytahuje starý pařez",
+      "popisek": "1. 4. 2026: pařezy ven"
+    },
+    {
+      "src": "img/z-2026-04-03.jpg",
+      "popis": "Minibagr na zahradě",
+      "popisek": "3. 4. 2026: terénní úpravy"
+    },
+    {
+      "src": "img/zahrada-IMG_6104.jpg",
+      "popis": "Dumper, minibagr a prosévačka zeminy na zahradě",
+      "popisek": "Technika na brigádě"
+    },
+    {
+      "src": "img/zahrada-IMG_6108.jpg",
+      "popis": "Upravená plocha u hradeb",
+      "popisek": "Hotová plocha u hradeb"
+    }
+  ]
+}
