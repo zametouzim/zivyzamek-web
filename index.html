@@ -491,13 +491,13 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
       <div><span class="eyebrow">Napište nám</span><h3>Máte dotaz?</h3><p>Chcete se na něco zeptat, domluvit prohlídku mimo sezónu nebo přijít pomoct? Napište nám, ozveme se.</p>
         <button class="btn fill" type="button" id="askOpen" aria-expanded="false" aria-controls="askForm">Napsat dotaz</button></div>
       <form id="askForm" novalidate hidden>
-        <label>Jméno<input name="jmeno" autocomplete="name" required></label>
+        <label><span>Jméno</span><input name="jmeno" autocomplete="name" required></label>
         <div class="row2">
-          <label>E-mail<input name="email" type="email" autocomplete="email"></label>
-          <label>Telefon<input name="telefon" type="tel" autocomplete="tel"></label>
+          <label><span>E-mail</span><input name="email" type="email" autocomplete="email"></label>
+          <label><span>Telefon</span><input name="telefon" type="tel" autocomplete="tel"></label>
         </div>
-        <label>Zpráva<textarea name="zprava" rows="5" required></textarea></label>
-        <label class="hp" aria-hidden="true">Nevyplňujte<input name="web" tabindex="-1" autocomplete="off"></label>
+        <label><span>Zpráva</span><textarea name="zprava" rows="5" required></textarea></label>
+        <label class="hp" aria-hidden="true"><span>Nevyplňujte</span><input name="web" tabindex="-1" autocomplete="off"></label>
         <p class="note">Vyplňte prosím e-mail nebo telefon, ať vám můžeme odpovědět.</p>
         <div class="send"><button class="btn fill" type="submit">Odeslat</button><span id="askMsg" role="status"></span></div>
         <p class="gdpr">Jméno a kontakt použijeme jen k odpovědi na váš dotaz a nikomu je nepředáme. Správce údajů: Živý zámek Toužim z. s., IČO 04690770.</p>

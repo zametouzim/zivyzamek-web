@@ -311,7 +311,12 @@
   "Givt.cz": "Givt.cz",
   "Gabriela Pilná<small style=\"font-weight:400;font-size:14px\">grafika a plakáty</small>": "Gabriela Pilná<small style=\"font-weight:400;font-size:14px\">Grafik und Plakate</small>",
   "© <span id=\"cy\">2026</span> Živý zámek Toužim z. s. · Web vytvořil Michal Nedvídek s pomocí Claude (AI od Anthropicu)": "© <span id=\"cy\">2026</span> Živý zámek Toužim z. s. · Website erstellt von Michal Nedvídek mit Hilfe von Claude (KI von Anthropic)",
-  "×": "×"
+  "×": "×",
+  "Jméno": "Name",
+  "E-mail": "E-Mail",
+  "Telefon": "Telefon",
+  "Zpráva": "Nachricht",
+  "Nevyplňujte": "Nicht ausfüllen"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, Startseite",
