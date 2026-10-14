@@ -1,0 +1,349 @@
+window.DEMO_CONFIG={
+ "backend": {
+  "name": "test-repo"
+ },
+ "locale": "cs",
+ "site_url": "https://zametouzim.github.io/zivyzamek-web/",
+ "display_url": "https://zametouzim.github.io/zivyzamek-web/",
+ "logo_url": "https://zametouzim.github.io/zivyzamek-web/img/logo.png",
+ "media_folder": "img/uploads",
+ "public_folder": "img/uploads",
+ "collections": [
+  {
+   "name": "akce",
+   "label": "Akce",
+   "label_singular": "akci",
+   "folder": "content/akce",
+   "create": true,
+   "delete": true,
+   "format": "json",
+   "extension": "json",
+   "slug": "{{fields.date}}-{{slug}}",
+   "identifier_field": "title",
+   "summary": "{{date | date('D. M. YYYY')}}  ·  {{title}}",
+   "sortable_fields": [
+    {
+     "field": "date",
+     "label": "Datum",
+     "default_sort": "desc"
+    },
+    {
+     "field": "title",
+     "label": "Název"
+    }
+   ],
+   "view_groups": [
+    {
+     "label": "Rok",
+     "field": "date",
+     "pattern": "\\d{4}"
+    }
+   ],
+   "description": "Program i archiv akcí. Budoucí akce se samy ukazují v programu, po datu se přesunou do archivu.",
+   "fields": [
+    {
+     "label": "Název akce",
+     "name": "title",
+     "widget": "string"
+    },
+    {
+     "label": "Datum",
+     "name": "date",
+     "widget": "datetime",
+     "format": "YYYY-MM-DD",
+     "date_format": "D. M. YYYY",
+     "time_format": false,
+     "picker_utc": true
+    },
+    {
+     "label": "Konec (jen u vícedenních akcí)",
+     "name": "end",
+     "widget": "datetime",
+     "format": "YYYY-MM-DD",
+     "date_format": "D. M. YYYY",
+     "time_format": false,
+     "picker_utc": true,
+     "required": false,
+     "default": ""
+    },
+    {
+     "label": "Čas",
+     "name": "when",
+     "widget": "string",
+     "required": false,
+     "hint": "Např. „sobota · 14:00“ nebo „so 10–16 · ne 10–17“"
+    },
+    {
+     "label": "Krátký text na kartičku v programu",
+     "name": "short",
+     "widget": "string",
+     "required": false,
+     "hint": "Jedna dvě věty. Ukazuje se jen u nadcházejících akcí."
+    },
+    {
+     "label": "Popis akce",
+     "name": "text",
+     "widget": "markdown",
+     "required": false,
+     "buttons": [
+      "bold",
+      "link"
+     ],
+     "editor_components": [],
+     "modes": [
+      "rich_text"
+     ],
+     "hint": "Každý odstavec na nový řádek."
+    },
+    {
+     "label": "Plakát",
+     "name": "poster",
+     "widget": "image",
+     "required": false,
+     "media_folder": "/img/plakaty",
+     "public_folder": "img/plakaty",
+     "choose_url": false
+    },
+    {
+     "label": "Fotky",
+     "name": "photos",
+     "widget": "list",
+     "required": false,
+     "collapsed": false,
+     "add_to_top": false,
+     "field": {
+      "label": "Fotka",
+      "name": "foto",
+      "widget": "image",
+      "required": true,
+      "media_folder": "/img/akce",
+      "public_folder": "img/akce",
+      "choose_url": false
+     }
+    },
+    {
+     "label": "Štítek",
+     "name": "tag",
+     "widget": "select",
+     "required": false,
+     "options": [
+      "Pro děti",
+      "Přijďte pomoct",
+      "Pro všechny"
+     ],
+     "hint": "Ukazuje se v programu."
+    },
+    {
+     "label": "Název je jen pracovní (na webu se zobrazí fialová poznámka „název?“)",
+     "name": "titleTodo",
+     "widget": "boolean",
+     "required": false,
+     "default": false
+    }
+   ],
+   "editor": {
+    "preview": false
+   }
+  },
+  {
+   "name": "stranky",
+   "label": "Bloky na stránkách",
+   "files": [
+    {
+     "name": "navsteva",
+     "label": "Otevírací doba a kontakty",
+     "file": "content/web/navsteva.json",
+     "format": "json",
+     "fields": [
+      {
+       "label": "Sezóna (text do patičky)",
+       "name": "sezona",
+       "widget": "string"
+      },
+      {
+       "label": "Sezóna od měsíce",
+       "name": "sezona_od",
+       "widget": "number",
+       "value_type": "int",
+       "min": 1,
+       "max": 12
+      },
+      {
+       "label": "Sezóna do měsíce",
+       "name": "sezona_do",
+       "widget": "number",
+       "value_type": "int",
+       "min": 1,
+       "max": 12
+      },
+      {
+       "label": "Vstup do zámku: kdy",
+       "name": "vstup_cas",
+       "widget": "string"
+      },
+      {
+       "label": "Vstup do zámku: cena",
+       "name": "vstup_cena",
+       "widget": "string"
+      },
+      {
+       "label": "Komentovaná prohlídka: kdy",
+       "name": "prohlidka_cas",
+       "widget": "string"
+      },
+      {
+       "label": "Komentovaná prohlídka: cena",
+       "name": "prohlidka_cena",
+       "widget": "string"
+      },
+      {
+       "label": "Kontaktní osoby",
+       "name": "kontakty",
+       "widget": "list",
+       "summary": "{{fields.jmeno}}, {{fields.funkce}}",
+       "fields": [
+        {
+         "label": "Jméno",
+         "name": "jmeno",
+         "widget": "string"
+        },
+        {
+         "label": "Funkce",
+         "name": "funkce",
+         "widget": "string"
+        },
+        {
+         "label": "Telefon",
+         "name": "telefon",
+         "widget": "string"
+        }
+       ]
+      },
+      {
+       "label": "E-mail",
+       "name": "email",
+       "widget": "string"
+      },
+      {
+       "label": "Číslo účtu",
+       "name": "ucet",
+       "widget": "string"
+      }
+     ]
+    },
+    {
+     "name": "suvenyry",
+     "label": "Suvenýry",
+     "file": "content/web/suvenyry.json",
+     "format": "json",
+     "fields": [
+      {
+       "label": "Úvodní text",
+       "name": "uvod",
+       "widget": "string"
+      },
+      {
+       "label": "Položky",
+       "name": "polozky",
+       "widget": "list",
+       "summary": "{{fields.nazev}} · {{fields.cena}}",
+       "fields": [
+        {
+         "label": "Název",
+         "name": "nazev",
+         "widget": "string"
+        },
+        {
+         "label": "Popis",
+         "name": "popis",
+         "widget": "string"
+        },
+        {
+         "label": "Cena",
+         "name": "cena",
+         "widget": "string"
+        },
+        {
+         "label": "Fotka",
+         "name": "foto",
+         "widget": "image",
+         "required": false,
+         "media_folder": "/img/suvenyry",
+         "public_folder": "img/suvenyry",
+         "choose_url": false
+        },
+        {
+         "label": "Skladem",
+         "name": "skladem",
+         "widget": "boolean",
+         "default": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "uvod",
+     "label": "Úvodní stránka a archiv",
+     "file": "content/web/uvod.json",
+     "format": "json",
+     "fields": [
+      {
+       "label": "Střídající se fotky na úvodu",
+       "name": "hero",
+       "widget": "list",
+       "summary": "{{fields.cap}}",
+       "fields": [
+        {
+         "label": "Fotka",
+         "name": "src",
+         "widget": "image",
+         "required": true,
+         "media_folder": "/img",
+         "public_folder": "img",
+         "choose_url": false
+        },
+        {
+         "label": "Popis pro nevidomé",
+         "name": "alt",
+         "widget": "string"
+        },
+        {
+         "label": "Popisek pod fotkou",
+         "name": "cap",
+         "widget": "string"
+        }
+       ]
+      },
+      {
+       "label": "Plakáty sezón v archivu",
+       "name": "roky",
+       "widget": "list",
+       "summary": "{{fields.rok}}",
+       "fields": [
+        {
+         "label": "Rok",
+         "name": "rok",
+         "widget": "string"
+        },
+        {
+         "label": "Plakát sezóny",
+         "name": "plakat",
+         "widget": "image",
+         "required": true,
+         "media_folder": "/img/plakaty",
+         "public_folder": "img/plakaty",
+         "choose_url": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "editor": {
+    "preview": false
+   }
+  }
+ ],
+ "load_config_file": false
+};

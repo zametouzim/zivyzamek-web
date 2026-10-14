@@ -1,0 +1,75 @@
+{
+  "uvod": "Na akcích, o otevřených víkendech nebo poštou. Objednávky e-mailem.",
+  "polozky": [
+    {
+      "nazev": "Zámecký plecháček",
+      "popis": "Lehký a odolný plecháček s modrým okrajem, 360 ml.",
+      "cena": "300 Kč",
+      "foto": "",
+      "skladem": true
+    },
+    {
+      "nazev": "Tričko s logem",
+      "popis": "Bílé bavlněné tričko s černým logem Živého zámku.",
+      "cena": "300 Kč",
+      "foto": "",
+      "skladem": true
+    },
+    {
+      "nazev": "Mini model zámku",
+      "popis": "Kapesní model zámku Toužim v sáčku, číslovaný do sbírky.",
+      "cena": "110 Kč",
+      "foto": "",
+      "skladem": true
+    },
+    {
+      "nazev": "Placky a magnety",
+      "popis": "Malá placka 20 Kč, velká 40 Kč, magnet 50 Kč.",
+      "cena": "20–50 Kč",
+      "foto": "",
+      "skladem": true
+    },
+    {
+      "nazev": "Kniha Po stopách čarodějů",
+      "popis": "Pověsti o čarodějích a bylinkářích podél říčky Střely.",
+      "cena": "350 Kč",
+      "foto": "",
+      "skladem": true
+    },
+    {
+      "nazev": "Knížky Putování Hrocha",
+      "popis": "Čtyři knížky Petra Hrocha Bindera, výtěžek jde na zámek.",
+      "cena": "200 Kč",
+      "foto": "",
+      "skladem": true
+    },
+    {
+      "nazev": "Komiks o historii zámku",
+      "popis": "Vtipně o dějinách zámku od středověku po dnešek.",
+      "cena": "30 Kč",
+      "foto": "",
+      "skladem": true
+    },
+    {
+      "nazev": "Pohlednice",
+      "popis": "Čtyři motivy: fotografie zámku a tři malby z interiérů.",
+      "cena": "35 Kč",
+      "foto": "",
+      "skladem": true
+    },
+    {
+      "nazev": "Turistická známka č. 2864",
+      "popis": "K 555 letům města Toužim, limitováno 555 kusy.",
+      "cena": "55 Kč",
+      "foto": "",
+      "skladem": true
+    },
+    {
+      "nazev": "Pamětní mince 550 let",
+      "popis": "Starostříbro 50 Kč, starozlato 75 Kč, starobronz 100 Kč. Limitované série.",
+      "cena": "50–100 Kč",
+      "foto": "",
+      "skladem": true
+    }
+  ]
+}

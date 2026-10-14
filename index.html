@@ -192,6 +192,7 @@ dl.facts dd{margin:0}
 .goods .g{background:var(--panel);display:flex;flex-direction:column}
 .goods .gi{aspect-ratio:4/3;background:color-mix(in srgb,var(--navy) 10%,transparent);display:flex;align-items:center;justify-content:center;overflow:hidden}
 .goods .gi img{width:100%;height:100%;object-fit:cover}
+.goods .g.out{opacity:.55}
 .goods .gi span{color:var(--todo);font-style:italic;font-size:14px}
 .goods .gt{padding:12px 14px 16px;display:grid;gap:4px}
 .goods .gt span{font-weight:700;font-size:17px;line-height:1.25}
@@ -412,12 +413,12 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
       <div class="card navy">
         <span class="eyebrow" style="color:var(--sun)">Červenec až září</span>
         <h3>Otevřené víkendy</h3>
-        <div class="hours">
+        <div class="hours" id="hoursBox">
           <div class="hr"><div><span class="hk">Vstup do zámku a na nádvoří</span><span class="ht">sobota a neděle 10–12 a 13–17 h</span></div><b class="pr">dobrovolné vstupné</b></div>
           <div class="hr"><div><span class="hk">Komentovaná prohlídka s průvodcem</span><span class="ht">sobota a neděle v 11, 14 a 16 h</span></div><b class="pr">50 Kč za osobu</b></div>
         </div>
         <dl class="facts">
-          <dt>Mimo sezónu</dt><dd>po domluvě: Pavla +420 724 859 799, Alena +420 728 290 280</dd>
+          <dt>Mimo sezónu</dt><dd id="offSeason">po domluvě: Pavla +420 724 859 799, Alena +420 728 290 280</dd>
         </dl>
       </div>
       <div class="card">
@@ -655,9 +656,9 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
       </div>
     </div>
     <div class="block">
-      <div class="lab"><span class="eyebrow">Suvenýry</span><h2>Kupte si kus zámku</h2><p style="color:var(--grey)">Na akcích, o otevřených víkendech nebo poštou. Objednávky e-mailem.</p></div>
+      <div class="lab"><span class="eyebrow">Suvenýry</span><h2>Kupte si kus zámku</h2><p style="color:var(--grey)" id="goodsIntro">Na akcích, o otevřených víkendech nebo poštou. Objednávky e-mailem.</p></div>
       <div class="body">
-        <div class="goods">
+        <div class="goods" id="goods">
           <div class="g" data-k="plechacek"><div class="gi"><span>foto</span></div><div class="gt"><span>Zámecký plecháček</span><p>Lehký a odolný plecháček s modrým okrajem, 360 ml.</p><b>300 Kč</b></div></div>
           <div class="g" data-k="tricko"><div class="gi"><span>foto</span></div><div class="gt"><span>Tričko s logem</span><p>Bílé bavlněné tričko s černým logem Živého zámku.</p><b>300 Kč</b></div></div>
           <div class="g" data-k="model"><div class="gi"><span>foto</span></div><div class="gt"><span>Mini model zámku</span><p>Kapesní model zámku Toužim v sáčku, číslovaný do sbírky.</p><b>110 Kč</b></div></div>
@@ -679,9 +680,9 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 <footer>
   <div class="wrap cols">
     <div><img src="img/logo.png" alt="Živý zámek Toužim"></div>
-    <div><h4>Zámek</h4><p>náměstí Jiřího z Poděbrad 1<br>364 01 Toužim<br>Otevřené víkendy červenec–září</p></div>
-    <div><h4>Kontakt</h4><p>Pavla Vokurková, předsedkyně<br>+420 724 859 799<br>Alena Šlajerová, místopředsedkyně<br>+420 728 290 280<br>zivyzamektouzim@email.cz</p></div>
-    <div><h4>Spolek</h4><p>Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Účet 2301034510/2010<br><a href="https://www.facebook.com/zivyzamek.touzim" target="_blank" rel="noopener">Facebook</a></p></div>
+    <div><h4>Zámek</h4><p>náměstí Jiřího z Poděbrad 1<br>364 01 Toužim<br><span id="fSezona">Otevřené víkendy červenec–září</span></p></div>
+    <div><h4>Kontakt</h4><p id="fKontakt">Pavla Vokurková, předsedkyně<br>+420 724 859 799<br>Alena Šlajerová, místopředsedkyně<br>+420 728 290 280<br>zivyzamektouzim@email.cz</p></div>
+    <div><h4>Spolek</h4><p>Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Účet <span id="fUcet">2301034510/2010</span><br><a href="https://www.facebook.com/zivyzamek.touzim" target="_blank" rel="noopener">Facebook</a></p></div>
   </div>
 </footer>
 <div class="pband"><div class="wrap"><h4>Podporují nás</h4>
@@ -703,6 +704,7 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 
 <div class="lb" id="lb" hidden><img alt=""><button class="x" aria-label="Zavřít">×</button><button class="pv" aria-label="Předchozí">‹</button><button class="nx" aria-label="Další">›</button></div>
 <script src="data/akce.js"></script>
+<script src="data/web.js"></script>
 <script>
 (function(){
   var AKCE=(window.AKCE||[]).slice().sort(function(a,b){return a.date<b.date?1:-1});
@@ -784,8 +786,26 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   document.getElementById('cy').textContent=now.getFullYear();
   // sezónní pruh: červenec–září otevřené víkendy, jinak po domluvě
   var m=now.getMonth()+1;
-  if(m>=7&&m<=9){document.getElementById('seasonLab').textContent='Otevřeno';document.getElementById('seasonTxt').textContent='So–ne 10–12 a 13–17 h, komentované prohlídky v 11, 14 a 16 h.';}
-  else if(m<7){document.getElementById('seasonTxt').textContent='Prohlídky po domluvě na +420\u00a0724\u00a0859\u00a0799. Otevřené víkendy od července.';}
+  // bloky upravované v administraci (data/web.js)
+  var WEB=window.WEB||{}, NV=WEB.navsteva;
+  var MES=['ledna','února','března','dubna','května','června','července','srpna','září','října','listopadu','prosince'];
+  var od=NV?NV.sezona_od:7, doo=NV?NV.sezona_do:9, tel=NV&&NV.kontakty[0]?NV.kontakty[0].telefon:'+420 724 859 799';
+  if(NV){
+    document.getElementById('fKontakt').innerHTML=NV.kontakty.map(function(k){return esc(k.jmeno)+', '+esc(k.funkce)+'<br>'+esc(k.telefon)}).join('<br>')+'<br>'+esc(NV.email);
+    document.getElementById('fSezona').textContent=NV.sezona;
+    document.getElementById('fUcet').textContent=NV.ucet;
+    var ac=document.getElementById('acct'); if(ac)ac.textContent=NV.ucet;
+    document.getElementById('hoursBox').innerHTML='<div class="hr"><div><span class="hk">Vstup do zámku a na nádvoří</span><span class="ht">'+esc(NV.vstup_cas)+'</span></div><b class="pr">'+esc(NV.vstup_cena)+'</b></div><div class="hr"><div><span class="hk">Komentovaná prohlídka s průvodcem</span><span class="ht">'+esc(NV.prohlidka_cas)+'</span></div><b class="pr">'+esc(NV.prohlidka_cena)+'</b></div>';
+    document.getElementById('offSeason').textContent='po domluvě: '+NV.kontakty.map(function(k){return k.jmeno.split(' ')[0]+' '+k.telefon}).join(', ');
+  }
+  if(m>=od&&m<=doo){document.getElementById('seasonLab').textContent='Otevřeno';document.getElementById('seasonTxt').textContent=NV?('Vstup '+NV.vstup_cas+', komentované prohlídky '+NV.prohlidka_cas+'.'):'So–ne 10–12 a 13–17 h, komentované prohlídky v 11, 14 a 16 h.';}
+  else if(m<od){document.getElementById('seasonTxt').textContent='Prohlídky po domluvě na '+tel.replace(/ /g,' ')+'. Otevřené víkendy od '+MES[od-1]+'.';}
+  else{document.getElementById('seasonTxt').textContent='Prohlídky po domluvě na '+tel.replace(/ /g,' ')+'. Otevřené víkendy opět příští rok.';}
+  var SV=WEB.suvenyry;
+  if(SV){
+    document.getElementById('goodsIntro').textContent=SV.uvod;
+    document.getElementById('goods').innerHTML=SV.polozky.map(function(g){return '<div class="g'+(g.skladem?'':' out')+'"><div class="gi">'+(g.foto?'<img src="'+esc(g.foto)+'" alt="'+esc(g.nazev)+'" loading="lazy">':'<span>foto</span>')+'</div><div class="gt"><span>'+esc(g.nazev)+'</span><p>'+esc(g.popis)+'</p><b>'+esc(g.cena)+(g.skladem?'':' · vyprodáno')+'</b></div></div>'}).join('');
+  }
 
   // rotace fotek na úvodu
   var hp=document.querySelector('.hero-photo'), HERO=window.HERO||[];

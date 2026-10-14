@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<base href="../../">
+<title>Ukázka administrace · Živý zámek Toužim</title>
+<link rel="icon" href="img/logo.png">
+<style>
+#demo-pruh{position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#7b3fc4;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 16px;text-align:center}
+</style>
+</head>
+<body>
+<div id="demo-pruh">Ukázka administrace. Můžete zkoušet cokoli, nic se neuloží a web se nezmění.</div>
+<script>window.CMS_MANUAL_INIT=true;</script>
+<script src="admin/demo/data.js"></script>
+<script src="admin/demo/config.js"></script>
+<script src="https://unpkg.com/decap-cms@3.16.3/dist/decap-cms.js"></script>
+<script>CMS.init({config:window.DEMO_CONFIG});</script>
+</body>
+</html>

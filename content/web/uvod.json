@@ -1,0 +1,48 @@
+{
+  "hero": [
+    {
+      "src": "img/nadvori.jpg",
+      "alt": "Nádvoří zámku s krytým pódiem",
+      "cap": "Nádvoří s pódiem, zastřešeným v roce 2019"
+    },
+    {
+      "src": "img/akce/2025-08-23-1.jpg",
+      "alt": "Noční prohlídka s pochodněmi",
+      "cap": "Hradozámecká noc, 23. 8. 2025"
+    },
+    {
+      "src": "img/h-2024-carodejnice.jpg",
+      "alt": "Děti u ohně při pálení čarodějnic",
+      "cap": "Pálení čarodějnic, 30. 4. 2024"
+    },
+    {
+      "src": "img/h-2024-kostymy.jpg",
+      "alt": "Lidé v historických kostýmech na nádvoří",
+      "cap": "Na nádvoří, 29. 6. 2024"
+    },
+    {
+      "src": "img/h-2025-country.jpg",
+      "alt": "Country tance pod pódiem",
+      "cap": "Pelmel muziky, 2. 8. 2025"
+    },
+    {
+      "src": "img/akce/2025-06-28-1.jpg",
+      "alt": "Historický den na nádvoří",
+      "cap": "Historický den, 28. 6. 2025"
+    }
+  ],
+  "roky": [
+    {
+      "rok": "2017",
+      "plakat": "img/plakaty/2017_zzt_program.jpg"
+    },
+    {
+      "rok": "2025",
+      "plakat": "img/plakaty/2025_sezona25.jpg"
+    },
+    {
+      "rok": "2026",
+      "plakat": "img/plakaty/2026_sezona26.jpg"
+    }
+  ]
+}

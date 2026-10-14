@@ -1,0 +1,139 @@
+#!/usr/bin/env python3
+"""Sestaví data webu z obsahu, který se upravuje v administraci.
+
+content/akce/*.json   -> data/akce.js  (window.AKCE, window.ROKY, window.HERO)
+content/web/*.json    -> data/web.js   (window.WEB)
+Fotky akcí: zmenší na 1000 px a vytvoří náhledy v img/akce/t/.
+Plakáty a fotky suvenýrů: zmenší na 1400 px.
+Ukázková administrace: admin/demo/data.js a admin/demo/config.js.
+Spouští se automaticky na GitHubu po každé změně (.github/workflows/build.yml).
+"""
+import html, json, os, re, sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(ROOT)
+
+TAGC = {'Pro děti': 'kids', 'Přijďte pomoct': 'help'}
+
+
+def md(text):
+    """Jednoduchý převod textu z administrace: řádek = odstavec, **tučně**, [odkaz](url)."""
+    out = []
+    for line in text.replace('\r', '').split('\n'):
+        line = line.strip()
+        if not line:
+            continue
+        line = re.sub(r'\\([\\`*_{}\[\]()#+\-.!>])', r'\1', line)
+        line = html.escape(line, quote=False)
+        line = re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', line)
+        line = re.sub(r'(?<!\*)\*(?!\*)(.+?)\*', r'<i>\1</i>', line)
+        line = re.sub(r'\[([^\]]+)\]\((https?://[^)\s]+|#[^)\s]*)\)',
+                      lambda m: '<a href="%s"%s>%s</a>' % (m.group(2), '' if m.group(2).startswith('#') else ' target="_blank" rel="noopener"', m.group(1)), line)
+        out.append(line)
+    return '\n'.join(out)
+
+
+def load(path):
+    with open(path, encoding='utf-8') as f:
+        return json.load(f)
+
+
+def akce():
+    items = []
+    for fn in sorted(os.listdir('content/akce')):
+        if not fn.endswith('.json'):
+            continue
+        a = load('content/akce/' + fn)
+        o = {'id': fn[:-5]}
+        for k in ('date', 'title', 'end', 'when', 'short', 'poster', 'photos', 'tag', 'titleTodo'):
+            v = a.get(k)
+            if v in (None, '', [], False):
+                continue
+            o[k] = v
+        o['date'] = str(o['date'])[:10]
+        if o.get('end'):
+            o['end'] = str(o['end'])[:10]
+            if o['end'] <= o['date']:
+                del o['end']
+        if o.get('tag') in TAGC:
+            o['tagc'] = TAGC[o['tag']]
+        if a.get('text'):
+            o['html'] = md(a['text'])
+        items.append(o)
+    items.sort(key=lambda a: (a['date'], a['id']))
+    return items
+
+
+def images(items, web):
+    try:
+        from PIL import Image, ImageOps
+    except ImportError:
+        print('PIL není nainstalovaný, obrázky přeskakuji', file=sys.stderr)
+        return
+    def fit(path, size):
+        if not os.path.exists(path):
+            print('chybí obrázek', path, file=sys.stderr)
+            return
+        im = Image.open(path)
+        if max(im.size) <= size and path.lower().endswith('.jpg'):
+            return
+        im = ImageOps.exif_transpose(im).convert('RGB')
+        im.thumbnail((size, size))
+        im.save(path, quality=82, progressive=True, optimize=True)
+    for a in items:
+        for p in a.get('photos', []):
+            fit(p, 1000)
+            t = p.replace('img/akce/', 'img/akce/t/') if p.startswith('img/akce/') else None
+            if t and os.path.exists(p) and not os.path.exists(t):
+                os.makedirs(os.path.dirname(t), exist_ok=True)
+                ImageOps.fit(Image.open(p).convert('RGB'), (192, 144)).save(t, quality=80)
+        if a.get('poster'):
+            fit(a['poster'], 1400)
+    for g in web['suvenyry'].get('polozky', []):
+        if g.get('foto'):
+            fit(g['foto'], 1000)
+
+
+def main():
+    items = akce()
+    uvod = load('content/web/uvod.json')
+    web = {k: load('content/web/%s.json' % k) for k in ('navsteva', 'suvenyry')}
+    images(items, web)
+    j = lambda o: json.dumps(o, ensure_ascii=False)
+    with open('data/akce.js', 'w', encoding='utf-8') as f:
+        f.write('// Generováno z content/ (tools/build.py). Neupravovat ručně, akce se upravují v administraci.\n')
+        f.write('window.ROKY=%s;\n' % j({r['rok']: r['plakat'] for r in uvod.get('roky', [])}))
+        f.write('window.HERO=%s;\n' % json.dumps(uvod.get('hero', []), ensure_ascii=False, indent=1))
+        f.write('window.AKCE=[\n' + ',\n'.join(j(a) for a in items) + '\n];\n')
+    with open('data/web.js', 'w', encoding='utf-8') as f:
+        f.write('// Generováno z content/web/ (tools/build.py). Neupravovat ručně.\n')
+        f.write('window.WEB=%s;\n' % json.dumps(web, ensure_ascii=False, indent=1))
+    demo()
+    print('akce: %d, s fotkami %d, s plakátem %d' % (len(items), sum(1 for a in items if a.get('photos')), sum(1 for a in items if a.get('poster'))))
+
+
+def demo():
+    """Ukázková administrace bez přihlášení: obsah repozitáře vložený do stránky (nic se neukládá)."""
+    tree = {}
+    for base, _, files in os.walk('content'):
+        for fn in files:
+            node = tree
+            for part in os.path.join(base, fn).split(os.sep)[:-1]:
+                node = node.setdefault(part, {})
+            with open(os.path.join(base, fn), encoding='utf-8') as f:
+                node[fn] = {'content': f.read()}
+    with open('admin/config.yml', encoding='utf-8') as f:
+        cfg = json.loads(''.join(l for l in f if not l.startswith('#')))
+    cfg['backend'] = {'name': 'test-repo'}
+    cfg['load_config_file'] = False
+    os.makedirs('admin/demo', exist_ok=True)
+    with open('admin/demo/data.js', 'w', encoding='utf-8') as f:
+        f.write('window.repoFiles=%s;\n' % json.dumps(tree, ensure_ascii=False))
+        # testovací backend Decapu hledá složku kolekce jako jeden klíč ("content/akce")
+        f.write('window.repoFiles["content/akce"]=window.repoFiles.content.akce;\n')
+    with open('admin/demo/config.js', 'w', encoding='utf-8') as f:
+        f.write('window.DEMO_CONFIG=%s;\n' % json.dumps(cfg, ensure_ascii=False, indent=1))
+
+
+if __name__ == '__main__':
+    main()
