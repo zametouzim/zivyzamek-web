@@ -68,6 +68,15 @@ nav.main a.give{background:var(--accent);color:var(--accent-ink);border:0;margin
 .give-mobile+.menu-btn{margin-left:0}
 .theme-btn{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;flex-shrink:0;background:none;border:1px solid var(--line);color:var(--ink);cursor:pointer;padding:0}
 .theme-btn .i-sun{display:none}
+.langs{display:flex;gap:2px;flex-shrink:0}
+.langs a{text-decoration:none;font-family:var(--cond);font-weight:600;font-size:17px;letter-spacing:.06em;padding:8px 6px;color:var(--ink)}
+.langs a[aria-current="page"]{color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+.langback{font-weight:700}
+.steps.langhist li{grid-template-columns:150px minmax(0,1fr)}
+@media (max-width:600px){.steps.langhist li{grid-template-columns:1fr;gap:2px}}
+.langhist .when{white-space:normal}
+nav.main a.lang-m{display:none}
+@media (max-width:860px){.langs{display:none}nav.main a.lang-m{display:flex}}
 .dark-on .theme-btn .i-sun{display:block}
 .dark-on .theme-btn .i-moon{display:none}
 @media (max-width:860px){.theme-btn{order:3;width:38px;height:38px}.menu-btn{order:4}.bar{gap:12px}}
@@ -345,7 +354,10 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
       <a href="#zamek">Zámek a historie</a>
       <a href="#spolek">Spolek</a>
       <a href="#podporte" class="give">Podpořte nás</a>
+      <a href="#en" class="lang-m" lang="en" hreflang="en">English</a>
+      <a href="#de" class="lang-m" lang="de" hreflang="de">Deutsch</a>
     </nav>
+    <span class="langs"><a href="#en" lang="en" hreflang="en" title="English">EN</a><a href="#de" lang="de" hreflang="de" title="Deutsch">DE</a></span>
     <button class="theme-btn" id="themeBtn" type="button" aria-label="Přepnout na tmavý vzhled" title="Světlý / tmavý vzhled">
       <svg class="i-moon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
       <svg class="i-sun" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -497,6 +509,94 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     <div class="photos" style="margin-top:32px">
       <figure class="p-a"><div class="r"><img src="img/arkady.jpg" alt="Arkády Horního zámku"></div><figcaption>Arkády Horního zámku</figcaption></figure>
       <figure class="p-b"><div class="r"><img src="img/podium.jpg" alt="Nádvoří s pódiem a hranicí na pálení čarodějnic"></div><figcaption>Příprava na pálení čarodějnic, duben 2025</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- EN -->
+<section data-page="en" lang="en" hidden>
+  <div class="wrap">
+    <div class="page-head"><span class="eyebrow">For visitors · English</span><h2>Toužim Castle</h2><p>The oldest and most important historic monument of Toužim, a small town in the Karlovy Vary Region of West Bohemia. After decades of decay, volunteers of the association Živý zámek Toužim (“Living Castle Toužim”) have been bringing it back to life since 2015. The courtyard and the interiors of the Upper Castle are open to visitors.</p><p class="langback"><a href="#domu" lang="cs">← Česky</a></p></div>
+    <div class="two">
+      <div class="card navy">
+        <span class="eyebrow" style="color:var(--sun)">July to September</span>
+        <h3>Open at weekends</h3>
+        <div class="hours">
+          <div class="hr"><div><span class="hk">Castle and courtyard</span><span class="ht">Saturday and Sunday 10–12 and 13–17</span></div><b class="pr">admission by donation</b></div>
+          <div class="hr"><div><span class="hk">Guided tour</span><span class="ht">Saturday and Sunday at 11, 14 and 16</span></div><b class="pr">50 CZK per person</b></div>
+        </div>
+        <dl class="facts"><dt>Outside the season</dt><dd>by arrangement, e-mail zivyzamektouzim@email.cz</dd></dl>
+      </div>
+      <div class="card">
+        <h3>Getting here</h3>
+        <dl class="facts">
+          <dt>Address</dt><dd>náměstí Jiřího z Poděbrad 1<br>364 01 Toužim, Czech Republic</dd>
+          <dt>Bus</dt><dd>stop on the main square, about 100 m from the entrance</dd>
+          <dt>Parking</dt><dd>on the main square</dd>
+          <dt>Step-free entrance</dt><dd>yes</dd>
+        </dl>
+        <div class="ctas"><a class="btn fill" href="https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim" target="_blank" rel="noopener">Open map</a></div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="lab"><h2>Upcoming events</h2><p style="color:var(--grey)">Event names and details are in Czech.</p></div>
+      <div class="body"><ul class="events up langev" data-loc="en-GB" data-none="The programme for the next season is being prepared."></ul></div>
+    </div>
+    <div class="block">
+      <div class="lab"><h2>A short history</h2></div>
+      <div class="body">
+        <ol class="steps langhist"><li><span class="when">12th century</span><span>A manor is founded on the site; in 1187 it passes to the Premonstratensian monastery of Milevsko and becomes a provostry.</span></li><li><span class="when">1437</span><span>The Hussite captain Jakoubek of Vřesovice and his son Jan rebuild the provostry into a Gothic castle, the core of today’s Upper Castle.</span></li><li><span class="when">1469</span><span>King George of Poděbrady allows a new fortified town to be built next to the castle. Toužim is born.</span></li><li><span class="when">16th century</span><span>The Lords of Plauen rebuild the castle in Renaissance style: the Upper and Lower Castle, a farmyard and a garden with a fountain.</span></li><li><span class="when">1620–1829</span><span>Several fires and rebuildings. In 1829 the Upper Castle loses its top floor, tower and both wings.</span></li><li><span class="when">1945–2009</span><span>State ownership, then a private owner from 1998. The castle decays and the town gets it back as a ruin in 2009.</span></li><li><span class="when">since 2015</span><span>Volunteers clean up and open the castle. In 2016 they found the association Živý zámek Toužim. In 2026 a 15th-century fortification wall was discovered.</span></li></ol>
+        <p>We are also creating a community garden between the Upper and Lower Castle, with support from the VIA Foundation.</p>
+        <figure style="margin:0"><img src="img/arkady.jpg" alt="Arcades of the Upper Castle" loading="lazy" style="width:100%;display:block;max-height:460px;object-fit:cover"><figcaption style="font-size:14px;color:var(--grey);padding-top:6px">Arcades of the Upper Castle</figcaption></figure>
+      </div>
+    </div>
+    <div class="block">
+      <div class="lab"><h2>Contact</h2></div>
+      <div class="body"><p>E-mail: zivyzamektouzim@email.cz<br>Facebook: <a href="https://www.facebook.com/zivyzamek.touzim" target="_blank" rel="noopener">facebook.com/zivyzamek.touzim</a></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DE -->
+<section data-page="de" lang="de" hidden>
+  <div class="wrap">
+    <div class="page-head"><span class="eyebrow">Für Besucher · Deutsch</span><h2>Schloss Toužim (Theusing)</h2><p>Das älteste und bedeutendste Baudenkmal der Kleinstadt Toužim (deutsch Theusing) in der Region Karlsbad in Westböhmen. Nach Jahrzehnten des Verfalls erwecken es seit 2015 Freiwillige des Vereins Živý zámek Toužim („Lebendiges Schloss Toužim“) wieder zum Leben. Der Schlosshof und die Innenräume des Oberen Schlosses sind für Besucher geöffnet.</p><p class="langback"><a href="#domu" lang="cs">← Česky</a></p></div>
+    <div class="two">
+      <div class="card navy">
+        <span class="eyebrow" style="color:var(--sun)">Juli bis September</span>
+        <h3>Geöffnet an Wochenenden</h3>
+        <div class="hours">
+          <div class="hr"><div><span class="hk">Schloss und Schlosshof</span><span class="ht">Samstag und Sonntag 10–12 und 13–17 Uhr</span></div><b class="pr">Eintritt: freiwillige Spende</b></div>
+          <div class="hr"><div><span class="hk">Führung</span><span class="ht">Samstag und Sonntag um 11, 14 und 16 Uhr</span></div><b class="pr">50 CZK pro Person</b></div>
+        </div>
+        <dl class="facts"><dt>Außerhalb der Saison</dt><dd>nach Vereinbarung, E-Mail zivyzamektouzim@email.cz</dd></dl>
+      </div>
+      <div class="card">
+        <h3>Anfahrt</h3>
+        <dl class="facts">
+          <dt>Adresse</dt><dd>náměstí Jiřího z Poděbrad 1<br>364 01 Toužim, Tschechien</dd>
+          <dt>Bus</dt><dd>Haltestelle am Marktplatz, etwa 100 m vom Eingang</dd>
+          <dt>Parken</dt><dd>direkt am Marktplatz</dd>
+          <dt>Barrierefreier Eingang</dt><dd>ja</dd>
+        </dl>
+        <div class="ctas"><a class="btn fill" href="https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim" target="_blank" rel="noopener">Karte öffnen</a></div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="lab"><h2>Nächste Veranstaltungen</h2><p style="color:var(--grey)">Namen und Beschreibungen der Veranstaltungen sind auf Tschechisch.</p></div>
+      <div class="body"><ul class="events up langev" data-loc="de-DE" data-none="Das Programm für die nächste Saison wird vorbereitet."></ul></div>
+    </div>
+    <div class="block">
+      <div class="lab"><h2>Kurze Geschichte</h2></div>
+      <div class="body">
+        <ol class="steps langhist"><li><span class="when">12. Jahrhundert</span><span>An der Stelle des Schlosses entsteht ein Herrenhof; 1187 geht er an das Prämonstratenserkloster Milevsko und wird zur Propstei.</span></li><li><span class="when">1437</span><span>Der hussitische Hauptmann Jakoubek von Wřesowitz und sein Sohn Jan bauen die Propstei zur gotischen Burg aus, dem Kern des heutigen Oberen Schlosses.</span></li><li><span class="when">1469</span><span>König Georg von Podiebrad erlaubt den Bau einer neuen befestigten Stadt neben der Burg. Toužim entsteht.</span></li><li><span class="when">16. Jahrhundert</span><span>Die Herren von Plauen bauen die Burg im Renaissancestil um: Oberes und Unteres Schloss, Meierhof und Garten mit Brunnen.</span></li><li><span class="when">1620–1829</span><span>Mehrere Brände und Umbauten. 1829 verliert das Obere Schloss das Obergeschoss mit dem Turm und beide Flügel.</span></li><li><span class="when">1945–2009</span><span>Staatsbesitz, ab 1998 ein privater Eigentümer. Das Schloss verfällt, 2009 bekommt es die Stadt als Ruine zurück.</span></li><li><span class="when">seit 2015</span><span>Freiwillige räumen auf und öffnen das Schloss. 2016 gründen sie den Verein Živý zámek Toužim. 2026 wurde eine Befestigungsmauer aus dem 15. Jahrhundert entdeckt.</span></li></ol>
+        <p>Zwischen dem Oberen und dem Unteren Schloss legen wir außerdem einen Gemeinschaftsgarten an, unterstützt von der Stiftung VIA.</p>
+        <figure style="margin:0"><img src="img/arkady.jpg" alt="Arkaden des Oberen Schlosses" loading="lazy" style="width:100%;display:block;max-height:460px;object-fit:cover"><figcaption style="font-size:14px;color:var(--grey);padding-top:6px">Arkaden des Oberen Schlosses</figcaption></figure>
+      </div>
+    </div>
+    <div class="block">
+      <div class="lab"><h2>Kontakt</h2></div>
+      <div class="body"><p>E-Mail: zivyzamektouzim@email.cz<br>Facebook: <a href="https://www.facebook.com/zivyzamek.touzim" target="_blank" rel="noopener">facebook.com/zivyzamek.touzim</a></p></div>
     </div>
   </div>
 </section>
@@ -819,6 +919,8 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     if(id.indexOf('akce/')===0){renderDetail(id.slice(5));id='akce';}
     if(!pages.some(function(p){return p.dataset.page===id})) id='domu';
     pages.forEach(function(p){p.hidden=p.dataset.page!==id});
+    document.documentElement.lang=(id==='en'||id==='de')?id:'cs';
+    [].forEach.call(document.querySelectorAll('.langs a'),function(a){if(a.getAttribute('href')==='#'+id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
     var navId=id==='akce'?'program':id;
     links.forEach(function(a){ if(a.getAttribute('href')==='#'+navId) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
     nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); lb.hidden=true;
@@ -838,6 +940,14 @@ footer h4{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   if(ul)ul.innerHTML=up.length?up.map(function(a){
     return '<li class="ev"><div class="d">'+dd(a)+(a.when?'<small style="display:block;font-size:15px;color:var(--grey);font-family:var(--font);font-weight:400">'+esc(a.when)+'</small>':'')+'</div><div><h3><a href="#akce/'+a.id+'">'+esc(a.title)+'</a></h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<a class="det" href="#akce/'+a.id+'">Detail akce →</a></div>'+(a.poster?'<button class="pz" data-src="'+a.poster+'" aria-label="Zvětšit plakát"><img src="'+a.poster+'" alt="Plakát: '+esc(a.title)+'" loading="lazy"></button>':'<span></span>')+(a.tag?'<span class="tag '+(a.tagc||'')+'">'+esc(a.tag)+'</span>':'<span></span>')+'</li>';
   }).join(''):'<li class="ev"><div><p>Program na další sezónu připravujeme. Sledujte náš Facebook.</p></div></li>';
+
+  [].forEach.call(document.querySelectorAll('.langev'),function(el){
+    var loc=el.dataset.loc;
+    function f(iso){return new Date(iso+'T12:00:00').toLocaleDateString(loc,{day:'numeric',month:'long'})}
+    el.innerHTML=up.length?up.map(function(a){
+      return '<li class="ev"><div class="d" style="font-size:20px">'+f(a.date)+(a.end?' – '+f(a.end):'')+'</div><div><h3><a href="#akce/'+a.id+'" lang="cs">'+esc(a.title)+'</a></h3></div><span></span><span></span></li>';
+    }).join(''):'<li class="ev"><div><p>'+esc(el.dataset.none)+'</p></div></li>';
+  });
 
   // archiv: roky a seznam
   var yearsEl=document.getElementById('archYears'), list=document.getElementById('archList');
