@@ -1,0 +1,14 @@
+/* Úpravy administrace pro mobil: Decap má editor a jeho lištu široké minimálně 800 px
+   a lištu pevně vysokou, takže se na telefonu nevejde a překrývá formulář. */
+@media (max-width: 799px) {
+  [class*="-EditorContainer"] { min-width: 0 !important; padding-top: 0 !important; display: flex; flex-direction: column; }
+  [class*="-ToolbarContainer"] { min-width: 0 !important; position: relative !important; height: auto !important; flex: none; flex-wrap: wrap; }
+  [class*="-toolbarSection"] { height: auto !important; }
+  [class*="-ToolbarSectionBackLink"] { flex: 1 1 auto; padding: 8px !important; border-right: 0 !important; }
+  [class*="-ToolbarSectionMeta"] { padding: 0 8px !important; }
+  [class*="-ToolbarSectionMain"] { order: 3; flex: 1 1 100% !important; flex-wrap: wrap; gap: 8px; padding: 8px !important; border-top: 1px solid #eff0f4; }
+  [class*="-ToolbarSectionMeta"] [class*="-AppHeaderSiteLink"] { display: none; }
+  [class*="-EditorContainer"] > :not([class*="-ToolbarContainer"]) { width: 100% !important; min-width: 0 !important; flex: 1; min-height: 0; }
+  [class*="-NoPreviewContainer"] { flex: 1; min-height: 0; }
+  [class*="-ControlPaneContainer"] { padding-bottom: 80px !important; }
+}
