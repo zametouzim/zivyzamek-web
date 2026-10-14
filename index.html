@@ -412,7 +412,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
       <div class="body">
         <div class="nums">
           <div><b>10</b><span>let spolku</span></div>
-          <div><b>146</b><span>akcí a brigád od roku 2015</span></div>
+          <div><b id="pocetAkci">151</b><span>akcí a brigád od roku 2015</span></div>
           <div><b>16</b><span>ročníků Zámeckého CITO</span></div>
           <div><b>10</b><span>ročníků Festivalu na zámku</span></div>
         </div>
@@ -914,6 +914,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   // archiv: roky a seznam
   var yearsEl=document.getElementById('archYears'), list=document.getElementById('archList');
   var done=AKCE.filter(past), years=[];
+  var pa=document.getElementById('pocetAkci');if(pa)pa.textContent=done.length;
   done.forEach(function(a){var y=a.date.slice(0,4);if(years.indexOf(y)<0)years.push(y)});
   function renderYear(y){
     [].forEach.call(yearsEl.children,function(b){b.setAttribute('aria-selected',b.dataset.y===y?'true':'false')});
