@@ -229,6 +229,93 @@ window.DEMO_CONFIG={
      ]
     },
     {
+     "name": "cizojazycne",
+     "label": "Otevírací doba anglicky a německy",
+     "file": "content/web/cizojazycne.json",
+     "format": "json",
+     "fields": [
+      {
+       "label": "Anglicky (English)",
+       "name": "en",
+       "widget": "object",
+       "collapsed": true,
+       "fields": [
+        {
+         "label": "Sezóna (nadpis karty)",
+         "name": "sezona",
+         "widget": "string"
+        },
+        {
+         "label": "Vstup do zámku: kdy",
+         "name": "vstup_cas",
+         "widget": "string"
+        },
+        {
+         "label": "Vstup do zámku: cena",
+         "name": "vstup_cena",
+         "widget": "string"
+        },
+        {
+         "label": "Komentovaná prohlídka: kdy",
+         "name": "prohlidka_cas",
+         "widget": "string"
+        },
+        {
+         "label": "Komentovaná prohlídka: cena",
+         "name": "prohlidka_cena",
+         "widget": "string"
+        },
+        {
+         "label": "Mimo sezónu",
+         "name": "mimo_sezonu",
+         "widget": "string",
+         "hint": "E-mail se doplní sám z české verze."
+        }
+       ],
+       "hint": "Když změníte otevírací dobu nebo ceny v české verzi, upravte je i tady."
+      },
+      {
+       "label": "Německy (Deutsch)",
+       "name": "de",
+       "widget": "object",
+       "collapsed": true,
+       "fields": [
+        {
+         "label": "Sezóna (nadpis karty)",
+         "name": "sezona",
+         "widget": "string"
+        },
+        {
+         "label": "Vstup do zámku: kdy",
+         "name": "vstup_cas",
+         "widget": "string"
+        },
+        {
+         "label": "Vstup do zámku: cena",
+         "name": "vstup_cena",
+         "widget": "string"
+        },
+        {
+         "label": "Komentovaná prohlídka: kdy",
+         "name": "prohlidka_cas",
+         "widget": "string"
+        },
+        {
+         "label": "Komentovaná prohlídka: cena",
+         "name": "prohlidka_cena",
+         "widget": "string"
+        },
+        {
+         "label": "Mimo sezónu",
+         "name": "mimo_sezonu",
+         "widget": "string",
+         "hint": "E-mail se doplní sám z české verze."
+        }
+       ]
+      }
+     ]
+    },
+    {
      "name": "suvenyry",
      "label": "Suvenýry",
      "file": "content/web/suvenyry.json",
