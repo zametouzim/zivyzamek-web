@@ -2,7 +2,6 @@ window.DEMO_CONFIG={
  "backend": {
   "name": "test-repo"
  },
- "locale": "cs",
  "site_url": "https://zametouzim.github.io/zivyzamek-web/",
  "display_url": "https://zametouzim.github.io/zivyzamek-web/",
  "logo_url": "https://zametouzim.github.io/zivyzamek-web/img/logo.png",
@@ -24,12 +23,10 @@ window.DEMO_CONFIG={
    "sortable_fields": [
     {
      "field": "date",
-     "label": "Datum",
      "default_sort": "desc"
     },
     {
-     "field": "title",
-     "label": "Název"
+     "field": "title"
     }
    ],
    "view_groups": [
@@ -473,12 +470,10 @@ window.DEMO_CONFIG={
    "sortable_fields": [
     {
      "field": "poradi",
-     "label": "Pořadí",
      "default_sort": "asc"
     },
     {
-     "field": "nazev",
-     "label": "Název"
+     "field": "nazev"
     }
    ],
    "description": "Nové stránky s vlastním obsahem. Obsah poskládáte z bloků (nadpis, text, fotka, galerie, tlačítko), vzhled se převezme z webu.",
@@ -636,5 +631,6 @@ window.DEMO_CONFIG={
    }
   }
  ],
+ "locale": "cs",
  "load_config_file": false
 };

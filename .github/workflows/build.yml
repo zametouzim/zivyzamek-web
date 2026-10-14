@@ -1,0 +1,33 @@
+# Po uložení v administraci přestaví data webu (tools/build.py) a znovu nasadí testovací web.
+name: Sestavení webu
+on:
+  push:
+    branches: [main]
+    paths: ['content/**', 'img/**', 'admin/config.yml', 'tools/build.py']
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+concurrency: build
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow
+      - run: python tools/build.py
+      - name: Uložit sestavená data
+        run: |
+          git config user.name "Sestavení webu"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data admin/demo img
+          if git diff --cached --quiet; then echo "beze změn"; exit 0; fi
+          git commit -m "Sestavení webu po změně v administraci"
+          git push
+      - name: Znovu nasadit testovací web
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "nasazení se spustí samo"
