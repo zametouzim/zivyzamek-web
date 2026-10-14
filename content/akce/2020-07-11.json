@@ -8,5 +8,13 @@
     "img/akce/2020-07-11-2.jpg",
     "img/akce/2020-07-11-3.jpg",
     "img/akce/2020-07-11-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Laying the floor in the castle chamber",
+    "text": "A work party for the new floor in the first castle chamber: on Saturday we planed and laid boards from nine in the morning until ten at night, and on Sunday we carried on into the afternoon. Michal Nedvídek, Jakub Červený and Hanz Policar did the work."
+  },
+  "de": {
+    "title": "Neuer Fußboden in der Burgkammer",
+    "text": "Arbeitseinsatz für den neuen Fußboden in der ersten Burgkammer: Am Samstag wurde von neun Uhr morgens bis zehn Uhr abends gehobelt und verlegt, am Sonntag ging es bis in den Nachmittag weiter. Mitgearbeitet haben Michal Nedvídek, Jakub Červený und Hanz Policar."
+  }
 }

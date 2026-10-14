@@ -12,5 +12,13 @@
     "img/akce/2024-10-26-6.jpg",
     "img/akce/2024-10-26-7.jpg",
     "img/akce/2024-10-26-8.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Halloween at the castle",
+    "text": "A scary cellar and a Boo chamber, face painting, games, a workshop and a lantern procession. For the first time also unusual evening tours."
+  },
+  "de": {
+    "title": "Halloween im Schloss",
+    "text": "Gruselkeller und Buh-Kammer, Kinderschminken, Spiele, eine Werkstatt und ein Laternenumzug. Zum ersten Mal auch ungewöhnliche Abendführungen."
+  }
 }

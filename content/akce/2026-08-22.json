@@ -8,5 +8,13 @@
     "img/akce/2026-08-22-2.jpg",
     "img/akce/2026-08-22-3.jpg",
     "img/akce/2026-08-22-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle Night",
+    "text": "Candlelit evening tours of the castle with costumed guides and acted-out stories."
+  },
+  "de": {
+    "title": "Burgen- und Schlössernacht",
+    "text": "Abendführungen bei Kerzenlicht mit kostümierten Führern und gespielten Geschichten."
+  }
 }

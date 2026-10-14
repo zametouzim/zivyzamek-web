@@ -4,5 +4,13 @@
   "text": "Jubilejní 10. ročník benefičního rockového festivalu. Hráli mimo jiné De Bill Heads, Corona, PfP rock a Fata Morgana, která tu oslavila 40 let a pokřtila nové album.",
   "photos": [
     "img/akce/2026-06-20-1.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Rock festival, 10th year",
+    "text": "The 10th, anniversary benefit rock festival. The bands included De Bill Heads, Corona, PfP rock and Fata Morgana, who celebrated 40 years here and launched a new album."
+  },
+  "de": {
+    "title": "Rockfestival, 10. Jahrgang",
+    "text": "Der zehnte Jubiläumsjahrgang des Benefiz-Rockfestivals. Es spielten unter anderem De Bill Heads, Corona, PfP rock und Fata Morgana, die hier ihr 40-jähriges Bestehen feierte und ein neues Album taufte."
+  }
 }

@@ -1,4 +1,10 @@
 {
   "title": "Zámecké CITO Toužim 2019 - Jaro",
-  "date": "2019-05-25"
+  "date": "2019-05-25",
+  "en": {
+    "title": "Castle CITO Toužim 2019, spring"
+  },
+  "de": {
+    "title": "Schloss-CITO Toužim 2019, Frühjahr"
+  }
 }

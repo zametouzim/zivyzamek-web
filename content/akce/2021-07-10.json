@@ -7,5 +7,13 @@
     "img/akce/2021-07-10-2.jpg",
     "img/akce/2021-07-10-3.jpg",
     "img/akce/2021-07-10-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Historical afternoon: 552 years of the town",
+    "text": "A fairy tale by the Kamila theatre, Cavalla Canor, the dancer Shahinez, fencing by Zlatý Grál and Duellanti, Eva with her barrel organ, a historical procession and the unveiling of a new information board. In the evening a concert by Dáma s hranostajem and an exhibition for the society's 5th anniversary."
+  },
+  "de": {
+    "title": "Historischer Nachmittag: 552 Jahre Stadt",
+    "text": "Ein Märchen des Theaters Kamila, Cavalla Canor, die Tänzerin Shahinez, Fechten mit Zlatý Grál und Duellanti, Eva mit der Drehorgel, ein historischer Umzug und die Enthüllung einer neuen Infotafel. Am Abend ein Konzert von Dáma s hranostajem und eine Ausstellung zum 5. Jubiläum des Vereins."
+  }
 }

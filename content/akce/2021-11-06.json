@@ -8,5 +8,13 @@
     "img/akce/2021-11-06-2.jpg",
     "img/akce/2021-11-06-3.jpg",
     "img/akce/2021-11-06-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Halloween at the castle",
+    "text": "An afternoon full of sunshine and fun: homemade gingerbread and muffins, creative workshops, tasks with young witches and spooks in the castle cellar. The newspaper Právo later wrote about the event."
+  },
+  "de": {
+    "title": "Halloween im Schloss",
+    "text": "Ein Nachmittag voller Sonne und Spaß: hausgemachte Lebkuchen und Muffins, Kreativwerkstätten, Aufgaben mit jungen Hexen und Spuk im Burgkeller. Später berichtete auch die Zeitung Právo darüber."
+  }
 }

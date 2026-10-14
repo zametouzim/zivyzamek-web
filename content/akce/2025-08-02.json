@@ -8,5 +8,13 @@
     "img/akce/2025-08-02-2.jpg",
     "img/akce/2025-08-02-3.jpg",
     "img/akce/2025-08-02-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Pelmel muziky (musical medley)",
+    "text": "A musical afternoon with country dance demonstrations."
+  },
+  "de": {
+    "title": "Pelmel muziky (Musik-Allerlei)",
+    "text": "Ein musikalischer Nachmittag mit Vorführungen von Countrytänzen."
+  }
 }

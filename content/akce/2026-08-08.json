@@ -8,5 +8,13 @@
     "img/akce/2026-08-08-2.jpg",
     "img/akce/2026-08-08-3.jpg",
     "img/akce/2026-08-08-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Pelmel muziky (musical medley)",
+    "text": "The second summer music afternoon: St. Johnny, Country Pocket and an evening by the fire with Pája Janča and Dáma s hranostajem."
+  },
+  "de": {
+    "title": "Pelmel muziky (Musik-Allerlei)",
+    "text": "Der zweite sommerliche Musiknachmittag: St. Johnny, Country Pocket und ein Abend am Feuer mit Pája Janča und Dáma s hranostajem."
+  }
 }

@@ -2,5 +2,15 @@
   "title": "Community Celebration Event na zámku Toužim",
   "date": "2021-10-09",
   "when": "sobota · 14:30",
-  "text": "Community celebration event k dvacetiletému výročí geocachingu s prohlídkou zámku a koncertem středověké hudby."
+  "text": "Community celebration event k dvacetiletému výročí geocachingu s prohlídkou zámku a koncertem středověké hudby.",
+  "en": {
+    "title": "Community Celebration Event at Toužim Castle",
+    "when": "Saturday · 14:30",
+    "text": "A community celebration event for the twentieth anniversary of geocaching, with a tour of the castle and a concert of medieval music."
+  },
+  "de": {
+    "title": "Community Celebration Event im Schloss Toužim",
+    "when": "Samstag · 14:30",
+    "text": "Ein Community Celebration Event zum zwanzigjährigen Jubiläum des Geocachings mit Schlossführung und einem Konzert mittelalterlicher Musik."
+  }
 }

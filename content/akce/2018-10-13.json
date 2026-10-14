@@ -1,5 +1,13 @@
 {
   "title": "Podzimní brigáda a Zámecké CITO",
   "date": "2018-10-13",
-  "text": "Brigáda v rámci projektu 72 hodin spojená s CITO eventem geocacherů: hrabání listí a vysekávání náletů."
+  "text": "Brigáda v rámci projektu 72 hodin spojená s CITO eventem geocacherů: hrabání listí a vysekávání náletů.",
+  "en": {
+    "title": "Autumn work party and Castle CITO",
+    "text": "A work party as part of the 72 Hours project combined with a geocaching CITO event: raking leaves and cutting back self-seeded trees."
+  },
+  "de": {
+    "title": "Herbsteinsatz und Schloss-CITO",
+    "text": "Arbeitseinsatz im Rahmen des Projekts 72 Stunden, verbunden mit einem CITO-Event der Geocacher: Laub rechen und Wildwuchs entfernen."
+  }
 }

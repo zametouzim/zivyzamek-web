@@ -1,4 +1,10 @@
 {
   "title": "Den města Toužim",
-  "date": "2018-07-08"
+  "date": "2018-07-08",
+  "en": {
+    "title": "Toužim Town Day"
+  },
+  "de": {
+    "title": "Tag der Stadt Toužim"
+  }
 }

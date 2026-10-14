@@ -8,5 +8,13 @@
     "img/akce/2025-09-06-2.jpg",
     "img/akce/2025-09-06-3.jpg",
     "img/akce/2025-09-06-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Theatre at the castle",
+    "text": "The second theatre day: the fairy tales The Brave Little Tailor (Divadélko Ondřej) and Tom Thumb (Jitule a Dadule), a bubble show and in the evening the play Nevěrníci by the MAEBH theatre."
+  },
+  "de": {
+    "title": "Theater im Schloss",
+    "text": "Der zweite Theatertag: die Märchen „Das tapfere Schneiderlein“ (Divadélko Ondřej) und „Däumling“ (Jitule a Dadule), eine Seifenblasenshow und am Abend das Stück „Nevěrníci“ des Theaters MAEBH."
+  }
 }

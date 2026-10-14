@@ -1,5 +1,13 @@
 {
   "title": "Dětský den",
   "date": "2017-06-04",
-  "text": "První dětský den na zámku. Ráno hrozilo počasí, odpoledne vylezlo sluníčko."
+  "text": "První dětský den na zámku. Ráno hrozilo počasí, odpoledne vylezlo sluníčko.",
+  "en": {
+    "title": "Children's Day",
+    "text": "The first Children's Day at the castle. The weather looked threatening in the morning, but the sun came out in the afternoon."
+  },
+  "de": {
+    "title": "Kindertag",
+    "text": "Der erste Kindertag auf dem Schloss. Am Morgen drohte schlechtes Wetter, am Nachmittag kam die Sonne heraus."
+  }
 }

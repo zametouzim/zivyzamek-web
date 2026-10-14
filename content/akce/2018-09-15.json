@@ -9,5 +9,11 @@
     "img/akce/2018-09-15-4.jpg",
     "img/akce/2018-09-15-5.jpg",
     "img/akce/2018-09-15-6.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Work party of the 31st Scout troop Vlaštovky from Plzeň"
+  },
+  "de": {
+    "title": "Arbeitseinsatz der 31. Pfadfindergruppe Vlaštovky aus Pilsen"
+  }
 }

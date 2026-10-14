@@ -1,4 +1,10 @@
 {
   "title": "Vánoční setkání se svařákem",
-  "date": "2016-12-10"
+  "date": "2016-12-10",
+  "en": {
+    "title": "Christmas get-together with mulled wine"
+  },
+  "de": {
+    "title": "Weihnachtstreffen mit Glühwein"
+  }
 }

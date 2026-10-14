@@ -8,5 +8,13 @@
     "img/akce/2024-12-14-2.jpg",
     "img/akce/2024-12-14-3.jpg",
     "img/akce/2024-12-14-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Christmas gathering at the castle",
+    "text": "Carols, mulled wine, a craft workshop for children, dance performances and a contest for the best gingerbread and crescent biscuits."
+  },
+  "de": {
+    "title": "Weihnachtstreffen im Schloss",
+    "text": "Weihnachtslieder, Glühwein, eine Kreativwerkstatt für Kinder, Tanzauftritte und ein Wettbewerb um die besten Lebkuchen und Kipferl."
+  }
 }

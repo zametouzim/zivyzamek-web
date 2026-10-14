@@ -5,5 +5,13 @@
   "photos": [
     "img/akce/2015-10-17-1.jpg",
     "img/akce/2015-10-17-2.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Work party in the courtyard",
+    "text": "Tidying the courtyard, clearing self-seeded trees and news about the castle's future."
+  },
+  "de": {
+    "title": "Arbeitseinsatz im Schlosshof",
+    "text": "Herrichten des Schlosshofs, Beseitigen von Wildwuchs und Neuigkeiten über das weitere Schicksal des Schlosses."
+  }
 }

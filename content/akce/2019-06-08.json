@@ -1,4 +1,10 @@
 {
   "title": "Dětský den",
-  "date": "2019-06-08"
+  "date": "2019-06-08",
+  "en": {
+    "title": "Children's Day"
+  },
+  "de": {
+    "title": "Kindertag"
+  }
 }

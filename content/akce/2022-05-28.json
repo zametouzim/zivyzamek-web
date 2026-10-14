@@ -9,5 +9,15 @@
     "img/akce/2022-05-28-2.jpg",
     "img/akce/2022-05-28-3.jpg",
     "img/akce/2022-05-28-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Children's Day at Toužim Castle",
+    "when": "Saturday · 13:00",
+    "text": "Children's Day with prize contests, forestry craft demonstrations by Lesy ČR (Toužim forest district) and a mountain of foam from the Toužim volunteer fire brigade."
+  },
+  "de": {
+    "title": "Kindertag im Schloss Toužim",
+    "when": "Samstag · 13:00",
+    "text": "Kindertag mit Wettbewerben um Preise, Vorführungen forstlicher Handwerke von Lesy ČR (Forstverwaltung Toužim) und einem Berg Schaum von der Freiwilligen Feuerwehr Toužim."
+  }
 }

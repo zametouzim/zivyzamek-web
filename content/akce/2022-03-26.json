@@ -5,5 +5,13 @@
   "photos": [
     "img/akce/2022-03-26-1.jpg",
     "img/akce/2022-03-26-2.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Spring work party",
+    "text": "A spring clean of the castle grounds, with refreshments for the helpers."
+  },
+  "de": {
+    "title": "Frühjahrs-Arbeitseinsatz",
+    "text": "Frühjahrsputz auf dem Schlossgelände mit Verpflegung für die Helfer."
+  }
 }

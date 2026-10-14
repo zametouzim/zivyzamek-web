@@ -1,5 +1,11 @@
 {
   "title": "Vánoční setkání se svařákem",
   "date": "2023-12-16",
-  "poster": "img/plakaty/2023_gp_12-16.jpg"
+  "poster": "img/plakaty/2023_gp_12-16.jpg",
+  "en": {
+    "title": "Christmas gathering with mulled wine"
+  },
+  "de": {
+    "title": "Weihnachtstreffen mit Glühwein"
+  }
 }

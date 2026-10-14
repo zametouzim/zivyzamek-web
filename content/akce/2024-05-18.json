@@ -8,5 +8,13 @@
     "img/akce/2024-05-18-2.jpg",
     "img/akce/2024-05-18-3.jpg",
     "img/akce/2024-05-18-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle CITO, spring 2024",
+    "text": "A spring work party rounded off with a performance by Jean de Carro."
+  },
+  "de": {
+    "title": "Schloss-CITO, Frühjahr 2024",
+    "text": "Frühjahrseinsatz mit einem Auftritt von Jean de Carro zum Abschluss."
+  }
 }

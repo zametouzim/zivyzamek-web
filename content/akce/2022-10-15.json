@@ -6,5 +6,13 @@
     "img/akce/2022-10-15-1.jpg",
     "img/akce/2022-10-15-2.jpg",
     "img/akce/2022-10-15-3.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle CITO, autumn 2022",
+    "text": "The tenth, anniversary volunteer work party, as part of the 72 Hours project. The band Longway played."
+  },
+  "de": {
+    "title": "Schloss-CITO, Herbst 2022",
+    "text": "Der zehnte, jubiläumsreife Freiwilligeneinsatz im Rahmen des Projekts 72 Stunden. Es spielte die Band Longway."
+  }
 }

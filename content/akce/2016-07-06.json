@@ -1,5 +1,11 @@
 {
   "title": "Den Mistra Jana Husa",
   "date": "2016-07-06",
-  "poster": "img/plakaty/2016_dmh_dmt_zamek.jpg"
+  "poster": "img/plakaty/2016_dmh_dmt_zamek.jpg",
+  "en": {
+    "title": "Master Jan Hus Day"
+  },
+  "de": {
+    "title": "Gedenktag für Magister Jan Hus"
+  }
 }

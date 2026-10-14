@@ -9,5 +9,15 @@
     "img/akce/2024-07-27-2.jpg",
     "img/akce/2024-07-27-3.jpg",
     "img/akce/2024-07-27-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle fair",
+    "when": "Saturday · 10:00–17:00",
+    "text": "The fair had stalls selling ceramics, woodwork, jewellery and accessories, plus refreshments and coffee. Live music accompanied the whole day, and there was theatre too."
+  },
+  "de": {
+    "title": "Schlossmarkt",
+    "when": "Samstag · 10:00–17:00",
+    "text": "Auf dem Markt gab es Stände mit Keramik, Holzwaren, Schmuck und Accessoires, Erfrischungen und Kaffee. Den ganzen Tag begleitete Livemusik, und es wurde auch Theater gespielt."
+  }
 }

@@ -1,4 +1,10 @@
 {
   "title": "Festival na zámku 2017 (1. ročník)",
-  "date": "2017-07-15"
+  "date": "2017-07-15",
+  "en": {
+    "title": "Castle Festival 2017 (1st year)"
+  },
+  "de": {
+    "title": "Schlossfestival 2017 (1. Jahrgang)"
+  }
 }

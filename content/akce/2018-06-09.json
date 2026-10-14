@@ -2,5 +2,15 @@
   "title": "Dětský den",
   "date": "2018-06-09",
   "when": "sobota · 13:00",
-  "text": "Podle plakátu: dětský den s Divadlem poutníka Hrocha (pohádky Údolí klapajících mlýnků a Jak tovaryš zachránil království), tvořivou dílnou a soutěžemi pro děti."
+  "text": "Podle plakátu: dětský den s Divadlem poutníka Hrocha (pohádky Údolí klapajících mlýnků a Jak tovaryš zachránil království), tvořivou dílnou a soutěžemi pro děti.",
+  "en": {
+    "title": "Children's Day",
+    "when": "Saturday · 13:00",
+    "text": "According to the poster: Children's Day with the Divadlo poutníka Hrocha theatre (the fairy tales The Valley of the Clattering Mills and How the Journeyman Saved the Kingdom), a creative workshop and games for children."
+  },
+  "de": {
+    "title": "Kindertag",
+    "when": "Samstag · 13:00",
+    "text": "Laut Plakat: Kindertag mit dem Theater Divadlo poutníka Hrocha (die Märchen Das Tal der klappernden Mühlen und Wie der Geselle das Königreich rettete), einer Kreativwerkstatt und Wettbewerben für Kinder."
+  }
 }

@@ -8,5 +8,13 @@
     "img/akce/2023-06-03-2.jpg",
     "img/akce/2023-06-03-3.jpg",
     "img/akce/2023-06-03-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Children's Day",
+    "text": "Prize contests, creative workshops, foam from the Toužim volunteer firefighters, craft demonstrations by Lesy ČR and the band Dáma s hranostajem."
+  },
+  "de": {
+    "title": "Kindertag",
+    "text": "Wettbewerbe um Preise, Kreativwerkstätten, Schaum von der Freiwilligen Feuerwehr Toužim, Handwerksvorführungen von Lesy ČR und die Band Dáma s hranostajem."
+  }
 }

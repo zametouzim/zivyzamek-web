@@ -3,5 +3,11 @@
   "date": "2018-04-30",
   "photos": [
     "img/akce/2018-04-30-1.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Witch-burning night"
+  },
+  "de": {
+    "title": "Hexenbrennen"
+  }
 }

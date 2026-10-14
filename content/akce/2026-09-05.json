@@ -8,5 +8,13 @@
     "img/akce/2026-09-05-2.jpg",
     "img/akce/2026-09-05-3.jpg",
     "img/akce/2026-09-05-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Theatre at the castle: Dívčí válka",
+    "text": "The third theatre day: the fairy tale The Knight and the Ugly Lady (Divadélko Ondřej), a Jitule a Dadule bubble show and in the evening Dívčí válka (The Maidens' War) by F. R. Čech. With financial support from the town of Toužim."
+  },
+  "de": {
+    "title": "Theater im Schloss: Dívčí válka",
+    "text": "Der dritte Theatertag: das Märchen „Der Ritter und die hässliche Dame“ (Divadélko Ondřej), eine Seifenblasenshow von Jitule a Dadule und am Abend „Dívčí válka“ (Der Mägdekrieg) von F. R. Čech. Mit finanzieller Unterstützung der Stadt Toužim."
+  }
 }

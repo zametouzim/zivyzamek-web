@@ -8,5 +8,13 @@
     "img/akce/2022-11-05-2.jpg",
     "img/akce/2022-11-05-3.jpg",
     "img/akce/2022-11-05-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Halloween at the castle",
+    "text": "Halloween with creative workshops, writing with a goose quill, a spooky cellar and a lantern procession. The biggest hit, though, was the pile of fallen leaves."
+  },
+  "de": {
+    "title": "Halloween im Schloss",
+    "text": "Halloween mit Kreativwerkstätten, Schreiben mit dem Gänsekiel, einem Gruselkeller und einem Laternenumzug. Der größte Erfolg war aber der Haufen Herbstlaub."
+  }
 }

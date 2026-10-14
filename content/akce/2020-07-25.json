@@ -7,5 +7,13 @@
     "img/akce/2020-07-25-2.jpg",
     "img/akce/2020-07-25-3.jpg",
     "img/akce/2020-07-25-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Fairy-tale afternoon with Culinka",
+    "text": "The music-and-movement show Culinka a tancohrátky, fairy-tale tours of the castle with tasks, face painting and a sand workshop."
+  },
+  "de": {
+    "title": "Märchennachmittag mit Culinka",
+    "text": "Das Musik- und Bewegungsprogramm Culinka a tancohrátky, Märchenführungen durch die Burg mit Aufgaben, Kinderschminken und eine Sandwerkstatt."
+  }
 }

@@ -9,5 +9,13 @@
     "img/akce/2026-05-16-2.jpg",
     "img/akce/2026-05-16-3.jpg",
     "img/akce/2026-05-16-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle CITO, spring",
+    "text": "The 16th Castle CITO, and on Sunday the first Poznej & pomoz (Discover & Help) work party. Most of the area below the wall was cleared and a rose bed was planted along the castle wall. In the afternoon Jean de Carro performed ballads and legends."
+  },
+  "de": {
+    "title": "Schloss-CITO, Frühjahr",
+    "text": "Das XVI. Schloss-CITO und am Sonntag der erste Einsatz Poznej & pomoz (Entdecke & hilf). Der größte Teil der Fläche unter der Mauer wurde geräumt, und entlang der Schlossmauer entstand ein Rosenbeet. Am Nachmittag erklangen Balladen und Sagen von Jean de Carro."
+  }
 }

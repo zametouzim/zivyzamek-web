@@ -8,5 +8,13 @@
     "img/akce/2025-11-08-2.jpg",
     "img/akce/2025-11-08-3.jpg",
     "img/akce/2025-11-08-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Halloween at the castle for the fifth time",
+    "text": "The fifth castle Halloween: a trail of tasks, a spookily decorated castle, touch stations and CVČ Kačaba workshops, spooky dances and a lantern procession."
+  },
+  "de": {
+    "title": "Halloween zum fünften Mal im Schloss",
+    "text": "Das fünfte Schloss-Halloween: ein Aufgabenpfad, eine gruselig geschmückte Burg, Tast-Stationen und Werkstätten des CVČ Kačaba, Gespenstertänze und ein Laternenumzug."
+  }
 }

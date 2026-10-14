@@ -2,5 +2,15 @@
   "title": "Zámecký Flerjarmark",
   "date": "2020-06-14",
   "when": "neděle · 13:00",
-  "text": "První zámecký Flerjarmark s rukodělnými výrobky přímo od autorů přilákal téměř plný počet stánkařů. Návštěvnost nakonec zhatila průtrž mračen, která všechny zahnala pod střechy."
+  "text": "První zámecký Flerjarmark s rukodělnými výrobky přímo od autorů přilákal téměř plný počet stánkařů. Návštěvnost nakonec zhatila průtrž mračen, která všechny zahnala pod střechy.",
+  "en": {
+    "title": "Castle Fler Craft Fair",
+    "when": "Sunday · 13:00",
+    "text": "The first castle Fler craft fair, with handmade goods straight from their makers, drew almost a full house of stallholders. In the end a cloudburst spoiled the turnout and drove everyone under cover."
+  },
+  "de": {
+    "title": "Fler-Handwerksmarkt im Schloss",
+    "when": "Sonntag · 13:00",
+    "text": "Der erste Fler-Handwerksmarkt im Schloss mit handgemachten Waren direkt von den Herstellern lockte fast alle Standplätze voll. Die Besucherzahl verdarb schließlich ein Wolkenbruch, der alle unter die Dächer trieb."
+  }
 }

@@ -1,5 +1,13 @@
 {
   "title": "Brigáda na zámku",
   "date": "2016-04-02",
-  "text": "Brigáda byla zaměřená na zvelebení nádvoří zámku pro toužimskou veřejnost; dobrovolníci zablokovali vchody z nádvoří do nebezpečných budov zámku, což je podmínkou města pro veřejné využití nádvoří."
+  "text": "Brigáda byla zaměřená na zvelebení nádvoří zámku pro toužimskou veřejnost; dobrovolníci zablokovali vchody z nádvoří do nebezpečných budov zámku, což je podmínkou města pro veřejné využití nádvoří.",
+  "en": {
+    "title": "Work party at the castle",
+    "text": "The work party focused on improving the castle courtyard for the people of Toužim; volunteers blocked the entrances from the courtyard into the unsafe castle buildings, which the town required before the courtyard could be opened to the public."
+  },
+  "de": {
+    "title": "Arbeitseinsatz auf dem Schloss",
+    "text": "Der Arbeitseinsatz galt der Verschönerung des Schlosshofs für die Toužimer Öffentlichkeit; die Freiwilligen versperrten die Eingänge vom Hof in die baufälligen Schlossgebäude, was die Stadt zur Bedingung für die öffentliche Nutzung des Hofes gemacht hatte."
+  }
 }

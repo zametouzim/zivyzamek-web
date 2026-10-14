@@ -9,5 +9,13 @@
     "img/akce/2019-08-24-4.jpg",
     "img/akce/2019-08-24-5.jpg",
     "img/akce/2019-08-24-6.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Building the stage roof",
+    "text": "In summer 2019, volunteers built the wooden roof over the stage in the courtyard."
+  },
+  "de": {
+    "title": "Bau der Bühnenüberdachung",
+    "text": "Im Sommer 2019 bauten Freiwillige die hölzerne Überdachung der Bühne im Schlosshof."
+  }
 }

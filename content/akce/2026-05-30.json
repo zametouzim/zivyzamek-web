@@ -8,5 +8,13 @@
     "img/akce/2026-05-30-2.jpg",
     "img/akce/2026-05-30-3.jpg",
     "img/akce/2026-05-30-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Children's Day on board",
+    "text": "A pirate Children's Day: a trail with tasks, a programme with CVČ Kačaba and Queen Pippi, performances by the Toužim art school, a Lesy ČR stand and foam from the Toužim volunteer fire brigade. An exhibition of children's work opened in the castle."
+  },
+  "de": {
+    "title": "Kindertag an Bord",
+    "text": "Ein Piraten-Kindertag: ein Aufgabenpfad, ein Programm mit dem CVČ Kačaba und Königin Pippi, Auftritte der Kunstschule Toužim, ein Stand von Lesy ČR und Schaum von der Freiwilligen Feuerwehr Toužim. Im Schloss begann eine Ausstellung von Kinderarbeiten."
+  }
 }

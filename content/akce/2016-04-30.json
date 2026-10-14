@@ -1,5 +1,13 @@
 {
   "title": "Brigáda a první pálení čarodějnic",
   "date": "2016-04-30",
-  "text": "Stavba plotu, čištění hlediště, pálení náletů a první čarodějnice na zámku."
+  "text": "Stavba plotu, čištění hlediště, pálení náletů a první čarodějnice na zámku.",
+  "en": {
+    "title": "Work party and the first witch-burning night",
+    "text": "Building a fence, cleaning the auditorium, burning brushwood and the first witch-burning night at the castle."
+  },
+  "de": {
+    "title": "Arbeitseinsatz und das erste Hexenbrennen",
+    "text": "Bau eines Zauns, Säubern des Zuschauerbereichs, Verbrennen von Gestrüpp und das erste Hexenbrennen auf dem Schloss."
+  }
 }

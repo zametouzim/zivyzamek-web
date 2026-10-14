@@ -1,5 +1,13 @@
 {
   "title": "Zámecká tajenka pro základní školy",
   "date": "2023-06-20",
-  "text": "Zámecká tajenka pro třídy místních základních škol, připravená ve spolupráci s Infocentrem Toužim; děti byly pozorné a zvídavé."
+  "text": "Zámecká tajenka pro třídy místních základních škol, připravená ve spolupráci s Infocentrem Toužim; děti byly pozorné a zvídavé.",
+  "en": {
+    "title": "Castle puzzle trail for primary schools",
+    "text": "A castle puzzle trail for classes from local primary schools, prepared together with the Toužim Information Centre; the children were attentive and curious."
+  },
+  "de": {
+    "title": "Schlossrätsel für Grundschulen",
+    "text": "Ein Schlossrätsel für Klassen der örtlichen Grundschulen, vorbereitet gemeinsam mit dem Infozentrum Toužim; die Kinder waren aufmerksam und wissbegierig."
+  }
 }

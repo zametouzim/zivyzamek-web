@@ -5,5 +5,13 @@
   "poster": "img/plakaty/2022_gp_12-17.jpg",
   "photos": [
     "img/akce/2022-12-17-1.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Christmas gathering and the castle nativity scene",
+    "text": "Visitors brought figures of themselves and their families, and together we populated the castle nativity scene."
+  },
+  "de": {
+    "title": "Weihnachtstreffen und Schlosskrippe",
+    "text": "Die Besucher brachten Figuren von sich und ihren Familien mit, und gemeinsam bevölkerten wir die Schlosskrippe."
+  }
 }

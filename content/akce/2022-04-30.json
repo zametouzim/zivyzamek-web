@@ -8,5 +8,13 @@
     "img/akce/2022-04-30-2.jpg",
     "img/akce/2022-04-30-3.jpg",
     "img/akce/2022-04-30-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Witches' Night bonfire",
+    "text": "Making witches in the afternoon, then after the maypole was raised, a bonfire in the courtyard."
+  },
+  "de": {
+    "title": "Hexenverbrennung",
+    "text": "Am Nachmittag wurden Hexen gebastelt, nach dem Aufstellen des Maibaums brannte das Feuer im Hof."
+  }
 }

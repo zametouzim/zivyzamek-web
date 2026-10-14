@@ -1,4 +1,10 @@
 {
   "title": "Letní kino",
-  "date": "2017-07-28"
+  "date": "2017-07-28",
+  "en": {
+    "title": "Open-air cinema"
+  },
+  "de": {
+    "title": "Sommerkino"
+  }
 }

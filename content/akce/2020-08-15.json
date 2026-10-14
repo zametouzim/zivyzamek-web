@@ -3,5 +3,11 @@
   "date": "2020-08-15",
   "photos": [
     "img/akce/2020-08-15-1.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Punkovice at the castle (3rd year)"
+  },
+  "de": {
+    "title": "Punkovice im Schloss (3. Jahrgang)"
+  }
 }

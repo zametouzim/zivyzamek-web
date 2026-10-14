@@ -1,4 +1,10 @@
 {
   "title": "Stavění májky a pálení čarodějnic",
-  "date": "2017-04-30"
+  "date": "2017-04-30",
+  "en": {
+    "title": "Raising the maypole and witch-burning"
+  },
+  "de": {
+    "title": "Maibaumaufstellen und Hexenbrennen"
+  }
 }

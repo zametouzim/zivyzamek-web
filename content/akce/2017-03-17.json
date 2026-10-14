@@ -6,5 +6,11 @@
     "img/akce/2017-03-17-2.jpg",
     "img/akce/2017-03-17-3.jpg"
   ],
-  "titleTodo": true
+  "titleTodo": true,
+  "en": {
+    "title": "Work party"
+  },
+  "de": {
+    "title": "Arbeitseinsatz"
+  }
 }

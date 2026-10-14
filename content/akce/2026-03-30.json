@@ -11,5 +11,13 @@
     "img/akce/2026-03-30-5.jpg",
     "img/akce/2026-03-30-6.jpg",
     "img/akce/2026-03-30-7.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Work begins on the castle garden",
+    "text": "A mini excavator, stumps out and the first groundwork. During the work we came across the original castle wall."
+  },
+  "de": {
+    "title": "Beginn der Arbeiten am Schlossgarten",
+    "text": "Ein Minibagger, Baumstümpfe raus und die ersten Geländearbeiten. Dabei stießen wir auf die ursprüngliche Burgmauer."
+  }
 }

@@ -9,5 +9,15 @@
     "img/akce/2023-06-17-2.jpg",
     "img/akce/2023-06-17-3.jpg",
     "img/akce/2023-06-17-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle Festival 2023 (7th year)",
+    "when": "Saturday · 14:00",
+    "text": "The seventh festival had an almost family atmosphere. Cerberos Heavy Rock, Seven, Roxor and Fata Morgana played."
+  },
+  "de": {
+    "title": "Schlossfestival 2023 (7. Jahrgang)",
+    "when": "Samstag · 14:00",
+    "text": "Der siebte Jahrgang verlief in fast familiärer Atmosphäre. Es spielten Cerberos Heavy Rock, Seven, Roxor und Fata Morgana."
+  }
 }

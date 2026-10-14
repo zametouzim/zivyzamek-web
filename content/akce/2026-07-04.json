@@ -6,5 +6,13 @@
   "photos": [
     "img/akce/2026-07-04-1.jpg",
     "img/akce/2026-07-04-2.jpg"
-  ]
+  ],
+  "en": {
+    "title": "The paranormal: is the castle really haunted?",
+    "text": "A talk on paranormal phenomena with Jitka Lenková and Karel Dudek, a lecture by Jan Husár on investigating them, and evening investigation demonstrations inside the castle."
+  },
+  "de": {
+    "title": "Paranormales: Spukt es wirklich im Schloss?",
+    "text": "Ein Gespräch über paranormale Phänomene mit Jitka Lenková und Karel Dudek, ein Vortrag von Jan Husár über deren Untersuchung und abendliche Vorführungen in den Räumen der Burg."
+  }
 }

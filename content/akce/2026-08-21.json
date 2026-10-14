@@ -6,5 +6,13 @@
   "photos": [
     "img/akce/2026-08-21-1.jpg",
     "img/akce/2026-08-21-2.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Open-air cinema: Po večerce",
+    "text": "A screening of the Czech comedy Po večerce. Because of rain it was shown in the stables."
+  },
+  "de": {
+    "title": "Sommerkino: Po večerce",
+    "text": "Vorführung der tschechischen Komödie „Po večerce“. Wegen Regen wurde im Pferdestall gezeigt."
+  }
 }

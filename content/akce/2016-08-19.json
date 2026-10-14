@@ -1,4 +1,10 @@
 {
   "title": "Koncert skupiny Moonpower",
-  "date": "2016-08-19"
+  "date": "2016-08-19",
+  "en": {
+    "title": "Moonpower concert"
+  },
+  "de": {
+    "title": "Konzert der Band Moonpower"
+  }
 }

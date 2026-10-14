@@ -8,5 +8,13 @@
     "img/akce/2023-05-20-2.jpg",
     "img/akce/2023-05-20-3.jpg",
     "img/akce/2023-05-20-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle CITO, spring 2023",
+    "text": "The eleventh CITO: cutting out self-seeded growth and reviving the castle rock garden. The band Longway played."
+  },
+  "de": {
+    "title": "Schloss-CITO, Frühjahr 2023",
+    "text": "Das elfte CITO: Wildwuchs entfernen und den Schlossteingarten wiederbeleben. Es spielte die Band Longway."
+  }
 }

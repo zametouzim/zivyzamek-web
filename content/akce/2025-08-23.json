@@ -10,5 +10,13 @@
     "img/akce/2025-08-23-4.jpg",
     "img/akce/2025-08-23-5.jpg",
     "img/akce/2025-08-23-6.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle Night",
+    "text": "For the first time we joined the Castle Night of the National Heritage Institute. Candlelit evening tours of the castle with encounters with the Black Monk and the lord of the castle. All tours sold out; 45 people came."
+  },
+  "de": {
+    "title": "Burgen- und Schlössernacht",
+    "text": "Zum ersten Mal haben wir uns an der Burgen- und Schlössernacht des Nationalen Denkmalinstituts beteiligt. Abendführungen bei Kerzenlicht mit Begegnungen mit dem Schwarzen Mönch und dem Schlossherrn. Alle Führungen waren ausverkauft, es kamen 45 Leute."
+  }
 }

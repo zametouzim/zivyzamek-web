@@ -8,5 +8,13 @@
     "img/akce/2026-07-25-2.jpg",
     "img/akce/2026-07-25-3.jpg",
     "img/akce/2026-07-25-4.jpg"
-  ]
+  ],
+  "en": {
+    "title": "Castle fair",
+    "text": "Craft stalls and demonstrations: a blacksmith, wooden bowl turning, a lacemaker, lampwork beads, honey, sourdough bread, porcelain and edible plants. A fairy tale by the Ostrov amateur players in the afternoon, with music by Pedro. Yoga in the courtyard on Sunday morning."
+  },
+  "de": {
+    "title": "Schlossmarkt",
+    "text": "Handwerksstände und Vorführungen: Schmied, Drechseln von Holzschalen, Klöpplerin, Glasperlen, Honig, Sauerteigbrot, Porzellan und essbare Pflanzen. Am Nachmittag ein Märchen der Laienspieler aus Ostrov, es spielte Pedro. Am Sonntagmorgen Yoga im Hof."
+  }
 }
