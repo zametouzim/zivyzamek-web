@@ -1054,6 +1054,11 @@ window.L10N={
    ],
    "hero": [
     {
+     "src": "img/zamek-uvod.jpg",
+     "alt": "Toužim Castle, view across the lawn with picnic benches to the castle buildings",
+     "cap": "Toužim Castle, March 2020"
+    },
+    {
      "src": "img/nadvori.jpg",
      "alt": "Castle courtyard with the covered stage",
      "cap": "The courtyard with the stage, roofed in 2019"
@@ -1929,6 +1934,11 @@ window.L10N={
     }
    ],
    "hero": [
+    {
+     "src": "img/zamek-uvod.jpg",
+     "alt": "Schloss Toužim, Blick über die Wiese mit Picknickbänken auf die Schlossgebäude",
+     "cap": "Schloss Toužim, März 2020"
+    },
     {
      "src": "img/nadvori.jpg",
      "alt": "Schlosshof mit überdachter Bühne",

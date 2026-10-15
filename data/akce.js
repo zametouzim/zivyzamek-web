@@ -2,6 +2,11 @@
 window.ROKY={"2017": "img/plakaty/2017_zzt_program.jpg", "2020": "img/plakaty/2020_sezona20.jpg", "2021": "img/plakaty/2021_sezona21.jpg", "2022": "img/plakaty/2022_sezona22.jpg", "2023": "img/plakaty/2023_sezona23.jpg", "2024": "img/plakaty/2024_sezona24.jpg", "2025": "img/plakaty/2025_sezona25.jpg", "2026": "img/plakaty/2026_sezona26.jpg"};
 window.HERO=[
  {
+  "src": "img/zamek-uvod.jpg",
+  "alt": "Zámek Toužim, pohled přes trávník s lavicemi na zámecké budovy",
+  "cap": "Zámek Toužim, březen 2020"
+ },
+ {
   "src": "img/nadvori.jpg",
   "alt": "Nádvoří zámku s krytým pódiem",
   "cap": "Nádvoří s pódiem, zastřešeným v roce 2019"

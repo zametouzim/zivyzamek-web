@@ -409,8 +409,8 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
         </div>
       </div>
       <figure class="hero-photo">
-        <img src="img/nadvori.jpg" alt="Nádvoří zámku Toužim s krytým pódiem, které postavili dobrovolníci">
-        <figcaption>Nádvoří s pódiem, zastřešeným v roce 2019</figcaption>
+        <img src="img/zamek-uvod.jpg" alt="Zámek Toužim, pohled přes trávník s lavicemi na zámecké budovy">
+        <figcaption>Zámek Toužim, březen 2020</figcaption>
       </figure>
     </div>
   </div>
@@ -1051,6 +1051,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   var hp=document.querySelector('.hero-photo'), HERO=window.HERO||[];
   if(hp&&HERO.length>1){
     var cap=hp.querySelector('figcaption'), first=hp.querySelector('img'), imgs=[first], k=0;
+    first.src=HERO[0].src;first.alt=HERO[0].alt;cap.textContent=HERO[0].cap;
     HERO.slice(1).forEach(function(h){var i=new Image();i.src=h.src;i.alt=h.alt;i.className='slide';i.loading='lazy';hp.insertBefore(i,cap);imgs.push(i)});
     first.classList.add('slide','on'); hp.style.position='relative';
     var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;

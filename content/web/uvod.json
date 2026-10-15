@@ -1,6 +1,11 @@
 {
   "hero": [
     {
+      "src": "img/zamek-uvod.jpg",
+      "alt": "Zámek Toužim, pohled přes trávník s lavicemi na zámecké budovy",
+      "cap": "Zámek Toužim, březen 2020"
+    },
+    {
       "src": "img/nadvori.jpg",
       "alt": "Nádvoří zámku s krytým pódiem",
       "cap": "Nádvoří s pódiem, zastřešeným v roce 2019"
@@ -93,6 +98,11 @@
   "en": {
     "hero": [
       {
+        "src": "img/zamek-uvod.jpg",
+        "alt": "Toužim Castle, view across the lawn with picnic benches to the castle buildings",
+        "cap": "Toužim Castle, March 2020"
+      },
+      {
         "src": "img/nadvori.jpg",
         "alt": "Castle courtyard with the covered stage",
         "cap": "The courtyard with the stage, roofed in 2019"
@@ -151,6 +161,11 @@
   },
   "de": {
     "hero": [
+      {
+        "src": "img/zamek-uvod.jpg",
+        "alt": "Schloss Toužim, Blick über die Wiese mit Picknickbänken auf die Schlossgebäude",
+        "cap": "Schloss Toužim, März 2020"
+      },
       {
         "src": "img/nadvori.jpg",
         "alt": "Schlosshof mit überdachter Bühne",
