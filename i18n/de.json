@@ -133,7 +133,6 @@
   "pnoucí a půdopokryvné růže, svíčkovec, kosatce": "Kletter- und Bodendeckerrosen, Prachtkerze, Schwertlilien",
   "Kdo zahradu platí": "Wer den Garten bezahlt",
   "Nadace VIA": "Stiftung VIA",
-  "Hlavní podpora projektu. <span class=\"todo\">výše podpory</span>": "Hauptförderer des Projekts. <span class=\"todo\">Höhe der Förderung</span>",
   "Vy": "Sie",
   "Dary pokrývají materiál, pronájem strojů, jídlo pro dobrovolníky a ochranu archeologických nálezů.": "Spenden decken Material, Maschinenmiete, Essen für die Freiwilligen und den Schutz der archäologischen Funde.",
   "Přispět na zahradu": "Für den Garten spenden",
@@ -232,7 +231,6 @@
   "Spolek Živý zámek Toužim": "Verein Živý zámek Toužim",
   "Vznikli jsme v roce 2016 z občanské iniciativy. Chceme zámek chránit, ukazovat lidem a postupně ho obnovit ve spolupráci s městem Toužim, které je jeho vlastníkem.": "Wir sind 2016 aus einer Bürgerinitiative entstanden. Wir wollen das Schloss schützen, den Menschen zeigen und nach und nach erneuern, zusammen mit der Stadt Toužim, der es gehört.",
   "Kdo jsme": "Wer wir sind",
-  "Jsme parta dobrovolníků, kterým není osud zámku jedno. Spolek vede předsedkyně <b>Pavla Vokurková</b> a místopředsedkyně <b>Alena Šlajerová</b>. O technický stav zámku se stará Zámecký pán. <span class=\"todo\">jméno, fotky?</span>": "Wir sind eine Gruppe von Freiwilligen, denen das Schicksal des Schlosses nicht egal ist. Den Verein leiten die Vorsitzende <b>Pavla Vokurková</b> und die stellvertretende Vorsitzende <b>Alena Šlajerová</b>. Um den baulichen Zustand des Schlosses kümmert sich der Schlossherr. <span class=\"todo\">Name, Fotos?</span>",
   "Dokumenty": "Dokumente",
   "Stanovy spolku": "Vereinssatzung",
   "PDF · platné od 12. 7. 2026": "PDF · gültig ab 12.7.2026",
@@ -323,7 +321,11 @@
   "3. 4. 2026: odkrytá koruna zdi": "3. 4. 2026: die freigelegte Mauerkrone",
   "3. 4. 2026: zeď míří k Dolnímu zámku": "3. 4. 2026: die Mauer läuft zum Unteren Schloss",
   "30. 4. 2026: zeď v noci": "30. 4. 2026: die Mauer bei Nacht",
-  "27. 9. 2026: zeď na podzim": "27. 9. 2026: die Mauer im Herbst"
+  "27. 9. 2026: zeď na podzim": "27. 9. 2026: die Mauer im Herbst",
+  "Jsme parta dobrovolníků, kterým není osud zámku jedno. Spolek vede předsedkyně <b>Pavla Vokurková</b> a místopředsedkyně <b>Alena Šlajerová</b>. O technický stav zámku se stará zámecký pán <b>Jan Policar</b>.": "Wir sind eine Gruppe von Freiwilligen, denen das Schicksal des Schlosses nicht egal ist. Den Verein leiten die Vorsitzende <b>Pavla Vokurková</b> und die stellvertretende Vorsitzende <b>Alena Šlajerová</b>. Um den baulichen Zustand des Schlosses kümmert sich der Schlossherr <b>Jan Policar</b>.",
+  "Hlavní podpora projektu: grant 70&nbsp;000&nbsp;Kč.": "Hauptförderer des Projekts: ein Zuschuss von 70&nbsp;000&nbsp;CZK.",
+  "Ve sbírce na Darujme.cz přispěli soukromí dárci 21&nbsp;896&nbsp;Kč a Nadace VIA ji podpořila dalšími 20&nbsp;000&nbsp;Kč.": "Bei der Spendensammlung auf Darujme.cz gaben private Spender 21&nbsp;896&nbsp;CZK, und die Stiftung VIA legte weitere 20&nbsp;000&nbsp;CZK dazu.",
+  "Zámecký pán Jan Policar": "Schlossherr Jan Policar"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, Startseite",
@@ -380,7 +382,8 @@
   "Odkrytá kamenná koruna zdi v rozkopané ploše, v pozadí minibagr": "Die freigelegte steinerne Mauerkrone in der aufgegrabenen Fläche, im Hintergrund ein Minibagger",
   "Pás kamenné zdi vede rozkopanou plochou k Dolnímu zámku": "Ein Streifen Steinmauer führt über die aufgegrabene Fläche zum Unteren Schloss",
   "Odkrytá zeď v noci, za ní osvětlená ulice a domy": "Die freigelegte Mauer bei Nacht, dahinter eine beleuchtete Straße und Häuser",
-  "Kamenná zeď v zarostlé ploše za podvečerního slunce, v pozadí minibagr a dumper": "Die Steinmauer im bewachsenen Gelände in der Abendsonne, im Hintergrund Minibagger und Dumper"
+  "Kamenná zeď v zarostlé ploše za podvečerního slunce, v pozadí minibagr a dumper": "Die Steinmauer im bewachsenen Gelände in der Abendsonne, im Hintergrund Minibagger und Dumper",
+  "Jan Policar na nádvoří zámku s rezavou helmou na hlavě": "Jan Policar im Schlosshof mit einem rostigen Helm auf dem Kopf"
  },
  "js": {
   "Akce nenalezena.": "Veranstaltung nicht gefunden.",

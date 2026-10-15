@@ -133,7 +133,6 @@
   "pnoucí a půdopokryvné růže, svíčkovec, kosatce": "climbing and ground-cover roses, gaura, irises",
   "Kdo zahradu platí": "Who is paying for the garden",
   "Nadace VIA": "VIA Foundation",
-  "Hlavní podpora projektu. <span class=\"todo\">výše podpory</span>": "Main funder of the project. <span class=\"todo\">amount of the grant</span>",
   "Vy": "You",
   "Dary pokrývají materiál, pronájem strojů, jídlo pro dobrovolníky a ochranu archeologických nálezů.": "Donations cover materials, machinery hire, food for volunteers and protection of the archaeological finds.",
   "Přispět na zahradu": "Donate to the garden",
@@ -232,7 +231,6 @@
   "Spolek Živý zámek Toužim": "The Živý zámek Toužim association",
   "Vznikli jsme v roce 2016 z občanské iniciativy. Chceme zámek chránit, ukazovat lidem a postupně ho obnovit ve spolupráci s městem Toužim, které je jeho vlastníkem.": "We started in 2016 as a citizens' initiative. We want to protect the castle, show it to people and gradually restore it in cooperation with the town of Toužim, which owns it.",
   "Kdo jsme": "Who we are",
-  "Jsme parta dobrovolníků, kterým není osud zámku jedno. Spolek vede předsedkyně <b>Pavla Vokurková</b> a místopředsedkyně <b>Alena Šlajerová</b>. O technický stav zámku se stará Zámecký pán. <span class=\"todo\">jméno, fotky?</span>": "We are a group of volunteers who care what happens to the castle. The association is led by chair <b>Pavla Vokurková</b> and vice-chair <b>Alena Šlajerová</b>. The castle's technical condition is looked after by our \"Lord of the Castle\". <span class=\"todo\">name, photos?</span>",
   "Dokumenty": "Documents",
   "Stanovy spolku": "Articles of association",
   "PDF · platné od 12. 7. 2026": "PDF · valid from 12 July 2026",
@@ -323,7 +321,11 @@
   "3. 4. 2026: odkrytá koruna zdi": "3 April 2026: the exposed top of the wall",
   "3. 4. 2026: zeď míří k Dolnímu zámku": "3 April 2026: the wall heads towards the Lower Castle",
   "30. 4. 2026: zeď v noci": "30 April 2026: the wall at night",
-  "27. 9. 2026: zeď na podzim": "27 September 2026: the wall in autumn"
+  "27. 9. 2026: zeď na podzim": "27 September 2026: the wall in autumn",
+  "Jsme parta dobrovolníků, kterým není osud zámku jedno. Spolek vede předsedkyně <b>Pavla Vokurková</b> a místopředsedkyně <b>Alena Šlajerová</b>. O technický stav zámku se stará zámecký pán <b>Jan Policar</b>.": "We are a group of volunteers who care what happens to the castle. The association is led by chair <b>Pavla Vokurková</b> and vice-chair <b>Alena Šlajerová</b>. The castle's technical condition is looked after by our \"Lord of the Castle\", <b>Jan Policar</b>.",
+  "Hlavní podpora projektu: grant 70&nbsp;000&nbsp;Kč.": "Main funder of the project: a grant of 70&nbsp;000&nbsp;CZK.",
+  "Ve sbírce na Darujme.cz přispěli soukromí dárci 21&nbsp;896&nbsp;Kč a Nadace VIA ji podpořila dalšími 20&nbsp;000&nbsp;Kč.": "In the fundraiser on Darujme.cz, private donors gave 21&nbsp;896&nbsp;CZK and the VIA Foundation added another 20&nbsp;000&nbsp;CZK.",
+  "Zámecký pán Jan Policar": "Our \"Lord of the Castle\", Jan Policar"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, home",
@@ -380,7 +382,8 @@
   "Odkrytá kamenná koruna zdi v rozkopané ploše, v pozadí minibagr": "The exposed stone top of the wall in the dug-up area, a mini excavator in the background",
   "Pás kamenné zdi vede rozkopanou plochou k Dolnímu zámku": "A strip of stone wall runs across the dug-up area towards the Lower Castle",
   "Odkrytá zeď v noci, za ní osvětlená ulice a domy": "The exposed wall at night, with a lit street and houses behind it",
-  "Kamenná zeď v zarostlé ploše za podvečerního slunce, v pozadí minibagr a dumper": "The stone wall in the overgrown area in the evening sun, a mini excavator and dumper in the background"
+  "Kamenná zeď v zarostlé ploše za podvečerního slunce, v pozadí minibagr a dumper": "The stone wall in the overgrown area in the evening sun, a mini excavator and dumper in the background",
+  "Jan Policar na nádvoří zámku s rezavou helmou na hlavě": "Jan Policar in the castle courtyard wearing a rusty helmet"
  },
  "js": {
   "Akce nenalezena.": "Event not found.",
