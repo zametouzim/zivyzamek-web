@@ -235,7 +235,6 @@
   "PDF": "PDF",
   "Přihláška za člena": "Mitgliedsantrag",
   "PDF k vytištění": "PDF zum Ausdrucken",
-  "Spolek je zapsán u Krajského soudu v Plzni, sp. zn. L 7540, IČO 04690770.": "Der Verein ist beim Kreisgericht in Pilsen eingetragen, Az. L 7540, IČO 04690770.",
   "Ohlédnutí": "Rückblick",
   "Z našeho archivu": "Aus unserem Archiv",
   "Seřazeno podle data pořízení.": "Nach Aufnahmedatum sortiert.",
@@ -323,7 +322,13 @@
   "Pavla Vokurková (vlevo) a Alena Šlajerová": "Pavla Vokurková (links) und Alena Šlajerová",
   "po domluvě: Pavla +420 724 859 799": "nach Vereinbarung: Pavla +420 724 859 799",
   "Pavla Vokurková, předsedkyně<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>": "Pavla Vokurková, Vorsitzende<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>",
-  "Naskenujte v bankovní aplikaci. Je v něm přednastavený dar 500 Kč, částku můžete v aplikaci změnit.": "Scannen Sie ihn in Ihrer Banking-App. Voreingestellt ist eine Spende von 500 CZK, den Betrag können Sie in der App ändern."
+  "Naskenujte v bankovní aplikaci. Je v něm přednastavený dar 500 Kč, částku můžete v aplikaci změnit.": "Scannen Sie ihn in Ihrer Banking-App. Voreingestellt ist eine Spende von 500 CZK, den Betrag können Sie in der App ändern.",
+  "Na Výsluní 346, 364 01 Toužim<br>IČO 04690770<br>Spolkový rejstřík: Krajský soud v Plzni, sp. zn. L 7540": "Na Výsluní 346, 364 01 Toužim<br>IČO 04690770<br>Vereinsregister: Kreisgericht Pilsen, Az. L 7540",
+  "Předsedkyně": "Vorsitzende",
+  "Místopředsedkyně": "Stellvertretende Vorsitzende",
+  "Zámecký pán": "Schlossherr",
+  "Výroční zpráva 2025": "Jahresbericht 2025 (auf Tschechisch)",
+  "Výroční zpráva 2024": "Jahresbericht 2024 (auf Tschechisch)"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, Startseite",
