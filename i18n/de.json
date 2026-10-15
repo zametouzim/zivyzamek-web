@@ -60,7 +60,6 @@
   "Komentovaná prohlídka s průvodcem": "Führung",
   "sobota a neděle v 11, 14 a 16 h": "Samstag und Sonntag um 11, 14 und 16 Uhr",
   "50 Kč za osobu": "50 CZK pro Person",
-  "po domluvě: Pavla +420 724 859 799, Alena +420 728 290 280": "nach Vereinbarung: Pavla +420 724 859 799, Alena +420 728 290 280",
   "Jak k nám": "Anfahrt",
   "Adresa": "Adresse",
   "náměstí Jiřího z Poděbrad 1<br>364 01 Toužim": "náměstí Jiřího z Poděbrad 1<br>364 01 Toužim",
@@ -291,7 +290,6 @@
   "Zámek": "Schloss",
   "náměstí Jiřího z Poděbrad 1<br>364 01 Toužim<br><span id=\"fSezona\">Otevřené víkendy červenec–září</span>": "náměstí Jiřího z Poděbrad 1<br>364 01 Toužim<br><span id=\"fSezona\">Geöffnete Wochenenden Juli–September</span>",
   "Kontakt": "Kontakt",
-  "Pavla Vokurková, předsedkyně<br>+420 724 859 799<br>Alena Šlajerová, místopředsedkyně<br>+420 728 290 280<br>zivyzamektouzim@email.cz": "Pavla Vokurková, Vorsitzende<br>+420 724 859 799<br>Alena Šlajerová, stellv. Vorsitzende<br>+420 728 290 280<br>zivyzamektouzim@email.cz",
   "<a href=\"#dotaz\">Napište nám →</a>": "<a href=\"#dotaz\">Schreiben Sie uns →</a>",
   "Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Účet <span id=\"fUcet\">2301034510/2010</span><br><a href=\"https://www.facebook.com/zivyzamek.touzim\" target=\"_blank\" rel=\"noopener\">Facebook</a>": "Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Konto <span id=\"fUcet\">2301034510/2010</span><br><a href=\"https://www.facebook.com/zivyzamek.touzim\" target=\"_blank\" rel=\"noopener\">Facebook</a>",
   "Podporují nás": "Es unterstützen uns",
@@ -307,7 +305,6 @@
   "Zpráva": "Nachricht",
   "Nevyplňujte": "Nicht ausfüllen",
   "Přeskočit na obsah": "Zum Inhalt springen",
-  "Pavla Vokurková, předsedkyně<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br>Alena Šlajerová, místopředsedkyně<br><a href=\"tel:+420728290280\">+420 728 290 280</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>": "Pavla Vokurková, Vorsitzende<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br>Alena Šlajerová, stellvertretende Vorsitzende<br><a href=\"tel:+420728290280\">+420 728 290 280</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>",
   "Průběh zdi (červeně) v plánu zahrady": "Verlauf der Mauer (rot) im Gartenplan",
   "3. 4. 2026: odkrytá koruna zdi": "3. 4. 2026: die freigelegte Mauerkrone",
   "3. 4. 2026: zeď míří k Dolnímu zámku": "3. 4. 2026: die Mauer läuft zum Unteren Schloss",
@@ -323,7 +320,9 @@
   "Pohádkové odpoledne s Culinkou, 25. 7. 2020": "Märchennachmittag mit Culinka, 25.7.2020",
   "Den města: 555 let Toužimi, 29. 6. 2024": "Stadtfest: 555 Jahre Toužim, 29.6.2024",
   "Vánoční setkání na zámku, 14. 12. 2024": "Weihnachtstreffen im Schloss, 14.12.2024",
-  "Pavla Vokurková (vlevo) a Alena Šlajerová": "Pavla Vokurková (links) und Alena Šlajerová"
+  "Pavla Vokurková (vlevo) a Alena Šlajerová": "Pavla Vokurková (links) und Alena Šlajerová",
+  "po domluvě: Pavla +420 724 859 799": "nach Vereinbarung: Pavla +420 724 859 799",
+  "Pavla Vokurková, předsedkyně<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>": "Pavla Vokurková, Vorsitzende<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, Startseite",

@@ -13,11 +13,6 @@ window.WEB={
     "jmeno": "Pavla Vokurková",
     "funkce": "předsedkyně",
     "telefon": "+420 724 859 799"
-   },
-   {
-    "jmeno": "Alena Šlajerová",
-    "funkce": "místopředsedkyně",
-    "telefon": "+420 728 290 280"
    }
   ],
   "email": "zivyzamektouzim@email.cz",
@@ -837,11 +832,6 @@ window.L10N={
       "jmeno": "Pavla Vokurková",
       "funkce": "chair",
       "telefon": "+420 724 859 799"
-     },
-     {
-      "jmeno": "Alena Šlajerová",
-      "funkce": "vice-chair",
-      "telefon": "+420 728 290 280"
      }
     ],
     "email": "zivyzamektouzim@email.cz",
@@ -1693,11 +1683,6 @@ window.L10N={
       "jmeno": "Pavla Vokurková",
       "funkce": "Vorsitzende",
       "telefon": "+420 724 859 799"
-     },
-     {
-      "jmeno": "Alena Šlajerová",
-      "funkce": "stellvertretende Vorsitzende",
-      "telefon": "+420 728 290 280"
      }
     ],
     "email": "zivyzamektouzim@email.cz",
