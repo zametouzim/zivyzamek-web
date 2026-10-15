@@ -296,7 +296,6 @@
   "Pamětní mince 550 let": "Gedenkmünze 550 Jahre",
   "Starostříbro 50 Kč, starozlato 75 Kč, starobronz 100 Kč. Limitované série.": "Altsilber 50 CZK, Altgold 75 CZK, Altbronze 100 CZK. Limitierte Serien.",
   "50–100 Kč": "50–100 CZK",
-  "Objednávky a dotazy na <a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>, pošleme i poštou. <span class=\"todo\">které položky jsou ještě skladem?</span>": "Bestellungen und Fragen an <a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>, wir verschicken auch per Post. <span class=\"todo\">Welche Artikel sind noch vorrätig?</span>",
   "Zámek": "Schloss",
   "náměstí Jiřího z Poděbrad 1<br>364 01 Toužim<br><span id=\"fSezona\">Otevřené víkendy červenec–září</span>": "náměstí Jiřího z Poděbrad 1<br>364 01 Toužim<br><span id=\"fSezona\">Geöffnete Wochenenden Juli–September</span>",
   "Kontakt": "Kontakt",
@@ -325,7 +324,8 @@
   "Jsme parta dobrovolníků, kterým není osud zámku jedno. Spolek vede předsedkyně <b>Pavla Vokurková</b> a místopředsedkyně <b>Alena Šlajerová</b>. O technický stav zámku se stará zámecký pán <b>Jan Policar</b>.": "Wir sind eine Gruppe von Freiwilligen, denen das Schicksal des Schlosses nicht egal ist. Den Verein leiten die Vorsitzende <b>Pavla Vokurková</b> und die stellvertretende Vorsitzende <b>Alena Šlajerová</b>. Um den baulichen Zustand des Schlosses kümmert sich der Schlossherr <b>Jan Policar</b>.",
   "Hlavní podpora projektu: grant 70&nbsp;000&nbsp;Kč.": "Hauptförderer des Projekts: ein Zuschuss von 70&nbsp;000&nbsp;CZK.",
   "Ve sbírce na Darujme.cz přispěli soukromí dárci 21&nbsp;896&nbsp;Kč a Nadace VIA ji podpořila dalšími 20&nbsp;000&nbsp;Kč.": "Bei der Spendensammlung auf Darujme.cz gaben private Spender 21&nbsp;896&nbsp;CZK, und die Stiftung VIA legte weitere 20&nbsp;000&nbsp;CZK dazu.",
-  "Zámecký pán Jan Policar": "Schlossherr Jan Policar"
+  "Zámecký pán Jan Policar": "Schlossherr Jan Policar",
+  "Objednávky a dotazy na <a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>, pošleme i poštou.": "Bestellungen und Fragen an <a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>, wir verschicken auch per Post."
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, Startseite",
