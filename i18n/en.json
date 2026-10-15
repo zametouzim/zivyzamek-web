@@ -62,7 +62,6 @@
   "50 Kč za osobu": "50 CZK per person",
   "Jak k nám": "Getting here",
   "Adresa": "Address",
-  "náměstí Jiřího z Poděbrad 1<br>364 01 Toužim": "náměstí Jiřího z Poděbrad 1<br>364 01 Toužim",
   "Autobus": "Bus",
   "zastávka na náměstí, asi 100 m od vstupu": "stop on the square, about 100 m from the entrance",
   "Parkování": "Parking",
@@ -287,7 +286,6 @@
   "Starostříbro 50 Kč, starozlato 75 Kč, starobronz 100 Kč. Limitované série.": "Antique silver 50 CZK, antique gold 75 CZK, antique bronze 100 CZK. Limited editions.",
   "50–100 Kč": "50–100 CZK",
   "Zámek": "Castle",
-  "náměstí Jiřího z Poděbrad 1<br>364 01 Toužim<br><span id=\"fSezona\">Otevřené víkendy červenec–září</span>": "náměstí Jiřího z Poděbrad 1<br>364 01 Toužim<br><span id=\"fSezona\">Open weekends July–September</span>",
   "Kontakt": "Contact",
   "<a href=\"#dotaz\">Napište nám →</a>": "<a href=\"#dotaz\">Write to us →</a>",
   "Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Účet <span id=\"fUcet\">2301034510/2010</span><br><a href=\"https://www.facebook.com/zivyzamek.touzim\" target=\"_blank\" rel=\"noopener\">Facebook</a>": "Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Account <span id=\"fUcet\">2301034510/2010</span><br><a href=\"https://www.facebook.com/zivyzamek.touzim\" target=\"_blank\" rel=\"noopener\">Facebook</a>",
@@ -328,7 +326,9 @@
   "Místopředsedkyně": "Vice-chair",
   "Zámecký pán": "Lord of the Castle",
   "Výroční zpráva 2025": "Annual report 2025 (in Czech)",
-  "Výroční zpráva 2024": "Annual report 2024 (in Czech)"
+  "Výroční zpráva 2024": "Annual report 2024 (in Czech)",
+  "<a href=\"https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim\" target=\"_blank\" rel=\"noopener\">náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</a>": "<a href=\"https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim\" target=\"_blank\" rel=\"noopener\">náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</a>",
+  "<a href=\"https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim\" target=\"_blank\" rel=\"noopener\">náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</a><br><span id=\"fSezona\">Otevřené víkendy červenec–září</span>": "<a href=\"https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim\" target=\"_blank\" rel=\"noopener\">náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</a><br><span id=\"fSezona\">Open weekends July–September</span>"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, home",
