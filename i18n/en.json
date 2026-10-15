@@ -322,7 +322,8 @@
   "Vánoční setkání na zámku, 14. 12. 2024": "Christmas gathering at the castle, 14 December 2024",
   "Pavla Vokurková (vlevo) a Alena Šlajerová": "Pavla Vokurková (left) and Alena Šlajerová",
   "po domluvě: Pavla +420 724 859 799": "by arrangement: Pavla +420 724 859 799",
-  "Pavla Vokurková, předsedkyně<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>": "Pavla Vokurková, chair<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>"
+  "Pavla Vokurková, předsedkyně<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>": "Pavla Vokurková, chair<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>",
+  "Naskenujte v bankovní aplikaci. Je v něm přednastavený dar 500 Kč, částku můžete v aplikaci změnit.": "Scan it in your banking app. It has a preset gift of CZK 500; you can change the amount in the app."
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, home",
@@ -381,7 +382,8 @@
   "Odkrytá zeď v noci, za ní osvětlená ulice a domy": "The exposed wall at night, with a lit street and houses behind it",
   "Kamenná zeď v zarostlé ploše za podvečerního slunce, v pozadí minibagr a dumper": "The stone wall in the overgrown area in the evening sun, a mini excavator and dumper in the background",
   "Jan Policar na nádvoří zámku s rezavou helmou na hlavě": "Jan Policar in the castle courtyard wearing a rusty helmet",
-  "Pavla Vokurková a Alena Šlajerová s hrnky svařáku na nádvoří zámku": "Pavla Vokurková and Alena Šlajerová with mugs of mulled wine in the castle courtyard"
+  "Pavla Vokurková a Alena Šlajerová s hrnky svařáku na nádvoří zámku": "Pavla Vokurková and Alena Šlajerová with mugs of mulled wine in the castle courtyard",
+  "QR Platba: dar 500 Kč na transparentní účet spolku": "QR payment: a CZK 500 gift to the association's transparent account"
  },
  "js": {
   "Akce nenalezena.": "Event not found.",

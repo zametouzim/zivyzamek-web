@@ -322,7 +322,8 @@
   "Vánoční setkání na zámku, 14. 12. 2024": "Weihnachtstreffen im Schloss, 14.12.2024",
   "Pavla Vokurková (vlevo) a Alena Šlajerová": "Pavla Vokurková (links) und Alena Šlajerová",
   "po domluvě: Pavla +420 724 859 799": "nach Vereinbarung: Pavla +420 724 859 799",
-  "Pavla Vokurková, předsedkyně<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>": "Pavla Vokurková, Vorsitzende<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>"
+  "Pavla Vokurková, předsedkyně<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>": "Pavla Vokurková, Vorsitzende<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>",
+  "Naskenujte v bankovní aplikaci. Je v něm přednastavený dar 500 Kč, částku můžete v aplikaci změnit.": "Scannen Sie ihn in Ihrer Banking-App. Voreingestellt ist eine Spende von 500 CZK, den Betrag können Sie in der App ändern."
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, Startseite",
@@ -381,7 +382,8 @@
   "Odkrytá zeď v noci, za ní osvětlená ulice a domy": "Die freigelegte Mauer bei Nacht, dahinter eine beleuchtete Straße und Häuser",
   "Kamenná zeď v zarostlé ploše za podvečerního slunce, v pozadí minibagr a dumper": "Die Steinmauer im bewachsenen Gelände in der Abendsonne, im Hintergrund Minibagger und Dumper",
   "Jan Policar na nádvoří zámku s rezavou helmou na hlavě": "Jan Policar im Schlosshof mit einem rostigen Helm auf dem Kopf",
-  "Pavla Vokurková a Alena Šlajerová s hrnky svařáku na nádvoří zámku": "Pavla Vokurková und Alena Šlajerová mit Glühweinbechern im Schlosshof"
+  "Pavla Vokurková a Alena Šlajerová s hrnky svařáku na nádvoří zámku": "Pavla Vokurková und Alena Šlajerová mit Glühweinbechern im Schlosshof",
+  "QR Platba: dar 500 Kč na transparentní účet spolku": "QR-Zahlung: Spende von 500 CZK auf das transparente Konto des Vereins"
  },
  "js": {
   "Akce nenalezena.": "Veranstaltung nicht gefunden.",
