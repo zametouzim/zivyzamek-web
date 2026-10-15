@@ -456,7 +456,7 @@ window.L10N={
    },
    "2020-09-12": {
     "title": "History Day: founding of Toužim (551 years)",
-    "html": "A historical afternoon for the 551st anniversary of Toužim's founding, with period music by Cavalla Canor, the fencing troupe Zlatý Grál, the dancer Shahinez and Eva with her barrel organ. The highlight was the opening of a new chamber with an exhibition of 130 copies of Božena Němcová's novel The Grandmother."
+    "html": "A historical afternoon for the 551st anniversary of Toužim's founding, with period music by Cavalla Cannor, the fencing troupe Zlatý Grál, the dancer Shahinez and Eva with her barrel organ. The highlight was the opening of a new chamber with an exhibition of 130 copies of Božena Němcová's novel The Grandmother."
    },
    "2020-10-31": {
     "title": "Halloween at the castle",
@@ -476,7 +476,7 @@ window.L10N={
    },
    "2021-07-10": {
     "title": "Historical afternoon: 552 years of the town",
-    "html": "An all-day celebration of 552 years since Toužim was granted town status took place in the castle courtyard and beyond. The programme opened with the fairy tale O prasátku Arturovi by the Kamila theatre, followed by Cavalla Canor, the dancer Shahinez, the fencers Zlatý Grál and Duellanti, and Eva with her barrel organ. Then came a historical procession around the square, a scene re-enacting the handing over of the town's founding charters and the unveiling of a new information board. In the evening Dáma s hranostajem played in the courtyard, and an exhibition for the association's 5th anniversary was on show in one of the chambers."
+    "html": "An all-day celebration of 552 years since Toužim was granted town status took place in the castle courtyard and beyond. The programme opened with the fairy tale O prasátku Arturovi by the Kamila theatre, followed by Cavalla Cannor, the dancer Shahinez, the fencers Zlatý Grál and Duellanti, and Eva with her barrel organ. Then came a historical procession around the square, a scene re-enacting the handing over of the town's founding charters and the unveiling of a new information board. In the evening Dáma s hranostajem played in the courtyard, and an exhibition for the association's 5th anniversary was on show in one of the chambers."
    },
    "2021-07-31": {
     "title": "Castle Fler Craft Fair",
@@ -532,7 +532,7 @@ window.L10N={
    },
    "2022-06-25": {
     "title": "History Day: founding of Toužim (553 years)",
-    "html": "The town's history day with the fencers of SHŠ Zlatý grál, the Shahinez dancers, music by Cavalla Canor and Eva with her barrel organ. There were also falconry displays by the TEIR society and whip cracking with Keltoviny."
+    "html": "The town's history day with the fencers of SHŠ Zlatý grál, the Shahinez dancers, music by Cavalla Cannor and Eva with her barrel organ. There were also falconry displays by the TEIR society and whip cracking with Keltoviny."
    },
    "2022-07-23": {
     "title": "Around the world with traveller Kompásek",
@@ -587,7 +587,7 @@ window.L10N={
    },
    "2023-06-24": {
     "title": "Historical afternoon and an exhibition of jigsaw-puzzle pictures",
-    "html": "Town day with period music by Cavalla Canor, fencing by Alia Tempora, the Shahinez dancers, Eva with her barrel organ and a blacksmith's forge. An exhibition of jigsaw-puzzle pictures by Jan Policar opened in the chambers and ran until 30 July."
+    "html": "Town day with period music by Cavalla Cannor, fencing by Alia Tempora, the Shahinez dancers, Eva with her barrel organ and a blacksmith's forge. An exhibition of jigsaw-puzzle pictures by Jan Policar opened in the chambers and ran until 30 July."
    },
    "2023-06-28": {
     "title": "Graduation ribbons for Year 9 pupils of Toužim Primary School",
@@ -640,7 +640,7 @@ window.L10N={
    },
    "2024-06-29": {
     "title": "Town Day: 555 years of Toužim",
-    "html": "Celebrating 555 years since Toužim was raised to a town. Fencing by Alia Tempora, the Shahinez dancers, music by Cavalla Canor, a blacksmith, a beekeeper, creative workshops, games by Jiří Šebesta in the garden and fairy tales by Poutník Hroch."
+    "html": "Celebrating 555 years since Toužim was raised to a town. Fencing by Alia Tempora, the Shahinez dancers, music by Cavalla Cannor, a blacksmith, a beekeeper, creative workshops, games by Jiří Šebesta in the garden and fairy tales by Poutník Hroch."
    },
    "2024-07-27": {
     "title": "Castle fair",
@@ -673,7 +673,7 @@ window.L10N={
    "2025-05-17": {
     "title": "Community Celebration Event: spring CITO 2025",
     "when": "Saturday · 11:30",
-    "html": "Geocachers installed an information board, cleaned the stage, tidied the fireplace room, painted tables for the castle café and fixed up the fire pit. Cavalla Canor and Longway played, Castra Romana staged a Roman battle, and there was a preview of a film about the castle."
+    "html": "Geocachers installed an information board, cleaned the stage, tidied the fireplace room, painted tables for the castle café and fixed up the fire pit. Cavalla Cannor and Longway played, Castra Romana staged a Roman battle, and there was a preview of a film about the castle."
    },
    "2025-05-31": {
     "title": "Children's Day",
@@ -685,7 +685,7 @@ window.L10N={
    },
    "2025-06-28": {
     "title": "History Day",
-    "html": "Celebrating 556 years of the town: the Jitule a Dadule theatre, Eva with her barrel organ, Cavalla Canor, Jean de Carro, the Shahinez dancers, fencing by Castra Romana and Alia Tempora, blacksmiths, stilt walkers and craft stalls. Premiere of a film about Toužim Castle by MiRo film."
+    "html": "Celebrating 556 years of the town: the Jitule a Dadule theatre, Eva with her barrel organ, Cavalla Cannor, Jean de Carro, the Shahinez dancers, fencing by Castra Romana and Alia Tempora, blacksmiths, stilt walkers and craft stalls. Premiere of a film about Toužim Castle by MiRo film."
    },
    "2025-07-26": {
     "title": "Castle fair",
@@ -748,7 +748,7 @@ window.L10N={
    },
    "2026-06-27": {
     "title": "History Day, 557 years of the town",
-    "html": "Celebrating 557 years of the town: the fairy tale O Karkulákovi (Jitule a Dadule), Cavalla Canor, Eva with her barrel organ, fencing by Alia Tempora, a Roman camp by Castra Romana, Poutník Hroch as the executioner, stilt walkers from SHŠ Lorika and craft stalls. Visitors donated over CZK 3,000 to the garden."
+    "html": "Celebrating 557 years of the town: the fairy tale O Karkulákovi (Jitule a Dadule), Cavalla Cannor, Eva with her barrel organ, fencing by Alia Tempora, a Roman camp by Castra Romana, Poutník Hroch as the executioner, stilt walkers from SHŠ Lorika and craft stalls. Visitors donated over CZK 3,000 to the garden."
    },
    "2026-07-04": {
     "title": "The paranormal: is the castle really haunted?",
@@ -1312,7 +1312,7 @@ window.L10N={
    },
    "2020-09-12": {
     "title": "Historischer Tag: Gründung der Stadt Toužim (551 Jahre)",
-    "html": "Ein historischer Nachmittag zum 551. Jahrestag der Gründung von Toužim mit Musik von Cavalla Canor, der Fechtgruppe Zlatý Grál, der Tänzerin Shahinez und Eva mit ihrer Drehorgel. Höhepunkt war die feierliche Eröffnung einer neuen Kammer mit einer Ausstellung von 130 Ausgaben des Romans „Die Großmutter“ von Božena Němcová."
+    "html": "Ein historischer Nachmittag zum 551. Jahrestag der Gründung von Toužim mit Musik von Cavalla Cannor, der Fechtgruppe Zlatý Grál, der Tänzerin Shahinez und Eva mit ihrer Drehorgel. Höhepunkt war die feierliche Eröffnung einer neuen Kammer mit einer Ausstellung von 130 Ausgaben des Romans „Die Großmutter“ von Božena Němcová."
    },
    "2020-10-31": {
     "title": "Halloween im Schloss",
@@ -1332,7 +1332,7 @@ window.L10N={
    },
    "2021-07-10": {
     "title": "Historischer Nachmittag: 552 Jahre Stadt",
-    "html": "Eine ganztägige Feier zum 552. Jahrestag der Erhebung Toužims zur Stadt fand im Schlosshof und darüber hinaus statt. Den Auftakt machte das Märchen O prasátku Arturovi des Theaters Kamila, danach traten Cavalla Canor, die Tänzerin Shahinez, die Fechtgruppen Zlatý Grál und Duellanti sowie Eva mit ihrem Leierkasten auf. Es folgten ein historischer Umzug rund um den Marktplatz, eine Szene zur Übergabe der Stadtgründungsurkunden und die Enthüllung einer neuen Informationstafel. Am Abend spielte im Hof die Gruppe Dáma s hranostajem, und in einem der Gemächer war eine Ausstellung zum 5-jährigen Bestehen des Vereins zu sehen."
+    "html": "Eine ganztägige Feier zum 552. Jahrestag der Erhebung Toužims zur Stadt fand im Schlosshof und darüber hinaus statt. Den Auftakt machte das Märchen O prasátku Arturovi des Theaters Kamila, danach traten Cavalla Cannor, die Tänzerin Shahinez, die Fechtgruppen Zlatý Grál und Duellanti sowie Eva mit ihrem Leierkasten auf. Es folgten ein historischer Umzug rund um den Marktplatz, eine Szene zur Übergabe der Stadtgründungsurkunden und die Enthüllung einer neuen Informationstafel. Am Abend spielte im Hof die Gruppe Dáma s hranostajem, und in einem der Gemächer war eine Ausstellung zum 5-jährigen Bestehen des Vereins zu sehen."
    },
    "2021-07-31": {
     "title": "Fler-Handwerksmarkt im Schloss",
@@ -1388,7 +1388,7 @@ window.L10N={
    },
    "2022-06-25": {
     "title": "Historischer Tag: Gründung der Stadt Toužim (553 Jahre)",
-    "html": "Der historische Tag der Stadt mit den Fechtern von SHŠ Zlatý grál, den Tänzerinnen Shahinez, Musik von Cavalla Canor und Eva mit der Drehorgel. Dazu Falknervorführungen des Vereins TEIR und Peitschenknallen mit Keltoviny."
+    "html": "Der historische Tag der Stadt mit den Fechtern von SHŠ Zlatý grál, den Tänzerinnen Shahinez, Musik von Cavalla Cannor und Eva mit der Drehorgel. Dazu Falknervorführungen des Vereins TEIR und Peitschenknallen mit Keltoviny."
    },
    "2022-07-23": {
     "title": "Um die Welt mit dem Reisenden Kompásek",
@@ -1443,7 +1443,7 @@ window.L10N={
    },
    "2023-06-24": {
     "title": "Historischer Nachmittag und Ausstellung von Puzzlebildern",
-    "html": "Stadtfest mit historischer Musik von Cavalla Canor, Fechten mit Alia Tempora, den Tänzerinnen Shahinez, Eva mit der Drehorgel und einer Schmiedeesse. In den Kammern begann eine Ausstellung von Puzzlebildern von Jan Policar, geöffnet bis 30. 7."
+    "html": "Stadtfest mit historischer Musik von Cavalla Cannor, Fechten mit Alia Tempora, den Tänzerinnen Shahinez, Eva mit der Drehorgel und einer Schmiedeesse. In den Kammern begann eine Ausstellung von Puzzlebildern von Jan Policar, geöffnet bis 30. 7."
    },
    "2023-06-28": {
     "title": "Abschlussfeier der 9. Klassen der Grundschule Toužim",
@@ -1496,7 +1496,7 @@ window.L10N={
    },
    "2024-06-29": {
     "title": "Stadtfest: 555 Jahre Toužim",
-    "html": "Feier zu 555 Jahren seit der Erhebung Toužims zur Stadt. Fechten mit Alia Tempora, die Tänzerinnen Shahinez, Musik von Cavalla Canor, ein Schmied, ein Imker, Kreativwerkstätten, Spiele von Jiří Šebesta im Garten und Märchen von Poutník Hroch."
+    "html": "Feier zu 555 Jahren seit der Erhebung Toužims zur Stadt. Fechten mit Alia Tempora, die Tänzerinnen Shahinez, Musik von Cavalla Cannor, ein Schmied, ein Imker, Kreativwerkstätten, Spiele von Jiří Šebesta im Garten und Märchen von Poutník Hroch."
    },
    "2024-07-27": {
     "title": "Schlossmarkt",
@@ -1529,7 +1529,7 @@ window.L10N={
    "2025-05-17": {
     "title": "Community Celebration Event: Frühjahrs-CITO 2025",
     "when": "Samstag · 11:30",
-    "html": "Geocacher stellten eine Infotafel auf, reinigten die Bühne, räumten den Kaminraum auf, strichen Tische für das Schlosscafé und richteten die Feuerstelle her. Es spielten Cavalla Canor und Longway, Castra Romana zeigte eine römische Schlacht, und es gab eine Vorpremiere des Films über das Schloss."
+    "html": "Geocacher stellten eine Infotafel auf, reinigten die Bühne, räumten den Kaminraum auf, strichen Tische für das Schlosscafé und richteten die Feuerstelle her. Es spielten Cavalla Cannor und Longway, Castra Romana zeigte eine römische Schlacht, und es gab eine Vorpremiere des Films über das Schloss."
    },
    "2025-05-31": {
     "title": "Kindertag",
@@ -1541,7 +1541,7 @@ window.L10N={
    },
    "2025-06-28": {
     "title": "Historischer Tag",
-    "html": "Feier zu 556 Jahren Stadt: Theater Jitule a Dadule, Eva mit der Drehorgel, Cavalla Canor, Jean de Carro, die Tänzerinnen Shahinez, Fechten mit Castra Romana und Alia Tempora, Schmiede, Stelzenläufer und Handwerksstände. Premiere eines Films über Schloss Toužim von MiRo film."
+    "html": "Feier zu 556 Jahren Stadt: Theater Jitule a Dadule, Eva mit der Drehorgel, Cavalla Cannor, Jean de Carro, die Tänzerinnen Shahinez, Fechten mit Castra Romana und Alia Tempora, Schmiede, Stelzenläufer und Handwerksstände. Premiere eines Films über Schloss Toužim von MiRo film."
    },
    "2025-07-26": {
     "title": "Schlossmarkt",
@@ -1604,7 +1604,7 @@ window.L10N={
    },
    "2026-06-27": {
     "title": "Historischer Tag, 557 Jahre Stadt",
-    "html": "Feier zu 557 Jahren Stadt: das Märchen „O Karkulákovi“ (Jitule a Dadule), Cavalla Canor, Eva mit der Drehorgel, Fechten mit Alia Tempora, ein römisches Lager von Castra Romana, Poutník Hroch als Scharfrichter, Stelzenläufer der SHŠ Lorika und Handwerksstände. Die Besucher spendeten über 3 000 Kč für den Garten."
+    "html": "Feier zu 557 Jahren Stadt: das Märchen „O Karkulákovi“ (Jitule a Dadule), Cavalla Cannor, Eva mit der Drehorgel, Fechten mit Alia Tempora, ein römisches Lager von Castra Romana, Poutník Hroch als Scharfrichter, Stelzenläufer der SHŠ Lorika und Handwerksstände. Die Besucher spendeten über 3 000 Kč für den Garten."
    },
    "2026-07-04": {
     "title": "Paranormales: Spukt es wirklich im Schloss?",
