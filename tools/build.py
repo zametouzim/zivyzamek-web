@@ -203,6 +203,7 @@ def main():
         f.write('window.WEB=%s;\n' % json.dumps(web, ensure_ascii=False, indent=1))
         f.write('window.L10N=%s;\n' % json.dumps(tr, ensure_ascii=False, indent=1))
     demo()
+    stamp()
     print('akce: %d, s fotkami %d, s plakátem %d' % (len(items), sum(1 for a in items if a.get('photos')), sum(1 for a in items if a.get('poster'))))
 
 
@@ -260,6 +261,21 @@ def demo():
         f.write('window.repoFiles["content/stranky"]=window.repoFiles.content.stranky;\n')
     with open('admin/demo/config.js', 'w', encoding='utf-8') as f:
         f.write('window.DEMO_CONFIG=%s;\n' % json.dumps(cfg, ensure_ascii=False, indent=1))
+
+
+
+def stamp():
+    """Do index.html připíše k data/*.js otisk obsahu (?v=...), aby prohlížeč po změně nevzal starou kopii."""
+    import hashlib
+    with open('index.html', encoding='utf-8') as f:
+        page = f.read()
+    def ver(m):
+        with open(m.group(1), 'rb') as g:
+            return '<script src="%s?v=%s"></script>' % (m.group(1), hashlib.md5(g.read()).hexdigest()[:8])
+    new = re.sub(r'<script src="(data/[a-z0-9]+\.js)(?:\?v=[^"]*)?"></script>', ver, page)
+    if new != page:
+        with open('index.html', 'w', encoding='utf-8') as f:
+            f.write(new)
 
 
 if __name__ == '__main__':
