@@ -245,19 +245,19 @@ window.L10N={
   "akce": {
    "2015-10-17": {
     "title": "Work party in the courtyard",
-    "html": "Tidying the courtyard, clearing self-seeded trees and news about the castle's future."
+    "html": "Another work party at the castle followed up on earlier efforts and focused on tidying the castle courtyard and clearing self-seeded trees. Volunteers could join in with their own tools, from saws and brush cutters to shovels and wheelbarrows. The gathering also brought news about further developments and the castle's future."
    },
    "2015-12-12": {
     "title": "Christmas get-together at the castle with mulled wine",
-    "html": "The first Advent get-together in the castle courtyard with mulled wine and carols."
+    "html": "The Advent get-together in the castle courtyard offered a Christmas atmosphere with mulled wine and carol singing. It took place right in the castle courtyard and was also a chance to reminisce about the days when the castle's rooms were still full of life."
    },
    "2016-01-26": {
     "title": "Talk: Pictures from the life of a castle",
-    "html": "A talk on the history and architectural development of the castle at the Toužim Information Centre."
+    "html": "The Toužim Information Centre hosted the talk Obrazy ze života jednoho zámku (Pictures from the Life of a Castle), devoted to the history and architectural development of the castle, the oldest monument in the town of Toužim. The speaker was Jiří Schierl, a member of the castellological Klub Augusta Sedláčka."
    },
    "2016-04-02": {
     "title": "Work party at the castle",
-    "html": "The work party focused on improving the castle courtyard for the people of Toužim; volunteers blocked the entrances from the courtyard into the unsafe castle buildings, which the town required before the courtyard could be opened to the public."
+    "html": "The work party focused on improving the castle courtyard for the people of Toužim. Volunteers boarded up the doorways leading from the courtyard into the unsafe castle buildings, which the town required before the courtyard could be opened to the public. The programme also included clearing the auditorium area and burning cut branches."
    },
    "2016-04-30": {
     "title": "Work party and the first witch-burning night",
@@ -269,7 +269,7 @@ window.L10N={
    },
    "2016-06-11": {
     "title": "Perseidy: the first castle concert by a country band",
-    "html": "The very first concert at the castle. The country band Perseidy played, admission was by donation."
+    "html": "The very first concert at the castle, organised by the Živý zámek Toužim association. The country band Perseidy played at the castle for the first time. Admission was by donation and refreshments were provided."
    },
    "2016-07-02": {
     "title": "Creative weekend at the castle",
@@ -299,7 +299,7 @@ window.L10N={
    },
    "2017-03-26": {
     "title": "Little spring work party",
-    "html": "The first spring work party of the year: raking leaves and tidying the courtyard."
+    "html": "Thanks to the lovely weather, the association decided to hold an extra first spring work party of the year. The programme consisted of raking leaves and a spring clean of the courtyard, and everyone was welcome, tools in hand. Those who did not feel like working could come and see how further minor repairs to the castle were progressing."
    },
    "2017-04-15": {
     "title": "Clean-up and preparations for the witch-burning",
@@ -392,7 +392,7 @@ window.L10N={
    },
    "2019-04-27": {
     "title": "Gathering of witches",
-    "html": "In the afternoon we made witches and had fun."
+    "html": "The afternoon at the castle was for families with children, who made their own witches there. Old clothes, rags and other materials suitable for making and burning served as material. The finished witches were ready for the witch-burning on Tuesday, 30 April."
    },
    "2019-04-30": {
     "title": "Witch-burning night"
@@ -449,7 +449,7 @@ window.L10N={
    },
    "2020-07-25": {
     "title": "Fairy-tale afternoon with Culinka",
-    "html": "The music-and-movement show Culinka a tancohrátky, fairy-tale tours of the castle with tasks, face painting and a sand workshop."
+    "html": "The fairy-tale afternoon for children of all ages featured the music-and-movement show Culinka a tancohrátky and fairy-tale tours of the castle full of tasks and adventure. The programme also included face painting, a sand workshop and other activities for children. Admission was by donation."
    },
    "2020-08-15": {
     "title": "Punkovice at the castle (3rd year)"
@@ -476,7 +476,7 @@ window.L10N={
    },
    "2021-07-10": {
     "title": "Historical afternoon: 552 years of the town",
-    "html": "A fairy tale by the Kamila theatre, Cavalla Canor, the dancer Shahinez, fencing by Zlatý Grál and Duellanti, Eva with her barrel organ, a historical procession and the unveiling of a new information board. In the evening a concert by Dáma s hranostajem and an exhibition for the society's 5th anniversary."
+    "html": "An all-day celebration of 552 years since Toužim was granted town status took place in the castle courtyard and beyond. The programme opened with the fairy tale O prasátku Arturovi by the Kamila theatre, followed by Cavalla Canor, the dancer Shahinez, the fencers Zlatý Grál and Duellanti, and Eva with her barrel organ. Then came a historical procession around the square, a scene re-enacting the handing over of the town's founding charters and the unveiling of a new information board. In the evening Dáma s hranostajem played in the courtyard, and an exhibition for the association's 5th anniversary was on show in one of the chambers."
    },
    "2021-07-31": {
     "title": "Castle Fler Craft Fair",
@@ -515,11 +515,11 @@ window.L10N={
    },
    "2022-04-30": {
     "title": "Witches' Night bonfire",
-    "html": "Making witches in the afternoon, then after the maypole was raised, a bonfire in the courtyard."
+    "html": "After a break caused by covid, the witch-burning returned to the castle. In the afternoon visitors could make their own witch or bring one along in the evening. Once the firefighters had raised the maypole, a bonfire meant for all the witches was lit in the courtyard, and the fire also served for roasting sausages."
    },
    "2022-05-21": {
     "title": "Castle CITO, spring 2022",
-    "html": "The first CITO since we took over the baton from Dílna U mnicha: tidying the courtyard, cutting and burning self-seeded growth, raking leaves."
+    "html": "The sixth year and ninth event of the castle CITO was the first one the association organised after taking over the baton from Dílna U mnicha. Geocachers and other volunteers came together for the annual routine: tidying the castle courtyard, cutting and burning self-seeded growth and raking leaves. With enough helpers, the plan also included tackling the notorious “Toužim heap” on the stage."
    },
    "2022-05-28": {
     "title": "Children's Day at Toužim Castle",
@@ -544,14 +544,14 @@ window.L10N={
    },
    "2022-08-13": {
     "title": "Punkovice 2022",
-    "html": "Stamp Out System, Porucha systému, Čekišó, Vypitý lahváče, Já ještě nevim and ŠpuntQaně played."
+    "html": "What was probably the sixth edition of the Punkovice festival of regional bands. Stamp Out System, Porucha systému, Čekišó, Vypitý lahváče, Já ještě nevim and ŠpuntQaně played. As usual, admission was by donation and refreshments were provided."
    },
    "2022-09-10": {
     "title": "European Heritage Days 2022"
    },
    "2022-10-15": {
     "title": "Castle CITO, autumn 2022",
-    "html": "The tenth, anniversary volunteer work party, as part of the 72 Hours project. The band Longway played."
+    "html": "The tenth, anniversary volunteer work party, or CITO event, was held as part of the 72 Hours project, which came with its own themed T-shirts. Tasks were assigned on the spot according to the number of participants, and light refreshments were provided for the volunteers. Just as in spring, the band Longway provided the musical accompaniment."
    },
    "2022-11-05": {
     "title": "Halloween at the castle",
@@ -559,7 +559,7 @@ window.L10N={
    },
    "2022-12-17": {
     "title": "Christmas gathering and the castle nativity scene",
-    "html": "Visitors brought figures of themselves and their families, and together we populated the castle nativity scene."
+    "html": "At the Christmas get-together the castle nativity scene came to life, inspired by the Pilsen nativity scene looked after by the Muzeum strašidel Plzeň (Pilsen Ghost Museum). The association prepared its base, and visitors brought figures of themselves and their families, pets included. The figures, made of durable materials, could be drawn, sewn, knitted, fired from clay, painted on a pebble or made of wood."
    },
    "2023-04-30": {
     "title": "Witches' Night bonfire",
@@ -567,7 +567,7 @@ window.L10N={
    },
    "2023-05-20": {
     "title": "Castle CITO, spring 2023",
-    "html": "The eleventh CITO: cutting out self-seeded growth and reviving the castle rock garden. The band Longway played."
+    "html": "The eleventh edition of the traditional CITO volunteer work party brought a relaxed afternoon, a chance to meet friends and some spring work at the castle. The programme included cutting out self-seeded growth and reviving the castle rock garden, and possibly continuing work on lighting the castle cellars. The band Longway accompanied the work, light refreshments were provided and, as a reward, there was a guided tour of the castle grounds."
    },
    "2023-06-03": {
     "title": "Children's Day",
@@ -595,7 +595,7 @@ window.L10N={
    },
    "2023-07-15": {
     "title": "Children's afternoon with the Jitule & Dadule theatre",
-    "html": "The fairy tale Hansel and Gretel by the Jitule a Dadule theatre, plus themed games."
+    "html": "A summer-holiday afternoon for children featured the fairy tale O perníkové chaloupce (Hansel and Gretel) performed by the Jitule a Dadule theatre. Themed games were also prepared for the children, and an indoor venue was arranged in case of bad weather."
    },
    "2023-07-29": {
     "title": "Castle fair",
@@ -608,7 +608,7 @@ window.L10N={
    },
    "2023-10-14": {
     "title": "Castle CITO, autumn 2023",
-    "html": "The twelfth CITO: cutting out self-seeded growth, tidying the grounds and, as a reward, a guided tour."
+    "html": "The twelfth edition of the traditional CITO volunteer work party brought an afternoon of meeting friends and autumn work in the castle grounds. The programme included cutting out self-seeded growth and tidying the grounds, with the exact tasks set according to current needs. Light refreshments and live music were provided for participants, and the reward for the work was a guided tour of the castle grounds."
    },
    "2023-11-04": {
     "title": "Halloween at the castle",
@@ -620,7 +620,7 @@ window.L10N={
    },
    "2024-04-30": {
     "title": "Witches' Night bonfire",
-    "html": "Raising the maypole on the square with the Toužim art school orchestra, then making a witch and a bonfire in the castle courtyard. Organised together with the Toužim volunteer fire brigade."
+    "html": "The traditional raising of the maypole and witch-burning was organised jointly by SDH Toužim (the Toužim volunteer fire brigade) and Živý zámek Toužim. In the afternoon the bonfire was prepared and the main witch made in the castle courtyard, while on the square the top of the maypole was decorated to the accompaniment of the ZUŠ Toužim (art school) orchestra, with a bouncy castle for the little ones. After the maypole was raised, the programme moved back to the courtyard, where the bonfire with the witch was lit and the fire also served for roasting sausages."
    },
    "2024-05-18-toulky": {
     "title": "Wandering the region with Jean de Carro",
@@ -660,7 +660,7 @@ window.L10N={
    },
    "2024-10-26": {
     "title": "Halloween at the castle",
-    "html": "A scary cellar and a Boo chamber, face painting, games, a workshop and a lantern procession. For the first time also unusual evening tours."
+    "html": "The traditional Halloween at the castle offered plenty of spooky fun: a scary cellar and a Boo chamber, face painting, various games and a workshop. Towards evening a lantern procession set off. For the first time the programme also included unusual evening tours of the castle in two time slots, for a limited number of participants."
    },
    "2024-12-14": {
     "title": "Christmas gathering at the castle",
@@ -681,7 +681,7 @@ window.L10N={
    },
    "2025-06-21": {
     "title": "Castle Festival, 9th year",
-    "html": "Carpatia Castle, Krleš, Cerberos and Trojka played."
+    "html": "The ninth edition of the Festival at the Castle was devoted to rock and metal. On stage were the gothic rock band Carpatia Castle from the Most region, the heavy metal band Krleš from northern Bohemia, the heavy rock band Cerberos and the metal/tricore band Trojka from Klášterec."
    },
    "2025-06-28": {
     "title": "History Day",
@@ -697,7 +697,7 @@ window.L10N={
    },
    "2025-08-23": {
     "title": "Castle Night",
-    "html": "For the first time we joined the Castle Night of the National Heritage Institute. Candlelit evening tours of the castle with encounters with the Black Monk and the lord of the castle. All tours sold out; 45 people came."
+    "html": "For the first time the association took part in the Castle Night, a popular project of the National Heritage Institute. Guided evening tours led through the darkened, candlelit castle and were spiced up with local legends; in the individual rooms visitors met the Black Monk and the lord of the castle. The tours revolved around the questions of who the Black Monk was and where the golden trumpet played. They ran in three evening slots, all of them sold out, and 45 people came."
    },
    "2025-09-06": {
     "title": "Theatre at the castle",
@@ -717,11 +717,11 @@ window.L10N={
    },
    "2025-12-14": {
     "title": "Christmas gathering",
-    "html": "Decorating the tree, a CVČ Kačaba workshop, a trail of Christmas customs, a contest for the best Christmas bread, a fairy tale by the Ostrov amateur players and carols with the Toužim art school."
+    "html": "The last event of the year offered a rich Christmas programme. It began with decorating the tree, on which visitors could also hang their own ornaments, followed by a Christmas workshop by the CVČ Kačaba leisure centre and a contest for the best vánočka (Christmas bread). In the stables the amateur theatre group Ochotníci Ostrov performed the fairy tale Pohádka o tom, koho pálí dobré bydlo, and the afternoon closed with carols sung with the ZUŠ Toužim art school. Throughout the event a trail of Christmas customs with a puzzle was on offer."
    },
    "2026-03-21": {
     "title": "Castle feast",
-    "html": "The first in a series of castle feasts in the Upper Castle. A gathering for everyone who cares about the castle: what we would like to see at the castle and who wants to get involved."
+    "html": "The castle feast was the first in a series of community gatherings in the Upper Castle, meant for everyone who cares about the Toužim castle. The programme was a discussion of what people would like to see at the castle, how they can help, which activities they want to join and what they can share with others. The feast was a shared one: alongside light refreshments, everyone could bring something tasty."
    },
    "2026-03-30": {
     "title": "Work begins on the castle garden",
@@ -736,11 +736,11 @@ window.L10N={
    },
    "2026-05-16": {
     "title": "Castle CITO, spring",
-    "html": "The 16th Castle CITO, and on Sunday the first Poznej &amp; pomoz (Discover &amp; Help) work party. Most of the area below the wall was cleared and a rose bed was planted along the castle wall. In the afternoon Jean de Carro performed ballads and legends."
+    "html": "The spring weekend belonged to the 16th Castle CITO and, on Sunday, the first Poznej &amp; pomoz (Discover &amp; Help) work party. Most of the area below the wall was cleared and a rose bed was planted along the castle wall. In the afternoon Jean de Carro, the stage name of radio journalist, musician and storyteller Josef Šorfa, performed his theatre-and-music show Toulky krajem, full of legends and song ballads, including the legend O černém mnichovi (Of the Black Monk) written specially for the castle in Toužim. The show was free for the volunteers and CITO participants."
    },
    "2026-05-30": {
     "title": "Children's Day on board",
-    "html": "A pirate Children's Day: a trail with tasks, a programme with CVČ Kačaba and Queen Pippi, performances by the Toužim art school, a Lesy ČR stand and foam from the Toužim volunteer fire brigade. An exhibition of children's work opened in the castle."
+    "html": "Children's Day on Board was held in a pirate spirit. The programme opened by summoning the whole crew, followed by a pirate feast with CVČ Kačaba, Queen Pippi's training with family games, a performance by the ZUŠ Toužim art school and a foam storm from SDH Toužim, the local volunteer fire brigade. All day long there was a task trail called Křížem krážem oceánem (Criss-Cross the Ocean) and a pirate anchorage run by Lesy ČR, and children's costumes were welcome. An exhibition of children's work also opened in the castle."
    },
    "2026-06-20": {
     "title": "Rock festival, 10th year",
@@ -777,7 +777,7 @@ window.L10N={
    },
    "2026-08-21": {
     "title": "Open-air cinema: Po večerce",
-    "html": "A screening of the Czech comedy Po večerce. Because of rain it was shown in the stables."
+    "html": "The summer cinema at the castle screened the new Czech comedy Po večerce. The evening screening began at 9 p.m. and admission was by donation. Because of rain, the film was eventually shown indoors in the stables."
    },
    "2026-08-22": {
     "title": "Castle Night",
@@ -785,7 +785,7 @@ window.L10N={
    },
    "2026-09-05": {
     "title": "Theatre at the castle: Dívčí válka",
-    "html": "The third theatre day: the fairy tale The Knight and the Ugly Lady (Divadélko Ondřej), a Jitule a Dadule bubble show and in the evening Dívčí válka (The Maidens' War) by F. R. Čech. With financial support from the town of Toužim."
+    "html": "The third edition of the theatre mini-festival at the castle traditionally devoted the afternoon to children: Divadélko Ondřej performed the fairy tale Rytíř a Ošklivá dáma (The Knight and the Ugly Lady), and Jitule a Dadule put on a bubble show. The evening belonged to Dívčí válka (The Maidens' War) with F. R. Čech, a humorous parody of the Old Czech Legends about the quarrel between men and women, which holds the record as the most frequently performed play in the Czech Republic. The event took place with financial support from the town of Toužim."
    },
    "2026-09-12": {
     "title": "Punkovice, 9th year",
@@ -1101,19 +1101,19 @@ window.L10N={
   "akce": {
    "2015-10-17": {
     "title": "Arbeitseinsatz im Schlosshof",
-    "html": "Herrichten des Schlosshofs, Beseitigen von Wildwuchs und Neuigkeiten über das weitere Schicksal des Schlosses."
+    "html": "Ein weiterer Arbeitseinsatz im Schloss knüpfte an die bisherigen Arbeiten an und galt der Pflege des Schlosshofs und der Beseitigung von Wildaufwuchs. Freiwillige konnten sich mit eigenem Werkzeug beteiligen, von Sägen und Freischneidern bis zu Schaufeln und Schubkarren. Zum Treffen gehörten auch Neuigkeiten über die weitere Entwicklung und die Zukunft des Schlosses."
    },
    "2015-12-12": {
     "title": "Weihnachtstreffen auf dem Schloss mit Glühwein",
-    "html": "Das erste Adventstreffen im Schlosshof mit Glühwein und Weihnachtsliedern."
+    "html": "Das Adventstreffen im Schlosshof bot weihnachtliche Stimmung mit Glühwein und Weihnachtsliedern. Es fand direkt im Schlosshof statt und war zugleich eine Gelegenheit, sich an die Zeiten zu erinnern, als in den Räumen des Schlosses noch Leben herrschte."
    },
    "2016-01-26": {
     "title": "Vortrag: Bilder aus dem Leben eines Schlosses",
-    "html": "Vortrag über die Geschichte und die bauliche Entwicklung des Schlosses im Infozentrum Toužim."
+    "html": "Im Infozentrum Toužim fand der Vortrag Obrazy ze života jednoho zámku (Bilder aus dem Leben eines Schlosses) statt, der der Geschichte und baulichen Entwicklung des Schlosses gewidmet war – des ältesten Baudenkmals der Stadt Toužim. Es sprach Jiří Schierl, Mitglied des burgenkundlichen Klub Augusta Sedláčka."
    },
    "2016-04-02": {
     "title": "Arbeitseinsatz auf dem Schloss",
-    "html": "Der Arbeitseinsatz galt der Verschönerung des Schlosshofs für die Toužimer Öffentlichkeit; die Freiwilligen versperrten die Eingänge vom Hof in die baufälligen Schlossgebäude, was die Stadt zur Bedingung für die öffentliche Nutzung des Hofes gemacht hatte."
+    "html": "Der Arbeitseinsatz galt der Verschönerung des Schlosshofs für die Öffentlichkeit von Toužim. Die Freiwilligen verschalten die Türen, die vom Hof in die einsturzgefährdeten Schlossgebäude führen – eine Bedingung der Stadt für die öffentliche Nutzung des Hofs. Auf dem Programm standen außerdem die Säuberung des Zuschauerbereichs und das Verbrennen von Schnittholz."
    },
    "2016-04-30": {
     "title": "Arbeitseinsatz und das erste Hexenbrennen",
@@ -1125,7 +1125,7 @@ window.L10N={
    },
    "2016-06-11": {
     "title": "Perseidy: das erste Schlosskonzert einer Countryband",
-    "html": "Das allererste Konzert auf dem Schloss. Es spielte die Countryband Perseidy, Eintritt gegen freiwillige Spende."
+    "html": "Das allererste Konzert im Schloss, veranstaltet vom Verein Živý zámek Toužim. Zum ersten Mal spielte hier die Country-Band Perseidy. Der Eintritt war frei gegen Spende, für Erfrischungen war gesorgt."
    },
    "2016-07-02": {
     "title": "Kreatives Wochenende auf dem Schloss",
@@ -1155,7 +1155,7 @@ window.L10N={
    },
    "2017-03-26": {
     "title": "Kleiner Frühjahrseinsatz",
-    "html": "Der erste Frühjahrseinsatz des Jahres: Laub rechen und den Schlosshof aufräumen."
+    "html": "Dank des schönen Wetters beschloss der Verein, einen außerplanmäßigen ersten Frühjahrseinsatz des Jahres zu veranstalten. Auf dem Programm standen Laubrechen und der Frühjahrsputz im Hof, jeder war willkommen, gern mit eigenem Werkzeug. Wer nicht arbeiten wollte, konnte sich ansehen, wie die weiteren kleinen Reparaturen am Schloss vorankamen."
    },
    "2017-04-15": {
     "title": "Aufräumen, Säubern und Vorbereitung auf das Hexenbrennen",
@@ -1248,7 +1248,7 @@ window.L10N={
    },
    "2019-04-27": {
     "title": "Hexentreffen",
-    "html": "Am Nachmittag bastelten wir Hexen und hatten Spaß."
+    "html": "Der Nachmittag im Schloss war für Familien mit Kindern gedacht, die hier ihre eigenen Hexen bastelten. Als Material dienten alte Kleidung, Lumpen und anderes, was sich zum Basteln und Verbrennen eignet. Die fertigen Hexen waren für das Hexenbrennen am Dienstag, dem 30. April, bestimmt."
    },
    "2019-04-30": {
     "title": "Hexenbrennen"
@@ -1305,7 +1305,7 @@ window.L10N={
    },
    "2020-07-25": {
     "title": "Märchennachmittag mit Culinka",
-    "html": "Das Musik- und Bewegungsprogramm Culinka a tancohrátky, Märchenführungen durch die Burg mit Aufgaben, Kinderschminken und eine Sandwerkstatt."
+    "html": "Der Märchennachmittag für Kinder jeden Alters bot die Musik- und Bewegungsshow Culinka a tancohrátky sowie märchenhafte Burgführungen mit Aufgaben und Abenteuern. Auf dem Programm standen außerdem Kinderschminken, eine Sandwerkstatt und weitere Aktivitäten für Kinder. Der Eintritt war frei gegen Spende."
    },
    "2020-08-15": {
     "title": "Punkovice im Schloss (3. Jahrgang)"
@@ -1332,7 +1332,7 @@ window.L10N={
    },
    "2021-07-10": {
     "title": "Historischer Nachmittag: 552 Jahre Stadt",
-    "html": "Ein Märchen des Theaters Kamila, Cavalla Canor, die Tänzerin Shahinez, Fechten mit Zlatý Grál und Duellanti, Eva mit der Drehorgel, ein historischer Umzug und die Enthüllung einer neuen Infotafel. Am Abend ein Konzert von Dáma s hranostajem und eine Ausstellung zum 5. Jubiläum des Vereins."
+    "html": "Eine ganztägige Feier zum 552. Jahrestag der Erhebung Toužims zur Stadt fand im Schlosshof und darüber hinaus statt. Den Auftakt machte das Märchen O prasátku Arturovi des Theaters Kamila, danach traten Cavalla Canor, die Tänzerin Shahinez, die Fechtgruppen Zlatý Grál und Duellanti sowie Eva mit ihrem Leierkasten auf. Es folgten ein historischer Umzug rund um den Marktplatz, eine Szene zur Übergabe der Stadtgründungsurkunden und die Enthüllung einer neuen Informationstafel. Am Abend spielte im Hof die Gruppe Dáma s hranostajem, und in einem der Gemächer war eine Ausstellung zum 5-jährigen Bestehen des Vereins zu sehen."
    },
    "2021-07-31": {
     "title": "Fler-Handwerksmarkt im Schloss",
@@ -1371,11 +1371,11 @@ window.L10N={
    },
    "2022-04-30": {
     "title": "Hexenverbrennung",
-    "html": "Am Nachmittag wurden Hexen gebastelt, nach dem Aufstellen des Maibaums brannte das Feuer im Hof."
+    "html": "Nach der coronabedingten Pause kehrte das Hexenbrennen ins Schloss zurück. Am Nachmittag konnten die Besucher ihre eigene Hexe basteln oder am Abend eine mitbringen. Sobald die Feuerwehr den Maibaum aufgestellt hatte, wurde im Hof das Feuer für alle Hexen entzündet, an dem man auch grillen konnte."
    },
    "2022-05-21": {
     "title": "Schloss-CITO, Frühjahr 2022",
-    "html": "Das erste CITO, seit wir den Staffelstab von der Dílna U mnicha übernommen haben: Aufräumen des Hofes, Wildwuchs schneiden und verbrennen, Laub rechen."
+    "html": "Der sechste Jahrgang und neunte Event des Schloss-CITO war der erste, den der Verein nach der Übernahme des Staffelstabs von der Dílna U mnicha ausrichtete. Geocacher und andere Freiwillige trafen sich zur alljährlichen Routine: Aufräumen des Schlosshofs, Schneiden und Verbrennen von Wildaufwuchs und Laubrechen. Bei genügend Helfern war auch der Kampf mit dem berüchtigten „Toužimer Haufen“ auf der Bühne geplant."
    },
    "2022-05-28": {
     "title": "Kindertag im Schloss Toužim",
@@ -1400,14 +1400,14 @@ window.L10N={
    },
    "2022-08-13": {
     "title": "Punkovice 2022",
-    "html": "Es spielten Stamp Out System, Porucha systému, Čekišó, Vypitý lahváče, Já ještě nevim und ŠpuntQaně."
+    "html": "Die vermutlich sechste Ausgabe des Festivals regionaler Bands Punkovice. Es spielten Stamp Out System, Porucha systému, Čekišó, Vypitý lahváče, Já ještě nevim und ŠpuntQaně. Der Eintritt war wie gewohnt frei gegen Spende, für Erfrischungen war gesorgt."
    },
    "2022-09-10": {
     "title": "Tage des europäischen Kulturerbes 2022"
    },
    "2022-10-15": {
     "title": "Schloss-CITO, Herbst 2022",
-    "html": "Der zehnte, jubiläumsreife Freiwilligeneinsatz im Rahmen des Projekts 72 Stunden. Es spielte die Band Longway."
+    "html": "Der zehnte Jubiläums-Arbeitseinsatz, also ein CITO-Event, fand im Rahmen des Projekts 72 Stunden statt, zu dem auch thematische T-Shirts gehörten. Die Aufgaben wurden je nach Teilnehmerzahl spontan verteilt, für die Freiwilligen gab es einen kleinen Imbiss. Wie schon im Frühjahr sorgte die Band Longway für die musikalische Begleitung."
    },
    "2022-11-05": {
     "title": "Halloween im Schloss",
@@ -1415,7 +1415,7 @@ window.L10N={
    },
    "2022-12-17": {
     "title": "Weihnachtstreffen und Schlosskrippe",
-    "html": "Die Besucher brachten Figuren von sich und ihren Familien mit, und gemeinsam bevölkerten wir die Schlosskrippe."
+    "html": "Beim Weihnachtstreffen wurde die Schlosskrippe bevölkert, inspiriert von der Pilsner Krippe, die das Muzeum strašidel Plzeň (Gespenstermuseum Pilsen) betreut. Der Verein bereitete die Grundlage vor, und die Besucher brachten Figuren von sich und ihren Familien mit, gern auch samt Haustieren. Die Figuren aus haltbarem Material konnten gezeichnet, genäht, gestrickt, aus Ton gebrannt, auf einen Stein gemalt oder aus Holz gefertigt sein."
    },
    "2023-04-30": {
     "title": "Hexenverbrennung",
@@ -1423,7 +1423,7 @@ window.L10N={
    },
    "2023-05-20": {
     "title": "Schloss-CITO, Frühjahr 2023",
-    "html": "Das elfte CITO: Wildwuchs entfernen und den Schlossteingarten wiederbeleben. Es spielte die Band Longway."
+    "html": "Die elfte Ausgabe des traditionellen freiwilligen Arbeitseinsatzes CITO bot einen gemütlichen Nachmittag, ein Wiedersehen mit Freunden und etwas Frühjahrsarbeit im Schloss. Auf dem Programm standen das Ausschneiden von Wildaufwuchs und die Wiederbelebung des Schlossteingartens, gegebenenfalls auch die Fortsetzung der Beleuchtung des Burgkellers. Die Band Longway begleitete die Arbeit, es gab einen kleinen Imbiss, und zur Belohnung eine Führung durch das Schlossareal."
    },
    "2023-06-03": {
     "title": "Kindertag",
@@ -1451,7 +1451,7 @@ window.L10N={
    },
    "2023-07-15": {
     "title": "Kindernachmittag mit dem Theater Jitule & Dadule",
-    "html": "Das Märchen „Hänsel und Gretel“ des Theaters Jitule a Dadule und thematische Spiele."
+    "html": "Ein Ferien-Kindernachmittag bot das Märchen O perníkové chaloupce (Hänsel und Gretel) in der Aufführung des Theaters Jitule a Dadule. Für die Kinder waren außerdem thematische Spiele vorbereitet, und für schlechtes Wetter stand ein überdachter Spielort bereit."
    },
    "2023-07-29": {
     "title": "Schlossmarkt",
@@ -1464,7 +1464,7 @@ window.L10N={
    },
    "2023-10-14": {
     "title": "Schloss-CITO, Herbst 2023",
-    "html": "Das zwölfte CITO: Wildwuchs entfernen, das Gelände aufräumen und zur Belohnung eine Führung."
+    "html": "Die zwölfte Ausgabe des traditionellen freiwilligen Arbeitseinsatzes CITO bot einen Nachmittag mit Freunden und Herbstarbeit im Schlossareal. Auf dem Programm standen das Ausschneiden von Wildaufwuchs und das Aufräumen des Geländes, die genauen Aufgaben richteten sich nach dem aktuellen Bedarf. Für die Teilnehmer gab es einen kleinen Imbiss und Live-Musik, als Lohn für die Arbeit eine Führung durch das Schlossareal."
    },
    "2023-11-04": {
     "title": "Halloween im Schloss",
@@ -1476,7 +1476,7 @@ window.L10N={
    },
    "2024-04-30": {
     "title": "Hexenverbrennung",
-    "html": "Aufstellen des Maibaums auf dem Marktplatz mit dem Orchester der Kunstschule Toužim, danach Hexenbasteln und Feuer im Schlosshof. Gemeinsam mit der Freiwilligen Feuerwehr Toužim veranstaltet."
+    "html": "Das traditionelle Maibaumaufstellen und Hexenbrennen veranstalteten gemeinsam der SDH Toužim (Freiwillige Feuerwehr Toužim) und Živý zámek Toužim. Am Nachmittag wurden im Schlosshof der Scheiterhaufen vorbereitet und die Haupthexe gebastelt, während auf dem Marktplatz unter Begleitung des Orchesters der ZUŠ Toužim (Kunstschule) die Maibaumspitze geschmückt wurde und für die Kleinsten eine Hüpfburg bereitstand. Nach dem Aufstellen des Maibaums zog das Programm zurück in den Schlosshof, wo der Scheiterhaufen mit der Hexe entzündet wurde und man am Feuer auch Würstchen grillen konnte."
    },
    "2024-05-18-toulky": {
     "title": "Streifzüge durch die Region mit Jean de Carro",
@@ -1516,7 +1516,7 @@ window.L10N={
    },
    "2024-10-26": {
     "title": "Halloween im Schloss",
-    "html": "Gruselkeller und Buh-Kammer, Kinderschminken, Spiele, eine Werkstatt und ein Laternenumzug. Zum ersten Mal auch ungewöhnliche Abendführungen."
+    "html": "Das traditionelle Halloween im Schloss bot jede Menge gruseligen Spaß: einen Gruselkeller und eine Buh-Kammer, Kinderschminken, verschiedene Spiele und eine Bastelwerkstatt. Am frühen Abend startete ein Laternenumzug. Zum ersten Mal gehörten auch ungewöhnliche Abendführungen durch das Schloss zum Programm, in zwei Durchgängen und für eine begrenzte Teilnehmerzahl."
    },
    "2024-12-14": {
     "title": "Weihnachtstreffen im Schloss",
@@ -1537,7 +1537,7 @@ window.L10N={
    },
    "2025-06-21": {
     "title": "Schlossfestival, 9. Jahrgang",
-    "html": "Es spielten Carpatia Castle, Krleš, Cerberos und Trojka."
+    "html": "Die neunte Ausgabe des Festivals im Schloss stand im Zeichen von Rock und Metal. Es traten die Gothic-Rock-Band Carpatia Castle aus der Region Most, die Heavy-Metal-Band Krleš aus Nordböhmen, die Heavy-Rock-Band Cerberos und die Metal/Tricore-Band Trojka aus Klášterec auf."
    },
    "2025-06-28": {
     "title": "Historischer Tag",
@@ -1553,7 +1553,7 @@ window.L10N={
    },
    "2025-08-23": {
     "title": "Burgen- und Schlössernacht",
-    "html": "Zum ersten Mal haben wir uns an der Burgen- und Schlössernacht des Nationalen Denkmalinstituts beteiligt. Abendführungen bei Kerzenlicht mit Begegnungen mit dem Schwarzen Mönch und dem Schlossherrn. Alle Führungen waren ausverkauft, es kamen 45 Leute."
+    "html": "Zum ersten Mal beteiligte sich der Verein an der Burgen- und Schlössernacht, einem beliebten Projekt des Nationalen Denkmalinstituts. Abendliche Führungen leiteten durch das dunkle, von Kerzen erleuchtete Schloss und waren mit örtlichen Sagen gewürzt; in den einzelnen Räumen begegneten die Besucher dem Schwarzen Mönch und dem Schlossherrn. Im Mittelpunkt standen die Fragen, wer der Schwarze Mönch war und wo die goldene Trompete erklang. Die Führungen fanden in drei Abendterminen statt, alle waren ausverkauft, es kamen 45 Personen."
    },
    "2025-09-06": {
     "title": "Theater im Schloss",
@@ -1573,11 +1573,11 @@ window.L10N={
    },
    "2025-12-14": {
     "title": "Weihnachtstreffen",
-    "html": "Baumschmücken, eine Werkstatt des CVČ Kačaba, ein Pfad der Weihnachtsbräuche, ein Wettbewerb um den besten Hefezopf, ein Märchen der Laienspieler aus Ostrov und Weihnachtslieder mit der Kunstschule Toužim."
+    "html": "Die letzte Veranstaltung des Jahres bot ein reiches Weihnachtsprogramm. Sie begann mit dem Schmücken des Baums, an den die Besucher auch eigenen Schmuck hängen konnten, es folgten eine Weihnachtswerkstatt des Freizeitzentrums CVČ Kačaba und ein Wettbewerb um den besten Hefezopf (vánočka). Im Pferdestall spielte die Laientheatergruppe Ochotníci Ostrov das Märchen Pohádka o tom, koho pálí dobré bydlo, und zum Abschluss wurden mit der Kunstschule ZUŠ Toužim Weihnachtslieder gesungen. Während der ganzen Veranstaltung gab es einen Pfad der Weihnachtsbräuche mit Rätsel."
    },
    "2026-03-21": {
     "title": "Schlossgelage",
-    "html": "Das erste einer Reihe von Schlossgelagen im Oberen Schloss. Ein Treffen für alle, denen das Schloss nicht gleichgültig ist: Was wir gern im Schloss sehen würden und wer mitmachen möchte."
+    "html": "Das Schlossgastmahl war das erste einer Reihe von Gemeinschaftstreffen im Oberen Schloss, gedacht für alle, denen das Schloss Toužim am Herzen liegt. Auf dem Programm stand eine Diskussion darüber, was man im Schloss gern sehen würde, wobei man helfen kann, an welchen Aktivitäten man sich beteiligen möchte und was man mit anderen teilen kann. Das Gastmahl war ein gemeinsames: Zum kleinen Imbiss konnte jeder etwas Gutes mitbringen."
    },
    "2026-03-30": {
     "title": "Beginn der Arbeiten am Schlossgarten",
@@ -1592,11 +1592,11 @@ window.L10N={
    },
    "2026-05-16": {
     "title": "Schloss-CITO, Frühjahr",
-    "html": "Das XVI. Schloss-CITO und am Sonntag der erste Einsatz Poznej &amp; pomoz (Entdecke &amp; hilf). Der größte Teil der Fläche unter der Mauer wurde geräumt, und entlang der Schlossmauer entstand ein Rosenbeet. Am Nachmittag erklangen Balladen und Sagen von Jean de Carro."
+    "html": "Das Frühlingswochenende gehörte dem XVI. Schloss-CITO und am Sonntag dem ersten Arbeitseinsatz Poznej &amp; pomoz (Entdecke &amp; hilf). Der größte Teil der Fläche unter der Mauer wurde geräumt, und entlang der Schlossmauer entstand ein Rosenbeet. Am Nachmittag trat Jean de Carro – Künstlername des Rundfunkpublizisten, Musikers und Erzählers Josef Šorfa – mit seinem Theater- und Musikprogramm Toulky krajem auf, voller Sagen und Liedballaden, darunter die eigens für das Schloss Toužim bestimmte Sage O černém mnichovi (Vom Schwarzen Mönch). Für die Helfer und CITO-Teilnehmer war die Vorstellung kostenlos."
    },
    "2026-05-30": {
     "title": "Kindertag an Bord",
-    "html": "Ein Piraten-Kindertag: ein Aufgabenpfad, ein Programm mit dem CVČ Kačaba und Königin Pippi, Auftritte der Kunstschule Toužim, ein Stand von Lesy ČR und Schaum von der Freiwilligen Feuerwehr Toužim. Im Schloss begann eine Ausstellung von Kinderarbeiten."
+    "html": "Der Kindertag an Bord stand ganz im Zeichen der Piraten. Das Programm begann mit dem Zusammenrufen der gesamten Mannschaft, es folgten ein Piratenfest mit dem CVČ Kačaba, das Training mit Königin Pippi und Familienspielen, ein Auftritt der Kunstschule ZUŠ Toužim und ein Schaumsturm der Freiwilligen Feuerwehr SDH Toužim. Den ganzen Tag über gab es den Aufgabenpfad Křížem krážem oceánem (Kreuz und quer über den Ozean) und einen Piratenankerplatz der Lesy ČR, Kinderkostüme waren willkommen. Im Schloss wurde zudem eine Ausstellung mit Kinderarbeiten eröffnet."
    },
    "2026-06-20": {
     "title": "Rockfestival, 10. Jahrgang",
@@ -1633,7 +1633,7 @@ window.L10N={
    },
    "2026-08-21": {
     "title": "Sommerkino: Po večerce",
-    "html": "Vorführung der tschechischen Komödie „Po večerce“. Wegen Regen wurde im Pferdestall gezeigt."
+    "html": "Das Sommerkino im Schloss zeigte die neue tschechische Komödie Po večerce. Die Abendvorstellung begann um 21 Uhr, der Eintritt war frei gegen Spende. Wegen Regens wurde der Film schließlich überdacht im Pferdestall gezeigt."
    },
    "2026-08-22": {
     "title": "Burgen- und Schlössernacht",
@@ -1641,7 +1641,7 @@ window.L10N={
    },
    "2026-09-05": {
     "title": "Theater im Schloss: Dívčí válka",
-    "html": "Der dritte Theatertag: das Märchen „Der Ritter und die hässliche Dame“ (Divadélko Ondřej), eine Seifenblasenshow von Jitule a Dadule und am Abend „Dívčí válka“ (Der Mägdekrieg) von F. R. Čech. Mit finanzieller Unterstützung der Stadt Toužim."
+    "html": "Die dritte Ausgabe des Theater-Minifestivals im Schloss widmete den Nachmittag traditionell den Kindern: Das Divadélko Ondřej spielte das Märchen Rytíř a Ošklivá dáma (Der Ritter und die hässliche Dame), und Jitule a Dadule zeigten eine Seifenblasenshow. Der Abend gehörte Dívčí válka (Der Mägdekrieg) mit F. R. Čech, einer humorvollen Parodie auf die Alten böhmischen Sagen über den Streit zwischen Männern und Frauen, die den Rekord als meistgespieltes Theaterstück Tschechiens hält. Die Veranstaltung fand mit finanzieller Unterstützung der Stadt Toužim statt."
    },
    "2026-09-12": {
     "title": "Punkovice, 9. Jahrgang",

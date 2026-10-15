@@ -1,7 +1,7 @@
 {
-  "title": "Letní kino: Po večeřce",
+  "title": "Letní kino: Po večerce",
   "date": "2026-08-21",
-  "text": "Promítání české komedie Po večerce. Kvůli dešti se promítalo v konírně.",
+  "text": "Letní kino na zámku uvedlo novou českou komedii Po večerce. Večerní promítání začínalo ve 21 hodin a vstupné bylo dobrovolné. Kvůli dešti se nakonec promítalo pod střechou v konírně.",
   "poster": "img/plakaty/2026_letni_kino.jpg",
   "photos": [
     "img/akce/2026-08-21-1.jpg",
@@ -9,10 +9,10 @@
   ],
   "en": {
     "title": "Open-air cinema: Po večerce",
-    "text": "A screening of the Czech comedy Po večerce. Because of rain it was shown in the stables."
+    "text": "The summer cinema at the castle screened the new Czech comedy Po večerce. The evening screening began at 9 p.m. and admission was by donation. Because of rain, the film was eventually shown indoors in the stables."
   },
   "de": {
     "title": "Sommerkino: Po večerce",
-    "text": "Vorführung der tschechischen Komödie „Po večerce“. Wegen Regen wurde im Pferdestall gezeigt."
+    "text": "Das Sommerkino im Schloss zeigte die neue tschechische Komödie Po večerce. Die Abendvorstellung begann um 21 Uhr, der Eintritt war frei gegen Spende. Wegen Regens wurde der Film schließlich überdacht im Pferdestall gezeigt."
   }
 }
