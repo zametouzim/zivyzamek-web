@@ -329,8 +329,8 @@
   "Výroční zpráva 2024": "Annual report 2024 (in Czech)",
   "<a href=\"https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim\" target=\"_blank\" rel=\"noopener\">náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</a>": "<a href=\"https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim\" target=\"_blank\" rel=\"noopener\">náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</a>",
   "<a href=\"https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim\" target=\"_blank\" rel=\"noopener\">náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</a><br><span id=\"fSezona\">Otevřené víkendy červenec–září</span>": "<a href=\"https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim\" target=\"_blank\" rel=\"noopener\">náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</a><br><span id=\"fSezona\">Open weekends July–September</span>",
-  "Nádvoří zámku, červen 2016": "Castle courtyard, June 2016",
-  "Nádvoří před Festivalem na zámku, červen 2020": "The courtyard before the Castle Festival, June 2020"
+  "Nádvoří zámku, červen 2022": "Castle courtyard, June 2022",
+  "Večer na nádvoří, Hradozámecká noc 22. 8. 2026": "Evening in the courtyard, Castle Night, 22 Aug 2026"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, home",
@@ -392,8 +392,8 @@
   "Pavla Vokurková a Alena Šlajerová s hrnky svařáku na nádvoří zámku": "Pavla Vokurková and Alena Šlajerová with mugs of mulled wine in the castle courtyard",
   "QR Platba: dar 500 Kč na transparentní účet spolku": "QR payment: a CZK 500 gift to the association's transparent account",
   "Zámek Toužim, pohled přes trávník s lavicemi na zámecké budovy": "Toužim Castle, view across the lawn with picnic benches to the castle buildings",
-  "Nádvoří zámku s arkádami, lavicemi a vzrostlými stromy": "Castle courtyard with arcades, benches and mature trees",
-  "Nádvoří zámku s arkádami a lavicemi připravenými na festival": "Castle courtyard with arcades and benches set out for the festival"
+  "Slunečné nádvoří zámku se záhonem, stromy a krytým pódiem v pozadí": "Sunny castle courtyard with a flower bed, trees and the covered stage in the background",
+  "Večerní nádvoří osvětlené světly, stromy a zámecké budovy": "The courtyard in the evening, lit up, with trees and castle buildings"
  },
  "js": {
   "Akce nenalezena.": "Event not found.",

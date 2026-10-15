@@ -329,8 +329,8 @@
   "Výroční zpráva 2024": "Jahresbericht 2024 (auf Tschechisch)",
   "<a href=\"https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim\" target=\"_blank\" rel=\"noopener\">náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</a>": "<a href=\"https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim\" target=\"_blank\" rel=\"noopener\">náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</a>",
   "<a href=\"https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim\" target=\"_blank\" rel=\"noopener\">náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</a><br><span id=\"fSezona\">Otevřené víkendy červenec–září</span>": "<a href=\"https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim\" target=\"_blank\" rel=\"noopener\">náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</a><br><span id=\"fSezona\">Geöffnete Wochenenden Juli–September</span>",
-  "Nádvoří zámku, červen 2016": "Schlosshof, Juni 2016",
-  "Nádvoří před Festivalem na zámku, červen 2020": "Der Schlosshof vor dem Schlossfestival, Juni 2020"
+  "Nádvoří zámku, červen 2022": "Schlosshof, Juni 2022",
+  "Večer na nádvoří, Hradozámecká noc 22. 8. 2026": "Abend im Schlosshof, Burgen- und Schlössernacht 22. 8. 2026"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, Startseite",
@@ -392,8 +392,8 @@
   "Pavla Vokurková a Alena Šlajerová s hrnky svařáku na nádvoří zámku": "Pavla Vokurková und Alena Šlajerová mit Glühweinbechern im Schlosshof",
   "QR Platba: dar 500 Kč na transparentní účet spolku": "QR-Zahlung: Spende von 500 CZK auf das transparente Konto des Vereins",
   "Zámek Toužim, pohled přes trávník s lavicemi na zámecké budovy": "Schloss Toužim, Blick über die Wiese mit Picknickbänken auf die Schlossgebäude",
-  "Nádvoří zámku s arkádami, lavicemi a vzrostlými stromy": "Schlosshof mit Arkaden, Bänken und alten Bäumen",
-  "Nádvoří zámku s arkádami a lavicemi připravenými na festival": "Schlosshof mit Arkaden und für das Festival aufgestellten Bänken"
+  "Slunečné nádvoří zámku se záhonem, stromy a krytým pódiem v pozadí": "Sonniger Schlosshof mit Beet, Bäumen und der überdachten Bühne im Hintergrund",
+  "Večerní nádvoří osvětlené světly, stromy a zámecké budovy": "Der beleuchtete Schlosshof am Abend mit Bäumen und Schlossgebäuden"
  },
  "js": {
   "Akce nenalezena.": "Veranstaltung nicht gefunden.",
