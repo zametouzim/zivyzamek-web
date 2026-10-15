@@ -1082,6 +1082,31 @@ window.L10N={
      "src": "img/akce/2025-06-28-1.jpg",
      "alt": "Historical day in the courtyard",
      "cap": "Historical Day, 28 Jun 2025"
+    },
+    {
+     "src": "img/akce/2025-06-21-1.jpg",
+     "alt": "Band on stage in stage smoke at sunset",
+     "cap": "Castle Festival, 21 Jun 2025"
+    },
+    {
+     "src": "img/akce/2023-07-29-3.jpg",
+     "alt": "Fair stalls below the castle arcades",
+     "cap": "Castle fair, 29 Jul 2023"
+    },
+    {
+     "src": "img/akce/2024-12-14-1.jpg",
+     "alt": "Dance performance with fans in the cellar",
+     "cap": "Christmas gathering at the castle, 14 Dec 2024"
+    },
+    {
+     "src": "img/akce/2018-12-15-1.jpg",
+     "alt": "Snowy courtyard with people at the tables",
+     "cap": "Christmas get-together, 15 Dec 2018"
+    },
+    {
+     "src": "img/akce/2026-07-10-2.jpg",
+     "alt": "Audience on benches under the trees in the courtyard",
+     "cap": "Music evening with Milan Pitkin and František Nedvěd, 10 Jul 2026"
     }
    ],
    "stranky": []
@@ -1933,6 +1958,31 @@ window.L10N={
      "src": "img/akce/2025-06-28-1.jpg",
      "alt": "Historischer Tag im Schlosshof",
      "cap": "Historischer Tag, 28. 6. 2025"
+    },
+    {
+     "src": "img/akce/2025-06-21-1.jpg",
+     "alt": "Band auf der Bühne im Bühnennebel bei Sonnenuntergang",
+     "cap": "Schlossfestival, 21. 6. 2025"
+    },
+    {
+     "src": "img/akce/2023-07-29-3.jpg",
+     "alt": "Marktstände unter den Schlossarkaden",
+     "cap": "Schlossmarkt, 29. 7. 2023"
+    },
+    {
+     "src": "img/akce/2024-12-14-1.jpg",
+     "alt": "Tanzvorführung mit Fächern im Gewölbekeller",
+     "cap": "Weihnachtstreffen im Schloss, 14. 12. 2024"
+    },
+    {
+     "src": "img/akce/2018-12-15-1.jpg",
+     "alt": "Verschneiter Schlosshof mit Leuten an den Tischen",
+     "cap": "Weihnachtstreffen, 15. 12. 2018"
+    },
+    {
+     "src": "img/akce/2026-07-10-2.jpg",
+     "alt": "Publikum auf Bänken unter den Bäumen im Schlosshof",
+     "cap": "Musikabend mit Milan Pitkin und František Nedvěd, 10. 7. 2026"
     }
    ],
    "stranky": []

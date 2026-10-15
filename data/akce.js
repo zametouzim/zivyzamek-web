@@ -30,6 +30,31 @@ window.HERO=[
   "src": "img/akce/2025-06-28-1.jpg",
   "alt": "Historický den na nádvoří",
   "cap": "Historický den, 28. 6. 2025"
+ },
+ {
+  "src": "img/akce/2025-06-21-1.jpg",
+  "alt": "Kapela na pódiu v kouři při západu slunce",
+  "cap": "Festival na zámku, 21. 6. 2025"
+ },
+ {
+  "src": "img/akce/2023-07-29-3.jpg",
+  "alt": "Stánky jarmarku pod arkádami zámku",
+  "cap": "Zámecký jarmark, 29. 7. 2023"
+ },
+ {
+  "src": "img/akce/2024-12-14-1.jpg",
+  "alt": "Taneční vystoupení s vějíři ve sklepení",
+  "cap": "Vánoční setkání na zámku, 14. 12. 2024"
+ },
+ {
+  "src": "img/akce/2018-12-15-1.jpg",
+  "alt": "Zasněžené nádvoří s lidmi u stolů",
+  "cap": "Vánoční setkání, 15. 12. 2018"
+ },
+ {
+  "src": "img/akce/2026-07-10-2.jpg",
+  "alt": "Diváci na lavicích pod stromy na nádvoří",
+  "cap": "Hudební večer s Milanem Pitkinem a Františkem Nedvědem, 10. 7. 2026"
  }
 ];
 window.AKCE=[
