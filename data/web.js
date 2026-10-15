@@ -458,6 +458,14 @@ window.L10N={
     "title": "History Day: founding of Toužim (551 years)",
     "html": "A historical afternoon for the 551st anniversary of Toužim's founding, with period music by Cavalla Canor, the fencing troupe Zlatý Grál, the dancer Shahinez and Eva with her barrel organ. The highlight was the opening of a new chamber with an exhibition of 130 copies of Božena Němcová's novel The Grandmother."
    },
+   "2020-10-31": {
+    "title": "Halloween at the castle",
+    "html": "Creative workshops for children, a screening of the animated film Hotel Transylvania and, in the evening, the horror film The Conjuring. Voluntary admission."
+   },
+   "2020-12-19": {
+    "title": "Christmas gathering at the castle",
+    "html": "A tasting of homemade Christmas biscuits, free mulled wine, carols accompanied by a barrel organ and a creative workshop for children. Voluntary admission."
+   },
    "2021-06-05": {
     "title": "Children's Day",
     "html": "Despite a gloomy forecast, lots of people came; there were contests, games, dancing and crafts. It all ended with the Tibetan Fairy Tale by the Karlovy Vary Puppet Theatre."
@@ -1305,6 +1313,14 @@ window.L10N={
    "2020-09-12": {
     "title": "Historischer Tag: Gründung der Stadt Toužim (551 Jahre)",
     "html": "Ein historischer Nachmittag zum 551. Jahrestag der Gründung von Toužim mit Musik von Cavalla Canor, der Fechtgruppe Zlatý Grál, der Tänzerin Shahinez und Eva mit ihrer Drehorgel. Höhepunkt war die feierliche Eröffnung einer neuen Kammer mit einer Ausstellung von 130 Ausgaben des Romans „Die Großmutter“ von Božena Němcová."
+   },
+   "2020-10-31": {
+    "title": "Halloween im Schloss",
+    "html": "Kreativwerkstätten für Kinder, der Animationsfilm Hotel Transsilvanien und am Abend der Horrorfilm Conjuring – Die Heimsuchung. Eintritt freiwillig."
+   },
+   "2020-12-19": {
+    "title": "Weihnachtstreffen im Schloss",
+    "html": "Verkostung von hausgemachtem Weihnachtsgebäck, kostenloser Glühwein, Weihnachtslieder mit Drehorgelbegleitung und eine Kreativwerkstatt für Kinder. Eintritt freiwillig."
    },
    "2021-06-05": {
     "title": "Kindertag",
