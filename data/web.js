@@ -31,70 +31,70 @@ window.WEB={
     "nazev": "Zámecký plecháček",
     "popis": "Lehký a odolný plecháček s modrým okrajem, 360 ml.",
     "cena": "300 Kč",
-    "foto": "",
+    "foto": "img/suvenyry/plechacek.jpg",
     "skladem": true
    },
    {
     "nazev": "Tričko s logem",
     "popis": "Bílé bavlněné tričko s černým logem Živého zámku.",
     "cena": "300 Kč",
-    "foto": "",
+    "foto": "img/suvenyry/tricko.jpg",
     "skladem": true
    },
    {
     "nazev": "Mini model zámku",
     "popis": "Kapesní model zámku Toužim v sáčku, číslovaný do sbírky.",
     "cena": "110 Kč",
-    "foto": "",
+    "foto": "img/suvenyry/model.jpg",
     "skladem": true
    },
    {
     "nazev": "Placky a magnety",
     "popis": "Malá placka 20 Kč, velká 40 Kč, magnet 50 Kč.",
     "cena": "20–50 Kč",
-    "foto": "",
+    "foto": "img/suvenyry/placky.jpg",
     "skladem": true
    },
    {
     "nazev": "Kniha Po stopách čarodějů",
     "popis": "Pověsti o čarodějích a bylinkářích podél říčky Střely.",
     "cena": "350 Kč",
-    "foto": "",
+    "foto": "img/suvenyry/kniha.jpg",
     "skladem": true
    },
    {
     "nazev": "Knížky Putování Hrocha",
     "popis": "Čtyři knížky Petra Hrocha Bindera, výtěžek jde na zámek.",
     "cena": "200 Kč",
-    "foto": "",
+    "foto": "img/suvenyry/hroch.jpg",
     "skladem": true
    },
    {
     "nazev": "Komiks o historii zámku",
     "popis": "Vtipně o dějinách zámku od středověku po dnešek.",
     "cena": "30 Kč",
-    "foto": "",
+    "foto": "img/suvenyry/komiks.jpg",
     "skladem": true
    },
    {
     "nazev": "Pohlednice",
     "popis": "Čtyři motivy: fotografie zámku a tři malby z interiérů.",
     "cena": "35 Kč",
-    "foto": "",
+    "foto": "img/suvenyry/pohledy.jpg",
     "skladem": true
    },
    {
     "nazev": "Turistická známka č. 2864",
     "popis": "K 555 letům města Toužim, limitováno 555 kusy.",
     "cena": "55 Kč",
-    "foto": "",
+    "foto": "img/suvenyry/znamka.jpg",
     "skladem": true
    },
    {
     "nazev": "Pamětní mince 550 let",
     "popis": "Starostříbro 50 Kč, starozlato 75 Kč, starobronz 100 Kč. Limitované série.",
     "cena": "50–100 Kč",
-    "foto": "",
+    "foto": "img/suvenyry/mince.jpg",
     "skladem": true
    }
   ]
@@ -868,70 +868,70 @@ window.L10N={
       "nazev": "Castle enamel mug",
       "popis": "Light and durable enamel mug with a blue rim, 360 ml.",
       "cena": "300 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/plechacek.jpg",
       "skladem": true
      },
      {
       "nazev": "T-shirt with logo",
       "popis": "White cotton T-shirt with the black Living Castle logo.",
       "cena": "300 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/tricko.jpg",
       "skladem": true
      },
      {
       "nazev": "Mini model of the castle",
       "popis": "Pocket-sized model of Toužim Castle in a bag, numbered for collectors.",
       "cena": "110 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/model.jpg",
       "skladem": true
      },
      {
       "nazev": "Badges and magnets",
       "popis": "Small badge 20 CZK, large badge 40 CZK, magnet 50 CZK.",
       "cena": "20–50 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/placky.jpg",
       "skladem": true
      },
      {
       "nazev": "Book Po stopách čarodějů",
       "popis": "Legends of wizards and herbalists along the Střela river (in Czech).",
       "cena": "350 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/kniha.jpg",
       "skladem": true
      },
      {
       "nazev": "Books Putování Hrocha",
       "popis": "Four books by Petr Hroch Binder (in Czech), proceeds go to the castle.",
       "cena": "200 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/hroch.jpg",
       "skladem": true
      },
      {
       "nazev": "Comic about the castle’s history",
       "popis": "A funny take on the castle’s history from the Middle Ages to today (in Czech).",
       "cena": "30 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/komiks.jpg",
       "skladem": true
      },
      {
       "nazev": "Postcards",
       "popis": "Four designs: a photo of the castle and three paintings from the interiors.",
       "cena": "35 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/pohledy.jpg",
       "skladem": true
      },
      {
       "nazev": "Tourist stamp no. 2864",
       "popis": "For the 555th anniversary of the town of Toužim, limited to 555 pieces.",
       "cena": "55 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/znamka.jpg",
       "skladem": true
      },
      {
       "nazev": "550th anniversary coin",
       "popis": "Antique silver 50 CZK, antique gold 75 CZK, antique bronze 100 CZK. Limited series.",
       "cena": "50–100 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/mince.jpg",
       "skladem": true
      }
     ]
@@ -1737,70 +1737,70 @@ window.L10N={
       "nazev": "Emaillebecher vom Schloss",
       "popis": "Leichter und robuster Emaillebecher mit blauem Rand, 360 ml.",
       "cena": "300 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/plechacek.jpg",
       "skladem": true
      },
      {
       "nazev": "T-Shirt mit Logo",
       "popis": "Weißes Baumwoll-T-Shirt mit dem schwarzen Logo des Lebendigen Schlosses.",
       "cena": "300 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/tricko.jpg",
       "skladem": true
      },
      {
       "nazev": "Mini-Modell des Schlosses",
       "popis": "Modell des Schlosses Toužim im Taschenformat, im Beutel, nummeriert für Sammler.",
       "cena": "110 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/model.jpg",
       "skladem": true
      },
      {
       "nazev": "Anstecker und Magnete",
       "popis": "Kleiner Anstecker 20 CZK, großer 40 CZK, Magnet 50 CZK.",
       "cena": "20–50 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/placky.jpg",
       "skladem": true
      },
      {
       "nazev": "Buch Po stopách čarodějů",
       "popis": "Sagen über Zauberer und Kräuterkundige entlang des Flusses Střela (auf Tschechisch).",
       "cena": "350 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/kniha.jpg",
       "skladem": true
      },
      {
       "nazev": "Bücher Putování Hrocha",
       "popis": "Vier Bücher von Petr Hroch Binder (auf Tschechisch), der Erlös geht an das Schloss.",
       "cena": "200 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/hroch.jpg",
       "skladem": true
      },
      {
       "nazev": "Comic zur Schlossgeschichte",
       "popis": "Die Geschichte des Schlosses vom Mittelalter bis heute, mit Humor erzählt (auf Tschechisch).",
       "cena": "30 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/komiks.jpg",
       "skladem": true
      },
      {
       "nazev": "Ansichtskarten",
       "popis": "Vier Motive: ein Foto des Schlosses und drei Gemälde aus den Innenräumen.",
       "cena": "35 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/pohledy.jpg",
       "skladem": true
      },
      {
       "nazev": "Wandermarke Nr. 2864",
       "popis": "Zum 555. Jubiläum der Stadt Toužim, limitiert auf 555 Stück.",
       "cena": "55 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/znamka.jpg",
       "skladem": true
      },
      {
       "nazev": "Gedenkmünze 550 Jahre",
       "popis": "Altsilber 50 CZK, Altgold 75 CZK, Altbronze 100 CZK. Limitierte Serien.",
       "cena": "50–100 CZK",
-      "foto": "",
+      "foto": "img/suvenyry/mince.jpg",
       "skladem": true
      }
     ]
