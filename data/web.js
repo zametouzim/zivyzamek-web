@@ -255,9 +255,6 @@ window.L10N={
     "title": "Talk: Pictures from the life of a castle",
     "html": "A talk on the history and architectural development of the castle at the Toužim Information Centre."
    },
-   "2016-03-07": {
-    "title": "Spring clean-up of the courtyard"
-   },
    "2016-04-02": {
     "title": "Work party at the castle",
     "html": "The work party focused on improving the castle courtyard for the people of Toužim; volunteers blocked the entrances from the courtyard into the unsafe castle buildings, which the town required before the courtyard could be opened to the public."
@@ -300,9 +297,6 @@ window.L10N={
    "2016-12-10": {
     "title": "Christmas get-together with mulled wine"
    },
-   "2017-03-17": {
-    "title": "Work party"
-   },
    "2017-03-26": {
     "title": "Little spring work party",
     "html": "The first spring work party of the year: raking leaves and tidying the courtyard."
@@ -321,9 +315,6 @@ window.L10N={
     "title": "Children's Day",
     "html": "The first Children's Day at the castle. The weather looked threatening in the morning, but the sun came out in the afternoon."
    },
-   "2017-07-06": {
-    "title": "Castle programme 2017"
-   },
    "2017-07-08": {
     "title": "Historical afternoon at Toužim Castle"
    },
@@ -338,9 +329,6 @@ window.L10N={
    },
    "2017-08-26": {
     "title": "Open-air cinema"
-   },
-   "2017-09-05": {
-    "title": "In the cellars and interiors of the castle"
    },
    "2017-09-16": {
     "title": "Toužim minifest at the castle"
@@ -477,9 +465,6 @@ window.L10N={
    "2021-06-12": {
     "title": "Castle Festival 2021 (5th year)",
     "html": "The fifth, anniversary Rockfest with a record attendance of over 400 people. Cerberos Heavy Rock, Rimortis, Kreyson Memorial and Carpatia Castle played."
-   },
-   "2021-07-05": {
-    "title": "Work party"
    },
    "2021-07-10": {
     "title": "Historical afternoon: 552 years of the town",
@@ -629,9 +614,6 @@ window.L10N={
     "title": "Witches' Night bonfire",
     "html": "Raising the maypole on the square with the Toužim art school orchestra, then making a witch and a bonfire in the castle courtyard. Organised together with the Toužim volunteer fire brigade."
    },
-   "2024-05-02": {
-    "title": "Work party"
-   },
    "2024-05-18-toulky": {
     "title": "Wandering the region with Jean de Carro",
     "html": "A performance by Jean de Carro to round off the spring work party."
@@ -696,9 +678,6 @@ window.L10N={
    "2025-06-28": {
     "title": "History Day",
     "html": "Celebrating 556 years of the town: the Jitule a Dadule theatre, Eva with her barrel organ, Cavalla Canor, Jean de Carro, the Shahinez dancers, fencing by Castra Romana and Alia Tempora, blacksmiths, stilt walkers and craft stalls. Premiere of a film about Toužim Castle by MiRo film."
-   },
-   "2025-07-04": {
-    "title": "Music by the fire"
    },
    "2025-07-26": {
     "title": "Castle fair",
@@ -1124,9 +1103,6 @@ window.L10N={
     "title": "Vortrag: Bilder aus dem Leben eines Schlosses",
     "html": "Vortrag über die Geschichte und die bauliche Entwicklung des Schlosses im Infozentrum Toužim."
    },
-   "2016-03-07": {
-    "title": "Frühjahrsputz im Schlosshof"
-   },
    "2016-04-02": {
     "title": "Arbeitseinsatz auf dem Schloss",
     "html": "Der Arbeitseinsatz galt der Verschönerung des Schlosshofs für die Toužimer Öffentlichkeit; die Freiwilligen versperrten die Eingänge vom Hof in die baufälligen Schlossgebäude, was die Stadt zur Bedingung für die öffentliche Nutzung des Hofes gemacht hatte."
@@ -1169,9 +1145,6 @@ window.L10N={
    "2016-12-10": {
     "title": "Weihnachtstreffen mit Glühwein"
    },
-   "2017-03-17": {
-    "title": "Arbeitseinsatz"
-   },
    "2017-03-26": {
     "title": "Kleiner Frühjahrseinsatz",
     "html": "Der erste Frühjahrseinsatz des Jahres: Laub rechen und den Schlosshof aufräumen."
@@ -1190,9 +1163,6 @@ window.L10N={
     "title": "Kindertag",
     "html": "Der erste Kindertag auf dem Schloss. Am Morgen drohte schlechtes Wetter, am Nachmittag kam die Sonne heraus."
    },
-   "2017-07-06": {
-    "title": "Schlossprogramm 2017"
-   },
    "2017-07-08": {
     "title": "Historischer Nachmittag auf Schloss Toužim"
    },
@@ -1207,9 +1177,6 @@ window.L10N={
    },
    "2017-08-26": {
     "title": "Sommerkino"
-   },
-   "2017-09-05": {
-    "title": "In den Kellern und Innenräumen des Schlosses"
    },
    "2017-09-16": {
     "title": "Toužimer Minifest auf dem Schloss"
@@ -1346,9 +1313,6 @@ window.L10N={
    "2021-06-12": {
     "title": "Schlossfestival 2021 (5. Jahrgang)",
     "html": "Das fünfte Jubiläums-Rockfest mit Rekordbesuch von über 400 Leuten. Es spielten Cerberos Heavy Rock, Rimortis, Kreyson Memorial und Carpatia Castle."
-   },
-   "2021-07-05": {
-    "title": "Arbeitseinsatz"
    },
    "2021-07-10": {
     "title": "Historischer Nachmittag: 552 Jahre Stadt",
@@ -1498,9 +1462,6 @@ window.L10N={
     "title": "Hexenverbrennung",
     "html": "Aufstellen des Maibaums auf dem Marktplatz mit dem Orchester der Kunstschule Toužim, danach Hexenbasteln und Feuer im Schlosshof. Gemeinsam mit der Freiwilligen Feuerwehr Toužim veranstaltet."
    },
-   "2024-05-02": {
-    "title": "Arbeitseinsatz"
-   },
    "2024-05-18-toulky": {
     "title": "Streifzüge durch die Region mit Jean de Carro",
     "html": "Auftritt von Jean de Carro zum Abschluss des Frühjahrseinsatzes."
@@ -1565,9 +1526,6 @@ window.L10N={
    "2025-06-28": {
     "title": "Historischer Tag",
     "html": "Feier zu 556 Jahren Stadt: Theater Jitule a Dadule, Eva mit der Drehorgel, Cavalla Canor, Jean de Carro, die Tänzerinnen Shahinez, Fechten mit Castra Romana und Alia Tempora, Schmiede, Stelzenläufer und Handwerksstände. Premiere eines Films über Schloss Toužim von MiRo film."
-   },
-   "2025-07-04": {
-    "title": "Musik am Feuer"
    },
    "2025-07-26": {
     "title": "Schlossmarkt",

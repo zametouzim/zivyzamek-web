@@ -244,12 +244,8 @@
   "Seřazeno podle data pořízení.": "Nach Aufnahmedatum sortiert.",
   "Brigáda na nádvoří, 17. 10. 2015": "Arbeitseinsatz im Schlosshof, 17.10.2015",
   "Pálení čarodějnic, 30. 4. 2019": "Walpurgisnacht (Hexenverbrennen), 30.4.2019",
-  "Koncert na nádvoří, 20. 7. 2019 <span class=\"todo\">název akce?</span>": "Konzert im Schlosshof, 20.7.2019 <span class=\"todo\">Name der Veranstaltung?</span>",
   "Stavba zastřešení pódia, léto 2019": "Bau der Bühnenüberdachung, Sommer 2019",
-  "Akce na nádvoří, 25. 7. 2020 <span class=\"todo\">název akce?</span>": "Veranstaltung im Schlosshof, 25.7.2020 <span class=\"todo\">Name der Veranstaltung?</span>",
-  "Kostýmy na nádvoří, 29. 6. 2024 <span class=\"todo\">název akce?</span>": "Kostüme im Schlosshof, 29.6.2024 <span class=\"todo\">Name der Veranstaltung?</span>",
   "Strašidelné sklepení, 26. 10. 2024": "Gruselkeller, 26.10.2024",
-  "Vystoupení ve sklepení, 14. 12. 2024 <span class=\"todo\">název akce?</span>": "Auftritt im Keller, 14.12.2024 <span class=\"todo\">Name der Veranstaltung?</span>",
   "Country tance pod pódiem, srpen 2025": "Countrytanz vor der Bühne, August 2025",
   "Bez dobrovolníků a dárců by zámek dál chátral": "Ohne Freiwillige und Spender würde das Schloss weiter verfallen",
   "Na zahradu teď potřebujeme hlavně materiál (beton, kámen, dřevo), pronájem strojů a jídlo pro dobrovolníky na brigádách.": "Für den Garten brauchen wir jetzt vor allem Material (Beton, Stein, Holz), Maschinenmiete und Essen für die Freiwilligen bei den Arbeitseinsätzen.",
@@ -324,7 +320,11 @@
   "Ve sbírce na Darujme.cz přispěli soukromí dárci 21&nbsp;896&nbsp;Kč a Nadace VIA ji podpořila dalšími 20&nbsp;000&nbsp;Kč.": "Bei der Spendensammlung auf Darujme.cz gaben private Spender 21&nbsp;896&nbsp;CZK, und die Stiftung VIA legte weitere 20&nbsp;000&nbsp;CZK dazu.",
   "Zámecký pán Jan Policar": "Schlossherr Jan Policar",
   "Objednávky a dotazy na <a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>, pošleme i poštou.": "Bestellungen und Fragen an <a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>, wir verschicken auch per Post.",
-  "Každý pohyb na účtu je veřejně vidět. Potvrzení o daru vám rádi vystavíme, stačí napsat na <a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>.": "Jede Bewegung auf dem Konto ist öffentlich einsehbar. Eine Spendenbestätigung stellen wir gern aus, schreiben Sie einfach an <a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>."
+  "Každý pohyb na účtu je veřejně vidět. Potvrzení o daru vám rádi vystavíme, stačí napsat na <a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>.": "Jede Bewegung auf dem Konto ist öffentlich einsehbar. Eine Spendenbestätigung stellen wir gern aus, schreiben Sie einfach an <a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>.",
+  "Festival na zámku 2019, 20. 7. 2019": "Schlossfestival 2019 (3. Jahrgang), 20.7.2019",
+  "Pohádkové odpoledne s Culinkou, 25. 7. 2020": "Märchennachmittag mit Culinka, 25.7.2020",
+  "Den města: 555 let Toužimi, 29. 6. 2024": "Stadtfest: 555 Jahre Toužim, 29.6.2024",
+  "Vánoční setkání na zámku, 14. 12. 2024": "Weihnachtstreffen im Schloss, 14.12.2024"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, Startseite",
