@@ -243,8 +243,9 @@ dl.facts dd{margin:0}
 .goods .g{background:var(--panel);display:flex;flex-direction:column}
 .goods .gi{aspect-ratio:4/3;background:color-mix(in srgb,var(--navy) 10%,transparent);display:flex;align-items:center;justify-content:center;overflow:hidden}
 .goods .gi img{width:100%;height:100%;object-fit:contain}
-.photos img,.lidi img{cursor:zoom-in}
-.lidi{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px;align-items:start}.lidi .pan{margin:0}.lidi .pan img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r,0)}.lidi .pan figcaption{font-size:14px;color:var(--grey);padding-top:6px}@media(max-width:600px){.lidi{gap:12px}.lidi .pan img{aspect-ratio:1}}
+.photos img,.card .pan img{cursor:zoom-in}
+.card .lidi{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;align-items:start}.card .lidi .pan{margin:0;max-width:none}.card .lidi .pan img{aspect-ratio:1;object-fit:cover}
+.card .pan{margin:16px 0 0;max-width:280px}.card .pan img{display:block;width:100%;height:auto}.card .pan figcaption{font-size:14px;color:var(--grey);padding-top:6px}
 .goods .g.out{opacity:.55}
 .goods .gi span{color:var(--todo-strong);font-style:italic;font-size:14px}
 .goods .gt{padding:12px 14px 16px;display:grid;gap:4px}
@@ -710,10 +711,9 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   <div class="wrap">
     <div class="page-head"><span class="eyebrow">O nás</span><h1>Spolek Živý zámek Toužim</h1><p>Vznikli jsme v roce 2016 z občanské iniciativy. Chceme zámek chránit, ukazovat lidem a postupně ho obnovit ve spolupráci s městem Toužim, které je jeho vlastníkem.</p></div>
     <div class="two">
-      <div class="card"><h2 class="h3">Kdo jsme</h2><p>Jsme parta dobrovolníků, kterým není osud zámku jedno. Spolek vede předsedkyně <b>Pavla Vokurková</b> a místopředsedkyně <b>Alena Šlajerová</b>. O technický stav zámku se stará zámecký pán <b>Jan Policar</b>.</p></div>
+      <div class="card"><h2 class="h3">Kdo jsme</h2><p>Jsme parta dobrovolníků, kterým není osud zámku jedno. Spolek vede předsedkyně <b>Pavla Vokurková</b> a místopředsedkyně <b>Alena Šlajerová</b>. O technický stav zámku se stará zámecký pán <b>Jan Policar</b>.</p><div class="lidi"><figure class="pan"><img src="img/predsedkyne.jpg" alt="Pavla Vokurková a Alena Šlajerová s hrnky svařáku na nádvoří zámku" loading="lazy"><figcaption>Pavla Vokurková (vlevo) a Alena Šlajerová</figcaption></figure><figure class="pan"><img src="img/zamecky-pan.jpg" alt="Jan Policar na nádvoří zámku s rezavou helmou na hlavě" loading="lazy"><figcaption>Zámecký pán Jan Policar</figcaption></figure></div></div>
       <div class="card"><h2 class="h3">Dokumenty</h2><ul class="docs"><li><a href="docs/stanovy.pdf" target="_blank" rel="noopener">Stanovy spolku</a> <small>PDF · platné od 12. 7. 2026</small></li><li><a href="docs/clensky-rad.pdf" target="_blank" rel="noopener">Členský řád</a> <small>PDF</small></li><li><a href="docs/prihlaska.pdf" target="_blank" rel="noopener">Přihláška za člena</a> <small>PDF k vytištění</small></li></ul><p>Spolek je zapsán u Krajského soudu v Plzni, sp. zn. L 7540, IČO 04690770.</p></div>
     </div>
-    <div class="lidi"><figure class="pan"><img src="img/predsedkyne.jpg" alt="Pavla Vokurková a Alena Šlajerová s hrnky svařáku na nádvoří zámku" loading="lazy"><figcaption>Pavla Vokurková (vlevo) a Alena Šlajerová</figcaption></figure><figure class="pan"><img src="img/zamecky-pan.jpg" alt="Jan Policar na nádvoří zámku s rezavou helmou na hlavě" loading="lazy"><figcaption>Zámecký pán Jan Policar</figcaption></figure></div>
     <div class="block">
       <div class="lab"><span class="eyebrow">Ohlédnutí</span><h2>Z našeho archivu</h2><p style="color:var(--grey)">Seřazeno podle data pořízení.</p></div>
       <div class="body"><div class="photos">
@@ -903,7 +903,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   detail.addEventListener('click',function(e){var b=e.target.closest('button[data-i]');if(b)lbOpen(curPhotos,+b.dataset.i);var q=e.target.closest('button.poster');if(q)lbOpen([q.dataset.src])});
   document.addEventListener('click',function(e){var b=e.target.closest('button.pz');if(b)lbOpen([b.dataset.src])});
   // fotky v galeriích (.photos) a u lidí ve spolku: klik nebo Enter otevře zvětšení
-  var ZSEL='.photos img, .lidi img';
+  var ZSEL='.photos img, .card .pan img';
   function zoomImg(img){var g=img.closest('.photos')||img.closest('.lidi')||img.parentNode,imgs=[].slice.call(g.querySelectorAll('img'));lbOpen(imgs.map(function(x){return x.currentSrc||x.src}),imgs.indexOf(img))}
   function zoomPrep(){[].forEach.call(document.querySelectorAll(ZSEL),function(img){if(img.tabIndex<0){img.tabIndex=0;img.setAttribute('role','button');img.setAttribute('aria-label',T('Zvětšit fotku')+(img.alt?': '+img.alt:''))}})}
   document.addEventListener('click',function(e){var img=e.target.closest(ZSEL);if(img)zoomImg(img)});
