@@ -218,15 +218,18 @@ window.WEB={
   },
   {
    "nazev": "Dílna U mnicha",
-   "odkaz": "http://www.dilnaumnicha.cz/"
+   "odkaz": "http://www.dilnaumnicha.cz/",
+   "logo": "img/partneri/dilna-u-mnicha.png"
   },
   {
    "nazev": "Kudyznudy.cz",
-   "odkaz": "https://www.kudyznudy.cz/"
+   "odkaz": "https://www.kudyznudy.cz/",
+   "logo": "img/partneri/kudy-z-nudy.png"
   },
   {
    "nazev": "Givt.cz",
-   "odkaz": "https://givt.cz/"
+   "odkaz": "https://givt.cz/",
+   "logo": "img/partneri/givt.png"
   },
   {
    "nazev": "Gabriela Pilná",
@@ -1052,15 +1055,18 @@ window.L10N={
     },
     {
      "nazev": "Dílna U mnicha",
-     "odkaz": "http://www.dilnaumnicha.cz/"
+     "odkaz": "http://www.dilnaumnicha.cz/",
+     "logo": "img/partneri/dilna-u-mnicha.png"
     },
     {
      "nazev": "Kudyznudy.cz",
-     "odkaz": "https://www.kudyznudy.cz/"
+     "odkaz": "https://www.kudyznudy.cz/",
+     "logo": "img/partneri/kudy-z-nudy.png"
     },
     {
      "nazev": "Givt.cz",
-     "odkaz": "https://givt.cz/"
+     "odkaz": "https://givt.cz/",
+     "logo": "img/partneri/givt.png"
     },
     {
      "nazev": "Gabriela Pilná",
@@ -1918,15 +1924,18 @@ window.L10N={
     },
     {
      "nazev": "Dílna U mnicha",
-     "odkaz": "http://www.dilnaumnicha.cz/"
+     "odkaz": "http://www.dilnaumnicha.cz/",
+     "logo": "img/partneri/dilna-u-mnicha.png"
     },
     {
      "nazev": "Kudyznudy.cz",
-     "odkaz": "https://www.kudyznudy.cz/"
+     "odkaz": "https://www.kudyznudy.cz/",
+     "logo": "img/partneri/kudy-z-nudy.png"
     },
     {
      "nazev": "Givt.cz",
-     "odkaz": "https://givt.cz/"
+     "odkaz": "https://givt.cz/",
+     "logo": "img/partneri/givt.png"
     },
     {
      "nazev": "Gabriela Pilná",
