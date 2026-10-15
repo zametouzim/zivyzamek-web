@@ -318,7 +318,12 @@
   "Zpráva": "Message",
   "Nevyplňujte": "Leave empty",
   "Přeskočit na obsah": "Skip to content",
-  "Pavla Vokurková, předsedkyně<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br>Alena Šlajerová, místopředsedkyně<br><a href=\"tel:+420728290280\">+420 728 290 280</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>": "Pavla Vokurková, chair<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br>Alena Šlajerová, vice-chair<br><a href=\"tel:+420728290280\">+420 728 290 280</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>"
+  "Pavla Vokurková, předsedkyně<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br>Alena Šlajerová, místopředsedkyně<br><a href=\"tel:+420728290280\">+420 728 290 280</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>": "Pavla Vokurková, chair<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br>Alena Šlajerová, vice-chair<br><a href=\"tel:+420728290280\">+420 728 290 280</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>",
+  "Průběh zdi (červeně) v plánu zahrady": "The course of the wall (red) in the garden plan",
+  "3. 4. 2026: odkrytá koruna zdi": "3 April 2026: the exposed top of the wall",
+  "3. 4. 2026: zeď míří k Dolnímu zámku": "3 April 2026: the wall heads towards the Lower Castle",
+  "30. 4. 2026: zeď v noci": "30 April 2026: the wall at night",
+  "27. 9. 2026: zeď na podzim": "27 September 2026: the wall in autumn"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, home",
@@ -370,7 +375,12 @@
   "Hlavní menu": "Main menu",
   "Na této stránce": "On this page",
   "Autorská práva": "Copyright",
-  "Spolek dobrovolníků, který od roku 2015 oživuje zámek v Toužimi. Koncerty, divadlo, letní kino, prohlídky Janova hradu, brigády a obnova zámecké zahrady.": "A volunteer association bringing the castle in Toužim back to life since 2015. Concerts, theatre, open-air cinema, tours of Jan's Castle, work days and the restoration of the castle garden."
+  "Spolek dobrovolníků, který od roku 2015 oživuje zámek v Toužimi. Koncerty, divadlo, letní kino, prohlídky Janova hradu, brigády a obnova zámecké zahrady.": "A volunteer association bringing the castle in Toužim back to life since 2015. Concerts, theatre, open-air cinema, tours of Jan's Castle, work days and the restoration of the castle garden.",
+  "Výřez plánu zahrady s průběhem hradební zdi zakresleným červenou čarou přes záhony k Dolnímu zámku": "Detail of the garden plan with the course of the town wall drawn as a red line across the beds to the Lower Castle",
+  "Odkrytá kamenná koruna zdi v rozkopané ploše, v pozadí minibagr": "The exposed stone top of the wall in the dug-up area, a mini excavator in the background",
+  "Pás kamenné zdi vede rozkopanou plochou k Dolnímu zámku": "A strip of stone wall runs across the dug-up area towards the Lower Castle",
+  "Odkrytá zeď v noci, za ní osvětlená ulice a domy": "The exposed wall at night, with a lit street and houses behind it",
+  "Kamenná zeď v zarostlé ploše za podvečerního slunce, v pozadí minibagr a dumper": "The stone wall in the overgrown area in the evening sun, a mini excavator and dumper in the background"
  },
  "js": {
   "Akce nenalezena.": "Event not found.",

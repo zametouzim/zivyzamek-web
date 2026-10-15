@@ -168,6 +168,7 @@ main section[data-page]{padding-block:0 96px}
 .photos figcaption{font-size:14px;color:var(--grey);padding-top:6px}
 .p-a{grid-column:span 7}.p-b{grid-column:span 5}.p-h{grid-column:span 6}
 .photos .r{aspect-ratio:4/3;overflow:hidden}
+.photos .p-full{grid-column:1/-1}.photos .p-full .r{aspect-ratio:auto}
 @media (max-width:700px){.photos{grid-template-columns:1fr 1fr}.photos figure{grid-column:span 1}.p-a,.p-h{grid-column:span 2}}
 
 .nums{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -584,7 +585,13 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
       <div class="lab"><span class="eyebrow">Objev</span><h2>Hradební zeď</h2></div>
       <div class="body">
         <p>V březnu 2026 jsme pod hlínou narazili na původní hradební zeď, pravděpodobně z počátku 15. století. V dubnu ji archeologové prozkoumali a zdokumentovali. Aby zůstala chráněná, znovu ji zasypeme a na jejím místě postavíme informační tabuli s fotkami z výzkumu.</p>
-        <p class="todo">fotky zdi z výzkumu</p>
+        <div class="photos">
+          <figure class="p-full"><div class="r"><img src="img/zed/plan.jpg" alt="Výřez plánu zahrady s průběhem hradební zdi zakresleným červenou čarou přes záhony k Dolnímu zámku" loading="lazy"></div><figcaption>Průběh zdi (červeně) v plánu zahrady</figcaption></figure>
+          <figure class="p-h"><div class="r"><img src="img/zed/2026-04-03-a.jpg" alt="Odkrytá kamenná koruna zdi v rozkopané ploše, v pozadí minibagr" loading="lazy"></div><figcaption>3. 4. 2026: odkrytá koruna zdi</figcaption></figure>
+          <figure class="p-h"><div class="r"><img src="img/zed/2026-04-03-b.jpg" alt="Pás kamenné zdi vede rozkopanou plochou k Dolnímu zámku" loading="lazy"></div><figcaption>3. 4. 2026: zeď míří k Dolnímu zámku</figcaption></figure>
+          <figure class="p-h"><div class="r"><img src="img/zed/2026-04-30-noc.jpg" alt="Odkrytá zeď v noci, za ní osvětlená ulice a domy" loading="lazy"></div><figcaption>30. 4. 2026: zeď v noci</figcaption></figure>
+          <figure class="p-h"><div class="r"><img src="img/zed/2026-09-27.jpg" alt="Kamenná zeď v zarostlé ploše za podvečerního slunce, v pozadí minibagr a dumper" loading="lazy"></div><figcaption>27. 9. 2026: zeď na podzim</figcaption></figure>
+        </div>
       </div>
     </div>
 

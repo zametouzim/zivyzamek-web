@@ -318,7 +318,12 @@
   "Zpráva": "Nachricht",
   "Nevyplňujte": "Nicht ausfüllen",
   "Přeskočit na obsah": "Zum Inhalt springen",
-  "Pavla Vokurková, předsedkyně<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br>Alena Šlajerová, místopředsedkyně<br><a href=\"tel:+420728290280\">+420 728 290 280</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>": "Pavla Vokurková, Vorsitzende<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br>Alena Šlajerová, stellvertretende Vorsitzende<br><a href=\"tel:+420728290280\">+420 728 290 280</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>"
+  "Pavla Vokurková, předsedkyně<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br>Alena Šlajerová, místopředsedkyně<br><a href=\"tel:+420728290280\">+420 728 290 280</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>": "Pavla Vokurková, Vorsitzende<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br>Alena Šlajerová, stellvertretende Vorsitzende<br><a href=\"tel:+420728290280\">+420 728 290 280</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>",
+  "Průběh zdi (červeně) v plánu zahrady": "Verlauf der Mauer (rot) im Gartenplan",
+  "3. 4. 2026: odkrytá koruna zdi": "3. 4. 2026: die freigelegte Mauerkrone",
+  "3. 4. 2026: zeď míří k Dolnímu zámku": "3. 4. 2026: die Mauer läuft zum Unteren Schloss",
+  "30. 4. 2026: zeď v noci": "30. 4. 2026: die Mauer bei Nacht",
+  "27. 9. 2026: zeď na podzim": "27. 9. 2026: die Mauer im Herbst"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, Startseite",
@@ -370,7 +375,12 @@
   "Hlavní menu": "Hauptmenü",
   "Na této stránce": "Auf dieser Seite",
   "Autorská práva": "Urheberrecht",
-  "Spolek dobrovolníků, který od roku 2015 oživuje zámek v Toužimi. Koncerty, divadlo, letní kino, prohlídky Janova hradu, brigády a obnova zámecké zahrady.": "Ein Verein von Freiwilligen, der seit 2015 das Schloss in Toužim (Theusing) wiederbelebt. Konzerte, Theater, Sommerkino, Führungen durch Jans Burg, Arbeitseinsätze und die Erneuerung des Schlossgartens."
+  "Spolek dobrovolníků, který od roku 2015 oživuje zámek v Toužimi. Koncerty, divadlo, letní kino, prohlídky Janova hradu, brigády a obnova zámecké zahrady.": "Ein Verein von Freiwilligen, der seit 2015 das Schloss in Toužim (Theusing) wiederbelebt. Konzerte, Theater, Sommerkino, Führungen durch Jans Burg, Arbeitseinsätze und die Erneuerung des Schlossgartens.",
+  "Výřez plánu zahrady s průběhem hradební zdi zakresleným červenou čarou přes záhony k Dolnímu zámku": "Ausschnitt aus dem Gartenplan mit dem Verlauf der Stadtmauer als rote Linie über die Beete zum Unteren Schloss",
+  "Odkrytá kamenná koruna zdi v rozkopané ploše, v pozadí minibagr": "Die freigelegte steinerne Mauerkrone in der aufgegrabenen Fläche, im Hintergrund ein Minibagger",
+  "Pás kamenné zdi vede rozkopanou plochou k Dolnímu zámku": "Ein Streifen Steinmauer führt über die aufgegrabene Fläche zum Unteren Schloss",
+  "Odkrytá zeď v noci, za ní osvětlená ulice a domy": "Die freigelegte Mauer bei Nacht, dahinter eine beleuchtete Straße und Häuser",
+  "Kamenná zeď v zarostlé ploše za podvečerního slunce, v pozadí minibagr a dumper": "Die Steinmauer im bewachsenen Gelände in der Abendsonne, im Hintergrund Minibagger und Dumper"
  },
  "js": {
   "Akce nenalezena.": "Veranstaltung nicht gefunden.",
