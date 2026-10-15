@@ -243,6 +243,7 @@ dl.facts dd{margin:0}
 .goods .g{background:var(--panel);display:flex;flex-direction:column}
 .goods .gi{aspect-ratio:4/3;background:color-mix(in srgb,var(--navy) 10%,transparent);display:flex;align-items:center;justify-content:center;overflow:hidden}
 .goods .gi img{width:100%;height:100%;object-fit:contain}
+.photos img,.card .pan img{cursor:zoom-in}
 .card .lidi{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;align-items:start}.card .lidi .pan{margin:0;max-width:none}.card .lidi .pan img{aspect-ratio:1;object-fit:cover}
 .card .pan{margin:16px 0 0;max-width:280px}.card .pan img{display:block;width:100%;height:auto}.card .pan figcaption{font-size:14px;color:var(--grey);padding-top:6px}
 .goods .g.out{opacity:.55}
@@ -901,10 +902,17 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   function lbOpen(list,i){lbImgs=list;lbShow(i||0)}
   detail.addEventListener('click',function(e){var b=e.target.closest('button[data-i]');if(b)lbOpen(curPhotos,+b.dataset.i);var q=e.target.closest('button.poster');if(q)lbOpen([q.dataset.src])});
   document.addEventListener('click',function(e){var b=e.target.closest('button.pz');if(b)lbOpen([b.dataset.src])});
+  // fotky v galeriích (.photos) a u lidí ve spolku: klik nebo Enter otevře zvětšení
+  var ZSEL='.photos img, .card .pan img';
+  function zoomImg(img){var g=img.closest('.photos')||img.closest('.lidi')||img.parentNode,imgs=[].slice.call(g.querySelectorAll('img'));lbOpen(imgs.map(function(x){return x.currentSrc||x.src}),imgs.indexOf(img))}
+  function zoomPrep(){[].forEach.call(document.querySelectorAll(ZSEL),function(img){if(img.tabIndex<0){img.tabIndex=0;img.setAttribute('role','button');img.setAttribute('aria-label',T('Zvětšit fotku')+(img.alt?': '+img.alt:''))}})}
+  document.addEventListener('click',function(e){var img=e.target.closest(ZSEL);if(img)zoomImg(img)});
+  document.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target.matches&&e.target.matches(ZSEL)){e.preventDefault();zoomImg(e.target)}});
   lb.addEventListener('click',function(e){if(e.target.classList.contains('pv'))lbShow(lbI-1);else if(e.target.classList.contains('nx'))lbShow(lbI+1);else lb.hidden=true});
   document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowLeft')lbShow(lbI-1);if(e.key==='ArrowRight')lbShow(lbI+1)});
 
   function show(){
+    setTimeout(zoomPrep,0);
     var id=(location.hash||'#domu').slice(1), jump=null;
     if(id==='archiv'){id='program';jump='archiv';}
     if(id==='dotaz'){id='navsteva';jump='dotaz';}
