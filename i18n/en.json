@@ -238,7 +238,6 @@
   "PDF": "PDF",
   "Přihláška za člena": "Membership application",
   "PDF k vytištění": "PDF to print",
-  "Výroční zprávy <span class=\"todo\">za které roky?</span>": "Annual reports <span class=\"todo\">for which years?</span>",
   "Spolek je zapsán u Krajského soudu v Plzni, sp. zn. L 7540, IČO 04690770.": "The association is registered at the Regional Court in Plzeň, file no. L 7540, IČO 04690770.",
   "Ohlédnutí": "Looking back",
   "Z našeho archivu": "From our archive",
@@ -256,7 +255,6 @@
   "Na zahradu teď potřebujeme hlavně materiál (beton, kámen, dřevo), pronájem strojů a jídlo pro dobrovolníky na brigádách.": "For the garden, what we need most right now is materials (concrete, stone, timber), machinery hire and food for the volunteers on work days.",
   "Transparentní účet": "Transparent account",
   "Kopírovat": "Copy",
-  "Každý pohyb na účtu je veřejně vidět. <span class=\"todo\" style=\"color:var(--sun);border-color:var(--sun)\">potvrzení o daru?</span>": "Every transaction on the account is publicly visible. <span class=\"todo\" style=\"color:var(--sun);border-color:var(--sun)\">donation receipt?</span>",
   "<a class=\"btn fill\" href=\"https://www.givt.cz\" target=\"_blank\" rel=\"noopener\">Darovat přes Givt</a>": "<a class=\"btn fill\" href=\"https://www.givt.cz\" target=\"_blank\" rel=\"noopener\">Donate via Givt</a>",
   "Přijďte pomoct": "Come and help",
   "Brigády jsou několikrát do roka a přijít může každý. Nářadí půjčíme a postaráme se o jídlo.": "Work days take place several times a year and anyone can come. We lend tools and provide food.",
@@ -325,7 +323,8 @@
   "Hlavní podpora projektu: grant 70&nbsp;000&nbsp;Kč.": "Main funder of the project: a grant of 70&nbsp;000&nbsp;CZK.",
   "Ve sbírce na Darujme.cz přispěli soukromí dárci 21&nbsp;896&nbsp;Kč a Nadace VIA ji podpořila dalšími 20&nbsp;000&nbsp;Kč.": "In the fundraiser on Darujme.cz, private donors gave 21&nbsp;896&nbsp;CZK and the VIA Foundation added another 20&nbsp;000&nbsp;CZK.",
   "Zámecký pán Jan Policar": "Our \"Lord of the Castle\", Jan Policar",
-  "Objednávky a dotazy na <a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>, pošleme i poštou.": "Orders and questions to <a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>; we can also send by post."
+  "Objednávky a dotazy na <a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>, pošleme i poštou.": "Orders and questions to <a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>; we can also send by post.",
+  "Každý pohyb na účtu je veřejně vidět. Potvrzení o daru vám rádi vystavíme, stačí napsat na <a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>.": "Every transaction on the account is publicly visible. We will gladly issue a donation receipt, just write to <a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>."
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, home",
