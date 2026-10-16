@@ -134,7 +134,7 @@ window.WEB={
    {
     "kdy": "duben 2027",
     "co": "Betonové základy pod všechny čtyři záhony",
-    "stav": "probíhá"
+    "stav": "plánováno"
    },
    {
     "kdy": "duben–květen 2027",
@@ -958,7 +958,7 @@ window.L10N={
      {
       "kdy": "April 2027",
       "co": "Concrete foundations under all four beds",
-      "stav": "probíhá"
+      "stav": "plánováno"
      },
      {
       "kdy": "April–May 2027",
@@ -1844,7 +1844,7 @@ window.L10N={
      {
       "kdy": "April 2027",
       "co": "Betonfundamente unter allen vier Beeten",
-      "stav": "probíhá"
+      "stav": "plánováno"
      },
      {
       "kdy": "April–Mai 2027",
