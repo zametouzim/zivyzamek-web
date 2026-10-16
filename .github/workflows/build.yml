@@ -1,9 +1,9 @@
-# Po uložení v administraci přestaví data webu (tools/build.py) a znovu nasadí testovací web.
+# Po uložení v administraci doplní překlady (tools/preklad.py), přestaví data webu (tools/build.py) a znovu nasadí testovací web.
 name: Sestavení webu
 on:
   push:
     branches: [main]
-    paths: ['content/**', 'img/**', 'i18n/**', 'admin/config.yml', 'tools/build.py']
+    paths: ['content/**', 'img/**', 'i18n/**', 'admin/config.yml', 'tools/build.py', 'tools/preklad.py']
   workflow_dispatch:
 permissions:
   contents: write
@@ -18,13 +18,17 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install pillow
+      - name: Přeložit nové texty do EN a DE (DeepL, jen když je nastaven klíč DEEPL_KEY)
+        env:
+          DEEPL_KEY: ${{ secrets.DEEPL_KEY }}
+        run: python tools/preklad.py
       - run: python i18n/sestav.py
       - run: python tools/build.py
       - name: Uložit sestavená data
         run: |
           git config user.name "Sestavení webu"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A data admin/demo img index.html
+          git add -A content data admin/demo img index.html
           if git diff --cached --quiet; then echo "beze změn"; exit 0; fi
           git commit -m "Sestavení webu po změně v administraci"
           git push
