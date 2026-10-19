@@ -132,6 +132,11 @@ window.WEB={
     "stav": "probíhá"
    },
    {
+    "kdy": "březen–duben 2027",
+    "co": "Drátěná treláž na růže na zdi Dolního zámku",
+    "stav": "plánováno"
+   },
+   {
     "kdy": "duben 2027",
     "co": "Betonové základy pod všechny čtyři záhony",
     "stav": "plánováno"
@@ -954,6 +959,11 @@ window.L10N={
       "kdy": "10/2026",
       "co": "Clearing the upper half and the play slope, work party 17–18 Oct",
       "stav": "probíhá"
+     },
+     {
+      "kdy": "March–April 2027",
+      "co": "Wire trellis for roses on the Lower Castle wall",
+      "stav": "plánováno"
      },
      {
       "kdy": "April 2027",
@@ -1840,6 +1850,11 @@ window.L10N={
       "kdy": "10/2026",
       "co": "Aufräumen der oberen Hälfte und des Spielhangs, Arbeitseinsatz 17.–18. 10.",
       "stav": "probíhá"
+     },
+     {
+      "kdy": "März–April 2027",
+      "co": "Rankgitter aus Draht für Rosen an der Mauer des Unteren Schlosses",
+      "stav": "plánováno"
      },
      {
       "kdy": "April 2027",
