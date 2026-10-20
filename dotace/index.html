@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<!-- Interní dotační kalendář spolku. Zdroj: /mnt/project-files/dotace/dotacni-kalendar.html (vlákno Dotace), sem se kopíruje beze změn. -->
+<title>Dotační kalendář spolku</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: jedna úzká sloupcová stránka; nahoře "teď na řadě", pak roční pás po měsících, pak karty dotací */
+:root{
+  --bg:#f5f6f3; --surface:#ffffff; --ink:#1c2321; --muted:#5d6864; --line:#d8ddd9;
+  --accent:#2f5d50; --accent-weak:#dbe8e2; --warn:#a8670f; --warn-weak:#f6e8d2; --est:#9aa6a1;
+  --display:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --body:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121715; --surface:#1a211e; --ink:#e4eae7; --muted:#9aa7a2; --line:#2e3834;
+  --accent:#7fbfa9; --accent-weak:#23382f; --warn:#e3a54a; --warn-weak:#3a2e1b; --est:#5f6d68; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121715; --surface:#1a211e; --ink:#e4eae7; --muted:#9aa7a2; --line:#2e3834;
+  --accent:#7fbfa9; --accent-weak:#23382f; --warn:#e3a54a; --warn-weak:#3a2e1b; --est:#5f6d68; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 48px}
+.wrap{max-width:860px;margin:0 auto;display:grid;gap:36px}
+h1,h2{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.2}
+h1{font-size:2rem} h2{font-size:1.3rem}
+.eyebrow{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.lead{color:var(--muted);margin:8px 0 0;max-width:62ch}
+section{display:grid;gap:14px}
+a{color:var(--accent)}
+/* Teď na řadě */
+.next{display:grid;gap:10px}
+.nx{display:grid;grid-template-columns:7.5rem 1fr auto;gap:14px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 16px}
+.nx .d{font-variant-numeric:tabular-nums;font-weight:600}
+.nx .t{min-width:0}
+.nx .t b{display:block} .nx .t span{color:var(--muted);font-size:.88rem}
+.pill{font-size:.78rem;font-weight:600;padding:3px 10px;border-radius:99px;white-space:nowrap;background:var(--accent-weak);color:var(--accent)}
+.pill.soon{background:var(--warn-weak);color:var(--warn)}
+.pill.past{background:transparent;color:var(--muted);border:1px solid var(--line)}
+.nx.first{border-color:var(--warn)}
+@media (max-width:520px){.nx{grid-template-columns:1fr auto}.nx .d{grid-column:1/-1}}
+/* Roční pás */
+.band{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:8px}
+.grid{display:grid;grid-template-columns:minmax(150px,1.6fr) repeat(12,minmax(38px,1fr));min-width:640px}
+.grid>div{border-bottom:1px solid var(--line);padding:8px 4px;font-size:.82rem;display:flex;align-items:center}
+.grid .h{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);justify-content:center;font-variant-numeric:tabular-nums}
+.grid .h.y{justify-content:flex-start;padding-left:12px}
+.grid .n{padding-left:12px;font-weight:500}
+.grid .n small{color:var(--muted);font-weight:400;display:block;font-size:.75rem}
+.grid .n{flex-direction:column;align-items:flex-start;justify-content:center}
+.c{position:relative;justify-content:center}
+.c i{display:block;height:14px;width:100%;border-radius:3px}
+.c i.on{background:var(--accent)}
+.c i.est{background:repeating-linear-gradient(135deg,var(--est) 0 3px,transparent 3px 6px);border:1px solid var(--est)}
+.c i.dl{background:var(--warn)}
+.grid .last{border-bottom:0}
+.legend{display:flex;flex-wrap:wrap;gap:16px;font-size:.82rem;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{display:inline-block;width:18px;height:10px;border-radius:2px}
+/* Karty */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:grid;gap:6px;align-content:start;min-width:0}
+.card h3{margin:0;font-size:1rem}
+.card .who{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:3px 10px;font-size:.88rem}
+.card dt{color:var(--muted)} .card dd{margin:0;min-width:0}
+.tag{justify-self:start;font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:4px;border:1px solid var(--line);color:var(--muted)}
+.tag.ok{border-color:var(--accent);color:var(--accent)}
+.note{font-size:.88rem;color:var(--muted);max-width:68ch}
+footer{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<header>
+  <p class="eyebrow">Živý zámek Toužim, z. s. · stav k 20. 10. 2026</p>
+  <h1>Dotační kalendář</h1>
+  <p class="lead">Kdy o co žádat. Nahoře nejbližší uzávěrky, pod tím celý rok po měsících a karty jednotlivých dotací. Každé pondělí ráno Claude výzvy zkontroluje a do vlákna Dotace napíše, jen když se něco změní.</p>
+</header>
+
+<section>
+  <h2>Teď na řadě</h2>
+  <div class="next" id="next"></div>
+</section>
+
+<section>
+  <h2>Rok po měsících</h2>
+  <div class="band"><div class="grid" id="grid"></div></div>
+  <div class="legend">
+    <span><i style="background:var(--accent)"></i>příjem žádostí, termín známý</span>
+    <span><i style="background:var(--warn)"></i>uzávěrka</span>
+    <span><i style="background:repeating-linear-gradient(135deg,var(--est) 0 3px,transparent 3px 6px);border:1px solid var(--est)"></i>přibližně, podle minulého roku nebo Michala</span>
+  </div>
+</section>
+
+<section>
+  <h2>Pravidelné dotace</h2>
+  <div class="cards" id="regular"></div>
+</section>
+
+<section>
+  <h2>Nové zdroje na provoz a budování</h2>
+  <p class="note">Zatím jste o ně nežádali. Všechny jsou z vyhledávání; podmínky je potřeba ověřit na stránce poskytovatele před žádostí.</p>
+  <div class="cards" id="new"></div>
+</section>
+
+<section>
+  <h2>Kde hledat další zdroje</h2>
+  <p class="note">Přehledy, ze kterých se dají vybírat další výzvy. Jak data získávají placené weby, jsem nezjistil, svůj postup nikde nepopisují.</p>
+  <div class="cards">
+    <article class="card"><div class="who">Úřad vlády ČR</div><h3><a href="https://uv.gov.cz/assets/ppov/rnno/dokumenty/Hlavni_oblasti_2026.pdf" target="_blank" rel="noopener">Hlavní oblasti dotační politiky vůči NNO</a></h3><dl><dt>Co</dt><dd>každý rok vydávaný seznam státních programů pro neziskovky ve 22 oblastech</dd><dt>K čemu</dt><dd>najít ministerské programy mimo kulturu</dd></dl></article>
+    <article class="card"><div class="who">RIS (risy.cz)</div><h3><a href="https://www.risy.cz/cs/vyhledavace/krajske-dotacni-tituly" target="_blank" rel="noopener">Krajské dotační tituly</a></h3><dl><dt>Co</dt><dd>databáze krajských programů s termíny</dd><dt>K čemu</dt><dd>další programy Karlovarského kraje</dd></dl></article>
+    <article class="card"><div class="who">propamatky.cz</div><h3><a href="https://www.propamatky.cz/" target="_blank" rel="noopener">Přehled výzev na památky</a></h3><dl><dt>Co</dt><dd>výzvy krajů, nadací a fondů na památky</dd><dt>K čemu</dt><dd>obnova a budování v areálu zámku</dd></dl></article>
+  </div>
+</section>
+
+<footer>
+  Údaje spolku, přehled dosavadních dotací, smlouva o výpůjčce s městem a postup u žádosti jsou v podrobném <a href="https://claude.ai/code/artifact/280aa9f5-1762-41c4-acfe-ab0bf8cdc8ee" target="_blank" rel="noopener">dotačním manuálu</a>. Ministerstvo kultury se nehlídá (2026 zpoplatněná žádost bez úspěchu).
+</footer>
+</div>
+
+<script>
+// Osa: říjen 2026 až září 2027 (index 0 = říjen 2026)
+const MONTHS=["říj","lis","pro","led","úno","bře","dub","kvě","čvn","čvc","srp","zář"];
+const YEARS=[2026,2026,2026,2027,2027,2027,2027,2027,2027,2027,2027,2027];
+// m: měsíce [index, typ] typ on|est|dl
+const REG=[
+ {who:"Karlovarský kraj",name:"Podpora kulturních aktivit",what:"akce na příští rok",when:"27. 10.–9. 11. 2026",how:"elektronicky, dotační portál kraje",src:"z vyhledávání",url:"https://www.kr-karlovarsky.cz/dotace/podpora-kulturnich-aktivit",m:[[0,"on"],[1,"dl"]]},
+ {who:"Město Toužim",name:"Individuální dotace",what:"činnost na celý rok",when:"do 20. 1. 2027",how:"přes podatelnu; pravidla a formuláře na webu města",src:"Michal",url:"https://www.touzim.cz/obcan/poskytovani-dotaci/",m:[[3,"dl"]]},
+ {who:"Město Toužim",name:"Program na podporu kulturních a sportovních aktivit",what:"konkrétní akce; 5 000–50 000 Kč, max. 2 žádosti",when:"2026: 16. 2.–16. 3. nebo do vyčerpání peněz",how:"přes podatelnu, formuláře na webu města",src:"z vyhledávání",url:"https://www.touzim.cz/obcan/zpravy/program-na-podporu-kulturnich-a-sportovnich-aktivit-pro-mesto-touzim-1537cs.html",m:[[4,"est"],[5,"est"]]},
+ {who:"Karlovarský kraj",name:"Podpora aktivit v cestovním ruchu",what:"cestovní ruch; 2026 rozděleno 3,45 mil. Kč mezi 33 projektů",when:"2026: 27. 1.–9. 2. (nový ročník zatím nevyhlášen)",how:"elektronicky, dotační portál kraje",src:"z vyhledávání",url:"https://www.kr-karlovarsky.cz/dotace/podpora-aktivit-v-cestovnim-ruchu",m:[[3,"est"],[4,"est"]]},
+ {who:"MAS Kraj živých vod",name:"Dr. ŽIVODA",what:"kulturní a sportovní akce s místními spolky (ne jarmarky a dětské dny)",when:"cca březen",how:"formulář e-mailem na krajzivychvod@seznam.cz podle vyhlášené výzvy",src:"Michal",url:"https://www.krajzivychvod.cz/drzivoda/",m:[[5,"est"]]},
+ {who:"Nadace ČEZ",name:"Zaměstnanecké granty",what:"až 50 000 Kč na činnost organizace",when:"1.–31. 3. (ročník 2026)",how:"jen na doporučení zaměstnance Skupiny ČEZ, který ve spolku dobrovolničí; ne dva roky po sobě",src:"z vyhledávání",url:"https://www.nadacecez.cz/cs/vyhlasovana-grantova-rizeni/zamestnanecke-granty-110067",m:[[5,"est"]]},
+ {who:"Nadace VIA",name:"Komunitní programy",what:"komunitní projekty",when:"nepravidelně, jednou za pár let",how:"podle výzvy",src:"Michal",url:"https://www.nadacevia.cz/",m:[]},
+ {who:"Nadace Život umělce",name:"Granty",what:"kultura",when:"termín zatím nezjištěn",how:"dřív jste žádali, teď se hlídá",src:"neověřeno",url:"https://www.nadace-zivot-umelce.cz/",m:[]},
+];
+const NEW=[
+ {who:"Nadace ČEZ",name:"Podpora regionů",what:"bez stropu, bez spoluúčasti; kultura, vybavení i další oblasti",when:"2026 do 12. 11.; ročník 2027 od 1. 1. 2027",how:"spolek zde ještě nežádal; plné podmínky (co nelze hradit) jsem nemohl otevřít",src:"z vyhledávání",url:"https://www.nadacecez.cz/cs/vyhlasovana-grantova-rizeni/podpora-regionu-110046",m:[[0,"on"],[1,"dl"],[3,"est"],[4,"est"],[5,"est"],[6,"est"],[7,"est"],[8,"est"],[9,"est"],[10,"est"],[11,"est"]]},
+ {who:"Kaufland + Nadace VIA",name:"Už to roste, už to klíčí",what:"až 100 000 Kč na založení nebo renovaci komunitní zahrady",when:"2026: vstupní dotazník do 8. 2.",how:"hodí se na zámeckou zahradu",src:"z vyhledávání",url:"https://cc.cz/snite-o-sousedskych-setkanich-a-spolecnych-zahoncich-kaufland-vam-na-komunitni-zahradu-prispeje-az-sto-tisic/",m:[[4,"est"]]},
+ {who:"MMR",name:"Dotace pro neziskové organizace",what:"udržitelný cestovní ruch, rozvoj regionů; až 70 % nákladů",when:"uzávěrka 31. 1. (2024 i 2025)",how:"rozvoj, ne kultura",src:"z vyhledávání",url:"https://WWW.MMR.CZ/getmedia/e9bc983c-edd6-424d-ae47-dc344d967cd3/2023_85672_Vyzva-pro-rok-2024_NNO.pdf.aspx?ext=.pdf",m:[[3,"est"]]},
+ {who:"Nadace na záchranu památek",name:"Opomíjené památky",what:"drobné památky, např. kaplička sv. Kříže",when:"pravidla 2026 nenalezena",how:"spolek smí žádat; souhlas vlastníka nutný",src:"z vyhledávání",url:"https://www.propamatky.cz/financovani/dotace/finance_662_pravidla.doc",m:[]},
+ {who:"Nadace Občanského fóra",name:"Památky a zdraví",what:"až 100 000 Kč",when:"2025: do 9. 7.",how:"jen zapsané kulturní památky; zda je zámek zapsaný, neověřeno",src:"z vyhledávání",url:"https://www.propamatky.cz/financovani/dotace/nadace-a-fondy/nadace-of-2025-paz.pdf",m:[[9,"est"]]},
+];
+// Termíny s přesným nebo odhadnutým datem pro "Teď na řadě"
+const DEADLINES=[
+ {d:"2026-11-09",label:"9. 11. 2026",t:"Kraj: Podpora kulturních aktivit",s:"žádosti od 27. 10.; ověřit na webu kraje"},
+ {d:"2027-01-20",label:"20. 1. 2027",t:"Město: individuální dotace na rok 2027",s:"přes podatelnu"},
+ {d:"2027-01-31",label:"cca 31. 1. 2027",t:"MMR: dotace pro neziskovky",s:"nový zdroj; termín podle let 2024 a 2025"},
+ {d:"2027-02-08",label:"cca 8. 2. 2027",t:"Kaufland + VIA: komunitní zahrady",s:"nový zdroj; termín podle roku 2026"},
+ {d:"2027-02-09",label:"cca 9. 2. 2027",t:"Kraj: Podpora aktivit v cestovním ruchu",s:"termín podle roku 2026 (27. 1.–9. 2.)"},
+ {d:"2027-03-16",label:"cca 16. 3. 2027",t:"Město: kulturní a sportovní aktivity",s:"termín podle roku 2026, nebo do vyčerpání peněz"},
+ {d:"2027-03-30",label:"březen 2027",t:"MAS: Dr. ŽIVODA",s:"přibližně podle Michala"},
+ {d:"2027-03-31",label:"31. 3. 2027",t:"Nadace ČEZ: Zaměstnanecké granty",s:"jen pokud spolek nedostal grant v roce 2026; potřeba doporučení zaměstnance ČEZ"}
+];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const today=new Date();today.setHours(0,0,0,0);
+const nx=document.getElementById("next");
+let firstShown=false, shown=0;
+DEADLINES.forEach(x=>{
+  const dt=new Date(x.d+"T00:00:00");const days=Math.round((dt-today)/864e5);
+  if(days<-7||shown>=4)return;
+  let pill,cls="";
+  if(days<0){pill='<span class="pill past">uplynulo</span>'}
+  else if(days<=21){pill='<span class="pill soon">za '+days+' dní</span>'}
+  else{pill='<span class="pill">za '+days+' dní</span>'}
+  if(days>=0&&!firstShown){cls=" first";firstShown=true}
+  nx.insertAdjacentHTML("beforeend",'<div class="nx'+cls+'"><div class="d">'+esc(x.label)+'</div><div class="t"><b>'+esc(x.t)+'</b><span>'+esc(x.s)+'</span></div>'+pill+'</div>');
+  shown++;
+});
+const g=document.getElementById("grid");
+let h='<div class="h y">Dotace</div>';
+MONTHS.forEach((m,i)=>{h+='<div class="h">'+m+(i===0||i===3?'<br>'+YEARS[i]:'')+'</div>'});
+const rows=[...REG,...NEW.filter(x=>x.m.length)];
+rows.forEach((r,ri)=>{
+  const last=ri===rows.length-1?" last":"";
+  h+='<div class="n'+last+'">'+esc(r.name)+'<small>'+esc(r.who)+'</small></div>';
+  for(let i=0;i<12;i++){const f=r.m.find(x=>x[0]===i);h+='<div class="c'+last+'">'+(f?'<i class="'+f[1]+'" title="'+esc(r.when)+'"></i>':'')+'</div>'}
+});
+g.innerHTML=h;
+function card(r){
+  const ok=r.src==="Michal";
+  return '<article class="card"><div class="who">'+esc(r.who)+'</div><h3>'+(r.url?'<a href="'+esc(r.url)+'" target="_blank" rel="noopener">'+esc(r.name)+'</a>':esc(r.name))+'</h3><dl><dt>Kdy</dt><dd>'+esc(r.when)+'</dd><dt>Na co</dt><dd>'+esc(r.what)+'</dd><dt>Jak</dt><dd>'+esc(r.how)+'</dd></dl><span class="tag'+(ok?' ok':'')+'">'+(ok?'termín od Michala':esc(r.src))+'</span></article>';
+}
+document.getElementById("regular").innerHTML=REG.map(card).join("");
+document.getElementById("new").innerHTML=NEW.map(card).join("");
+</script>
+
+</body>
+</html>
