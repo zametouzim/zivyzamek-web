@@ -618,7 +618,7 @@ window.L10N={
    "2023-11-04": {
     "title": "Halloween at the castle",
     "when": "Saturday · 15:00–17:30",
-    "html": "A spooky cellar, this year with a fog machine, a new photo corner and a lantern procession at 17:30."
+    "html": "A spooky cellar, this year with a fog machine, a new photo corner, craft workshops for children and a lantern procession at 17:30."
    },
    "2023-12-16": {
     "title": "Christmas gathering with mulled wine"
@@ -1509,7 +1509,7 @@ window.L10N={
    "2023-11-04": {
     "title": "Halloween im Schloss",
     "when": "Samstag · 15:00–17:30",
-    "html": "Ein Gruselkeller, dieses Jahr mit Nebelmaschine, eine neue Fotoecke und um 17:30 ein Laternenumzug."
+    "html": "Ein Gruselkeller, dieses Jahr mit Nebelmaschine, eine neue Fotoecke, Bastelwerkstätten für Kinder und um 17:30 ein Laternenumzug."
    },
    "2023-12-16": {
     "title": "Weihnachtstreffen mit Glühwein"
