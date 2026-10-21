@@ -270,7 +270,7 @@ window.L10N={
    },
    "2016-05-28": {
     "title": "Work party at the castle",
-    "html": "According to the invitation, a work party was planned from 10 am: cleaning the stage and auditorium and preparing for the summer events."
+    "html": "A work day from 10 am: cleaning the stage and the auditorium and getting ready for the summer events."
    },
    "2016-06-11": {
     "title": "Perseidy: the first castle concert by a country band",
@@ -318,7 +318,7 @@ window.L10N={
    },
    "2017-06-04": {
     "title": "Children's Day",
-    "html": "The first Children's Day at the castle. The weather looked threatening in the morning, but the sun came out in the afternoon."
+    "html": "The very first children's day at the castle. In the morning the weather gave us quite a scare, but in the afternoon it cleared up and the sun even came out. Thank you to everyone who helped make it a great day for the children."
    },
    "2017-07-08": {
     "title": "Historical afternoon at Toužim Castle"
@@ -353,7 +353,7 @@ window.L10N={
    "2018-06-09": {
     "title": "Children's Day",
     "when": "Saturday · 13:00",
-    "html": "According to the poster: Children's Day with the Divadlo poutníka Hrocha theatre (the fairy tales The Valley of the Clattering Mills and How the Journeyman Saved the Kingdom), a creative workshop and games for children."
+    "html": "A children's day with Divadlo poutníka Hrocha (the fairy tales Údolí klapajících mlýnků and Jak tovaryš zachránil království), a craft workshop and competitions for children."
    },
    "2018-06-23": {
     "title": "Midsummer celebrations"
@@ -416,7 +416,7 @@ window.L10N={
    },
    "2019-08-24": {
     "title": "Building the stage roof",
-    "html": "In summer 2019, volunteers built the wooden roof over the stage in the courtyard."
+    "html": "It started on 3 August with a planning meeting that unexpectedly turned straight into digging. Then the foundations were concreted, and on 24 August came the main building day with friends, partners and families, which we kept going until we dropped. By day four only the second half of the roof, the gutters and the paint were missing, and on 1 September we could report: done. Since then bands can play on the stage even in the rain."
    },
    "2019-09-07": {
     "title": "Punkovice at the castle (2nd year)",
@@ -494,7 +494,7 @@ window.L10N={
    },
    "2021-08-21": {
     "title": "Punkovice at the castle (4th year)",
-    "html": "Another punk party at the castle, where the bands played and the crowd partied."
+    "html": "Another year of the punk festival at the castle and, in our view, once again the party of the year. The bands played and the fans partied; the only pity is that not more of you came. So next year it's compulsory!"
    },
    "2021-09-12": {
     "title": "Toužim Summer",
@@ -524,16 +524,16 @@ window.L10N={
    },
    "2022-05-21": {
     "title": "Castle CITO, spring 2022",
-    "html": "The sixth year and ninth event of the castle CITO was the first one the association organised after taking over the baton from Dílna U mnicha. Geocachers and other volunteers came together for the annual routine: tidying the castle courtyard, cutting and burning self-seeded growth and raking leaves. With enough helpers, the plan also included tackling the notorious “Toužim heap” on the stage."
+    "html": "The sixth year and ninth event of the castle CITO was the first one the association organised after taking over the baton from Dílna U mnicha. Geocachers and other volunteers came together for the annual routine: tidying the castle courtyard, cutting and burning self-seeded growth and raking leaves. With enough helpers, the plan also included tackling the notorious “Toužim heap” on the stage. At 11:05 there was just one geocacher on site and we nearly fainted. In the end fewer people came than usual, but it was worth it and the heap did move."
    },
    "2022-05-28": {
     "title": "Children's Day at Toužim Castle",
     "when": "Saturday · 13:00",
-    "html": "Children's Day with prize contests, forestry craft demonstrations by Lesy ČR (Toužim forest district) and a mountain of foam from the Toužim volunteer fire brigade."
+    "html": "A children's day with prize competitions, forestry crafts and a wooden xylophone from Lesy ČR – Toužim forestry office, and a mountain of foam from the Toužim fire brigade (SDH Toužim). The turnout was fantastic: not a single competition card was left unfilled and we gave away all the prizes. After the children's programme there were evening concerts arranged by the Toužim Information Centre. Probably for the first time in history, the children got tired before their parents."
    },
    "2022-06-11": {
     "title": "Castle Festival, 6th year",
-    "html": "A rock festival in the courtyard. Cerberos, Loretta, Hlahol and Fata Morgana played."
+    "html": "The sixth castle Rockfest: fairy-tale weather, food and beer like poetry and everything ran just as it should. Cerberos Heavy Rock, Loretta, Hlahol and Fata Morgana played. Promotion by Radek Kalinič, refreshments by Sokolovna Toužim."
    },
    "2022-06-25": {
     "title": "History Day: founding of Toužim (553 years)",
@@ -541,7 +541,7 @@ window.L10N={
    },
    "2022-07-23": {
     "title": "Around the world with traveller Kompásek",
-    "html": "The traveller Kompásek took the children all around the world, right up to the cannibals."
+    "html": "Traveller Kompásek took the children all around the world and even to the cannibals. Don't worry, they didn't eat us. At one of the stops the children tried moving things with Chinese chopsticks."
    },
    "2022-07-30": {
     "title": "Castle Fler Craft Fair",
@@ -568,15 +568,15 @@ window.L10N={
    },
    "2023-04-30": {
     "title": "Witches' Night bonfire",
-    "html": "The band Dáma s hranostajem played as the witch was burned."
+    "html": "We burned the witch together with everyone who came to the castle, with music from the band Dáma s hranostajem. We hope you enjoyed it as much as we did."
    },
    "2023-05-20": {
     "title": "Castle CITO, spring 2023",
-    "html": "The eleventh edition of the traditional CITO volunteer work party brought a relaxed afternoon, a chance to meet friends and some spring work at the castle. The programme included cutting out self-seeded growth and reviving the castle rock garden, and possibly continuing work on lighting the castle cellars. The band Longway accompanied the work, light refreshments were provided and, as a reward, there was a guided tour of the castle grounds."
+    "html": "The eleventh year of the traditional CITO volunteer work day. On the programme: clearing self-seeded growth and reviving the castle rockery. For the first time ever there were more organisers than visitors, but by joining forces we got more than enough done. The weather was kind, the sausages tasted great and the band Longway played throughout."
    },
    "2023-06-03": {
     "title": "Children's Day",
-    "html": "Prize contests, creative workshops, foam from the Toužim volunteer firefighters, craft demonstrations by Lesy ČR and the band Dáma s hranostajem."
+    "html": "A children's day of fine weather, good spirits and a big turnout. The children enjoyed prize competitions, craft workshops, a mountain of foam from the Toužim fire brigade and craft demonstrations by Lesy ČR, with music from the band Dáma s hranostajem. Prizes were donated by Jednota COOP, A.P.S.A., Sokolovna Toužim, Vera Gurmet, Jaroslav Kavina, Dong Van Hving and Lékárna Pod smrkem."
    },
    "2023-06-17": {
     "title": "Castle Festival 2023 (7th year)",
@@ -605,7 +605,7 @@ window.L10N={
    "2023-07-29": {
     "title": "Castle fair",
     "when": "Saturday · 10:00–18:00",
-    "html": "Despite poor weather, the fair in the courtyard drew plenty of visitors."
+    "html": "The castle fair in the courtyard from ten to six. The weather wasn't kind and not all registered stallholders came, but the number of visitors pleasantly surprised us."
    },
    "2023-09-09": {
     "title": "Punkovice 2023",
@@ -613,7 +613,7 @@ window.L10N={
    },
    "2023-10-14": {
     "title": "Castle CITO, autumn 2023",
-    "html": "The twelfth edition of the traditional CITO volunteer work party brought an afternoon of meeting friends and autumn work in the castle grounds. The programme included cutting out self-seeded growth and tidying the grounds, with the exact tasks set according to current needs. Light refreshments and live music were provided for participants, and the reward for the work was a guided tour of the castle grounds."
+    "html": "The twelfth year of the traditional CITO volunteer work day. We raked leaves and cut back self-seeded growth. Journalists from the Czech News Agency (ČTK) also came. They didn't pick up a pickaxe, but they wrote <a href=\"https://karlovarska.drbna.cz/zpravy/8182-dobrovolnici-v-touzimi-postupne-ozivuji-zamek-ktery-roky-chatra.html\" target=\"_blank\" rel=\"noopener\">a few nice lines</a> about us."
    },
    "2023-11-04": {
     "title": "Halloween at the castle",
@@ -621,7 +621,8 @@ window.L10N={
     "html": "This year the Spooky Cellar was wrapped in fog from a fog machine and the Bogey Room was scarier than ever. Children made crafts in the workshop, played games and took pictures in the new photo corner. At half past five the lanterns lit up and the procession set off into the autumn dark. Our Halloween was even featured as a tip in the children's programme <a href=\"https://decko.ceskatelevize.cz/video/i1009328\" target=\"_blank\" rel=\"noopener\">Tamtam on ČT :D</a>. Thank you to everyone who came, see you next year!"
    },
    "2023-12-16": {
-    "title": "Christmas gathering with mulled wine"
+    "title": "Christmas gathering with mulled wine",
+    "html": "A farewell to the castle season from two to four in the afternoon: mulled wine, Christmas biscuits brought by everyone, a craft workshop for children and carols."
    },
    "2024-04-30": {
     "title": "Witches' Night bonfire",
@@ -633,7 +634,7 @@ window.L10N={
    },
    "2024-05-18": {
     "title": "Castle CITO, spring 2024",
-    "html": "A spring work party rounded off with a performance by Jean de Carro."
+    "html": "The weather looked miserable, but it cleared up during the day. Even with only a few helpers a lot got done, and at the end came a well-earned reward: a performance by Jean de Carro."
    },
    "2024-06-01": {
     "title": "Children's Day",
@@ -641,7 +642,7 @@ window.L10N={
    },
    "2024-06-15": {
     "title": "Castle Festival, 8th year",
-    "html": "A rock festival in the courtyard, organised by Kalimero Agency since 2017. Refreshments were provided by Hospůdka U Havlů."
+    "html": "The eighth castle Rockfest, organised since 2017 by Kalimero Agency. People, sound, promotion, bands, refreshments and weather: everything was top-notch. Refreshments were provided by Hospůdka U Havlů. Here's hoping we make it to the tenth anniversary!"
    },
    "2024-06-29": {
     "title": "Town Day: 555 years of Toužim",
@@ -653,7 +654,8 @@ window.L10N={
     "html": "The fair had stalls selling ceramics, woodwork, jewellery and accessories, plus refreshments and coffee. Live music accompanied the whole day, and there was theatre too."
    },
    "2024-08-31": {
-    "title": "Punkovice 2024"
+    "title": "Punkovice 2024",
+    "html": "Chyba 404, Drtimosaz, Vypitý lahváče, Já ještě nevim, ŠpuntQaně and Nízká úroveň played. A fairy-tale party: perfect weather, plenty of people, the beer flowed and both bands and fans had fun. Admission was voluntary, as always."
    },
    "2024-09-07": {
     "title": "Theatre Day at the castle",
@@ -661,7 +663,7 @@ window.L10N={
    },
    "2024-10-12": {
     "title": "Castle CITO Toužim 2024: Autumn",
-    "html": "According to the invitation: an autumn CITO event (8th year) as part of the 72 Hours project, with music by the castle band Longway; children could collect chestnuts."
+    "html": "An autumn CITO as part of the 72 Hours project, with music from the castle band Longway. Children could collect chestnuts."
    },
    "2024-10-26": {
     "title": "Halloween at the castle",
@@ -698,7 +700,7 @@ window.L10N={
    },
    "2025-08-02": {
     "title": "Pelmel muziky (musical medley)",
-    "html": "A musical afternoon with country dance demonstrations."
+    "html": "The first summer music afternoon. From 3 pm Duo Vacek a Brabec, Dáma s hranostajem and Kdo přijde played. It rained a little, but we carried on: dancers showed country dances and visitors learned them on the spot. In the evening we sat around the fire."
    },
    "2025-08-23": {
     "title": "Castle Night",
@@ -710,7 +712,7 @@ window.L10N={
    },
    "2025-09-13": {
     "title": "Punkovice 2025",
-    "html": "A punk mini-festival in the courtyard; the bands included Vypitý lahváče, V.V.U. and Nízká Úroveň."
+    "html": "Výblitek, Vypitý lahváče, V.V.Ú., Nízká úroveň and Flaška Visočinia played. A signed poster was auctioned for the first time, which has since become a tradition. Thanks to everyone who came!"
    },
    "2025-10-11": {
     "title": "Castle CITO, autumn work party",
@@ -737,7 +739,8 @@ window.L10N={
     "html": "A spring clean and help with the castle garden. Over the weekend about a fifth of the terrace was cleared, the bonfire for Witches' Night was prepared, the stage cleaned and the toilet facilities made ready. The band Longway played, and Hospůdka U Havlů cooked goulash."
    },
    "2026-04-30": {
-    "title": "Witches' Night bonfire and raising the maypole"
+    "title": "Witches' Night bonfire and raising the maypole",
+    "html": "Raising the maypole on Toužim square from 4 pm, followed by the witch burning in the castle courtyard from about six in the evening."
    },
    "2026-05-16": {
     "title": "Castle CITO, spring",
@@ -1161,7 +1164,7 @@ window.L10N={
    },
    "2016-05-28": {
     "title": "Arbeitseinsatz auf dem Schloss",
-    "html": "Laut Einladung war ab 10 Uhr ein Arbeitseinsatz geplant: Reinigung von Bühne und Zuschauerbereich und Vorbereitung auf die Sommerveranstaltungen."
+    "html": "Ein Arbeitseinsatz ab 10 Uhr: Reinigung von Bühne und Zuschauerbereich und Vorbereitung auf die Sommerveranstaltungen."
    },
    "2016-06-11": {
     "title": "Perseidy: das erste Schlosskonzert einer Countryband",
@@ -1209,7 +1212,7 @@ window.L10N={
    },
    "2017-06-04": {
     "title": "Kindertag",
-    "html": "Der erste Kindertag auf dem Schloss. Am Morgen drohte schlechtes Wetter, am Nachmittag kam die Sonne heraus."
+    "html": "Der allererste Kindertag im Schloss. Am Morgen hat uns das Wetter ordentlich erschreckt, am Nachmittag wurde es aber schön und sogar die Sonne kam heraus. Danke allen, die geholfen haben, dass die Kinder den Tag genießen konnten."
    },
    "2017-07-08": {
     "title": "Historischer Nachmittag auf Schloss Toužim"
@@ -1244,7 +1247,7 @@ window.L10N={
    "2018-06-09": {
     "title": "Kindertag",
     "when": "Samstag · 13:00",
-    "html": "Laut Plakat: Kindertag mit dem Theater Divadlo poutníka Hrocha (die Märchen Das Tal der klappernden Mühlen und Wie der Geselle das Königreich rettete), einer Kreativwerkstatt und Wettbewerben für Kinder."
+    "html": "Ein Kindertag mit dem Divadlo poutníka Hrocha (Märchen Údolí klapajících mlýnků und Jak tovaryš zachránil království), Bastelwerkstatt und Wettbewerben für Kinder."
    },
    "2018-06-23": {
     "title": "Johannisfest"
@@ -1307,7 +1310,7 @@ window.L10N={
    },
    "2019-08-24": {
     "title": "Bau der Bühnenüberdachung",
-    "html": "Im Sommer 2019 bauten Freiwillige die hölzerne Überdachung der Bühne im Schlosshof."
+    "html": "Begonnen hat es am 3. August mit einer Besprechung, aus der unerwartet gleich das Ausheben wurde. Dann wurden die Fundamente betoniert, und am 24. August kam der Hauptbautag mit Freunden, Kumpels und Familien, den wir bis zur Erschöpfung durchgezogen haben. Am vierten Tag fehlten nur noch die zweite Dachhälfte, Dachrinnen und Anstriche, und am 1. September hieß es: fertig. Seitdem wird auf der Bühne auch bei Regen gespielt."
    },
    "2019-09-07": {
     "title": "Punkovice auf dem Schloss (2. Jahrgang)",
@@ -1385,7 +1388,7 @@ window.L10N={
    },
    "2021-08-21": {
     "title": "Punkovice im Schloss (4. Jahrgang)",
-    "html": "Eine weitere Punk-Party im Schloss: Die Bands spielten, und das Publikum feierte."
+    "html": "Ein weiterer Jahrgang des Punkfestivals im Schloss und für uns wieder die Party des Jahres. Die Bands spielten, die Fans feierten, schade nur, dass nicht mehr von euch kamen. Also nächstes Jahr Pflicht!"
    },
    "2021-09-12": {
     "title": "Toužimer Sommer",
@@ -1415,16 +1418,16 @@ window.L10N={
    },
    "2022-05-21": {
     "title": "Schloss-CITO, Frühjahr 2022",
-    "html": "Der sechste Jahrgang und neunte Event des Schloss-CITO war der erste, den der Verein nach der Übernahme des Staffelstabs von der Dílna U mnicha ausrichtete. Geocacher und andere Freiwillige trafen sich zur alljährlichen Routine: Aufräumen des Schlosshofs, Schneiden und Verbrennen von Wildaufwuchs und Laubrechen. Bei genügend Helfern war auch der Kampf mit dem berüchtigten „Toužimer Haufen“ auf der Bühne geplant."
+    "html": "Der sechste Jahrgang und neunte Event des Schloss-CITO war der erste, den der Verein nach der Übernahme des Staffelstabs von der Dílna U mnicha ausrichtete. Geocacher und andere Freiwillige trafen sich zur alljährlichen Routine: Aufräumen des Schlosshofs, Schneiden und Verbrennen von Wildaufwuchs und Laubrechen. Bei genügend Helfern war auch der Kampf mit dem berüchtigten „Toužimer Haufen“ auf der Bühne geplant. Als um 11:05 nur ein einziger Geocacher da war, wurde uns schwindelig. Am Ende kamen weniger Leute als sonst, aber es hat sich gelohnt und der Haufen ist geschrumpft."
    },
    "2022-05-28": {
     "title": "Kindertag im Schloss Toužim",
     "when": "Samstag · 13:00",
-    "html": "Kindertag mit Wettbewerben um Preise, Vorführungen forstlicher Handwerke von Lesy ČR (Forstverwaltung Toužim) und einem Berg Schaum von der Freiwilligen Feuerwehr Toužim."
+    "html": "Ein Kindertag mit Wettbewerben um Preise, Forsthandwerk und einem Holzxylophon von Lesy ČR – Forstverwaltung Toužim und einem Berg Schaum von der Feuerwehr SDH Toužim. Der Besuch war fantastisch: Keine einzige Wettbewerbskarte blieb leer und alle Preise wurden verteilt. Nach dem Kinderprogramm gab es Abendkonzerte, die das Infozentrum Toužim organisiert hat. Wohl zum ersten Mal in der Geschichte wurden die Kinder früher müde als die Eltern."
    },
    "2022-06-11": {
     "title": "Schlossfestival, 6. Jahrgang",
-    "html": "Ein Rockfestival im Hof. Es spielten Cerberos, Loretta, Hlahol und Fata Morgana."
+    "html": "Das sechste Schloss-Rockfest: Wetter wie im Märchen, Essen und Bier ein Gedicht, und alles lief, wie es sollte. Es spielten Cerberos Heavy Rock, Loretta, Hlahol und Fata Morgana. Promo: Radek Kalinič, Bewirtung: Sokolovna Toužim."
    },
    "2022-06-25": {
     "title": "Historischer Tag: Gründung der Stadt Toužim (553 Jahre)",
@@ -1432,7 +1435,7 @@ window.L10N={
    },
    "2022-07-23": {
     "title": "Um die Welt mit dem Reisenden Kompásek",
-    "html": "Der Reisende Kompásek führte die Kinder durch die ganze Welt, bis hin zu den Menschenfressern."
+    "html": "Der Reisende Kompásek führte die Kinder um die ganze Welt bis zu den Menschenfressern. Keine Sorge, sie haben uns nicht gefressen. An einer der Stationen probierten die Kinder, Dinge mit chinesischen Stäbchen umzusetzen."
    },
    "2022-07-30": {
     "title": "Fler-Handwerksmarkt im Schloss",
@@ -1459,15 +1462,15 @@ window.L10N={
    },
    "2023-04-30": {
     "title": "Hexenverbrennung",
-    "html": "Beim Verbrennen der Hexe spielte die Band Dáma s hranostajem."
+    "html": "Die Hexe haben wir gemeinsam mit allen verbrannt, die ins Schloss kamen, dazu spielte die Band Dáma s hranostajem. Wir hoffen, es hat euch so gut gefallen wie uns."
    },
    "2023-05-20": {
     "title": "Schloss-CITO, Frühjahr 2023",
-    "html": "Die elfte Ausgabe des traditionellen freiwilligen Arbeitseinsatzes CITO bot einen gemütlichen Nachmittag, ein Wiedersehen mit Freunden und etwas Frühjahrsarbeit im Schloss. Auf dem Programm standen das Ausschneiden von Wildaufwuchs und die Wiederbelebung des Schlossteingartens, gegebenenfalls auch die Fortsetzung der Beleuchtung des Burgkellers. Die Band Longway begleitete die Arbeit, es gab einen kleinen Imbiss, und zur Belohnung eine Führung durch das Schlossareal."
+    "html": "Der elfte Jahrgang des traditionellen CITO-Arbeitseinsatzes. Auf dem Programm standen das Entfernen von Wildaufwuchs und die Belebung des Schlossgartens mit Steinen. Zum ersten Mal überhaupt gab es mehr Veranstalter als Besucher, mit vereinten Kräften wurde aber mehr als genug geschafft. Das Wetter spielte mit, die Würste schmeckten und die Band Longway begleitete den ganzen Tag."
    },
    "2023-06-03": {
     "title": "Kindertag",
-    "html": "Wettbewerbe um Preise, Kreativwerkstätten, Schaum von der Freiwilligen Feuerwehr Toužim, Handwerksvorführungen von Lesy ČR und die Band Dáma s hranostajem."
+    "html": "Ein Kindertag mit schönem Wetter, guter Laune und vielen Besuchern. Auf die Kinder warteten Wettbewerbe um Preise, Bastelwerkstätten, ein Berg Schaum von der Feuerwehr SDH Toužim und Handwerksvorführungen von Lesy ČR, dazu spielte die Band Dáma s hranostajem. Die Preise spendeten Jednota COOP, A.P.S.A., Sokolovna Toužim, Vera Gurmet, Jaroslav Kavina, Dong Van Hving und Lékárna Pod smrkem."
    },
    "2023-06-17": {
     "title": "Schlossfestival 2023 (7. Jahrgang)",
@@ -1496,7 +1499,7 @@ window.L10N={
    "2023-07-29": {
     "title": "Schlossmarkt",
     "when": "Samstag · 10:00–18:00",
-    "html": "Der Markt im Hof lockte trotz ungünstigen Wetters viele Besucher an."
+    "html": "Der Schlossmarkt im Hof von zehn bis sechs. Das Wetter spielte nicht mit und nicht alle angemeldeten Händler kamen, die Zahl der Besucher hat uns aber angenehm überrascht."
    },
    "2023-09-09": {
     "title": "Punkovice 2023",
@@ -1504,7 +1507,7 @@ window.L10N={
    },
    "2023-10-14": {
     "title": "Schloss-CITO, Herbst 2023",
-    "html": "Die zwölfte Ausgabe des traditionellen freiwilligen Arbeitseinsatzes CITO bot einen Nachmittag mit Freunden und Herbstarbeit im Schlossareal. Auf dem Programm standen das Ausschneiden von Wildaufwuchs und das Aufräumen des Geländes, die genauen Aufgaben richteten sich nach dem aktuellen Bedarf. Für die Teilnehmer gab es einen kleinen Imbiss und Live-Musik, als Lohn für die Arbeit eine Führung durch das Schlossareal."
+    "html": "Der zwölfte Jahrgang des traditionellen CITO-Arbeitseinsatzes. Es wurde Laub gerecht und Wildaufwuchs geschnitten. Auch Journalisten der Presseagentur ČTK kamen vorbei. Zur Spitzhacke griffen sie nicht, aber sie schrieben <a href=\"https://karlovarska.drbna.cz/zpravy/8182-dobrovolnici-v-touzimi-postupne-ozivuji-zamek-ktery-roky-chatra.html\" target=\"_blank\" rel=\"noopener\">ein paar schöne Zeilen</a> über uns."
    },
    "2023-11-04": {
     "title": "Halloween im Schloss",
@@ -1512,7 +1515,8 @@ window.L10N={
     "html": "Den Gruselkeller hüllte in diesem Jahr Nebel aus der Nebelmaschine ein, und in der Buh-Kammer spukte es wie nie zuvor. Die Kinder bastelten in der Werkstatt, spielten und ließen sich in der neuen Fotoecke fotografieren. Um halb sechs leuchteten die Laternen auf und der Umzug zog in die herbstliche Dunkelheit. Die Einladung zu unserem Halloween brachte sogar die Kindersendung <a href=\"https://decko.ceskatelevize.cz/video/i1009328\" target=\"_blank\" rel=\"noopener\">Tamtam auf ČT :D</a>. Danke allen, die gekommen sind, bis zum nächsten Jahr!"
    },
    "2023-12-16": {
-    "title": "Weihnachtstreffen mit Glühwein"
+    "title": "Weihnachtstreffen mit Glühwein",
+    "html": "Abschied von der Schlosssaison von zwei bis vier Uhr nachmittags: Glühwein, Weihnachtsgebäck, das jeder mitbrachte, eine Bastelwerkstatt für Kinder und Weihnachtslieder."
    },
    "2024-04-30": {
     "title": "Hexenverbrennung",
@@ -1524,7 +1528,7 @@ window.L10N={
    },
    "2024-05-18": {
     "title": "Schloss-CITO, Frühjahr 2024",
-    "html": "Frühjahrseinsatz mit einem Auftritt von Jean de Carro zum Abschluss."
+    "html": "Das Wetter sah miserabel aus, im Laufe des Tages wurde es aber besser. Auch mit wenigen Helfern wurde einiges geschafft, und zum Schluss kam die verdiente Belohnung: ein Auftritt von Jean de Carro."
    },
    "2024-06-01": {
     "title": "Kindertag",
@@ -1532,7 +1536,7 @@ window.L10N={
    },
    "2024-06-15": {
     "title": "Schlossfestival, 8. Jahrgang",
-    "html": "Ein Rockfestival im Hof, das seit 2017 die Kalimero Agency veranstaltet. Für die Verpflegung sorgte die Hospůdka U Havlů."
+    "html": "Das achte Schloss-Rockfest, seit 2017 veranstaltet von Kalimero Agency. Leute, Sound, Promo, Bands, Bewirtung und Wetter, alles war erstklassig. Für die Bewirtung sorgte die Hospůdka U Havlů. Hoffentlich schaffen wir es bis zum zehnten Jubiläum!"
    },
    "2024-06-29": {
     "title": "Stadtfest: 555 Jahre Toužim",
@@ -1544,7 +1548,8 @@ window.L10N={
     "html": "Auf dem Markt gab es Stände mit Keramik, Holzwaren, Schmuck und Accessoires, Erfrischungen und Kaffee. Den ganzen Tag begleitete Livemusik, und es wurde auch Theater gespielt."
    },
    "2024-08-31": {
-    "title": "Punkovice 2024"
+    "title": "Punkovice 2024",
+    "html": "Es spielten Chyba 404, Drtimosaz, Vypitý lahváče, Já ještě nevim, ŠpuntQaně und Nízká úroveň. Eine Party wie im Märchen: perfektes Wetter, genug Leute, das Bier floss in Strömen, und Bands wie Fans hatten Spaß. Der Eintritt war wie immer freiwillig."
    },
    "2024-09-07": {
     "title": "Theatertag im Schloss",
@@ -1552,7 +1557,7 @@ window.L10N={
    },
    "2024-10-12": {
     "title": "Schloss-CITO Toužim 2024: Herbst",
-    "html": "Laut Einladung: ein Herbst-CITO-Event (VIII. Jahrgang) im Rahmen des Projekts 72 Stunden mit musikalischer Begleitung der Schlossband Longway; Kinder konnten Kastanien sammeln."
+    "html": "Ein Herbst-CITO im Rahmen des Projekts 72 Stunden, mit Musik der Schlossband Longway. Kinder konnten Kastanien sammeln."
    },
    "2024-10-26": {
     "title": "Halloween im Schloss",
@@ -1589,7 +1594,7 @@ window.L10N={
    },
    "2025-08-02": {
     "title": "Pelmel muziky (Musik-Allerlei)",
-    "html": "Ein musikalischer Nachmittag mit Vorführungen von Countrytänzen."
+    "html": "Der erste sommerliche Musiknachmittag. Ab 15 Uhr spielten Duo Vacek a Brabec, Dáma s hranostajem und Kdo přijde. Es regnete ein bisschen, aber es ging weiter: Tänzerinnen zeigten Countrytänze und die Besucher lernten sie gleich mit. Am Abend saßen wir am Feuer."
    },
    "2025-08-23": {
     "title": "Burgen- und Schlössernacht",
@@ -1601,7 +1606,7 @@ window.L10N={
    },
    "2025-09-13": {
     "title": "Punkovice 2025",
-    "html": "Ein Punk-Minifestival im Hof; es spielten unter anderem Vypitý lahváče, V.V.U. und Nízká Úroveň."
+    "html": "Es spielten Výblitek, Vypitý lahváče, V.V.Ú., Nízká úroveň und Flaška Visočinia. Zum ersten Mal wurde ein signiertes Plakat versteigert, was seitdem Tradition ist. Danke allen, die gekommen sind!"
    },
    "2025-10-11": {
     "title": "Schloss-CITO, Herbsteinsatz",
@@ -1628,7 +1633,8 @@ window.L10N={
     "html": "Frühjahrsputz und Hilfe im Schlossgarten. An dem Wochenende wurde etwa ein Fünftel der Terrasse geräumt, das Feuer für die Hexennacht vorbereitet, die Bühne gereinigt und die Sanitäranlagen hergerichtet. Es spielte die Band Longway, das Gulasch kochte die Hospůdka U Havlů."
    },
    "2026-04-30": {
-    "title": "Hexenverbrennung und Maibaumaufstellen"
+    "title": "Hexenverbrennung und Maibaumaufstellen",
+    "html": "Aufstellen des Maibaums auf dem Marktplatz von Toužim ab 16 Uhr, danach Hexenverbrennen im Schlosshof ab etwa sechs Uhr abends."
    },
    "2026-05-16": {
     "title": "Schloss-CITO, Frühjahr",

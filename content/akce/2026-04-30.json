@@ -7,9 +7,12 @@
     "img/akce/2026-04-30-2.jpg"
   ],
   "en": {
-    "title": "Witches' Night bonfire and raising the maypole"
+    "title": "Witches' Night bonfire and raising the maypole",
+    "text": "Raising the maypole on Toužim square from 4 pm, followed by the witch burning in the castle courtyard from about six in the evening."
   },
   "de": {
-    "title": "Hexenverbrennung und Maibaumaufstellen"
-  }
+    "title": "Hexenverbrennung und Maibaumaufstellen",
+    "text": "Aufstellen des Maibaums auf dem Marktplatz von Toužim ab 16 Uhr, danach Hexenverbrennen im Schlosshof ab etwa sechs Uhr abends."
+  },
+  "text": "Stavění máje na toužimském náměstí od 16 hodin, pak pálení čarodějnic na zámeckém nádvoří zhruba od šesti večer."
 }

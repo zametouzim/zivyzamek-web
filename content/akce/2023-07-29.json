@@ -2,7 +2,7 @@
   "title": "Zámecký jarmark",
   "date": "2023-07-29",
   "when": "sobota · 10:00–18:00",
-  "text": "Jarmark na nádvoří i přes nepříznivé počasí přilákal hodně návštěvníků.",
+  "text": "Zámecký jarmark na nádvoří od deseti do šesti. Počasí moc nepřálo a nedorazili všichni přihlášení prodejci, počet návštěvníků nás ale mile potěšil.",
   "poster": "img/plakaty/2023_gp_07-29.jpg",
   "photos": [
     "img/akce/2023-07-29-1.jpg",
@@ -13,11 +13,11 @@
   "en": {
     "title": "Castle fair",
     "when": "Saturday · 10:00–18:00",
-    "text": "Despite poor weather, the fair in the courtyard drew plenty of visitors."
+    "text": "The castle fair in the courtyard from ten to six. The weather wasn't kind and not all registered stallholders came, but the number of visitors pleasantly surprised us."
   },
   "de": {
     "title": "Schlossmarkt",
     "when": "Samstag · 10:00–18:00",
-    "text": "Der Markt im Hof lockte trotz ungünstigen Wetters viele Besucher an."
+    "text": "Der Schlossmarkt im Hof von zehn bis sechs. Das Wetter spielte nicht mit und nicht alle angemeldeten Händler kamen, die Zahl der Besucher hat uns aber angenehm überrascht."
   }
 }

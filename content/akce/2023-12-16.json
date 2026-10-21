@@ -3,9 +3,12 @@
   "date": "2023-12-16",
   "poster": "img/plakaty/2023_gp_12-16.jpg",
   "en": {
-    "title": "Christmas gathering with mulled wine"
+    "title": "Christmas gathering with mulled wine",
+    "text": "A farewell to the castle season from two to four in the afternoon: mulled wine, Christmas biscuits brought by everyone, a craft workshop for children and carols."
   },
   "de": {
-    "title": "Weihnachtstreffen mit Glühwein"
-  }
+    "title": "Weihnachtstreffen mit Glühwein",
+    "text": "Abschied von der Schlosssaison von zwei bis vier Uhr nachmittags: Glühwein, Weihnachtsgebäck, das jeder mitbrachte, eine Bastelwerkstatt für Kinder und Weihnachtslieder."
+  },
+  "text": "Rozloučení se zámeckou sezónou od dvou do čtyř odpoledne: svařák, cukroví, které kdo přinesl, tvořivá dílnička pro děti a koledy."
 }
