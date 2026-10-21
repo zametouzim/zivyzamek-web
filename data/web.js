@@ -618,7 +618,7 @@ window.L10N={
    "2023-11-04": {
     "title": "Halloween at the castle",
     "when": "Saturday · 15:00–17:30",
-    "html": "A spooky cellar, this year with a fog machine, a new photo corner, craft workshops for children and a lantern procession at 17:30."
+    "html": "This year the Spooky Cellar was wrapped in fog from a fog machine and the Bogey Room was scarier than ever. Children made crafts in the workshop, played games and took pictures in the new photo corner. At half past five the lanterns lit up and the procession set off into the autumn dark. Our Halloween was even featured as a tip in the children's programme <a href=\"https://decko.ceskatelevize.cz/video/i1009328\" target=\"_blank\" rel=\"noopener\">Tamtam on ČT :D</a>. Thank you to everyone who came, see you next year!"
    },
    "2023-12-16": {
     "title": "Christmas gathering with mulled wine"
@@ -1509,7 +1509,7 @@ window.L10N={
    "2023-11-04": {
     "title": "Halloween im Schloss",
     "when": "Samstag · 15:00–17:30",
-    "html": "Ein Gruselkeller, dieses Jahr mit Nebelmaschine, eine neue Fotoecke, Bastelwerkstätten für Kinder und um 17:30 ein Laternenumzug."
+    "html": "Den Gruselkeller hüllte in diesem Jahr Nebel aus der Nebelmaschine ein, und in der Buh-Kammer spukte es wie nie zuvor. Die Kinder bastelten in der Werkstatt, spielten und ließen sich in der neuen Fotoecke fotografieren. Um halb sechs leuchteten die Laternen auf und der Umzug zog in die herbstliche Dunkelheit. Die Einladung zu unserem Halloween brachte sogar die Kindersendung <a href=\"https://decko.ceskatelevize.cz/video/i1009328\" target=\"_blank\" rel=\"noopener\">Tamtam auf ČT :D</a>. Danke allen, die gekommen sind, bis zum nächsten Jahr!"
    },
    "2023-12-16": {
     "title": "Weihnachtstreffen mit Glühwein"
