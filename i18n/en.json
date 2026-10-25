@@ -354,7 +354,9 @@
   "V březnu 2026 jsme pod hlínou narazili na původní hradební zeď, pravděpodobně z počátku 15. století. V dubnu ji archeologové prozkoumali a zdokumentovali. Aby zůstala chráněná, znovu ji zasypeme a v blízkosti nálezu umístíme jako připomínku informační tabuli s fotkami z archeologického průzkumu.": "In March 2026 we came across the original fortification wall under the soil, probably from the early 15th century. In April archaeologists examined and documented it. To keep it protected, we will cover it over again and, as a reminder, put up an information board with photos from the archaeological survey near the find.",
   "Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Účet <span id=\"fUcet\">2301034510/2010</span><br><a href=\"https://www.facebook.com/zivyzamek.touzim\" target=\"_blank\" rel=\"noopener\">Facebook</a> · <a href=\"https://www.instagram.com/zivyzamektouzim/\" target=\"_blank\" rel=\"noopener\">Instagram</a>": "Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Account <span id=\"fUcet\">2301034510/2010</span><br><a href=\"https://www.facebook.com/zivyzamek.touzim\" target=\"_blank\" rel=\"noopener\">Facebook</a> · <a href=\"https://www.instagram.com/zivyzamektouzim/\" target=\"_blank\" rel=\"noopener\">Instagram</a>",
   "Instagram": "Instagram",
-  "<a class=\"btn\" href=\"#program\">Celý program akcí</a>": "<a class=\"btn\" href=\"#program\">Full programme of events</a>"
+  "<a class=\"btn\" href=\"#program\">Celý program akcí</a>": "<a class=\"btn\" href=\"#program\">Full programme of events</a>",
+  "18. 10. 2026: odkrývání horní hradební zdi": "18 October 2026: uncovering the upper fortification wall",
+  "18. 10. 2026: odkrytá horní hradební zeď": "18 October 2026: the upper fortification wall uncovered"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, home",
@@ -421,7 +423,9 @@
   "QR Platba: dar na transparentní účet spolku": "QR payment: donation to the association's transparent account",
   "Dobrovolníci na podzimní brigádě v areálu zámku": "Volunteers on an autumn work day at the castle",
   "Dobrovolníci na brigádě Poznej & pomoz, září 2026": "Volunteers at the Poznej & pomoz (Discover & Help) work day, September 2026",
-  "Posezení u ohně po podzimní brigádě, říjen 2025": "Sitting by the fire after the autumn work day, October 2025"
+  "Posezení u ohně po podzimní brigádě, říjen 2025": "Sitting by the fire after the autumn work day, October 2025",
+  "Rozkopaná plocha s trakaři a nářadím pod zdí Horního zámku se zazděnými oblouky": "Dug-up ground with wheelbarrows and tools below the wall of the Upper Castle with its bricked-up arches",
+  "Odkrytý kamenný základ zdi s měřítkem v rozkopané hlíně": "Uncovered stone footing of the wall with a measuring scale in the dug-up soil"
  },
  "js": {
   "Akce nenalezena.": "Event not found.",
