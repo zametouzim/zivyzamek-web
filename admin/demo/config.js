@@ -255,6 +255,14 @@ window.DEMO_CONFIG={
        "label": "Číslo účtu",
        "name": "ucet",
        "widget": "string"
+      },
+      {
+       "label": "Přeložit automaticky do EN/DE",
+       "name": "prelozit",
+       "widget": "boolean",
+       "required": false,
+       "default": true,
+       "hint": "Po uložení doplní chybějící angličtinu a němčinu (DeepL). Když je vypnuté, překlad se neudělá a EN/DE můžete napsat sami. Ruční překlady se nikdy nepřepisují. Kredit DeepL: Zbývá 999 992 z 1 000 000 znaků (stav 25. 10. 2026)."
       }
      ],
      "i18n": true
@@ -314,6 +322,14 @@ window.DEMO_CONFIG={
         }
        ],
        "i18n": true
+      },
+      {
+       "label": "Přeložit automaticky do EN/DE",
+       "name": "prelozit",
+       "widget": "boolean",
+       "required": false,
+       "default": true,
+       "hint": "Po uložení doplní chybějící angličtinu a němčinu (DeepL). Když je vypnuté, překlad se neudělá a EN/DE můžete napsat sami. Ruční překlady se nikdy nepřepisují. Kredit DeepL: Zbývá 999 992 z 1 000 000 znaků (stav 25. 10. 2026)."
       }
      ],
      "i18n": true
@@ -376,6 +392,14 @@ window.DEMO_CONFIG={
          "choose_url": false
         }
        ]
+      },
+      {
+       "label": "Přeložit automaticky do EN/DE",
+       "name": "prelozit",
+       "widget": "boolean",
+       "required": false,
+       "default": true,
+       "hint": "Po uložení doplní chybějící angličtinu a němčinu (DeepL). Když je vypnuté, překlad se neudělá a EN/DE můžete napsat sami. Ruční překlady se nikdy nepřepisují. Kredit DeepL: Zbývá 999 992 z 1 000 000 znaků (stav 25. 10. 2026)."
       }
      ],
      "i18n": true
@@ -453,6 +477,14 @@ window.DEMO_CONFIG={
         }
        ],
        "i18n": true
+      },
+      {
+       "label": "Přeložit automaticky do EN/DE",
+       "name": "prelozit",
+       "widget": "boolean",
+       "required": false,
+       "default": true,
+       "hint": "Po uložení doplní chybějící angličtinu a němčinu (DeepL). Když je vypnuté, překlad se neudělá a EN/DE můžete napsat sami. Ruční překlady se nikdy nepřepisují. Kredit DeepL: Zbývá 999 992 z 1 000 000 znaků (stav 25. 10. 2026)."
       }
      ],
      "i18n": true
@@ -505,6 +537,14 @@ window.DEMO_CONFIG={
         }
        ],
        "i18n": true
+      },
+      {
+       "label": "Přeložit automaticky do EN/DE",
+       "name": "prelozit",
+       "widget": "boolean",
+       "required": false,
+       "default": true,
+       "hint": "Po uložení doplní chybějící angličtinu a němčinu (DeepL). Když je vypnuté, překlad se neudělá a EN/DE můžete napsat sami. Ruční překlady se nikdy nepřepisují. Kredit DeepL: Zbývá 999 992 z 1 000 000 znaků (stav 25. 10. 2026)."
       }
      ],
      "i18n": true
