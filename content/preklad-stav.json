@@ -3805,11 +3805,9 @@
 }
 },
 "content/akce/2026-10-25.json|de|text": {
-"cs": "47b688575056",
-"out": "5221756cb711",
-"radky": {
-"47b688575056": "Ein besonderer Arbeitseinsatz für Kinder. Wollt ihr wieder den tollen Laubhaufen, in den man an Halloween von der Bühne springen kann? Kommt und recht ihn zusammen! Treffpunkt um 14:00 am Schlosstor, Rechen sind vorbereitet und auf alle Helfer wartet eine kleine Überraschung."
-}
+"cs": "6a3da9946914",
+"out": "ed47994bee69",
+"rucne": true
 },
 "content/akce/2026-10-25.json|de|title": {
 "cs": "1483e649cc2d",
@@ -3833,11 +3831,9 @@
 }
 },
 "content/akce/2026-10-25.json|en|text": {
-"cs": "47b688575056",
-"out": "de73b42bb4c3",
-"radky": {
-"47b688575056": "A special work party for children. Do you want that great pile of leaves again, the one you can jump into from the stage at Halloween? Come and rake it! Meet at 14:00 at the castle gate. Rakes are ready and a small surprise awaits everyone who helps."
-}
+"cs": "6a3da9946914",
+"out": "85ff93351d43",
+"rucne": true
 },
 "content/akce/2026-10-25.json|en|title": {
 "cs": "1483e649cc2d",
