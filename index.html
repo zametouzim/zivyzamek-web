@@ -992,7 +992,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
       if(bad.length){bad.forEach(function(i){i.classList.add('bad');i.setAttribute('aria-invalid','true')});bad[0].focus();
         say(noContact&&bad.length===2?T('Vyplňte prosím e-mail nebo telefon.'):T('Doplňte prosím zvýrazněná políčka.'),'err');return;}
       var b=f.querySelector('button');b.disabled=true;say(T('Odesílám…'));
-      fetch('kontakt.php',{method:'POST',body:new FormData(f)}).then(function(r){return r.json()}).then(function(d){
+      fetch('https://script.google.com/macros/s/AKfycbyf0zsd2U9nBkcjAu9lCKYd_RT9Q4b9xGOxhM3X4wdejQWT5quZVeGWVzdAooIcwE6gPA/exec',{method:'POST',body:new URLSearchParams(new FormData(f))}).then(function(r){return r.json()}).then(function(d){
         if(!d.ok)throw 0;f.reset();say(T('Děkujeme, zpráva odešla. Ozveme se co nejdřív.'),'ok');
       }).catch(function(){
         say(T('Zprávu se nepodařilo odeslat. Napište nám prosím na zivyzamektouzim@email.cz.'),'err');
