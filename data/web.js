@@ -828,8 +828,7 @@ window.L10N={
    "2026-12-13": {
     "title": "Christmas get-together with mulled wine",
     "when": "Sunday",
-    "short": "The traditional end of the season in the courtyard with mulled wine.",
-    "html": "14:00 – start\n14:15 – Submission of entries for the competition for the best Linzer biscuits 15\n:00 – Poetry reading by the author, Blanka Lohrová, poetry exhibition 15\n:45 – Announcement of the winner of the competition for the best Linzer biscuits\n16:00 – Rosa Coeli Chamber Choir Christmas concert\n17:00 – Christmas toast and farewell A Christmas craft workshop and a trail of Christmas traditions will be available\nthroughout the afternoon."
+    "short": "The traditional end of the season in the courtyard with mulled wine."
    }
   },
   "web": {
@@ -1723,8 +1722,7 @@ window.L10N={
    "2026-12-13": {
     "title": "Weihnachtstreffen mit Glühwein",
     "when": "Sonntag",
-    "short": "Der traditionelle Saisonabschluss im Schlosshof mit Glühwein.",
-    "html": "14:00 Uhr – Beginn 14\n:15 Uhr – Annahme der Einsendungen für den Wettbewerb um das beste Linzer Gebäck 15\n:00 – Lesung von Gedichten durch die Autorin Blanka Lohrová, Gedichtausstellung 15\n:45 – Bekanntgabe des Gewinners des Wettbewerbs um das beste Linzer Gebäck 16\n:00 – Kammerchor Rosa Coeli: Weihnachtskonzert\n17:00 – Weihnachtsumtrunk und Verabschiedung Den ganzen Nachmittag\nüber stehen eine Weihnachtsbastelwerkstatt und ein Brauchtumsparcours zur Verfügung."
+    "short": "Der traditionelle Saisonabschluss im Schlosshof mit Glühwein."
    }
   },
   "web": {

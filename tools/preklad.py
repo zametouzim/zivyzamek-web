@@ -41,7 +41,25 @@ class Preklad:
         self.fronta = {l: [] for l in LANGS}  # l -> [(text, markdown, nastav)]
 
     def pridej(self, l, text, markdown, nastav):
-        self.fronta[l].append((text, markdown, nastav))
+        # Víceřádkový text se překládá po řádcích: DeepL jinak přesouvá zalomení
+        # doprostřed vět a časů („15<br/>:00“). Prázdné řádky a mezery na krajích zůstanou.
+        radky = text.split('\n')
+        if len(radky) == 1:
+            self.fronta[l].append((text, markdown, nastav))
+            return
+        hotovo = list(radky)
+        cekat = [i for i, r in enumerate(radky) if r.strip()]
+        zbyva = [len(cekat)]
+
+        def dilci(i):
+            def f(v):
+                hotovo[i] = v
+                zbyva[0] -= 1
+                if not zbyva[0]:
+                    nastav('\n'.join(hotovo))
+            return f
+        for i in cekat:
+            self.fronta[l].append((radky[i].strip(), markdown, dilci(i)))
 
     def pocet(self):
         return sum(len(v) for v in self.fronta.values())

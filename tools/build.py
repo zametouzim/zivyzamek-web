@@ -54,9 +54,20 @@ def md(text):
     return '\n'.join(out)
 
 
+def relativni(v):
+    """Administrace ukládá obrázky jako "/img/…"; web běží i v podsložce, proto cesty bez úvodního lomítka."""
+    if isinstance(v, str) and v.startswith('/img/'):
+        return v[1:]
+    if isinstance(v, list):
+        return [relativni(x) for x in v]
+    if isinstance(v, dict):
+        return {k: relativni(x) for k, x in v.items()}
+    return v
+
+
 def load(path):
     with open(path, encoding='utf-8') as f:
-        return json.load(f)
+        return relativni(json.load(f))
 
 
 def akce(tr=None):
