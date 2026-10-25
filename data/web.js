@@ -825,6 +825,12 @@ window.L10N={
     "short": "Haunted cellar, workshops, lantern parade and a contest for the most beautiful pumpkin. In the evening, a trail for adults.",
     "html": "<b>14:30–17:00</b> haunted cellar, Boo chamber, workshops and games in the courtyard, face painting.\n<b>17:00</b> lantern parade through the town, the route is suitable for prams.\n<b>Contest for the most beautiful carved pumpkin:</b> register by 16:30 with the lord of the castle, winners announced at 16:45.\nVisitors in costumes welcome. Refreshments available, admission by donation.\n<b>New this year: Halloween trail for adults from 18:30.</b> Register by 24 Oct at zivyzamektouzim@email.cz, admission 100 CZK. Not for the faint-hearted."
    },
+   "2026-11-01-poznej-pomoz": {
+    "title": "Discover & Help",
+    "when": "9–16",
+    "short": "Part-time job at Toužim Castle",
+    "html": "Please help us prepare the site for the children’s play area and winterise the castle. You can also support us by bringing along some home-baked treats! Refreshments will be provided for those helping out."
+   },
    "2026-12-13": {
     "title": "Christmas get-together with mulled wine",
     "when": "Sunday",
@@ -1719,6 +1725,12 @@ window.L10N={
     "when": "Samstag · 14:30–17:00",
     "short": "Gruselkeller, Bastelwerkstätten, Laternenumzug und Wettbewerb um den schönsten Kürbis. Am Abend ein Pfad für Erwachsene.",
     "html": "<b>14:30–17:00</b> Gruselkeller, Buh-Kammer, Bastelwerkstätten und Spiele im Schlosshof, Kinderschminken.\n<b>17:00</b> Laternenumzug durch die Stadt, die Strecke ist kinderwagentauglich.\n<b>Wettbewerb um den schönsten geschnitzten Kürbis:</b> Anmeldung bis 16:30 beim Schlossherrn, Siegerehrung um 16:45.\nBesucher in Kostümen sind willkommen. Für Verpflegung ist gesorgt, Eintritt: freiwillige Spende.\n<b>Dieses Jahr neu: Halloween-Pfad für Erwachsene ab 18:30.</b> Anmeldung bis 24. 10. unter zivyzamektouzim@email.cz, Eintritt 100 CZK. Nichts für schwache Nerven."
+   },
+   "2026-11-01-poznej-pomoz": {
+    "title": "Entdecke & Hilf",
+    "when": "9–16",
+    "short": "Aushilfsjob auf dem Schloss Toužim",
+    "html": "Helft uns dabei, den Platz für den Kinderspielbereich vorzubereiten und die Burg winterfest zu machen. Ihr könnt uns auch mit selbstgebackenen Leckereien unterstützen! Für die Helfer ist für Verpflegung gesorgt."
    },
    "2026-12-13": {
     "title": "Weihnachtstreffen mit Glühwein",
