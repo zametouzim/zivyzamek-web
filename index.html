@@ -51,6 +51,7 @@ h1,h2,h3{line-height:1.08;text-wrap:balance;margin:0;font-weight:700}
 h2,.page-head h1,.ak-head h1{font-size:clamp(34px,5vw,54px);letter-spacing:-.01em}
 h3,h2.h3{font-size:23px;letter-spacing:0}
 p{margin:0;max-width:62ch}
+.page-head p{max-width:80ch}
 .eyebrow{font-family:var(--cond);font-weight:600;font-size:17px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
 .todo{color:var(--todo);border-bottom:1px dashed var(--todo);font-style:italic}
 
@@ -181,6 +182,20 @@ main section[data-page]{padding-block:0 96px}
 
 .two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .three{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.four{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.four>*{min-width:0}.four>.card{display:flex;flex-direction:column}.four>.card>a:last-child{margin-top:auto}
+@media (max-width:1000px){.four{grid-template-columns:1fr 1fr}}@media (max-width:560px){.four{grid-template-columns:1fr}}
+/* čtyři kartičky Zapojte se: na střídačku tmavá a světlá, stejné v obou režimech */
+.card.k1{background:#356a80;color:#fbf7ee}.card.k2{background:#f3ee8a;color:#16303f}.card.k3{background:#c22f4d;color:#ffffff}.card.k4{background:#f3ead6;color:#16303f}
+.card.k1 a,.card.k2 a,.card.k3 a,.card.k4 a{color:inherit}
+.pblock{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:28px;align-items:start;padding:32px;margin-top:24px;scroll-margin-top:90px}.pblock>*{min-width:0}.pblock h2{margin:0}.pblock .pt{display:grid;gap:14px;align-content:start}.pblock>figure{margin:0}.pblock>figure img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}.pblock.b3{grid-template-columns:1fr}.pblock .qr{flex-wrap:wrap}.pblock .qr figcaption{flex:1 1 200px}
+@media (max-width:760px){.pblock{grid-template-columns:1fr;padding:22px}}
+.pblock.b1{background:var(--cta-bg);color:var(--cta-ink)}.pblock.b2{background:var(--panel)}.pblock.b3{background:var(--navy);color:var(--navy-ink)}.pblock.b4{background:var(--panel)}
+.pblock .sub2{display:grid;grid-template-columns:1fr 1fr;gap:20px}@media (max-width:760px){.pblock .sub2{grid-template-columns:1fr}}
+.pblock .givt{background:color-mix(in srgb,currentColor 8%,transparent);padding:18px;display:grid;gap:12px;align-content:start}
+.brig{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:10px}.brig a{display:grid;grid-template-columns:auto 1fr 64px;gap:12px;align-items:center;color:inherit;text-decoration:none;background:color-mix(in srgb,currentColor 10%,transparent);padding:8px 10px}.brig a:hover b{text-decoration:underline}.brig img{width:64px;height:64px;object-fit:cover;object-position:top}.brig .bd{font-family:var(--cond);font-weight:600;font-size:20px;white-space:nowrap}
+.up .ev.pin{background:var(--panel);padding:18px;border-bottom:0;margin-bottom:8px}
+.card.via{background:#ffffff;color:#111111;border-top:8px solid #fe6a01}.card.via img{width:150px;height:auto}.card.via h3{color:#111111}
+.vy .qr img{width:130px}
 .two>*,.three>*{min-width:0}
 @media (max-width:760px){.two,.three{grid-template-columns:1fr}}
 .card{background:var(--panel);padding:28px;display:grid;gap:14px;align-content:start}
@@ -402,7 +417,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
         <span class="eyebrow">Spolek · Toužim · od roku 2015</span>
         <h1>Živý zámek Toužim</h1>
         <p class="sub">Zámek, který oživují dobrovolníci</p>
-        <p>Deset let čistíme, opravujeme a otevíráme toužimský zámek. Přijďte na koncert, na prohlídku Janova hradu, nebo s námi na brigádu.</p>
+        <p>Deset let čistíme, opravujeme a otevíráme toužimský zámek. Přijďte na koncert, na prohlídku Janova hradu, přiložte ruku k dílu na některé z brigád nebo se rovnou staňte jedním z nás.</p>
         <div class="ctas">
           <a class="btn fill" href="#program">Co se chystá</a>
           <a class="btn" href="#podporte">Jak pomoct</a>
@@ -444,7 +459,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
       <div class="body two">
         <figure style="margin:0"><img src="img/zahrada-plochy.jpg" alt="Upravená plocha zahrady u hradeb" style="width:100%;display:block;aspect-ratio:4/3;object-fit:cover"></figure>
         <div style="display:grid;gap:16px;align-content:start">
-          <p>Zarostlý kout mezi Horním a Dolním zámkem měníme na komunitní zahradu se záhony, lípou uprostřed a herním svahem pro děti. Při práci jsme objevili hradební zeď z 15. století.</p>
+          <p>Zarostlý kout mezi Horním a Dolním zámkem měníme na odpočinkovou zahradu se záhony, lípou uprostřed a herním svahem pro děti. Při práci jsme objevili hradební zeď z 15. století.</p>
           <p><b>Stav v říjnu 2026:</b> spodní polovina je srovnaná a první dva záhony vytyčené.</p>
           <div class="ctas"><a class="btn" href="#zahrada">Celý projekt</a></div>
         </div>
@@ -453,10 +468,11 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 
     <div class="block">
       <div class="lab"><span class="eyebrow">Jak pomoct</span><h2>Zapojte se</h2></div>
-      <div class="body three">
-        <div class="card sun"><h3>Přijďte na brigádu</h3><p>Stačí pracovní oblečení.</p><a href="#program">Termíny brigád</a></div>
-        <div class="card"><h3>Pošlete dar</h3><p>Peníze jdou na materiál, stroje a jídlo pro dobrovolníky.</p><a href="#podporte">Jak darovat</a></div>
-        <div class="card"><h3>Kupte suvenýr</h3><p>Plecháček, model zámku nebo komiks o historii.</p><a href="#podporte">Nabídka</a></div>
+      <div class="body four">
+        <div class="card k1"><h3>Přijďte na brigádu</h3><p>Stačí pracovní oblečení, nářadí půjčíme.</p><a href="#podporte/pomoc-brigady">Termíny brigád</a></div>
+        <div class="card k2"><h3>Pomozte jinak</h3><p>Upečte, uvařte nebo přivezte materiál na zahradu.</p><a href="#podporte/pomoc-jinak">Jak pomoct jinak</a></div>
+        <div class="card k3"><h3>Pošlete dar</h3><p>Peníze jdou na materiál, stroje a jídlo pro dobrovolníky.</p><a href="#podporte/pomoc-dar">Jak darovat</a></div>
+        <div class="card k4"><h3>Staňte se členem</h3><p>Členství je zdarma, přidat se může každý od 15 let.</p><a href="#podporte/pomoc-clen">Jak se přidat</a></div>
       </div>
     </div>
   </div>
@@ -465,7 +481,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 <!-- PROGRAM -->
 <section data-page="program" hidden>
   <div class="wrap">
-    <div class="page-head"><span class="eyebrow">Sezóna 2026</span><h1>Program na zámku</h1><p>Všechny akce jsou na nádvoří zámku, náměstí Jiřího z Poděbrad 1. Změna programu vyhrazena.</p><nav class="subnav" aria-label="Na této stránce"><a href="#archiv">Proběhlé akce ↓</a></nav></div>
+    <div class="page-head"><span class="eyebrow">Sezóna 2026</span><h1>Program na zámku</h1><p>Většina akcí se odehrává na nádvoří zámku, náměstí Jiřího z Poděbrad 1, Toužim.</p><p>Změna programu vyhrazena.</p><nav class="subnav" aria-label="Na této stránce"><a href="#archiv">Proběhlé akce ↓</a></nav></div>
     <ul class="events up" id="upList"></ul>
 
     <div class="block" id="archiv">
@@ -530,7 +546,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     </div>
     <div class="two" style="margin-top:32px;align-items:start">
       <figure class="zfig" style="margin:0"><img src="img/zamek/mapka-arealu-2022.jpg" alt="Mapka zámeckého areálu: přístupné venkovní a vnitřní prostory a nepřístupné části" loading="lazy"></figure>
-      <div class="card"><h2 class="h3">Mapka areálu</h2><p>Zeleně je přístupné nádvoří a parkán, modře zpřístupněné vnitřní prostory Horního zámku: hodovní, audienční a rytířský sál, komnata, sklep, pokladnice, archiv a další. Červeně jsou části, kam se zatím nesmí, včetně Dolního zámku a bašty. Pokladna je hned u vstupu.</p></div>
+      <div class="card"><h2 class="h3">Mapka areálu</h2><p>Zeleně je přístupné nádvoří a parkán, modře zpřístupněné vnitřní prostory Horního zámku: hodovní, audienční a rytířský sál, komnata, sklep, pokladnice, archiv a další. Červeně jsou části, kam se zatím nesmí, včetně Dolního zámku a bašty.</p><p>Pokud jsou dveře zámku otevřené, nebojte se vstoupit, rádi vás uvítáme. Průvodce nejčastěji najdete v Horním zámku, v bývalé konírně.</p></div>
     </div>
     <div class="photos" style="margin-top:32px">
       <figure class="p-h"><div class="r"><img src="img/nadvori-2022.jpg" alt="Slunečné nádvoří zámku se záhonem, stromy a krytým pódiem v pozadí" loading="lazy"></div><figcaption>Nádvoří zámku, červen 2022</figcaption></figure>
@@ -542,7 +558,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 <!-- ZAHRADA -->
 <section data-page="zahrada" hidden>
   <div class="wrap">
-    <div class="page-head"><span class="eyebrow">Projekt 2025–2027 · s podporou Nadace VIA</span><h1>Zahrada, která odhalila historii</h1><p>Historická zámecká zahrada ležela severně od zámku a v 60. letech ji zastavělo sídliště. Novou komunitní zahradu zakládáme na zarostlé ploše mezi Horním a Dolním zámkem a hradbami. Bude to místo pro odpočinek, hraní dětí i spolkové akce.</p>
+    <div class="page-head"><span class="eyebrow">Projekt 2025–2027 · s podporou Nadace VIA</span><h1>Zahrada, která odhalila historii</h1><p>Historická zámecká zahrada ležela severně od zámku a v 60. letech ji zastavělo sídliště. Novou odpočinkovou zahradu zakládáme na zarostlé ploše mezi Horním a Dolním zámkem a hradbami. Bude to místo pro odpočinek, hraní dětí i spolkové akce.</p>
       <nav class="subnav" aria-label="Na této stránce"><a href="#zahrada" data-jump="g-plan">Návrh</a><a href="#zahrada" data-jump="g-stav">Stav prací</a><a href="#zahrada" data-jump="g-zed">Hradební zeď</a><a href="#zahrada" data-jump="g-rostliny">Rostliny</a><a href="#zahrada" data-jump="g-penize">Financování</a><a href="#zahrada" data-jump="g-foto">Fotky</a></nav>
     </div>
     <div class="photos">
@@ -589,7 +605,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     <div class="block" id="g-zed">
       <div class="lab"><span class="eyebrow">Objev</span><h2>Hradební zeď</h2></div>
       <div class="body">
-        <p>V březnu 2026 jsme pod hlínou narazili na původní hradební zeď, pravděpodobně z počátku 15. století. V dubnu ji archeologové prozkoumali a zdokumentovali. Aby zůstala chráněná, znovu ji zasypeme a na jejím místě postavíme informační tabuli s fotkami z výzkumu.</p>
+        <p>V březnu 2026 jsme pod hlínou narazili na původní hradební zeď, pravděpodobně z počátku 15. století. V dubnu ji archeologové prozkoumali a zdokumentovali. Aby zůstala chráněná, znovu ji zasypeme a v blízkosti nálezu umístíme jako připomínku informační tabuli s fotkami z archeologického průzkumu.</p>
         <div class="photos">
           <figure class="p-full"><div class="r"><img src="img/zed/plan.jpg" alt="Výřez plánu zahrady s průběhem hradební zdi zakresleným červenou čarou přes záhony k Dolnímu zámku" loading="lazy"></div><figcaption>Průběh zdi (červeně) v plánu zahrady</figcaption></figure>
           <figure class="p-h"><div class="r"><img src="img/zed/2026-04-03-a.jpg" alt="Odkrytá kamenná koruna zdi v rozkopané ploše, v pozadí minibagr" loading="lazy"></div><figcaption>3. 4. 2026: odkrytá koruna zdi</figcaption></figure>
@@ -603,7 +619,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     <div class="block" id="g-rostliny">
       <div class="lab"><span class="eyebrow">Výsadba</span><h2>Co tu poroste</h2></div>
       <div class="body">
-        <p>Záhony jsou navržené na suché slunné stanoviště tak, aby něco kvetlo celou sezónu a bylo to dobré pro hmyz.</p>
+        <p>Záhony jsou navržené na suché slunné stanoviště tak, aby kvetly celou sezónu a poskytovaly hmyzu potravu i úkryt.</p>
         <div class="plants">
           <div><h3>Záhony</h3><p>levandule, šalvěj, mateřídouška, dobromysl, šanta, yzop, třapatka, kosatce, česnek kulatohlavý, tulipány</p></div>
           <div><h3>Herní svah</h3><p>maliník, rybíz, zlatice, hlohyně, pnoucí růže</p></div>
@@ -615,8 +631,8 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     <div class="block" id="g-penize">
       <div class="lab"><span class="eyebrow">Financování</span><h2>Kdo zahradu platí</h2></div>
       <div class="body two">
-        <div class="card"><h3>Nadace VIA</h3><p>Hlavní podpora projektu: grant 70&nbsp;000&nbsp;Kč.</p><p>Ve sbírce na Darujme.cz přispěli soukromí dárci 21&nbsp;896&nbsp;Kč a Nadace VIA ji podpořila dalšími 20&nbsp;000&nbsp;Kč.</p></div>
-        <div class="card sun"><h3>Vy</h3><p>Dary pokrývají materiál, pronájem strojů, jídlo pro dobrovolníky a ochranu archeologických nálezů.</p><a class="btn" href="#podporte">Přispět na zahradu</a></div>
+        <div class="card via"><img src="img/partneri/nadace-via.png" alt="Nadace VIA"><h3>Nadace VIA</h3><p>Hlavní podpora projektu: grant 70&nbsp;000&nbsp;Kč.</p><p>Ve sbírce na Darujme.cz přispěli soukromí dárci 21&nbsp;896&nbsp;Kč a Nadace VIA ji podpořila dalšími 20&nbsp;000&nbsp;Kč.</p></div>
+        <div class="card sun vy"><h3>Vy</h3><p>Dary pokrývají materiál, pronájem strojů, jídlo pro dobrovolníky a ochranu archeologických nálezů.</p><figure class="qr"><img src="img/qr-platba.png" width="684" height="684" alt="QR Platba: dar na transparentní účet spolku"><figcaption>Naskenujte v bankovní aplikaci, účet 2301034510/2010. Částku můžete v aplikaci změnit.</figcaption></figure><p>Výše příspěvku záleží jen na vás. Každá koruna nám pomůže.</p></div>
       </div>
     </div>
 
@@ -714,7 +730,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   <div class="wrap">
     <div class="page-head"><span class="eyebrow">O nás</span><h1>Spolek Živý zámek Toužim</h1><p>Začali jsme v roce 2015 jako občanská iniciativa, spolek jsme založili v roce 2016. Chceme zámek chránit, ukazovat lidem a postupně ho obnovit ve spolupráci s městem Toužim, které je jeho vlastníkem.</p></div>
     <div class="two">
-      <div class="card"><h2 class="h3">Kdo jsme</h2><p>Jsme parta dobrovolníků, kterým není osud zámku jedno. Spolek vede předsedkyně <b>Pavla Vokurková</b> a místopředsedkyně <b>Alena Šlajerová</b>. O technický stav zámku se stará zámecký pán <b>Jan Policar</b>.</p><div class="lidi"><figure class="pan"><img src="img/predsedkyne.jpg" alt="Pavla Vokurková a Alena Šlajerová s hrnky svařáku na nádvoří zámku" loading="lazy"><figcaption>Pavla Vokurková (vlevo) a Alena Šlajerová</figcaption></figure><figure class="pan"><img src="img/zamecky-pan.jpg" alt="Jan Policar na nádvoří zámku s rezavou helmou na hlavě" loading="lazy"><figcaption>Zámecký pán Jan Policar</figcaption></figure></div></div>
+      <div class="card"><h2 class="h3">Kdo jsme</h2><p>Jsme parta dobrovolníků, kterým není lhostejný osud zámku. Spolek vede předsedkyně <b>Pavla Vokurková</b> a místopředsedkyně <b>Alena Šlajerová</b>. O technický stav zámku se stará „zámecký pán“ <b>Jan Policar</b>.</p><div class="lidi"><figure class="pan"><img src="img/predsedkyne.jpg" alt="Pavla Vokurková a Alena Šlajerová s hrnky svařáku na nádvoří zámku" loading="lazy"><figcaption>Pavla Vokurková (vlevo) a Alena Šlajerová</figcaption></figure><figure class="pan"><img src="img/zamecky-pan.jpg" alt="Jan Policar na nádvoří zámku s rezavou helmou na hlavě" loading="lazy"><figcaption>„Zámecký pán“ Jan Policar</figcaption></figure></div></div>
       <div class="card"><h2 class="h3">Dokumenty</h2><ul class="docs"><li><a href="docs/stanovy.pdf" target="_blank" rel="noopener">Stanovy spolku</a> <small>PDF · platné od 12. 7. 2026</small></li><li><a href="docs/clensky-rad.pdf" target="_blank" rel="noopener">Členský řád</a> <small>PDF</small></li><li><a href="docs/prihlaska.pdf" target="_blank" rel="noopener">Přihláška za člena</a> <small>PDF k vytištění</small></li><li><a href="docs/vyrocni-zprava-2025.pdf" target="_blank" rel="noopener">Výroční zpráva 2025</a> <small>PDF</small></li><li><a href="docs/vyrocni-zprava-2024.pdf" target="_blank" rel="noopener">Výroční zpráva 2024</a> <small>PDF</small></li></ul></div>
     </div>
     <div class="card kontakt"><h2 class="h3">Kontakt</h2>
@@ -722,7 +738,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
         <div><h3>Živý zámek Toužim z. s.</h3><p>Na Výsluní 346, 364 01 Toužim<br>IČO 04690770<br>Spolkový rejstřík: Krajský soud v Plzni, sp. zn. L 7540</p><p><a href="mailto:zivyzamektouzim@email.cz">zivyzamektouzim@email.cz</a><br><a href="https://www.facebook.com/zivyzamek.touzim" target="_blank" rel="noopener">Facebook</a></p></div>
         <div><h3>Předsedkyně</h3><p><b>Pavla Vokurková</b><br><a href="tel:+420724859799">+420 724 859 799</a></p></div>
         <div><h3>Místopředsedkyně</h3><p><b>Alena Šlajerová</b><br><a href="tel:+420728290280">+420 728 290 280</a></p></div>
-        <div><h3>Zámecký pán</h3><p><b>Jan Policar</b><br><a href="tel:+420605158446">+420 605 158 446</a></p></div>
+        <div><h3>„Zámecký pán“</h3><p><b>Jan Policar</b><br><a href="tel:+420605158446">+420 605 158 446</a></p></div>
       </div>
     </div>
     <div class="block">
@@ -745,27 +761,62 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 <!-- PODPOŘTE -->
 <section data-page="podporte" hidden>
   <div class="wrap">
-    <div class="page-head"><span class="eyebrow">Podpořte nás</span><h1>Bez dobrovolníků a dárců by zámek dál chátral</h1><p>Na zahradu teď potřebujeme hlavně materiál (beton, kámen, dřevo), pronájem strojů a jídlo pro dobrovolníky na brigádách.</p></div>
-    <div class="two">
-      <div class="card navy">
-        <h2 class="h3">Transparentní účet</h2>
-        <div class="acct"><code id="acct">2301034510/2010</code><button class="copy" id="copyBtn" type="button">Kopírovat</button></div>
-        <figure class="qr"><img src="img/qr-platba.png" width="684" height="684" alt="QR Platba: dar 500 Kč na transparentní účet spolku"><figcaption>Naskenujte v bankovní aplikaci. Je v něm přednastavený dar 500 Kč, částku můžete v aplikaci změnit.</figcaption></figure>
-        <p>Každý pohyb na účtu je veřejně vidět. Potvrzení o daru vám rádi vystavíme, stačí napsat na <a href="mailto:zivyzamektouzim@email.cz">zivyzamektouzim@email.cz</a>.</p>
-        <p>Nakupujete na internetu? Když do e-shopu přejdete přes Givt a vyberete náš spolek, obchod nám pošle část z ceny nákupu. Vás to nestojí nic navíc.</p>
-        <div class="ctas"><a class="btn fill" href="https://givt.cz/zivy-zamek-touzim-z-s" target="_blank" rel="noopener">Podpořit nákupem přes Givt</a></div>
+    <div class="page-head"><span class="eyebrow">Podpořte nás</span><h1>Bez dobrovolníků a dárců by zámek dál chátral</h1><p>Pomoct můžete rukama, jídlem, materiálem, penězi nebo tím, že se stanete jedním z nás. Vyberte si, co je vám nejbližší.</p>
+      <nav class="subnav" aria-label="Na této stránce"><a href="#podporte" data-jump="pomoc-brigady">Brigády</a><a href="#podporte" data-jump="pomoc-jinak">Jídlo a materiál</a><a href="#podporte" data-jump="pomoc-dar">Finanční dar</a><a href="#podporte" data-jump="pomoc-clen">Členství</a><a href="#podporte" data-jump="pomoc-suvenyry">Suvenýry</a></nav></div>
+
+    <div class="pblock b1" id="pomoc-brigady">
+      <div class="pt">
+        <span class="eyebrow" style="color:var(--sun)">Přijďte pomoct</span>
+        <h2>Brigády na zámku</h2>
+        <p>Brigády děláme několikrát do roka a přijít může každý, i na hodinu. Uklízíme nádvoří, sklepy a sály, pracujeme na zahradě a připravujeme zámek na akce. Nářadí půjčíme, stačí pracovní oblečení a chuť. Po práci se společně najíme a posedíme.</p>
+        <h3 class="h3" style="margin-top:6px">Nejbližší brigády</h3>
+        <ul class="brig" id="brigList"></ul>
       </div>
-      <div class="card sun">
-        <h2 class="h3">Přijďte pomoct</h2>
-        <p>Brigády jsou několikrát do roka a přijít může každý. Nářadí půjčíme a postaráme se o jídlo.</p>
-        <a class="btn" href="#program">Termíny brigád</a>
-        <h2 class="h3" style="margin-top:12px">Staňte se členem</h2>
-        <p>Nejdřív se s námi seznamte: přijďte na brigádu nebo pomoct s akcí. Když vás to chytne, podáte přihlášku a o přijetí rozhodne členská schůze. Členem může být kdokoli od 15 let a členství je zdarma.</p>
-        <p class="doclinks"><a href="docs/prihlaska.pdf" target="_blank" rel="noopener">Přihláška (PDF)</a> · <a href="docs/clensky-rad.pdf" target="_blank" rel="noopener">Členský řád</a> · <a href="docs/stanovy.pdf" target="_blank" rel="noopener">Stanovy</a></p>
+      <figure><img src="img/akce/2021-10-09-5.jpg" alt="Dobrovolníci na podzimní brigádě v areálu zámku" loading="lazy"></figure>
+    </div>
+
+    <div class="pblock b2" id="pomoc-jinak">
+      <div class="pt">
+        <span class="eyebrow">Pomozte jinak</span>
+        <h2>Jídlo a materiál</h2>
+        <p>Ne každý může pomoci fyzicky. Rádi pečete? Vaříte skvělé výživné polévky? I to nám obrovsky pomůže. Zakládáme si na tom, že dobrovolníky při brigádách nakrmíme. Podpořte nás tím, co vám jde!</p>
+        <p>Na zámeckou zahradu teď potřebujeme hlavně materiál: beton, kámen a dřevo, a také pronájem strojů. Pokud něco z toho máte nebo můžete zajistit, napište nám na <a href="mailto:zivyzamektouzim@email.cz">zivyzamektouzim@email.cz</a>.</p>
+      </div>
+      <figure><img src="img/akce/2026-09-26-5.jpg" alt="Dobrovolníci na brigádě Poznej &amp; pomoz, září 2026" loading="lazy"></figure>
+    </div>
+
+    <div class="pblock b3" id="pomoc-dar">
+      <div class="pt">
+        <span class="eyebrow" style="color:var(--sun)">Finanční dar</span>
+        <h2>Pošlete dar</h2>
+        <p>Peníze jdou na materiál, pronájem strojů a jídlo pro dobrovolníky. Výše příspěvku záleží jen na vás. Každá koruna nám pomůže.</p>
+        <div class="sub2">
+          <div>
+            <h3 class="h3">Transparentní účet</h3>
+            <div class="acct"><code id="acct">2301034510/2010</code><button class="copy" id="copyBtn" type="button">Kopírovat</button></div>
+            <figure class="qr"><img src="img/qr-platba.png" width="684" height="684" alt="QR Platba: dar 500 Kč na transparentní účet spolku"><figcaption>Naskenujte v bankovní aplikaci. Je v něm přednastavený dar 500 Kč, částku můžete v aplikaci změnit.</figcaption></figure>
+            <p>Každý pohyb na účtu je veřejně vidět. Potvrzení o daru vám rádi vystavíme, stačí napsat na <a href="mailto:zivyzamektouzim@email.cz">zivyzamektouzim@email.cz</a>.</p>
+          </div>
+          <div class="givt">
+            <h3 class="h3">Nákupem přes Givt</h3>
+            <p>Nakupujete na internetu? Když do e-shopu přejdete přes Givt a vyberete náš spolek, obchod nám pošle část z ceny nákupu. Vás to nestojí nic navíc.</p>
+            <div class="ctas"><a class="btn fill" href="https://givt.cz/zivy-zamek-touzim-z-s" target="_blank" rel="noopener">Podpořit nákupem přes Givt</a></div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="block">
-      <div class="lab"><span class="eyebrow">Suvenýry</span><h2>Kupte si kus zámku</h2><p style="color:var(--grey)" id="goodsIntro">Na akcích, o otevřených víkendech nebo poštou. Objednávky e-mailem.</p></div>
+
+    <div class="pblock b4" id="pomoc-clen">
+      <div class="pt">
+        <span class="eyebrow">Staňte se jedním z nás</span>
+        <h2>Členství ve spolku</h2>
+        <p>Nejdřív se s námi seznamte: přijďte na brigádu, pomozte s akcí nebo si s námi sedněte k ohni. Když vás to chytne, podáte přihlášku a o přijetí rozhodne členská schůze. Členem může být kdokoli od 15 let a členství je zdarma.</p>
+        <p class="doclinks"><a href="docs/prihlaska.pdf" target="_blank" rel="noopener">Přihláška (PDF)</a> · <a href="docs/clensky-rad.pdf" target="_blank" rel="noopener">Členský řád</a> · <a href="docs/stanovy.pdf" target="_blank" rel="noopener">Stanovy</a></p>
+      </div>
+      <figure><img src="img/akce/2025-10-11-5.jpg" alt="Posezení u ohně po podzimní brigádě, říjen 2025" loading="lazy"></figure>
+    </div>
+    <div class="block" id="pomoc-suvenyry">
+      <div class="lab"><span class="eyebrow">Suvenýry</span><h2>Kupte si kus zámku</h2><p style="color:var(--grey)" id="goodsIntro">Na akcích, o otevřených víkendech nebo poštou. Objednávky na e-mailu zivyzamektouzim@email.cz.</p></div>
       <div class="body">
         <div class="goods" id="goods">
           <div class="g" data-k="plechacek"><div class="gi"><span>foto</span></div><div class="gt"><span>Zámecký plecháček</span><p>Lehký a odolný plecháček s modrým okrajem, 360 ml.</p><b>300 Kč</b></div></div>
@@ -779,7 +830,6 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
           <div class="g" data-k="znamka"><div class="gi"><span>foto</span></div><div class="gt"><span>Turistická známka č. 2864</span><p>K 555 letům města Toužim, limitováno 555 kusy.</p><b>55 Kč</b></div></div>
           <div class="g" data-k="mince"><div class="gi"><span>foto</span></div><div class="gt"><span>Pamětní mince 550 let</span><p>Starostříbro 50 Kč, starozlato 75 Kč, starobronz 100 Kč. Limitované série.</p><b>50–100 Kč</b></div></div>
         </div>
-        <p style="margin-top:16px">Objednávky a dotazy na <a href="mailto:zivyzamektouzim@email.cz">zivyzamektouzim@email.cz</a>, pošleme i poštou.</p>
       </div>
     </div>
   </div>
@@ -812,9 +862,9 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 <div class="copy" role="region" aria-label="Autorská práva"><div class="wrap">© <span id="cy">2026</span> Živý zámek Toužim z. s. · Web vytvořil Michal Nedvídek s pomocí Claude (AI od Anthropicu)</div></div>
 
 <div class="lb" id="lb" hidden><img alt=""><button class="x" aria-label="Zavřít">×</button><button class="pv" aria-label="Předchozí">‹</button><button class="nx" aria-label="Další">›</button></div>
-<script src="data/i18n.js?v=2fd92b36"></script>
+<script src="data/i18n.js?v=ea09d38d"></script>
 <script src="data/akce.js?v=844c1f25"></script>
-<script src="data/web.js?v=07ebefea"></script>
+<script src="data/web.js?v=b90058b6"></script>
 <script>
 // Překlad statických textů stránky (data/i18n.js). Jednotka překladu = prvek, který obsahuje jen text a řádkové značky.
 (function(){
@@ -930,6 +980,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     if(id==='archiv'){id='program';jump='archiv';}
     if(id==='dotaz'){id='navsteva';jump='dotaz';}
     if(id.indexOf('akce/')===0){renderDetail(id.slice(5));id='akce';}
+    else if(id.indexOf('/')>0){jump=id.split('/')[1];id=id.split('/')[0];}
     if(!pages.some(function(p){return p.dataset.page===id})) id='domu';
     pages.forEach(function(p){p.hidden=p.dataset.page!==id});
     var navId=id==='akce'?'program':id;
@@ -948,9 +999,14 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   if(hu)hu.innerHTML=up.length?up.slice(0,4).map(function(a){
     return '<a class="upcard" href="#akce/'+a.id+'"><div class="cal">'+cal(a)+'</div><div class="tx"><h3>'+esc(a.title)+'</h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<span class="go">'+T('Detail')+' →</span></div>'+(a.poster?'<img class="pt" src="'+a.poster+'" alt="" loading="lazy">':'')+'</a>';
   }).join(''):'<p>'+T('Program na další sezónu připravujeme. Sledujte náš Facebook.')+'</p>';
+  var brig=document.getElementById('brigList');
+  if(brig){var bb=up.filter(function(a){return a.tag==='Přijďte pomoct'}).slice(0,3);
+    brig.innerHTML=bb.length?bb.map(function(a){return '<li><a href="#akce/'+a.id+'"><span class="bd">'+dd(a)+'</span><span><b>'+esc(a.title)+'</b>'+(a.when?'<br><small>'+esc(a.when)+'</small>':'')+'</span>'+(a.poster?'<img src="'+a.poster+'" alt="" loading="lazy">':'<span></span>')+'</a></li>'}).join(''):'<li>'+T('Termíny dalších brigád zveřejníme v programu a na Facebooku.')+'</li>';}
+  var RK=window.ROKY||{}, rok=String(today.getFullYear()), sezona=RK[rok];
   if(ul)ul.innerHTML=up.length?up.map(function(a){
     return '<li class="ev"><div class="d">'+dd(a)+(a.when?'<small style="display:block;font-size:15px;color:var(--grey);font-family:var(--font);font-weight:400">'+esc(a.when)+'</small>':'')+'</div><div><h2 class="h3"><a href="#akce/'+a.id+'">'+esc(a.title)+'</a></h2>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<a class="det" href="#akce/'+a.id+'">'+T('Detail akce')+' →</a></div>'+(a.poster?'<button class="pz" data-src="'+a.poster+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+a.poster+'" alt="'+T('Plakát')+': '+esc(a.title)+'" loading="lazy"></button>':'<span></span>')+(a.tag?'<span class="tag '+(a.tagc||'')+'">'+esc(T(a.tag))+'</span>':'<span></span>')+'</li>';
   }).join(''):'<li class="ev"><div><p>'+T('Program na další sezónu připravujeme. Sledujte náš Facebook.')+'</p></div></li>';
+  if(ul&&sezona)ul.insertAdjacentHTML('afterbegin','<li class="ev pin"><div class="d">'+rok+'</div><div><h2 class="h3">'+T('Plakát sezóny')+' '+rok+'</h2><p>'+T('Celý program roku na jednom plakátu. Klikněte pro zvětšení.')+'</p></div><button class="pz" data-src="'+sezona+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+sezona+'" alt="'+T('Plakát sezóny')+' '+rok+'" loading="lazy"></button><span></span></li>');
 
   // archiv: roky a seznam
   var yearsEl=document.getElementById('archYears'), list=document.getElementById('archList');
@@ -1030,7 +1086,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   else{document.getElementById('seasonTxt').textContent=T('Prohlídky po domluvě na')+' '+tel.replace(/ /g,' ')+'. '+T('Otevřené víkendy opět příští rok.');}
   var SV=WEB.suvenyry;
   if(SV){
-    document.getElementById('goodsIntro').textContent=SV.uvod;
+    document.getElementById('goodsIntro').innerHTML=String(SV.uvod).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]}).replace(/[\w.+-]+@[\w-]+\.[\w.]+\w/g,function(m){return '<a href="mailto:'+m+'">'+m+'</a>'});
     document.getElementById('goods').innerHTML=SV.polozky.map(function(g){return '<div class="g'+(g.skladem?'':' out')+'"><div class="gi">'+(g.foto?'<img src="'+esc(g.foto)+'" alt="'+esc(g.nazev)+'" loading="lazy">':'<span>'+T('foto')+'</span>')+'</div><div class="gt"><span>'+esc(g.nazev)+'</span><p>'+esc(g.popis)+'</p><b>'+esc(g.cena)+(g.skladem?'':' · '+T('vyprodáno'))+'</b></div></div>'}).join('');
   }
 

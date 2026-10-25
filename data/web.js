@@ -20,7 +20,7 @@ window.WEB={
   "mimo_sezonu": "po domluvě"
  },
  "suvenyry": {
-  "uvod": "Na akcích, o otevřených víkendech nebo poštou. Objednávky e-mailem.",
+  "uvod": "Na akcích, o otevřených víkendech nebo poštou. Objednávky na e-mailu zivyzamektouzim@email.cz.",
   "polozky": [
    {
     "nazev": "Zámecký plecháček",
@@ -853,7 +853,7 @@ window.L10N={
     "mimo_sezonu": "by arrangement"
    },
    "suvenyry": {
-    "uvod": "At our events, on open weekends or by post. Orders by e-mail.",
+    "uvod": "At our events, on open weekends or by post. Orders by e-mail to zivyzamektouzim@email.cz.",
     "polozky": [
      {
       "nazev": "Castle enamel mug",
@@ -1748,7 +1748,7 @@ window.L10N={
     "mimo_sezonu": "nach Vereinbarung"
    },
    "suvenyry": {
-    "uvod": "Bei unseren Veranstaltungen, an offenen Wochenenden oder per Post. Bestellungen per E-Mail.",
+    "uvod": "Bei unseren Veranstaltungen, an offenen Wochenenden oder per Post. Bestellungen per E-Mail an zivyzamektouzim@email.cz.",
     "polozky": [
      {
       "nazev": "Emaillebecher vom Schloss",
