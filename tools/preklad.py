@@ -163,6 +163,13 @@ def h(v):
     return hashlib.sha1(json.dumps(v, ensure_ascii=False).encode()).hexdigest()[:12]
 
 
+def radky_pary(cs, tr):
+    """Dvojice český řádek -> přeložený řádek, když mají oba texty stejný počet neprázdných řádků."""
+    a = [r.strip() for r in cs.split('\n') if r.strip()]
+    b = [r.strip() for r in tr.split('\n') if r.strip()]
+    return {h(x): y for x, y in zip(a, b)} if len(a) == len(b) else {}
+
+
 def dopln(fields, cs, tr, l, p, cesta, stav, pref=''):
     """Doplní do slovníku tr (překlad jednoho jazyka) chybějící pole podle češtiny cs.
 
@@ -187,10 +194,10 @@ def dopln(fields, cs, tr, l, p, cesta, stav, pref=''):
             if t in EMPTY:
                 prelozit = True
             elif z is None:  # pole přeložené dřív, než se stav začal vést: vezme se, jak je
-                stav[klic] = {'cs': h(v), 'out': h(t)}
+                z = stav[klic] = {'cs': h(v), 'out': h(t)}
                 prelozit = False
             elif h(t) != z['out']:  # někdo překlad upravil ručně
-                stav[klic] = {'cs': h(v), 'out': h(t), 'rucne': True}
+                z = stav[klic] = {'cs': h(v), 'out': h(t), 'rucne': True}
                 prelozit = False
             elif h(v) != z['cs'] and not z.get('rucne'):  # změnila se čeština
                 prelozit = True
@@ -198,11 +205,41 @@ def dopln(fields, cs, tr, l, p, cesta, stav, pref=''):
                 if h(v) != z['cs']:
                     z['cs'] = h(v)
                 prelozit = False
-            if prelozit:
-                def nastav(x, tr=tr, k=k, klic=klic, v=v):
-                    tr[k] = x
-                    stav[klic] = {'cs': h(v), 'out': h(x)}
-                p.pridej(l, v, w == 'markdown', nastav)
+            if not prelozit:
+                if 'radky' not in z and not z.get('rucne') and z['cs'] == h(v):
+                    z['radky'] = radky_pary(v, t)
+                continue
+            # Překládají se jen řádky, které v překladu ještě nejsou (podle otisku českého řádku);
+            # nezměněné řádky si nechají dosavadní překlad.
+            stare = (z or {}).get('radky') or {}
+            radky = v.split('\n')
+            hotovo = list(radky)
+            nove = {}
+            cekat = []
+            for i, r in enumerate(radky):
+                if not r.strip():
+                    continue
+                if h(r.strip()) in stare:
+                    hotovo[i] = stare[h(r.strip())]
+                    nove[h(r.strip())] = hotovo[i]
+                else:
+                    cekat.append(i)
+
+            def dokonci(tr=tr, k=k, klic=klic, v=v, hotovo=hotovo, nove=nove):
+                x = '\n'.join(hotovo)
+                tr[k] = x
+                stav[klic] = {'cs': h(v), 'out': h(x), 'radky': nove}
+            if not cekat:
+                dokonci()
+            zbyva_radku = [len(cekat)]
+            for i in cekat:
+                def nastav(x, i=i, hotovo=hotovo, nove=nove, radky=radky, dokonci=dokonci, zbyva_radku=zbyva_radku):
+                    hotovo[i] = x
+                    nove[h(radky[i].strip())] = x
+                    zbyva_radku[0] -= 1
+                    if not zbyva_radku[0]:
+                        dokonci()
+                p.pridej(l, radky[i].strip(), w == 'markdown', nastav)
         elif w == 'list' and isinstance(v, list):
             cil = tr.get(k)
             if not isinstance(cil, list) or len(cil) != len(v):

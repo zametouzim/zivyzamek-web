@@ -1,3114 +1,5472 @@
 {
 "content/akce/2015-10-17.json|de|text": {
 "cs": "2c11621ca05d",
-"out": "4d01abc7968f"
+"out": "4d01abc7968f",
+"radky": {
+"2c11621ca05d": "Ein weiterer Arbeitseinsatz im Schloss knüpfte an die bisherigen Arbeiten an und galt der Pflege des Schlosshofs und der Beseitigung von Wildaufwuchs. Freiwillige konnten sich mit eigenem Werkzeug beteiligen, von Sägen und Freischneidern bis zu Schaufeln und Schubkarren. Zum Treffen gehörten auch Neuigkeiten über die weitere Entwicklung und die Zukunft des Schlosses."
+}
 },
 "content/akce/2015-10-17.json|de|title": {
 "cs": "48c474bc60e3",
-"out": "3d8fc1f22fb9"
+"out": "3d8fc1f22fb9",
+"radky": {
+"48c474bc60e3": "Arbeitseinsatz im Schlosshof"
+}
 },
 "content/akce/2015-10-17.json|en|text": {
 "cs": "2c11621ca05d",
-"out": "aab571edc75e"
+"out": "aab571edc75e",
+"radky": {
+"2c11621ca05d": "Another work party at the castle followed up on earlier efforts and focused on tidying the castle courtyard and clearing self-seeded trees. Volunteers could join in with their own tools, from saws and brush cutters to shovels and wheelbarrows. The gathering also brought news about further developments and the castle's future."
+}
 },
 "content/akce/2015-10-17.json|en|title": {
 "cs": "48c474bc60e3",
-"out": "d8531a6151e7"
+"out": "d8531a6151e7",
+"radky": {
+"48c474bc60e3": "Work party in the courtyard"
+}
 },
 "content/akce/2015-12-12.json|de|text": {
 "cs": "0655ae92d776",
-"out": "4923b1307698"
+"out": "4923b1307698",
+"radky": {
+"0655ae92d776": "Das Adventstreffen im Schlosshof bot weihnachtliche Stimmung mit Glühwein und Weihnachtsliedern. Es fand direkt im Schlosshof statt und war zugleich eine Gelegenheit, sich an die Zeiten zu erinnern, als in den Räumen des Schlosses noch Leben herrschte."
+}
 },
 "content/akce/2015-12-12.json|de|title": {
 "cs": "5c18ab36e83a",
-"out": "1df4a997a3f8"
+"out": "1df4a997a3f8",
+"radky": {
+"5c18ab36e83a": "Weihnachtstreffen auf dem Schloss mit Glühwein"
+}
 },
 "content/akce/2015-12-12.json|en|text": {
 "cs": "0655ae92d776",
-"out": "6267493cb333"
+"out": "6267493cb333",
+"radky": {
+"0655ae92d776": "The Advent get-together in the castle courtyard offered a Christmas atmosphere with mulled wine and carol singing. It took place right in the castle courtyard and was also a chance to reminisce about the days when the castle's rooms were still full of life."
+}
 },
 "content/akce/2015-12-12.json|en|title": {
 "cs": "5c18ab36e83a",
-"out": "7955e972cebe"
+"out": "7955e972cebe",
+"radky": {
+"5c18ab36e83a": "Christmas get-together at the castle with mulled wine"
+}
 },
 "content/akce/2016-01-26.json|de|text": {
 "cs": "27c86eadee92",
-"out": "241b06e92ab2"
+"out": "241b06e92ab2",
+"radky": {
+"27c86eadee92": "Im Infozentrum Toužim fand der Vortrag Obrazy ze života jednoho zámku (Bilder aus dem Leben eines Schlosses) statt, der der Geschichte und baulichen Entwicklung des Schlosses gewidmet war – des ältesten Baudenkmals der Stadt Toužim. Es sprach Jiří Schierl, Mitglied des burgenkundlichen Klub Augusta Sedláčka."
+}
 },
 "content/akce/2016-01-26.json|de|title": {
 "cs": "acfb0bde0c7a",
-"out": "72320243cbd4"
+"out": "72320243cbd4",
+"radky": {
+"acfb0bde0c7a": "Vortrag: Bilder aus dem Leben eines Schlosses"
+}
 },
 "content/akce/2016-01-26.json|en|text": {
 "cs": "27c86eadee92",
-"out": "1a67971d234f"
+"out": "1a67971d234f",
+"radky": {
+"27c86eadee92": "The Toužim Information Centre hosted the talk Obrazy ze života jednoho zámku (Pictures from the Life of a Castle), devoted to the history and architectural development of the castle, the oldest monument in the town of Toužim. The speaker was Jiří Schierl, a member of the castellological Klub Augusta Sedláčka."
+}
 },
 "content/akce/2016-01-26.json|en|title": {
 "cs": "acfb0bde0c7a",
-"out": "c580dbf3d02b"
+"out": "c580dbf3d02b",
+"radky": {
+"acfb0bde0c7a": "Talk: Pictures from the life of a castle"
+}
 },
 "content/akce/2016-04-02.json|de|text": {
 "cs": "70c1631f8745",
-"out": "712912ff097d"
+"out": "712912ff097d",
+"radky": {
+"70c1631f8745": "Der Arbeitseinsatz galt der Verschönerung des Schlosshofs für die Öffentlichkeit von Toužim. Die Freiwilligen verschalten die Türen, die vom Hof in die einsturzgefährdeten Schlossgebäude führen – eine Bedingung der Stadt für die öffentliche Nutzung des Hofs. Auf dem Programm standen außerdem die Säuberung des Zuschauerbereichs und das Verbrennen von Schnittholz."
+}
 },
 "content/akce/2016-04-02.json|de|title": {
 "cs": "c102c4324247",
-"out": "0105fc2d28f9"
+"out": "0105fc2d28f9",
+"radky": {
+"c102c4324247": "Arbeitseinsatz auf dem Schloss"
+}
 },
 "content/akce/2016-04-02.json|en|text": {
 "cs": "70c1631f8745",
-"out": "45c83f0c6887"
+"out": "45c83f0c6887",
+"radky": {
+"70c1631f8745": "The work party focused on improving the castle courtyard for the people of Toužim. Volunteers boarded up the doorways leading from the courtyard into the unsafe castle buildings, which the town required before the courtyard could be opened to the public. The programme also included clearing the auditorium area and burning cut branches."
+}
 },
 "content/akce/2016-04-02.json|en|title": {
 "cs": "c102c4324247",
-"out": "2ad39e47170e"
+"out": "2ad39e47170e",
+"radky": {
+"c102c4324247": "Work party at the castle"
+}
 },
 "content/akce/2016-04-30.json|de|text": {
 "cs": "8ba2f2f2b58e",
-"out": "290ecd5d63d4"
+"out": "290ecd5d63d4",
+"radky": {
+"8ba2f2f2b58e": "Bau eines Zauns, Säubern des Zuschauerbereichs, Verbrennen von Gestrüpp und das erste Hexenbrennen auf dem Schloss."
+}
 },
 "content/akce/2016-04-30.json|de|title": {
 "cs": "1e390cf741cb",
-"out": "e040a85e5020"
+"out": "e040a85e5020",
+"radky": {
+"1e390cf741cb": "Arbeitseinsatz und das erste Hexenbrennen"
+}
 },
 "content/akce/2016-04-30.json|en|text": {
 "cs": "8ba2f2f2b58e",
-"out": "197c5f71c80c"
+"out": "197c5f71c80c",
+"radky": {
+"8ba2f2f2b58e": "Building a fence, cleaning the auditorium, burning brushwood and the first witch-burning night at the castle."
+}
 },
 "content/akce/2016-04-30.json|en|title": {
 "cs": "1e390cf741cb",
-"out": "fb06a83e65ff"
+"out": "fb06a83e65ff",
+"radky": {
+"1e390cf741cb": "Work party and the first witch-burning night"
+}
 },
 "content/akce/2016-05-28.json|de|text": {
 "cs": "3f770d875d15",
-"out": "61d378453dcd"
+"out": "61d378453dcd",
+"radky": {
+"3f770d875d15": "Ein Arbeitseinsatz ab 10 Uhr: Reinigung von Bühne und Zuschauerbereich und Vorbereitung auf die Sommerveranstaltungen."
+}
 },
 "content/akce/2016-05-28.json|de|title": {
 "cs": "c102c4324247",
-"out": "0105fc2d28f9"
+"out": "0105fc2d28f9",
+"radky": {
+"c102c4324247": "Arbeitseinsatz auf dem Schloss"
+}
 },
 "content/akce/2016-05-28.json|en|text": {
 "cs": "3f770d875d15",
-"out": "b57b31fda84f"
+"out": "b57b31fda84f",
+"radky": {
+"3f770d875d15": "A work day from 10 am: cleaning the stage and the auditorium and getting ready for the summer events."
+}
 },
 "content/akce/2016-05-28.json|en|title": {
 "cs": "c102c4324247",
-"out": "2ad39e47170e"
+"out": "2ad39e47170e",
+"radky": {
+"c102c4324247": "Work party at the castle"
+}
 },
 "content/akce/2016-06-11.json|de|text": {
 "cs": "b03ee576efeb",
-"out": "46fed529f1ee"
+"out": "46fed529f1ee",
+"radky": {
+"b03ee576efeb": "Das allererste Konzert im Schloss, veranstaltet vom Verein Živý zámek Toužim. Zum ersten Mal spielte hier die Country-Band Perseidy. Der Eintritt war frei gegen Spende, für Erfrischungen war gesorgt."
+}
 },
 "content/akce/2016-06-11.json|de|title": {
 "cs": "05cc6adb3e71",
-"out": "1b0330694021"
+"out": "1b0330694021",
+"radky": {
+"05cc6adb3e71": "Perseidy: das erste Schlosskonzert einer Countryband"
+}
 },
 "content/akce/2016-06-11.json|en|text": {
 "cs": "b03ee576efeb",
-"out": "60a2de959658"
+"out": "60a2de959658",
+"radky": {
+"b03ee576efeb": "The very first concert at the castle, organised by the Živý zámek Toužim association. The country band Perseidy played at the castle for the first time. Admission was by donation and refreshments were provided."
+}
 },
 "content/akce/2016-06-11.json|en|title": {
 "cs": "05cc6adb3e71",
-"out": "0111c123590f"
+"out": "0111c123590f",
+"radky": {
+"05cc6adb3e71": "Perseidy: the first castle concert by a country band"
+}
 },
 "content/akce/2016-07-02.json|de|text": {
 "cs": "88c7d34fc7ef",
-"out": "e2adc39979b7"
+"out": "e2adc39979b7",
+"radky": {
+"88c7d34fc7ef": "Samstag: Verschönerungseinsatz, Freiwillige willkommen. Sonntag: Basteln von Schmuck und Dekorationen für Kinder und Erwachsene, nachbarschaftliche Bewirtung."
+}
 },
 "content/akce/2016-07-02.json|de|title": {
 "cs": "943057dfd737",
-"out": "bb7ffa4236ee"
+"out": "bb7ffa4236ee",
+"radky": {
+"943057dfd737": "Kreatives Wochenende auf dem Schloss"
+}
 },
 "content/akce/2016-07-02.json|en|text": {
 "cs": "88c7d34fc7ef",
-"out": "aae59790f1c1"
+"out": "aae59790f1c1",
+"radky": {
+"88c7d34fc7ef": "Saturday: a work party to spruce things up, volunteers welcome. Sunday: making jewellery and decorations for children and adults, neighbourly refreshments."
+}
 },
 "content/akce/2016-07-02.json|en|title": {
 "cs": "943057dfd737",
-"out": "27897362d126"
+"out": "27897362d126",
+"radky": {
+"943057dfd737": "Creative weekend at the castle"
+}
 },
 "content/akce/2016-07-06.json|de|title": {
 "cs": "ac8a59f2286c",
-"out": "aba7763fed15"
+"out": "aba7763fed15",
+"radky": {
+"ac8a59f2286c": "Gedenktag für Magister Jan Hus"
+}
 },
 "content/akce/2016-07-06.json|en|title": {
 "cs": "ac8a59f2286c",
-"out": "b88be8dffef4"
+"out": "b88be8dffef4",
+"radky": {
+"ac8a59f2286c": "Master Jan Hus Day"
+}
 },
 "content/akce/2016-07-08.json|de|title": {
 "cs": "1070e07088f4",
-"out": "d907716a0fcd"
+"out": "d907716a0fcd",
+"radky": {
+"1070e07088f4": "Tag der Stadt Toužim"
+}
 },
 "content/akce/2016-07-08.json|en|title": {
 "cs": "1070e07088f4",
-"out": "a4578ce1ad02"
+"out": "a4578ce1ad02",
+"radky": {
+"1070e07088f4": "Toužim Town Day"
+}
 },
 "content/akce/2016-08-13.json|de|text": {
 "cs": "819eb4abb92c",
-"out": "461d6662e813"
+"out": "461d6662e813",
+"radky": {
+"819eb4abb92c": "Im Schlosshof bauten die Teilnehmer aus Restholz Nistkästen und Futterhäuschen, verziert mit Zweigen und Naturmaterialien. Es entstanden zwei Kästen, einer davon für Fledermäuse, und ein Futterhäuschen."
+}
 },
 "content/akce/2016-08-13.json|de|title": {
 "cs": "c3bb47eef402",
-"out": "51811928ff9c"
+"out": "51811928ff9c",
+"radky": {
+"c3bb47eef402": "Workshop: Bau von Nistkästen und Futterhäuschen"
+}
 },
 "content/akce/2016-08-13.json|en|text": {
 "cs": "819eb4abb92c",
-"out": "dc9beb8735f5"
+"out": "dc9beb8735f5",
+"radky": {
+"819eb4abb92c": "In the castle courtyard, participants made bird boxes and feeders from leftover wood, decorated with twigs and natural materials. Two boxes, one of them for bats, and one feeder were made."
+}
 },
 "content/akce/2016-08-13.json|en|title": {
 "cs": "c3bb47eef402",
-"out": "89b3f8909ab5"
+"out": "89b3f8909ab5",
+"radky": {
+"c3bb47eef402": "Workshop: making bird boxes and feeders"
+}
 },
 "content/akce/2016-08-19.json|de|title": {
 "cs": "a4983adae9ca",
-"out": "0afcb9509bb7"
+"out": "0afcb9509bb7",
+"radky": {
+"a4983adae9ca": "Konzert der Band Moonpower"
+}
 },
 "content/akce/2016-08-19.json|en|title": {
 "cs": "a4983adae9ca",
-"out": "36a80c77f66f"
+"out": "36a80c77f66f",
+"radky": {
+"a4983adae9ca": "Moonpower concert"
+}
 },
 "content/akce/2016-09-17.json|de|title": {
 "cs": "1f27dc11447f",
-"out": "06c7e47f890c"
+"out": "06c7e47f890c",
+"radky": {
+"1f27dc11447f": "Konzert der Band Cerberos und ein Kunstnachmittag"
+}
 },
 "content/akce/2016-09-17.json|en|title": {
 "cs": "1f27dc11447f",
-"out": "59b8aaad13f7"
+"out": "59b8aaad13f7",
+"radky": {
+"1f27dc11447f": "Cerberos concert and an afternoon of art"
+}
 },
 "content/akce/2016-10-15.json|de|title": {
 "cs": "5b57a475982d",
-"out": "8e017d877ac8"
+"out": "8e017d877ac8",
+"radky": {
+"5b57a475982d": "72 Stunden auf Schloss Toužim"
+}
 },
 "content/akce/2016-10-15.json|en|title": {
 "cs": "5b57a475982d",
-"out": "0edbcf884c9e"
+"out": "0edbcf884c9e",
+"radky": {
+"5b57a475982d": "72 Hours at Toužim Castle"
+}
 },
 "content/akce/2016-12-10.json|de|title": {
 "cs": "8edfb7e2e822",
-"out": "bcc2da7630d8"
+"out": "bcc2da7630d8",
+"radky": {
+"8edfb7e2e822": "Weihnachtstreffen mit Glühwein"
+}
 },
 "content/akce/2016-12-10.json|en|title": {
 "cs": "8edfb7e2e822",
-"out": "c89c99e6c9fb"
+"out": "c89c99e6c9fb",
+"radky": {
+"8edfb7e2e822": "Christmas get-together with mulled wine"
+}
 },
 "content/akce/2017-03-26.json|de|text": {
 "cs": "e63eec6636eb",
-"out": "c70eda261a40"
+"out": "c70eda261a40",
+"radky": {
+"e63eec6636eb": "Dank des schönen Wetters beschloss der Verein, einen außerplanmäßigen ersten Frühjahrseinsatz des Jahres zu veranstalten. Auf dem Programm standen Laubrechen und der Frühjahrsputz im Hof, jeder war willkommen, gern mit eigenem Werkzeug. Wer nicht arbeiten wollte, konnte sich ansehen, wie die weiteren kleinen Reparaturen am Schloss vorankamen."
+}
 },
 "content/akce/2017-03-26.json|de|title": {
 "cs": "c1608ba0a013",
-"out": "17f32c8c2877"
+"out": "17f32c8c2877",
+"radky": {
+"c1608ba0a013": "Kleiner Frühjahrseinsatz"
+}
 },
 "content/akce/2017-03-26.json|en|text": {
 "cs": "e63eec6636eb",
-"out": "9b740215f3a2"
+"out": "9b740215f3a2",
+"radky": {
+"e63eec6636eb": "Thanks to the lovely weather, the association decided to hold an extra first spring work party of the year. The programme consisted of raking leaves and a spring clean of the courtyard, and everyone was welcome, tools in hand. Those who did not feel like working could come and see how further minor repairs to the castle were progressing."
+}
 },
 "content/akce/2017-03-26.json|en|title": {
 "cs": "c1608ba0a013",
-"out": "e4662baa11c3"
+"out": "e4662baa11c3",
+"radky": {
+"c1608ba0a013": "Little spring work party"
+}
 },
 "content/akce/2017-04-15.json|de|text": {
 "cs": "00f496e62ca7",
-"out": "67f3e1db02dc"
+"out": "67f3e1db02dc",
+"radky": {
+"00f496e62ca7": "Die Freiwilligen fuhren Holz für den Scheiterhaufen heran, verbrannten Äste, schnitten weiteren Wildwuchs heraus und strichen den ersten neuen Tisch."
+}
 },
 "content/akce/2017-04-15.json|de|title": {
 "cs": "e573e3268b57",
-"out": "5830bbc2d0d2"
+"out": "5830bbc2d0d2",
+"radky": {
+"e573e3268b57": "Aufräumen, Säubern und Vorbereitung auf das Hexenbrennen"
+}
 },
 "content/akce/2017-04-15.json|en|text": {
 "cs": "00f496e62ca7",
-"out": "bcbe95158829"
+"out": "bcbe95158829",
+"radky": {
+"00f496e62ca7": "Volunteers brought in wood for the bonfire, burned branches, cut more self-seeded trees and painted the first new table."
+}
 },
 "content/akce/2017-04-15.json|en|title": {
 "cs": "e573e3268b57",
-"out": "6a0a91765b03"
+"out": "6a0a91765b03",
+"radky": {
+"e573e3268b57": "Clean-up and preparations for the witch-burning"
+}
 },
 "content/akce/2017-04-30.json|de|title": {
 "cs": "426bff11fefe",
-"out": "b5ee317136fc"
+"out": "b5ee317136fc",
+"radky": {
+"426bff11fefe": "Maibaumaufstellen und Hexenbrennen"
+}
 },
 "content/akce/2017-04-30.json|en|title": {
 "cs": "426bff11fefe",
-"out": "3d7b2be5b477"
+"out": "3d7b2be5b477",
+"radky": {
+"426bff11fefe": "Raising the maypole and witch-burning"
+}
 },
 "content/akce/2017-05-20.json|de|title": {
 "cs": "33e72e3508ed",
-"out": "83d0cbd90822"
+"out": "83d0cbd90822",
+"radky": {
+"33e72e3508ed": "Schloss-CITO Toužim 2017, Frühjahr"
+}
 },
 "content/akce/2017-05-20.json|en|title": {
 "cs": "33e72e3508ed",
-"out": "1c16cfbf472f"
+"out": "1c16cfbf472f",
+"radky": {
+"33e72e3508ed": "Castle CITO Toužim 2017, spring"
+}
 },
 "content/akce/2017-06-04.json|de|text": {
 "cs": "442e78a491e9",
-"out": "44092a7902d0"
+"out": "44092a7902d0",
+"radky": {
+"442e78a491e9": "Der allererste Kindertag im Schloss. Am Morgen hat uns das Wetter ordentlich erschreckt, am Nachmittag wurde es aber schön und sogar die Sonne kam heraus. Danke allen, die geholfen haben, dass die Kinder den Tag genießen konnten."
+}
 },
 "content/akce/2017-06-04.json|de|title": {
 "cs": "4846920e8d48",
-"out": "1bf0d0f177ad"
+"out": "1bf0d0f177ad",
+"radky": {
+"4846920e8d48": "Kindertag"
+}
 },
 "content/akce/2017-06-04.json|en|text": {
 "cs": "442e78a491e9",
-"out": "ce872f596f7b"
+"out": "ce872f596f7b",
+"radky": {
+"442e78a491e9": "The very first children's day at the castle. In the morning the weather gave us quite a scare, but in the afternoon it cleared up and the sun even came out. Thank you to everyone who helped make it a great day for the children."
+}
 },
 "content/akce/2017-06-04.json|en|title": {
 "cs": "4846920e8d48",
-"out": "0fba6cf9a0a2"
+"out": "0fba6cf9a0a2",
+"radky": {
+"4846920e8d48": "Children's Day"
+}
 },
 "content/akce/2017-07-08.json|de|title": {
 "cs": "e9e1b59d902b",
-"out": "cf4c73727dfa"
+"out": "cf4c73727dfa",
+"radky": {
+"e9e1b59d902b": "Historischer Nachmittag auf Schloss Toužim"
+}
 },
 "content/akce/2017-07-08.json|en|title": {
 "cs": "e9e1b59d902b",
-"out": "1d0c8d7f9c83"
+"out": "1d0c8d7f9c83",
+"radky": {
+"e9e1b59d902b": "Historical afternoon at Toužim Castle"
+}
 },
 "content/akce/2017-07-15.json|de|title": {
 "cs": "0954bf145f45",
-"out": "d892be04c738"
+"out": "d892be04c738",
+"radky": {
+"0954bf145f45": "Schlossfestival 2017 (1. Jahrgang)"
+}
 },
 "content/akce/2017-07-15.json|en|title": {
 "cs": "0954bf145f45",
-"out": "363b11e9c56c"
+"out": "363b11e9c56c",
+"radky": {
+"0954bf145f45": "Castle Festival 2017 (1st year)"
+}
 },
 "content/akce/2017-07-28.json|de|title": {
 "cs": "2b4a88c2327f",
-"out": "6a1fcb9bcad0"
+"out": "6a1fcb9bcad0",
+"radky": {
+"2b4a88c2327f": "Sommerkino"
+}
 },
 "content/akce/2017-07-28.json|en|title": {
 "cs": "2b4a88c2327f",
-"out": "7f46ce939a21"
+"out": "7f46ce939a21",
+"radky": {
+"2b4a88c2327f": "Open-air cinema"
+}
 },
 "content/akce/2017-08-12.json|de|title": {
 "cs": "881d9c3e16af",
-"out": "12ef32c8e584"
+"out": "12ef32c8e584",
+"radky": {
+"881d9c3e16af": "Perseidy auf dem Schloss"
+}
 },
 "content/akce/2017-08-12.json|en|title": {
 "cs": "881d9c3e16af",
-"out": "f1f4b8b145ed"
+"out": "f1f4b8b145ed",
+"radky": {
+"881d9c3e16af": "Perseidy at the castle"
+}
 },
 "content/akce/2017-08-26.json|de|title": {
 "cs": "2b4a88c2327f",
-"out": "6a1fcb9bcad0"
+"out": "6a1fcb9bcad0",
+"radky": {
+"2b4a88c2327f": "Sommerkino"
+}
 },
 "content/akce/2017-08-26.json|en|title": {
 "cs": "2b4a88c2327f",
-"out": "7f46ce939a21"
+"out": "7f46ce939a21",
+"radky": {
+"2b4a88c2327f": "Open-air cinema"
+}
 },
 "content/akce/2017-09-16.json|de|title": {
 "cs": "55a78e487a15",
-"out": "2fdda38605c1"
+"out": "2fdda38605c1",
+"radky": {
+"55a78e487a15": "Toužimer Minifest auf dem Schloss"
+}
 },
 "content/akce/2017-09-16.json|en|title": {
 "cs": "55a78e487a15",
-"out": "169ccad633ba"
+"out": "169ccad633ba",
+"radky": {
+"55a78e487a15": "Toužim minifest at the castle"
+}
 },
 "content/akce/2017-10-14.json|de|title": {
 "cs": "75f171daf52f",
-"out": "1c36c286e1ae"
+"out": "1c36c286e1ae",
+"radky": {
+"75f171daf52f": "Schloss-CITO Toužim 2017, Herbst"
+}
 },
 "content/akce/2017-10-14.json|en|title": {
 "cs": "75f171daf52f",
-"out": "44e4d7efa085"
+"out": "44e4d7efa085",
+"radky": {
+"75f171daf52f": "Castle CITO Toužim 2017, autumn"
+}
 },
 "content/akce/2017-12-09.json|de|title": {
 "cs": "8edfb7e2e822",
-"out": "bcc2da7630d8"
+"out": "bcc2da7630d8",
+"radky": {
+"8edfb7e2e822": "Weihnachtstreffen mit Glühwein"
+}
 },
 "content/akce/2017-12-09.json|en|title": {
 "cs": "8edfb7e2e822",
-"out": "c89c99e6c9fb"
+"out": "c89c99e6c9fb",
+"radky": {
+"8edfb7e2e822": "Christmas get-together with mulled wine"
+}
 },
 "content/akce/2018-04-30.json|de|title": {
 "cs": "8097766cccd0",
-"out": "989be7c64f13"
+"out": "989be7c64f13",
+"radky": {
+"8097766cccd0": "Hexenbrennen"
+}
 },
 "content/akce/2018-04-30.json|en|title": {
 "cs": "8097766cccd0",
-"out": "23162bebeab9"
+"out": "23162bebeab9",
+"radky": {
+"8097766cccd0": "Witch-burning night"
+}
 },
 "content/akce/2018-05-19.json|de|title": {
 "cs": "eb26a15dd2a1",
-"out": "c7e90af58465"
+"out": "c7e90af58465",
+"radky": {
+"eb26a15dd2a1": "Schloss-CITO Toužim 2018, Frühjahr"
+}
 },
 "content/akce/2018-05-19.json|en|title": {
 "cs": "eb26a15dd2a1",
-"out": "004376bc4387"
+"out": "004376bc4387",
+"radky": {
+"eb26a15dd2a1": "Castle CITO Toužim 2018, spring"
+}
 },
 "content/akce/2018-06-09.json|de|text": {
 "cs": "13eafaaf5582",
-"out": "2c089e42dacd"
+"out": "2c089e42dacd",
+"radky": {
+"13eafaaf5582": "Ein Kindertag mit dem Divadlo poutníka Hrocha (Märchen Údolí klapajících mlýnků und Jak tovaryš zachránil království), Bastelwerkstatt und Wettbewerben für Kinder."
+}
 },
 "content/akce/2018-06-09.json|de|title": {
 "cs": "4846920e8d48",
-"out": "1bf0d0f177ad"
+"out": "1bf0d0f177ad",
+"radky": {
+"4846920e8d48": "Kindertag"
+}
 },
 "content/akce/2018-06-09.json|de|when": {
 "cs": "37a4aa1c1aa1",
-"out": "de409548ebe8"
+"out": "de409548ebe8",
+"radky": {
+"37a4aa1c1aa1": "Samstag · 13:00"
+}
 },
 "content/akce/2018-06-09.json|en|text": {
 "cs": "13eafaaf5582",
-"out": "171a10b204a7"
+"out": "171a10b204a7",
+"radky": {
+"13eafaaf5582": "A children's day with Divadlo poutníka Hrocha (the fairy tales Údolí klapajících mlýnků and Jak tovaryš zachránil království), a craft workshop and competitions for children."
+}
 },
 "content/akce/2018-06-09.json|en|title": {
 "cs": "4846920e8d48",
-"out": "0fba6cf9a0a2"
+"out": "0fba6cf9a0a2",
+"radky": {
+"4846920e8d48": "Children's Day"
+}
 },
 "content/akce/2018-06-09.json|en|when": {
 "cs": "37a4aa1c1aa1",
-"out": "90499ef0a445"
+"out": "90499ef0a445",
+"radky": {
+"37a4aa1c1aa1": "Saturday · 13:00"
+}
 },
 "content/akce/2018-06-23.json|de|title": {
 "cs": "49cdb41dd74f",
-"out": "ee125f0289ab"
+"out": "ee125f0289ab",
+"radky": {
+"49cdb41dd74f": "Johannisfest"
+}
 },
 "content/akce/2018-06-23.json|en|title": {
 "cs": "49cdb41dd74f",
-"out": "2dcb9674a9da"
+"out": "2dcb9674a9da",
+"radky": {
+"49cdb41dd74f": "Midsummer celebrations"
+}
 },
 "content/akce/2018-07-06.json|de|title": {
 "cs": "a9fa79f0f43a",
-"out": "e94919f43390"
+"out": "e94919f43390",
+"radky": {
+"a9fa79f0f43a": "Gedenktag für Magister Jan Hus in Toužim"
+}
 },
 "content/akce/2018-07-06.json|en|title": {
 "cs": "a9fa79f0f43a",
-"out": "11b9458038a4"
+"out": "11b9458038a4",
+"radky": {
+"a9fa79f0f43a": "Master Jan Hus Day in Toužim"
+}
 },
 "content/akce/2018-07-07.json|de|title": {
 "cs": "e9e1b59d902b",
-"out": "cf4c73727dfa"
+"out": "cf4c73727dfa",
+"radky": {
+"e9e1b59d902b": "Historischer Nachmittag auf Schloss Toužim"
+}
 },
 "content/akce/2018-07-07.json|en|title": {
 "cs": "e9e1b59d902b",
-"out": "1d0c8d7f9c83"
+"out": "1d0c8d7f9c83",
+"radky": {
+"e9e1b59d902b": "Historical afternoon at Toužim Castle"
+}
 },
 "content/akce/2018-07-08.json|de|title": {
 "cs": "b7bdb89bd0c6",
-"out": "d907716a0fcd"
+"out": "d907716a0fcd",
+"radky": {
+"b7bdb89bd0c6": "Tag der Stadt Toužim"
+}
 },
 "content/akce/2018-07-08.json|en|title": {
 "cs": "b7bdb89bd0c6",
-"out": "a4578ce1ad02"
+"out": "a4578ce1ad02",
+"radky": {
+"b7bdb89bd0c6": "Toužim Town Day"
+}
 },
 "content/akce/2018-07-21.json|de|title": {
 "cs": "942203ed9767",
-"out": "b153838c1c67"
+"out": "b153838c1c67",
+"radky": {
+"942203ed9767": "Schlossfestival 2018 (2. Jahrgang)"
+}
 },
 "content/akce/2018-07-21.json|en|title": {
 "cs": "942203ed9767",
-"out": "5f07638ad07d"
+"out": "5f07638ad07d",
+"radky": {
+"942203ed9767": "Castle Festival 2018 (2nd year)"
+}
 },
 "content/akce/2018-07-28.json|de|text": {
 "cs": "055684ea63a5",
-"out": "899b15e9fe72"
+"out": "899b15e9fe72",
+"radky": {
+"055684ea63a5": "Vorführung der Familienkomödie Špunti na vodě im Schlosshof."
+}
 },
 "content/akce/2018-07-28.json|de|title": {
 "cs": "6fbc1478db3d",
-"out": "735b84b9aac0"
+"out": "735b84b9aac0",
+"radky": {
+"6fbc1478db3d": "Sommerkino: Špunti na vodě"
+}
 },
 "content/akce/2018-07-28.json|en|text": {
 "cs": "055684ea63a5",
-"out": "c92f2fc9ef7c"
+"out": "c92f2fc9ef7c",
+"radky": {
+"055684ea63a5": "Screening of the family comedy Špunti na vodě in the courtyard."
+}
 },
 "content/akce/2018-07-28.json|en|title": {
 "cs": "6fbc1478db3d",
-"out": "a5869dd5b898"
+"out": "a5869dd5b898",
+"radky": {
+"6fbc1478db3d": "Open-air cinema: Špunti na vodě"
+}
 },
 "content/akce/2018-08-18.json|de|title": {
 "cs": "1819ab7c264a",
-"out": "1e2f11b86b28"
+"out": "1e2f11b86b28",
+"radky": {
+"1819ab7c264a": "Sommerkino: Loupež za bílého dne"
+}
 },
 "content/akce/2018-08-18.json|en|title": {
 "cs": "1819ab7c264a",
-"out": "fe97e3d3c21b"
+"out": "fe97e3d3c21b",
+"radky": {
+"1819ab7c264a": "Open-air cinema: Loupež za bílého dne"
+}
 },
 "content/akce/2018-09-08.json|de|text": {
 "cs": "34b68f892ecf",
-"out": "b6e6346fe91d"
+"out": "b6e6346fe91d",
+"radky": {
+"34b68f892ecf": "Es spielten Plusmlíko, Stamp Out System, Prasex, Já Ještě Nevim und ŠpuntQaně. Es kamen über 200 Besucher."
+}
 },
 "content/akce/2018-09-08.json|de|title": {
 "cs": "145edc860a2d",
-"out": "7024dd4e6d1c"
+"out": "7024dd4e6d1c",
+"radky": {
+"145edc860a2d": "Punkovice auf dem Schloss"
+}
 },
 "content/akce/2018-09-08.json|en|text": {
 "cs": "34b68f892ecf",
-"out": "b31575404393"
+"out": "b31575404393",
+"radky": {
+"34b68f892ecf": "Plusmlíko, Stamp Out System, Prasex, Já Ještě Nevim and ŠpuntQaně played. Over 200 visitors came."
+}
 },
 "content/akce/2018-09-08.json|en|title": {
 "cs": "145edc860a2d",
-"out": "72a561f2d592"
+"out": "72a561f2d592",
+"radky": {
+"145edc860a2d": "Punkovice at the castle"
+}
 },
 "content/akce/2018-09-15.json|de|title": {
 "cs": "b826835e89ac",
-"out": "ceaf8636e06d"
+"out": "ceaf8636e06d",
+"radky": {
+"b826835e89ac": "Arbeitseinsatz der 31. Pfadfindergruppe Vlaštovky aus Pilsen"
+}
 },
 "content/akce/2018-09-15.json|en|title": {
 "cs": "b826835e89ac",
-"out": "ff72e7237c64"
+"out": "ff72e7237c64",
+"radky": {
+"b826835e89ac": "Work party of the 31st Scout troop Vlaštovky from Plzeň"
+}
 },
 "content/akce/2018-10-13.json|de|text": {
 "cs": "be755b35cbb6",
-"out": "fd8ab2a17585"
+"out": "fd8ab2a17585",
+"radky": {
+"be755b35cbb6": "Arbeitseinsatz im Rahmen des Projekts 72 Stunden, verbunden mit einem CITO-Event der Geocacher: Laub rechen und Wildwuchs entfernen."
+}
 },
 "content/akce/2018-10-13.json|de|title": {
 "cs": "6713478d7708",
-"out": "351ff473a060"
+"out": "351ff473a060",
+"radky": {
+"6713478d7708": "Herbsteinsatz und Schloss-CITO"
+}
 },
 "content/akce/2018-10-13.json|en|text": {
 "cs": "be755b35cbb6",
-"out": "015ba08d72f9"
+"out": "015ba08d72f9",
+"radky": {
+"be755b35cbb6": "A work party as part of the 72 Hours project combined with a geocaching CITO event: raking leaves and cutting back self-seeded trees."
+}
 },
 "content/akce/2018-10-13.json|en|title": {
 "cs": "6713478d7708",
-"out": "6148f0f03d0c"
+"out": "6148f0f03d0c",
+"radky": {
+"6713478d7708": "Autumn work party and Castle CITO"
+}
 },
 "content/akce/2018-12-15.json|de|text": {
 "cs": "c275c27a6c63",
-"out": "33d8e9e47efb"
+"out": "33d8e9e47efb",
+"radky": {
+"c275c27a6c63": "Treffen bei Glühwein mit gebackenem Tee, Marmeladen und Andenken zur Unterstützung der Bühnenüberdachung."
+}
 },
 "content/akce/2018-12-15.json|de|title": {
 "cs": "1b1b084a0a89",
-"out": "a0b06d487bb0"
+"out": "a0b06d487bb0",
+"radky": {
+"1b1b084a0a89": "Weihnachtstreffen"
+}
 },
 "content/akce/2018-12-15.json|en|text": {
 "cs": "c275c27a6c63",
-"out": "d9ce48047b74"
+"out": "d9ce48047b74",
+"radky": {
+"c275c27a6c63": "A get-together over mulled wine with baked teas, jams and souvenirs in support of roofing the stage."
+}
 },
 "content/akce/2018-12-15.json|en|title": {
 "cs": "1b1b084a0a89",
-"out": "6599e90723aa"
+"out": "6599e90723aa",
+"radky": {
+"1b1b084a0a89": "Christmas get-together"
+}
 },
 "content/akce/2019-04-06.json|de|title": {
 "cs": "a36423edaeb5",
-"out": "25a9456ff3d9"
+"out": "25a9456ff3d9",
+"radky": {
+"a36423edaeb5": "Räumen wir Tschechien auf: Arbeitseinsatz"
+}
 },
 "content/akce/2019-04-06.json|en|title": {
 "cs": "a36423edaeb5",
-"out": "fddaa30ce3a5"
+"out": "fddaa30ce3a5",
+"radky": {
+"a36423edaeb5": "Let's Clean Up the Czech Republic: work party"
+}
 },
 "content/akce/2019-04-27.json|de|text": {
 "cs": "1733a20da803",
-"out": "6a9563844437"
+"out": "6a9563844437",
+"radky": {
+"1733a20da803": "Der Nachmittag im Schloss war für Familien mit Kindern gedacht, die hier ihre eigenen Hexen bastelten. Als Material dienten alte Kleidung, Lumpen und anderes, was sich zum Basteln und Verbrennen eignet. Die fertigen Hexen waren für das Hexenbrennen am Dienstag, dem 30. April, bestimmt."
+}
 },
 "content/akce/2019-04-27.json|de|title": {
 "cs": "b64695af11e6",
-"out": "481258bca390"
+"out": "481258bca390",
+"radky": {
+"b64695af11e6": "Hexentreffen"
+}
 },
 "content/akce/2019-04-27.json|en|text": {
 "cs": "1733a20da803",
-"out": "d6892bb5642a"
+"out": "d6892bb5642a",
+"radky": {
+"1733a20da803": "The afternoon at the castle was for families with children, who made their own witches there. Old clothes, rags and other materials suitable for making and burning served as material. The finished witches were ready for the witch-burning on Tuesday, 30 April."
+}
 },
 "content/akce/2019-04-27.json|en|title": {
 "cs": "b64695af11e6",
-"out": "3855931bfbcc"
+"out": "3855931bfbcc",
+"radky": {
+"b64695af11e6": "Gathering of witches"
+}
 },
 "content/akce/2019-04-30.json|de|title": {
 "cs": "8097766cccd0",
-"out": "989be7c64f13"
+"out": "989be7c64f13",
+"radky": {
+"8097766cccd0": "Hexenbrennen"
+}
 },
 "content/akce/2019-04-30.json|en|title": {
 "cs": "8097766cccd0",
-"out": "23162bebeab9"
+"out": "23162bebeab9",
+"radky": {
+"8097766cccd0": "Witch-burning night"
+}
 },
 "content/akce/2019-05-25.json|de|title": {
 "cs": "21657db79090",
-"out": "ffbed3c4a16c"
+"out": "ffbed3c4a16c",
+"radky": {
+"21657db79090": "Schloss-CITO Toužim 2019, Frühjahr"
+}
 },
 "content/akce/2019-05-25.json|en|title": {
 "cs": "21657db79090",
-"out": "74c99b0ee886"
+"out": "74c99b0ee886",
+"radky": {
+"21657db79090": "Castle CITO Toužim 2019, spring"
+}
 },
 "content/akce/2019-06-08.json|de|title": {
 "cs": "4846920e8d48",
-"out": "1bf0d0f177ad"
+"out": "1bf0d0f177ad",
+"radky": {
+"4846920e8d48": "Kindertag"
+}
 },
 "content/akce/2019-06-08.json|en|title": {
 "cs": "4846920e8d48",
-"out": "0fba6cf9a0a2"
+"out": "0fba6cf9a0a2",
+"radky": {
+"4846920e8d48": "Children's Day"
+}
 },
 "content/akce/2019-06-28.json|de|title": {
 "cs": "cd0f620a70aa",
-"out": "28e3195a78d4"
+"out": "28e3195a78d4",
+"radky": {
+"cd0f620a70aa": "Feier zum 550. Gründungsjubiläum der Stadt Toužim"
+}
 },
 "content/akce/2019-06-28.json|en|title": {
 "cs": "cd0f620a70aa",
-"out": "87fce5e21563"
+"out": "87fce5e21563",
+"radky": {
+"cd0f620a70aa": "Celebrations of 550 years since the founding of Toužim"
+}
 },
 "content/akce/2019-07-20.json|de|title": {
 "cs": "18277f224a94",
-"out": "cea73e9a18f2"
+"out": "cea73e9a18f2",
+"radky": {
+"18277f224a94": "Schlossfestival 2019 (3. Jahrgang)"
+}
 },
 "content/akce/2019-07-20.json|en|title": {
 "cs": "18277f224a94",
-"out": "e713dab56528"
+"out": "e713dab56528",
+"radky": {
+"18277f224a94": "Castle Festival 2019 (3rd year)"
+}
 },
 "content/akce/2019-08-24.json|de|text": {
 "cs": "9a762c8d575e",
-"out": "6b0470b99df6"
+"out": "6b0470b99df6",
+"radky": {
+"9a762c8d575e": "Begonnen hat es am 3. August mit einer Besprechung, aus der unerwartet gleich das Ausheben wurde. Dann wurden die Fundamente betoniert, und am 24. August kam der Hauptbautag mit Freunden, Kumpels und Familien, den wir bis zur Erschöpfung durchgezogen haben. Am vierten Tag fehlten nur noch die zweite Dachhälfte, Dachrinnen und Anstriche, und am 1. September hieß es: fertig. Seitdem wird auf der Bühne auch bei Regen gespielt."
+}
 },
 "content/akce/2019-08-24.json|de|title": {
 "cs": "4d2c210eb080",
-"out": "28633fc29fc9"
+"out": "28633fc29fc9",
+"radky": {
+"4d2c210eb080": "Bau der Bühnenüberdachung"
+}
 },
 "content/akce/2019-08-24.json|en|text": {
 "cs": "9a762c8d575e",
-"out": "f6d270257a58"
+"out": "f6d270257a58",
+"radky": {
+"9a762c8d575e": "It started on 3 August with a planning meeting that unexpectedly turned straight into digging. Then the foundations were concreted, and on 24 August came the main building day with friends, partners and families, which we kept going until we dropped. By day four only the second half of the roof, the gutters and the paint were missing, and on 1 September we could report: done. Since then bands can play on the stage even in the rain."
+}
 },
 "content/akce/2019-08-24.json|en|title": {
 "cs": "4d2c210eb080",
-"out": "5baded6a7e03"
+"out": "5baded6a7e03",
+"radky": {
+"4d2c210eb080": "Building the stage roof"
+}
 },
 "content/akce/2019-09-07.json|de|text": {
 "cs": "058c5872152f",
-"out": "860154067a07"
+"out": "860154067a07",
+"radky": {
+"058c5872152f": "Die zweite Punkovice, bei der in letzter Minute auch die Band Špuntqaně zusagte."
+}
 },
 "content/akce/2019-09-07.json|de|title": {
 "cs": "eb9498cd6bd0",
-"out": "b2867d240a21"
+"out": "b2867d240a21",
+"radky": {
+"eb9498cd6bd0": "Punkovice auf dem Schloss (2. Jahrgang)"
+}
 },
 "content/akce/2019-09-07.json|en|text": {
 "cs": "058c5872152f",
-"out": "3f1522b26d7c"
+"out": "3f1522b26d7c",
+"radky": {
+"058c5872152f": "The second Punkovice, where the band Špuntqaně confirmed at the last minute."
+}
 },
 "content/akce/2019-09-07.json|en|title": {
 "cs": "eb9498cd6bd0",
-"out": "f588424307df"
+"out": "f588424307df",
+"radky": {
+"eb9498cd6bd0": "Punkovice at the castle (2nd year)"
+}
 },
 "content/akce/2019-10-12.json|de|title": {
 "cs": "6dc0419b40fe",
-"out": "932f1c10ab29"
+"out": "932f1c10ab29",
+"radky": {
+"6dc0419b40fe": "Schloss-CITO Toužim 2019, Herbst"
+}
 },
 "content/akce/2019-10-12.json|en|title": {
 "cs": "6dc0419b40fe",
-"out": "725eed1a0f4f"
+"out": "725eed1a0f4f",
+"radky": {
+"6dc0419b40fe": "Castle CITO Toužim 2019, autumn"
+}
 },
 "content/akce/2019-12-15.json|de|title": {
 "cs": "8edfb7e2e822",
-"out": "bcc2da7630d8"
+"out": "bcc2da7630d8",
+"radky": {
+"8edfb7e2e822": "Weihnachtstreffen mit Glühwein"
+}
 },
 "content/akce/2019-12-15.json|en|title": {
 "cs": "8edfb7e2e822",
-"out": "c89c99e6c9fb"
+"out": "c89c99e6c9fb",
+"radky": {
+"8edfb7e2e822": "Christmas get-together with mulled wine"
+}
 },
 "content/akce/2020-05-30.json|de|title": {
 "cs": "4846920e8d48",
-"out": "1bf0d0f177ad"
+"out": "1bf0d0f177ad",
+"radky": {
+"4846920e8d48": "Kindertag"
+}
 },
 "content/akce/2020-05-30.json|en|title": {
 "cs": "4846920e8d48",
-"out": "0fba6cf9a0a2"
+"out": "0fba6cf9a0a2",
+"radky": {
+"4846920e8d48": "Children's Day"
+}
 },
 "content/akce/2020-06-14.json|de|text": {
 "cs": "864a27419891",
-"out": "e5c6bb9c8a8b"
+"out": "e5c6bb9c8a8b",
+"radky": {
+"864a27419891": "Der erste Fler-Handwerksmarkt im Schloss mit handgemachten Waren direkt von den Herstellern lockte fast alle Standplätze voll. Die Besucherzahl verdarb schließlich ein Wolkenbruch, der alle unter die Dächer trieb."
+}
 },
 "content/akce/2020-06-14.json|de|title": {
 "cs": "662b71b71237",
-"out": "fa387c0a439c"
+"out": "fa387c0a439c",
+"radky": {
+"662b71b71237": "Fler-Handwerksmarkt im Schloss"
+}
 },
 "content/akce/2020-06-14.json|de|when": {
 "cs": "262562a50d53",
-"out": "f1e89e6c5c8c"
+"out": "f1e89e6c5c8c",
+"radky": {
+"262562a50d53": "Sonntag · 13:00"
+}
 },
 "content/akce/2020-06-14.json|en|text": {
 "cs": "864a27419891",
-"out": "87588297ed5c"
+"out": "87588297ed5c",
+"radky": {
+"864a27419891": "The first castle Fler craft fair, with handmade goods straight from their makers, drew almost a full house of stallholders. In the end a cloudburst spoiled the turnout and drove everyone under cover."
+}
 },
 "content/akce/2020-06-14.json|en|title": {
 "cs": "662b71b71237",
-"out": "c1fd23387360"
+"out": "c1fd23387360",
+"radky": {
+"662b71b71237": "Castle Fler Craft Fair"
+}
 },
 "content/akce/2020-06-14.json|en|when": {
 "cs": "262562a50d53",
-"out": "af1ed02bb0ba"
+"out": "af1ed02bb0ba",
+"radky": {
+"262562a50d53": "Sunday · 13:00"
+}
 },
 "content/akce/2020-06-20.json|de|text": {
 "cs": "46bfedcf698d",
-"out": "1909cd520c84"
+"out": "1909cd520c84",
+"radky": {
+"46bfedcf698d": "Trotz schlechten Wetters fand das vierte Rockfestival im Schloss vor rund hundert Fans statt, und die Bands spielten mit voller Hingabe. Die Party beendete gegen Mitternacht erst die Polizei."
+}
 },
 "content/akce/2020-06-20.json|de|title": {
 "cs": "bf970a571560",
-"out": "531772370443"
+"out": "531772370443",
+"radky": {
+"bf970a571560": "Schlossfestival 2020 (4. Jahrgang)"
+}
 },
 "content/akce/2020-06-20.json|de|when": {
 "cs": "be92a315e124",
-"out": "1d82ccac95d0"
+"out": "1d82ccac95d0",
+"radky": {
+"be92a315e124": "Samstag · 14:00"
+}
 },
 "content/akce/2020-06-20.json|en|text": {
 "cs": "46bfedcf698d",
-"out": "819a1c6bc26d"
+"out": "819a1c6bc26d",
+"radky": {
+"46bfedcf698d": "Despite bad weather, the fourth castle rock festival went ahead in front of about a hundred fans, and the bands played their hearts out. The party was ended around midnight by the police."
+}
 },
 "content/akce/2020-06-20.json|en|title": {
 "cs": "bf970a571560",
-"out": "e7a99e367fee"
+"out": "e7a99e367fee",
+"radky": {
+"bf970a571560": "Castle Festival 2020 (4th year)"
+}
 },
 "content/akce/2020-06-20.json|en|when": {
 "cs": "be92a315e124",
-"out": "d7e04a27bb6f"
+"out": "d7e04a27bb6f",
+"radky": {
+"be92a315e124": "Saturday · 14:00"
+}
 },
 "content/akce/2020-07-03.json|de|title": {
 "cs": "2b4a88c2327f",
-"out": "6a1fcb9bcad0"
+"out": "6a1fcb9bcad0",
+"radky": {
+"2b4a88c2327f": "Sommerkino"
+}
 },
 "content/akce/2020-07-03.json|en|title": {
 "cs": "2b4a88c2327f",
-"out": "7f46ce939a21"
+"out": "7f46ce939a21",
+"radky": {
+"2b4a88c2327f": "Open-air cinema"
+}
 },
 "content/akce/2020-07-11.json|de|text": {
 "cs": "5762d420fa64",
-"out": "d11de265e22b"
+"out": "d11de265e22b",
+"radky": {
+"5762d420fa64": "Arbeitseinsatz für den neuen Fußboden in der ersten Burgkammer: Am Samstag wurde von neun Uhr morgens bis zehn Uhr abends gehobelt und verlegt, am Sonntag ging es bis in den Nachmittag weiter. Mitgearbeitet haben Michal Nedvídek, Jakub Červený und Hanz Policar."
+}
 },
 "content/akce/2020-07-11.json|de|title": {
 "cs": "5b6a0a7df86a",
-"out": "298341764756"
+"out": "298341764756",
+"radky": {
+"5b6a0a7df86a": "Neuer Fußboden in der Burgkammer"
+}
 },
 "content/akce/2020-07-11.json|en|text": {
 "cs": "5762d420fa64",
-"out": "664cb71eb560"
+"out": "664cb71eb560",
+"radky": {
+"5762d420fa64": "A work party for the new floor in the first castle chamber: on Saturday we planed and laid boards from nine in the morning until ten at night, and on Sunday we carried on into the afternoon. Michal Nedvídek, Jakub Červený and Hanz Policar did the work."
+}
 },
 "content/akce/2020-07-11.json|en|title": {
 "cs": "5b6a0a7df86a",
-"out": "6b4689a3f472"
+"out": "6b4689a3f472",
+"radky": {
+"5b6a0a7df86a": "Laying the floor in the castle chamber"
+}
 },
 "content/akce/2020-07-18.json|de|text": {
 "cs": "5db7877dc5f7",
-"out": "0e63f2b232cf"
+"out": "0e63f2b232cf",
+"radky": {
+"5db7877dc5f7": "Die erste Musikveranstaltung im Zeichen von Country & Folk, ergänzt durch einen kleinen Markt mit traditionellem Handwerk. Das Wetter war prächtig."
+}
 },
 "content/akce/2020-07-18.json|de|title": {
 "cs": "5278af545414",
-"out": "343a7cd1cd0c"
+"out": "343a7cd1cd0c",
+"radky": {
+"5278af545414": "Country Fest im Schloss (1. Jahrgang)"
+}
 },
 "content/akce/2020-07-18.json|en|text": {
 "cs": "5db7877dc5f7",
-"out": "4e2962bd3bdc"
+"out": "4e2962bd3bdc",
+"radky": {
+"5db7877dc5f7": "The first country & folk music event, with a small fair of traditional handmade goods. The weather was perfect."
+}
 },
 "content/akce/2020-07-18.json|en|title": {
 "cs": "5278af545414",
-"out": "e3d1d3661bb7"
+"out": "e3d1d3661bb7",
+"radky": {
+"5278af545414": "Country Fest at the castle (1st year)"
+}
 },
 "content/akce/2020-07-25.json|de|text": {
 "cs": "d7f64b9b3d15",
-"out": "71af95fc41e0"
+"out": "71af95fc41e0",
+"radky": {
+"d7f64b9b3d15": "Der Märchennachmittag für Kinder jeden Alters bot die Musik- und Bewegungsshow Culinka a tancohrátky sowie märchenhafte Burgführungen mit Aufgaben und Abenteuern. Auf dem Programm standen außerdem Kinderschminken, eine Sandwerkstatt und weitere Aktivitäten für Kinder. Der Eintritt war frei gegen Spende."
+}
 },
 "content/akce/2020-07-25.json|de|title": {
 "cs": "dd3189edbfff",
-"out": "5f0102ed7d6c"
+"out": "5f0102ed7d6c",
+"radky": {
+"dd3189edbfff": "Märchennachmittag mit Culinka"
+}
 },
 "content/akce/2020-07-25.json|en|text": {
 "cs": "d7f64b9b3d15",
-"out": "cde46acae659"
+"out": "cde46acae659",
+"radky": {
+"d7f64b9b3d15": "The fairy-tale afternoon for children of all ages featured the music-and-movement show Culinka a tancohrátky and fairy-tale tours of the castle full of tasks and adventure. The programme also included face painting, a sand workshop and other activities for children. Admission was by donation."
+}
 },
 "content/akce/2020-07-25.json|en|title": {
 "cs": "dd3189edbfff",
-"out": "540a9e5bfb10"
+"out": "540a9e5bfb10",
+"radky": {
+"dd3189edbfff": "Fairy-tale afternoon with Culinka"
+}
 },
 "content/akce/2020-08-15.json|de|title": {
 "cs": "67ccaad1db61",
-"out": "dd71ba614935"
+"out": "dd71ba614935",
+"radky": {
+"67ccaad1db61": "Punkovice im Schloss (3. Jahrgang)"
+}
 },
 "content/akce/2020-08-15.json|en|title": {
 "cs": "67ccaad1db61",
-"out": "510a8209fdaf"
+"out": "510a8209fdaf",
+"radky": {
+"67ccaad1db61": "Punkovice at the castle (3rd year)"
+}
 },
 "content/akce/2020-09-12.json|de|text": {
 "cs": "dbf02905b434",
-"out": "cec2dae131b1"
+"out": "cec2dae131b1",
+"radky": {
+"dbf02905b434": "Ein historischer Nachmittag zum 551. Jahrestag der Gründung von Toužim mit Musik von Cavalla Cannor, der Fechtgruppe Zlatý Grál, der Tänzerin Shahinez und Eva mit ihrer Drehorgel. Höhepunkt war die feierliche Eröffnung einer neuen Kammer mit einer Ausstellung von 130 Ausgaben des Romans „Die Großmutter“ von Božena Němcová."
+}
 },
 "content/akce/2020-09-12.json|de|title": {
 "cs": "095a25b716ab",
-"out": "f50369d621eb"
+"out": "f50369d621eb",
+"radky": {
+"095a25b716ab": "Historischer Tag: Gründung der Stadt Toužim (551 Jahre)"
+}
 },
 "content/akce/2020-09-12.json|en|text": {
 "cs": "dbf02905b434",
-"out": "7601650050e9"
+"out": "7601650050e9",
+"radky": {
+"dbf02905b434": "A historical afternoon for the 551st anniversary of Toužim's founding, with period music by Cavalla Cannor, the fencing troupe Zlatý Grál, the dancer Shahinez and Eva with her barrel organ. The highlight was the opening of a new chamber with an exhibition of 130 copies of Božena Němcová's novel The Grandmother."
+}
 },
 "content/akce/2020-09-12.json|en|title": {
 "cs": "095a25b716ab",
-"out": "0595ddf62aeb"
+"out": "0595ddf62aeb",
+"radky": {
+"095a25b716ab": "History Day: founding of Toužim (551 years)"
+}
 },
 "content/akce/2020-10-31.json|de|text": {
 "cs": "4335a24b9832",
-"out": "760a699c7196"
+"out": "760a699c7196",
+"radky": {
+"4335a24b9832": "Kreativwerkstätten für Kinder, der Animationsfilm Hotel Transsilvanien und am Abend der Horrorfilm Conjuring – Die Heimsuchung. Eintritt freiwillig."
+}
 },
 "content/akce/2020-10-31.json|de|title": {
 "cs": "0be5eb1c58e3",
-"out": "f04edcab2ccd"
+"out": "f04edcab2ccd",
+"radky": {
+"0be5eb1c58e3": "Halloween im Schloss"
+}
 },
 "content/akce/2020-10-31.json|en|text": {
 "cs": "4335a24b9832",
-"out": "a80e2fe0f3f1"
+"out": "a80e2fe0f3f1",
+"radky": {
+"4335a24b9832": "Creative workshops for children, a screening of the animated film Hotel Transylvania and, in the evening, the horror film The Conjuring. Voluntary admission."
+}
 },
 "content/akce/2020-10-31.json|en|title": {
 "cs": "0be5eb1c58e3",
-"out": "92dfc2ba05ec"
+"out": "92dfc2ba05ec",
+"radky": {
+"0be5eb1c58e3": "Halloween at the castle"
+}
 },
 "content/akce/2020-12-19.json|de|text": {
 "cs": "be9a73750dd5",
-"out": "c80eac50ef5c"
+"out": "c80eac50ef5c",
+"radky": {
+"be9a73750dd5": "Verkostung von hausgemachtem Weihnachtsgebäck, kostenloser Glühwein, Weihnachtslieder mit Drehorgelbegleitung und eine Kreativwerkstatt für Kinder. Eintritt freiwillig."
+}
 },
 "content/akce/2020-12-19.json|de|title": {
 "cs": "5d681f6d15cf",
-"out": "0936b300f415"
+"out": "0936b300f415",
+"radky": {
+"5d681f6d15cf": "Weihnachtstreffen im Schloss"
+}
 },
 "content/akce/2020-12-19.json|en|text": {
 "cs": "be9a73750dd5",
-"out": "2a4d3c19cc1c"
+"out": "2a4d3c19cc1c",
+"radky": {
+"be9a73750dd5": "A tasting of homemade Christmas biscuits, free mulled wine, carols accompanied by a barrel organ and a creative workshop for children. Voluntary admission."
+}
 },
 "content/akce/2020-12-19.json|en|title": {
 "cs": "5d681f6d15cf",
-"out": "49ed81b636ae"
+"out": "49ed81b636ae",
+"radky": {
+"5d681f6d15cf": "Christmas gathering at the castle"
+}
 },
 "content/akce/2021-06-05.json|de|text": {
 "cs": "8e387be7a2a1",
-"out": "0cb96c05a603"
+"out": "0cb96c05a603",
+"radky": {
+"8e387be7a2a1": "Trotz ungünstiger Wettervorhersage kamen viele Leute; es gab Wettbewerbe, Spiele, Tänze und Basteln. Zum Abschluss spielte das Puppentheater Karlovy Vary ein tibetisches Märchen."
+}
 },
 "content/akce/2021-06-05.json|de|title": {
 "cs": "4846920e8d48",
-"out": "1bf0d0f177ad"
+"out": "1bf0d0f177ad",
+"radky": {
+"4846920e8d48": "Kindertag"
+}
 },
 "content/akce/2021-06-05.json|en|text": {
 "cs": "8e387be7a2a1",
-"out": "e55f94371ab0"
+"out": "e55f94371ab0",
+"radky": {
+"8e387be7a2a1": "Despite a gloomy forecast, lots of people came; there were contests, games, dancing and crafts. It all ended with the Tibetan Fairy Tale by the Karlovy Vary Puppet Theatre."
+}
 },
 "content/akce/2021-06-05.json|en|title": {
 "cs": "4846920e8d48",
-"out": "0fba6cf9a0a2"
+"out": "0fba6cf9a0a2",
+"radky": {
+"4846920e8d48": "Children's Day"
+}
 },
 "content/akce/2021-06-12.json|de|text": {
 "cs": "aadc3bbaa14b",
-"out": "7b2ec764e01b"
+"out": "7b2ec764e01b",
+"radky": {
+"aadc3bbaa14b": "Das fünfte Jubiläums-Rockfest mit Rekordbesuch von über 400 Leuten. Es spielten Cerberos Heavy Rock, Rimortis, Kreyson Memorial und Carpatia Castle."
+}
 },
 "content/akce/2021-06-12.json|de|title": {
 "cs": "897675ca1fa9",
-"out": "4e1c6671880f"
+"out": "4e1c6671880f",
+"radky": {
+"897675ca1fa9": "Schlossfestival 2021 (5. Jahrgang)"
+}
 },
 "content/akce/2021-06-12.json|en|text": {
 "cs": "aadc3bbaa14b",
-"out": "35f2322657b0"
+"out": "35f2322657b0",
+"radky": {
+"aadc3bbaa14b": "The fifth, anniversary Rockfest with a record attendance of over 400 people. Cerberos Heavy Rock, Rimortis, Kreyson Memorial and Carpatia Castle played."
+}
 },
 "content/akce/2021-06-12.json|en|title": {
 "cs": "897675ca1fa9",
-"out": "003ad4d73d70"
+"out": "003ad4d73d70",
+"radky": {
+"897675ca1fa9": "Castle Festival 2021 (5th year)"
+}
 },
 "content/akce/2021-07-10.json|de|text": {
 "cs": "95f3db1736e3",
-"out": "ae26b19469d7"
+"out": "ae26b19469d7",
+"radky": {
+"95f3db1736e3": "Eine ganztägige Feier zum 552. Jahrestag der Erhebung Toužims zur Stadt fand im Schlosshof und darüber hinaus statt. Den Auftakt machte das Märchen O prasátku Arturovi des Theaters Kamila, danach traten Cavalla Cannor, die Tänzerin Shahinez, die Fechtgruppen Zlatý Grál und Duellanti sowie Eva mit ihrem Leierkasten auf. Es folgten ein historischer Umzug rund um den Marktplatz, eine Szene zur Übergabe der Stadtgründungsurkunden und die Enthüllung einer neuen Informationstafel. Am Abend spielte im Hof die Gruppe Dáma s hranostajem, und in einem der Gemächer war eine Ausstellung zum 5-jährigen Bestehen des Vereins zu sehen."
+}
 },
 "content/akce/2021-07-10.json|de|title": {
 "cs": "cabbcc954548",
-"out": "69bd03692a0d"
+"out": "69bd03692a0d",
+"radky": {
+"cabbcc954548": "Historischer Nachmittag: 552 Jahre Stadt"
+}
 },
 "content/akce/2021-07-10.json|en|text": {
 "cs": "95f3db1736e3",
-"out": "93c5d9c83faf"
+"out": "93c5d9c83faf",
+"radky": {
+"95f3db1736e3": "An all-day celebration of 552 years since Toužim was granted town status took place in the castle courtyard and beyond. The programme opened with the fairy tale O prasátku Arturovi by the Kamila theatre, followed by Cavalla Cannor, the dancer Shahinez, the fencers Zlatý Grál and Duellanti, and Eva with her barrel organ. Then came a historical procession around the square, a scene re-enacting the handing over of the town's founding charters and the unveiling of a new information board. In the evening Dáma s hranostajem played in the courtyard, and an exhibition for the association's 5th anniversary was on show in one of the chambers."
+}
 },
 "content/akce/2021-07-10.json|en|title": {
 "cs": "cabbcc954548",
-"out": "c2861d8cf8ff"
+"out": "c2861d8cf8ff",
+"radky": {
+"cabbcc954548": "Historical afternoon: 552 years of the town"
+}
 },
 "content/akce/2021-07-31.json|de|text": {
 "cs": "3722979ca3b1",
-"out": "cbe3b0e4ab57"
+"out": "cbe3b0e4ab57",
+"radky": {
+"3722979ca3b1": "Der zweite Markt mit Handwerk, Schmuck, Dekorationen und Erfrischungen, Spielen und Basteln für Kinder sowie Führungen durch einen Teil der Burg. Die Besucher konnten auch das neue Geländer auf der Bastei sehen."
+}
 },
 "content/akce/2021-07-31.json|de|title": {
 "cs": "662b71b71237",
-"out": "fa387c0a439c"
+"out": "fa387c0a439c",
+"radky": {
+"662b71b71237": "Fler-Handwerksmarkt im Schloss"
+}
 },
 "content/akce/2021-07-31.json|de|when": {
 "cs": "37a4aa1c1aa1",
-"out": "de409548ebe8"
+"out": "de409548ebe8",
+"radky": {
+"37a4aa1c1aa1": "Samstag · 13:00"
+}
 },
 "content/akce/2021-07-31.json|en|text": {
 "cs": "3722979ca3b1",
-"out": "2291973643ac"
+"out": "2291973643ac",
+"radky": {
+"3722979ca3b1": "The second craft fair, with handmade goods, jewellery, decorations and refreshments, games and crafts for children, and guided tours of part of the castle. Visitors could also see the new railing on the bastion."
+}
 },
 "content/akce/2021-07-31.json|en|title": {
 "cs": "662b71b71237",
-"out": "c1fd23387360"
+"out": "c1fd23387360",
+"radky": {
+"662b71b71237": "Castle Fler Craft Fair"
+}
 },
 "content/akce/2021-07-31.json|en|when": {
 "cs": "37a4aa1c1aa1",
-"out": "90499ef0a445"
+"out": "90499ef0a445",
+"radky": {
+"37a4aa1c1aa1": "Saturday · 13:00"
+}
 },
 "content/akce/2021-08-14.json|de|text": {
 "cs": "79bd9dee9077",
-"out": "ad19db70c195"
+"out": "ad19db70c195",
+"radky": {
+"79bd9dee9077": "Die Kinder sahen das Märchen „Der Regenbogenprinz“ des Puppentheaters Karlovy Vary, die Eltern besichtigten die Ausstellung."
+}
 },
 "content/akce/2021-08-14.json|de|title": {
 "cs": "00f6d9d0f6bb",
-"out": "571b3124cd34"
+"out": "571b3124cd34",
+"radky": {
+"00f6d9d0f6bb": "Kindernachmittag mit dem Puppentheater Karlovy Vary"
+}
 },
 "content/akce/2021-08-14.json|en|text": {
 "cs": "79bd9dee9077",
-"out": "bad9cfeb698c"
+"out": "bad9cfeb698c",
+"radky": {
+"79bd9dee9077": "The children watched the fairy tale The Rainbow Prince by the Karlovy Vary Puppet Theatre, and their parents looked round the exhibition."
+}
 },
 "content/akce/2021-08-14.json|en|title": {
 "cs": "00f6d9d0f6bb",
-"out": "3bd9e6eb0c1f"
+"out": "3bd9e6eb0c1f",
+"radky": {
+"00f6d9d0f6bb": "Children's afternoon with the Karlovy Vary Puppet Theatre"
+}
 },
 "content/akce/2021-08-21.json|de|text": {
 "cs": "23604dff279f",
-"out": "6a40306285db"
+"out": "6a40306285db",
+"radky": {
+"23604dff279f": "Ein weiterer Jahrgang des Punkfestivals im Schloss und für uns wieder die Party des Jahres. Die Bands spielten, die Fans feierten, schade nur, dass nicht mehr von euch kamen. Also nächstes Jahr Pflicht!"
+}
 },
 "content/akce/2021-08-21.json|de|title": {
 "cs": "fe1428d9e736",
-"out": "03c5c712c2b8"
+"out": "03c5c712c2b8",
+"radky": {
+"fe1428d9e736": "Punkovice im Schloss (4. Jahrgang)"
+}
 },
 "content/akce/2021-08-21.json|en|text": {
 "cs": "23604dff279f",
-"out": "541299a20798"
+"out": "541299a20798",
+"radky": {
+"23604dff279f": "Another year of the punk festival at the castle and, in our view, once again the party of the year. The bands played and the fans partied; the only pity is that not more of you came. So next year it's compulsory!"
+}
 },
 "content/akce/2021-08-21.json|en|title": {
 "cs": "fe1428d9e736",
-"out": "5d31bc99d499"
+"out": "5d31bc99d499",
+"radky": {
+"fe1428d9e736": "Punkovice at the castle (4th year)"
+}
 },
 "content/akce/2021-09-12.json|de|text": {
 "cs": "bfff1f532db9",
-"out": "2a4bfabe50a6"
+"out": "2a4bfabe50a6",
+"radky": {
+"bfff1f532db9": "Abschied vom Sommer im Schlosshof: Es gab Musik, frisch gezapftes Bier und Bratwürste."
+}
 },
 "content/akce/2021-09-12.json|de|title": {
 "cs": "ff9552bc56d3",
-"out": "e10868264e24"
+"out": "e10868264e24",
+"radky": {
+"ff9552bc56d3": "Toužimer Sommer"
+}
 },
 "content/akce/2021-09-12.json|en|text": {
 "cs": "bfff1f532db9",
-"out": "78d0a16b00e9"
+"out": "78d0a16b00e9",
+"radky": {
+"bfff1f532db9": "A farewell to summer in the castle courtyard, with music, beer on tap and sausages."
+}
 },
 "content/akce/2021-09-12.json|en|title": {
 "cs": "ff9552bc56d3",
-"out": "a0f54443aba0"
+"out": "a0f54443aba0",
+"radky": {
+"ff9552bc56d3": "Toužim Summer"
+}
 },
 "content/akce/2021-10-09-cce.json|de|text": {
 "cs": "b3c035af261f",
-"out": "a1d7ce472ccf"
+"out": "a1d7ce472ccf",
+"radky": {
+"b3c035af261f": "Ein Community Celebration Event zum zwanzigjährigen Jubiläum des Geocachings mit Schlossführung und einem Konzert mittelalterlicher Musik."
+}
 },
 "content/akce/2021-10-09-cce.json|de|title": {
 "cs": "29579ab461ae",
-"out": "7114e93e4a99"
+"out": "7114e93e4a99",
+"radky": {
+"29579ab461ae": "Community Celebration Event im Schloss Toužim"
+}
 },
 "content/akce/2021-10-09-cce.json|de|when": {
 "cs": "97f5942ab106",
-"out": "7ac745b84467"
+"out": "7ac745b84467",
+"radky": {
+"97f5942ab106": "Samstag · 14:30"
+}
 },
 "content/akce/2021-10-09-cce.json|en|text": {
 "cs": "b3c035af261f",
-"out": "a61f71275325"
+"out": "a61f71275325",
+"radky": {
+"b3c035af261f": "A community celebration event for the twentieth anniversary of geocaching, with a tour of the castle and a concert of medieval music."
+}
 },
 "content/akce/2021-10-09-cce.json|en|title": {
 "cs": "29579ab461ae",
-"out": "f117cd6a3f07"
+"out": "f117cd6a3f07",
+"radky": {
+"29579ab461ae": "Community Celebration Event at Toužim Castle"
+}
 },
 "content/akce/2021-10-09-cce.json|en|when": {
 "cs": "97f5942ab106",
-"out": "b7a933701930"
+"out": "b7a933701930",
+"radky": {
+"97f5942ab106": "Saturday · 14:30"
+}
 },
 "content/akce/2021-10-09.json|de|text": {
 "cs": "76ff71910614",
-"out": "acfefa3c43d2"
+"out": "acfefa3c43d2",
+"radky": {
+"76ff71910614": "Das Herbst-CITO lockte so viele Leute an, dass ein historischer Besucherrekord fiel, und es wurde mehr geschafft als geplant. Dank gilt auch der Dílna U mnicha."
+}
 },
 "content/akce/2021-10-09.json|de|title": {
 "cs": "70ac31e10eba",
-"out": "5468101831fa"
+"out": "5468101831fa",
+"radky": {
+"70ac31e10eba": "Schloss-CITO Toužim 2021: Herbst"
+}
 },
 "content/akce/2021-10-09.json|de|when": {
 "cs": "8438626adbdf",
-"out": "f6b76c966de0"
+"out": "f6b76c966de0",
+"radky": {
+"8438626adbdf": "Samstag · 11:00"
+}
 },
 "content/akce/2021-10-09.json|en|text": {
 "cs": "76ff71910614",
-"out": "c99c70243bac"
+"out": "c99c70243bac",
+"radky": {
+"76ff71910614": "The autumn CITO drew so many people that it set an all-time attendance record, and more work got done than planned. Thanks also go to Dílna U mnicha."
+}
 },
 "content/akce/2021-10-09.json|en|title": {
 "cs": "70ac31e10eba",
-"out": "b144c37909e0"
+"out": "b144c37909e0",
+"radky": {
+"70ac31e10eba": "Castle CITO Toužim 2021: Autumn"
+}
 },
 "content/akce/2021-10-09.json|en|when": {
 "cs": "8438626adbdf",
-"out": "8286ce2b989f"
+"out": "8286ce2b989f",
+"radky": {
+"8438626adbdf": "Saturday · 11:00"
+}
 },
 "content/akce/2021-11-06.json|de|text": {
 "cs": "5cfd9c88fb67",
-"out": "dbdd52d4923d"
+"out": "dbdd52d4923d",
+"radky": {
+"5cfd9c88fb67": "Ein Nachmittag voller Sonne und Spaß: hausgemachte Lebkuchen und Muffins, Kreativwerkstätten, Aufgaben mit jungen Hexen und Spuk im Burgkeller. Später berichtete auch die Zeitung Právo darüber."
+}
 },
 "content/akce/2021-11-06.json|de|title": {
 "cs": "0be5eb1c58e3",
-"out": "f04edcab2ccd"
+"out": "f04edcab2ccd",
+"radky": {
+"0be5eb1c58e3": "Halloween im Schloss"
+}
 },
 "content/akce/2021-11-06.json|en|text": {
 "cs": "5cfd9c88fb67",
-"out": "e8d5142b6fd6"
+"out": "e8d5142b6fd6",
+"radky": {
+"5cfd9c88fb67": "An afternoon full of sunshine and fun: homemade gingerbread and muffins, creative workshops, tasks with young witches and spooks in the castle cellar. The newspaper Právo later wrote about the event."
+}
 },
 "content/akce/2021-11-06.json|en|title": {
 "cs": "0be5eb1c58e3",
-"out": "92dfc2ba05ec"
+"out": "92dfc2ba05ec",
+"radky": {
+"0be5eb1c58e3": "Halloween at the castle"
+}
 },
 "content/akce/2022-03-26.json|de|text": {
 "cs": "1b4bea2ea533",
-"out": "83af99a3dcbf"
+"out": "83af99a3dcbf",
+"radky": {
+"1b4bea2ea533": "Frühjahrsputz auf dem Schlossgelände mit Verpflegung für die Helfer."
+}
 },
 "content/akce/2022-03-26.json|de|title": {
 "cs": "c1608ba0a013",
-"out": "d96c67a1e9da"
+"out": "d96c67a1e9da",
+"radky": {
+"c1608ba0a013": "Frühjahrs-Arbeitseinsatz"
+}
 },
 "content/akce/2022-03-26.json|en|text": {
 "cs": "1b4bea2ea533",
-"out": "d7cdd1453bd6"
+"out": "d7cdd1453bd6",
+"radky": {
+"1b4bea2ea533": "A spring clean of the castle grounds, with refreshments for the helpers."
+}
 },
 "content/akce/2022-03-26.json|en|title": {
 "cs": "c1608ba0a013",
-"out": "2c3d28af1f7d"
+"out": "2c3d28af1f7d",
+"radky": {
+"c1608ba0a013": "Spring work party"
+}
 },
 "content/akce/2022-04-30.json|de|text": {
 "cs": "ff4158111132",
-"out": "f246222deff1"
+"out": "f246222deff1",
+"radky": {
+"ff4158111132": "Nach der coronabedingten Pause kehrte das Hexenbrennen ins Schloss zurück. Am Nachmittag konnten die Besucher ihre eigene Hexe basteln oder am Abend eine mitbringen. Sobald die Feuerwehr den Maibaum aufgestellt hatte, wurde im Hof das Feuer für alle Hexen entzündet, an dem man auch grillen konnte."
+}
 },
 "content/akce/2022-04-30.json|de|title": {
 "cs": "8097766cccd0",
-"out": "a1c290bca588"
+"out": "a1c290bca588",
+"radky": {
+"8097766cccd0": "Hexenverbrennung"
+}
 },
 "content/akce/2022-04-30.json|en|text": {
 "cs": "ff4158111132",
-"out": "53a418c9f371"
+"out": "53a418c9f371",
+"radky": {
+"ff4158111132": "After a break caused by covid, the witch-burning returned to the castle. In the afternoon visitors could make their own witch or bring one along in the evening. Once the firefighters had raised the maypole, a bonfire meant for all the witches was lit in the courtyard, and the fire also served for roasting sausages."
+}
 },
 "content/akce/2022-04-30.json|en|title": {
 "cs": "8097766cccd0",
-"out": "a366c655958d"
+"out": "a366c655958d",
+"radky": {
+"8097766cccd0": "Witches' Night bonfire"
+}
 },
 "content/akce/2022-05-21.json|de|text": {
 "cs": "98b7942d044c",
-"out": "84af03c22ae6"
+"out": "84af03c22ae6",
+"radky": {
+"98b7942d044c": "Der sechste Jahrgang und neunte Event des Schloss-CITO war der erste, den der Verein nach der Übernahme des Staffelstabs von der Dílna U mnicha ausrichtete. Geocacher und andere Freiwillige trafen sich zur alljährlichen Routine: Aufräumen des Schlosshofs, Schneiden und Verbrennen von Wildaufwuchs und Laubrechen. Bei genügend Helfern war auch der Kampf mit dem berüchtigten „Toužimer Haufen“ auf der Bühne geplant. Als um 11:05 nur ein einziger Geocacher da war, wurde uns schwindelig. Am Ende kamen weniger Leute als sonst, aber es hat sich gelohnt und der Haufen ist geschrumpft."
+}
 },
 "content/akce/2022-05-21.json|de|title": {
 "cs": "a727ce66c87d",
-"out": "985929c61ae9"
+"out": "985929c61ae9",
+"radky": {
+"a727ce66c87d": "Schloss-CITO, Frühjahr 2022"
+}
 },
 "content/akce/2022-05-21.json|en|text": {
 "cs": "98b7942d044c",
-"out": "8ae8b180fdcf"
+"out": "8ae8b180fdcf",
+"radky": {
+"98b7942d044c": "The sixth year and ninth event of the castle CITO was the first one the association organised after taking over the baton from Dílna U mnicha. Geocachers and other volunteers came together for the annual routine: tidying the castle courtyard, cutting and burning self-seeded growth and raking leaves. With enough helpers, the plan also included tackling the notorious “Toužim heap” on the stage. At 11:05 there was just one geocacher on site and we nearly fainted. In the end fewer people came than usual, but it was worth it and the heap did move."
+}
 },
 "content/akce/2022-05-21.json|en|title": {
 "cs": "a727ce66c87d",
-"out": "1ce8f7ff7397"
+"out": "1ce8f7ff7397",
+"radky": {
+"a727ce66c87d": "Castle CITO, spring 2022"
+}
 },
 "content/akce/2022-05-28.json|de|text": {
 "cs": "8d831351b97c",
-"out": "8eb6b6995908"
+"out": "8eb6b6995908",
+"radky": {
+"8d831351b97c": "Ein Kindertag mit Wettbewerben um Preise, Forsthandwerk und einem Holzxylophon von Lesy ČR – Forstverwaltung Toužim und einem Berg Schaum von der Feuerwehr SDH Toužim. Der Besuch war fantastisch: Keine einzige Wettbewerbskarte blieb leer und alle Preise wurden verteilt. Nach dem Kinderprogramm gab es Abendkonzerte, die das Infozentrum Toužim organisiert hat. Wohl zum ersten Mal in der Geschichte wurden die Kinder früher müde als die Eltern."
+}
 },
 "content/akce/2022-05-28.json|de|title": {
 "cs": "e5b9569f1ab3",
-"out": "7a2008e6aaeb"
+"out": "7a2008e6aaeb",
+"radky": {
+"e5b9569f1ab3": "Kindertag im Schloss Toužim"
+}
 },
 "content/akce/2022-05-28.json|de|when": {
 "cs": "37a4aa1c1aa1",
-"out": "de409548ebe8"
+"out": "de409548ebe8",
+"radky": {
+"37a4aa1c1aa1": "Samstag · 13:00"
+}
 },
 "content/akce/2022-05-28.json|en|text": {
 "cs": "8d831351b97c",
-"out": "d311606bd1df"
+"out": "d311606bd1df",
+"radky": {
+"8d831351b97c": "A children's day with prize competitions, forestry crafts and a wooden xylophone from Lesy ČR – Toužim forestry office, and a mountain of foam from the Toužim fire brigade (SDH Toužim). The turnout was fantastic: not a single competition card was left unfilled and we gave away all the prizes. After the children's programme there were evening concerts arranged by the Toužim Information Centre. Probably for the first time in history, the children got tired before their parents."
+}
 },
 "content/akce/2022-05-28.json|en|title": {
 "cs": "e5b9569f1ab3",
-"out": "a67f16cef2ae"
+"out": "a67f16cef2ae",
+"radky": {
+"e5b9569f1ab3": "Children's Day at Toužim Castle"
+}
 },
 "content/akce/2022-05-28.json|en|when": {
 "cs": "37a4aa1c1aa1",
-"out": "90499ef0a445"
+"out": "90499ef0a445",
+"radky": {
+"37a4aa1c1aa1": "Saturday · 13:00"
+}
 },
 "content/akce/2022-06-11.json|de|text": {
 "cs": "796774e6b6d7",
-"out": "a642a7edfb92"
+"out": "a642a7edfb92",
+"radky": {
+"796774e6b6d7": "Das sechste Schloss-Rockfest: Wetter wie im Märchen, Essen und Bier ein Gedicht, und alles lief, wie es sollte. Es spielten Cerberos Heavy Rock, Loretta, Hlahol und Fata Morgana. Promo: Radek Kalinič, Bewirtung: Sokolovna Toužim."
+}
 },
 "content/akce/2022-06-11.json|de|title": {
 "cs": "9eedfd45b5a3",
-"out": "57f85e3822e0"
+"out": "57f85e3822e0",
+"radky": {
+"9eedfd45b5a3": "Schlossfestival, 6. Jahrgang"
+}
 },
 "content/akce/2022-06-11.json|en|text": {
 "cs": "796774e6b6d7",
-"out": "da15c92f7e54"
+"out": "da15c92f7e54",
+"radky": {
+"796774e6b6d7": "The sixth castle Rockfest: fairy-tale weather, food and beer like poetry and everything ran just as it should. Cerberos Heavy Rock, Loretta, Hlahol and Fata Morgana played. Promotion by Radek Kalinič, refreshments by Sokolovna Toužim."
+}
 },
 "content/akce/2022-06-11.json|en|title": {
 "cs": "9eedfd45b5a3",
-"out": "3a55ac465802"
+"out": "3a55ac465802",
+"radky": {
+"9eedfd45b5a3": "Castle Festival, 6th year"
+}
 },
 "content/akce/2022-06-25.json|de|text": {
 "cs": "3f289a6658ab",
-"out": "b241da5b622d"
+"out": "b241da5b622d",
+"radky": {
+"3f289a6658ab": "Der historische Tag der Stadt mit den Fechtern von SHŠ Zlatý grál, den Tänzerinnen Shahinez, Musik von Cavalla Cannor und Eva mit der Drehorgel. Dazu Falknervorführungen des Vereins TEIR und Peitschenknallen mit Keltoviny."
+}
 },
 "content/akce/2022-06-25.json|de|title": {
 "cs": "ea4128596f1c",
-"out": "20a5c9afd684"
+"out": "20a5c9afd684",
+"radky": {
+"ea4128596f1c": "Historischer Tag: Gründung der Stadt Toužim (553 Jahre)"
+}
 },
 "content/akce/2022-06-25.json|en|text": {
 "cs": "3f289a6658ab",
-"out": "c33b0e158aa5"
+"out": "c33b0e158aa5",
+"radky": {
+"3f289a6658ab": "The town's history day with the fencers of SHŠ Zlatý grál, the Shahinez dancers, music by Cavalla Cannor and Eva with her barrel organ. There were also falconry displays by the TEIR society and whip cracking with Keltoviny."
+}
 },
 "content/akce/2022-06-25.json|en|title": {
 "cs": "ea4128596f1c",
-"out": "5b710413ae35"
+"out": "5b710413ae35",
+"radky": {
+"ea4128596f1c": "History Day: founding of Toužim (553 years)"
+}
 },
 "content/akce/2022-07-23.json|de|text": {
 "cs": "2ded9c05b452",
-"out": "16a34ea92fda"
+"out": "16a34ea92fda",
+"radky": {
+"2ded9c05b452": "Der Reisende Kompásek führte die Kinder um die ganze Welt bis zu den Menschenfressern. Keine Sorge, sie haben uns nicht gefressen. An einer der Stationen probierten die Kinder, Dinge mit chinesischen Stäbchen umzusetzen."
+}
 },
 "content/akce/2022-07-23.json|de|title": {
 "cs": "d8f61a57b310",
-"out": "d927e386902c"
+"out": "d927e386902c",
+"radky": {
+"d8f61a57b310": "Um die Welt mit dem Reisenden Kompásek"
+}
 },
 "content/akce/2022-07-23.json|en|text": {
 "cs": "2ded9c05b452",
-"out": "d37af01ea50c"
+"out": "d37af01ea50c",
+"radky": {
+"2ded9c05b452": "Traveller Kompásek took the children all around the world and even to the cannibals. Don't worry, they didn't eat us. At one of the stops the children tried moving things with Chinese chopsticks."
+}
 },
 "content/akce/2022-07-23.json|en|title": {
 "cs": "d8f61a57b310",
-"out": "8e73f990069a"
+"out": "8e73f990069a",
+"radky": {
+"d8f61a57b310": "Around the world with traveller Kompásek"
+}
 },
 "content/akce/2022-07-30.json|de|text": {
 "cs": "ea6d4ad28ab6",
-"out": "71c513cfe01c"
+"out": "71c513cfe01c",
+"radky": {
+"ea6d4ad28ab6": "Ein Markt mit Ständen und Livemusik der Band Longway, die uns eine gebrannte CD mit unserem Logo schenkte. Die Zahl der Aussteller und Verkäufer war rekordverdächtig."
+}
 },
 "content/akce/2022-07-30.json|de|title": {
 "cs": "662b71b71237",
-"out": "fa387c0a439c"
+"out": "fa387c0a439c",
+"radky": {
+"662b71b71237": "Fler-Handwerksmarkt im Schloss"
+}
 },
 "content/akce/2022-07-30.json|en|text": {
 "cs": "ea6d4ad28ab6",
-"out": "ccad3f6e0113"
+"out": "ccad3f6e0113",
+"radky": {
+"ea6d4ad28ab6": "A fair with stalls and live music by the band Longway, who gave us a burned CD with our logo. A record number of exhibitors and sellers took part."
+}
 },
 "content/akce/2022-07-30.json|en|title": {
 "cs": "662b71b71237",
-"out": "c1fd23387360"
+"out": "c1fd23387360",
+"radky": {
+"662b71b71237": "Castle Fler Craft Fair"
+}
 },
 "content/akce/2022-08-13.json|de|text": {
 "cs": "d327189bc9a5",
-"out": "92d125df733e"
+"out": "92d125df733e",
+"radky": {
+"d327189bc9a5": "Die vermutlich sechste Ausgabe des Festivals regionaler Bands Punkovice. Es spielten Stamp Out System, Porucha systému, Čekišó, Vypitý lahváče, Já ještě nevim und ŠpuntQaně. Der Eintritt war wie gewohnt frei gegen Spende, für Erfrischungen war gesorgt."
+}
 },
 "content/akce/2022-08-13.json|de|title": {
 "cs": "51c574e1c551",
-"out": "51c574e1c551"
+"out": "51c574e1c551",
+"radky": {
+"51c574e1c551": "Punkovice 2022"
+}
 },
 "content/akce/2022-08-13.json|en|text": {
 "cs": "d327189bc9a5",
-"out": "732874c99cc7"
+"out": "732874c99cc7",
+"radky": {
+"d327189bc9a5": "What was probably the sixth edition of the Punkovice festival of regional bands. Stamp Out System, Porucha systému, Čekišó, Vypitý lahváče, Já ještě nevim and ŠpuntQaně played. As usual, admission was by donation and refreshments were provided."
+}
 },
 "content/akce/2022-08-13.json|en|title": {
 "cs": "51c574e1c551",
-"out": "51c574e1c551"
+"out": "51c574e1c551",
+"radky": {
+"51c574e1c551": "Punkovice 2022"
+}
 },
 "content/akce/2022-09-10.json|de|title": {
 "cs": "006a8dbc4bb7",
-"out": "97dff218c7d5"
+"out": "97dff218c7d5",
+"radky": {
+"006a8dbc4bb7": "Tage des europäischen Kulturerbes 2022"
+}
 },
 "content/akce/2022-09-10.json|en|title": {
 "cs": "006a8dbc4bb7",
-"out": "eb8d715bc0a1"
+"out": "eb8d715bc0a1",
+"radky": {
+"006a8dbc4bb7": "European Heritage Days 2022"
+}
 },
 "content/akce/2022-10-15.json|de|text": {
 "cs": "a32c9edb6d2a",
-"out": "06048bad80b6"
+"out": "06048bad80b6",
+"radky": {
+"a32c9edb6d2a": "Der zehnte Jubiläums-Arbeitseinsatz, also ein CITO-Event, fand im Rahmen des Projekts 72 Stunden statt, zu dem auch thematische T-Shirts gehörten. Die Aufgaben wurden je nach Teilnehmerzahl spontan verteilt, für die Freiwilligen gab es einen kleinen Imbiss. Wie schon im Frühjahr sorgte die Band Longway für die musikalische Begleitung."
+}
 },
 "content/akce/2022-10-15.json|de|title": {
 "cs": "3e49114fb66b",
-"out": "abdf00b02641"
+"out": "abdf00b02641",
+"radky": {
+"3e49114fb66b": "Schloss-CITO, Herbst 2022"
+}
 },
 "content/akce/2022-10-15.json|en|text": {
 "cs": "a32c9edb6d2a",
-"out": "48a80ffaf6e8"
+"out": "48a80ffaf6e8",
+"radky": {
+"a32c9edb6d2a": "The tenth, anniversary volunteer work party, or CITO event, was held as part of the 72 Hours project, which came with its own themed T-shirts. Tasks were assigned on the spot according to the number of participants, and light refreshments were provided for the volunteers. Just as in spring, the band Longway provided the musical accompaniment."
+}
 },
 "content/akce/2022-10-15.json|en|title": {
 "cs": "3e49114fb66b",
-"out": "9cd0ab727559"
+"out": "9cd0ab727559",
+"radky": {
+"3e49114fb66b": "Castle CITO, autumn 2022"
+}
 },
 "content/akce/2022-11-05.json|de|text": {
 "cs": "8960f99f87f9",
-"out": "249ff6c65b8e"
+"out": "249ff6c65b8e",
+"radky": {
+"8960f99f87f9": "Halloween mit Kreativwerkstätten, Schreiben mit dem Gänsekiel, einem Gruselkeller und einem Laternenumzug. Der größte Erfolg war aber der Haufen Herbstlaub."
+}
 },
 "content/akce/2022-11-05.json|de|title": {
 "cs": "0be5eb1c58e3",
-"out": "f04edcab2ccd"
+"out": "f04edcab2ccd",
+"radky": {
+"0be5eb1c58e3": "Halloween im Schloss"
+}
 },
 "content/akce/2022-11-05.json|en|text": {
 "cs": "8960f99f87f9",
-"out": "02cdab307d83"
+"out": "02cdab307d83",
+"radky": {
+"8960f99f87f9": "Halloween with creative workshops, writing with a goose quill, a spooky cellar and a lantern procession. The biggest hit, though, was the pile of fallen leaves."
+}
 },
 "content/akce/2022-11-05.json|en|title": {
 "cs": "0be5eb1c58e3",
-"out": "92dfc2ba05ec"
+"out": "92dfc2ba05ec",
+"radky": {
+"0be5eb1c58e3": "Halloween at the castle"
+}
 },
 "content/akce/2022-12-17.json|de|text": {
 "cs": "cc922d1a8a15",
-"out": "23c033529017"
+"out": "23c033529017",
+"radky": {
+"cc922d1a8a15": "Beim Weihnachtstreffen wurde die Schlosskrippe bevölkert, inspiriert von der Pilsner Krippe, die das Muzeum strašidel Plzeň (Gespenstermuseum Pilsen) betreut. Der Verein bereitete die Grundlage vor, und die Besucher brachten Figuren von sich und ihren Familien mit, gern auch samt Haustieren. Die Figuren aus haltbarem Material konnten gezeichnet, genäht, gestrickt, aus Ton gebrannt, auf einen Stein gemalt oder aus Holz gefertigt sein."
+}
 },
 "content/akce/2022-12-17.json|de|title": {
 "cs": "1c3193dd6d5e",
-"out": "8b99a304aec9"
+"out": "8b99a304aec9",
+"radky": {
+"1c3193dd6d5e": "Weihnachtstreffen und Schlosskrippe"
+}
 },
 "content/akce/2022-12-17.json|en|text": {
 "cs": "cc922d1a8a15",
-"out": "1213d4bf4507"
+"out": "1213d4bf4507",
+"radky": {
+"cc922d1a8a15": "At the Christmas get-together the castle nativity scene came to life, inspired by the Pilsen nativity scene looked after by the Muzeum strašidel Plzeň (Pilsen Ghost Museum). The association prepared its base, and visitors brought figures of themselves and their families, pets included. The figures, made of durable materials, could be drawn, sewn, knitted, fired from clay, painted on a pebble or made of wood."
+}
 },
 "content/akce/2022-12-17.json|en|title": {
 "cs": "1c3193dd6d5e",
-"out": "f6ecefc91072"
+"out": "f6ecefc91072",
+"radky": {
+"1c3193dd6d5e": "Christmas gathering and the castle nativity scene"
+}
 },
 "content/akce/2023-04-30.json|de|text": {
 "cs": "737c7e46f2dc",
-"out": "d299d1252ead"
+"out": "d299d1252ead",
+"radky": {
+"737c7e46f2dc": "Die Hexe haben wir gemeinsam mit allen verbrannt, die ins Schloss kamen, dazu spielte die Band Dáma s hranostajem. Wir hoffen, es hat euch so gut gefallen wie uns."
+}
 },
 "content/akce/2023-04-30.json|de|title": {
 "cs": "8097766cccd0",
-"out": "a1c290bca588"
+"out": "a1c290bca588",
+"radky": {
+"8097766cccd0": "Hexenverbrennung"
+}
 },
 "content/akce/2023-04-30.json|en|text": {
 "cs": "737c7e46f2dc",
-"out": "7d891f56ae57"
+"out": "7d891f56ae57",
+"radky": {
+"737c7e46f2dc": "We burned the witch together with everyone who came to the castle, with music from the band Dáma s hranostajem. We hope you enjoyed it as much as we did."
+}
 },
 "content/akce/2023-04-30.json|en|title": {
 "cs": "8097766cccd0",
-"out": "a366c655958d"
+"out": "a366c655958d",
+"radky": {
+"8097766cccd0": "Witches' Night bonfire"
+}
 },
 "content/akce/2023-05-20.json|de|text": {
 "cs": "974d427a9e63",
-"out": "8b32d7fc02cf"
+"out": "8b32d7fc02cf",
+"radky": {
+"974d427a9e63": "Der elfte Jahrgang des traditionellen CITO-Arbeitseinsatzes. Auf dem Programm standen das Entfernen von Wildaufwuchs und die Belebung des Schlossgartens mit Steinen. Zum ersten Mal überhaupt gab es mehr Veranstalter als Besucher, mit vereinten Kräften wurde aber mehr als genug geschafft. Das Wetter spielte mit, die Würste schmeckten und die Band Longway begleitete den ganzen Tag."
+}
 },
 "content/akce/2023-05-20.json|de|title": {
 "cs": "771c0e17afdc",
-"out": "347e82b73a86"
+"out": "347e82b73a86",
+"radky": {
+"771c0e17afdc": "Schloss-CITO, Frühjahr 2023"
+}
 },
 "content/akce/2023-05-20.json|en|text": {
 "cs": "974d427a9e63",
-"out": "54876ec4cf53"
+"out": "54876ec4cf53",
+"radky": {
+"974d427a9e63": "The eleventh year of the traditional CITO volunteer work day. On the programme: clearing self-seeded growth and reviving the castle rockery. For the first time ever there were more organisers than visitors, but by joining forces we got more than enough done. The weather was kind, the sausages tasted great and the band Longway played throughout."
+}
 },
 "content/akce/2023-05-20.json|en|title": {
 "cs": "771c0e17afdc",
-"out": "fd87d6b3a486"
+"out": "fd87d6b3a486",
+"radky": {
+"771c0e17afdc": "Castle CITO, spring 2023"
+}
 },
 "content/akce/2023-06-03.json|de|text": {
 "cs": "07dec92fb25f",
-"out": "4ebe6886b4e9"
+"out": "4ebe6886b4e9",
+"radky": {
+"07dec92fb25f": "Ein Kindertag mit schönem Wetter, guter Laune und vielen Besuchern. Auf die Kinder warteten Wettbewerbe um Preise, Bastelwerkstätten, ein Berg Schaum von der Feuerwehr SDH Toužim und Handwerksvorführungen von Lesy ČR, dazu spielte die Band Dáma s hranostajem. Die Preise spendeten Jednota COOP, A.P.S.A., Sokolovna Toužim, Vera Gurmet, Jaroslav Kavina, Dong Van Hving und Lékárna Pod smrkem."
+}
 },
 "content/akce/2023-06-03.json|de|title": {
 "cs": "4846920e8d48",
-"out": "1bf0d0f177ad"
+"out": "1bf0d0f177ad",
+"radky": {
+"4846920e8d48": "Kindertag"
+}
 },
 "content/akce/2023-06-03.json|en|text": {
 "cs": "07dec92fb25f",
-"out": "aa0862d2cc49"
+"out": "aa0862d2cc49",
+"radky": {
+"07dec92fb25f": "A children's day of fine weather, good spirits and a big turnout. The children enjoyed prize competitions, craft workshops, a mountain of foam from the Toužim fire brigade and craft demonstrations by Lesy ČR, with music from the band Dáma s hranostajem. Prizes were donated by Jednota COOP, A.P.S.A., Sokolovna Toužim, Vera Gurmet, Jaroslav Kavina, Dong Van Hving and Lékárna Pod smrkem."
+}
 },
 "content/akce/2023-06-03.json|en|title": {
 "cs": "4846920e8d48",
-"out": "0fba6cf9a0a2"
+"out": "0fba6cf9a0a2",
+"radky": {
+"4846920e8d48": "Children's Day"
+}
 },
 "content/akce/2023-06-17.json|de|text": {
 "cs": "54d42adf99fd",
-"out": "a5793e969139"
+"out": "a5793e969139",
+"radky": {
+"54d42adf99fd": "Der siebte Jahrgang verlief in fast familiärer Atmosphäre. Es spielten Cerberos Heavy Rock, Seven, Roxor und Fata Morgana."
+}
 },
 "content/akce/2023-06-17.json|de|title": {
 "cs": "abe710ff0809",
-"out": "5039e6e76288"
+"out": "5039e6e76288",
+"radky": {
+"abe710ff0809": "Schlossfestival 2023 (7. Jahrgang)"
+}
 },
 "content/akce/2023-06-17.json|de|when": {
 "cs": "be92a315e124",
-"out": "1d82ccac95d0"
+"out": "1d82ccac95d0",
+"radky": {
+"be92a315e124": "Samstag · 14:00"
+}
 },
 "content/akce/2023-06-17.json|en|text": {
 "cs": "54d42adf99fd",
-"out": "bc952c3016b1"
+"out": "bc952c3016b1",
+"radky": {
+"54d42adf99fd": "The seventh festival had an almost family atmosphere. Cerberos Heavy Rock, Seven, Roxor and Fata Morgana played."
+}
 },
 "content/akce/2023-06-17.json|en|title": {
 "cs": "abe710ff0809",
-"out": "21173a2d2cd6"
+"out": "21173a2d2cd6",
+"radky": {
+"abe710ff0809": "Castle Festival 2023 (7th year)"
+}
 },
 "content/akce/2023-06-17.json|en|when": {
 "cs": "be92a315e124",
-"out": "d7e04a27bb6f"
+"out": "d7e04a27bb6f",
+"radky": {
+"be92a315e124": "Saturday · 14:00"
+}
 },
 "content/akce/2023-06-20.json|de|text": {
 "cs": "d41736191438",
-"out": "cc99f1fb528d"
+"out": "cc99f1fb528d",
+"radky": {
+"d41736191438": "Ein Schlossrätsel für Klassen der örtlichen Grundschulen, vorbereitet gemeinsam mit dem Infozentrum Toužim; die Kinder waren aufmerksam und wissbegierig."
+}
 },
 "content/akce/2023-06-20.json|de|title": {
 "cs": "c227fec32de8",
-"out": "fd868386a559"
+"out": "fd868386a559",
+"radky": {
+"c227fec32de8": "Schlossrätsel für Grundschulen"
+}
 },
 "content/akce/2023-06-20.json|en|text": {
 "cs": "d41736191438",
-"out": "d87f14ece54d"
+"out": "d87f14ece54d",
+"radky": {
+"d41736191438": "A castle puzzle trail for classes from local primary schools, prepared together with the Toužim Information Centre; the children were attentive and curious."
+}
 },
 "content/akce/2023-06-20.json|en|title": {
 "cs": "c227fec32de8",
-"out": "739e048fff22"
+"out": "739e048fff22",
+"radky": {
+"c227fec32de8": "Castle puzzle trail for primary schools"
+}
 },
 "content/akce/2023-06-23.json|de|title": {
 "cs": "49cdb41dd74f",
-"out": "ee125f0289ab"
+"out": "ee125f0289ab",
+"radky": {
+"49cdb41dd74f": "Johannisfest"
+}
 },
 "content/akce/2023-06-23.json|en|title": {
 "cs": "49cdb41dd74f",
-"out": "2dcb9674a9da"
+"out": "2dcb9674a9da",
+"radky": {
+"49cdb41dd74f": "Midsummer celebrations"
+}
 },
 "content/akce/2023-06-24.json|de|text": {
 "cs": "6ff616c5e34e",
-"out": "7d7e9ad25f54"
+"out": "7d7e9ad25f54",
+"radky": {
+"6ff616c5e34e": "Stadtfest mit historischer Musik von Cavalla Cannor, Fechten mit Alia Tempora, den Tänzerinnen Shahinez, Eva mit der Drehorgel und einer Schmiedeesse. In den Kammern begann eine Ausstellung von Puzzlebildern von Jan Policar, geöffnet bis 30. 7."
+}
 },
 "content/akce/2023-06-24.json|de|title": {
 "cs": "2734f0d92739",
-"out": "51905ce9b7d4"
+"out": "51905ce9b7d4",
+"radky": {
+"2734f0d92739": "Historischer Nachmittag und Ausstellung von Puzzlebildern"
+}
 },
 "content/akce/2023-06-24.json|en|text": {
 "cs": "6ff616c5e34e",
-"out": "b747015cdd3e"
+"out": "b747015cdd3e",
+"radky": {
+"6ff616c5e34e": "Town day with period music by Cavalla Cannor, fencing by Alia Tempora, the Shahinez dancers, Eva with her barrel organ and a blacksmith's forge. An exhibition of jigsaw-puzzle pictures by Jan Policar opened in the chambers and ran until 30 July."
+}
 },
 "content/akce/2023-06-24.json|en|title": {
 "cs": "2734f0d92739",
-"out": "837a4f29b80d"
+"out": "837a4f29b80d",
+"radky": {
+"2734f0d92739": "Historical afternoon and an exhibition of jigsaw-puzzle pictures"
+}
 },
 "content/akce/2023-06-28.json|de|text": {
 "cs": "c702c967f89a",
-"out": "eef5a5c46604"
+"out": "eef5a5c46604",
+"radky": {
+"c702c967f89a": "Die Schüler aller drei neunten Klassen der Toužimer Grundschule feierten bei uns mit ihren Lehrern feierlich ihren Schulabschluss."
+}
 },
 "content/akce/2023-06-28.json|de|title": {
 "cs": "e95fead8578f",
-"out": "d215145ef2a5"
+"out": "d215145ef2a5",
+"radky": {
+"e95fead8578f": "Abschlussfeier der 9. Klassen der Grundschule Toužim"
+}
 },
 "content/akce/2023-06-28.json|en|text": {
 "cs": "c702c967f89a",
-"out": "ac0858580ba1"
+"out": "ac0858580ba1",
+"radky": {
+"c702c967f89a": "Pupils from all three Year 9 classes of the Toužim primary school celebrated the end of their studies here with their teachers."
+}
 },
 "content/akce/2023-06-28.json|en|title": {
 "cs": "e95fead8578f",
-"out": "2291b6601e0b"
+"out": "2291b6601e0b",
+"radky": {
+"e95fead8578f": "Graduation ribbons for Year 9 pupils of Toužim Primary School"
+}
 },
 "content/akce/2023-07-15.json|de|text": {
 "cs": "dbaae1540c16",
-"out": "83da6486311b"
+"out": "83da6486311b",
+"radky": {
+"dbaae1540c16": "Ein Ferien-Kindernachmittag bot das Märchen O perníkové chaloupce (Hänsel und Gretel) in der Aufführung des Theaters Jitule a Dadule. Für die Kinder waren außerdem thematische Spiele vorbereitet, und für schlechtes Wetter stand ein überdachter Spielort bereit."
+}
 },
 "content/akce/2023-07-15.json|de|title": {
 "cs": "9c6aa792e63e",
-"out": "ebb953b04aeb"
+"out": "ebb953b04aeb",
+"radky": {
+"9c6aa792e63e": "Kindernachmittag mit dem Theater Jitule & Dadule"
+}
 },
 "content/akce/2023-07-15.json|en|text": {
 "cs": "dbaae1540c16",
-"out": "a0d3a28fe696"
+"out": "a0d3a28fe696",
+"radky": {
+"dbaae1540c16": "A summer-holiday afternoon for children featured the fairy tale O perníkové chaloupce (Hansel and Gretel) performed by the Jitule a Dadule theatre. Themed games were also prepared for the children, and an indoor venue was arranged in case of bad weather."
+}
 },
 "content/akce/2023-07-15.json|en|title": {
 "cs": "9c6aa792e63e",
-"out": "9422b40b940a"
+"out": "9422b40b940a",
+"radky": {
+"9c6aa792e63e": "Children's afternoon with the Jitule & Dadule theatre"
+}
 },
 "content/akce/2023-07-29.json|de|text": {
 "cs": "fbaabcb4a7c8",
-"out": "bba566498af3"
+"out": "bba566498af3",
+"radky": {
+"fbaabcb4a7c8": "Der Schlossmarkt im Hof von zehn bis sechs. Das Wetter spielte nicht mit und nicht alle angemeldeten Händler kamen, die Zahl der Besucher hat uns aber angenehm überrascht."
+}
 },
 "content/akce/2023-07-29.json|de|title": {
 "cs": "13ff6f3973ca",
-"out": "9c1e9cb67d96"
+"out": "9c1e9cb67d96",
+"radky": {
+"13ff6f3973ca": "Schlossmarkt"
+}
 },
 "content/akce/2023-07-29.json|de|when": {
 "cs": "5b01a3c3c13a",
-"out": "17a96a876e7b"
+"out": "17a96a876e7b",
+"radky": {
+"5b01a3c3c13a": "Samstag · 10:00–18:00"
+}
 },
 "content/akce/2023-07-29.json|en|text": {
 "cs": "fbaabcb4a7c8",
-"out": "ae7e093adcf6"
+"out": "ae7e093adcf6",
+"radky": {
+"fbaabcb4a7c8": "The castle fair in the courtyard from ten to six. The weather wasn't kind and not all registered stallholders came, but the number of visitors pleasantly surprised us."
+}
 },
 "content/akce/2023-07-29.json|en|title": {
 "cs": "13ff6f3973ca",
-"out": "cf25e6af82e1"
+"out": "cf25e6af82e1",
+"radky": {
+"13ff6f3973ca": "Castle fair"
+}
 },
 "content/akce/2023-07-29.json|en|when": {
 "cs": "5b01a3c3c13a",
-"out": "d832ec44a132"
+"out": "d832ec44a132",
+"radky": {
+"5b01a3c3c13a": "Saturday · 10:00–18:00"
+}
 },
 "content/akce/2023-09-09.json|de|text": {
 "cs": "7f368b0d8419",
-"out": "a736762cdaf9"
+"out": "a736762cdaf9",
+"radky": {
+"7f368b0d8419": "Es spielten Znouzectnost, ŠpuntQaně, Stamp Out System, ADHD Helmut, Vypitý lahváče und Adult Misery. Rekordbesuch, die Veranstaltung des Jahres."
+}
 },
 "content/akce/2023-09-09.json|de|title": {
 "cs": "bbac21f07fb9",
-"out": "bbac21f07fb9"
+"out": "bbac21f07fb9",
+"radky": {
+"bbac21f07fb9": "Punkovice 2023"
+}
 },
 "content/akce/2023-09-09.json|en|text": {
 "cs": "7f368b0d8419",
-"out": "bbf7893e499b"
+"out": "bbf7893e499b",
+"radky": {
+"7f368b0d8419": "Znouzectnost, ŠpuntQaně, Stamp Out System, ADHD Helmut, Vypitý lahváče and Adult Misery played. Record attendance; the event of the year."
+}
 },
 "content/akce/2023-09-09.json|en|title": {
 "cs": "bbac21f07fb9",
-"out": "bbac21f07fb9"
+"out": "bbac21f07fb9",
+"radky": {
+"bbac21f07fb9": "Punkovice 2023"
+}
 },
 "content/akce/2023-10-14.json|de|text": {
 "cs": "cc950a335b1a",
-"out": "6950c8b03194"
+"out": "6950c8b03194",
+"radky": {
+"cc950a335b1a": "Der zwölfte Jahrgang des traditionellen CITO-Arbeitseinsatzes. Es wurde Laub gerecht und Wildaufwuchs geschnitten. Auch Journalisten der Presseagentur ČTK kamen vorbei. Zur Spitzhacke griffen sie nicht, aber sie schrieben [ein paar schöne Zeilen](https://karlovarska.drbna.cz/zpravy/8182-dobrovolnici-v-touzimi-postupne-ozivuji-zamek-ktery-roky-chatra.html) über uns."
+}
 },
 "content/akce/2023-10-14.json|de|title": {
 "cs": "9d3ee763bad2",
-"out": "ae235a2c16b0"
+"out": "ae235a2c16b0",
+"radky": {
+"9d3ee763bad2": "Schloss-CITO, Herbst 2023"
+}
 },
 "content/akce/2023-10-14.json|en|text": {
 "cs": "cc950a335b1a",
-"out": "c550dfbbab71"
+"out": "c550dfbbab71",
+"radky": {
+"cc950a335b1a": "The twelfth year of the traditional CITO volunteer work day. We raked leaves and cut back self-seeded growth. Journalists from the Czech News Agency (ČTK) also came. They didn't pick up a pickaxe, but they wrote [a few nice lines](https://karlovarska.drbna.cz/zpravy/8182-dobrovolnici-v-touzimi-postupne-ozivuji-zamek-ktery-roky-chatra.html) about us."
+}
 },
 "content/akce/2023-10-14.json|en|title": {
 "cs": "9d3ee763bad2",
-"out": "94866e002fc0"
+"out": "94866e002fc0",
+"radky": {
+"9d3ee763bad2": "Castle CITO, autumn 2023"
+}
 },
 "content/akce/2023-11-04.json|de|text": {
 "cs": "883133aa2352",
-"out": "f1d373769c78"
+"out": "f1d373769c78",
+"radky": {
+"883133aa2352": "Den Gruselkeller hüllte in diesem Jahr Nebel aus der Nebelmaschine ein, und in der Buh-Kammer spukte es wie nie zuvor. Die Kinder bastelten in der Werkstatt, spielten und ließen sich in der neuen Fotoecke fotografieren. Um halb sechs leuchteten die Laternen auf und der Umzug zog in die herbstliche Dunkelheit. Die Einladung zu unserem Halloween brachte sogar die Kindersendung [Tamtam auf ČT :D](https://decko.ceskatelevize.cz/video/i1009328). Danke allen, die gekommen sind, bis zum nächsten Jahr!"
+}
 },
 "content/akce/2023-11-04.json|de|title": {
 "cs": "0be5eb1c58e3",
-"out": "f04edcab2ccd"
+"out": "f04edcab2ccd",
+"radky": {
+"0be5eb1c58e3": "Halloween im Schloss"
+}
 },
 "content/akce/2023-11-04.json|de|when": {
 "cs": "0783330eb940",
-"out": "54ef89df0a5f"
+"out": "54ef89df0a5f",
+"radky": {
+"0783330eb940": "Samstag · 15:00–17:30"
+}
 },
 "content/akce/2023-11-04.json|en|text": {
 "cs": "883133aa2352",
-"out": "5a5ff0e32a01"
+"out": "5a5ff0e32a01",
+"radky": {
+"883133aa2352": "This year the Spooky Cellar was wrapped in fog from a fog machine and the Bogey Room was scarier than ever. Children made crafts in the workshop, played games and took pictures in the new photo corner. At half past five the lanterns lit up and the procession set off into the autumn dark. Our Halloween was even featured as a tip in the children's programme [Tamtam on ČT :D](https://decko.ceskatelevize.cz/video/i1009328). Thank you to everyone who came, see you next year!"
+}
 },
 "content/akce/2023-11-04.json|en|title": {
 "cs": "0be5eb1c58e3",
-"out": "92dfc2ba05ec"
+"out": "92dfc2ba05ec",
+"radky": {
+"0be5eb1c58e3": "Halloween at the castle"
+}
 },
 "content/akce/2023-11-04.json|en|when": {
 "cs": "0783330eb940",
-"out": "e5b7e39f74e5"
+"out": "e5b7e39f74e5",
+"radky": {
+"0783330eb940": "Saturday · 15:00–17:30"
+}
 },
 "content/akce/2023-12-16.json|de|text": {
 "cs": "06c9075b6fac",
-"out": "ad1cdd194a33"
+"out": "ad1cdd194a33",
+"radky": {
+"06c9075b6fac": "Abschied von der Schlosssaison von zwei bis vier Uhr nachmittags: Glühwein, Weihnachtsgebäck, das jeder mitbrachte, eine Bastelwerkstatt für Kinder und Weihnachtslieder."
+}
 },
 "content/akce/2023-12-16.json|de|title": {
 "cs": "8edfb7e2e822",
-"out": "bcc2da7630d8"
+"out": "bcc2da7630d8",
+"radky": {
+"8edfb7e2e822": "Weihnachtstreffen mit Glühwein"
+}
 },
 "content/akce/2023-12-16.json|en|text": {
 "cs": "06c9075b6fac",
-"out": "3c7b8e8794ae"
+"out": "3c7b8e8794ae",
+"radky": {
+"06c9075b6fac": "A farewell to the castle season from two to four in the afternoon: mulled wine, Christmas biscuits brought by everyone, a craft workshop for children and carols."
+}
 },
 "content/akce/2023-12-16.json|en|title": {
 "cs": "8edfb7e2e822",
-"out": "96dd8dd6140f"
+"out": "96dd8dd6140f",
+"radky": {
+"8edfb7e2e822": "Christmas gathering with mulled wine"
+}
 },
 "content/akce/2024-04-30.json|de|text": {
 "cs": "05ea644ba61d",
-"out": "2c962fe1e841"
+"out": "2c962fe1e841",
+"radky": {
+"05ea644ba61d": "Das traditionelle Maibaumaufstellen und Hexenbrennen veranstalteten gemeinsam der SDH Toužim (Freiwillige Feuerwehr Toužim) und Živý zámek Toužim. Am Nachmittag wurden im Schlosshof der Scheiterhaufen vorbereitet und die Haupthexe gebastelt, während auf dem Marktplatz unter Begleitung des Orchesters der ZUŠ Toužim (Kunstschule) die Maibaumspitze geschmückt wurde und für die Kleinsten eine Hüpfburg bereitstand. Nach dem Aufstellen des Maibaums zog das Programm zurück in den Schlosshof, wo der Scheiterhaufen mit der Hexe entzündet wurde und man am Feuer auch Würstchen grillen konnte."
+}
 },
 "content/akce/2024-04-30.json|de|title": {
 "cs": "8097766cccd0",
-"out": "a1c290bca588"
+"out": "a1c290bca588",
+"radky": {
+"8097766cccd0": "Hexenverbrennung"
+}
 },
 "content/akce/2024-04-30.json|en|text": {
 "cs": "05ea644ba61d",
-"out": "bd275e0baf88"
+"out": "bd275e0baf88",
+"radky": {
+"05ea644ba61d": "The traditional raising of the maypole and witch-burning was organised jointly by SDH Toužim (the Toužim volunteer fire brigade) and Živý zámek Toužim. In the afternoon the bonfire was prepared and the main witch made in the castle courtyard, while on the square the top of the maypole was decorated to the accompaniment of the ZUŠ Toužim (art school) orchestra, with a bouncy castle for the little ones. After the maypole was raised, the programme moved back to the courtyard, where the bonfire with the witch was lit and the fire also served for roasting sausages."
+}
 },
 "content/akce/2024-04-30.json|en|title": {
 "cs": "8097766cccd0",
-"out": "a366c655958d"
+"out": "a366c655958d",
+"radky": {
+"8097766cccd0": "Witches' Night bonfire"
+}
 },
 "content/akce/2024-05-18-toulky.json|de|text": {
 "cs": "dc0149d4711d",
-"out": "e3e7201f5c91"
+"out": "e3e7201f5c91",
+"radky": {
+"dc0149d4711d": "Auftritt von Jean de Carro zum Abschluss des Frühjahrseinsatzes."
+}
 },
 "content/akce/2024-05-18-toulky.json|de|title": {
 "cs": "82669406d0dc",
-"out": "d879fa40e6fb"
+"out": "d879fa40e6fb",
+"radky": {
+"82669406d0dc": "Streifzüge durch die Region mit Jean de Carro"
+}
 },
 "content/akce/2024-05-18-toulky.json|en|text": {
 "cs": "dc0149d4711d",
-"out": "78466ce096d4"
+"out": "78466ce096d4",
+"radky": {
+"dc0149d4711d": "A performance by Jean de Carro to round off the spring work party."
+}
 },
 "content/akce/2024-05-18-toulky.json|en|title": {
 "cs": "82669406d0dc",
-"out": "7c685dd22317"
+"out": "7c685dd22317",
+"radky": {
+"82669406d0dc": "Wandering the region with Jean de Carro"
+}
 },
 "content/akce/2024-05-18.json|de|text": {
 "cs": "b304b12d560c",
-"out": "1f040f7896ff"
+"out": "1f040f7896ff",
+"radky": {
+"b304b12d560c": "Das Wetter sah miserabel aus, im Laufe des Tages wurde es aber besser. Auch mit wenigen Helfern wurde einiges geschafft, und zum Schluss kam die verdiente Belohnung: ein Auftritt von Jean de Carro."
+}
 },
 "content/akce/2024-05-18.json|de|title": {
 "cs": "5b9398920c42",
-"out": "cca9e550b965"
+"out": "cca9e550b965",
+"radky": {
+"5b9398920c42": "Schloss-CITO, Frühjahr 2024"
+}
 },
 "content/akce/2024-05-18.json|en|text": {
 "cs": "b304b12d560c",
-"out": "62d32bbcbe66"
+"out": "62d32bbcbe66",
+"radky": {
+"b304b12d560c": "The weather looked miserable, but it cleared up during the day. Even with only a few helpers a lot got done, and at the end came a well-earned reward: a performance by Jean de Carro."
+}
 },
 "content/akce/2024-05-18.json|en|title": {
 "cs": "5b9398920c42",
-"out": "75e5652300eb"
+"out": "75e5652300eb",
+"radky": {
+"5b9398920c42": "Castle CITO, spring 2024"
+}
 },
 "content/akce/2024-06-01.json|de|text": {
 "cs": "b5773a8cd6af",
-"out": "b87b8c5db13b"
+"out": "b87b8c5db13b",
+"radky": {
+"b5773a8cd6af": "Kindertag bei jedem Wetter: Wettbewerbe, Werkstätten und Schaum von der Freiwilligen Feuerwehr Toužim, bei Regen im Inneren des Schlosses."
+}
 },
 "content/akce/2024-06-01.json|de|title": {
 "cs": "4846920e8d48",
-"out": "1bf0d0f177ad"
+"out": "1bf0d0f177ad",
+"radky": {
+"4846920e8d48": "Kindertag"
+}
 },
 "content/akce/2024-06-01.json|en|text": {
 "cs": "b5773a8cd6af",
-"out": "d3902d584df0"
+"out": "d3902d584df0",
+"radky": {
+"b5773a8cd6af": "Children's Day come rain or shine: contests, workshops and foam from the Toužim volunteer fire brigade, moved inside the castle when it rained."
+}
 },
 "content/akce/2024-06-01.json|en|title": {
 "cs": "4846920e8d48",
-"out": "0fba6cf9a0a2"
+"out": "0fba6cf9a0a2",
+"radky": {
+"4846920e8d48": "Children's Day"
+}
 },
 "content/akce/2024-06-15.json|de|text": {
 "cs": "4813bd476cf9",
-"out": "f8fc61181c30"
+"out": "f8fc61181c30",
+"radky": {
+"4813bd476cf9": "Das achte Schloss-Rockfest, seit 2017 veranstaltet von Kalimero Agency. Leute, Sound, Promo, Bands, Bewirtung und Wetter, alles war erstklassig. Für die Bewirtung sorgte die Hospůdka U Havlů. Hoffentlich schaffen wir es bis zum zehnten Jubiläum!"
+}
 },
 "content/akce/2024-06-15.json|de|title": {
 "cs": "0d09003de2be",
-"out": "0889541c84c2"
+"out": "0889541c84c2",
+"radky": {
+"0d09003de2be": "Schlossfestival, 8. Jahrgang"
+}
 },
 "content/akce/2024-06-15.json|en|text": {
 "cs": "4813bd476cf9",
-"out": "807675fa4806"
+"out": "807675fa4806",
+"radky": {
+"4813bd476cf9": "The eighth castle Rockfest, organised since 2017 by Kalimero Agency. People, sound, promotion, bands, refreshments and weather: everything was top-notch. Refreshments were provided by Hospůdka U Havlů. Here's hoping we make it to the tenth anniversary!"
+}
 },
 "content/akce/2024-06-15.json|en|title": {
 "cs": "0d09003de2be",
-"out": "8ad24116adbf"
+"out": "8ad24116adbf",
+"radky": {
+"0d09003de2be": "Castle Festival, 8th year"
+}
 },
 "content/akce/2024-06-29.json|de|text": {
 "cs": "7f1e24a6b06c",
-"out": "5c621ddb67da"
+"out": "5c621ddb67da",
+"radky": {
+"7f1e24a6b06c": "Feier zu 555 Jahren seit der Erhebung Toužims zur Stadt. Fechten mit Alia Tempora, die Tänzerinnen Shahinez, Musik von Cavalla Cannor, ein Schmied, ein Imker, Kreativwerkstätten, Spiele von Jiří Šebesta im Garten und Märchen von Poutník Hroch."
+}
 },
 "content/akce/2024-06-29.json|de|title": {
 "cs": "7c85865d1112",
-"out": "30ee796322cf"
+"out": "30ee796322cf",
+"radky": {
+"7c85865d1112": "Stadtfest: 555 Jahre Toužim"
+}
 },
 "content/akce/2024-06-29.json|en|text": {
 "cs": "7f1e24a6b06c",
-"out": "57dd252f353c"
+"out": "57dd252f353c",
+"radky": {
+"7f1e24a6b06c": "Celebrating 555 years since Toužim was raised to a town. Fencing by Alia Tempora, the Shahinez dancers, music by Cavalla Cannor, a blacksmith, a beekeeper, creative workshops, games by Jiří Šebesta in the garden and fairy tales by Poutník Hroch."
+}
 },
 "content/akce/2024-06-29.json|en|title": {
 "cs": "7c85865d1112",
-"out": "6315b4df3825"
+"out": "6315b4df3825",
+"radky": {
+"7c85865d1112": "Town Day: 555 years of Toužim"
+}
 },
 "content/akce/2024-07-27.json|de|text": {
 "cs": "ed50b646f87d",
-"out": "e0c004349824"
+"out": "e0c004349824",
+"radky": {
+"ed50b646f87d": "Auf dem Markt gab es Stände mit Keramik, Holzwaren, Schmuck und Accessoires, Erfrischungen und Kaffee. Den ganzen Tag begleitete Livemusik, und es wurde auch Theater gespielt."
+}
 },
 "content/akce/2024-07-27.json|de|title": {
 "cs": "13ff6f3973ca",
-"out": "9c1e9cb67d96"
+"out": "9c1e9cb67d96",
+"radky": {
+"13ff6f3973ca": "Schlossmarkt"
+}
 },
 "content/akce/2024-07-27.json|de|when": {
 "cs": "102b3c209167",
-"out": "d93e84c7ad33"
+"out": "d93e84c7ad33",
+"radky": {
+"102b3c209167": "Samstag · 10:00–17:00"
+}
 },
 "content/akce/2024-07-27.json|en|text": {
 "cs": "ed50b646f87d",
-"out": "29c05a9ca895"
+"out": "29c05a9ca895",
+"radky": {
+"ed50b646f87d": "The fair had stalls selling ceramics, woodwork, jewellery and accessories, plus refreshments and coffee. Live music accompanied the whole day, and there was theatre too."
+}
 },
 "content/akce/2024-07-27.json|en|title": {
 "cs": "13ff6f3973ca",
-"out": "cf25e6af82e1"
+"out": "cf25e6af82e1",
+"radky": {
+"13ff6f3973ca": "Castle fair"
+}
 },
 "content/akce/2024-07-27.json|en|when": {
 "cs": "102b3c209167",
-"out": "2ce6d805f230"
+"out": "2ce6d805f230",
+"radky": {
+"102b3c209167": "Saturday · 10:00–17:00"
+}
 },
 "content/akce/2024-08-31.json|de|text": {
 "cs": "d880c79851a1",
-"out": "82a3a01f73e6"
+"out": "82a3a01f73e6",
+"radky": {
+"d880c79851a1": "Es spielten Chyba 404, Drtimosaz, Vypitý lahváče, Já ještě nevim, ŠpuntQaně und Nízká úroveň. Eine Party wie im Märchen: perfektes Wetter, genug Leute, das Bier floss in Strömen, und Bands wie Fans hatten Spaß. Der Eintritt war wie immer freiwillig."
+}
 },
 "content/akce/2024-08-31.json|de|title": {
 "cs": "346ec5fc2dfa",
-"out": "346ec5fc2dfa"
+"out": "346ec5fc2dfa",
+"radky": {
+"346ec5fc2dfa": "Punkovice 2024"
+}
 },
 "content/akce/2024-08-31.json|en|text": {
 "cs": "d880c79851a1",
-"out": "d0ffcac77c71"
+"out": "d0ffcac77c71",
+"radky": {
+"d880c79851a1": "Chyba 404, Drtimosaz, Vypitý lahváče, Já ještě nevim, ŠpuntQaně and Nízká úroveň played. A fairy-tale party: perfect weather, plenty of people, the beer flowed and both bands and fans had fun. Admission was voluntary, as always."
+}
 },
 "content/akce/2024-08-31.json|en|title": {
 "cs": "346ec5fc2dfa",
-"out": "346ec5fc2dfa"
+"out": "346ec5fc2dfa",
+"radky": {
+"346ec5fc2dfa": "Punkovice 2024"
+}
 },
 "content/akce/2024-09-07.json|de|text": {
 "cs": "0cb230a05365",
-"out": "e2c70a49959e"
+"out": "e2c70a49959e",
+"radky": {
+"0cb230a05365": "Der erste Theatertag: zwei Vorstellungen für Klein und Groß, ein Schlosscafé, eine Fotoecke, Kinderschminken und Werkstätten."
+}
 },
 "content/akce/2024-09-07.json|de|title": {
 "cs": "40e5a3b9224d",
-"out": "7c193bf856bf"
+"out": "7c193bf856bf",
+"radky": {
+"40e5a3b9224d": "Theatertag im Schloss"
+}
 },
 "content/akce/2024-09-07.json|en|text": {
 "cs": "0cb230a05365",
-"out": "d023ccc3bd75"
+"out": "d023ccc3bd75",
+"radky": {
+"0cb230a05365": "The first theatre day: two performances for young and old, a castle café, a photo corner, face painting and workshops."
+}
 },
 "content/akce/2024-09-07.json|en|title": {
 "cs": "40e5a3b9224d",
-"out": "c02a3006a7ab"
+"out": "c02a3006a7ab",
+"radky": {
+"40e5a3b9224d": "Theatre Day at the castle"
+}
 },
 "content/akce/2024-10-12.json|de|text": {
 "cs": "4b3ea40dd19f",
-"out": "c9b6b96adaad"
+"out": "c9b6b96adaad",
+"radky": {
+"4b3ea40dd19f": "Ein Herbst-CITO im Rahmen des Projekts 72 Stunden, mit Musik der Schlossband Longway. Kinder konnten Kastanien sammeln."
+}
 },
 "content/akce/2024-10-12.json|de|title": {
 "cs": "a742564365fb",
-"out": "85d24bc39817"
+"out": "85d24bc39817",
+"radky": {
+"a742564365fb": "Schloss-CITO Toužim 2024: Herbst"
+}
 },
 "content/akce/2024-10-12.json|en|text": {
 "cs": "4b3ea40dd19f",
-"out": "da34beb237b2"
+"out": "da34beb237b2",
+"radky": {
+"4b3ea40dd19f": "An autumn CITO as part of the 72 Hours project, with music from the castle band Longway. Children could collect chestnuts."
+}
 },
 "content/akce/2024-10-12.json|en|title": {
 "cs": "a742564365fb",
-"out": "44125d55b762"
+"out": "44125d55b762",
+"radky": {
+"a742564365fb": "Castle CITO Toužim 2024: Autumn"
+}
 },
 "content/akce/2024-10-26.json|de|text": {
 "cs": "ce9016ae8e37",
-"out": "35fabd3b68f1"
+"out": "35fabd3b68f1",
+"radky": {
+"ce9016ae8e37": "Das traditionelle Halloween im Schloss bot jede Menge gruseligen Spaß: einen Gruselkeller und eine Buh-Kammer, Kinderschminken, verschiedene Spiele und eine Bastelwerkstatt. Am frühen Abend startete ein Laternenumzug. Zum ersten Mal gehörten auch ungewöhnliche Abendführungen durch das Schloss zum Programm, in zwei Durchgängen und für eine begrenzte Teilnehmerzahl."
+}
 },
 "content/akce/2024-10-26.json|de|title": {
 "cs": "0be5eb1c58e3",
-"out": "f04edcab2ccd"
+"out": "f04edcab2ccd",
+"radky": {
+"0be5eb1c58e3": "Halloween im Schloss"
+}
 },
 "content/akce/2024-10-26.json|en|text": {
 "cs": "ce9016ae8e37",
-"out": "b225d5a7152a"
+"out": "b225d5a7152a",
+"radky": {
+"ce9016ae8e37": "The traditional Halloween at the castle offered plenty of spooky fun: a scary cellar and a Boo chamber, face painting, various games and a workshop. Towards evening a lantern procession set off. For the first time the programme also included unusual evening tours of the castle in two time slots, for a limited number of participants."
+}
 },
 "content/akce/2024-10-26.json|en|title": {
 "cs": "0be5eb1c58e3",
-"out": "92dfc2ba05ec"
+"out": "92dfc2ba05ec",
+"radky": {
+"0be5eb1c58e3": "Halloween at the castle"
+}
 },
 "content/akce/2024-12-14.json|de|text": {
 "cs": "5049aa09db77",
-"out": "4a4feb14a586"
+"out": "4a4feb14a586",
+"radky": {
+"5049aa09db77": "Weihnachtslieder, Glühwein, eine Kreativwerkstatt für Kinder, Tanzauftritte und ein Wettbewerb um die besten Lebkuchen und Kipferl."
+}
 },
 "content/akce/2024-12-14.json|de|title": {
 "cs": "5d681f6d15cf",
-"out": "0936b300f415"
+"out": "0936b300f415",
+"radky": {
+"5d681f6d15cf": "Weihnachtstreffen im Schloss"
+}
 },
 "content/akce/2024-12-14.json|en|text": {
 "cs": "5049aa09db77",
-"out": "91013d631f7e"
+"out": "91013d631f7e",
+"radky": {
+"5049aa09db77": "Carols, mulled wine, a craft workshop for children, dance performances and a contest for the best gingerbread and crescent biscuits."
+}
 },
 "content/akce/2024-12-14.json|en|title": {
 "cs": "5d681f6d15cf",
-"out": "49ed81b636ae"
+"out": "49ed81b636ae",
+"radky": {
+"5d681f6d15cf": "Christmas gathering at the castle"
+}
 },
 "content/akce/2025-04-30.json|de|text": {
 "cs": "95346a13a400",
-"out": "d74a087c9ef0"
+"out": "d74a087c9ef0",
+"radky": {
+"95346a13a400": "Maibaumaufstellen und ein Feuer mit drei Hexen, die Kinder aus den Kursen des CVČ Kačaba gebastelt hatten."
+}
 },
 "content/akce/2025-04-30.json|de|title": {
 "cs": "74ddf2665ec0",
-"out": "195f14bcc508"
+"out": "195f14bcc508",
+"radky": {
+"74ddf2665ec0": "Hexenverbrennung und Maibaumaufstellen"
+}
 },
 "content/akce/2025-04-30.json|en|text": {
 "cs": "95346a13a400",
-"out": "8289c024a8bf"
+"out": "8289c024a8bf",
+"radky": {
+"95346a13a400": "Raising the maypole and a bonfire with three witches made by children from the CVČ Kačaba clubs."
+}
 },
 "content/akce/2025-04-30.json|en|title": {
 "cs": "74ddf2665ec0",
-"out": "ff98da2d85c9"
+"out": "ff98da2d85c9",
+"radky": {
+"74ddf2665ec0": "Witches' Night bonfire and raising the maypole"
+}
 },
 "content/akce/2025-05-17.json|de|text": {
 "cs": "6015f0204fbc",
-"out": "57ce8ba97e03"
+"out": "57ce8ba97e03",
+"radky": {
+"6015f0204fbc": "Geocacher stellten eine Infotafel auf, reinigten die Bühne, räumten den Kaminraum auf, strichen Tische für das Schlosscafé und richteten die Feuerstelle her. Es spielten Cavalla Cannor und Longway, Castra Romana zeigte eine römische Schlacht, und es gab eine Vorpremiere des Films über das Schloss."
+}
 },
 "content/akce/2025-05-17.json|de|title": {
 "cs": "4a5531d795d5",
-"out": "2c06cf9e9bd4"
+"out": "2c06cf9e9bd4",
+"radky": {
+"4a5531d795d5": "Community Celebration Event: Frühjahrs-CITO 2025"
+}
 },
 "content/akce/2025-05-17.json|de|when": {
 "cs": "cc16e9cdc35c",
-"out": "28ecd54c6306"
+"out": "28ecd54c6306",
+"radky": {
+"cc16e9cdc35c": "Samstag · 11:30"
+}
 },
 "content/akce/2025-05-17.json|en|text": {
 "cs": "6015f0204fbc",
-"out": "3a1671748fe3"
+"out": "3a1671748fe3",
+"radky": {
+"6015f0204fbc": "Geocachers installed an information board, cleaned the stage, tidied the fireplace room, painted tables for the castle café and fixed up the fire pit. Cavalla Cannor and Longway played, Castra Romana staged a Roman battle, and there was a preview of a film about the castle."
+}
 },
 "content/akce/2025-05-17.json|en|title": {
 "cs": "4a5531d795d5",
-"out": "99be7f621b2f"
+"out": "99be7f621b2f",
+"radky": {
+"4a5531d795d5": "Community Celebration Event: spring CITO 2025"
+}
 },
 "content/akce/2025-05-17.json|en|when": {
 "cs": "cc16e9cdc35c",
-"out": "e064438e2751"
+"out": "e064438e2751",
+"radky": {
+"cc16e9cdc35c": "Saturday · 11:30"
+}
 },
 "content/akce/2025-05-31.json|de|text": {
 "cs": "4a47bd6b3acb",
-"out": "a63380578177"
+"out": "a63380578177",
+"radky": {
+"4a47bd6b3acb": "Wettbewerbe für kleine und größere Kinder mit Belohnung für erfüllte Aufgaben und ein Stand von Lesy ČR. Mitgeholfen haben das CVČ Kačaba und die Kunstschule Toužim."
+}
 },
 "content/akce/2025-05-31.json|de|title": {
 "cs": "4846920e8d48",
-"out": "1bf0d0f177ad"
+"out": "1bf0d0f177ad",
+"radky": {
+"4846920e8d48": "Kindertag"
+}
 },
 "content/akce/2025-05-31.json|en|text": {
 "cs": "4a47bd6b3acb",
-"out": "78be59b38e54"
+"out": "78be59b38e54",
+"radky": {
+"4a47bd6b3acb": "Contests for little and bigger children with a reward for completed tasks, and a Lesy ČR stand. CVČ Kačaba and the Toužim art school helped."
+}
 },
 "content/akce/2025-05-31.json|en|title": {
 "cs": "4846920e8d48",
-"out": "0fba6cf9a0a2"
+"out": "0fba6cf9a0a2",
+"radky": {
+"4846920e8d48": "Children's Day"
+}
 },
 "content/akce/2025-06-21.json|de|text": {
 "cs": "9c492502623f",
-"out": "55d8618a3a6a"
+"out": "55d8618a3a6a",
+"radky": {
+"9c492502623f": "Die neunte Ausgabe des Festivals im Schloss stand im Zeichen von Rock und Metal. Es traten die Gothic-Rock-Band Carpatia Castle aus der Region Most, die Heavy-Metal-Band Krleš aus Nordböhmen, die Heavy-Rock-Band Cerberos und die Metal/Tricore-Band Trojka aus Klášterec auf."
+}
 },
 "content/akce/2025-06-21.json|de|title": {
 "cs": "adc2507a264b",
-"out": "416d330ac678"
+"out": "416d330ac678",
+"radky": {
+"adc2507a264b": "Schlossfestival, 9. Jahrgang"
+}
 },
 "content/akce/2025-06-21.json|en|text": {
 "cs": "9c492502623f",
-"out": "1cc7fc6d85ea"
+"out": "1cc7fc6d85ea",
+"radky": {
+"9c492502623f": "The ninth edition of the Festival at the Castle was devoted to rock and metal. On stage were the gothic rock band Carpatia Castle from the Most region, the heavy metal band Krleš from northern Bohemia, the heavy rock band Cerberos and the metal/tricore band Trojka from Klášterec."
+}
 },
 "content/akce/2025-06-21.json|en|title": {
 "cs": "adc2507a264b",
-"out": "75da6437dfae"
+"out": "75da6437dfae",
+"radky": {
+"adc2507a264b": "Castle Festival, 9th year"
+}
 },
 "content/akce/2025-06-28.json|de|text": {
 "cs": "698b824280de",
-"out": "e8026d4b391f"
+"out": "e8026d4b391f",
+"radky": {
+"698b824280de": "Feier zu 556 Jahren Stadt: Theater Jitule a Dadule, Eva mit der Drehorgel, Cavalla Cannor, Jean de Carro, die Tänzerinnen Shahinez, Fechten mit Castra Romana und Alia Tempora, Schmiede, Stelzenläufer und Handwerksstände. Premiere eines Films über Schloss Toužim von MiRo film."
+}
 },
 "content/akce/2025-06-28.json|de|title": {
 "cs": "1436fab1c89f",
-"out": "379caa90b890"
+"out": "379caa90b890",
+"radky": {
+"1436fab1c89f": "Historischer Tag"
+}
 },
 "content/akce/2025-06-28.json|en|text": {
 "cs": "698b824280de",
-"out": "139d9a54ee79"
+"out": "139d9a54ee79",
+"radky": {
+"698b824280de": "Celebrating 556 years of the town: the Jitule a Dadule theatre, Eva with her barrel organ, Cavalla Cannor, Jean de Carro, the Shahinez dancers, fencing by Castra Romana and Alia Tempora, blacksmiths, stilt walkers and craft stalls. Premiere of a film about Toužim Castle by MiRo film."
+}
 },
 "content/akce/2025-06-28.json|en|title": {
 "cs": "1436fab1c89f",
-"out": "796ad3f7f30c"
+"out": "796ad3f7f30c",
+"radky": {
+"1436fab1c89f": "History Day"
+}
 },
 "content/akce/2025-07-26.json|de|text": {
 "cs": "5318dde75a20",
-"out": "83f6739d588f"
+"out": "83f6739d588f",
+"radky": {
+"5318dde75a20": "Handwerksstände, eine Brotback-Vorführung, eine Hundeführerin, ein Stand von Maminy s rakovinou (Mütter mit Krebs) und Krankenschwestern der häuslichen Krankenpflege Toužim. Es spielte die Band Longway."
+}
 },
 "content/akce/2025-07-26.json|de|title": {
 "cs": "13ff6f3973ca",
-"out": "9c1e9cb67d96"
+"out": "9c1e9cb67d96",
+"radky": {
+"13ff6f3973ca": "Schlossmarkt"
+}
 },
 "content/akce/2025-07-26.json|en|text": {
 "cs": "5318dde75a20",
-"out": "005ba112b00a"
+"out": "005ba112b00a",
+"radky": {
+"5318dde75a20": "Craft stalls, a bread-baking demonstration, a dog handler, a stall by Maminy s rakovinou (Mums with Cancer) and nurses from Toužim home health care. The band Longway played."
+}
 },
 "content/akce/2025-07-26.json|en|title": {
 "cs": "13ff6f3973ca",
-"out": "cf25e6af82e1"
+"out": "cf25e6af82e1",
+"radky": {
+"13ff6f3973ca": "Castle fair"
+}
 },
 "content/akce/2025-08-02.json|de|text": {
 "cs": "aedf8c9aef69",
-"out": "927493c730b0"
+"out": "927493c730b0",
+"radky": {
+"aedf8c9aef69": "Der erste sommerliche Musiknachmittag. Ab 15 Uhr spielten Duo Vacek a Brabec, Dáma s hranostajem und Kdo přijde. Es regnete ein bisschen, aber es ging weiter: Tänzerinnen zeigten Countrytänze und die Besucher lernten sie gleich mit. Am Abend saßen wir am Feuer."
+}
 },
 "content/akce/2025-08-02.json|de|title": {
 "cs": "00c0a2e973a9",
-"out": "0ef09cc5db71"
+"out": "0ef09cc5db71",
+"radky": {
+"00c0a2e973a9": "Pelmel muziky (Musik-Allerlei)"
+}
 },
 "content/akce/2025-08-02.json|en|text": {
 "cs": "aedf8c9aef69",
-"out": "a01ef0973410"
+"out": "a01ef0973410",
+"radky": {
+"aedf8c9aef69": "The first summer music afternoon. From 3 pm Duo Vacek a Brabec, Dáma s hranostajem and Kdo přijde played. It rained a little, but we carried on: dancers showed country dances and visitors learned them on the spot. In the evening we sat around the fire."
+}
 },
 "content/akce/2025-08-02.json|en|title": {
 "cs": "00c0a2e973a9",
-"out": "24b94df5465e"
+"out": "24b94df5465e",
+"radky": {
+"00c0a2e973a9": "Pelmel muziky (musical medley)"
+}
 },
 "content/akce/2025-08-23.json|de|text": {
 "cs": "167254c2592d",
-"out": "13e6be28970c"
+"out": "13e6be28970c",
+"radky": {
+"167254c2592d": "Zum ersten Mal beteiligte sich der Verein an der Burgen- und Schlössernacht, einem beliebten Projekt des Nationalen Denkmalinstituts. Abendliche Führungen leiteten durch das dunkle, von Kerzen erleuchtete Schloss und waren mit örtlichen Sagen gewürzt; in den einzelnen Räumen begegneten die Besucher dem Schwarzen Mönch und dem Schlossherrn. Im Mittelpunkt standen die Fragen, wer der Schwarze Mönch war und wo die goldene Trompete erklang. Die Führungen fanden in drei Abendterminen statt, alle waren ausverkauft, es kamen 45 Personen."
+}
 },
 "content/akce/2025-08-23.json|de|title": {
 "cs": "1d916fe83a98",
-"out": "203514290eb2"
+"out": "203514290eb2",
+"radky": {
+"1d916fe83a98": "Burgen- und Schlössernacht"
+}
 },
 "content/akce/2025-08-23.json|en|text": {
 "cs": "167254c2592d",
-"out": "c4df1e73eea7"
+"out": "c4df1e73eea7",
+"radky": {
+"167254c2592d": "For the first time the association took part in the Castle Night, a popular project of the National Heritage Institute. Guided evening tours led through the darkened, candlelit castle and were spiced up with local legends; in the individual rooms visitors met the Black Monk and the lord of the castle. The tours revolved around the questions of who the Black Monk was and where the golden trumpet played. They ran in three evening slots, all of them sold out, and 45 people came."
+}
 },
 "content/akce/2025-08-23.json|en|title": {
 "cs": "1d916fe83a98",
-"out": "0b5c9e6796c8"
+"out": "0b5c9e6796c8",
+"radky": {
+"1d916fe83a98": "Castle Night"
+}
 },
 "content/akce/2025-09-06.json|de|text": {
 "cs": "3740b11c316e",
-"out": "82a441025ab5"
+"out": "82a441025ab5",
+"radky": {
+"3740b11c316e": "Der zweite Theatertag: die Märchen „Das tapfere Schneiderlein“ (Divadélko Ondřej) und „Däumling“ (Jitule a Dadule), eine Seifenblasenshow und am Abend das Stück „Nevěrníci“ des Theaters MAEBH."
+}
 },
 "content/akce/2025-09-06.json|de|title": {
 "cs": "03b037299e2d",
-"out": "c06a425242a6"
+"out": "c06a425242a6",
+"radky": {
+"03b037299e2d": "Theater im Schloss"
+}
 },
 "content/akce/2025-09-06.json|en|text": {
 "cs": "3740b11c316e",
-"out": "4176f3f603b5"
+"out": "4176f3f603b5",
+"radky": {
+"3740b11c316e": "The second theatre day: the fairy tales The Brave Little Tailor (Divadélko Ondřej) and Tom Thumb (Jitule a Dadule), a bubble show and in the evening the play Nevěrníci by the MAEBH theatre."
+}
 },
 "content/akce/2025-09-06.json|en|title": {
 "cs": "03b037299e2d",
-"out": "b801e96b36f7"
+"out": "b801e96b36f7",
+"radky": {
+"03b037299e2d": "Theatre at the castle"
+}
 },
 "content/akce/2025-09-13.json|de|text": {
 "cs": "653c75b1d73b",
-"out": "0ff912380fb4"
+"out": "0ff912380fb4",
+"radky": {
+"653c75b1d73b": "Es spielten Výblitek, Vypitý lahváče, V.V.Ú., Nízká úroveň und Flaška Visočinia. Zum ersten Mal wurde ein signiertes Plakat versteigert, was seitdem Tradition ist. Danke allen, die gekommen sind!"
+}
 },
 "content/akce/2025-09-13.json|de|title": {
 "cs": "9cc5489ca259",
-"out": "9cc5489ca259"
+"out": "9cc5489ca259",
+"radky": {
+"9cc5489ca259": "Punkovice 2025"
+}
 },
 "content/akce/2025-09-13.json|en|text": {
 "cs": "653c75b1d73b",
-"out": "d371376a09a8"
+"out": "d371376a09a8",
+"radky": {
+"653c75b1d73b": "Výblitek, Vypitý lahváče, V.V.Ú., Nízká úroveň and Flaška Visočinia played. A signed poster was auctioned for the first time, which has since become a tradition. Thanks to everyone who came!"
+}
 },
 "content/akce/2025-09-13.json|en|title": {
 "cs": "9cc5489ca259",
-"out": "9cc5489ca259"
+"out": "9cc5489ca259",
+"radky": {
+"9cc5489ca259": "Punkovice 2025"
+}
 },
 "content/akce/2025-10-11.json|de|text": {
 "cs": "ef595d7d3aba",
-"out": "18e1de2e88ac"
+"out": "18e1de2e88ac",
+"radky": {
+"ef595d7d3aba": "Das XV. Schloss-CITO: Pflaster gereinigt, Keller und Kammern von Steinen und Schutt geräumt, Laub gerecht, Wildwuchs entfernt und die Infotafel gestrichen. Es spielte die Band Longway."
+}
 },
 "content/akce/2025-10-11.json|de|title": {
 "cs": "e962a1be89d9",
-"out": "2ba997eb9637"
+"out": "2ba997eb9637",
+"radky": {
+"e962a1be89d9": "Schloss-CITO, Herbsteinsatz"
+}
 },
 "content/akce/2025-10-11.json|en|text": {
 "cs": "ef595d7d3aba",
-"out": "0ad07bf56f34"
+"out": "0ad07bf56f34",
+"radky": {
+"ef595d7d3aba": "The 15th Castle CITO: paving cleaned, cellars and chambers cleared of stones and rubble, leaves raked, self-seeded growth removed and the information board repainted. The band Longway played."
+}
 },
 "content/akce/2025-10-11.json|en|title": {
 "cs": "e962a1be89d9",
-"out": "33620ff9ec72"
+"out": "33620ff9ec72",
+"radky": {
+"e962a1be89d9": "Castle CITO, autumn work party"
+}
 },
 "content/akce/2025-11-08.json|de|text": {
 "cs": "0678101c5821",
-"out": "2ecb334c576d"
+"out": "2ecb334c576d",
+"radky": {
+"0678101c5821": "Das fünfte Schloss-Halloween: ein Aufgabenpfad, eine gruselig geschmückte Burg, Tast-Stationen und Werkstätten des CVČ Kačaba, Gespenstertänze und ein Laternenumzug."
+}
 },
 "content/akce/2025-11-08.json|de|title": {
 "cs": "0dcd899391dd",
-"out": "0f0a9006ffe3"
+"out": "0f0a9006ffe3",
+"radky": {
+"0dcd899391dd": "Halloween zum fünften Mal im Schloss"
+}
 },
 "content/akce/2025-11-08.json|en|text": {
 "cs": "0678101c5821",
-"out": "c2e4153f157e"
+"out": "c2e4153f157e",
+"radky": {
+"0678101c5821": "The fifth castle Halloween: a trail of tasks, a spookily decorated castle, touch stations and CVČ Kačaba workshops, spooky dances and a lantern procession."
+}
 },
 "content/akce/2025-11-08.json|en|title": {
 "cs": "0dcd899391dd",
-"out": "df291a76a91e"
+"out": "df291a76a91e",
+"radky": {
+"0dcd899391dd": "Halloween at the castle for the fifth time"
+}
 },
 "content/akce/2025-12-14.json|de|text": {
 "cs": "d961b9c4b8ba",
-"out": "62d8425434a5"
+"out": "62d8425434a5",
+"radky": {
+"d961b9c4b8ba": "Die letzte Veranstaltung des Jahres bot ein reiches Weihnachtsprogramm. Sie begann mit dem Schmücken des Baums, an den die Besucher auch eigenen Schmuck hängen konnten, es folgten eine Weihnachtswerkstatt des Freizeitzentrums CVČ Kačaba und ein Wettbewerb um den besten Hefezopf (vánočka). Im Pferdestall spielte die Laientheatergruppe Ochotníci Ostrov das Märchen Pohádka o tom, koho pálí dobré bydlo, und zum Abschluss wurden mit der Kunstschule ZUŠ Toužim Weihnachtslieder gesungen. Während der ganzen Veranstaltung gab es einen Pfad der Weihnachtsbräuche mit Rätsel."
+}
 },
 "content/akce/2025-12-14.json|de|title": {
 "cs": "1b1b084a0a89",
-"out": "a0b06d487bb0"
+"out": "a0b06d487bb0",
+"radky": {
+"1b1b084a0a89": "Weihnachtstreffen"
+}
 },
 "content/akce/2025-12-14.json|en|text": {
 "cs": "d961b9c4b8ba",
-"out": "4682dce091d0"
+"out": "4682dce091d0",
+"radky": {
+"d961b9c4b8ba": "The last event of the year offered a rich Christmas programme. It began with decorating the tree, on which visitors could also hang their own ornaments, followed by a Christmas workshop by the CVČ Kačaba leisure centre and a contest for the best vánočka (Christmas bread). In the stables the amateur theatre group Ochotníci Ostrov performed the fairy tale Pohádka o tom, koho pálí dobré bydlo, and the afternoon closed with carols sung with the ZUŠ Toužim art school. Throughout the event a trail of Christmas customs with a puzzle was on offer."
+}
 },
 "content/akce/2025-12-14.json|en|title": {
 "cs": "1b1b084a0a89",
-"out": "9b2e34c9ae09"
+"out": "9b2e34c9ae09",
+"radky": {
+"1b1b084a0a89": "Christmas gathering"
+}
 },
 "content/akce/2026-03-21.json|de|text": {
 "cs": "f02c2c0d4248",
-"out": "4ab400e2af83"
+"out": "4ab400e2af83",
+"radky": {
+"f02c2c0d4248": "Das Schlossgastmahl war das erste einer Reihe von Gemeinschaftstreffen im Oberen Schloss, gedacht für alle, denen das Schloss Toužim am Herzen liegt. Auf dem Programm stand eine Diskussion darüber, was man im Schloss gern sehen würde, wobei man helfen kann, an welchen Aktivitäten man sich beteiligen möchte und was man mit anderen teilen kann. Das Gastmahl war ein gemeinsames: Zum kleinen Imbiss konnte jeder etwas Gutes mitbringen."
+}
 },
 "content/akce/2026-03-21.json|de|title": {
 "cs": "403ff88d8ec6",
-"out": "da06502537f7"
+"out": "da06502537f7",
+"radky": {
+"403ff88d8ec6": "Schlossgelage"
+}
 },
 "content/akce/2026-03-21.json|en|text": {
 "cs": "f02c2c0d4248",
-"out": "136d814f11ac"
+"out": "136d814f11ac",
+"radky": {
+"f02c2c0d4248": "The castle feast was the first in a series of community gatherings in the Upper Castle, meant for everyone who cares about the Toužim castle. The programme was a discussion of what people would like to see at the castle, how they can help, which activities they want to join and what they can share with others. The feast was a shared one: alongside light refreshments, everyone could bring something tasty."
+}
 },
 "content/akce/2026-03-21.json|en|title": {
 "cs": "403ff88d8ec6",
-"out": "54d68db36619"
+"out": "54d68db36619",
+"radky": {
+"403ff88d8ec6": "Castle feast"
+}
 },
 "content/akce/2026-03-30.json|de|text": {
 "cs": "5a07d5c70d19",
-"out": "99bd31e44395"
+"out": "99bd31e44395",
+"radky": {
+"5a07d5c70d19": "Ein Minibagger, Baumstümpfe raus und die ersten Geländearbeiten. Dabei stießen wir auf die ursprüngliche Burgmauer."
+}
 },
 "content/akce/2026-03-30.json|de|title": {
 "cs": "2fdd78c20216",
-"out": "7b27cfa4d44b"
+"out": "7b27cfa4d44b",
+"radky": {
+"2fdd78c20216": "Beginn der Arbeiten am Schlossgarten"
+}
 },
 "content/akce/2026-03-30.json|en|text": {
 "cs": "5a07d5c70d19",
-"out": "f97bf6cc862c"
+"out": "f97bf6cc862c",
+"radky": {
+"5a07d5c70d19": "A mini excavator, stumps out and the first groundwork. During the work we came across the original castle wall."
+}
 },
 "content/akce/2026-03-30.json|en|title": {
 "cs": "2fdd78c20216",
-"out": "27b698b3fca2"
+"out": "27b698b3fca2",
+"radky": {
+"2fdd78c20216": "Work begins on the castle garden"
+}
 },
 "content/akce/2026-04-25.json|de|text": {
 "cs": "62079e351833",
-"out": "ea070184fe7d"
+"out": "ea070184fe7d",
+"radky": {
+"62079e351833": "Frühjahrsputz und Hilfe im Schlossgarten. An dem Wochenende wurde etwa ein Fünftel der Terrasse geräumt, das Feuer für die Hexennacht vorbereitet, die Bühne gereinigt und die Sanitäranlagen hergerichtet. Es spielte die Band Longway, das Gulasch kochte die Hospůdka U Havlů."
+}
 },
 "content/akce/2026-04-25.json|de|title": {
 "cs": "99337a9b0790",
-"out": "f5edbc648ca3"
+"out": "f5edbc648ca3",
+"radky": {
+"99337a9b0790": "Freiwilligentage"
+}
 },
 "content/akce/2026-04-25.json|en|text": {
 "cs": "62079e351833",
-"out": "f1f5353fa2c4"
+"out": "f1f5353fa2c4",
+"radky": {
+"62079e351833": "A spring clean and help with the castle garden. Over the weekend about a fifth of the terrace was cleared, the bonfire for Witches' Night was prepared, the stage cleaned and the toilet facilities made ready. The band Longway played, and Hospůdka U Havlů cooked goulash."
+}
 },
 "content/akce/2026-04-25.json|en|title": {
 "cs": "99337a9b0790",
-"out": "900c15e2cddf"
+"out": "900c15e2cddf",
+"radky": {
+"99337a9b0790": "Volunteering Days"
+}
 },
 "content/akce/2026-04-30.json|de|text": {
 "cs": "f2d4b56ef154",
-"out": "0166265059a1"
+"out": "0166265059a1",
+"radky": {
+"f2d4b56ef154": "Aufstellen des Maibaums auf dem Marktplatz von Toužim ab 16 Uhr, danach Hexenverbrennen im Schlosshof ab etwa sechs Uhr abends."
+}
 },
 "content/akce/2026-04-30.json|de|title": {
 "cs": "74ddf2665ec0",
-"out": "195f14bcc508"
+"out": "195f14bcc508",
+"radky": {
+"74ddf2665ec0": "Hexenverbrennung und Maibaumaufstellen"
+}
 },
 "content/akce/2026-04-30.json|en|text": {
 "cs": "f2d4b56ef154",
-"out": "8454109468ea"
+"out": "8454109468ea",
+"radky": {
+"f2d4b56ef154": "Raising the maypole on Toužim square from 4 pm, followed by the witch burning in the castle courtyard from about six in the evening."
+}
 },
 "content/akce/2026-04-30.json|en|title": {
 "cs": "74ddf2665ec0",
-"out": "ff98da2d85c9"
+"out": "ff98da2d85c9",
+"radky": {
+"74ddf2665ec0": "Witches' Night bonfire and raising the maypole"
+}
 },
 "content/akce/2026-05-16.json|de|text": {
 "cs": "5167e2af14a2",
-"out": "be3a6bba6554"
+"out": "be3a6bba6554",
+"radky": {
+"5167e2af14a2": "Das Frühlingswochenende gehörte dem XVI. Schloss-CITO und am Sonntag dem ersten Arbeitseinsatz Poznej & pomoz (Entdecke & hilf). Der größte Teil der Fläche unter der Mauer wurde geräumt, und entlang der Schlossmauer entstand ein Rosenbeet. Am Nachmittag trat Jean de Carro – Künstlername des Rundfunkpublizisten, Musikers und Erzählers Josef Šorfa – mit seinem Theater- und Musikprogramm Toulky krajem auf, voller Sagen und Liedballaden, darunter die eigens für das Schloss Toužim bestimmte Sage O černém mnichovi (Vom Schwarzen Mönch). Für die Helfer und CITO-Teilnehmer war die Vorstellung kostenlos."
+}
 },
 "content/akce/2026-05-16.json|de|title": {
 "cs": "89fb6460a1f6",
-"out": "6994b7cc3e82"
+"out": "6994b7cc3e82",
+"radky": {
+"89fb6460a1f6": "Schloss-CITO, Frühjahr"
+}
 },
 "content/akce/2026-05-16.json|en|text": {
 "cs": "5167e2af14a2",
-"out": "4ce25ca7fb38"
+"out": "4ce25ca7fb38",
+"radky": {
+"5167e2af14a2": "The spring weekend belonged to the 16th Castle CITO and, on Sunday, the first Poznej & pomoz (Discover & Help) work party. Most of the area below the wall was cleared and a rose bed was planted along the castle wall. In the afternoon Jean de Carro, the stage name of radio journalist, musician and storyteller Josef Šorfa, performed his theatre-and-music show Toulky krajem, full of legends and song ballads, including the legend O černém mnichovi (Of the Black Monk) written specially for the castle in Toužim. The show was free for the volunteers and CITO participants."
+}
 },
 "content/akce/2026-05-16.json|en|title": {
 "cs": "89fb6460a1f6",
-"out": "c9c913448ba6"
+"out": "c9c913448ba6",
+"radky": {
+"89fb6460a1f6": "Castle CITO, spring"
+}
 },
 "content/akce/2026-05-30.json|de|text": {
 "cs": "7fca5043dada",
-"out": "0d28a3fd9e36"
+"out": "0d28a3fd9e36",
+"radky": {
+"7fca5043dada": "Der Kindertag an Bord stand ganz im Zeichen der Piraten. Das Programm begann mit dem Zusammenrufen der gesamten Mannschaft, es folgten ein Piratenfest mit dem CVČ Kačaba, das Training mit Königin Pippi und Familienspielen, ein Auftritt der Kunstschule ZUŠ Toužim und ein Schaumsturm der Freiwilligen Feuerwehr SDH Toužim. Den ganzen Tag über gab es den Aufgabenpfad Křížem krážem oceánem (Kreuz und quer über den Ozean) und einen Piratenankerplatz der Lesy ČR, Kinderkostüme waren willkommen. Im Schloss wurde zudem eine Ausstellung mit Kinderarbeiten eröffnet."
+}
 },
 "content/akce/2026-05-30.json|de|title": {
 "cs": "36a26e7be460",
-"out": "a0189d78569e"
+"out": "a0189d78569e",
+"radky": {
+"36a26e7be460": "Kindertag an Bord"
+}
 },
 "content/akce/2026-05-30.json|en|text": {
 "cs": "7fca5043dada",
-"out": "673fdb8ae37f"
+"out": "673fdb8ae37f",
+"radky": {
+"7fca5043dada": "Children's Day on Board was held in a pirate spirit. The programme opened by summoning the whole crew, followed by a pirate feast with CVČ Kačaba, Queen Pippi's training with family games, a performance by the ZUŠ Toužim art school and a foam storm from SDH Toužim, the local volunteer fire brigade. All day long there was a task trail called Křížem krážem oceánem (Criss-Cross the Ocean) and a pirate anchorage run by Lesy ČR, and children's costumes were welcome. An exhibition of children's work also opened in the castle."
+}
 },
 "content/akce/2026-05-30.json|en|title": {
 "cs": "36a26e7be460",
-"out": "903f8bbe4105"
+"out": "903f8bbe4105",
+"radky": {
+"36a26e7be460": "Children's Day on board"
+}
 },
 "content/akce/2026-06-20.json|de|text": {
 "cs": "818cbf7dae3f",
-"out": "5a9563849b1f"
+"out": "5a9563849b1f",
+"radky": {
+"818cbf7dae3f": "Der zehnte Jubiläumsjahrgang des Benefiz-Rockfestivals. Es spielten unter anderem De Bill Heads, Corona, PfP rock und Fata Morgana, die hier ihr 40-jähriges Bestehen feierte und ein neues Album taufte."
+}
 },
 "content/akce/2026-06-20.json|de|title": {
 "cs": "a2e32bb1f6df",
-"out": "0c0a1a6cf3e1"
+"out": "0c0a1a6cf3e1",
+"radky": {
+"a2e32bb1f6df": "Rockfestival, 10. Jahrgang"
+}
 },
 "content/akce/2026-06-20.json|en|text": {
 "cs": "818cbf7dae3f",
-"out": "69a36bc6c8f8"
+"out": "69a36bc6c8f8",
+"radky": {
+"818cbf7dae3f": "The 10th, anniversary benefit rock festival. The bands included De Bill Heads, Corona, PfP rock and Fata Morgana, who celebrated 40 years here and launched a new album."
+}
 },
 "content/akce/2026-06-20.json|en|title": {
 "cs": "a2e32bb1f6df",
-"out": "e2c41de275d2"
+"out": "e2c41de275d2",
+"radky": {
+"a2e32bb1f6df": "Rock festival, 10th year"
+}
 },
 "content/akce/2026-06-27.json|de|text": {
 "cs": "3ec8d64642f4",
-"out": "b528746950e9"
+"out": "b528746950e9",
+"radky": {
+"3ec8d64642f4": "Feier zu 557 Jahren Stadt: das Märchen „O Karkulákovi“ (Jitule a Dadule), Cavalla Cannor, Eva mit der Drehorgel, Fechten mit Alia Tempora, ein römisches Lager von Castra Romana, Poutník Hroch als Scharfrichter, Stelzenläufer der SHŠ Lorika und Handwerksstände. Die Besucher spendeten über 3 000 Kč für den Garten."
+}
 },
 "content/akce/2026-06-27.json|de|title": {
 "cs": "412c49d8711f",
-"out": "9d66ff420958"
+"out": "9d66ff420958",
+"radky": {
+"412c49d8711f": "Historischer Tag, 557 Jahre Stadt"
+}
 },
 "content/akce/2026-06-27.json|en|text": {
 "cs": "3ec8d64642f4",
-"out": "2f944a04945e"
+"out": "2f944a04945e",
+"radky": {
+"3ec8d64642f4": "Celebrating 557 years of the town: the fairy tale O Karkulákovi (Jitule a Dadule), Cavalla Cannor, Eva with her barrel organ, fencing by Alia Tempora, a Roman camp by Castra Romana, Poutník Hroch as the executioner, stilt walkers from SHŠ Lorika and craft stalls. Visitors donated over CZK 3,000 to the garden."
+}
 },
 "content/akce/2026-06-27.json|en|title": {
 "cs": "412c49d8711f",
-"out": "f68b4502221f"
+"out": "f68b4502221f",
+"radky": {
+"412c49d8711f": "History Day, 557 years of the town"
+}
 },
 "content/akce/2026-07-04.json|de|text": {
 "cs": "821b87e31376",
-"out": "081e9a2948ef"
+"out": "081e9a2948ef",
+"radky": {
+"821b87e31376": "Ein Gespräch über paranormale Phänomene mit Jitka Lenková und Karel Dudek, ein Vortrag von Jan Husár über deren Untersuchung und abendliche Vorführungen in den Räumen der Burg."
+}
 },
 "content/akce/2026-07-04.json|de|title": {
 "cs": "3158674ad5f0",
-"out": "aac55999cfa7"
+"out": "aac55999cfa7",
+"radky": {
+"3158674ad5f0": "Paranormales: Spukt es wirklich im Schloss?"
+}
 },
 "content/akce/2026-07-04.json|en|text": {
 "cs": "821b87e31376",
-"out": "8a4575a14daf"
+"out": "8a4575a14daf",
+"radky": {
+"821b87e31376": "A talk on paranormal phenomena with Jitka Lenková and Karel Dudek, a lecture by Jan Husár on investigating them, and evening investigation demonstrations inside the castle."
+}
 },
 "content/akce/2026-07-04.json|en|title": {
 "cs": "3158674ad5f0",
-"out": "4e8650c6dec6"
+"out": "4e8650c6dec6",
+"radky": {
+"3158674ad5f0": "The paranormal: is the castle really haunted?"
+}
 },
 "content/akce/2026-07-10.json|de|text": {
 "cs": "211fb2246d2c",
-"out": "6315e443e701"
+"out": "6315e443e701",
+"radky": {
+"211fb2246d2c": "Ein Abend mit Geschichten von Milan Pitkin und Liedern von František Nedvěd zugunsten des Vereins. Veranstaltet von der Arabela Agency."
+}
 },
 "content/akce/2026-07-10.json|de|title": {
 "cs": "c938871fa5ce",
-"out": "07e0280b6614"
+"out": "07e0280b6614",
+"radky": {
+"c938871fa5ce": "Musikabend mit Milan Pitkin und František Nedvěd"
+}
 },
 "content/akce/2026-07-10.json|en|text": {
 "cs": "211fb2246d2c",
-"out": "1ef705e8038d"
+"out": "1ef705e8038d",
+"radky": {
+"211fb2246d2c": "An evening of stories from Milan Pitkin and songs by František Nedvěd in support of the society. Organised by Arabela Agency."
+}
 },
 "content/akce/2026-07-10.json|en|title": {
 "cs": "c938871fa5ce",
-"out": "aba5e7630bdd"
+"out": "aba5e7630bdd",
+"radky": {
+"c938871fa5ce": "Music evening with Milan Pitkin and František Nedvěd"
+}
 },
 "content/akce/2026-07-25.json|de|text": {
 "cs": "fa8c0d6050b0",
-"out": "f1e0243ca48e"
+"out": "f1e0243ca48e",
+"radky": {
+"fa8c0d6050b0": "Handwerksstände und Vorführungen: Schmied, Drechseln von Holzschalen, Klöpplerin, Glasperlen, Honig, Sauerteigbrot, Porzellan und essbare Pflanzen. Am Nachmittag ein Märchen der Laienspieler aus Ostrov, es spielte Pedro. Am Sonntagmorgen Yoga im Hof."
+}
 },
 "content/akce/2026-07-25.json|de|title": {
 "cs": "13ff6f3973ca",
-"out": "9c1e9cb67d96"
+"out": "9c1e9cb67d96",
+"radky": {
+"13ff6f3973ca": "Schlossmarkt"
+}
 },
 "content/akce/2026-07-25.json|en|text": {
 "cs": "fa8c0d6050b0",
-"out": "eeebe49befaf"
+"out": "eeebe49befaf",
+"radky": {
+"fa8c0d6050b0": "Craft stalls and demonstrations: a blacksmith, wooden bowl turning, a lacemaker, lampwork beads, honey, sourdough bread, porcelain and edible plants. A fairy tale by the Ostrov amateur players in the afternoon, with music by Pedro. Yoga in the courtyard on Sunday morning."
+}
 },
 "content/akce/2026-07-25.json|en|title": {
 "cs": "13ff6f3973ca",
-"out": "cf25e6af82e1"
+"out": "cf25e6af82e1",
+"radky": {
+"13ff6f3973ca": "Castle fair"
+}
 },
 "content/akce/2026-07-26.json|de|text": {
 "cs": "4b25396ab80a",
-"out": "c09ffd693ad5"
+"out": "c09ffd693ad5",
+"radky": {
+"4b25396ab80a": "Morgendliches Vinyasa-Yoga mit Regina Pavlíčková im Schlosshof."
+}
 },
 "content/akce/2026-07-26.json|de|title": {
 "cs": "4107a0432004",
-"out": "7fde5deaca19"
+"out": "7fde5deaca19",
+"radky": {
+"4107a0432004": "Vinyasa-Yoga am Morgen"
+}
 },
 "content/akce/2026-07-26.json|de|when": {
 "cs": "55ccd0aa4c92",
-"out": "21bcef781072"
+"out": "21bcef781072",
+"radky": {
+"55ccd0aa4c92": "Sonntag · 8:45"
+}
 },
 "content/akce/2026-07-26.json|en|text": {
 "cs": "4b25396ab80a",
-"out": "e999ba57734d"
+"out": "e999ba57734d",
+"radky": {
+"4b25396ab80a": "We practised morning vinyasa yoga with Regina Pavlíčková in the castle courtyard."
+}
 },
 "content/akce/2026-07-26.json|en|title": {
 "cs": "4107a0432004",
-"out": "fa18fc7510a5"
+"out": "fa18fc7510a5",
+"radky": {
+"4107a0432004": "Morning vinyasa yoga"
+}
 },
 "content/akce/2026-07-26.json|en|when": {
 "cs": "55ccd0aa4c92",
-"out": "99a729c37ca9"
+"out": "99a729c37ca9",
+"radky": {
+"55ccd0aa4c92": "Sunday · 8:45"
+}
 },
 "content/akce/2026-08-08.json|de|text": {
 "cs": "358066e59be0",
-"out": "c67bd1971742"
+"out": "c67bd1971742",
+"radky": {
+"358066e59be0": "Der zweite sommerliche Musiknachmittag: St. Johnny, Country Pocket und ein Abend am Feuer mit Pája Janča und Dáma s hranostajem."
+}
 },
 "content/akce/2026-08-08.json|de|title": {
 "cs": "00c0a2e973a9",
-"out": "0ef09cc5db71"
+"out": "0ef09cc5db71",
+"radky": {
+"00c0a2e973a9": "Pelmel muziky (Musik-Allerlei)"
+}
 },
 "content/akce/2026-08-08.json|en|text": {
 "cs": "358066e59be0",
-"out": "be0689551e7a"
+"out": "be0689551e7a",
+"radky": {
+"358066e59be0": "The second summer music afternoon: St. Johnny, Country Pocket and an evening by the fire with Pája Janča and Dáma s hranostajem."
+}
 },
 "content/akce/2026-08-08.json|en|title": {
 "cs": "00c0a2e973a9",
-"out": "24b94df5465e"
+"out": "24b94df5465e",
+"radky": {
+"00c0a2e973a9": "Pelmel muziky (musical medley)"
+}
 },
 "content/akce/2026-08-16.json|de|text": {
 "cs": "c708f2c3bc19",
-"out": "22c5e425b857"
+"out": "22c5e425b857",
+"radky": {
+"c708f2c3bc19": "Jät-Einsätze am 16. 8., 23. 8., 30. 8. und 6. 9. 2026."
+}
 },
 "content/akce/2026-08-16.json|de|title": {
 "cs": "f775cd463e60",
-"out": "e9f24afd484c"
+"out": "e9f24afd484c",
+"radky": {
+"f775cd463e60": "Kampf gegen Unkraut im Schlossgarten"
+}
 },
 "content/akce/2026-08-16.json|en|text": {
 "cs": "c708f2c3bc19",
-"out": "2135daacbf40"
+"out": "2135daacbf40",
+"radky": {
+"c708f2c3bc19": "Weeding work parties on 16 Aug, 23 Aug, 30 Aug and 6 Sep 2026."
+}
 },
 "content/akce/2026-08-16.json|en|title": {
 "cs": "f775cd463e60",
-"out": "df7d145f31d8"
+"out": "df7d145f31d8",
+"radky": {
+"f775cd463e60": "Fighting weeds in the castle garden"
+}
 },
 "content/akce/2026-08-21.json|de|text": {
 "cs": "1487eab3e7bb",
-"out": "924b5e83c926"
+"out": "924b5e83c926",
+"radky": {
+"1487eab3e7bb": "Das Sommerkino im Schloss zeigte die neue tschechische Komödie Po večerce. Die Abendvorstellung begann um 21 Uhr, der Eintritt war frei gegen Spende. Wegen Regens wurde der Film schließlich überdacht im Pferdestall gezeigt."
+}
 },
 "content/akce/2026-08-21.json|de|title": {
 "cs": "d33b657a2a82",
-"out": "325c5a53eec1"
+"out": "325c5a53eec1",
+"radky": {
+"d33b657a2a82": "Sommerkino: Po večerce"
+}
 },
 "content/akce/2026-08-21.json|en|text": {
 "cs": "1487eab3e7bb",
-"out": "7cebf1d87a5f"
+"out": "7cebf1d87a5f",
+"radky": {
+"1487eab3e7bb": "The summer cinema at the castle screened the new Czech comedy Po večerce. The evening screening began at 9 p.m. and admission was by donation. Because of rain, the film was eventually shown indoors in the stables."
+}
 },
 "content/akce/2026-08-21.json|en|title": {
 "cs": "d33b657a2a82",
-"out": "6158effaf0c2"
+"out": "6158effaf0c2",
+"radky": {
+"d33b657a2a82": "Open-air cinema: Po večerce"
+}
 },
 "content/akce/2026-08-22.json|de|text": {
 "cs": "a125c876066f",
-"out": "eec80e2325b6"
+"out": "eec80e2325b6",
+"radky": {
+"a125c876066f": "Abendführungen bei Kerzenlicht mit kostümierten Führern und gespielten Geschichten."
+}
 },
 "content/akce/2026-08-22.json|de|title": {
 "cs": "1d916fe83a98",
-"out": "203514290eb2"
+"out": "203514290eb2",
+"radky": {
+"1d916fe83a98": "Burgen- und Schlössernacht"
+}
 },
 "content/akce/2026-08-22.json|en|text": {
 "cs": "a125c876066f",
-"out": "19b5eb2babd6"
+"out": "19b5eb2babd6",
+"radky": {
+"a125c876066f": "Candlelit evening tours of the castle with costumed guides and acted-out stories."
+}
 },
 "content/akce/2026-08-22.json|en|title": {
 "cs": "1d916fe83a98",
-"out": "0b5c9e6796c8"
+"out": "0b5c9e6796c8",
+"radky": {
+"1d916fe83a98": "Castle Night"
+}
 },
 "content/akce/2026-09-05.json|de|text": {
 "cs": "85e26d362bce",
-"out": "6acf817ba6f5"
+"out": "6acf817ba6f5",
+"radky": {
+"85e26d362bce": "Die dritte Ausgabe des Theater-Minifestivals im Schloss widmete den Nachmittag traditionell den Kindern: Das Divadélko Ondřej spielte das Märchen Rytíř a Ošklivá dáma (Der Ritter und die hässliche Dame), und Jitule a Dadule zeigten eine Seifenblasenshow. Der Abend gehörte Dívčí válka (Der Mägdekrieg) mit F. R. Čech, einer humorvollen Parodie auf die Alten böhmischen Sagen über den Streit zwischen Männern und Frauen, die den Rekord als meistgespieltes Theaterstück Tschechiens hält. Die Veranstaltung fand mit finanzieller Unterstützung der Stadt Toužim statt."
+}
 },
 "content/akce/2026-09-05.json|de|title": {
 "cs": "ff59e026e00c",
-"out": "e850b8a007aa"
+"out": "e850b8a007aa",
+"radky": {
+"ff59e026e00c": "Theater im Schloss: Dívčí válka"
+}
 },
 "content/akce/2026-09-05.json|en|text": {
 "cs": "85e26d362bce",
-"out": "76cf6103d1ec"
+"out": "76cf6103d1ec",
+"radky": {
+"85e26d362bce": "The third edition of the theatre mini-festival at the castle traditionally devoted the afternoon to children: Divadélko Ondřej performed the fairy tale Rytíř a Ošklivá dáma (The Knight and the Ugly Lady), and Jitule a Dadule put on a bubble show. The evening belonged to Dívčí válka (The Maidens' War) with F. R. Čech, a humorous parody of the Old Czech Legends about the quarrel between men and women, which holds the record as the most frequently performed play in the Czech Republic. The event took place with financial support from the town of Toužim."
+}
 },
 "content/akce/2026-09-05.json|en|title": {
 "cs": "ff59e026e00c",
-"out": "6d6bcef75d0d"
+"out": "6d6bcef75d0d",
+"radky": {
+"ff59e026e00c": "Theatre at the castle: Dívčí válka"
+}
 },
 "content/akce/2026-09-12.json|de|text": {
 "cs": "4004b4dc98d8",
-"out": "bd73d3a617ac"
+"out": "bd73d3a617ac",
+"radky": {
+"4004b4dc98d8": "Es spielten Výblitek (anstelle von KT Bandits), Vypitý lahváče, ŠpuntQaně, Plesnivý fazole und P.U.M. Ein signiertes Plakat wurde für 1 000 Kč versteigert."
+}
 },
 "content/akce/2026-09-12.json|de|title": {
 "cs": "19549100900e",
-"out": "22f96f870f95"
+"out": "22f96f870f95",
+"radky": {
+"19549100900e": "Punkovice, 9. Jahrgang"
+}
 },
 "content/akce/2026-09-12.json|en|text": {
 "cs": "4004b4dc98d8",
-"out": "b9f30c29d769"
+"out": "b9f30c29d769",
+"radky": {
+"4004b4dc98d8": "Výblitek (replacing KT Bandits), Vypitý lahváče, ŠpuntQaně, Plesnivý fazole and P.U.M. played. A signed poster was auctioned for CZK 1,000."
+}
 },
 "content/akce/2026-09-12.json|en|title": {
 "cs": "19549100900e",
-"out": "01e0de0ddb97"
+"out": "01e0de0ddb97",
+"radky": {
+"19549100900e": "Punkovice, 9th year"
+}
 },
 "content/akce/2026-09-26-oslava.json|de|text": {
 "cs": "370577a7e48a",
-"out": "213a00152bba"
+"out": "213a00152bba",
+"radky": {
+"370577a7e48a": "Der Nachmittag des Garteneinsatzes gehörte der Feier zu 10 Jahren Vereinsarbeit, mit Torte, Musik von Pedro und der Übergabe von Urkunden an Ehrenmitglieder des Schlossgefolges. Am Abend saßen wir mit Gitarre am Feuer; tagsüber entstand außerdem die erste Blumenbaumschule des Schlosses."
+}
 },
 "content/akce/2026-09-26-oslava.json|de|title": {
 "cs": "2b2b5ede23ec",
-"out": "e5be8bd000a0"
+"out": "e5be8bd000a0",
+"radky": {
+"2b2b5ede23ec": "Feier zu 10 Jahren Živý zámek Toužim"
+}
 },
 "content/akce/2026-09-26-oslava.json|en|text": {
 "cs": "370577a7e48a",
-"out": "aed48134b398"
+"out": "aed48134b398",
+"radky": {
+"370577a7e48a": "The afternoon of the garden work party was given over to celebrating the society's 10 years, with a cake, music by Pedro and certificates presented to honorary members of the castle retinue. In the evening we sat by the fire with a guitar; during the day the first castle flower nursery was also started."
+}
 },
 "content/akce/2026-09-26-oslava.json|en|title": {
 "cs": "2b2b5ede23ec",
-"out": "3cd6f99af61b"
+"out": "3cd6f99af61b",
+"radky": {
+"2b2b5ede23ec": "Celebrating 10 years of Živý zámek Toužim"
+}
 },
 "content/akce/2026-09-26.json|de|text": {
 "cs": "774253bbed32",
-"out": "2ae9656e565e"
+"out": "2ae9656e565e",
+"radky": {
+"774253bbed32": "Ein weiterer Garteneinsatz während der Tage des europäischen Kulturerbes. Es entstand die erste Blumenbaumschule des Schlosses, und am Samstag feierten wir 10 Jahre Vereinsarbeit."
+}
 },
 "content/akce/2026-09-26.json|de|title": {
 "cs": "f238379d5a85",
-"out": "8f8d2b0644d1"
+"out": "8f8d2b0644d1",
+"radky": {
+"f238379d5a85": "Poznej & pomoz (Entdecke & hilf): Einsatz im Schloss"
+}
 },
 "content/akce/2026-09-26.json|en|text": {
 "cs": "774253bbed32",
-"out": "65bad50a3b1a"
+"out": "65bad50a3b1a",
+"radky": {
+"774253bbed32": "Another garden work party during European Heritage Days. The first castle flower nursery was started, and on Saturday we celebrated the society's 10 years."
+}
 },
 "content/akce/2026-09-26.json|en|title": {
 "cs": "f238379d5a85",
-"out": "ccb1cb8d3ccf"
+"out": "ccb1cb8d3ccf",
+"radky": {
+"f238379d5a85": "Poznej & pomoz (Discover & Help): work party at the castle"
+}
 },
 "content/akce/2026-10-17.json|de|short": {
 "cs": "3f7aa4ad7d02",
-"out": "996ee100b5f2"
+"out": "996ee100b5f2",
+"radky": {
+"3f7aa4ad7d02": "Samstag: Aufräumen rund um das Schloss und Hilfe im Garten, es spielt Longway. Sonntag: Jäteinsatz am Hang für die Spielelemente für Kinder."
+}
 },
 "content/akce/2026-10-17.json|de|text": {
 "cs": "cdb77f20edbb",
-"out": "2de08949edc8"
+"out": "2de08949edc8",
+"radky": {
+"02b4b169fca5": "**Samstag, 17. 10., 10:00–16:00: XVII. Schloss-CITO.** Wir räumen die Umgebung des Schlosses auf und helfen vor allem beim Bau des Schlossgartens. Kleine Ausstellung zum Geocaching, Event-CWG für 10 CZK. Den ganzen Tag spielt die Schlossband Longway.",
+"91fad971081f": "**Sonntag, 18. 10., 10:00–17:00: Jäteinsatz Kennenlernen & Mithelfen.** Helfen Sie beim Aufräumen des Hangs für die Spielelemente für Kinder und bringen wir den Schlossgarten gemeinsam einen Schritt weiter.",
+"b37f7ba84782": "Verpflegung an beiden Tagen: Gulasch, Würstchen, Bratwurst, Brot, Kaffee, Tee, Bier und Limonade."
+}
 },
 "content/akce/2026-10-17.json|de|title": {
 "cs": "2879aea4001b",
-"out": "a8baace4450c"
+"out": "a8baace4450c",
+"radky": {
+"2879aea4001b": "XVII. Schloss-CITO und Kennenlernen & Mithelfen"
+}
 },
 "content/akce/2026-10-17.json|de|when": {
 "cs": "e347311c4233",
-"out": "0d52b58a7727"
+"out": "0d52b58a7727",
+"radky": {
+"e347311c4233": "Sa 10–16 · So 10–17"
+}
 },
 "content/akce/2026-10-17.json|en|short": {
 "cs": "3f7aa4ad7d02",
-"out": "4a7c9fd29e74"
+"out": "4a7c9fd29e74",
+"radky": {
+"3f7aa4ad7d02": "Saturday: clean-up around the castle and help with the garden, with live music by Longway. Sunday: weeding work party on the slope for the children’s play features."
+}
 },
 "content/akce/2026-10-17.json|en|text": {
 "cs": "cdb77f20edbb",
-"out": "ba54bd287452"
+"out": "ba54bd287452",
+"radky": {
+"02b4b169fca5": "**Saturday 17 Oct, 10:00–16:00: 17th Castle CITO.** We will clean up the area around the castle and above all help build the castle garden. A small exhibition about geocaching, event CWG for 10 CZK. The castle band Longway plays all day.",
+"91fad971081f": "**Sunday 18 Oct, 10:00–17:00: Get to Know & Help weeding work party.** Help us clear the slope for the children’s play features and move the castle garden a step further together.",
+"b37f7ba84782": "Refreshments on both days: goulash, sausages, bread, coffee, tea, beer and soft drinks."
+}
 },
 "content/akce/2026-10-17.json|en|title": {
 "cs": "2879aea4001b",
-"out": "7714ca5b0e46"
+"out": "7714ca5b0e46",
+"radky": {
+"2879aea4001b": "17th Castle CITO and Get to Know & Help"
+}
 },
 "content/akce/2026-10-17.json|en|when": {
 "cs": "e347311c4233",
-"out": "e90cdba2d4d9"
+"out": "e90cdba2d4d9",
+"radky": {
+"e347311c4233": "Sat 10–16 · Sun 10–17"
+}
 },
 "content/akce/2026-10-25.json|de|short": {
 "cs": "0a3567416d7b",
-"out": "aa2832247c58"
+"out": "aa2832247c58",
+"radky": {
+"0a3567416d7b": "Kinder rechen einen großen Laubhaufen, in den man an Halloween von der Bühne springt. Rechen sind vorhanden."
+}
 },
 "content/akce/2026-10-25.json|de|text": {
 "cs": "47b688575056",
-"out": "5221756cb711"
+"out": "5221756cb711",
+"radky": {
+"47b688575056": "Ein besonderer Arbeitseinsatz für Kinder. Wollt ihr wieder den tollen Laubhaufen, in den man an Halloween von der Bühne springen kann? Kommt und recht ihn zusammen! Treffpunkt um 14:00 am Schlosstor, Rechen sind vorbereitet und auf alle Helfer wartet eine kleine Überraschung."
+}
 },
 "content/akce/2026-10-25.json|de|title": {
 "cs": "1483e649cc2d",
-"out": "ba92c2f26b26"
+"out": "ba92c2f26b26",
+"radky": {
+"1483e649cc2d": "Kindereinsatz: Laub rechen"
+}
 },
 "content/akce/2026-10-25.json|de|when": {
 "cs": "c8efd7d5d6ef",
-"out": "4ac03ff529c7"
+"out": "4ac03ff529c7",
+"radky": {
+"c8efd7d5d6ef": "Sonntag · 14:00"
+}
 },
 "content/akce/2026-10-25.json|en|short": {
 "cs": "0a3567416d7b",
-"out": "01910009b3f3"
+"out": "01910009b3f3",
+"radky": {
+"0a3567416d7b": "Children rake a big pile of leaves to jump into from the stage at Halloween. Rakes are provided."
+}
 },
 "content/akce/2026-10-25.json|en|text": {
 "cs": "47b688575056",
-"out": "de73b42bb4c3"
+"out": "de73b42bb4c3",
+"radky": {
+"47b688575056": "A special work party for children. Do you want that great pile of leaves again, the one you can jump into from the stage at Halloween? Come and rake it! Meet at 14:00 at the castle gate. Rakes are ready and a small surprise awaits everyone who helps."
+}
 },
 "content/akce/2026-10-25.json|en|title": {
 "cs": "1483e649cc2d",
-"out": "2227ca1bf792"
+"out": "2227ca1bf792",
+"radky": {
+"1483e649cc2d": "Children’s work party: raking leaves"
+}
 },
 "content/akce/2026-10-25.json|en|when": {
 "cs": "c8efd7d5d6ef",
-"out": "1f17eb4dfcfb"
+"out": "1f17eb4dfcfb",
+"radky": {
+"c8efd7d5d6ef": "Sunday · 14:00"
+}
 },
 "content/akce/2026-10-31.json|de|short": {
 "cs": "f655bd10c3e3",
-"out": "3d49cfacf098"
+"out": "3d49cfacf098",
+"radky": {
+"f655bd10c3e3": "Gruselkeller, Bastelwerkstätten, Laternenumzug und Wettbewerb um den schönsten Kürbis. Am Abend ein Pfad für Erwachsene."
+}
 },
 "content/akce/2026-10-31.json|de|text": {
 "cs": "9679363020ed",
-"out": "d966d9f69684"
+"out": "d966d9f69684",
+"radky": {
+"64758cac38cf": "**17:00** Laternenumzug durch die Stadt, die Strecke ist kinderwagentauglich.",
+"93c4009d0ec7": "**Wettbewerb um den schönsten geschnitzten Kürbis:** Anmeldung bis 16:30 beim Schlossherrn, Siegerehrung um 16:45.",
+"dae4ee48c7a6": "**14:30–17:00** Gruselkeller, Buh-Kammer, Bastelwerkstätten und Spiele im Schlosshof, Kinderschminken.",
+"fa42b552db2f": "Besucher in Kostümen sind willkommen. Für Verpflegung ist gesorgt, Eintritt: freiwillige Spende.",
+"fbc2c1285507": "**Dieses Jahr neu: Halloween-Pfad für Erwachsene ab 18:30.** Anmeldung bis 24. 10. unter zivyzamektouzim@email.cz, Eintritt 100 CZK. Nichts für schwache Nerven."
+}
 },
 "content/akce/2026-10-31.json|de|title": {
 "cs": "0be5eb1c58e3",
-"out": "131671127a26"
+"out": "131671127a26",
+"radky": {
+"0be5eb1c58e3": "Halloween auf dem Schloss"
+}
 },
 "content/akce/2026-10-31.json|de|when": {
 "cs": "f196c188b22b",
-"out": "fd418f250ee0"
+"out": "fd418f250ee0",
+"radky": {
+"f196c188b22b": "Samstag · 14:30–17:00"
+}
 },
 "content/akce/2026-10-31.json|en|short": {
 "cs": "f655bd10c3e3",
-"out": "c38bdf308b9a"
+"out": "c38bdf308b9a",
+"radky": {
+"f655bd10c3e3": "Haunted cellar, workshops, lantern parade and a contest for the most beautiful pumpkin. In the evening, a trail for adults."
+}
 },
 "content/akce/2026-10-31.json|en|text": {
 "cs": "9679363020ed",
-"out": "d45292a6a5dc"
+"out": "d45292a6a5dc",
+"radky": {
+"64758cac38cf": "**17:00** lantern parade through the town, the route is suitable for prams.",
+"93c4009d0ec7": "**Contest for the most beautiful carved pumpkin:** register by 16:30 with the lord of the castle, winners announced at 16:45.",
+"dae4ee48c7a6": "**14:30–17:00** haunted cellar, Boo chamber, workshops and games in the courtyard, face painting.",
+"fa42b552db2f": "Visitors in costumes welcome. Refreshments available, admission by donation.",
+"fbc2c1285507": "**New this year: Halloween trail for adults from 18:30.** Register by 24 Oct at zivyzamektouzim@email.cz, admission 100 CZK. Not for the faint-hearted."
+}
 },
 "content/akce/2026-10-31.json|en|title": {
 "cs": "0be5eb1c58e3",
-"out": "92dfc2ba05ec"
+"out": "92dfc2ba05ec",
+"radky": {
+"0be5eb1c58e3": "Halloween at the castle"
+}
 },
 "content/akce/2026-10-31.json|en|when": {
 "cs": "f196c188b22b",
-"out": "b01c033ee818"
+"out": "b01c033ee818",
+"radky": {
+"f196c188b22b": "Saturday · 14:30–17:00"
+}
 },
 "content/akce/2026-12-13.json|de|short": {
 "cs": "15b71191c647",
-"out": "3dbaae2b8f5c"
+"out": "3dbaae2b8f5c",
+"radky": {
+"15b71191c647": "Der traditionelle Saisonabschluss im Schlosshof mit Glühwein."
+}
 },
 "content/akce/2026-12-13.json|de|text": {
 "cs": "db2df4c278b7",
-"out": "428aaffaeb41"
+"out": "428aaffaeb41",
+"radky": {
+"629f270809ab": "15:45 – Bekanntgabe des Gewinners des Wettbewerbs um die besten Linzer",
+"7400be56e49e": "17:00 Uhr – Weihnachtsumtrunk und Verabschiedung",
+"8d63614ccd53": "15:00 – Lesung von Gedichten der Autorin Blanka Lohrová, Ausstellung von Gedichten",
+"980bc0579f04": "16:00 Uhr – Kammerchor „Rosa Coeli“: Weihnachtskonzert",
+"bdd1ae69045a": "14:15 – Annahme der Proben für den Wettbewerb um das beste Linzer Gebäck",
+"d213b5e6fde7": "14:00 Uhr – Beginn",
+"d898338c3e28": "Den ganzen Nachmittag über gibt es einen Weihnachtsbastelworkshop und einen Rundgang zu den Weihnachtsbräuchen."
+}
 },
 "content/akce/2026-12-13.json|de|title": {
 "cs": "8edfb7e2e822",
-"out": "bcc2da7630d8"
+"out": "bcc2da7630d8",
+"radky": {
+"8edfb7e2e822": "Weihnachtstreffen mit Glühwein"
+}
 },
 "content/akce/2026-12-13.json|de|when": {
 "cs": "5bce17f61fad",
-"out": "84a796b91094"
+"out": "84a796b91094",
+"radky": {
+"5bce17f61fad": "Sonntag"
+}
 },
 "content/akce/2026-12-13.json|en|short": {
 "cs": "15b71191c647",
-"out": "d6e22eaef40a"
+"out": "d6e22eaef40a",
+"radky": {
+"15b71191c647": "The traditional end of the season in the courtyard with mulled wine."
+}
 },
 "content/akce/2026-12-13.json|en|text": {
 "cs": "db2df4c278b7",
-"out": "cb885e0d1fae"
+"out": "cb885e0d1fae",
+"radky": {
+"629f270809ab": "15:45 – announcement of the winner of the competition for the best Linzer",
+"7400be56e49e": "17:00 – Christmas toast and farewell",
+"8d63614ccd53": "15:00 – poetry reading by the author, Blanka Lohrová, poetry exhibition",
+"980bc0579f04": "16:00 – Rosa Coeli Chamber Choir Christmas Concert",
+"bdd1ae69045a": "14:15 – submission of entries for the competition for the best Linzer biscuits",
+"d213b5e6fde7": "14:00 – start",
+"d898338c3e28": "A Christmas craft workshop and a trail exploring Christmas traditions will be available throughout the afternoon."
+}
 },
 "content/akce/2026-12-13.json|en|title": {
 "cs": "8edfb7e2e822",
-"out": "c89c99e6c9fb"
+"out": "c89c99e6c9fb",
+"radky": {
+"8edfb7e2e822": "Christmas get-together with mulled wine"
+}
 },
 "content/akce/2026-12-13.json|en|when": {
 "cs": "5bce17f61fad",
-"out": "35b217771a8e"
+"out": "35b217771a8e",
+"radky": {
+"5bce17f61fad": "Sunday"
+}
 },
 "content/web/navsteva.json|de|kontakty.0.funkce": {
 "cs": "9f1d97588083",
-"out": "29b3d2f97452"
+"out": "29b3d2f97452",
+"radky": {
+"9f1d97588083": "Vorsitzende"
+}
 },
 "content/web/navsteva.json|de|mimo_sezonu": {
 "cs": "d5ce81ebf49c",
-"out": "8dd3c827d22e"
+"out": "8dd3c827d22e",
+"radky": {
+"d5ce81ebf49c": "nach Vereinbarung"
+}
 },
 "content/web/navsteva.json|de|prohlidka_cas": {
 "cs": "0384b9189602",
-"out": "7f29d086f175"
+"out": "7f29d086f175",
+"radky": {
+"0384b9189602": "Samstag und Sonntag um 11, 14 und 16 Uhr"
+}
 },
 "content/web/navsteva.json|de|prohlidka_cena": {
 "cs": "96976085655d",
-"out": "2813c546c1c0"
+"out": "2813c546c1c0",
+"radky": {
+"96976085655d": "50 CZK pro Person"
+}
 },
 "content/web/navsteva.json|de|sezona": {
 "cs": "1b051cd75341",
-"out": "fc12b89b4331"
+"out": "fc12b89b4331",
+"radky": {
+"1b051cd75341": "Geöffnet an Wochenenden, Juli bis September"
+}
 },
 "content/web/navsteva.json|de|vstup_cas": {
 "cs": "27fa556f7201",
-"out": "a59aeaeffc43"
+"out": "a59aeaeffc43",
+"radky": {
+"27fa556f7201": "Samstag und Sonntag 10–12 und 13–17 Uhr"
+}
 },
 "content/web/navsteva.json|de|vstup_cena": {
 "cs": "bb3d0d37d31d",
-"out": "02b9b1df5bb7"
+"out": "02b9b1df5bb7",
+"radky": {
+"bb3d0d37d31d": "Eintritt: freiwillige Spende"
+}
 },
 "content/web/navsteva.json|en|kontakty.0.funkce": {
 "cs": "9f1d97588083",
-"out": "d5a80e3413e2"
+"out": "d5a80e3413e2",
+"radky": {
+"9f1d97588083": "chair"
+}
 },
 "content/web/navsteva.json|en|mimo_sezonu": {
 "cs": "d5ce81ebf49c",
-"out": "12d29f7ecf59"
+"out": "12d29f7ecf59",
+"radky": {
+"d5ce81ebf49c": "by arrangement"
+}
 },
 "content/web/navsteva.json|en|prohlidka_cas": {
 "cs": "0384b9189602",
-"out": "6d08a39fec89"
+"out": "6d08a39fec89",
+"radky": {
+"0384b9189602": "Saturday and Sunday at 11, 14 and 16"
+}
 },
 "content/web/navsteva.json|en|prohlidka_cena": {
 "cs": "96976085655d",
-"out": "76f935640140"
+"out": "76f935640140",
+"radky": {
+"96976085655d": "50 CZK per person"
+}
 },
 "content/web/navsteva.json|en|sezona": {
 "cs": "1b051cd75341",
-"out": "7a37b42c5b06"
+"out": "7a37b42c5b06",
+"radky": {
+"1b051cd75341": "Open at weekends, July to September"
+}
 },
 "content/web/navsteva.json|en|vstup_cas": {
 "cs": "27fa556f7201",
-"out": "f326a069c71c"
+"out": "f326a069c71c",
+"radky": {
+"27fa556f7201": "Saturday and Sunday 10–12 and 13–17"
+}
 },
 "content/web/navsteva.json|en|vstup_cena": {
 "cs": "bb3d0d37d31d",
-"out": "b2a3c5370e77"
+"out": "b2a3c5370e77",
+"radky": {
+"bb3d0d37d31d": "admission by donation"
+}
 },
 "content/web/partneri.json|de|partneri.0.nazev": {
 "cs": "d81e9b354778",
-"out": "51546f42f58e"
+"out": "51546f42f58e",
+"radky": {
+"d81e9b354778": "Stadt Toužim"
+}
 },
 "content/web/partneri.json|de|partneri.1.nazev": {
 "cs": "c15ae5e2e842",
-"out": "737964d0d17c"
+"out": "737964d0d17c",
+"radky": {
+"c15ae5e2e842": "Region Karlsbad"
+}
 },
 "content/web/partneri.json|de|partneri.10.nazev": {
 "cs": "34858f2ea14c",
-"out": "34858f2ea14c"
+"out": "34858f2ea14c",
+"radky": {
+"34858f2ea14c": "Gabriela Pilná"
+}
 },
 "content/web/partneri.json|de|partneri.10.popis": {
 "cs": "b203030378c5",
-"out": "58f2b5a60a9c"
+"out": "58f2b5a60a9c",
+"radky": {
+"b203030378c5": "Grafik und Plakate"
+}
 },
 "content/web/partneri.json|de|partneri.2.nazev": {
 "cs": "e41effc6edb5",
-"out": "f8a879645f97"
+"out": "f8a879645f97",
+"radky": {
+"e41effc6edb5": "Stiftung VIA"
+}
 },
 "content/web/partneri.json|de|partneri.3.nazev": {
 "cs": "435cb924ce71",
-"out": "d7d86155608e"
+"out": "d7d86155608e",
+"radky": {
+"435cb924ce71": "Stiftung ČEZ"
+}
 },
 "content/web/partneri.json|de|partneri.4.nazev": {
 "cs": "84208d09ebe7",
-"out": "33ba3bc34151"
+"out": "33ba3bc34151",
+"radky": {
+"84208d09ebe7": "LAG Kraj živých vod"
+}
 },
 "content/web/partneri.json|de|partneri.5.nazev": {
 "cs": "76c2e9a1bd47",
-"out": "4dcb1cb219bc"
+"out": "4dcb1cb219bc",
+"radky": {
+"76c2e9a1bd47": "Kneipe U Havlů, Sokolovna Toužim"
+}
 },
 "content/web/partneri.json|de|partneri.6.nazev": {
 "cs": "60dabb94f8b8",
-"out": "60dabb94f8b8"
+"out": "60dabb94f8b8",
+"radky": {
+"60dabb94f8b8": "Postřelí.cz"
+}
 },
 "content/web/partneri.json|de|partneri.7.nazev": {
 "cs": "83ef7e53bc9b",
-"out": "83ef7e53bc9b"
+"out": "83ef7e53bc9b",
+"radky": {
+"83ef7e53bc9b": "Dílna U mnicha"
+}
 },
 "content/web/partneri.json|de|partneri.8.nazev": {
 "cs": "feb38050d7f2",
-"out": "feb38050d7f2"
+"out": "feb38050d7f2",
+"radky": {
+"feb38050d7f2": "Kudyznudy.cz"
+}
 },
 "content/web/partneri.json|de|partneri.9.nazev": {
 "cs": "08d9d7c1ba88",
-"out": "08d9d7c1ba88"
+"out": "08d9d7c1ba88",
+"radky": {
+"08d9d7c1ba88": "Givt.cz"
+}
 },
 "content/web/partneri.json|en|partneri.0.nazev": {
 "cs": "d81e9b354778",
-"out": "335a78747e7b"
+"out": "335a78747e7b",
+"radky": {
+"d81e9b354778": "Town of Toužim"
+}
 },
 "content/web/partneri.json|en|partneri.1.nazev": {
 "cs": "c15ae5e2e842",
-"out": "10a7f4d76c03"
+"out": "10a7f4d76c03",
+"radky": {
+"c15ae5e2e842": "Karlovy Vary Region"
+}
 },
 "content/web/partneri.json|en|partneri.10.nazev": {
 "cs": "34858f2ea14c",
-"out": "34858f2ea14c"
+"out": "34858f2ea14c",
+"radky": {
+"34858f2ea14c": "Gabriela Pilná"
+}
 },
 "content/web/partneri.json|en|partneri.10.popis": {
 "cs": "b203030378c5",
-"out": "c882b7649eef"
+"out": "c882b7649eef",
+"radky": {
+"b203030378c5": "graphic design and posters"
+}
 },
 "content/web/partneri.json|en|partneri.2.nazev": {
 "cs": "e41effc6edb5",
-"out": "704458b3fce3"
+"out": "704458b3fce3",
+"radky": {
+"e41effc6edb5": "VIA Foundation"
+}
 },
 "content/web/partneri.json|en|partneri.3.nazev": {
 "cs": "435cb924ce71",
-"out": "8dc0b8b3b9ff"
+"out": "8dc0b8b3b9ff",
+"radky": {
+"435cb924ce71": "ČEZ Foundation"
+}
 },
 "content/web/partneri.json|en|partneri.4.nazev": {
 "cs": "84208d09ebe7",
-"out": "33ba3bc34151"
+"out": "33ba3bc34151",
+"radky": {
+"84208d09ebe7": "LAG Kraj živých vod"
+}
 },
 "content/web/partneri.json|en|partneri.5.nazev": {
 "cs": "76c2e9a1bd47",
-"out": "f245f3a47a51"
+"out": "f245f3a47a51",
+"radky": {
+"76c2e9a1bd47": "U Havlů pub, Sokolovna Toužim"
+}
 },
 "content/web/partneri.json|en|partneri.6.nazev": {
 "cs": "60dabb94f8b8",
-"out": "60dabb94f8b8"
+"out": "60dabb94f8b8",
+"radky": {
+"60dabb94f8b8": "Postřelí.cz"
+}
 },
 "content/web/partneri.json|en|partneri.7.nazev": {
 "cs": "83ef7e53bc9b",
-"out": "83ef7e53bc9b"
+"out": "83ef7e53bc9b",
+"radky": {
+"83ef7e53bc9b": "Dílna U mnicha"
+}
 },
 "content/web/partneri.json|en|partneri.8.nazev": {
 "cs": "feb38050d7f2",
-"out": "feb38050d7f2"
+"out": "feb38050d7f2",
+"radky": {
+"feb38050d7f2": "Kudyznudy.cz"
+}
 },
 "content/web/partneri.json|en|partneri.9.nazev": {
 "cs": "08d9d7c1ba88",
-"out": "08d9d7c1ba88"
+"out": "08d9d7c1ba88",
+"radky": {
+"08d9d7c1ba88": "Givt.cz"
+}
 },
 "content/web/suvenyry.json|de|polozky.0.cena": {
 "cs": "3e52a6b6fdc9",
-"out": "f87a351bf4d3"
+"out": "f87a351bf4d3",
+"radky": {
+"3e52a6b6fdc9": "300 CZK"
+}
 },
 "content/web/suvenyry.json|de|polozky.0.nazev": {
 "cs": "ce3ecd678deb",
-"out": "e7d08f2bfe5c"
+"out": "e7d08f2bfe5c",
+"radky": {
+"ce3ecd678deb": "Emaillebecher vom Schloss"
+}
 },
 "content/web/suvenyry.json|de|polozky.0.popis": {
 "cs": "f249738c3728",
-"out": "371968ef1f74"
+"out": "371968ef1f74",
+"radky": {
+"f249738c3728": "Leichter und robuster Emaillebecher mit blauem Rand, 360 ml."
+}
 },
 "content/web/suvenyry.json|de|polozky.1.cena": {
 "cs": "3e52a6b6fdc9",
-"out": "f87a351bf4d3"
+"out": "f87a351bf4d3",
+"radky": {
+"3e52a6b6fdc9": "300 CZK"
+}
 },
 "content/web/suvenyry.json|de|polozky.1.nazev": {
 "cs": "4a22cb03ed92",
-"out": "6100476fb3e5"
+"out": "6100476fb3e5",
+"radky": {
+"4a22cb03ed92": "T-Shirt mit Logo"
+}
 },
 "content/web/suvenyry.json|de|polozky.1.popis": {
 "cs": "ed9a9e26e752",
-"out": "f3afba7c541e"
+"out": "f3afba7c541e",
+"radky": {
+"ed9a9e26e752": "Weißes Baumwoll-T-Shirt mit dem schwarzen Logo des Lebendigen Schlosses."
+}
 },
 "content/web/suvenyry.json|de|polozky.2.cena": {
 "cs": "61cc5108d877",
-"out": "3d55f5610028"
+"out": "3d55f5610028",
+"radky": {
+"61cc5108d877": "110 CZK"
+}
 },
 "content/web/suvenyry.json|de|polozky.2.nazev": {
 "cs": "bac742ab7c08",
-"out": "b322d89a0656"
+"out": "b322d89a0656",
+"radky": {
+"bac742ab7c08": "Mini-Modell des Schlosses"
+}
 },
 "content/web/suvenyry.json|de|polozky.2.popis": {
 "cs": "67fcba0c2861",
-"out": "5dea0fc9f1c0"
+"out": "5dea0fc9f1c0",
+"radky": {
+"67fcba0c2861": "Modell des Schlosses Toužim im Taschenformat, im Beutel, nummeriert für Sammler."
+}
 },
 "content/web/suvenyry.json|de|polozky.3.cena": {
 "cs": "3a3f9b839f9a",
-"out": "ac885be0ceb5"
+"out": "ac885be0ceb5",
+"radky": {
+"3a3f9b839f9a": "20–50 CZK"
+}
 },
 "content/web/suvenyry.json|de|polozky.3.nazev": {
 "cs": "7b216ce07b28",
-"out": "fbe68c2a0eb4"
+"out": "fbe68c2a0eb4",
+"radky": {
+"7b216ce07b28": "Anstecker und Magnete"
+}
 },
 "content/web/suvenyry.json|de|polozky.3.popis": {
 "cs": "86540f4fa4a1",
-"out": "f23ea8b374ba"
+"out": "f23ea8b374ba",
+"radky": {
+"86540f4fa4a1": "Kleiner Anstecker 20 CZK, großer 40 CZK, Magnet 50 CZK."
+}
 },
 "content/web/suvenyry.json|de|polozky.4.cena": {
 "cs": "f3d80ea8d268",
-"out": "e8fae01ab0f6"
+"out": "e8fae01ab0f6",
+"radky": {
+"f3d80ea8d268": "350 CZK"
+}
 },
 "content/web/suvenyry.json|de|polozky.4.nazev": {
 "cs": "e776f7e97287",
-"out": "dc464a7a1544"
+"out": "dc464a7a1544",
+"radky": {
+"e776f7e97287": "Buch Po stopách čarodějů"
+}
 },
 "content/web/suvenyry.json|de|polozky.4.popis": {
 "cs": "fb3629dc87c4",
-"out": "7fc6876c71e0"
+"out": "7fc6876c71e0",
+"radky": {
+"fb3629dc87c4": "Sagen über Zauberer und Kräuterkundige entlang des Flusses Střela (auf Tschechisch)."
+}
 },
 "content/web/suvenyry.json|de|polozky.5.cena": {
 "cs": "ac8d0a32ac46",
-"out": "dc9b16574e38"
+"out": "dc9b16574e38",
+"radky": {
+"ac8d0a32ac46": "200 CZK"
+}
 },
 "content/web/suvenyry.json|de|polozky.5.nazev": {
 "cs": "11984afca4dc",
-"out": "1fc9cfc47a96"
+"out": "1fc9cfc47a96",
+"radky": {
+"11984afca4dc": "Bücher Putování Hrocha"
+}
 },
 "content/web/suvenyry.json|de|polozky.5.popis": {
 "cs": "46b4f7be5a0a",
-"out": "b47725b3e2ff"
+"out": "b47725b3e2ff",
+"radky": {
+"46b4f7be5a0a": "Vier Bücher von Petr Hroch Binder (auf Tschechisch), der Erlös geht an das Schloss."
+}
 },
 "content/web/suvenyry.json|de|polozky.6.cena": {
 "cs": "15602d788087",
-"out": "2e4d9ecb4be1"
+"out": "2e4d9ecb4be1",
+"radky": {
+"15602d788087": "30 CZK"
+}
 },
 "content/web/suvenyry.json|de|polozky.6.nazev": {
 "cs": "0cc2326de703",
-"out": "f0acfa61d091"
+"out": "f0acfa61d091",
+"radky": {
+"0cc2326de703": "Comic zur Schlossgeschichte"
+}
 },
 "content/web/suvenyry.json|de|polozky.6.popis": {
 "cs": "0a5cad65c196",
-"out": "465f0270e0b8"
+"out": "465f0270e0b8",
+"radky": {
+"0a5cad65c196": "Die Geschichte des Schlosses vom Mittelalter bis heute, mit Humor erzählt (auf Tschechisch)."
+}
 },
 "content/web/suvenyry.json|de|polozky.7.cena": {
 "cs": "ee58f8c88837",
-"out": "7ac47a2002ea"
+"out": "7ac47a2002ea",
+"radky": {
+"ee58f8c88837": "35 CZK"
+}
 },
 "content/web/suvenyry.json|de|polozky.7.nazev": {
 "cs": "658984773702",
-"out": "9e0cd371f353"
+"out": "9e0cd371f353",
+"radky": {
+"658984773702": "Ansichtskarten"
+}
 },
 "content/web/suvenyry.json|de|polozky.7.popis": {
 "cs": "9aae13d722ba",
-"out": "17b7b543f299"
+"out": "17b7b543f299",
+"radky": {
+"9aae13d722ba": "Vier Motive: ein Foto des Schlosses und drei Gemälde aus den Innenräumen."
+}
 },
 "content/web/suvenyry.json|de|polozky.8.cena": {
 "cs": "3f3c3fb743fc",
-"out": "df63eee196bc"
+"out": "df63eee196bc",
+"radky": {
+"3f3c3fb743fc": "55 CZK"
+}
 },
 "content/web/suvenyry.json|de|polozky.8.nazev": {
 "cs": "e572074ce4a8",
-"out": "32423f690fa9"
+"out": "32423f690fa9",
+"radky": {
+"e572074ce4a8": "Wandermarke Nr. 2864"
+}
 },
 "content/web/suvenyry.json|de|polozky.8.popis": {
 "cs": "d892e99f8e30",
-"out": "8d32fd129ceb"
+"out": "8d32fd129ceb",
+"radky": {
+"d892e99f8e30": "Zum 555. Jubiläum der Stadt Toužim, limitiert auf 555 Stück."
+}
 },
 "content/web/suvenyry.json|de|polozky.9.cena": {
 "cs": "0592c639f7d6",
-"out": "ad09782d9400"
+"out": "ad09782d9400",
+"radky": {
+"0592c639f7d6": "50–100 CZK"
+}
 },
 "content/web/suvenyry.json|de|polozky.9.nazev": {
 "cs": "5f79e41c9739",
-"out": "1ad40c090821"
+"out": "1ad40c090821",
+"radky": {
+"5f79e41c9739": "Gedenkmünze 550 Jahre"
+}
 },
 "content/web/suvenyry.json|de|polozky.9.popis": {
 "cs": "dd4cdda910dc",
-"out": "7ef272d94911"
+"out": "7ef272d94911",
+"radky": {
+"dd4cdda910dc": "Altsilber 50 CZK, Altgold 75 CZK, Altbronze 100 CZK. Limitierte Serien."
+}
 },
 "content/web/suvenyry.json|de|uvod": {
 "cs": "8c56b19cd580",
-"out": "9a8a990b0bb6"
+"out": "9a8a990b0bb6",
+"radky": {
+"8c56b19cd580": "Bei unseren Veranstaltungen, an offenen Wochenenden oder per Post. Bestellungen per E-Mail."
+}
 },
 "content/web/suvenyry.json|en|polozky.0.cena": {
 "cs": "3e52a6b6fdc9",
-"out": "f87a351bf4d3"
+"out": "f87a351bf4d3",
+"radky": {
+"3e52a6b6fdc9": "300 CZK"
+}
 },
 "content/web/suvenyry.json|en|polozky.0.nazev": {
 "cs": "ce3ecd678deb",
-"out": "4ef878a8a68c"
+"out": "4ef878a8a68c",
+"radky": {
+"ce3ecd678deb": "Castle enamel mug"
+}
 },
 "content/web/suvenyry.json|en|polozky.0.popis": {
 "cs": "f249738c3728",
-"out": "4e2d29ce3517"
+"out": "4e2d29ce3517",
+"radky": {
+"f249738c3728": "Light and durable enamel mug with a blue rim, 360 ml."
+}
 },
 "content/web/suvenyry.json|en|polozky.1.cena": {
 "cs": "3e52a6b6fdc9",
-"out": "f87a351bf4d3"
+"out": "f87a351bf4d3",
+"radky": {
+"3e52a6b6fdc9": "300 CZK"
+}
 },
 "content/web/suvenyry.json|en|polozky.1.nazev": {
 "cs": "4a22cb03ed92",
-"out": "a10ea542fcfe"
+"out": "a10ea542fcfe",
+"radky": {
+"4a22cb03ed92": "T-shirt with logo"
+}
 },
 "content/web/suvenyry.json|en|polozky.1.popis": {
 "cs": "ed9a9e26e752",
-"out": "934e2a1028f6"
+"out": "934e2a1028f6",
+"radky": {
+"ed9a9e26e752": "White cotton T-shirt with the black Living Castle logo."
+}
 },
 "content/web/suvenyry.json|en|polozky.2.cena": {
 "cs": "61cc5108d877",
-"out": "3d55f5610028"
+"out": "3d55f5610028",
+"radky": {
+"61cc5108d877": "110 CZK"
+}
 },
 "content/web/suvenyry.json|en|polozky.2.nazev": {
 "cs": "bac742ab7c08",
-"out": "3612c9197026"
+"out": "3612c9197026",
+"radky": {
+"bac742ab7c08": "Mini model of the castle"
+}
 },
 "content/web/suvenyry.json|en|polozky.2.popis": {
 "cs": "67fcba0c2861",
-"out": "864d2e4caf58"
+"out": "864d2e4caf58",
+"radky": {
+"67fcba0c2861": "Pocket-sized model of Toužim Castle in a bag, numbered for collectors."
+}
 },
 "content/web/suvenyry.json|en|polozky.3.cena": {
 "cs": "3a3f9b839f9a",
-"out": "ac885be0ceb5"
+"out": "ac885be0ceb5",
+"radky": {
+"3a3f9b839f9a": "20–50 CZK"
+}
 },
 "content/web/suvenyry.json|en|polozky.3.nazev": {
 "cs": "7b216ce07b28",
-"out": "6a32002d6a96"
+"out": "6a32002d6a96",
+"radky": {
+"7b216ce07b28": "Badges and magnets"
+}
 },
 "content/web/suvenyry.json|en|polozky.3.popis": {
 "cs": "86540f4fa4a1",
-"out": "0c4300e7ac49"
+"out": "0c4300e7ac49",
+"radky": {
+"86540f4fa4a1": "Small badge 20 CZK, large badge 40 CZK, magnet 50 CZK."
+}
 },
 "content/web/suvenyry.json|en|polozky.4.cena": {
 "cs": "f3d80ea8d268",
-"out": "e8fae01ab0f6"
+"out": "e8fae01ab0f6",
+"radky": {
+"f3d80ea8d268": "350 CZK"
+}
 },
 "content/web/suvenyry.json|en|polozky.4.nazev": {
 "cs": "e776f7e97287",
-"out": "7523ff1c439b"
+"out": "7523ff1c439b",
+"radky": {
+"e776f7e97287": "Book Po stopách čarodějů"
+}
 },
 "content/web/suvenyry.json|en|polozky.4.popis": {
 "cs": "fb3629dc87c4",
-"out": "ad239b73df66"
+"out": "ad239b73df66",
+"radky": {
+"fb3629dc87c4": "Legends of wizards and herbalists along the Střela river (in Czech)."
+}
 },
 "content/web/suvenyry.json|en|polozky.5.cena": {
 "cs": "ac8d0a32ac46",
-"out": "dc9b16574e38"
+"out": "dc9b16574e38",
+"radky": {
+"ac8d0a32ac46": "200 CZK"
+}
 },
 "content/web/suvenyry.json|en|polozky.5.nazev": {
 "cs": "11984afca4dc",
-"out": "548822aa4971"
+"out": "548822aa4971",
+"radky": {
+"11984afca4dc": "Books Putování Hrocha"
+}
 },
 "content/web/suvenyry.json|en|polozky.5.popis": {
 "cs": "46b4f7be5a0a",
-"out": "8430b0fb0d94"
+"out": "8430b0fb0d94",
+"radky": {
+"46b4f7be5a0a": "Four books by Petr Hroch Binder (in Czech), proceeds go to the castle."
+}
 },
 "content/web/suvenyry.json|en|polozky.6.cena": {
 "cs": "15602d788087",
-"out": "2e4d9ecb4be1"
+"out": "2e4d9ecb4be1",
+"radky": {
+"15602d788087": "30 CZK"
+}
 },
 "content/web/suvenyry.json|en|polozky.6.nazev": {
 "cs": "0cc2326de703",
-"out": "d1182b382816"
+"out": "d1182b382816",
+"radky": {
+"0cc2326de703": "Comic about the castle’s history"
+}
 },
 "content/web/suvenyry.json|en|polozky.6.popis": {
 "cs": "0a5cad65c196",
-"out": "43567355bde3"
+"out": "43567355bde3",
+"radky": {
+"0a5cad65c196": "A funny take on the castle’s history from the Middle Ages to today (in Czech)."
+}
 },
 "content/web/suvenyry.json|en|polozky.7.cena": {
 "cs": "ee58f8c88837",
-"out": "7ac47a2002ea"
+"out": "7ac47a2002ea",
+"radky": {
+"ee58f8c88837": "35 CZK"
+}
 },
 "content/web/suvenyry.json|en|polozky.7.nazev": {
 "cs": "658984773702",
-"out": "41557f577da5"
+"out": "41557f577da5",
+"radky": {
+"658984773702": "Postcards"
+}
 },
 "content/web/suvenyry.json|en|polozky.7.popis": {
 "cs": "9aae13d722ba",
-"out": "587c7908fdcc"
+"out": "587c7908fdcc",
+"radky": {
+"9aae13d722ba": "Four designs: a photo of the castle and three paintings from the interiors."
+}
 },
 "content/web/suvenyry.json|en|polozky.8.cena": {
 "cs": "3f3c3fb743fc",
-"out": "df63eee196bc"
+"out": "df63eee196bc",
+"radky": {
+"3f3c3fb743fc": "55 CZK"
+}
 },
 "content/web/suvenyry.json|en|polozky.8.nazev": {
 "cs": "e572074ce4a8",
-"out": "d0a9680bfb5f"
+"out": "d0a9680bfb5f",
+"radky": {
+"e572074ce4a8": "Tourist stamp no. 2864"
+}
 },
 "content/web/suvenyry.json|en|polozky.8.popis": {
 "cs": "d892e99f8e30",
-"out": "7a1126ecbd23"
+"out": "7a1126ecbd23",
+"radky": {
+"d892e99f8e30": "For the 555th anniversary of the town of Toužim, limited to 555 pieces."
+}
 },
 "content/web/suvenyry.json|en|polozky.9.cena": {
 "cs": "0592c639f7d6",
-"out": "ad09782d9400"
+"out": "ad09782d9400",
+"radky": {
+"0592c639f7d6": "50–100 CZK"
+}
 },
 "content/web/suvenyry.json|en|polozky.9.nazev": {
 "cs": "5f79e41c9739",
-"out": "c367d75df893"
+"out": "c367d75df893",
+"radky": {
+"5f79e41c9739": "550th anniversary coin"
+}
 },
 "content/web/suvenyry.json|en|polozky.9.popis": {
 "cs": "dd4cdda910dc",
-"out": "68ad76acc9f4"
+"out": "68ad76acc9f4",
+"radky": {
+"dd4cdda910dc": "Antique silver 50 CZK, antique gold 75 CZK, antique bronze 100 CZK. Limited series."
+}
 },
 "content/web/suvenyry.json|en|uvod": {
 "cs": "8c56b19cd580",
-"out": "905a3a329648"
+"out": "905a3a329648",
+"radky": {
+"8c56b19cd580": "At our events, on open weekends or by post. Orders by e-mail."
+}
 },
 "content/web/uvod.json|de|hero.0.alt": {
 "cs": "bcdddc10ca1f",
-"out": "5f34a6105cb2"
+"out": "5f34a6105cb2",
+"radky": {
+"bcdddc10ca1f": "Schloss Toužim, Blick über die Wiese mit Picknickbänken auf die Schlossgebäude"
+}
 },
 "content/web/uvod.json|de|hero.0.cap": {
 "cs": "114acfda70e2",
-"out": "071d6a4d202d"
+"out": "071d6a4d202d",
+"radky": {
+"114acfda70e2": "Schloss Toužim, März 2020"
+}
 },
 "content/web/uvod.json|de|hero.1.alt": {
 "cs": "4679d9d20024",
-"out": "f6f55e0c27a6"
+"out": "f6f55e0c27a6",
+"radky": {
+"4679d9d20024": "Schlosshof mit überdachter Bühne"
+}
 },
 "content/web/uvod.json|de|hero.1.cap": {
 "cs": "72374ecac2d1",
-"out": "28db29ccfad2"
+"out": "28db29ccfad2",
+"radky": {
+"72374ecac2d1": "Der Schlosshof mit der Bühne, überdacht 2019"
+}
 },
 "content/web/uvod.json|de|hero.10.alt": {
 "cs": "6ec59b4156e2",
-"out": "75fa545327ed"
+"out": "75fa545327ed",
+"radky": {
+"6ec59b4156e2": "Verschneiter Schlosshof mit Leuten an den Tischen"
+}
 },
 "content/web/uvod.json|de|hero.10.cap": {
 "cs": "632c5170b700",
-"out": "2e05ed9ae973"
+"out": "2e05ed9ae973",
+"radky": {
+"632c5170b700": "Weihnachtstreffen, 15. 12. 2018"
+}
 },
 "content/web/uvod.json|de|hero.11.alt": {
 "cs": "9d14230fca6c",
-"out": "14d76081f28e"
+"out": "14d76081f28e",
+"radky": {
+"9d14230fca6c": "Publikum auf Bänken unter den Bäumen im Schlosshof"
+}
 },
 "content/web/uvod.json|de|hero.11.cap": {
 "cs": "09284d133017",
-"out": "2b5723ac1005"
+"out": "2b5723ac1005",
+"radky": {
+"09284d133017": "Musikabend mit Milan Pitkin und František Nedvěd, 10. 7. 2026"
+}
 },
 "content/web/uvod.json|de|hero.2.alt": {
 "cs": "4bc9725ccdf8",
-"out": "7712ecf72f90"
+"out": "7712ecf72f90",
+"radky": {
+"4bc9725ccdf8": "Nachtführung mit Fackeln"
+}
 },
 "content/web/uvod.json|de|hero.2.cap": {
 "cs": "2386adc1a5b3",
-"out": "1339a830db2c"
+"out": "1339a830db2c",
+"radky": {
+"2386adc1a5b3": "Burg- und Schlossnacht, 23. 8. 2025"
+}
 },
 "content/web/uvod.json|de|hero.3.alt": {
 "cs": "e8e1f59cf792",
-"out": "4a4d393f4091"
+"out": "4a4d393f4091",
+"radky": {
+"e8e1f59cf792": "Kinder am Feuer beim Hexenbrennen"
+}
 },
 "content/web/uvod.json|de|hero.3.cap": {
 "cs": "e33ec4de4e27",
-"out": "b2a3140514a0"
+"out": "b2a3140514a0",
+"radky": {
+"e33ec4de4e27": "Hexenbrennen, 30. 4. 2024"
+}
 },
 "content/web/uvod.json|de|hero.4.alt": {
 "cs": "1d2873a017eb",
-"out": "1bf746b34c42"
+"out": "1bf746b34c42",
+"radky": {
+"1d2873a017eb": "Menschen in historischen Kostümen im Schlosshof"
+}
 },
 "content/web/uvod.json|de|hero.4.cap": {
 "cs": "5d3b1e9b2188",
-"out": "e1201afbc15d"
+"out": "e1201afbc15d",
+"radky": {
+"5d3b1e9b2188": "Im Schlosshof, 29. 6. 2024"
+}
 },
 "content/web/uvod.json|de|hero.5.alt": {
 "cs": "dd321b103e13",
-"out": "c1157ee03d08"
+"out": "c1157ee03d08",
+"radky": {
+"dd321b103e13": "Countrytänze vor der Bühne"
+}
 },
 "content/web/uvod.json|de|hero.5.cap": {
 "cs": "000b31743739",
-"out": "000b31743739"
+"out": "000b31743739",
+"radky": {
+"000b31743739": "Pelmel muziky, 2. 8. 2025"
+}
 },
 "content/web/uvod.json|de|hero.6.alt": {
 "cs": "cf56067aa9b4",
-"out": "629cb3cbcd48"
+"out": "629cb3cbcd48",
+"radky": {
+"cf56067aa9b4": "Historischer Tag im Schlosshof"
+}
 },
 "content/web/uvod.json|de|hero.6.cap": {
 "cs": "62cf356dd33b",
-"out": "016e6581acbc"
+"out": "016e6581acbc",
+"radky": {
+"62cf356dd33b": "Historischer Tag, 28. 6. 2025"
+}
 },
 "content/web/uvod.json|de|hero.7.alt": {
 "cs": "4d12bb84ca8c",
-"out": "a02237b9773f"
+"out": "a02237b9773f",
+"radky": {
+"4d12bb84ca8c": "Band auf der Bühne im Bühnennebel bei Sonnenuntergang"
+}
 },
 "content/web/uvod.json|de|hero.7.cap": {
 "cs": "cff09956b62c",
-"out": "d7153ea4d7c1"
+"out": "d7153ea4d7c1",
+"radky": {
+"cff09956b62c": "Schlossfestival, 21. 6. 2025"
+}
 },
 "content/web/uvod.json|de|hero.8.alt": {
 "cs": "23cd73890a0f",
-"out": "bf2bf14afb7c"
+"out": "bf2bf14afb7c",
+"radky": {
+"23cd73890a0f": "Marktstände unter den Schlossarkaden"
+}
 },
 "content/web/uvod.json|de|hero.8.cap": {
 "cs": "15fc9907c86b",
-"out": "b2d79f705d2b"
+"out": "b2d79f705d2b",
+"radky": {
+"15fc9907c86b": "Schlossmarkt, 29. 7. 2023"
+}
 },
 "content/web/uvod.json|de|hero.9.alt": {
 "cs": "17febf66817d",
-"out": "4c660a215679"
+"out": "4c660a215679",
+"radky": {
+"17febf66817d": "Tanzvorführung mit Fächern im Gewölbekeller"
+}
 },
 "content/web/uvod.json|de|hero.9.cap": {
 "cs": "c049b875782a",
-"out": "3056ea366ff3"
+"out": "3056ea366ff3",
+"radky": {
+"c049b875782a": "Weihnachtstreffen im Schloss, 14. 12. 2024"
+}
 },
 "content/web/uvod.json|en|hero.0.alt": {
 "cs": "bcdddc10ca1f",
-"out": "49cfc4abbdd5"
+"out": "49cfc4abbdd5",
+"radky": {
+"bcdddc10ca1f": "Toužim Castle, view across the lawn with picnic benches to the castle buildings"
+}
 },
 "content/web/uvod.json|en|hero.0.cap": {
 "cs": "114acfda70e2",
-"out": "6c1c9263f8fa"
+"out": "6c1c9263f8fa",
+"radky": {
+"114acfda70e2": "Toužim Castle, March 2020"
+}
 },
 "content/web/uvod.json|en|hero.1.alt": {
 "cs": "4679d9d20024",
-"out": "475b09700dd3"
+"out": "475b09700dd3",
+"radky": {
+"4679d9d20024": "Castle courtyard with the covered stage"
+}
 },
 "content/web/uvod.json|en|hero.1.cap": {
 "cs": "72374ecac2d1",
-"out": "0f12a77d63b3"
+"out": "0f12a77d63b3",
+"radky": {
+"72374ecac2d1": "The courtyard with the stage, roofed in 2019"
+}
 },
 "content/web/uvod.json|en|hero.10.alt": {
 "cs": "6ec59b4156e2",
-"out": "303378db7462"
+"out": "303378db7462",
+"radky": {
+"6ec59b4156e2": "Snowy courtyard with people at the tables"
+}
 },
 "content/web/uvod.json|en|hero.10.cap": {
 "cs": "632c5170b700",
-"out": "582d49f0cc31"
+"out": "582d49f0cc31",
+"radky": {
+"632c5170b700": "Christmas get-together, 15 Dec 2018"
+}
 },
 "content/web/uvod.json|en|hero.11.alt": {
 "cs": "9d14230fca6c",
-"out": "02f00f765eb0"
+"out": "02f00f765eb0",
+"radky": {
+"9d14230fca6c": "Audience on benches under the trees in the courtyard"
+}
 },
 "content/web/uvod.json|en|hero.11.cap": {
 "cs": "09284d133017",
-"out": "4999d0d3307c"
+"out": "4999d0d3307c",
+"radky": {
+"09284d133017": "Music evening with Milan Pitkin and František Nedvěd, 10 Jul 2026"
+}
 },
 "content/web/uvod.json|en|hero.2.alt": {
 "cs": "4bc9725ccdf8",
-"out": "18f4fa57b356"
+"out": "18f4fa57b356",
+"radky": {
+"4bc9725ccdf8": "Night tour with torches"
+}
 },
 "content/web/uvod.json|en|hero.2.cap": {
 "cs": "2386adc1a5b3",
-"out": "b7b7eef0cfdf"
+"out": "b7b7eef0cfdf",
+"radky": {
+"2386adc1a5b3": "Castle Night, 23 Aug 2025"
+}
 },
 "content/web/uvod.json|en|hero.3.alt": {
 "cs": "e8e1f59cf792",
-"out": "35c104ce3fa9"
+"out": "35c104ce3fa9",
+"radky": {
+"e8e1f59cf792": "Children by the fire at the witch-burning"
+}
 },
 "content/web/uvod.json|en|hero.3.cap": {
 "cs": "e33ec4de4e27",
-"out": "c4acad3af0b0"
+"out": "c4acad3af0b0",
+"radky": {
+"e33ec4de4e27": "Witch-burning night, 30 Apr 2024"
+}
 },
 "content/web/uvod.json|en|hero.4.alt": {
 "cs": "1d2873a017eb",
-"out": "5737e69dc279"
+"out": "5737e69dc279",
+"radky": {
+"1d2873a017eb": "People in historical costumes in the courtyard"
+}
 },
 "content/web/uvod.json|en|hero.4.cap": {
 "cs": "5d3b1e9b2188",
-"out": "d1f6fe2b6f2e"
+"out": "d1f6fe2b6f2e",
+"radky": {
+"5d3b1e9b2188": "In the courtyard, 29 Jun 2024"
+}
 },
 "content/web/uvod.json|en|hero.5.alt": {
 "cs": "dd321b103e13",
-"out": "b448a8934811"
+"out": "b448a8934811",
+"radky": {
+"dd321b103e13": "Country dancing by the stage"
+}
 },
 "content/web/uvod.json|en|hero.5.cap": {
 "cs": "000b31743739",
-"out": "d50bf1a8a725"
+"out": "d50bf1a8a725",
+"radky": {
+"000b31743739": "Pelmel muziky, 2 Aug 2025"
+}
 },
 "content/web/uvod.json|en|hero.6.alt": {
 "cs": "cf56067aa9b4",
-"out": "49cd88ed4a98"
+"out": "49cd88ed4a98",
+"radky": {
+"cf56067aa9b4": "Historical day in the courtyard"
+}
 },
 "content/web/uvod.json|en|hero.6.cap": {
 "cs": "62cf356dd33b",
-"out": "b5ebd1d93799"
+"out": "b5ebd1d93799",
+"radky": {
+"62cf356dd33b": "Historical Day, 28 Jun 2025"
+}
 },
 "content/web/uvod.json|en|hero.7.alt": {
 "cs": "4d12bb84ca8c",
-"out": "9408f1c28357"
+"out": "9408f1c28357",
+"radky": {
+"4d12bb84ca8c": "Band on stage in stage smoke at sunset"
+}
 },
 "content/web/uvod.json|en|hero.7.cap": {
 "cs": "cff09956b62c",
-"out": "3abd735ebb51"
+"out": "3abd735ebb51",
+"radky": {
+"cff09956b62c": "Castle Festival, 21 Jun 2025"
+}
 },
 "content/web/uvod.json|en|hero.8.alt": {
 "cs": "23cd73890a0f",
-"out": "3d487def5bec"
+"out": "3d487def5bec",
+"radky": {
+"23cd73890a0f": "Fair stalls below the castle arcades"
+}
 },
 "content/web/uvod.json|en|hero.8.cap": {
 "cs": "15fc9907c86b",
-"out": "79f1742d1f60"
+"out": "79f1742d1f60",
+"radky": {
+"15fc9907c86b": "Castle fair, 29 Jul 2023"
+}
 },
 "content/web/uvod.json|en|hero.9.alt": {
 "cs": "17febf66817d",
-"out": "74d8f15f3000"
+"out": "74d8f15f3000",
+"radky": {
+"17febf66817d": "Dance performance with fans in the cellar"
+}
 },
 "content/web/uvod.json|en|hero.9.cap": {
 "cs": "c049b875782a",
-"out": "c172c3cc408b"
+"out": "c172c3cc408b",
+"radky": {
+"c049b875782a": "Christmas gathering at the castle, 14 Dec 2024"
+}
 },
 "content/web/zahrada.json|de|fotky.0.popis": {
 "cs": "a397fcbccc56",
-"out": "916a66b74170"
+"out": "916a66b74170",
+"radky": {
+"a397fcbccc56": "Händisches Aufräumen der verwilderten Fläche am Zaun"
+}
 },
 "content/web/zahrada.json|de|fotky.0.popisek": {
 "cs": "2ac873f43696",
-"out": "afa92090d5a7"
+"out": "afa92090d5a7",
+"radky": {
+"2ac873f43696": "30. 3. 2026: erster Arbeitstag"
+}
 },
 "content/web/zahrada.json|de|fotky.1.popis": {
 "cs": "b3039e35596b",
-"out": "b61e7c790432"
+"out": "b61e7c790432",
+"radky": {
+"b3039e35596b": "Blick über die Stadtmauer auf die aufgegrabene Fläche"
+}
 },
 "content/web/zahrada.json|de|fotky.1.popisek": {
 "cs": "a4349062b760",
-"out": "5b1be561f881"
+"out": "5b1be561f881",
+"radky": {
+"a4349062b760": "31. 3. 2026: Blick von der Mauer"
+}
 },
 "content/web/zahrada.json|de|fotky.2.popis": {
 "cs": "6d5e2694a059",
-"out": "bc6a284de5f7"
+"out": "bc6a284de5f7",
+"radky": {
+"6d5e2694a059": "Minibagger zieht einen alten Baumstumpf heraus"
+}
 },
 "content/web/zahrada.json|de|fotky.2.popisek": {
 "cs": "1318bfb50f81",
-"out": "30f60db1f8cc"
+"out": "30f60db1f8cc",
+"radky": {
+"1318bfb50f81": "1. 4. 2026: Stümpfe raus"
+}
 },
 "content/web/zahrada.json|de|fotky.3.popis": {
 "cs": "d29de7a03abf",
-"out": "a1e61eb0e72a"
+"out": "a1e61eb0e72a",
+"radky": {
+"d29de7a03abf": "Minibagger im Garten"
+}
 },
 "content/web/zahrada.json|de|fotky.3.popisek": {
 "cs": "711a1cf3818b",
-"out": "fc71f86c4d06"
+"out": "fc71f86c4d06",
+"radky": {
+"711a1cf3818b": "3. 4. 2026: Geländearbeiten"
+}
 },
 "content/web/zahrada.json|de|fotky.4.popis": {
 "cs": "121c7295e620",
-"out": "9cd9a82d4d4a"
+"out": "9cd9a82d4d4a",
+"radky": {
+"121c7295e620": "Dumper, Minibagger und Erdsieb im Garten"
+}
 },
 "content/web/zahrada.json|de|fotky.4.popisek": {
 "cs": "187f6ee11cad",
-"out": "2467991cff99"
+"out": "2467991cff99",
+"radky": {
+"187f6ee11cad": "Technik beim Arbeitseinsatz"
+}
 },
 "content/web/zahrada.json|de|fotky.5.popis": {
 "cs": "26fcfebdb104",
-"out": "d9229cea5187"
+"out": "d9229cea5187",
+"radky": {
+"26fcfebdb104": "Eingeebnete Fläche an der Stadtmauer"
+}
 },
 "content/web/zahrada.json|de|fotky.5.popisek": {
 "cs": "21d474b23bf9",
-"out": "79c5a2a93b7a"
+"out": "79c5a2a93b7a",
+"radky": {
+"21d474b23bf9": "Fertige Fläche an der Mauer"
+}
 },
 "content/web/zahrada.json|de|kroky.0.co": {
 "cs": "877be0d2e3ca",
-"out": "852a82d7f590"
+"out": "852a82d7f590",
+"radky": {
+"877be0d2e3ca": "Gartenstudie"
+}
 },
 "content/web/zahrada.json|de|kroky.0.kdy": {
 "cs": "96c5af388a57",
-"out": "96c5af388a57"
+"out": "96c5af388a57",
+"radky": {
+"96c5af388a57": "08/2025"
+}
 },
 "content/web/zahrada.json|de|kroky.1.co": {
 "cs": "3d229b32b979",
-"out": "b11d532270cd"
+"out": "b11d532270cd",
+"radky": {
+"3d229b32b979": "Förderung durch die Stiftung VIA"
+}
 },
 "content/web/zahrada.json|de|kroky.1.kdy": {
 "cs": "03d7ab9c0e1c",
-"out": "03d7ab9c0e1c"
+"out": "03d7ab9c0e1c",
+"radky": {
+"03d7ab9c0e1c": "09/2025"
+}
 },
 "content/web/zahrada.json|de|kroky.2.co": {
 "cs": "ba5b4e1e3487",
-"out": "30306677f5d6"
+"out": "30306677f5d6",
+"radky": {
+"ba5b4e1e3487": "Beginn der Arbeiten und Entdeckung der Stadtmauer"
+}
 },
 "content/web/zahrada.json|de|kroky.2.kdy": {
 "cs": "586b34890b29",
-"out": "586b34890b29"
+"out": "586b34890b29",
+"radky": {
+"586b34890b29": "03/2026"
+}
 },
 "content/web/zahrada.json|de|kroky.3.co": {
 "cs": "c2520d213c17",
-"out": "53e47ef7fbce"
+"out": "53e47ef7fbce",
+"radky": {
+"c2520d213c17": "Archäologische Untersuchung, Freiwilligentage (40 Leute, 20 % der Fläche)"
+}
 },
 "content/web/zahrada.json|de|kroky.3.kdy": {
 "cs": "889f6ceb4bc4",
-"out": "889f6ceb4bc4"
+"out": "889f6ceb4bc4",
+"radky": {
+"889f6ceb4bc4": "04/2026"
+}
 },
 "content/web/zahrada.json|de|kroky.4.co": {
 "cs": "355db65618e4",
-"out": "a2c20d4012e6"
+"out": "a2c20d4012e6",
+"radky": {
+"355db65618e4": "Fünf Arbeitseinsätze, untere Hälfte unter Folie eingeebnet, zwei Beete abgesteckt"
+}
 },
 "content/web/zahrada.json|de|kroky.4.kdy": {
 "cs": "696c41d4a373",
-"out": "696c41d4a373"
+"out": "696c41d4a373",
+"radky": {
+"696c41d4a373": "05–09/2026"
+}
 },
 "content/web/zahrada.json|de|kroky.5.co": {
 "cs": "b4e503d3441a",
-"out": "8c4d19ff23c8"
+"out": "8c4d19ff23c8",
+"radky": {
+"b4e503d3441a": "Aufräumen der oberen Hälfte und des Spielhangs, Arbeitseinsatz 17.–18. 10."
+}
 },
 "content/web/zahrada.json|de|kroky.5.kdy": {
 "cs": "437fcec40ba2",
-"out": "437fcec40ba2"
+"out": "437fcec40ba2",
+"radky": {
+"437fcec40ba2": "10/2026"
+}
 },
 "content/web/zahrada.json|de|kroky.6.co": {
 "cs": "cca196f12ab4",
-"out": "ddf214821ff8"
+"out": "ddf214821ff8",
+"radky": {
+"cca196f12ab4": "Rankgitter aus Draht für Rosen an der Mauer des Unteren Schlosses"
+}
 },
 "content/web/zahrada.json|de|kroky.6.kdy": {
 "cs": "e19a5c431a05",
-"out": "b039fa578658"
+"out": "b039fa578658",
+"radky": {
+"e19a5c431a05": "März–April 2027"
+}
 },
 "content/web/zahrada.json|de|kroky.7.co": {
 "cs": "bcb14075b7f2",
-"out": "b4010acb5baa"
+"out": "b4010acb5baa",
+"radky": {
+"bcb14075b7f2": "Betonfundamente unter allen vier Beeten"
+}
 },
 "content/web/zahrada.json|de|kroky.7.kdy": {
 "cs": "a8bc5dd71091",
-"out": "570145aa538c"
+"out": "570145aa538c",
+"radky": {
+"a8bc5dd71091": "April 2027"
+}
 },
 "content/web/zahrada.json|de|kroky.8.co": {
 "cs": "714cfdcb9290",
-"out": "f32ab3deba4d"
+"out": "f32ab3deba4d",
+"radky": {
+"714cfdcb9290": "Steinmauern der Beete"
+}
 },
 "content/web/zahrada.json|de|kroky.8.kdy": {
 "cs": "6b74e8f8abf4",
-"out": "b2c42f194587"
+"out": "b2c42f194587",
+"radky": {
+"6b74e8f8abf4": "April–Mai 2027"
+}
 },
 "content/web/zahrada.json|de|kroky.9.co": {
 "cs": "e55c980c71c8",
-"out": "7e203d230fdb"
+"out": "7e203d230fdb",
+"radky": {
+"e55c980c71c8": "Erde, Bepflanzung, Linde, Spielelemente, Kieswege"
+}
 },
 "content/web/zahrada.json|de|kroky.9.kdy": {
 "cs": "fdf13709b9a2",
-"out": "51f3205d29fd"
+"out": "51f3205d29fd",
+"radky": {
+"fdf13709b9a2": "Sommer 2027"
+}
 },
 "content/web/zahrada.json|en|fotky.0.popis": {
 "cs": "a397fcbccc56",
-"out": "ced7401dd721"
+"out": "ced7401dd721",
+"radky": {
+"a397fcbccc56": "Clearing the overgrown area by the fence by hand"
+}
 },
 "content/web/zahrada.json|en|fotky.0.popisek": {
 "cs": "2ac873f43696",
-"out": "9a7fd93bb642"
+"out": "9a7fd93bb642",
+"radky": {
+"2ac873f43696": "30 Mar 2026: first day of work"
+}
 },
 "content/web/zahrada.json|en|fotky.1.popis": {
 "cs": "b3039e35596b",
-"out": "33b0cf48aa2a"
+"out": "33b0cf48aa2a",
+"radky": {
+"b3039e35596b": "View over the town walls onto the dug-up area"
+}
 },
 "content/web/zahrada.json|en|fotky.1.popisek": {
 "cs": "a4349062b760",
-"out": "4cfd980ccd48"
+"out": "4cfd980ccd48",
+"radky": {
+"a4349062b760": "31 Mar 2026: view from the walls"
+}
 },
 "content/web/zahrada.json|en|fotky.2.popis": {
 "cs": "6d5e2694a059",
-"out": "0afb8f96987e"
+"out": "0afb8f96987e",
+"radky": {
+"6d5e2694a059": "A mini excavator pulling out an old stump"
+}
 },
 "content/web/zahrada.json|en|fotky.2.popisek": {
 "cs": "1318bfb50f81",
-"out": "823d6b65fb76"
+"out": "823d6b65fb76",
+"radky": {
+"1318bfb50f81": "1 Apr 2026: out with the stumps"
+}
 },
 "content/web/zahrada.json|en|fotky.3.popis": {
 "cs": "d29de7a03abf",
-"out": "6a37c6d4c374"
+"out": "6a37c6d4c374",
+"radky": {
+"d29de7a03abf": "Mini excavator in the garden"
+}
 },
 "content/web/zahrada.json|en|fotky.3.popisek": {
 "cs": "711a1cf3818b",
-"out": "52a2a538af01"
+"out": "52a2a538af01",
+"radky": {
+"711a1cf3818b": "3 Apr 2026: landscaping"
+}
 },
 "content/web/zahrada.json|en|fotky.4.popis": {
 "cs": "121c7295e620",
-"out": "9da975cd2a14"
+"out": "9da975cd2a14",
+"radky": {
+"121c7295e620": "Dumper, mini excavator and soil screener in the garden"
+}
 },
 "content/web/zahrada.json|en|fotky.4.popisek": {
 "cs": "187f6ee11cad",
-"out": "2eed515ff29b"
+"out": "2eed515ff29b",
+"radky": {
+"187f6ee11cad": "Machinery at the work party"
+}
 },
 "content/web/zahrada.json|en|fotky.5.popis": {
 "cs": "26fcfebdb104",
-"out": "f3e37a20a0a9"
+"out": "f3e37a20a0a9",
+"radky": {
+"26fcfebdb104": "Levelled area by the town walls"
+}
 },
 "content/web/zahrada.json|en|fotky.5.popisek": {
 "cs": "21d474b23bf9",
-"out": "53f9ca504e6a"
+"out": "53f9ca504e6a",
+"radky": {
+"21d474b23bf9": "Finished area by the walls"
+}
 },
 "content/web/zahrada.json|en|kroky.0.co": {
 "cs": "877be0d2e3ca",
-"out": "078df93e5e99"
+"out": "078df93e5e99",
+"radky": {
+"877be0d2e3ca": "Garden study"
+}
 },
 "content/web/zahrada.json|en|kroky.0.kdy": {
 "cs": "96c5af388a57",
-"out": "96c5af388a57"
+"out": "96c5af388a57",
+"radky": {
+"96c5af388a57": "08/2025"
+}
 },
 "content/web/zahrada.json|en|kroky.1.co": {
 "cs": "3d229b32b979",
-"out": "5df991ca9a69"
+"out": "5df991ca9a69",
+"radky": {
+"3d229b32b979": "Support from the VIA Foundation"
+}
 },
 "content/web/zahrada.json|en|kroky.1.kdy": {
 "cs": "03d7ab9c0e1c",
-"out": "03d7ab9c0e1c"
+"out": "03d7ab9c0e1c",
+"radky": {
+"03d7ab9c0e1c": "09/2025"
+}
 },
 "content/web/zahrada.json|en|kroky.2.co": {
 "cs": "ba5b4e1e3487",
-"out": "2225e5936b84"
+"out": "2225e5936b84",
+"radky": {
+"ba5b4e1e3487": "Work begins, the town wall is discovered"
+}
 },
 "content/web/zahrada.json|en|kroky.2.kdy": {
 "cs": "586b34890b29",
-"out": "586b34890b29"
+"out": "586b34890b29",
+"radky": {
+"586b34890b29": "03/2026"
+}
 },
 "content/web/zahrada.json|en|kroky.3.co": {
 "cs": "c2520d213c17",
-"out": "d06042ce06ae"
+"out": "d06042ce06ae",
+"radky": {
+"c2520d213c17": "Archaeological survey, Volunteer Days (40 people, 20 % of the area)"
+}
 },
 "content/web/zahrada.json|en|kroky.3.kdy": {
 "cs": "889f6ceb4bc4",
-"out": "889f6ceb4bc4"
+"out": "889f6ceb4bc4",
+"radky": {
+"889f6ceb4bc4": "04/2026"
+}
 },
 "content/web/zahrada.json|en|kroky.4.co": {
 "cs": "355db65618e4",
-"out": "dd446ad391d8"
+"out": "dd446ad391d8",
+"radky": {
+"355db65618e4": "Five work parties, lower half levelled under foil, two beds marked out"
+}
 },
 "content/web/zahrada.json|en|kroky.4.kdy": {
 "cs": "696c41d4a373",
-"out": "696c41d4a373"
+"out": "696c41d4a373",
+"radky": {
+"696c41d4a373": "05–09/2026"
+}
 },
 "content/web/zahrada.json|en|kroky.5.co": {
 "cs": "b4e503d3441a",
-"out": "ecfa8402334b"
+"out": "ecfa8402334b",
+"radky": {
+"b4e503d3441a": "Clearing the upper half and the play slope, work party 17–18 Oct"
+}
 },
 "content/web/zahrada.json|en|kroky.5.kdy": {
 "cs": "437fcec40ba2",
-"out": "437fcec40ba2"
+"out": "437fcec40ba2",
+"radky": {
+"437fcec40ba2": "10/2026"
+}
 },
 "content/web/zahrada.json|en|kroky.6.co": {
 "cs": "cca196f12ab4",
-"out": "c52226acc610"
+"out": "c52226acc610",
+"radky": {
+"cca196f12ab4": "Wire trellis for roses on the Lower Castle wall"
+}
 },
 "content/web/zahrada.json|en|kroky.6.kdy": {
 "cs": "e19a5c431a05",
-"out": "409467e8bbc5"
+"out": "409467e8bbc5",
+"radky": {
+"e19a5c431a05": "March–April 2027"
+}
 },
 "content/web/zahrada.json|en|kroky.7.co": {
 "cs": "bcb14075b7f2",
-"out": "9fd68d69d989"
+"out": "9fd68d69d989",
+"radky": {
+"bcb14075b7f2": "Concrete foundations under all four beds"
+}
 },
 "content/web/zahrada.json|en|kroky.7.kdy": {
 "cs": "a8bc5dd71091",
-"out": "570145aa538c"
+"out": "570145aa538c",
+"radky": {
+"a8bc5dd71091": "April 2027"
+}
 },
 "content/web/zahrada.json|en|kroky.8.co": {
 "cs": "714cfdcb9290",
-"out": "b884c24d13a1"
+"out": "b884c24d13a1",
+"radky": {
+"714cfdcb9290": "Stone walls of the beds"
+}
 },
 "content/web/zahrada.json|en|kroky.8.kdy": {
 "cs": "6b74e8f8abf4",
-"out": "6ba8e98cb0ce"
+"out": "6ba8e98cb0ce",
+"radky": {
+"6b74e8f8abf4": "April–May 2027"
+}
 },
 "content/web/zahrada.json|en|kroky.9.co": {
 "cs": "e55c980c71c8",
-"out": "ee5233a9e2e7"
+"out": "ee5233a9e2e7",
+"radky": {
+"e55c980c71c8": "Soil, planting, linden tree, play features, gravel paths"
+}
 },
 "content/web/zahrada.json|en|kroky.9.kdy": {
 "cs": "fdf13709b9a2",
-"out": "a347e4f0d764"
+"out": "a347e4f0d764",
+"radky": {
+"fdf13709b9a2": "summer 2027"
+}
 }
 }
