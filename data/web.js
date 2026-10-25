@@ -828,7 +828,8 @@ window.L10N={
    "2026-12-13": {
     "title": "Christmas get-together with mulled wine",
     "when": "Sunday",
-    "short": "The traditional end of the season in the courtyard with mulled wine."
+    "short": "The traditional end of the season in the courtyard with mulled wine.",
+    "html": "test"
    }
   },
   "web": {
@@ -1722,7 +1723,8 @@ window.L10N={
    "2026-12-13": {
     "title": "Weihnachtstreffen mit Glühwein",
     "when": "Sonntag",
-    "short": "Der traditionelle Saisonabschluss im Schlosshof mit Glühwein."
+    "short": "Der traditionelle Saisonabschluss im Schlosshof mit Glühwein.",
+    "html": "Test"
    }
   },
   "web": {
