@@ -12,7 +12,7 @@ PREKLAD_TEST=1 místo DeepL jen připíše před text [en]/[de] (pro zkoušku).
 Položka s vypnutým "prelozit" (zaškrtávátko v administraci) se do DeepL neposílá.
 Po překladu zapíše zbývající kredit DeepL do nápovědy toho zaškrtávátka v admin/config.yml.
 """
-import glob, html, json, os, re, sys, time, urllib.parse, urllib.request
+import glob, hashlib, html, json, os, re, sys, time, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LANGS = {'en': 'EN-GB', 'de': 'DE'}
@@ -159,21 +159,50 @@ def klic_polozky(f, item):
     return k or None
 
 
-def dopln(fields, cs, tr, l, p, cesta):
-    """Doplní do slovníku tr (překlad jednoho jazyka) chybějící pole podle češtiny cs."""
+def h(v):
+    return hashlib.sha1(json.dumps(v, ensure_ascii=False).encode()).hexdigest()[:12]
+
+
+def dopln(fields, cs, tr, l, p, cesta, stav, pref=''):
+    """Doplní do slovníku tr (překlad jednoho jazyka) chybějící pole podle češtiny cs.
+
+    stav (content/preklad-stav.json) si u každého přeloženého pole pamatuje otisk češtiny
+    a překladu. Když se změní čeština a překlad je pořád strojový (nikdo ho neupravil),
+    přeloží se znovu. Ručně upravený překlad se nepřepisuje nikdy; o nový překlad
+    se dá požádat vymazáním pole v EN/DE.
+    """
     for f in fields:
         k, mode = f['name'], i18n(f)
         if not mode or cs.get(k) in EMPTY:
             continue
         v = cs[k]
         if mode == 'duplicate':
-            if tr.get(k) in EMPTY:
-                tr[k] = v
+            tr[k] = v
             continue
         w = f.get('widget', 'string')
         if w in ('string', 'text', 'markdown') and isinstance(v, str):
-            if tr.get(k) in EMPTY:
-                p.pridej(l, v, w == 'markdown', lambda x, tr=tr, k=k: tr.__setitem__(k, x))
+            klic = '%s|%s|%s%s' % (cesta, l, pref, k)
+            z = stav.get(klic)
+            t = tr.get(k)
+            if t in EMPTY:
+                prelozit = True
+            elif z is None:  # pole přeložené dřív, než se stav začal vést: vezme se, jak je
+                stav[klic] = {'cs': h(v), 'out': h(t)}
+                prelozit = False
+            elif h(t) != z['out']:  # někdo překlad upravil ručně
+                stav[klic] = {'cs': h(v), 'out': h(t), 'rucne': True}
+                prelozit = False
+            elif h(v) != z['cs'] and not z.get('rucne'):  # změnila se čeština
+                prelozit = True
+            else:
+                if h(v) != z['cs']:
+                    z['cs'] = h(v)
+                prelozit = False
+            if prelozit:
+                def nastav(x, tr=tr, k=k, klic=klic, v=v):
+                    tr[k] = x
+                    stav[klic] = {'cs': h(v), 'out': h(x)}
+                p.pridej(l, v, w == 'markdown', nastav)
         elif w == 'list' and isinstance(v, list):
             cil = tr.get(k)
             if not isinstance(cil, list) or len(cil) != len(v):
@@ -183,8 +212,7 @@ def dopln(fields, cs, tr, l, p, cesta):
                 cil = tr[k] = [stare.get(klic_polozky(f, x)) for x in v]
             for i, item in enumerate(v):
                 if 'field' in f or not isinstance(item, dict):
-                    if cil[i] in EMPTY:
-                        cil[i] = item  # seznam fotek apod., nepřekládá se
+                    cil[i] = item  # seznam fotek apod., nepřekládá se
                     continue
                 if not isinstance(cil[i], dict):
                     cil[i] = {}
@@ -194,7 +222,7 @@ def dopln(fields, cs, tr, l, p, cesta):
                     sub = typ.get('fields', []) if typ else []
                     cil[i]['type'] = item.get('type')
                 dopln([dict(s, i18n=s.get('i18n', 'duplicate')) for s in sub or []],
-                      item, cil[i], l, p, cesta)
+                      item, cil[i], l, p, cesta, stav, '%s%s.%d.' % (pref, k, i))
         elif tr.get(k) in EMPTY:
             tr[k] = v
 
@@ -205,19 +233,23 @@ def main():
     if not klic and not test:
         print('překlad: chybí DEEPL_KEY, nic nepřekládám')
         return
+    stav_cesta = os.path.join(ROOT, 'content', 'preklad-stav.json')
+    stav = json.load(open(stav_cesta, encoding='utf-8')) if os.path.exists(stav_cesta) else {}
+    stav_pred = json.dumps(stav, sort_keys=True)
     p, zmeny = Preklad(), []
     for cesta, fields in soubory(config()):
         if not os.path.exists(cesta):
             continue
-        d = json.load(open(cesta, encoding='utf-8'))
+        surovy = open(cesta, encoding='utf-8').read()
+        d = json.loads(surovy)
         cs = {k: v for k, v in d.items() if k not in LANGS}
         pred = json.dumps(d, sort_keys=True)
         sber = Nic() if cs.get('prelozit') is False else p
         for l in LANGS:
             tr = d.get(l) if isinstance(d.get(l), dict) else {}
-            dopln(fields, cs, tr, l, sber, cesta)
+            dopln(fields, cs, tr, l, sber, os.path.relpath(cesta, ROOT), stav)
             d[l] = tr
-        zmeny.append((cesta, d, pred))
+        zmeny.append((cesta, d, pred, 1 if surovy.startswith('{\n "') else 2))
     n = p.pocet()
     if n:
         try:
@@ -226,13 +258,15 @@ def main():
             print('překlad: DeepL selhal (%s), texty zůstanou česky a přeloží se příště' % e)
             return
     ulozeno = 0
-    for cesta, d, pred in zmeny:
+    for cesta, d, pred, odsazeni in zmeny:
         for l in LANGS:
             if d.get(l) in EMPTY:
                 d.pop(l, None)
         if json.dumps(d, sort_keys=True) != pred:
-            open(cesta, 'w', encoding='utf-8').write(json.dumps(d, ensure_ascii=False, indent=2) + '\n')
+            open(cesta, 'w', encoding='utf-8').write(json.dumps(d, ensure_ascii=False, indent=odsazeni) + '\n')
             ulozeno += 1
+    if json.dumps(stav, sort_keys=True) != stav_pred:
+        open(stav_cesta, 'w', encoding='utf-8').write(json.dumps(stav, ensure_ascii=False, indent=0, sort_keys=True) + '\n')
     print('překlad: %d textů, upraveno %d souborů' % (n, ulozeno))
     if klic and not test:
         try:
