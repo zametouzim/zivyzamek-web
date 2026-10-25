@@ -1,0 +1,30 @@
+{
+  "lang": [
+    "cs",
+    "en",
+    "de"
+  ],
+  "title": "Poznej&Pomoz",
+  "date": "2026-11-01",
+  "end": "",
+  "when": "neděle 9-16",
+  "short": "Brigáda na zámku Toužim",
+  "text": "Pomozte nám připravit terén na dětskou hrací zónu a zazimovat hrad. Podpořit nás můžete i pečenou dobrotou! Pro pracanty občerstvení zajištěno.",
+  "prelozit": true,
+  "poster": "/img/plakaty/Poznej&Pomoc.jpg",
+  "photos": [],
+  "tag": "Pro všechny",
+  "titleTodo": false,
+  "en": {
+    "title": "Discover & Help",
+    "when": "Sunday 9am–4pm",
+    "short": "Part-time job at Toužim Castle",
+    "text": "Please help us prepare the site for the children’s play area and winterise the castle. You can also support us by bringing along some home-baked treats! Refreshments will be provided for those helping out."
+  },
+  "de": {
+    "title": "Entdecke & Hilf",
+    "when": "Sonntag 9–16 Uhr",
+    "short": "Aushilfsjob auf dem Schloss Toužim",
+    "text": "Helft uns dabei, den Platz für den Kinderspielbereich vorzubereiten und die Burg winterfest zu machen. Ihr könnt uns auch mit selbstgebackenen Leckereien unterstützen! Für die Helfer ist für Verpflegung gesorgt."
+  }
+}
