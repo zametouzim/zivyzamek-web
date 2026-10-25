@@ -102,7 +102,7 @@ window.DEMO_CONFIG={
      "widget": "boolean",
      "required": false,
      "default": true,
-     "hint": "Po uložení doplní chybějící angličtinu a němčinu (DeepL). Když je vypnuté, překlad se neudělá a EN/DE můžete napsat sami. Ruční překlady se nikdy nepřepisují."
+     "hint": "Po uložení doplní chybějící angličtinu a němčinu (DeepL). Když je vypnuté, překlad se neudělá a EN/DE můžete napsat sami. Ruční překlady se nikdy nepřepisují. Kredit DeepL: Zbývá 999 992 z 1 000 000 znaků (stav 25. 10. 2026)."
     },
     {
      "label": "Plakát",
@@ -704,7 +704,7 @@ window.DEMO_CONFIG={
      "widget": "boolean",
      "required": false,
      "default": true,
-     "hint": "Po uložení doplní chybějící angličtinu a němčinu (DeepL). Když je vypnuté, překlad se neudělá a EN/DE můžete napsat sami. Ruční překlady se nikdy nepřepisují."
+     "hint": "Po uložení doplní chybějící angličtinu a němčinu (DeepL). Když je vypnuté, překlad se neudělá a EN/DE můžete napsat sami. Ruční překlady se nikdy nepřepisují. Kredit DeepL: Zbývá 999 992 z 1 000 000 znaků (stav 25. 10. 2026)."
     }
    ],
    "editor": {
