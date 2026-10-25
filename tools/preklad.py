@@ -8,8 +8,11 @@ přeložené není (prázdné nebo chybějící pole pod klíči "en" a "de"), t
 
 Klíč DeepL je v proměnné DEEPL_KEY (GitHub secret). Bez klíče nedělá nic.
 PREKLAD_TEST=1 místo DeepL jen připíše před text [en]/[de] (pro zkoušku).
+
+Položka s vypnutým "prelozit" (zaškrtávátko v administraci) se do DeepL neposílá.
+Po překladu zapíše zbývající kredit DeepL do nápovědy toho zaškrtávátka v admin/config.yml.
 """
-import glob, html, json, os, re, sys, urllib.parse, urllib.request
+import glob, html, json, os, re, sys, time, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LANGS = {'en': 'EN-GB', 'de': 'DE'}
@@ -80,6 +83,48 @@ def deepl(texty, cil, klic):
         return [x['text'] for x in json.load(r)['translations']]
 
 
+class Nic:
+    """Sběrač pro položky s vypnutým automatickým překladem: nic nepřekládá."""
+
+    def pridej(self, *a):
+        pass
+
+
+def zbyva(klic):
+    """(použito, limit) znaků podle DeepL, nebo None."""
+    url = 'https://api-free.deepl.com/v2/usage' if klic.endswith(':fx') else 'https://api.deepl.com/v2/usage'
+    req = urllib.request.Request(url, headers={'Authorization': 'DeepL-Auth-Key ' + klic})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        u = json.load(r)
+    if 'character_count' in u and u.get('character_limit'):
+        return u['character_count'], u['character_limit']
+    return None
+
+
+def cislo(n):
+    return '{:,}'.format(n).replace(',', '\u00a0')
+
+
+def zapis_kredit(pouzito, limit):
+    """Zbývající kredit do nápovědy pole "prelozit" v admin/config.yml (jen když se změnil)."""
+    cesta = os.path.join(ROOT, 'admin', 'config.yml')
+    s = open(cesta, encoding='utf-8').read()
+    i = s.index('{')
+    cfg = json.loads(s[i:])
+    stav = 'Zbývá %s z %s znaků' % (cislo(limit - pouzito), cislo(limit))
+    zmena = False
+    for col in cfg['collections']:
+        for f in col.get('fields', []):
+            if f.get('name') == 'prelozit':
+                zaklad = f.get('hint', '').split(' Kredit DeepL: ')[0]
+                if stav not in f.get('hint', ''):
+                    f['hint'] = '%s Kredit DeepL: %s (stav %s).' % (zaklad, stav, time.strftime('%-d. %-m. %Y'))
+                    zmena = True
+    if zmena:
+        open(cesta, 'w', encoding='utf-8').write(s[:i] + json.dumps(cfg, ensure_ascii=False, indent=1) + '\n')
+    print('překlad: kredit DeepL %s' % stav)
+
+
 def i18n(f):
     v = f.get('i18n', False)
     return 'duplicate' if v == 'duplicate' else bool(v)
@@ -146,9 +191,10 @@ def main():
         d = json.load(open(cesta, encoding='utf-8'))
         cs = {k: v for k, v in d.items() if k not in LANGS}
         pred = json.dumps(d, sort_keys=True)
+        sber = Nic() if cs.get('prelozit') is False else p
         for l in LANGS:
             tr = d.get(l) if isinstance(d.get(l), dict) else {}
-            dopln(fields, cs, tr, l, p, cesta)
+            dopln(fields, cs, tr, l, sber, cesta)
             d[l] = tr
         zmeny.append((cesta, d, pred))
     n = p.pocet()
@@ -167,6 +213,13 @@ def main():
             open(cesta, 'w', encoding='utf-8').write(json.dumps(d, ensure_ascii=False, indent=2) + '\n')
             ulozeno += 1
     print('překlad: %d textů, upraveno %d souborů' % (n, ulozeno))
+    if klic and not test:
+        try:
+            u = zbyva(klic)
+            if u:
+                zapis_kredit(*u)
+        except Exception as e:
+            print('překlad: stav kreditu DeepL nezjištěn (%s)' % e)
 
 
 if __name__ == '__main__':

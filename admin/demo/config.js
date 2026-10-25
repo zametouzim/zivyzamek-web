@@ -97,6 +97,14 @@ window.DEMO_CONFIG={
      "i18n": true
     },
     {
+     "label": "Přeložit automaticky do EN/DE",
+     "name": "prelozit",
+     "widget": "boolean",
+     "required": false,
+     "default": true,
+     "hint": "Po uložení doplní chybějící angličtinu a němčinu (DeepL). Když je vypnuté, překlad se neudělá a EN/DE můžete napsat sami. Ruční překlady se nikdy nepřepisují."
+    },
+    {
      "label": "Plakát",
      "name": "poster",
      "widget": "image",
@@ -689,6 +697,14 @@ window.DEMO_CONFIG={
       }
      ],
      "i18n": true
+    },
+    {
+     "label": "Přeložit automaticky do EN/DE",
+     "name": "prelozit",
+     "widget": "boolean",
+     "required": false,
+     "default": true,
+     "hint": "Po uložení doplní chybějící angličtinu a němčinu (DeepL). Když je vypnuté, překlad se neudělá a EN/DE můžete napsat sami. Ruční překlady se nikdy nepřepisují."
     }
    ],
    "editor": {
