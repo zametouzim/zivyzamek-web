@@ -356,7 +356,10 @@
   "Instagram": "Instagram",
   "<a class=\"btn\" href=\"#program\">Celý program akcí</a>": "<a class=\"btn\" href=\"#program\">Full programme of events</a>",
   "18. 10. 2026: odkrývání horní hradební zdi": "18 October 2026: uncovering the upper fortification wall",
-  "18. 10. 2026: odkrytá horní hradební zeď": "18 October 2026: the upper fortification wall uncovered"
+  "18. 10. 2026: odkrytá horní hradební zeď": "18 October 2026: the upper fortification wall uncovered",
+  "Horní hradební zeď": "The upper fortification wall",
+  "V říjnu 2026 jsme odkryli část horní hradební zdi. Jde o jinou zeď než nález z března. Do plánu z archeologického průzkumu z roku 1974 jsme ji zakreslili oranžově, červeně je část odkrytá už v roce 1974.": "In October 2026 we uncovered part of the upper fortification wall. It is a different wall from the one found in March. We have marked it in orange on the plan from the 1974 archaeological survey; the part shown in red was already uncovered in 1974.",
+  "Plán průzkumu z roku 1974: oranžově odkryté 2026, červeně odkryté 1974": "Plan of the 1974 survey: orange uncovered in 2026, red uncovered in 1974"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, home",
@@ -424,8 +427,9 @@
   "Dobrovolníci na podzimní brigádě v areálu zámku": "Volunteers on an autumn work day at the castle",
   "Dobrovolníci na brigádě Poznej & pomoz, září 2026": "Volunteers at the Poznej & pomoz (Discover & Help) work day, September 2026",
   "Posezení u ohně po podzimní brigádě, říjen 2025": "Sitting by the fire after the autumn work day, October 2025",
-  "Rozkopaná plocha s trakaři a nářadím pod zdí Horního zámku se zazděnými oblouky": "Dug-up ground with wheelbarrows and tools below the wall of the Upper Castle with its bricked-up arches",
-  "Odkrytý kamenný základ zdi s měřítkem v rozkopané hlíně": "Uncovered stone footing of the wall with a measuring scale in the dug-up soil"
+  "Odkrytý kamenný základ zdi s měřítkem v rozkopané hlíně": "Uncovered stone footing of the wall with a measuring scale in the dug-up soil",
+  "Plán archeologického průzkumu z roku 1974 s oranžově vyznačenou částí zdi odkrytou v roce 2026 a červeně částí odkrytou v roce 1974": "Plan of the 1974 archaeological survey with the part of the wall uncovered in 2026 marked in orange and the part uncovered in 1974 in red",
+  "Rozkopaná plocha s trakaři a nářadím pod zdí se zazděnými oblouky": "Dug-up ground with wheelbarrows and tools below a wall with bricked-up arches"
  },
  "js": {
   "Akce nenalezena.": "Event not found.",

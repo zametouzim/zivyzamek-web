@@ -356,7 +356,10 @@
   "Instagram": "Instagram",
   "<a class=\"btn\" href=\"#program\">Celý program akcí</a>": "<a class=\"btn\" href=\"#program\">Das ganze Veranstaltungsprogramm</a>",
   "18. 10. 2026: odkrývání horní hradební zdi": "18. 10. 2026: Freilegung der oberen Befestigungsmauer",
-  "18. 10. 2026: odkrytá horní hradební zeď": "18. 10. 2026: die freigelegte obere Befestigungsmauer"
+  "18. 10. 2026: odkrytá horní hradební zeď": "18. 10. 2026: die freigelegte obere Befestigungsmauer",
+  "Horní hradební zeď": "Die obere Befestigungsmauer",
+  "V říjnu 2026 jsme odkryli část horní hradební zdi. Jde o jinou zeď než nález z března. Do plánu z archeologického průzkumu z roku 1974 jsme ji zakreslili oranžově, červeně je část odkrytá už v roce 1974.": "Im Oktober 2026 haben wir einen Teil der oberen Befestigungsmauer freigelegt. Es ist eine andere Mauer als der Fund vom März. Im Plan der archäologischen Untersuchung von 1974 haben wir sie orange eingezeichnet, rot ist der Teil, der bereits 1974 freigelegt wurde.",
+  "Plán průzkumu z roku 1974: oranžově odkryté 2026, červeně odkryté 1974": "Plan der Untersuchung von 1974: orange 2026 freigelegt, rot 1974 freigelegt"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, Startseite",
@@ -424,8 +427,9 @@
   "Dobrovolníci na podzimní brigádě v areálu zámku": "Freiwillige bei einem Herbsteinsatz auf dem Schlossgelände",
   "Dobrovolníci na brigádě Poznej & pomoz, září 2026": "Freiwillige beim Arbeitseinsatz Poznej & pomoz (Entdecke & hilf), September 2026",
   "Posezení u ohně po podzimní brigádě, říjen 2025": "Am Feuer nach dem Herbsteinsatz, Oktober 2025",
-  "Rozkopaná plocha s trakaři a nářadím pod zdí Horního zámku se zazděnými oblouky": "Aufgegrabene Fläche mit Schubkarren und Werkzeug unter der Mauer des Oberen Schlosses mit zugemauerten Bögen",
-  "Odkrytý kamenný základ zdi s měřítkem v rozkopané hlíně": "Freigelegtes steinernes Mauerfundament mit Messstab in der aufgegrabenen Erde"
+  "Odkrytý kamenný základ zdi s měřítkem v rozkopané hlíně": "Freigelegtes steinernes Mauerfundament mit Messstab in der aufgegrabenen Erde",
+  "Plán archeologického průzkumu z roku 1974 s oranžově vyznačenou částí zdi odkrytou v roce 2026 a červeně částí odkrytou v roce 1974": "Plan der archäologischen Untersuchung von 1974, orange der 2026 freigelegte Mauerteil, rot der 1974 freigelegte",
+  "Rozkopaná plocha s trakaři a nářadím pod zdí se zazděnými oblouky": "Aufgegrabene Fläche mit Schubkarren und Werkzeug unter einer Mauer mit zugemauerten Bögen"
  },
  "js": {
   "Akce nenalezena.": "Veranstaltung nicht gefunden.",
