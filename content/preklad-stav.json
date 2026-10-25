@@ -3939,10 +3939,10 @@
 }
 },
 "content/akce/2026-11-01-poznej-pomoz.json|de|when": {
-"cs": "e2c31f017fa8",
-"out": "4f89bedb744e",
+"cs": "cd056a5890e0",
+"out": "3d9d92f22a9f",
 "radky": {
-"e2c31f017fa8": "9–16"
+"cd056a5890e0": "Sonntag 9–16 Uhr"
 }
 },
 "content/akce/2026-11-01-poznej-pomoz.json|en|short": {
@@ -3967,10 +3967,10 @@
 }
 },
 "content/akce/2026-11-01-poznej-pomoz.json|en|when": {
-"cs": "e2c31f017fa8",
-"out": "4f89bedb744e",
+"cs": "cd056a5890e0",
+"out": "c6b2658379f7",
 "radky": {
-"e2c31f017fa8": "9–16"
+"cd056a5890e0": "Sunday 9am–4pm"
 }
 },
 "content/akce/2026-12-13.json|de|short": {
