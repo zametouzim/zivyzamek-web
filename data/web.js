@@ -817,7 +817,7 @@ window.L10N={
     "title": "Children’s work party: raking leaves",
     "when": "Sunday · 14:00",
     "short": "Children rake a big pile of leaves to jump into from the stage at Halloween. Rakes are provided.",
-    "html": "A special work party for children. Do you want that great pile of leaves again, the one you can jump into from the stage at Halloween? Come and rake it! Meet at 14:00 at the castle gate. Rakes are ready and a small surprise awaits everyone who helps."
+    "html": "A big thank you to everyone who came to rake leaves today and tamed them even in that wind 🍁💪🍃 Despite the damp, chilly weather, our small band of good souls had a lovely time at the castle 🏰🍁 Take a look!"
    },
    "2026-10-31": {
     "title": "Halloween at the castle",
@@ -1718,7 +1718,7 @@ window.L10N={
     "title": "Kindereinsatz: Laub rechen",
     "when": "Sonntag · 14:00",
     "short": "Kinder rechen einen großen Laubhaufen, in den man an Halloween von der Bühne springt. Rechen sind vorhanden.",
-    "html": "Ein besonderer Arbeitseinsatz für Kinder. Wollt ihr wieder den tollen Laubhaufen, in den man an Halloween von der Bühne springen kann? Kommt und recht ihn zusammen! Treffpunkt um 14:00 am Schlosstor, Rechen sind vorbereitet und auf alle Helfer wartet eine kleine Überraschung."
+    "html": "Vielen Dank an alle, die heute zum Laubrechen gekommen sind und es sogar bei diesem Wind gebändigt haben 🍁💪🍃 Trotz des nasskalten Wetters hatten die paar guten Seelen eine schöne Zeit auf dem Schloss 🏰🍁 Schaut mal!"
    },
    "2026-10-31": {
     "title": "Halloween auf dem Schloss",
