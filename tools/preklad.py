@@ -82,12 +82,15 @@ def zabal(text, markdown):
     t = html.escape(text, quote=False)
     if markdown:
         t = re.sub(r'\]\(([^)\s]+)\)', lambda m: ']<k>(%s)</k>' % m.group(1), t)
+    # časy (14:00, 9:30) DeepL nepřevádí na „2.00 pm“, aby byl program jednotný
+    t = re.sub(r'(?<![\d:])(\d{1,2}:\d{2})(?![\d:])', r'<k>\1</k>', t)
     return t.replace('\n', '<br/>')
 
 
 def rozbal(text, markdown):
     t = re.sub(r'\s*<br\s*/>\s?', '\n', text)
     t = re.sub(r'\]\s*<k>(.*?)</k>', r']\1', t)
+    t = re.sub(r'<k>(.*?)</k>', r'\1', t)
     return html.unescape(t)
 
 
