@@ -182,6 +182,16 @@ window.WEB={
     "src": "img/zahrada-IMG_6108.jpg",
     "popisek": "Hotová plocha u hradeb",
     "popis": "Upravená plocha u hradeb"
+   },
+   {
+    "src": "img/zahrada-IMG_6105.jpg",
+    "popisek": "27. 9. 2026: prosévání zeminy",
+    "popis": "Dobrovolník hází lopatou zeminu na prosévací síto"
+   },
+   {
+    "src": "img/zahrada-IMG_6268.jpg",
+    "popisek": "17. 10. 2026: Zámecké CITO",
+    "popis": "Dobrovolníci pracují v hlíně mezi minibagrem, dumperem a hradbou"
    }
   ]
  },
@@ -1021,6 +1031,16 @@ window.L10N={
       "src": "img/zahrada-IMG_6108.jpg",
       "popisek": "Finished area by the walls",
       "popis": "Levelled area by the town walls"
+     },
+     {
+      "src": "img/zahrada-IMG_6105.jpg",
+      "popisek": "27 September 2026: sieving soil",
+      "popis": "A volunteer shovels soil onto a screening sieve"
+     },
+     {
+      "src": "img/zahrada-IMG_6268.jpg",
+      "popisek": "17 October 2026: Castle CITO",
+      "popis": "Volunteers working in the soil between a mini excavator, a dumper and the wall"
      }
     ]
    },
@@ -1142,6 +1162,11 @@ window.L10N={
      "src": "img/akce/2026-07-10-2.jpg",
      "alt": "Audience on benches under the trees in the courtyard",
      "cap": "Music evening with Milan Pitkin and František Nedvěd, 10 Jul 2026"
+    },
+    {
+     "src": "img/h-2026-ohen.jpg",
+     "alt": "Volunteers by the fire at the castle in the evening",
+     "cap": "Evening by the fire after the Discover & Help work party, 26 September 2026"
     }
    ],
    "stranky": []
@@ -1922,6 +1947,16 @@ window.L10N={
       "src": "img/zahrada-IMG_6108.jpg",
       "popisek": "Fertige Fläche an der Mauer",
       "popis": "Eingeebnete Fläche an der Stadtmauer"
+     },
+     {
+      "src": "img/zahrada-IMG_6105.jpg",
+      "popisek": "27. 9. 2026: Erde sieben",
+      "popis": "Ein Freiwilliger schaufelt Erde auf ein Sieb"
+     },
+     {
+      "src": "img/zahrada-IMG_6268.jpg",
+      "popisek": "17. 10. 2026: Schloss-CITO",
+      "popis": "Freiwillige arbeiten in der Erde zwischen Minibagger, Dumper und Mauer"
      }
     ]
    },
@@ -2043,6 +2078,11 @@ window.L10N={
      "src": "img/akce/2026-07-10-2.jpg",
      "alt": "Publikum auf Bänken unter den Bäumen im Schlosshof",
      "cap": "Musikabend mit Milan Pitkin und František Nedvěd, 10. 7. 2026"
+    },
+    {
+     "src": "img/h-2026-ohen.jpg",
+     "alt": "Freiwillige abends am Feuer auf dem Schlossgelände",
+     "cap": "Abend am Feuer nach dem Arbeitseinsatz „Kennenlernen & helfen“, 26. 9. 2026"
     }
    ],
    "stranky": []

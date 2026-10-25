@@ -59,6 +59,11 @@
       "src": "img/akce/2026-07-10-2.jpg",
       "alt": "Diváci na lavicích pod stromy na nádvoří",
       "cap": "Hudební večer s Milanem Pitkinem a Františkem Nedvědem, 10. 7. 2026"
+    },
+    {
+      "src": "img/h-2026-ohen.jpg",
+      "alt": "Dobrovolníci večer u ohně v areálu zámku",
+      "cap": "Večer u ohně po brigádě Poznej & pomoz, 26. 9. 2026"
     }
   ],
   "roky": [
@@ -156,6 +161,11 @@
         "src": "img/akce/2026-07-10-2.jpg",
         "alt": "Audience on benches under the trees in the courtyard",
         "cap": "Music evening with Milan Pitkin and František Nedvěd, 10 Jul 2026"
+      },
+      {
+        "src": "img/h-2026-ohen.jpg",
+        "alt": "Volunteers by the fire at the castle in the evening",
+        "cap": "Evening by the fire after the Discover & Help work party, 26 September 2026"
       }
     ]
   },
@@ -220,6 +230,11 @@
         "src": "img/akce/2026-07-10-2.jpg",
         "alt": "Publikum auf Bänken unter den Bäumen im Schlosshof",
         "cap": "Musikabend mit Milan Pitkin und František Nedvěd, 10. 7. 2026"
+      },
+      {
+        "src": "img/h-2026-ohen.jpg",
+        "alt": "Freiwillige abends am Feuer auf dem Schlossgelände",
+        "cap": "Abend am Feuer nach dem Arbeitseinsatz „Kennenlernen & helfen“, 26. 9. 2026"
       }
     ]
   }

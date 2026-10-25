@@ -60,6 +60,11 @@ window.HERO=[
   "src": "img/akce/2026-07-10-2.jpg",
   "alt": "Diváci na lavicích pod stromy na nádvoří",
   "cap": "Hudební večer s Milanem Pitkinem a Františkem Nedvědem, 10. 7. 2026"
+ },
+ {
+  "src": "img/h-2026-ohen.jpg",
+  "alt": "Dobrovolníci večer u ohně v areálu zámku",
+  "cap": "Večer u ohně po brigádě Poznej & pomoz, 26. 9. 2026"
  }
 ];
 window.AKCE=[

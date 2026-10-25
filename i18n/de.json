@@ -359,7 +359,9 @@
   "18. 10. 2026: odkrytá horní hradební zeď": "18. 10. 2026: die freigelegte obere Befestigungsmauer",
   "Horní hradební zeď": "Die obere Befestigungsmauer",
   "V říjnu 2026 jsme odkryli část horní hradební zdi. Jde o jinou zeď než nález z března. Do plánu z archeologického průzkumu z roku 1974 jsme ji zakreslili oranžově, červeně je část odkrytá už v roce 1974.": "Im Oktober 2026 haben wir einen Teil der oberen Befestigungsmauer freigelegt. Es ist eine andere Mauer als der Fund vom März. Im Plan der archäologischen Untersuchung von 1974 haben wir sie orange eingezeichnet, rot ist der Teil, der bereits 1974 freigelegt wurde.",
-  "Plán průzkumu z roku 1974: oranžově odkryté 2026, červeně odkryté 1974": "Plan der Untersuchung von 1974: orange 2026 freigelegt, rot 1974 freigelegt"
+  "Plán průzkumu z roku 1974: oranžově odkryté 2026, červeně odkryté 1974": "Plan der Untersuchung von 1974: orange 2026 freigelegt, rot 1974 freigelegt",
+  "17. 10. 2026: pohled podél zdi": "17. 10. 2026: Blick entlang der Mauer",
+  "17. 10. 2026: zeď vedle zakryté plochy": "17. 10. 2026: die Mauer neben der abgedeckten Fläche"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, Startseite",
@@ -429,7 +431,9 @@
   "Posezení u ohně po podzimní brigádě, říjen 2025": "Am Feuer nach dem Herbsteinsatz, Oktober 2025",
   "Odkrytý kamenný základ zdi s měřítkem v rozkopané hlíně": "Freigelegtes steinernes Mauerfundament mit Messstab in der aufgegrabenen Erde",
   "Plán archeologického průzkumu z roku 1974 s oranžově vyznačenou částí zdi odkrytou v roce 2026 a červeně částí odkrytou v roce 1974": "Plan der archäologischen Untersuchung von 1974, orange der 2026 freigelegte Mauerteil, rot der 1974 freigelegte",
-  "Rozkopaná plocha s trakaři a nářadím pod zdí se zazděnými oblouky": "Aufgegrabene Fläche mit Schubkarren und Werkzeug unter einer Mauer mit zugemauerten Bögen"
+  "Rozkopaná plocha s trakaři a nářadím pod zdí se zazděnými oblouky": "Aufgegrabene Fläche mit Schubkarren und Werkzeug unter einer Mauer mit zugemauerten Bögen",
+  "Kamenná koruna zdi vede k věžovité budově, vedle zakrytá plocha černou fólií": "Die steinerne Mauerkrone führt zu einem turmartigen Gebäude, daneben eine mit schwarzer Folie abgedeckte Fläche",
+  "Odkrytá zeď mezi černou fólií a svahem, v pozadí zámecká budova": "Die freigelegte Mauer zwischen schwarzer Folie und einem Hang, im Hintergrund ein Schlossgebäude"
  },
  "js": {
   "Akce nenalezena.": "Veranstaltung nicht gefunden.",
