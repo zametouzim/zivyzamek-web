@@ -46,7 +46,10 @@
      "label": "Název akce",
      "name": "title",
      "widget": "string",
-     "i18n": true
+     "i18n": true,
+     "required": [
+      "cs"
+     ]
     },
     {
      "label": "Datum",
@@ -173,7 +176,10 @@
        "label": "Sezóna (text do patičky)",
        "name": "sezona",
        "widget": "string",
-       "i18n": true
+       "i18n": true,
+       "required": [
+        "cs"
+       ]
       },
       {
        "label": "Sezóna od měsíce",
@@ -195,25 +201,37 @@
        "label": "Vstup do zámku: kdy",
        "name": "vstup_cas",
        "widget": "string",
-       "i18n": true
+       "i18n": true,
+       "required": [
+        "cs"
+       ]
       },
       {
        "label": "Vstup do zámku: cena",
        "name": "vstup_cena",
        "widget": "string",
-       "i18n": true
+       "i18n": true,
+       "required": [
+        "cs"
+       ]
       },
       {
        "label": "Komentovaná prohlídka: kdy",
        "name": "prohlidka_cas",
        "widget": "string",
-       "i18n": true
+       "i18n": true,
+       "required": [
+        "cs"
+       ]
       },
       {
        "label": "Komentovaná prohlídka: cena",
        "name": "prohlidka_cena",
        "widget": "string",
-       "i18n": true
+       "i18n": true,
+       "required": [
+        "cs"
+       ]
       },
       {
        "label": "Mimo sezónu (anglická a německá stránka)",
@@ -239,7 +257,10 @@
          "label": "Funkce",
          "name": "funkce",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": [
+          "cs"
+         ]
         },
         {
          "label": "Telefon",
@@ -248,7 +269,10 @@
          "i18n": "duplicate"
         }
        ],
-       "i18n": true
+       "i18n": true,
+       "required": [
+        "cs"
+       ]
       },
       {
        "label": "E-mail",
@@ -281,7 +305,10 @@
        "label": "Úvodní text",
        "name": "uvod",
        "widget": "string",
-       "i18n": true
+       "i18n": true,
+       "required": [
+        "cs"
+       ]
       },
       {
        "label": "Položky",
@@ -293,19 +320,28 @@
          "label": "Název",
          "name": "nazev",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": [
+          "cs"
+         ]
         },
         {
          "label": "Popis",
          "name": "popis",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": [
+          "cs"
+         ]
         },
         {
          "label": "Cena",
          "name": "cena",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": [
+          "cs"
+         ]
         },
         {
          "label": "Fotka",
@@ -325,7 +361,10 @@
          "i18n": "duplicate"
         }
        ],
-       "i18n": true
+       "i18n": true,
+       "required": [
+        "cs"
+       ]
       },
       {
        "label": "Přeložit automaticky do EN/DE",
@@ -364,16 +403,25 @@
          "label": "Popis pro nevidomé",
          "name": "alt",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": [
+          "cs"
+         ]
         },
         {
          "label": "Popisek pod fotkou",
          "name": "cap",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": [
+          "cs"
+         ]
         }
        ],
-       "i18n": true
+       "i18n": true,
+       "required": [
+        "cs"
+       ]
       },
       {
        "label": "Plakáty sezón v archivu",
@@ -426,13 +474,19 @@
          "name": "kdy",
          "widget": "string",
          "hint": "Např. 10/2026 nebo jaro 2027",
-         "i18n": true
+         "i18n": true,
+         "required": [
+          "cs"
+         ]
         },
         {
          "label": "Co",
          "name": "co",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": [
+          "cs"
+         ]
         },
         {
          "label": "Stav",
@@ -447,7 +501,10 @@
          "i18n": "duplicate"
         }
        ],
-       "i18n": true
+       "i18n": true,
+       "required": [
+        "cs"
+       ]
       },
       {
        "label": "Fotky (Jak to šlo)",
@@ -480,7 +537,10 @@
          "i18n": true
         }
        ],
-       "i18n": true
+       "i18n": true,
+       "required": [
+        "cs"
+       ]
       },
       {
        "label": "Přeložit automaticky do EN/DE",
@@ -510,7 +570,10 @@
          "label": "Název",
          "name": "nazev",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": [
+          "cs"
+         ]
         },
         {
          "label": "Odkaz na jejich web",
@@ -540,7 +603,10 @@
          "i18n": true
         }
        ],
-       "i18n": true
+       "i18n": true,
+       "required": [
+        "cs"
+       ]
       },
       {
        "label": "Přeložit automaticky do EN/DE",
@@ -587,7 +653,10 @@
      "label": "Název stránky",
      "name": "nazev",
      "widget": "string",
-     "i18n": true
+     "i18n": true,
+     "required": [
+      "cs"
+     ]
     },
     {
      "label": "Text do menu",
@@ -644,7 +713,10 @@
          "label": "Nadpis",
          "name": "text",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": [
+          "cs"
+         ]
         }
        ]
       },
@@ -668,7 +740,10 @@
           "rich_text"
          ],
          "hint": "Nový odstavec = nový řádek.",
-         "i18n": true
+         "i18n": true,
+         "required": [
+          "cs"
+         ]
         }
        ]
       },
@@ -715,7 +790,10 @@
           "name": "src",
           "i18n": "duplicate"
          },
-         "i18n": true
+         "i18n": true,
+         "required": [
+          "cs"
+         ]
         }
        ]
       },
@@ -729,7 +807,10 @@
          "label": "Text tlačítka",
          "name": "text",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": [
+          "cs"
+         ]
         },
         {
          "label": "Kam vede",

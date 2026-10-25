@@ -42,7 +42,8 @@ window.DEMO_CONFIG={
      "label": "Název akce",
      "name": "title",
      "widget": "string",
-     "i18n": true
+     "i18n": true,
+     "required": true
     },
     {
      "label": "Datum",
@@ -169,7 +170,8 @@ window.DEMO_CONFIG={
        "label": "Sezóna (text do patičky)",
        "name": "sezona",
        "widget": "string",
-       "i18n": true
+       "i18n": true,
+       "required": true
       },
       {
        "label": "Sezóna od měsíce",
@@ -191,25 +193,29 @@ window.DEMO_CONFIG={
        "label": "Vstup do zámku: kdy",
        "name": "vstup_cas",
        "widget": "string",
-       "i18n": true
+       "i18n": true,
+       "required": true
       },
       {
        "label": "Vstup do zámku: cena",
        "name": "vstup_cena",
        "widget": "string",
-       "i18n": true
+       "i18n": true,
+       "required": true
       },
       {
        "label": "Komentovaná prohlídka: kdy",
        "name": "prohlidka_cas",
        "widget": "string",
-       "i18n": true
+       "i18n": true,
+       "required": true
       },
       {
        "label": "Komentovaná prohlídka: cena",
        "name": "prohlidka_cena",
        "widget": "string",
-       "i18n": true
+       "i18n": true,
+       "required": true
       },
       {
        "label": "Mimo sezónu (anglická a německá stránka)",
@@ -235,7 +241,8 @@ window.DEMO_CONFIG={
          "label": "Funkce",
          "name": "funkce",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": true
         },
         {
          "label": "Telefon",
@@ -244,7 +251,8 @@ window.DEMO_CONFIG={
          "i18n": "duplicate"
         }
        ],
-       "i18n": true
+       "i18n": true,
+       "required": true
       },
       {
        "label": "E-mail",
@@ -277,7 +285,8 @@ window.DEMO_CONFIG={
        "label": "Úvodní text",
        "name": "uvod",
        "widget": "string",
-       "i18n": true
+       "i18n": true,
+       "required": true
       },
       {
        "label": "Položky",
@@ -289,19 +298,22 @@ window.DEMO_CONFIG={
          "label": "Název",
          "name": "nazev",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": true
         },
         {
          "label": "Popis",
          "name": "popis",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": true
         },
         {
          "label": "Cena",
          "name": "cena",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": true
         },
         {
          "label": "Fotka",
@@ -321,7 +333,8 @@ window.DEMO_CONFIG={
          "i18n": "duplicate"
         }
        ],
-       "i18n": true
+       "i18n": true,
+       "required": true
       },
       {
        "label": "Přeložit automaticky do EN/DE",
@@ -360,16 +373,19 @@ window.DEMO_CONFIG={
          "label": "Popis pro nevidomé",
          "name": "alt",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": true
         },
         {
          "label": "Popisek pod fotkou",
          "name": "cap",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": true
         }
        ],
-       "i18n": true
+       "i18n": true,
+       "required": true
       },
       {
        "label": "Plakáty sezón v archivu",
@@ -422,13 +438,15 @@ window.DEMO_CONFIG={
          "name": "kdy",
          "widget": "string",
          "hint": "Např. 10/2026 nebo jaro 2027",
-         "i18n": true
+         "i18n": true,
+         "required": true
         },
         {
          "label": "Co",
          "name": "co",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": true
         },
         {
          "label": "Stav",
@@ -443,7 +461,8 @@ window.DEMO_CONFIG={
          "i18n": "duplicate"
         }
        ],
-       "i18n": true
+       "i18n": true,
+       "required": true
       },
       {
        "label": "Fotky (Jak to šlo)",
@@ -476,7 +495,8 @@ window.DEMO_CONFIG={
          "i18n": true
         }
        ],
-       "i18n": true
+       "i18n": true,
+       "required": true
       },
       {
        "label": "Přeložit automaticky do EN/DE",
@@ -506,7 +526,8 @@ window.DEMO_CONFIG={
          "label": "Název",
          "name": "nazev",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": true
         },
         {
          "label": "Odkaz na jejich web",
@@ -536,7 +557,8 @@ window.DEMO_CONFIG={
          "i18n": true
         }
        ],
-       "i18n": true
+       "i18n": true,
+       "required": true
       },
       {
        "label": "Přeložit automaticky do EN/DE",
@@ -582,7 +604,8 @@ window.DEMO_CONFIG={
      "label": "Název stránky",
      "name": "nazev",
      "widget": "string",
-     "i18n": true
+     "i18n": true,
+     "required": true
     },
     {
      "label": "Text do menu",
@@ -639,7 +662,8 @@ window.DEMO_CONFIG={
          "label": "Nadpis",
          "name": "text",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": true
         }
        ]
       },
@@ -663,7 +687,8 @@ window.DEMO_CONFIG={
           "rich_text"
          ],
          "hint": "Nový odstavec = nový řádek.",
-         "i18n": true
+         "i18n": true,
+         "required": true
         }
        ]
       },
@@ -710,7 +735,8 @@ window.DEMO_CONFIG={
           "name": "src",
           "i18n": "duplicate"
          },
-         "i18n": true
+         "i18n": true,
+         "required": true
         }
        ]
       },
@@ -724,7 +750,8 @@ window.DEMO_CONFIG={
          "label": "Text tlačítka",
          "name": "text",
          "widget": "string",
-         "i18n": true
+         "i18n": true,
+         "required": true
         },
         {
          "label": "Kam vede",

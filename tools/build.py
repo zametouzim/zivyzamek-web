@@ -263,6 +263,17 @@ def demo():
             d = sf.get('default') or {}
             c['sortable_fields'] = [dict({'field': f}, **({'default_sort': 'desc' if d.get('direction', '').lower() == 'descending' else 'asc'} if f == d.get('field') else {}))
                                     for f in sf['fields']]
+    # Sveltia: required ["cs"] = povinné jen česky; Decap zná jen true/false
+    def povinne(v):
+        if isinstance(v, dict):
+            if isinstance(v.get('required'), list):
+                v['required'] = True
+            for x in v.values():
+                povinne(x)
+        elif isinstance(v, list):
+            for x in v:
+                povinne(x)
+    povinne(cfg)
     cfg['load_config_file'] = False
     os.makedirs('admin/demo', exist_ok=True)
     with open('admin/demo/data.js', 'w', encoding='utf-8') as f:
