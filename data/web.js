@@ -222,14 +222,24 @@ window.WEB={
    "logo": "img/partneri/mas-kraj-zivych-vod.png"
   },
   {
-   "nazev": "Hospůdka U Havlů, Sokolovna Toužim",
-   "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
-   "logo": "img/partneri/u-havlu.png"
+   "nazev": "Kudyznudy.cz",
+   "odkaz": "https://www.kudyznudy.cz/",
+   "logo": "img/partneri/kudy-z-nudy.png"
+  },
+  {
+   "nazev": "Lesy ČR",
+   "odkaz": "https://lesycr.cz/",
+   "logo": "img/partneri/lesy-cr.png"
   },
   {
    "nazev": "Postřelí.cz",
    "odkaz": "https://www.postreli.cz/",
    "logo": "img/partneri/postreli.png"
+  },
+  {
+   "nazev": "Hospůdka U Havlů, Sokolovna Toužim",
+   "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
+   "logo": "img/partneri/u-havlu.png"
   },
   {
    "nazev": "Dílna U mnicha",
@@ -242,19 +252,9 @@ window.WEB={
    "logo": "img/partneri/apsa.png"
   },
   {
-   "nazev": "Lesy ČR",
-   "odkaz": "https://lesycr.cz/",
-   "logo": "img/partneri/lesy-cr.png"
-  },
-  {
    "nazev": "Půjč a vrať",
    "odkaz": "https://www.pujcavrat.cz/",
    "logo": "img/partneri/pujc-a-vrat.png"
-  },
-  {
-   "nazev": "Kudyznudy.cz",
-   "odkaz": "https://www.kudyznudy.cz/",
-   "logo": "img/partneri/kudy-z-nudy.png"
   },
   {
    "nazev": "Givt.cz",
@@ -1086,14 +1086,24 @@ window.L10N={
      "logo": "img/partneri/mas-kraj-zivych-vod.png"
     },
     {
-     "nazev": "U Havlů pub, Sokolovna Toužim",
-     "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
-     "logo": "img/partneri/u-havlu.png"
+     "nazev": "Kudyznudy.cz",
+     "odkaz": "https://www.kudyznudy.cz/",
+     "logo": "img/partneri/kudy-z-nudy.png"
+    },
+    {
+     "nazev": "Czech Forests (Lesy ČR)",
+     "odkaz": "https://lesycr.cz/",
+     "logo": "img/partneri/lesy-cr.png"
     },
     {
      "nazev": "Postřelí.cz",
      "odkaz": "https://www.postreli.cz/",
      "logo": "img/partneri/postreli.png"
+    },
+    {
+     "nazev": "U Havlů pub, Sokolovna Toužim",
+     "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
+     "logo": "img/partneri/u-havlu.png"
     },
     {
      "nazev": "Dílna U mnicha",
@@ -1106,19 +1116,9 @@ window.L10N={
      "logo": "img/partneri/apsa.png"
     },
     {
-     "nazev": "Czech Forests (Lesy ČR)",
-     "odkaz": "https://lesycr.cz/",
-     "logo": "img/partneri/lesy-cr.png"
-    },
-    {
      "nazev": "Půjč a vrať",
      "odkaz": "https://www.pujcavrat.cz/",
      "logo": "img/partneri/pujc-a-vrat.png"
-    },
-    {
-     "nazev": "Kudyznudy.cz",
-     "odkaz": "https://www.kudyznudy.cz/",
-     "logo": "img/partneri/kudy-z-nudy.png"
     },
     {
      "nazev": "Givt.cz",
@@ -2017,14 +2017,24 @@ window.L10N={
      "logo": "img/partneri/mas-kraj-zivych-vod.png"
     },
     {
-     "nazev": "Kneipe U Havlů, Sokolovna Toužim",
-     "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
-     "logo": "img/partneri/u-havlu.png"
+     "nazev": "Kudyznudy.cz",
+     "odkaz": "https://www.kudyznudy.cz/",
+     "logo": "img/partneri/kudy-z-nudy.png"
+    },
+    {
+     "nazev": "Lesy ČR (Tschechische Staatsforste)",
+     "odkaz": "https://lesycr.cz/",
+     "logo": "img/partneri/lesy-cr.png"
     },
     {
      "nazev": "Postřelí.cz",
      "odkaz": "https://www.postreli.cz/",
      "logo": "img/partneri/postreli.png"
+    },
+    {
+     "nazev": "Kneipe U Havlů, Sokolovna Toužim",
+     "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
+     "logo": "img/partneri/u-havlu.png"
     },
     {
      "nazev": "Dílna U mnicha",
@@ -2037,19 +2047,9 @@ window.L10N={
      "logo": "img/partneri/apsa.png"
     },
     {
-     "nazev": "Lesy ČR (Tschechische Staatsforste)",
-     "odkaz": "https://lesycr.cz/",
-     "logo": "img/partneri/lesy-cr.png"
-    },
-    {
      "nazev": "Půjč a vrať",
      "odkaz": "https://www.pujcavrat.cz/",
      "logo": "img/partneri/pujc-a-vrat.png"
-    },
-    {
-     "nazev": "Kudyznudy.cz",
-     "odkaz": "https://www.kudyznudy.cz/",
-     "logo": "img/partneri/kudy-z-nudy.png"
     },
     {
      "nazev": "Givt.cz",
