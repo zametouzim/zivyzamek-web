@@ -170,6 +170,15 @@ def images(items, web):
                 ImageOps.fit(Image.open(p).convert('RGB'), (192, 144)).save(t, quality=80)
         if a.get('poster'):
             fit(a['poster'], 1400)
+            # malý náhled plakátu pro seznamy (zobrazuje se max. 160 px)
+            t = os.path.join(os.path.dirname(a['poster']), 'n', os.path.basename(a['poster']))
+            if os.path.exists(a['poster']):
+                if not os.path.exists(t) or os.path.getmtime(t) < os.path.getmtime(a['poster']):
+                    os.makedirs(os.path.dirname(t), exist_ok=True)
+                    im = ImageOps.exif_transpose(Image.open(a['poster'])).convert('RGB')
+                    im.thumbnail((320, 640))
+                    im.save(t, quality=80, progressive=True, optimize=True)
+                a['posterT'] = t
     for g in web['suvenyry'].get('polozky', []):
         if g.get('foto'):
             fit(g['foto'], 1000)
