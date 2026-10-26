@@ -378,6 +378,17 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 .hero-photo img.slide.on{opacity:1}
 .hero-photo img.slide:first-of-type{position:relative}
 @media (prefers-reduced-motion:reduce){.hero-photo img{transition:none}}
+
+.card.kdo{background:#356a80;color:#fbf7ee}.card.kdo .lidi figcaption{color:#fbf7ee;opacity:.85}
+.via .vlogo{display:inline-block}
+.kgrid>div:first-child{grid-row:span 2}.kgrid .kpis{grid-column:2/-1;border-top:1px solid var(--line);padding-top:16px}
+.kbtn{display:flex;flex-wrap:wrap;gap:10px}.kbtn .btn{margin:0}
+@media (max-width:1000px){.kgrid>div:first-child{grid-row:auto}.kgrid .kpis{grid-column:1/-1}}
+.pblock.b1.b1,.pblock.b2.b2,.pblock.b3.b3,.pblock.b4.b4{--line:rgba(0,0,0,.18)}
+.pblock.b1.b1{background:#356a80;color:#fbf7ee}.pblock.b2.b2{background:#f3ee8a;color:#16303f}.pblock.b3.b3{background:#c22f4d;color:#ffffff}.pblock.b4.b4{background:#f3ead6;color:#16303f}
+.pblock.b1.b1 a:not(.btn),.pblock.b2.b2 a:not(.btn),.pblock.b3.b3 a:not(.btn),.pblock.b4.b4 a:not(.btn){color:inherit}
+.pblock.b1 .eyebrow,.pblock.b2 .eyebrow,.pblock.b3 .eyebrow,.pblock.b4 .eyebrow{color:inherit!important;opacity:.85}
+.pblock.b3 .btn.fill{background:#ffffff;color:#16303f;border-color:#ffffff}.pblock.b3 .givt{background:rgba(0,0,0,.14)}
 </style>
 </head>
 <body>
@@ -449,7 +460,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
         <div class="nums">
           <div><b>10</b><span>let spolku</span></div>
           <div><b id="pocetAkci">151</b><span>akcí a brigád od roku 2015</span></div>
-          <div><b>16</b><span>ročníků Zámeckého CITO</span></div>
+          <div><b>17</b><span>eventů Zámecké CITO</span></div>
           <div><b>10</b><span>ročníků Festivalu na zámku</span></div>
         </div>
         <p>Z uzavřeného a zarostlého nádvoří je dnes místo, kde se hraje divadlo, promítá letní kino a slaví se výročí města. Zastřešili jsme pódium, položili podlahu v hradní komnatě, zpřístupnili interiéry Janova hradu a teď obnovujeme zámeckou zahradu.</p>
@@ -565,8 +576,8 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
       <nav class="subnav" aria-label="Na této stránce"><a href="#zahrada" data-jump="g-plan">Návrh</a><a href="#zahrada" data-jump="g-stav">Stav prací</a><a href="#zahrada" data-jump="g-zed">Hradební zeď</a><a href="#zahrada" data-jump="g-rostliny">Rostliny</a><a href="#zahrada" data-jump="g-penize">Financování</a><a href="#zahrada" data-jump="g-foto">Fotky</a></nav>
     </div>
     <div class="photos">
-      <figure class="p-a"><div class="r"><img src="img/studie-6.jpg" alt="Kreslená vizualizace budoucí zahrady ze studie"></div><figcaption>Vizualizace ze studie, Ing. arch. Kateřina Svobodová, 2025</figcaption></figure>
-      <figure class="p-b"><div class="r"><img src="img/zahrada-zahony.jpg" alt="Vytyčené záhony na fólii, v pozadí Dolní zámek"></div><figcaption>Vytyčené první dva záhony, říjen 2026</figcaption></figure>
+      <figure class="p-h"><div class="r"><img src="img/studie-6.jpg" alt="Kreslená vizualizace budoucí zahrady ze studie"></div><figcaption>Vizualizace ze studie, Ing. arch. Kateřina Svobodová, 2025</figcaption></figure>
+      <figure class="p-h"><div class="r"><img src="img/zahrada-zahony.jpg" alt="Vytyčené záhony na fólii, v pozadí Dolní zámek"></div><figcaption>Vytyčené první dva záhony, říjen 2026</figcaption></figure>
     </div>
 
     <div class="block" id="g-plan">
@@ -643,7 +654,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
     <div class="block" id="g-penize">
       <div class="lab"><span class="eyebrow">Financování</span><h2>Kdo zahradu platí</h2></div>
       <div class="body two">
-        <div class="card via"><img src="img/partneri/nadace-via.png" alt="Nadace VIA"><h3>Nadace VIA</h3><p>Hlavní podpora projektu: grant 70&nbsp;000&nbsp;Kč.</p><p>Ve sbírce na Darujme.cz přispěli soukromí dárci 21&nbsp;896&nbsp;Kč a Nadace VIA ji podpořila dalšími 20&nbsp;000&nbsp;Kč.</p></div>
+        <div class="card via"><a href="https://www.nadacevia.cz/" target="_blank" rel="noopener" class="vlogo"><img src="img/partneri/nadace-via.png" alt="Nadace VIA"></a><p>Hlavní podpora projektu: grant 70&nbsp;000&nbsp;Kč.</p><p>Ve sbírce na Darujme.cz přispěli soukromí dárci 21&nbsp;896&nbsp;Kč a Nadace VIA ji podpořila dalšími 20&nbsp;000&nbsp;Kč.</p></div>
         <div class="card sun vy"><h3>Vy</h3><p>Dary pokrývají materiál, pronájem strojů, jídlo pro dobrovolníky a ochranu archeologických nálezů.</p><figure class="qr"><img src="img/qr-platba.png" width="684" height="684" alt="QR Platba: dar na transparentní účet spolku"><figcaption>Naskenujte v bankovní aplikaci, účet 2301034510/2010. Částku můžete v aplikaci změnit.</figcaption></figure><p>Výše příspěvku záleží jen na vás. Každá koruna nám pomůže.</p></div>
       </div>
     </div>
@@ -742,14 +753,15 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
   <div class="wrap">
     <div class="page-head"><span class="eyebrow">O nás</span><h1>Spolek Živý zámek Toužim</h1><p>Začali jsme v roce 2015 jako občanská iniciativa, spolek jsme založili v roce 2016. Chceme zámek chránit, ukazovat lidem a postupně ho obnovit ve spolupráci s městem Toužim, které je jeho vlastníkem.</p></div>
     <div class="one">
-      <div class="card"><h2 class="h3">Kdo jsme</h2><p>Jsme parta dobrovolníků, kterým není lhostejný osud zámku. Spolek vede předsedkyně <b>Pavla Vokurková</b> a místopředsedkyně <b>Alena Šlajerová</b>. O technický stav zámku se stará „zámecký pán“ <b>Jan Policar</b>.</p><div class="lidi"><figure class="pan"><img src="img/predsedkyne.jpg" alt="Pavla Vokurková a Alena Šlajerová s hrnky svařáku na nádvoří zámku" loading="lazy"><figcaption>Pavla Vokurková (vlevo) a Alena Šlajerová</figcaption></figure><figure class="pan"><img src="img/zamecky-pan.jpg" alt="Jan Policar na nádvoří zámku s rezavou helmou na hlavě" loading="lazy"><figcaption>„Zámecký pán“ Jan Policar</figcaption></figure></div></div>
+      <div class="card kdo"><h2 class="h3">Kdo jsme</h2><p>Jsme parta dobrovolníků, kterým není lhostejný osud zámku. Spolek vede předsedkyně <b>Pavla Vokurková</b> a místopředsedkyně <b>Alena Šlajerová</b>. O technický stav zámku se stará „zámecký pán“ <b>Jan Policar</b>.</p><div class="lidi"><figure class="pan"><img src="img/predsedkyne.jpg" alt="Pavla Vokurková a Alena Šlajerová s hrnky svařáku na nádvoří zámku" loading="lazy"><figcaption>Pavla Vokurková (vlevo) a Alena Šlajerová</figcaption></figure><figure class="pan"><img src="img/zamecky-pan.jpg" alt="Jan Policar na nádvoří zámku s rezavou helmou na hlavě" loading="lazy"><figcaption>„Zámecký pán“ Jan Policar</figcaption></figure></div></div>
     </div>
     <div class="card kontakt"><h2 class="h3">Kontakt</h2>
       <div class="kgrid">
-        <div><h3>Živý zámek Toužim z. s.</h3><p>Na Výsluní 346, 364 01 Toužim<br>IČO 04690770<br>Datová schránka: wttsmga<br>Spolkový rejstřík: Krajský soud v Plzni, sp. zn. L 7540</p><p><a href="mailto:zivyzamektouzim@email.cz">zivyzamektouzim@email.cz</a><br><a href="https://www.facebook.com/zivyzamek.touzim" target="_blank" rel="noopener">Facebook</a><br><a href="https://www.instagram.com/zivyzamektouzim/" target="_blank" rel="noopener">Instagram</a></p></div>
+        <div><h3>Živý zámek Toužim z. s.</h3><p>Na Výsluní 346, 364 01 Toužim<br>IČO 04690770<br>Datová schránka: wttsmga<br>Spolkový rejstřík: Krajský soud v Plzni, sp. zn. L 7540</p></div>
         <div><h3>Předsedkyně</h3><p><b>Pavla Vokurková</b><br><a href="tel:+420724859799">+420 724 859 799</a></p></div>
         <div><h3>Místopředsedkyně</h3><p><b>Alena Šlajerová</b><br><a href="tel:+420728290280">+420 728 290 280</a></p></div>
         <div><h3>„Zámecký pán“</h3><p><b>Jan Policar</b><br><a href="tel:+420605158446">+420 605 158 446</a></p></div>
+        <div class="kpis"><h3>Napište nám</h3><p class="kbtn"><a class="btn" href="mailto:zivyzamektouzim@email.cz">zivyzamektouzim@email.cz</a><a class="btn" href="https://www.facebook.com/zivyzamek.touzim" target="_blank" rel="noopener">Facebook</a><a class="btn" href="https://www.instagram.com/zivyzamektouzim/" target="_blank" rel="noopener">Instagram</a></p></div>
       </div>
     </div>
     <div class="block">
@@ -874,9 +886,9 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 <div class="copy" role="region" aria-label="Autorská práva"><div class="wrap">© <span id="cy">2026</span> Živý zámek Toužim z. s. · Web vytvořil Michal Nedvídek s pomocí Claude (AI od Anthropicu)</div></div>
 
 <div class="lb" id="lb" hidden><img alt=""><button class="x" aria-label="Zavřít">×</button><button class="pv" aria-label="Předchozí">‹</button><button class="nx" aria-label="Další">›</button></div>
-<script src="data/i18n.js?v=0fdcb164"></script>
+<script src="data/i18n.js?v=1693fee0"></script>
 <script src="data/akce.js?v=e4911847"></script>
-<script src="data/web.js?v=00eff184"></script>
+<script src="data/web.js?v=b537d97f"></script>
 <script>
 // Překlad statických textů stránky (data/i18n.js). Jednotka překladu = prvek, který obsahuje jen text a řádkové značky.
 (function(){
