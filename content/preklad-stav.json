@@ -3915,10 +3915,8 @@
 },
 "content/akce/2026-11-01-poznej-pomoz.json|de|short": {
 "cs": "714cfa033a76",
-"out": "f82332e1a127",
-"radky": {
-"714cfa033a76": "Aushilfsjob auf dem Schloss Toužim"
-}
+"out": "70b67708caf9",
+"rucne": true
 },
 "content/akce/2026-11-01-poznej-pomoz.json|de|text": {
 "cs": "d22aef72d1ef",
@@ -3928,25 +3926,23 @@
 }
 },
 "content/akce/2026-11-01-poznej-pomoz.json|de|title": {
-"cs": "058e5cf1e71c",
-"out": "fc16e19c3756",
+"cs": "ab142ca785da",
+"out": "f4bef140dfc7",
 "radky": {
-"058e5cf1e71c": "Entdecke & Hilf"
+"ab142ca785da": "Erfahren & Helfen"
 }
 },
 "content/akce/2026-11-01-poznej-pomoz.json|de|when": {
-"cs": "cd056a5890e0",
+"cs": "18b68858bd29",
 "out": "3d9d92f22a9f",
 "radky": {
-"cd056a5890e0": "Sonntag 9–16 Uhr"
+"18b68858bd29": "Sonntag 9–16 Uhr"
 }
 },
 "content/akce/2026-11-01-poznej-pomoz.json|en|short": {
 "cs": "714cfa033a76",
-"out": "8c68ef5c8f00",
-"radky": {
-"714cfa033a76": "Part-time job at Toužim Castle"
-}
+"out": "8b0a771f5f0e",
+"rucne": true
 },
 "content/akce/2026-11-01-poznej-pomoz.json|en|text": {
 "cs": "d22aef72d1ef",
@@ -3956,17 +3952,17 @@
 }
 },
 "content/akce/2026-11-01-poznej-pomoz.json|en|title": {
-"cs": "058e5cf1e71c",
-"out": "d87869bee5cf",
+"cs": "ab142ca785da",
+"out": "084e81b02604",
 "radky": {
-"058e5cf1e71c": "Discover & Help"
+"ab142ca785da": "Find out more & help"
 }
 },
 "content/akce/2026-11-01-poznej-pomoz.json|en|when": {
-"cs": "cd056a5890e0",
+"cs": "18b68858bd29",
 "out": "c6b2658379f7",
 "radky": {
-"cd056a5890e0": "Sunday 9am–4pm"
+"18b68858bd29": "Sunday 9am–4pm"
 }
 },
 "content/akce/2026-12-13.json|de|short": {
