@@ -108,21 +108,23 @@ function hlidej() {
 function hlidejList(list, akce, platby, ted) {
   var data = list.getDataRange().getValues();
   for (var i = 1; i < data.length; i++) {
-    var row = data[i], vs = String(row[C['VS']]), stav = row[C['Stav']], zmena = null;
-    var p = platby[vs];
-    if (p && !row[C['Platba']] && (stav === CEKA || stav === PROPADLO)) {
+    var row = data[i], vs = String(row[C['VS']]), stav = row[C['Stav']], kc = Number(row[C['Kč']]), zmena = null;
+    var p = platby[vs], r = radekData(row, akce);
+    // nová platba (nebo doplatek) k rezervaci, která čeká nebo propadla; platby se stejným VS se sčítají
+    if (p && p.popis !== row[C['Platba']] && (stav === CEKA || stav === PROPADLO)) {
       list.getRange(i + 1, C['Platba'] + 1).setValue(p.popis);
       row[C['Platba']] = p.popis;
-      if (p.castka >= row[C['Kč']]) {
+      r.zaplaceno = p.castka;
+      if (p.castka >= kc) {
         if (stav === CEKA) { list.getRange(i + 1, C['Zaplaceno'] + 1).setValue(true); row[C['Zaplaceno']] = true; }
         else zmena = POZDE;
+      } else if (stav === CEKA) {
+        posli(row[C['E-mail']], text('nedoplatekPredmet', r), text('nedoplatek', r));
       } else {
-        upozorni('Platba nižší, než je cena rezervace',
-          'Rezervace ' + vs + ' (' + row[C['Jméno']] + ', ' + row[C['Název akce']] + '): přišlo ' + p.castka + ' Kč, cena je ' +
-          row[C['Kč']] + ' Kč. Rozhodněte prosím ručně a v tabulce zaškrtněte „Zaplaceno“, nebo se ozvěte návštěvníkovi.');
+        upozorni('Částečná platba po propadnutí', 'K propadlé rezervaci ' + vs + ' (' + row[C['Jméno']] + ', ' + row[C['Název akce']] + ') přišlo ' +
+          p.castka + ' z ' + kc + ' Kč. Částku prosím vraťte, nebo se s návštěvníkem domluvte.');
       }
     }
-    var r = radekData(row, akce);
     if (zmena === POZDE) {
       list.getRange(i + 1, C['Stav'] + 1).setValue(POZDE);
       upozorni('Platba po lhůtě', 'Rezervace ' + vs + ' (' + row[C['Jméno']] + ', ' + row[C['Název akce']] + ', ' + row[C['Osob']] +
@@ -133,7 +135,14 @@ function hlidejList(list, akce, platby, ted) {
       posli(row[C['E-mail']], text('potvrzeniPredmet', r), text('potvrzeni', r));
     } else if (stav === CEKA && row[C['Zaplatit do']] instanceof Date && row[C['Zaplatit do']] < ted) {
       list.getRange(i + 1, C['Stav'] + 1).setValue(PROPADLO);
-      posli(row[C['E-mail']], text('propadloPredmet', r), text('propadlo', r));
+      if (p && p.castka > 0) {
+        r.zaplaceno = p.castka;
+        posli(row[C['E-mail']], text('propadloPredmet', r), text('propadloCast', r));
+        upozorni('Rezervace propadla s částečnou platbou', 'Rezervace ' + vs + ' (' + row[C['Jméno']] + ', ' + row[C['Název akce']] + ') propadla, přišlo jen ' +
+          p.castka + ' z ' + kc + ' Kč. Návštěvníkovi jsme napsali, že se mu ozvete kvůli vrácení. Částku prosím vraťte.');
+      } else {
+        posli(row[C['E-mail']], text('propadloPredmet', r), text('propadlo', r));
+      }
     }
   }
 }
@@ -282,7 +291,9 @@ function text(klic, r) {
   // u akce s termíny jen čas termínu, obecný čas akce („prohlídky v 19, 20 a 21 h“) by mátl
   var kdyCele = [kdy, r.termin ? '' : cas, r.termin ? { cs: 'termín ', en: 'time slot ', de: 'Termin ' }[l] + r.termin : ''].filter(String).join(', ');
   var do_ = r.splatnost instanceof Date ? Utilities.formatDate(r.splatnost, ZONA, l === 'en' ? 'd/M/yyyy H:mm' : 'd. M. yyyy H:mm') : '';
+  var chybi = r.castka - (r.zaplaceno || 0);
   var odkaz = WEB + (l === 'cs' ? '' : '?lang=' + l) + '#platba/' + r.vs + '/' + r.castka;
+  var odkazDoplatek = WEB + (l === 'cs' ? '' : '?lang=' + l) + '#platba/' + r.vs + '/' + chybi;
   var listky = String(r.listky || '');
   if (l !== 'cs') Object.keys(DRUHY[l]).forEach(function (k) { listky = listky.split(k).join(DRUHY[l][k]); });
   // řádek se vstupenkami; u akce zdarma jen počet osob
@@ -302,6 +313,12 @@ function text(klic, r) {
               '\n\nAž platbu spárujeme, pošleme vám potvrzení. Zaplacené vstupné se nevrací.' + podpis,
       potvrzeniPredmet: 'Rezervace ' + r.vs + ' potvrzena',
       potvrzeni: 'Dobrý den,\n\nvaše rezervace je potvrzená.\n\n' + info + '\n\nTěšíme se na vás.' + podpis,
+      nedoplatekPredmet: 'Rezervace ' + r.vs + ': chybí doplatit ' + chybi + ' Kč',
+      nedoplatek: 'Dobrý den,\n\nk vaší rezervaci přišlo ' + r.zaplaceno + ' Kč, cena je ' + r.castka + ' Kč. Chybí doplatit ' + chybi + ' Kč.\n\n' + info +
+                  '\n\nDoplaťte prosím do ' + do_ + ' se stejným variabilním symbolem, jinak rezervace propadne.\n\n' +
+                  'Účet: ' + UCET + '\nČástka: ' + chybi + ' Kč\nVariabilní symbol: ' + r.vs + '\n\nQR kód pro doplatek: ' + odkazDoplatek + podpis,
+      propadloCast: 'Dobrý den,\n\nvaše rezervace propadla, protože jsme do ' + do_ + ' neobdrželi celou částku. Přišlo ' + r.zaplaceno + ' z ' + r.castka +
+                    ' Kč. Místa jsme uvolnili.\n\n' + info + '\n\nKvůli vrácení zaplacené částky se vám ozveme.' + podpis,
       propadloPredmet: 'Rezervace ' + r.vs + ' propadla',
       propadlo: 'Dobrý den,\n\nvaše rezervace propadla, protože jsme do ' + do_ + ' neobdrželi platbu. Místa jsme uvolnili.\n\n' + info +
                 '\n\nPokud jste už zaplatili, ozvěte se nám prosím odpovědí na tento e-mail.' + podpis
@@ -313,6 +330,12 @@ function text(klic, r) {
               '\n\nOnce we match your payment, we will send you a confirmation. Admission fees are non-refundable.' + podpis,
       potvrzeniPredmet: 'Booking ' + r.vs + ' confirmed',
       potvrzeni: 'Hello,\n\nyour booking is confirmed.\n\n' + info + '\n\nWe look forward to seeing you.' + podpis,
+      nedoplatekPredmet: 'Booking ' + r.vs + ': ' + chybi + ' CZK still due',
+      nedoplatek: 'Hello,\n\nwe have received ' + r.zaplaceno + ' CZK for your booking, the price is ' + r.castka + ' CZK. ' + chybi + ' CZK is still due.\n\n' + info +
+                  '\n\nPlease pay the rest by ' + do_ + ' with the same variable symbol, otherwise the booking expires.\n\n' +
+                  'Account: ' + UCET + ' (IBAN ' + IBAN + ')\nAmount: ' + chybi + ' CZK\nVariable symbol (reference): ' + r.vs + '\n\nQR code for the remaining payment: ' + odkazDoplatek + podpis,
+      propadloCast: 'Hello,\n\nyour booking has expired because we did not receive the full amount by ' + do_ + '. We received ' + r.zaplaceno + ' of ' + r.castka +
+                    ' CZK. The places have been released.\n\n' + info + '\n\nWe will contact you about refunding the amount you paid.' + podpis,
       propadloPredmet: 'Booking ' + r.vs + ' expired',
       propadlo: 'Hello,\n\nyour booking has expired because we did not receive payment by ' + do_ + '. The places have been released.\n\n' + info +
                 '\n\nIf you have already paid, please reply to this e-mail.' + podpis
@@ -324,6 +347,12 @@ function text(klic, r) {
               '\n\nSobald wir Ihre Zahlung zugeordnet haben, schicken wir Ihnen eine Bestätigung. Bezahlter Eintritt wird nicht erstattet.' + podpis,
       potvrzeniPredmet: 'Reservierung ' + r.vs + ' bestätigt',
       potvrzeni: 'Guten Tag,\n\nIhre Reservierung ist bestätigt.\n\n' + info + '\n\nWir freuen uns auf Sie.' + podpis,
+      nedoplatekPredmet: 'Reservierung ' + r.vs + ': noch ' + chybi + ' CZK offen',
+      nedoplatek: 'Guten Tag,\n\nfür Ihre Reservierung sind ' + r.zaplaceno + ' CZK eingegangen, der Preis beträgt ' + r.castka + ' CZK. Es fehlen noch ' + chybi + ' CZK.\n\n' + info +
+                  '\n\nBitte zahlen Sie den Rest bis ' + do_ + ' mit demselben variablen Symbol, sonst verfällt die Reservierung.\n\n' +
+                  'Konto: ' + UCET + ' (IBAN ' + IBAN + ')\nBetrag: ' + chybi + ' CZK\nVariabler Symbol (Referenz): ' + r.vs + '\n\nQR-Code für die Restzahlung: ' + odkazDoplatek + podpis,
+      propadloCast: 'Guten Tag,\n\nIhre Reservierung ist verfallen, weil bis ' + do_ + ' nicht der volle Betrag eingegangen ist. Eingegangen sind ' + r.zaplaceno + ' von ' + r.castka +
+                    ' CZK. Die Plätze wurden freigegeben.\n\n' + info + '\n\nWegen der Rückerstattung des bezahlten Betrags melden wir uns bei Ihnen.' + podpis,
       propadloPredmet: 'Reservierung ' + r.vs + ' verfallen',
       propadlo: 'Guten Tag,\n\nIhre Reservierung ist verfallen, weil bis ' + do_ + ' keine Zahlung eingegangen ist. Die Plätze wurden freigegeben.\n\n' + info +
                 '\n\nFalls Sie bereits bezahlt haben, antworten Sie bitte auf diese E-Mail.' + podpis
