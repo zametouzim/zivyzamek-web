@@ -5,7 +5,7 @@
   "short": "Skrytá testovací akce pro vyzkoušení rezervací. Na webu není vidět.",
   "text": "Tato akce slouží jen k vyzkoušení rezervací a plateb. **Akce se nekoná.**",
   "prelozit": false,
-  "skryta": true,
+  "skryta": false,
   "rezervace": {
     "zapnuto": true,
     "kapacita": 10,
