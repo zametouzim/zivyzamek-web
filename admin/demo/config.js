@@ -144,6 +144,100 @@ window.DEMO_CONFIG={
      "hint": "Ukazuje se v programu."
     },
     {
+     "label": "Rezervace (akce s omezeným počtem míst)",
+     "name": "rezervace",
+     "widget": "object",
+     "required": false,
+     "collapsed": true,
+     "hint": "Návštěvník vyplní formulář, zaplatí QR platbou (u akce zdarma bez platby) a po spárování platby dostane potvrzení e-mailem. Nezaplacená rezervace po 24 hodinách propadne. Rezervace najdete v Google tabulce Rezervace.",
+     "fields": [
+      {
+       "label": "Zapnout rezervace",
+       "name": "zapnuto",
+       "widget": "boolean",
+       "required": false,
+       "default": false
+      },
+      {
+       "label": "Počet míst (když akce nemá termíny)",
+       "name": "kapacita",
+       "widget": "number",
+       "value_type": "int",
+       "min": 1,
+       "required": false,
+       "hint": "Navýšit jde kdykoli, web i rezervace to převezmou zhruba do 10 minut po uložení."
+      },
+      {
+       "label": "Termíny (skupiny)",
+       "name": "terminy",
+       "widget": "list",
+       "required": false,
+       "summary": "{{fields.cas}}: {{fields.kapacita}} míst",
+       "hint": "Jen když se akce dělí na skupiny, např. prohlídky v 19:00, 20:00 a 21:00. Každý termín má vlastní počet míst a návštěvník si vybere. Počet míst jde kdykoli navýšit.",
+       "fields": [
+        {
+         "label": "Čas nebo název skupiny",
+         "name": "cas",
+         "widget": "string",
+         "hint": "Např. 19:00"
+        },
+        {
+         "label": "Počet míst",
+         "name": "kapacita",
+         "widget": "number",
+         "value_type": "int",
+         "min": 1
+        }
+       ]
+      },
+      {
+       "label": "Uzávěrka rezervací",
+       "name": "uzaverka",
+       "widget": "datetime",
+       "format": "YYYY-MM-DDTHH:mm",
+       "date_format": "D. M. YYYY",
+       "time_format": "H:mm",
+       "required": false,
+       "hint": "Do kdy jde rezervovat. Když je prázdné, jde to do začátku dne akce."
+      },
+      {
+       "label": "Ceny",
+       "name": "ceny",
+       "widget": "list",
+       "required": false,
+       "summary": "{{fields.druh}}: {{fields.cena}} Kč",
+       "hint": "Buď Jednotné vstupné, nebo Dospělí a Děti. Akce zdarma: ceny nechte prázdné. Návštěvník pak zadá jen počet osob a potvrzení dostane hned e-mailem, bez platby.",
+       "fields": [
+        {
+         "label": "Druh vstupného",
+         "name": "druh",
+         "widget": "select",
+         "options": [
+          "Dospělí",
+          "Děti",
+          "Jednotné vstupné"
+         ]
+        },
+        {
+         "label": "Cena v Kč za osobu",
+         "name": "cena",
+         "widget": "number",
+         "value_type": "int",
+         "min": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Skrytá akce (nezobrazí se v programu ani v archivu, jen přes přímý odkaz)",
+     "name": "skryta",
+     "widget": "boolean",
+     "required": false,
+     "default": false,
+     "hint": "Pro vyzkoušení rezervací. Odkaz: adresa webu + #akce/ a název souboru akce."
+    },
+    {
      "label": "Název je jen pracovní (na webu se zobrazí fialová poznámka „název?“)",
      "name": "titleTodo",
      "widget": "boolean",

@@ -2,6 +2,7 @@
 """Sestaví data webu z obsahu, který se upravuje v administraci.
 
 content/akce/*.json   -> data/akce.js  (window.AKCE, window.ROKY, window.HERO)
+                         data/rezervace.json (akce se zapnutou rezervací; čte ho skript rezervací Google Apps Script)
 content/web/*.json    -> data/web.js   (window.WEB)
 content/stranky/*.json -> data/web.js  (window.WEB.stranky, vlastní stránky v menu)
 Překlady: každý soubor má česká pole v kořeni a anglická/německá pod klíči "en" a "de"
@@ -83,7 +84,7 @@ def akce(tr=None):
                 x['html'] = md(t['text'])
             if x and tr is not None:
                 tr[l].setdefault('akce', {})[fn[:-5]] = x
-        for k in ('date', 'title', 'end', 'when', 'short', 'poster', 'photos', 'tag', 'titleTodo'):
+        for k in ('date', 'title', 'end', 'when', 'short', 'poster', 'photos', 'tag', 'titleTodo', 'skryta'):
             v = a.get(k)
             if v in (None, '', [], False):
                 continue
@@ -97,9 +98,30 @@ def akce(tr=None):
             o['tagc'] = TAGC[o['tag']]
         if a.get('text'):
             o['html'] = md(a['text'])
+        r = rezervace(a.get('rezervace'), o['date'])
+        if r:
+            o['rez'] = r
         items.append(o)
     items.sort(key=lambda a: (a['date'], a['id']))
     return items
+
+
+def rezervace(r, datum):
+    """Rezervace u akce: jen když je zapnutá a má počet míst a aspoň jednu cenu."""
+    if not isinstance(r, dict) or not r.get('zapnuto') or not (r.get('kapacita') or r.get('terminy')):
+        return None
+    ceny = [{'druh': c['druh'], 'cena': int(c.get('cena') or 0)} for c in r.get('ceny') or [] if c.get('druh')]
+    if not ceny:  # akce zdarma: jen počet osob, rezervace se potvrdí hned
+        ceny = [{'druh': 'Vstup zdarma', 'cena': 0}]
+    # termíny (skupiny) s vlastní kapacitou; bez nich jeden termín "" s kapacitou akce
+    terminy = [{'cas': str(t['cas']).strip(), 'kapacita': int(t['kapacita'])} for t in r.get('terminy') or []
+               if str(t.get('cas') or '').strip() and t.get('kapacita')]
+    if not terminy:
+        terminy = [{'cas': '', 'kapacita': int(r['kapacita'])}]
+    out = {'terminy': terminy, 'uzaverka': str(r.get('uzaverka') or datum + 'T00:00')[:16], 'ceny': ceny}
+    if not any(c['cena'] for c in ceny):
+        out['zdarma'] = True
+    return out
 
 
 def stranky():
@@ -265,6 +287,17 @@ def main():
         f.write('window.ROKY=%s;\n' % j({r['rok']: r['plakat'] for r in uvod.get('roky', [])}))
         f.write('window.HERO=%s;\n' % json.dumps(uvod.get('hero', []), ensure_ascii=False, indent=1))
         f.write('window.AKCE=[\n' + ',\n'.join(j(a) for a in items) + '\n];\n')
+    with open('data/rezervace.json', 'w', encoding='utf-8') as f:
+        rez = {}
+        for a in items:
+            if a.get('rez'):
+                r = rez[a['id']] = dict(a['rez'], title=a['title'], date=a['date'], when=a.get('when', ''))
+                for l in LANGS:  # názvy pro e-maily v angličtině a němčině
+                    t = tr[l].get('akce', {}).get(a['id'], {})
+                    for k in ('title', 'when'):
+                        if t.get(k):
+                            r['%s_%s' % (k, l)] = t[k]
+        json.dump(rez, f, ensure_ascii=False, indent=1)
     with open('data/web.js', 'w', encoding='utf-8') as f:
         f.write('// Generováno z content/web/ (tools/build.py). Neupravovat ručně.\n')
         f.write('window.WEB=%s;\n' % json.dumps(web, ensure_ascii=False, indent=1))

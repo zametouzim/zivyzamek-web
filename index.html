@@ -362,6 +362,27 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 .ak-body{display:grid;grid-template-columns:1fr 300px;gap:32px;margin-top:20px;align-items:start}
 .ak-body .poster img{width:100%;display:block;box-shadow:0 2px 12px rgba(0,0,0,.15)}
 .ak-text p{font-size:19px;margin-bottom:12px}
+.rez{margin:28px 0 8px;scroll-margin-top:90px}
+.rez h2{margin:0}.rez p{margin:0}
+.rez form{display:grid;gap:14px}
+.rez label{display:grid;gap:4px;font-weight:700;font-size:16px}
+.rez input,.rez textarea{font:inherit;font-weight:400;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);padding:10px 12px;border-radius:0;width:100%;box-sizing:border-box}
+.rez .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rez .terminy{border:0;margin:0;padding:0;display:grid;gap:8px}.rez .terminy legend{font-weight:700;font-size:16px;margin-bottom:6px;padding:0}
+.rez .terminy label{display:flex;align-items:center;gap:10px;font-weight:400;padding:10px 12px;border:1.5px solid var(--line);background:var(--paper);cursor:pointer}
+.rez .terminy label:has(input:disabled){opacity:.55;cursor:default}.rez .terminy label:has(input:checked){outline:2px solid var(--accent)}
+.rez .terminy input{width:auto;margin:0;accent-color:var(--accent)}.rez .terminy span{margin-left:auto;color:var(--grey);font-size:15px}
+.rez .ceny{display:flex;flex-wrap:wrap;gap:14px}.rez .ceny label{flex:0 1 180px}
+.rez .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.rez .note,.rez .gdpr{font-size:14px;color:var(--grey)}.rez .gdpr{font-size:12.5px}
+.rez .send{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.rez .bad{border-color:var(--accent);outline:1px solid var(--accent)}
+.rez .sum{font-size:19px}.rez .volno{font-weight:700}
+#rezMsg.err{color:var(--accent);font-weight:700}
+.rez .pay{display:flex;flex-wrap:wrap;gap:20px 28px;align-items:flex-start}.rez .pay>div{min-width:0;flex:1 1 240px;display:grid;gap:10px}
+.rez .qrbox{background:#fff;line-height:0;flex:none}.rez .qrbox img{width:200px;height:200px;image-rendering:pixelated}
+.rez dl{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:0;font-variant-numeric:tabular-nums}.rez dt{color:var(--grey)}.rez dd{margin:0;font-weight:700}
+@media (max-width:760px){.rez .row2{grid-template-columns:1fr}}
 .ak-gal{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 40px}
 .ak-gal button{padding:0;border:0;background:none;cursor:zoom-in;max-width:100%}
 .ak-gal img{height:220px;width:auto;max-width:100%;object-fit:contain;display:block}
@@ -893,9 +914,9 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
 <div class="copy" role="region" aria-label="Autorská práva"><div class="wrap">© <span id="cy">2026</span> Živý zámek Toužim z. s. · Web vytvořil Michal Nedvídek</div></div>
 
 <div class="lb" id="lb" hidden><img alt=""><button class="x" aria-label="Zavřít">×</button><button class="pv" aria-label="Předchozí">‹</button><button class="nx" aria-label="Další">›</button></div>
-<script src="data/i18n.js?v=5f5dd7ca"></script>
-<script src="data/akce.js?v=5bf5a32d"></script>
-<script src="data/web.js?v=5fd1db36"></script>
+<script src="data/i18n.js?v=252edc65"></script>
+<script src="data/akce.js?v=c5c9868e"></script>
+<script src="data/web.js?v=93fe2953"></script>
 <script>
 // Překlad statických textů stránky (data/i18n.js). Jednotka překladu = prvek, který obsahuje jen text a řádkové značky.
 (function(){
@@ -988,9 +1009,11 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
     h+='<div class="ak-body"><div class="ak-text">'+(a.html?a.html.split('\n').map(function(p){return '<p>'+p+'</p>'}).join(''):a.text?a.text.split('\n').map(function(p){return '<p>'+esc(p)+'</p>'}).join(''):'<p class="tbd">'+T('Bude doplněno.')+'</p>')+'</div>';
     h+=a.poster?'<button class="poster" data-src="'+a.poster+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+a.poster+'" alt="'+T('Plakát')+': '+esc(a.title)+'"></button>':'<div></div>';
     h+='</div>';
+    if(a.rez&&!past(a))h+='<div class="card rez" id="rez"></div>';
     if(a.photos&&a.photos.length){h+='<div class="ak-gal">'+a.photos.map(function(f,i){return '<button data-i="'+i+'"><img src="'+f+'" alt="'+T('Fotka z akce')+' '+esc(a.title)+'" loading="lazy"></button>'}).join('')+'</div>';}
     else h+='<p style="color:var(--grey);margin:24px 0 40px">'+T('Fotky doplníme.')+'</p>';
     detail.innerHTML=h; curPhotos=a.photos||[];
+    if(a.rez&&!past(a))rezForm(a,document.getElementById('rez'));
   }
   function lbShow(i){lbI=(i+lbImgs.length)%lbImgs.length;lb.querySelector('img').src=lbImgs[lbI];var one=lbImgs.length<2;lb.querySelector('.pv').hidden=one;lb.querySelector('.nx').hidden=one;lb.hidden=false}
   function lbOpen(list,i){lbImgs=list;lbShow(i||0)}
@@ -1005,12 +1028,81 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
   lb.addEventListener('click',function(e){if(e.target.classList.contains('pv'))lbShow(lbI-1);else if(e.target.classList.contains('nx'))lbShow(lbI+1);else lb.hidden=true});
   document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowLeft')lbShow(lbI-1);if(e.key==='ArrowRight')lbShow(lbI+1)});
 
+  // rezervace akcí: formulář, volná místa a QR platba (skript Google Apps Script, viz skripty/rezervace.gs)
+  var REZ_API='https://script.google.com/macros/s/AKfycbygTZcoBuA2ajslqVBU7q9lTD9Q7B8FXWm5zPr5asKhVeGonv2w2qJPETCMs0FYEJ8KjA/exec', REZ_IBAN='CZ7920100000002301034510', REZ_UCET='2301034510/2010';
+  function rezSpd(vs,kc){return 'SPD*1.0*ACC:'+REZ_IBAN+'*AM:'+kc.toFixed(2)+'*CC:CZK*X-VS:'+vs+'*MSG:REZERVACE '+vs}
+  function rezKc(n){return n.toLocaleString(window.LANG==='cs'?'cs-CZ':window.LANG)+(window.LANG==='cs'?' Kč':' CZK')}
+  function rezQr(cb){if(window.qrcode)return cb();var sc=document.createElement('script');sc.src='js/qrcode.js';sc.onload=cb;document.head.appendChild(sc)}
+  function rezPlatba(box,r){
+    var h='<span class="eyebrow">'+T('Rezervace')+' '+esc(r.vs)+'</span><h2 class="h3">'+T('Zbývá zaplatit')+'</h2>';
+    h+='<div class="pay"><div class="qrbox" id="rezQr" role="img" aria-label="'+T('QR Platba')+'"></div><div><dl><dt>'+T('Účet')+'</dt><dd>'+REZ_UCET+'</dd><dt>'+T('Částka')+'</dt><dd>'+rezKc(r.castka)+'</dd><dt>'+T('Variabilní symbol')+'</dt><dd>'+esc(r.vs)+'</dd>';
+    if(r.splatnost)h+='<dt>'+T('Zaplaťte do')+'</dt><dd>'+new Date(r.splatnost).toLocaleString(window.LANG==='cs'?'cs-CZ':window.LANG==='en'?'en-GB':'de-DE',{day:'numeric',month:'numeric',hour:'numeric',minute:'2-digit'})+'</dd>';
+    h+='</dl><p>'+T('Naskenujte QR kód v aplikaci banky. Rezervace platí až po zaplacení, potvrzení vám pošleme e-mailem. Nezaplacená rezervace po 24 hodinách propadne.')+'</p><p class="note">'+T('Účet spolku je transparentní, platba na něm bude veřejně vidět.')+'</p></div></div>';
+    box.innerHTML=h;
+    rezQr(function(){var q=qrcode(0,'M');q.addData(rezSpd(r.vs,r.castka));q.make();document.getElementById('rezQr').innerHTML=q.createImgTag(6,12)});
+  }
+  function rezForm(a,box){
+    var R=a.rez, now=new Date();
+    var h='<span class="eyebrow">'+T('Rezervace')+'</span><h2 class="h3">'+T('Rezervujte si místo')+'</h2>';
+    if(!REZ_API){box.innerHTML=h+'<p>'+T('Online rezervace připravujeme.')+'</p>';return}
+    if(new Date(R.uzaverka)<now){box.innerHTML=h+'<p>'+T('Rezervace jsou uzavřené.')+'</p>';return}
+    var TT=R.terminy, vic=TT.length>1;
+    h+='<p class="volno" id="rezVolno">'+T('Zjišťuji volná místa…')+'</p><form id="rezForm" novalidate>';
+    if(vic){h+='<fieldset class="terminy"><legend>'+T('Vyberte termín')+'</legend>';TT.forEach(function(t,i){h+='<label><input type="radio" name="termin" value="'+esc(t.cas)+'"><b>'+esc(t.cas)+'</b><span id="rezT'+i+'"></span></label>'});h+='</fieldset>';}
+    else h+='<input type="hidden" name="termin" value="'+esc(TT[0].cas)+'">';
+    h+='<div class="ceny">';
+    R.ceny.forEach(function(c,i){h+='<label><span>'+(R.zdarma&&R.ceny.length===1?T('Počet osob'):esc(T(c.druh))+(c.cena?' · '+rezKc(c.cena):''))+'</span><input name="pocet_'+i+'" type="number" min="0" value="'+(R.ceny.length===1?1:0)+'" inputmode="numeric"></label>'});
+    h+='</div><p class="sum"'+(R.zdarma?' hidden':'')+'>'+T('Celkem')+': <b id="rezSum"></b></p>';
+    h+='<label><span>'+T('Jméno a příjmení')+'</span><input name="jmeno" autocomplete="name" required></label><div class="row2"><label><span>'+T('E-mail')+'</span><input name="email" type="email" autocomplete="email" required></label><label><span>'+T('Telefon')+'</span><input name="telefon" type="tel" autocomplete="tel" required></label></div>';
+    h+='<label><span>'+T('Poznámka')+'</span><textarea name="poznamka" rows="3"></textarea></label><label class="hp" aria-hidden="true"><span>Nevyplňujte</span><input name="web" tabindex="-1" autocomplete="off"></label>';
+    h+='<p class="note">'+(R.zdarma?T('Vstup je zdarma. Po odeslání vám hned přijde potvrzení rezervace e-mailem.'):T('Po odeslání se zobrazí QR platba. Rezervace platí až po zaplacení, nezaplacená po 24 hodinách propadne. Zaplacené vstupné se nevrací.'))+'</p>';
+    h+='<div class="send"><button class="btn fill" type="submit">'+T('Rezervovat')+'</button><span id="rezMsg" role="status"></span></div>';
+    h+='<p class="gdpr">'+T('Jméno a kontakt použijeme jen k vyřízení rezervace a nikomu je nepředáme. Správce údajů: Živý zámek Toužim z. s., IČO 04690770.')+'</p></form>';
+    box.innerHTML=h;
+    var f=document.getElementById('rezForm'), msg=document.getElementById('rezMsg'), vol=document.getElementById('rezVolno'), volno=null;
+    function say(t,c){msg.textContent=t;msg.className=c||''}
+    function pocty(){return R.ceny.map(function(c,i){return Math.max(0,parseInt(f.elements['pocet_'+i].value,10)||0)})}
+    function sum(){var p=pocty(),k=0;p.forEach(function(n,i){k+=n*R.ceny[i].cena});document.getElementById('rezSum').textContent=rezKc(k);return {osob:p.reduce(function(x,y){return x+y},0),kc:k}}
+    // volno = {termín: počet volných míst}
+    function ukazVolno(v){
+      volno=v;var vse=0;
+      TT.forEach(function(t,i){var n=v[t.cas]||0;vse+=n;if(!vic)return;
+        var el=document.getElementById('rezT'+i), r=f.querySelectorAll('input[name=termin]')[i];
+        el.textContent=n>0?T('volno')+' '+n+' / '+t.kapacita:T('vyprodáno');r.disabled=n<=0;if(n<=0&&r.checked)r.checked=false;});
+      vol.textContent=!vse?T('Vyprodáno. Všechna místa jsou zarezervovaná.'):vic?T('Volná místa celkem')+': '+vse:T('Volná místa')+': '+vse+' / '+TT[0].kapacita;
+      f.hidden=!vse;
+    }
+    f.addEventListener('input',sum);sum();
+    fetch(REZ_API+'?akce='+encodeURIComponent(a.id)).then(function(r){return r.json()}).then(function(d){if(!d.ok)throw 0;ukazVolno(d.terminy)}).catch(function(){vol.textContent=T('Počet volných míst se nepodařilo zjistit.')});
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var el=f.elements, bad=[], s=sum();
+      [el.jmeno,el.email,el.telefon].forEach(function(i){i.classList.remove('bad');i.removeAttribute('aria-invalid')});
+      if(!el.jmeno.value.trim())bad.push(el.jmeno);
+      if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(el.email.value.trim()))bad.push(el.email);
+      if(el.telefon.value.replace(/\D/g,'').length<9)bad.push(el.telefon);
+      if(bad.length){bad.forEach(function(i){i.classList.add('bad');i.setAttribute('aria-invalid','true')});bad[0].focus();say(T('Doplňte prosím zvýrazněná políčka.'),'err');return}
+      var tm=f.querySelector('input[name=termin]:checked')||(!vic&&el.termin);
+      if(!tm){say(T('Vyberte prosím termín.'),'err');return}
+      if(!s.osob){say(T('Zadejte prosím počet osob.'),'err');return}
+      if(volno&&s.osob>volno[tm.value]){say(T('Tolik volných míst už není. Volná místa')+': '+volno[tm.value],'err');return}
+      var b=f.querySelector('button');b.disabled=true;say(T('Odesílám…'));
+      var data=new URLSearchParams(new FormData(f));data.append('akce',a.id);data.append('lang',window.LANG);
+      fetch(REZ_API,{method:'POST',body:data}).then(function(r){return r.json()}).then(function(d){
+        if(d.ok){if(d.castka>0)rezPlatba(box,d);else box.innerHTML='<span class="eyebrow">'+T('Rezervace')+' '+esc(d.vs)+'</span><h2 class="h3">'+T('Rezervace je potvrzená')+'</h2><p>'+T('Potvrzení jsme vám poslali e-mailem.')+'</p>';box.scrollIntoView({block:'start'});return}
+        if(d.terminy)ukazVolno(d.terminy);
+        say(d.chyba==='plno'?T('Tolik volných míst už není. Volná místa')+': '+(d.terminy[tm.value]||0):d.chyba==='uzavreno'?T('Rezervace jsou uzavřené.'):T('Rezervaci se nepodařilo odeslat. Napište nám prosím na zivyzamektouzim@email.cz.'),'err');
+      }).catch(function(){say(T('Rezervaci se nepodařilo odeslat. Napište nám prosím na zivyzamektouzim@email.cz.'),'err')}).then(function(){b.disabled=false});
+    });
+  }
+
   function show(){
     setTimeout(zoomPrep,0);
     var id=(location.hash||'#domu').slice(1), jump=null;
     if(id==='archiv'){id='program';jump='archiv';}
     if(id==='dotaz'){id='navsteva';jump='dotaz';}
     if(id.indexOf('akce/')===0){renderDetail(id.slice(5));id='akce';}
+    else if(id.indexOf('platba/')===0){var q=id.split('/');detail.innerHTML='<div class="card rez" id="rez"></div>';if(/^\d{1,10}$/.test(q[1])&&+q[2]>0)rezPlatba(document.getElementById('rez'),{vs:q[1],castka:+q[2]});else detail.innerHTML='<p>'+T('Akce nenalezena.')+'</p>';id='akce';}
     else if(id.indexOf('/')>0){jump=id.split('/')[1];id=id.split('/')[0];}
     if(!pages.some(function(p){return p.dataset.page===id})) id='domu';
     pages.forEach(function(p){p.hidden=p.dataset.page!==id});
@@ -1022,7 +1114,7 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
   }
 
   // nejbližší akce: karty na úvodu a seznam v programu
-  var up=AKCE.filter(function(a){return !past(a)}).reverse();
+  var up=AKCE.filter(function(a){return !past(a)&&!a.skryta}).reverse();
   function dd(a){var s=a.date.split('-');if(EN){if(!a.end)return d(a.date);var e=a.end.split('-');return (+s[2])+'–'+(+e[2])+' '+mon(+e[1])}if(!a.end)return (+s[2])+'. '+(+s[1])+'.';var e=a.end.split('-');return (+s[2])+'.–'+(+e[2])+'. '+(+e[1])+'.'}
   var hu=document.getElementById('homeUp'), ul=document.getElementById('upList');
   var MES=window.LANG==='cs'?['ledna','února','března','dubna','května','června','července','srpna','září','října','listopadu','prosince']:[0,1,2,3,4,5,6,7,8,9,10,11].map(function(i){return new Date(2026,i,15).toLocaleDateString(window.LANG,{month:'long'})});
@@ -1041,7 +1133,7 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
 
   // archiv: roky a seznam
   var yearsEl=document.getElementById('archYears'), list=document.getElementById('archList');
-  var done=AKCE.filter(past), years=[];
+  var done=AKCE.filter(function(a){return past(a)&&!a.skryta}), years=[];
   var pa=document.getElementById('pocetAkci');if(pa)pa.textContent=done.length;
   done.forEach(function(a){var y=a.date.slice(0,4);if(years.indexOf(y)<0)years.push(y)});
   function renderYear(y){

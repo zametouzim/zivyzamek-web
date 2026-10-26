@@ -1,0 +1,32 @@
+{
+ "2026-12-31-zkouska-rezervaci": {
+  "terminy": [
+   {
+    "cas": "19:00",
+    "kapacita": 5
+   },
+   {
+    "cas": "20:00",
+    "kapacita": 5
+   }
+  ],
+  "uzaverka": "2026-12-30T23:59",
+  "ceny": [
+   {
+    "druh": "Dospělí",
+    "cena": 2
+   },
+   {
+    "druh": "Děti",
+    "cena": 1
+   }
+  ],
+  "title": "Zkouška rezervací",
+  "date": "2026-12-31",
+  "when": "jen zkouška, akce se nekoná",
+  "title_en": "Booking test",
+  "when_en": "test only, the event does not take place",
+  "title_de": "Reservierungstest",
+  "when_de": "nur Test, die Veranstaltung findet nicht statt"
+ }
+}
