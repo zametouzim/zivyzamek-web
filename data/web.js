@@ -242,6 +242,16 @@ window.WEB={
    "logo": "img/partneri/apsa.png"
   },
   {
+   "nazev": "Lesy ČR",
+   "odkaz": "https://lesycr.cz/",
+   "logo": "img/partneri/lesy-cr.png"
+  },
+  {
+   "nazev": "Půjč a vrať",
+   "odkaz": "https://www.pujcavrat.cz/",
+   "logo": "img/partneri/pujc-a-vrat.png"
+  },
+  {
    "nazev": "Kudyznudy.cz",
    "odkaz": "https://www.kudyznudy.cz/",
    "logo": "img/partneri/kudy-z-nudy.png"
@@ -1094,6 +1104,16 @@ window.L10N={
      "nazev": "A.P.S.A. spol. s r.o.",
      "odkaz": "https://apsa.cz/",
      "logo": "img/partneri/apsa.png"
+    },
+    {
+     "nazev": "Czech Forests (Lesy ČR)",
+     "odkaz": "https://lesycr.cz/",
+     "logo": "img/partneri/lesy-cr.png"
+    },
+    {
+     "nazev": "Půjč a vrať",
+     "odkaz": "https://www.pujcavrat.cz/",
+     "logo": "img/partneri/pujc-a-vrat.png"
     },
     {
      "nazev": "Kudyznudy.cz",
@@ -2015,6 +2035,16 @@ window.L10N={
      "nazev": "A.P.S.A. spol. s r.o.",
      "odkaz": "https://apsa.cz/",
      "logo": "img/partneri/apsa.png"
+    },
+    {
+     "nazev": "Lesy ČR (Tschechische Staatsforste)",
+     "odkaz": "https://lesycr.cz/",
+     "logo": "img/partneri/lesy-cr.png"
+    },
+    {
+     "nazev": "Půjč a vrať",
+     "odkaz": "https://www.pujcavrat.cz/",
+     "logo": "img/partneri/pujc-a-vrat.png"
     },
     {
      "nazev": "Kudyznudy.cz",
