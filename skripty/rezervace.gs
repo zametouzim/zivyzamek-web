@@ -7,7 +7,8 @@
  *
  * Jak to běží:
  *  - doGet:  počet volných míst u akce
- *  - doPost: nová rezervace → řádek v tabulce + e-mail s údaji k platbě
+ *  - doPost: nová rezervace → řádek na listu akce + e-mail s údaji k platbě
+ *            (každá akce má vlastní list pojmenovaný podle akce a data, skript ho založí sám a nic z něj nemaže)
  *  - hlidej: každých 5 minut (časový spouštěč, založí ho funkce nastav)
  *      - stáhne platby z Fio (když je v Nastavení projektu → Vlastnosti skriptu FIO_TOKEN) a spáruje je podle VS
  *      - u řádků se zaškrtnutým „Zaplaceno“ pošle potvrzení
@@ -75,7 +76,7 @@ function doPost(e) {
     radek[C['Osob']] = osob; radek[C['Kč']] = castka; radek[C['Poznámka']] = poznamka; radek[C['Jazyk']] = lang;
     radek[C['Stav']] = castka ? CEKA : POTVRZENO; radek[C['Zaplaceno']] = !castka; radek[C['Platba']] = castka ? '' : 'zdarma';
     radek[C['Zaplatit do']] = castka ? splatnost : '';
-    var list = tabulka();
+    var list = tabulka(p.akce, a);
     list.appendRow(radek);
     list.getRange(list.getLastRow(), C['Zaplaceno'] + 1).insertCheckboxes();
     SpreadsheetApp.flush();
@@ -94,39 +95,43 @@ function hlidej() {
   var lock = LockService.getScriptLock();
   if (!lock.tryLock(30000)) return;
   try {
-    var list = tabulka(), data = list.getDataRange().getValues(), akce = nactiAkce(), ted = new Date();
-    var platby = fio();
-    for (var i = 1; i < data.length; i++) {
-      var row = data[i], vs = String(row[C['VS']]), stav = row[C['Stav']], zmena = null;
-      var p = platby[vs];
-      if (p && !row[C['Platba']] && (stav === CEKA || stav === PROPADLO)) {
-        list.getRange(i + 1, C['Platba'] + 1).setValue(p.popis);
-        row[C['Platba']] = p.popis;
-        if (p.castka >= row[C['Kč']]) {
-          if (stav === CEKA) { list.getRange(i + 1, C['Zaplaceno'] + 1).setValue(true); row[C['Zaplaceno']] = true; }
-          else zmena = POZDE;
-        } else {
-          upozorni('Platba nižší, než je cena rezervace',
-            'Rezervace ' + vs + ' (' + row[C['Jméno']] + ', ' + row[C['Název akce']] + '): přišlo ' + p.castka + ' Kč, cena je ' +
-            row[C['Kč']] + ' Kč. Rozhodněte prosím ručně a v tabulce zaškrtněte „Zaplaceno“, nebo se ozvěte návštěvníkovi.');
-        }
-      }
-      var r = radekData(row, akce);
-      if (zmena === POZDE) {
-        list.getRange(i + 1, C['Stav'] + 1).setValue(POZDE);
-        upozorni('Platba po lhůtě', 'Rezervace ' + vs + ' (' + row[C['Jméno']] + ', ' + row[C['Název akce']] + ', ' + row[C['Osob']] +
-          ' os.) byla zaplacena až po propadnutí. Místa jí zatím držím. Když je místo, zaškrtněte v tabulce „Zaplaceno“ a potvrzení odejde samo. ' +
-          'Když místo není, peníze vraťte a změňte stav na „' + PROPADLO + '“.');
-      } else if (row[C['Zaplaceno']] === true && (stav === CEKA || stav === POZDE)) {
-        list.getRange(i + 1, C['Stav'] + 1).setValue(POTVRZENO);
-        posli(row[C['E-mail']], text('potvrzeniPredmet', r), text('potvrzeni', r));
-      } else if (stav === CEKA && row[C['Zaplatit do']] instanceof Date && row[C['Zaplatit do']] < ted) {
-        list.getRange(i + 1, C['Stav'] + 1).setValue(PROPADLO);
-        posli(row[C['E-mail']], text('propadloPredmet', r), text('propadlo', r));
-      }
-    }
+    var akce = nactiAkce(), ted = new Date(), platby = fio();
+    listyRezervaci().forEach(function (list) { hlidejList(list, akce, platby, ted); });
   } finally {
     lock.releaseLock();
+  }
+}
+
+function hlidejList(list, akce, platby, ted) {
+  var data = list.getDataRange().getValues();
+  for (var i = 1; i < data.length; i++) {
+    var row = data[i], vs = String(row[C['VS']]), stav = row[C['Stav']], zmena = null;
+    var p = platby[vs];
+    if (p && !row[C['Platba']] && (stav === CEKA || stav === PROPADLO)) {
+      list.getRange(i + 1, C['Platba'] + 1).setValue(p.popis);
+      row[C['Platba']] = p.popis;
+      if (p.castka >= row[C['Kč']]) {
+        if (stav === CEKA) { list.getRange(i + 1, C['Zaplaceno'] + 1).setValue(true); row[C['Zaplaceno']] = true; }
+        else zmena = POZDE;
+      } else {
+        upozorni('Platba nižší, než je cena rezervace',
+          'Rezervace ' + vs + ' (' + row[C['Jméno']] + ', ' + row[C['Název akce']] + '): přišlo ' + p.castka + ' Kč, cena je ' +
+          row[C['Kč']] + ' Kč. Rozhodněte prosím ručně a v tabulce zaškrtněte „Zaplaceno“, nebo se ozvěte návštěvníkovi.');
+      }
+    }
+    var r = radekData(row, akce);
+    if (zmena === POZDE) {
+      list.getRange(i + 1, C['Stav'] + 1).setValue(POZDE);
+      upozorni('Platba po lhůtě', 'Rezervace ' + vs + ' (' + row[C['Jméno']] + ', ' + row[C['Název akce']] + ', ' + row[C['Osob']] +
+        ' os.) byla zaplacena až po propadnutí. Místa jí zatím držím. Když je místo, zaškrtněte v tabulce „Zaplaceno“ a potvrzení odejde samo. ' +
+        'Když místo není, peníze vraťte a změňte stav na „' + PROPADLO + '“.');
+    } else if (row[C['Zaplaceno']] === true && (stav === CEKA || stav === POZDE)) {
+      list.getRange(i + 1, C['Stav'] + 1).setValue(POTVRZENO);
+      posli(row[C['E-mail']], text('potvrzeniPredmet', r), text('potvrzeni', r));
+    } else if (stav === CEKA && row[C['Zaplatit do']] instanceof Date && row[C['Zaplatit do']] < ted) {
+      list.getRange(i + 1, C['Stav'] + 1).setValue(PROPADLO);
+      posli(row[C['E-mail']], text('propadloPredmet', r), text('propadlo', r));
+    }
   }
 }
 
@@ -159,23 +164,30 @@ function fio() {
   return out;
 }
 
-/** Spustit jednou ručně po vložení skriptu: připraví tabulku a založí spouštěč hlidej (každých 5 minut). */
+/** Spustit jednou ručně po vložení skriptu: založí spouštěč hlidej (každých 5 minut) a vyžádá oprávnění. */
 function nastav() {
-  var list = tabulka();
   ScriptApp.getProjectTriggers().forEach(function (t) {
     if (t.getHandlerFunction() === 'hlidej') ScriptApp.deleteTrigger(t);
   });
   ScriptApp.newTrigger('hlidej').timeBased().everyMinutes(5).create();
   GmailApp.getAliases();  // ať se hned vyžádá oprávnění k Gmailu
-  Logger.log('Hotovo. Tabulka: ' + list.getParent().getUrl());
+  Logger.log('Hotovo. Tabulka: ' + SpreadsheetApp.getActive().getUrl());
 }
 
 // ---- Pomocné ----
 
-function tabulka() {
-  var ss = SpreadsheetApp.getActive(), list = ss.getSheetByName('Rezervace');
-  if (!list) {
-    list = ss.insertSheet('Rezervace', 0);
+/** List akce v tabulce. Pozná ho podle ID listu (přejmenovat ho jde), když chybí, založí nový „Název akce d. M. yyyy“ (s jenNajit vrátí null). */
+function tabulka(id, a, jenNajit) {
+  var ss = SpreadsheetApp.getActive(), props = PropertiesService.getScriptProperties(), k = 'LIST_' + id;
+  var sid = props.getProperty(k), list = null;
+  if (sid) ss.getSheets().forEach(function (x) { if (String(x.getSheetId()) === sid) list = x; });
+  if (!list && !jenNajit) {
+    var d = String(a.date || '').split('-').map(Number);
+    var nazev = (a.title + (d.length === 3 ? ' ' + d[2] + '. ' + d[1] + '. ' + d[0] : '')).replace(/[\[\]*?:\/\\']/g, ' ').slice(0, 90);
+    var n = nazev, i = 2;
+    while (ss.getSheetByName(n)) n = nazev + ' (' + i++ + ')';
+    list = ss.insertSheet(n, 0);
+    props.setProperty(k, String(list.getSheetId()));
     list.appendRow(SLOUPCE);
     list.setFrozenRows(1);
     list.getRange(1, 1, 1, SLOUPCE.length).setFontWeight('bold');
@@ -195,8 +207,13 @@ function nactiAkce() {
   return JSON.parse(t);
 }
 
+/** Všechny listy s rezervacemi (první buňka „VS“). */
+function listyRezervaci() {
+  return SpreadsheetApp.getActive().getSheets().filter(function (x) { return x.getRange(1, 1).getValue() === 'VS'; });
+}
+
 function volno(id, a) {
-  var data = tabulka().getDataRange().getValues(), obsazeno = 0;
+  var list = tabulka(id, a, true), data = list ? list.getDataRange().getValues() : [], obsazeno = 0;
   for (var i = 1; i < data.length; i++)
     if (data[i][C['Akce']] === id && DRZI_MISTO.indexOf(data[i][C['Stav']]) >= 0) obsazeno += Number(data[i][C['Osob']]) || 0;
   return Math.max(0, a.kapacita - obsazeno);
@@ -250,7 +267,8 @@ function text(klic, r) {
   var l = r.lang || 'cs', a = r.a || {};
   var datum = a.date ? a.date.split('-').map(Number) : null;
   var kdy = datum ? (l === 'cs' ? datum[2] + '. ' + datum[1] + '. ' + datum[0] : l === 'de' ? datum[2] + '.' + datum[1] + '.' + datum[0] : datum[2] + '/' + datum[1] + '/' + datum[0]) : '';
-  var akce = a.title + (kdy ? ', ' + kdy : '') + (a.when ? ' (' + a.when + ')' : '');
+  var nazev = a['title_' + l] || a.title, cas = a['when_' + l] || a.when;
+  var akce = nazev + (kdy ? ', ' + kdy : '') + (cas ? ' (' + cas + ')' : '');
   var do_ = r.splatnost instanceof Date ? Utilities.formatDate(r.splatnost, ZONA, l === 'en' ? 'd/M/yyyy H:mm' : 'd. M. yyyy H:mm') : '';
   var odkaz = WEB + (l === 'cs' ? '' : '?lang=' + l) + '#platba/' + r.vs + '/' + r.castka;
   var listky = String(r.listky || '');

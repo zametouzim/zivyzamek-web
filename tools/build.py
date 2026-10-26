@@ -280,8 +280,16 @@ def main():
         f.write('window.HERO=%s;\n' % json.dumps(uvod.get('hero', []), ensure_ascii=False, indent=1))
         f.write('window.AKCE=[\n' + ',\n'.join(j(a) for a in items) + '\n];\n')
     with open('data/rezervace.json', 'w', encoding='utf-8') as f:
-        json.dump({a['id']: dict(a['rez'], title=a['title'], date=a['date'], when=a.get('when', '')) for a in items if a.get('rez')},
-                  f, ensure_ascii=False, indent=1)
+        rez = {}
+        for a in items:
+            if a.get('rez'):
+                r = rez[a['id']] = dict(a['rez'], title=a['title'], date=a['date'], when=a.get('when', ''))
+                for l in LANGS:  # názvy pro e-maily v angličtině a němčině
+                    t = tr[l].get('akce', {}).get(a['id'], {})
+                    for k in ('title', 'when'):
+                        if t.get(k):
+                            r['%s_%s' % (k, l)] = t[k]
+        json.dump(rez, f, ensure_ascii=False, indent=1)
     with open('data/web.js', 'w', encoding='utf-8') as f:
         f.write('// Generováno z content/web/ (tools/build.py). Neupravovat ručně.\n')
         f.write('window.WEB=%s;\n' % json.dumps(web, ensure_ascii=False, indent=1))

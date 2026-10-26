@@ -14,6 +14,10 @@
   ],
   "title": "Zkouška rezervací",
   "date": "2026-12-31",
-  "when": "jen zkouška, akce se nekoná"
+  "when": "jen zkouška, akce se nekoná",
+  "title_en": "Booking test",
+  "when_en": "test only, the event does not take place",
+  "title_de": "Reservierungstest",
+  "when_de": "nur Test, die Veranstaltung findet nicht statt"
  }
 }
