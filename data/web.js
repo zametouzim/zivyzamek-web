@@ -20,7 +20,7 @@ window.WEB={
   "mimo_sezonu": "po domluvě"
  },
  "suvenyry": {
-  "uvod": "Na akcích, o otevřených víkendech nebo poštou. Objednávky e-mailem.",
+  "uvod": "Na akcích, o otevřených víkendech nebo poštou. Objednávky na e-mailu zivyzamektouzim@email.cz.",
   "polozky": [
    {
     "nazev": "Zámecký plecháček",
@@ -182,6 +182,16 @@ window.WEB={
     "src": "img/zahrada-IMG_6108.jpg",
     "popisek": "Hotová plocha u hradeb",
     "popis": "Upravená plocha u hradeb"
+   },
+   {
+    "src": "img/zahrada-IMG_6105.jpg",
+    "popisek": "27. 9. 2026: prosévání zeminy",
+    "popis": "Dobrovolník hází lopatou zeminu na prosévací síto"
+   },
+   {
+    "src": "img/zahrada-IMG_6268.jpg",
+    "popisek": "17. 10. 2026: Zámecké CITO",
+    "popis": "Dobrovolníci pracují v hlíně mezi minibagrem, dumperem a hradbou"
    }
   ]
  },
@@ -212,9 +222,14 @@ window.WEB={
    "logo": "img/partneri/mas-kraj-zivych-vod.png"
   },
   {
-   "nazev": "Hospůdka U Havlů, Sokolovna Toužim",
-   "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
-   "logo": "img/partneri/u-havlu.png"
+   "nazev": "Kudyznudy.cz",
+   "odkaz": "https://www.kudyznudy.cz/",
+   "logo": "img/partneri/kudy-z-nudy.png"
+  },
+  {
+   "nazev": "Lesy ČR",
+   "odkaz": "https://lesycr.cz/",
+   "logo": "img/partneri/lesy-cr.png"
   },
   {
    "nazev": "Postřelí.cz",
@@ -222,14 +237,24 @@ window.WEB={
    "logo": "img/partneri/postreli.png"
   },
   {
+   "nazev": "Hospůdka U Havlů, Sokolovna Toužim",
+   "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
+   "logo": "img/partneri/u-havlu.png"
+  },
+  {
    "nazev": "Dílna U mnicha",
    "odkaz": "http://www.dilnaumnicha.cz/",
    "logo": "img/partneri/dilna-u-mnicha.png"
   },
   {
-   "nazev": "Kudyznudy.cz",
-   "odkaz": "https://www.kudyznudy.cz/",
-   "logo": "img/partneri/kudy-z-nudy.png"
+   "nazev": "A.P.S.A. spol. s r.o.",
+   "odkaz": "https://apsa.cz/",
+   "logo": "img/partneri/apsa.png"
+  },
+  {
+   "nazev": "Půjč a vrať",
+   "odkaz": "https://www.pujcavrat.cz/",
+   "logo": "img/partneri/pujc-a-vrat.png"
   },
   {
    "nazev": "Givt.cz",
@@ -859,7 +884,7 @@ window.L10N={
     "mimo_sezonu": "by arrangement"
    },
    "suvenyry": {
-    "uvod": "At our events, on open weekends or by post. Orders by e-mail.",
+    "uvod": "At our events, on open weekends or by post. Orders by e-mail to zivyzamektouzim@email.cz.",
     "polozky": [
      {
       "nazev": "Castle enamel mug",
@@ -1021,6 +1046,16 @@ window.L10N={
       "src": "img/zahrada-IMG_6108.jpg",
       "popisek": "Finished area by the walls",
       "popis": "Levelled area by the town walls"
+     },
+     {
+      "src": "img/zahrada-IMG_6105.jpg",
+      "popisek": "27 September 2026: sieving soil",
+      "popis": "A volunteer shovels soil onto a screening sieve"
+     },
+     {
+      "src": "img/zahrada-IMG_6268.jpg",
+      "popisek": "17 October 2026: Castle CITO",
+      "popis": "Volunteers working in the soil between a mini excavator, a dumper and the wall"
      }
     ]
    },
@@ -1051,9 +1086,14 @@ window.L10N={
      "logo": "img/partneri/mas-kraj-zivych-vod.png"
     },
     {
-     "nazev": "U Havlů pub, Sokolovna Toužim",
-     "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
-     "logo": "img/partneri/u-havlu.png"
+     "nazev": "Kudyznudy.cz",
+     "odkaz": "https://www.kudyznudy.cz/",
+     "logo": "img/partneri/kudy-z-nudy.png"
+    },
+    {
+     "nazev": "Czech Forests (Lesy ČR)",
+     "odkaz": "https://lesycr.cz/",
+     "logo": "img/partneri/lesy-cr.png"
     },
     {
      "nazev": "Postřelí.cz",
@@ -1061,14 +1101,24 @@ window.L10N={
      "logo": "img/partneri/postreli.png"
     },
     {
+     "nazev": "U Havlů pub, Sokolovna Toužim",
+     "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
+     "logo": "img/partneri/u-havlu.png"
+    },
+    {
      "nazev": "Dílna U mnicha",
      "odkaz": "http://www.dilnaumnicha.cz/",
      "logo": "img/partneri/dilna-u-mnicha.png"
     },
     {
-     "nazev": "Kudyznudy.cz",
-     "odkaz": "https://www.kudyznudy.cz/",
-     "logo": "img/partneri/kudy-z-nudy.png"
+     "nazev": "A.P.S.A. spol. s r.o.",
+     "odkaz": "https://apsa.cz/",
+     "logo": "img/partneri/apsa.png"
+    },
+    {
+     "nazev": "Půjč a vrať",
+     "odkaz": "https://www.pujcavrat.cz/",
+     "logo": "img/partneri/pujc-a-vrat.png"
     },
     {
      "nazev": "Givt.cz",
@@ -1142,6 +1192,11 @@ window.L10N={
      "src": "img/akce/2026-07-10-2.jpg",
      "alt": "Audience on benches under the trees in the courtyard",
      "cap": "Music evening with Milan Pitkin and František Nedvěd, 10 Jul 2026"
+    },
+    {
+     "src": "img/h-2026-ohen.jpg",
+     "alt": "Volunteers by the fire at the castle in the evening",
+     "cap": "Evening by the fire after the Discover & Help work party, 26 September 2026"
     }
    ],
    "stranky": []
@@ -1760,7 +1815,7 @@ window.L10N={
     "mimo_sezonu": "nach Vereinbarung"
    },
    "suvenyry": {
-    "uvod": "Bei unseren Veranstaltungen, an offenen Wochenenden oder per Post. Bestellungen per E-Mail.",
+    "uvod": "Bei unseren Veranstaltungen, an offenen Wochenenden oder per Post. Bestellungen per E-Mail an zivyzamektouzim@email.cz.",
     "polozky": [
      {
       "nazev": "Emaillebecher vom Schloss",
@@ -1922,6 +1977,16 @@ window.L10N={
       "src": "img/zahrada-IMG_6108.jpg",
       "popisek": "Fertige Fläche an der Mauer",
       "popis": "Eingeebnete Fläche an der Stadtmauer"
+     },
+     {
+      "src": "img/zahrada-IMG_6105.jpg",
+      "popisek": "27. 9. 2026: Erde sieben",
+      "popis": "Ein Freiwilliger schaufelt Erde auf ein Sieb"
+     },
+     {
+      "src": "img/zahrada-IMG_6268.jpg",
+      "popisek": "17. 10. 2026: Schloss-CITO",
+      "popis": "Freiwillige arbeiten in der Erde zwischen Minibagger, Dumper und Mauer"
      }
     ]
    },
@@ -1952,9 +2017,14 @@ window.L10N={
      "logo": "img/partneri/mas-kraj-zivych-vod.png"
     },
     {
-     "nazev": "Kneipe U Havlů, Sokolovna Toužim",
-     "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
-     "logo": "img/partneri/u-havlu.png"
+     "nazev": "Kudyznudy.cz",
+     "odkaz": "https://www.kudyznudy.cz/",
+     "logo": "img/partneri/kudy-z-nudy.png"
+    },
+    {
+     "nazev": "Lesy ČR (Tschechische Staatsforste)",
+     "odkaz": "https://lesycr.cz/",
+     "logo": "img/partneri/lesy-cr.png"
     },
     {
      "nazev": "Postřelí.cz",
@@ -1962,14 +2032,24 @@ window.L10N={
      "logo": "img/partneri/postreli.png"
     },
     {
+     "nazev": "Kneipe U Havlů, Sokolovna Toužim",
+     "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
+     "logo": "img/partneri/u-havlu.png"
+    },
+    {
      "nazev": "Dílna U mnicha",
      "odkaz": "http://www.dilnaumnicha.cz/",
      "logo": "img/partneri/dilna-u-mnicha.png"
     },
     {
-     "nazev": "Kudyznudy.cz",
-     "odkaz": "https://www.kudyznudy.cz/",
-     "logo": "img/partneri/kudy-z-nudy.png"
+     "nazev": "A.P.S.A. spol. s r.o.",
+     "odkaz": "https://apsa.cz/",
+     "logo": "img/partneri/apsa.png"
+    },
+    {
+     "nazev": "Půjč a vrať",
+     "odkaz": "https://www.pujcavrat.cz/",
+     "logo": "img/partneri/pujc-a-vrat.png"
     },
     {
      "nazev": "Givt.cz",
@@ -2043,6 +2123,11 @@ window.L10N={
      "src": "img/akce/2026-07-10-2.jpg",
      "alt": "Publikum auf Bänken unter den Bäumen im Schlosshof",
      "cap": "Musikabend mit Milan Pitkin und František Nedvěd, 10. 7. 2026"
+    },
+    {
+     "src": "img/h-2026-ohen.jpg",
+     "alt": "Freiwillige abends am Feuer auf dem Schlossgelände",
+     "cap": "Abend am Feuer nach dem Arbeitseinsatz „Kennenlernen & helfen“, 26. 9. 2026"
     }
    ],
    "stranky": []

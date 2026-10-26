@@ -26,9 +26,14 @@
       "logo": "img/partneri/mas-kraj-zivych-vod.png"
     },
     {
-      "nazev": "Hospůdka U Havlů, Sokolovna Toužim",
-      "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
-      "logo": "img/partneri/u-havlu.png"
+      "nazev": "Kudyznudy.cz",
+      "odkaz": "https://www.kudyznudy.cz/",
+      "logo": "img/partneri/kudy-z-nudy.png"
+    },
+    {
+      "nazev": "Lesy ČR",
+      "odkaz": "https://lesycr.cz/",
+      "logo": "img/partneri/lesy-cr.png"
     },
     {
       "nazev": "Postřelí.cz",
@@ -36,14 +41,24 @@
       "logo": "img/partneri/postreli.png"
     },
     {
+      "nazev": "Hospůdka U Havlů, Sokolovna Toužim",
+      "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
+      "logo": "img/partneri/u-havlu.png"
+    },
+    {
       "nazev": "Dílna U mnicha",
       "odkaz": "http://www.dilnaumnicha.cz/",
       "logo": "img/partneri/dilna-u-mnicha.png"
     },
     {
-      "nazev": "Kudyznudy.cz",
-      "odkaz": "https://www.kudyznudy.cz/",
-      "logo": "img/partneri/kudy-z-nudy.png"
+      "nazev": "A.P.S.A. spol. s r.o.",
+      "odkaz": "https://apsa.cz/",
+      "logo": "img/partneri/apsa.png"
+    },
+    {
+      "nazev": "Půjč a vrať",
+      "odkaz": "https://www.pujcavrat.cz/",
+      "logo": "img/partneri/pujc-a-vrat.png"
     },
     {
       "nazev": "Givt.cz",
@@ -85,9 +100,14 @@
         "logo": "img/partneri/mas-kraj-zivych-vod.png"
       },
       {
-        "nazev": "U Havlů pub, Sokolovna Toužim",
-        "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
-        "logo": "img/partneri/u-havlu.png"
+        "nazev": "Kudyznudy.cz",
+        "odkaz": "https://www.kudyznudy.cz/",
+        "logo": "img/partneri/kudy-z-nudy.png"
+      },
+      {
+        "nazev": "Czech Forests (Lesy ČR)",
+        "odkaz": "https://lesycr.cz/",
+        "logo": "img/partneri/lesy-cr.png"
       },
       {
         "nazev": "Postřelí.cz",
@@ -95,14 +115,24 @@
         "logo": "img/partneri/postreli.png"
       },
       {
+        "nazev": "U Havlů pub, Sokolovna Toužim",
+        "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
+        "logo": "img/partneri/u-havlu.png"
+      },
+      {
         "nazev": "Dílna U mnicha",
         "odkaz": "http://www.dilnaumnicha.cz/",
         "logo": "img/partneri/dilna-u-mnicha.png"
       },
       {
-        "nazev": "Kudyznudy.cz",
-        "odkaz": "https://www.kudyznudy.cz/",
-        "logo": "img/partneri/kudy-z-nudy.png"
+        "nazev": "A.P.S.A. spol. s r.o.",
+        "odkaz": "https://apsa.cz/",
+        "logo": "img/partneri/apsa.png"
+      },
+      {
+        "nazev": "Půjč a vrať",
+        "odkaz": "https://www.pujcavrat.cz/",
+        "logo": "img/partneri/pujc-a-vrat.png"
       },
       {
         "nazev": "Givt.cz",
@@ -145,9 +175,14 @@
         "logo": "img/partneri/mas-kraj-zivych-vod.png"
       },
       {
-        "nazev": "Kneipe U Havlů, Sokolovna Toužim",
-        "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
-        "logo": "img/partneri/u-havlu.png"
+        "nazev": "Kudyznudy.cz",
+        "odkaz": "https://www.kudyznudy.cz/",
+        "logo": "img/partneri/kudy-z-nudy.png"
+      },
+      {
+        "nazev": "Lesy ČR (Tschechische Staatsforste)",
+        "odkaz": "https://lesycr.cz/",
+        "logo": "img/partneri/lesy-cr.png"
       },
       {
         "nazev": "Postřelí.cz",
@@ -155,14 +190,24 @@
         "logo": "img/partneri/postreli.png"
       },
       {
+        "nazev": "Kneipe U Havlů, Sokolovna Toužim",
+        "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
+        "logo": "img/partneri/u-havlu.png"
+      },
+      {
         "nazev": "Dílna U mnicha",
         "odkaz": "http://www.dilnaumnicha.cz/",
         "logo": "img/partneri/dilna-u-mnicha.png"
       },
       {
-        "nazev": "Kudyznudy.cz",
-        "odkaz": "https://www.kudyznudy.cz/",
-        "logo": "img/partneri/kudy-z-nudy.png"
+        "nazev": "A.P.S.A. spol. s r.o.",
+        "odkaz": "https://apsa.cz/",
+        "logo": "img/partneri/apsa.png"
+      },
+      {
+        "nazev": "Půjč a vrať",
+        "odkaz": "https://www.pujcavrat.cz/",
+        "logo": "img/partneri/pujc-a-vrat.png"
       },
       {
         "nazev": "Givt.cz",
