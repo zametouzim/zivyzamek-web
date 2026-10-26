@@ -1030,7 +1030,7 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
   document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowLeft')lbShow(lbI-1);if(e.key==='ArrowRight')lbShow(lbI+1)});
 
   // rezervace akcí: formulář, volná místa a QR platba (skript Google Apps Script, viz skripty/rezervace.gs)
-  var REZ_API='https://script.google.com/macros/s/AKfycbygTZcoBuA2ajslqVBU7q9lTD9Q7B8FXWm5zPr5asKhVeGonv2w2qJPETCMs0FYEJ8KjA/exec', REZ_IBAN='CZ7920100000002301034510', REZ_UCET='2301034510/2010';
+  var REZ_API='https://script.google.com/macros/s/AKfycbzDBkifOEvS551zruVB51diWEL4Vu_CrlPIa-a5t1mFHWMYi95O1NjAwIJewLlKDOntXQ/exec', REZ_IBAN='CZ7920100000002301034510', REZ_UCET='2301034510/2010';
   function rezSpd(vs,kc){return 'SPD*1.0*ACC:'+REZ_IBAN+'*AM:'+kc.toFixed(2)+'*CC:CZK*X-VS:'+vs+'*MSG:REZERVACE '+vs}
   function rezKc(n){return n.toLocaleString(window.LANG==='cs'?'cs-CZ':window.LANG)+(window.LANG==='cs'?' Kč':' CZK')}
   function rezQr(cb){if(window.qrcode)return cb();var sc=document.createElement('script');sc.src='js/qrcode.js';sc.onload=cb;document.head.appendChild(sc)}
