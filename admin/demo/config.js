@@ -230,10 +230,10 @@ window.DEMO_CONFIG={
     {
      "label": "Skrytá akce (nezobrazí se v programu ani v archivu, jen přes přímý odkaz)",
      "name": "skryta",
-     "widget": "boolean",
+     "widget": "skryta-akce",
      "required": false,
      "default": false,
-     "hint": "Pro vyzkoušení rezervací. Odkaz: adresa webu + #akce/ a název souboru akce."
+     "hint": "Hodí se pro akci připravenou dopředu: zveřejníte ji později tak, že přepínač vypnete. Nebo pro vyzkoušení rezervací. Když je zapnuto, ukáže se tu odkaz na akci ke zkopírování."
     },
     {
      "label": "Název je jen pracovní (na webu se zobrazí fialová poznámka „název?“)",
