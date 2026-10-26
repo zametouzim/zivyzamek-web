@@ -227,11 +227,14 @@ function volno(id, a) {
   return out;
 }
 
+/** Variabilní symbol: rok, měsíc, den a pořadí rezervace v ten den, např. 2026102605 = pátá rezervace 26. 10. 2026 (max. 99 za den). */
 function noveVs() {
-  var props = PropertiesService.getScriptProperties(), rok = Number(Utilities.formatDate(new Date(), ZONA, 'yy'));
-  var n = Number(props.getProperty('VS_' + rok) || 0) + 1;
-  props.setProperty('VS_' + rok, String(n));
-  return rok * 10000 + n;  // např. 260001
+  var props = PropertiesService.getScriptProperties(), den = Utilities.formatDate(new Date(), ZONA, 'yyyyMMdd');
+  var ulozeno = String(props.getProperty('VS_DEN') || '').split(':');
+  var n = ulozeno[0] === den ? Number(ulozeno[1]) + 1 : 1;
+  if (n > 99) throw new Error('Víc než 99 rezervací za den, variabilní symbol by měl víc než 10 číslic.');
+  props.setProperty('VS_DEN', den + ':' + n);
+  return Number(den) * 100 + n;
 }
 
 function casAkce(s) {
@@ -276,7 +279,8 @@ function text(klic, r) {
   var datum = a.date ? a.date.split('-').map(Number) : null;
   var kdy = datum ? (l === 'cs' ? datum[2] + '. ' + datum[1] + '. ' + datum[0] : l === 'de' ? datum[2] + '.' + datum[1] + '.' + datum[0] : datum[2] + '/' + datum[1] + '/' + datum[0]) : '';
   var nazev = a['title_' + l] || a.title, cas = a['when_' + l] || a.when;
-  var kdyCele = [kdy, cas, r.termin ? { cs: 'termín ', en: 'time slot ', de: 'Termin ' }[l] + r.termin : ''].filter(String).join(', ');
+  // u akce s termíny jen čas termínu, obecný čas akce („prohlídky v 19, 20 a 21 h“) by mátl
+  var kdyCele = [kdy, r.termin ? '' : cas, r.termin ? { cs: 'termín ', en: 'time slot ', de: 'Termin ' }[l] + r.termin : ''].filter(String).join(', ');
   var do_ = r.splatnost instanceof Date ? Utilities.formatDate(r.splatnost, ZONA, l === 'en' ? 'd/M/yyyy H:mm' : 'd. M. yyyy H:mm') : '';
   var odkaz = WEB + (l === 'cs' ? '' : '?lang=' + l) + '#platba/' + r.vs + '/' + r.castka;
   var listky = String(r.listky || '');
