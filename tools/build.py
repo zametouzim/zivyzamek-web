@@ -108,12 +108,17 @@ def akce(tr=None):
 
 def rezervace(r, datum):
     """Rezervace u akce: jen když je zapnutá a má počet míst a aspoň jednu cenu."""
-    if not isinstance(r, dict) or not r.get('zapnuto') or not r.get('kapacita'):
+    if not isinstance(r, dict) or not r.get('zapnuto') or not (r.get('kapacita') or r.get('terminy')):
         return None
     ceny = [{'druh': c['druh'], 'cena': int(c.get('cena') or 0)} for c in r.get('ceny') or [] if c.get('druh')]
     if not ceny:
         return None
-    return {'kapacita': int(r['kapacita']), 'uzaverka': str(r.get('uzaverka') or datum + 'T00:00')[:16], 'ceny': ceny}
+    # termíny (skupiny) s vlastní kapacitou; bez nich jeden termín "" s kapacitou akce
+    terminy = [{'cas': str(t['cas']).strip(), 'kapacita': int(t['kapacita'])} for t in r.get('terminy') or []
+               if str(t.get('cas') or '').strip() and t.get('kapacita')]
+    if not terminy:
+        terminy = [{'cas': '', 'kapacita': int(r['kapacita'])}]
+    return {'terminy': terminy, 'uzaverka': str(r.get('uzaverka') or datum + 'T00:00')[:16], 'ceny': ceny}
 
 
 def stranky():

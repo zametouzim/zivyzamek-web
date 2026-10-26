@@ -165,12 +165,36 @@
        "default": false
       },
       {
-       "label": "Počet míst",
+       "label": "Počet míst (když akce nemá termíny)",
        "name": "kapacita",
        "widget": "number",
        "value_type": "int",
        "min": 1,
-       "required": false
+       "required": false,
+       "hint": "Navýšit jde kdykoli, web i rezervace to převezmou zhruba do 10 minut po uložení."
+      },
+      {
+       "label": "Termíny (skupiny)",
+       "name": "terminy",
+       "widget": "list",
+       "required": false,
+       "summary": "{{fields.cas}}: {{fields.kapacita}} míst",
+       "hint": "Jen když se akce dělí na skupiny, např. prohlídky v 19:00, 20:00 a 21:00. Každý termín má vlastní počet míst a návštěvník si vybere. Počet míst jde kdykoli navýšit.",
+       "fields": [
+        {
+         "label": "Čas nebo název skupiny",
+         "name": "cas",
+         "widget": "string",
+         "hint": "Např. 19:00"
+        },
+        {
+         "label": "Počet míst",
+         "name": "kapacita",
+         "widget": "number",
+         "value_type": "int",
+         "min": 1
+        }
+       ]
       },
       {
        "label": "Uzávěrka rezervací",

@@ -476,7 +476,7 @@
   "krátký popis akce": "kurze Beschreibung der Veranstaltung",
   "plakát": "Plakat",
   "po domluvě": "nach Vereinbarung",
-  "vyprodáno": "ausverkauft",
+  "vyprodáno": "ausgebucht",
   "Pro děti": "Für Kinder",
   "Přijďte pomoct": "Helfen Sie mit",
   "Pro všechny": "Für alle",
@@ -514,7 +514,11 @@
   "Tolik volných míst už není. Volná místa": "So viele freie Plätze gibt es nicht mehr. Freie Plätze",
   "Rezervaci se nepodařilo odeslat. Napište nám prosím na zivyzamektouzim@email.cz.": "Die Reservierung konnte nicht gesendet werden. Bitte schreiben Sie uns an zivyzamektouzim@email.cz.",
   "Rezervace je potvrzená": "Ihre Reservierung ist bestätigt",
-  "Potvrzení jsme vám poslali e-mailem.": "Die Bestätigung haben wir Ihnen per E-Mail geschickt."
+  "Potvrzení jsme vám poslali e-mailem.": "Die Bestätigung haben wir Ihnen per E-Mail geschickt.",
+  "Vyberte termín": "Termin wählen",
+  "volno": "frei",
+  "Volná místa celkem": "Freie Plätze insgesamt",
+  "Vyberte prosím termín.": "Bitte wählen Sie einen Termin."
  },
  "title": "Živý zámek Toužim – Entwurf der Website"
 }

@@ -368,6 +368,10 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 .rez label{display:grid;gap:4px;font-weight:700;font-size:16px}
 .rez input,.rez textarea{font:inherit;font-weight:400;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);padding:10px 12px;border-radius:0;width:100%;box-sizing:border-box}
 .rez .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rez .terminy{border:0;margin:0;padding:0;display:grid;gap:8px}.rez .terminy legend{font-weight:700;font-size:16px;margin-bottom:6px;padding:0}
+.rez .terminy label{display:flex;align-items:center;gap:10px;font-weight:400;padding:10px 12px;border:1.5px solid var(--line);background:var(--paper);cursor:pointer}
+.rez .terminy label:has(input:disabled){opacity:.55;cursor:default}.rez .terminy label:has(input:checked){outline:2px solid var(--accent)}
+.rez .terminy input{width:auto;margin:0;accent-color:var(--accent)}.rez .terminy span{margin-left:auto;color:var(--grey);font-size:15px}
 .rez .ceny{display:flex;flex-wrap:wrap;gap:14px}.rez .ceny label{flex:0 1 180px}
 .rez .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .rez .note,.rez .gdpr{font-size:14px;color:var(--grey)}.rez .gdpr{font-size:12.5px}
@@ -910,8 +914,8 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
 <div class="copy" role="region" aria-label="Autorská práva"><div class="wrap">© <span id="cy">2026</span> Živý zámek Toužim z. s. · Web vytvořil Michal Nedvídek</div></div>
 
 <div class="lb" id="lb" hidden><img alt=""><button class="x" aria-label="Zavřít">×</button><button class="pv" aria-label="Předchozí">‹</button><button class="nx" aria-label="Další">›</button></div>
-<script src="data/i18n.js?v=57c1edde"></script>
-<script src="data/akce.js?v=b8b186d0"></script>
+<script src="data/i18n.js?v=75eae552"></script>
+<script src="data/akce.js?v=c5c9868e"></script>
 <script src="data/web.js?v=93fe2953"></script>
 <script>
 // Překlad statických textů stránky (data/i18n.js). Jednotka překladu = prvek, který obsahuje jen text a řádkové značky.
@@ -1042,8 +1046,12 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
     var h='<span class="eyebrow">'+T('Rezervace')+'</span><h2 class="h3">'+T('Rezervujte si místo')+'</h2>';
     if(!REZ_API){box.innerHTML=h+'<p>'+T('Online rezervace připravujeme.')+'</p>';return}
     if(new Date(R.uzaverka)<now){box.innerHTML=h+'<p>'+T('Rezervace jsou uzavřené.')+'</p>';return}
-    h+='<p class="volno" id="rezVolno">'+T('Zjišťuji volná místa…')+'</p><form id="rezForm" novalidate><div class="ceny">';
-    R.ceny.forEach(function(c,i){h+='<label><span>'+esc(T(c.druh))+' · '+rezKc(c.cena)+'</span><input name="pocet_'+i+'" type="number" min="0" max="'+R.kapacita+'" value="'+(R.ceny.length===1?1:0)+'" inputmode="numeric"></label>'});
+    var TT=R.terminy, vic=TT.length>1;
+    h+='<p class="volno" id="rezVolno">'+T('Zjišťuji volná místa…')+'</p><form id="rezForm" novalidate>';
+    if(vic){h+='<fieldset class="terminy"><legend>'+T('Vyberte termín')+'</legend>';TT.forEach(function(t,i){h+='<label><input type="radio" name="termin" value="'+esc(t.cas)+'"><b>'+esc(t.cas)+'</b><span id="rezT'+i+'"></span></label>'});h+='</fieldset>';}
+    else h+='<input type="hidden" name="termin" value="'+esc(TT[0].cas)+'">';
+    h+='<div class="ceny">';
+    R.ceny.forEach(function(c,i){h+='<label><span>'+esc(T(c.druh))+' · '+rezKc(c.cena)+'</span><input name="pocet_'+i+'" type="number" min="0" value="'+(R.ceny.length===1?1:0)+'" inputmode="numeric"></label>'});
     h+='</div><p class="sum">'+T('Celkem')+': <b id="rezSum"></b></p>';
     h+='<label><span>'+T('Jméno a příjmení')+'</span><input name="jmeno" autocomplete="name" required></label><div class="row2"><label><span>'+T('E-mail')+'</span><input name="email" type="email" autocomplete="email" required></label><label><span>'+T('Telefon')+'</span><input name="telefon" type="tel" autocomplete="tel" required></label></div>';
     h+='<label><span>'+T('Poznámka')+'</span><textarea name="poznamka" rows="3"></textarea></label><label class="hp" aria-hidden="true"><span>Nevyplňujte</span><input name="web" tabindex="-1" autocomplete="off"></label>';
@@ -1055,9 +1063,17 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
     function say(t,c){msg.textContent=t;msg.className=c||''}
     function pocty(){return R.ceny.map(function(c,i){return Math.max(0,parseInt(f.elements['pocet_'+i].value,10)||0)})}
     function sum(){var p=pocty(),k=0;p.forEach(function(n,i){k+=n*R.ceny[i].cena});document.getElementById('rezSum').textContent=rezKc(k);return {osob:p.reduce(function(x,y){return x+y},0),kc:k}}
-    function ukazVolno(n){volno=n;vol.textContent=n>0?T('Volná místa')+': '+n+' / '+R.kapacita:T('Vyprodáno. Všechna místa jsou zarezervovaná.');f.hidden=n<=0}
+    // volno = {termín: počet volných míst}
+    function ukazVolno(v){
+      volno=v;var vse=0;
+      TT.forEach(function(t,i){var n=v[t.cas]||0;vse+=n;if(!vic)return;
+        var el=document.getElementById('rezT'+i), r=f.querySelectorAll('input[name=termin]')[i];
+        el.textContent=n>0?T('volno')+' '+n+' / '+t.kapacita:T('vyprodáno');r.disabled=n<=0;if(n<=0&&r.checked)r.checked=false;});
+      vol.textContent=!vse?T('Vyprodáno. Všechna místa jsou zarezervovaná.'):vic?T('Volná místa celkem')+': '+vse:T('Volná místa')+': '+vse+' / '+TT[0].kapacita;
+      f.hidden=!vse;
+    }
     f.addEventListener('input',sum);sum();
-    fetch(REZ_API+'?akce='+encodeURIComponent(a.id)).then(function(r){return r.json()}).then(function(d){if(!d.ok)throw 0;ukazVolno(d.volno)}).catch(function(){vol.textContent=T('Počet volných míst se nepodařilo zjistit.')});
+    fetch(REZ_API+'?akce='+encodeURIComponent(a.id)).then(function(r){return r.json()}).then(function(d){if(!d.ok)throw 0;ukazVolno(d.terminy)}).catch(function(){vol.textContent=T('Počet volných míst se nepodařilo zjistit.')});
     f.addEventListener('submit',function(e){
       e.preventDefault();
       var el=f.elements, bad=[], s=sum();
@@ -1066,14 +1082,16 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
       if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(el.email.value.trim()))bad.push(el.email);
       if(el.telefon.value.replace(/\D/g,'').length<9)bad.push(el.telefon);
       if(bad.length){bad.forEach(function(i){i.classList.add('bad');i.setAttribute('aria-invalid','true')});bad[0].focus();say(T('Doplňte prosím zvýrazněná políčka.'),'err');return}
+      var tm=f.querySelector('input[name=termin]:checked')||(!vic&&el.termin);
+      if(!tm){say(T('Vyberte prosím termín.'),'err');return}
       if(!s.osob){say(T('Zadejte prosím počet osob.'),'err');return}
-      if(volno!==null&&s.osob>volno){say(T('Tolik volných míst už není. Volná místa')+': '+volno,'err');return}
+      if(volno&&s.osob>volno[tm.value]){say(T('Tolik volných míst už není. Volná místa')+': '+volno[tm.value],'err');return}
       var b=f.querySelector('button');b.disabled=true;say(T('Odesílám…'));
       var data=new URLSearchParams(new FormData(f));data.append('akce',a.id);data.append('lang',window.LANG);
       fetch(REZ_API,{method:'POST',body:data}).then(function(r){return r.json()}).then(function(d){
         if(d.ok){if(d.castka>0)rezPlatba(box,d);else box.innerHTML='<span class="eyebrow">'+T('Rezervace')+' '+esc(d.vs)+'</span><h2 class="h3">'+T('Rezervace je potvrzená')+'</h2><p>'+T('Potvrzení jsme vám poslali e-mailem.')+'</p>';box.scrollIntoView({block:'start'});return}
-        if(typeof d.volno==='number')ukazVolno(d.volno);
-        say(d.chyba==='plno'?T('Tolik volných míst už není. Volná místa')+': '+d.volno:d.chyba==='uzavreno'?T('Rezervace jsou uzavřené.'):T('Rezervaci se nepodařilo odeslat. Napište nám prosím na zivyzamektouzim@email.cz.'),'err');
+        if(d.terminy)ukazVolno(d.terminy);
+        say(d.chyba==='plno'?T('Tolik volných míst už není. Volná místa')+': '+(d.terminy[tm.value]||0):d.chyba==='uzavreno'?T('Rezervace jsou uzavřené.'):T('Rezervaci se nepodařilo odeslat. Napište nám prosím na zivyzamektouzim@email.cz.'),'err');
       }).catch(function(){say(T('Rezervaci se nepodařilo odeslat. Napište nám prosím na zivyzamektouzim@email.cz.'),'err')}).then(function(){b.disabled=false});
     });
   }

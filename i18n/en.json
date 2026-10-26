@@ -514,7 +514,11 @@
   "Tolik volných míst už není. Volná místa": "Not enough places left. Places available",
   "Rezervaci se nepodařilo odeslat. Napište nám prosím na zivyzamektouzim@email.cz.": "Your booking could not be sent. Please write to us at zivyzamektouzim@email.cz.",
   "Rezervace je potvrzená": "Your booking is confirmed",
-  "Potvrzení jsme vám poslali e-mailem.": "We have sent you a confirmation by e-mail."
+  "Potvrzení jsme vám poslali e-mailem.": "We have sent you a confirmation by e-mail.",
+  "Vyberte termín": "Choose a time slot",
+  "volno": "available",
+  "Volná místa celkem": "Places available in total",
+  "Vyberte prosím termín.": "Please choose a time slot."
  },
  "title": "Živý zámek Toužim – draft website"
 }

@@ -11,8 +11,24 @@
     "kapacita": 10,
     "uzaverka": "2026-12-30T23:59",
     "ceny": [
-      {"druh": "Dospělí", "cena": 2},
-      {"druh": "Děti", "cena": 1}
+      {
+        "druh": "Dospělí",
+        "cena": 2
+      },
+      {
+        "druh": "Děti",
+        "cena": 1
+      }
+    ],
+    "terminy": [
+      {
+        "cas": "19:00",
+        "kapacita": 5
+      },
+      {
+        "cas": "20:00",
+        "kapacita": 5
+      }
     ]
   },
   "en": {

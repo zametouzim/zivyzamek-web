@@ -6,7 +6,7 @@
  * Akce, počty míst, ceny a uzávěrky čte z webu (data/rezervace.json, vzniká z administrace).
  *
  * Jak to běží:
- *  - doGet:  počet volných míst u akce
+ *  - doGet:  počet volných míst u akce, u akce s více termíny (skupinami) u každého termínu zvlášť
  *  - doPost: nová rezervace → řádek na listu akce + e-mail s údaji k platbě
  *            (každá akce má vlastní list pojmenovaný podle akce a data, skript ho založí sám a nic z něj nemaže)
  *  - hlidej: každých 5 minut (časový spouštěč, založí ho funkce nastav)
@@ -25,7 +25,7 @@ var UCET = '2301034510/2010';
 var IBAN = 'CZ7920100000002301034510';
 var ZONA = 'Europe/Prague';
 
-var SLOUPCE = ['VS', 'Vytvořeno', 'Akce', 'Název akce', 'Jméno', 'E-mail', 'Telefon', 'Vstupenky', 'Osob', 'Kč',
+var SLOUPCE = ['VS', 'Vytvořeno', 'Akce', 'Název akce', 'Termín', 'Jméno', 'E-mail', 'Telefon', 'Vstupenky', 'Osob', 'Kč',
                'Poznámka', 'Jazyk', 'Stav', 'Zaplaceno', 'Platba', 'Zaplatit do'];
 var C = {};
 SLOUPCE.forEach(function (n, i) { C[n] = i; });
@@ -38,11 +38,11 @@ function doGet(e) {
   var akce = nactiAkce(), id = e && e.parameter && e.parameter.akce;
   if (id) {
     if (!akce[id]) return json({ ok: false, chyba: 'akce' });
-    return json({ ok: true, volno: volno(id, akce[id]) });
+    return json({ ok: true, terminy: volno(id, akce[id]) });
   }
   var out = {};
   Object.keys(akce).forEach(function (k) { out[k] = volno(k, akce[k]); });
-  return json({ ok: true, volno: out });
+  return json({ ok: true, akce: out });
 }
 
 function doPost(e) {
@@ -62,16 +62,19 @@ function doPost(e) {
     osob += n; castka += n * c.cena; listky.push(n + '× ' + c.druh + ' (' + c.cena + ' Kč)');
   });
   if (!osob) return json({ ok: false, chyba: 'udaje' });
+  var termin = String(p.termin || '');
+  if (!a.terminy.some(function (t) { return t.cas === termin; })) return json({ ok: false, chyba: 'termin' });
 
   var lock = LockService.getScriptLock();
   lock.waitLock(20000);
   try {
     if (casAkce(a.uzaverka) < new Date()) return json({ ok: false, chyba: 'uzavreno' });
     var v = volno(p.akce, a);
-    if (osob > v) return json({ ok: false, chyba: 'plno', volno: v });
+    if (osob > v[termin]) return json({ ok: false, chyba: 'plno', terminy: v });
     var vs = noveVs(), ted = new Date(), splatnost = new Date(ted.getTime() + LHUTA_HODIN * 3600e3);
     var radek = [];
     radek[C['VS']] = vs; radek[C['Vytvořeno']] = ted; radek[C['Akce']] = p.akce; radek[C['Název akce']] = a.title;
+    radek[C['Termín']] = "'" + termin;
     radek[C['Jméno']] = jmeno; radek[C['E-mail']] = email; radek[C['Telefon']] = "'" + telefon; radek[C['Vstupenky']] = listky.join(', ');
     radek[C['Osob']] = osob; radek[C['Kč']] = castka; radek[C['Poznámka']] = poznamka; radek[C['Jazyk']] = lang;
     radek[C['Stav']] = castka ? CEKA : POTVRZENO; radek[C['Zaplaceno']] = !castka; radek[C['Platba']] = castka ? '' : 'zdarma';
@@ -83,7 +86,7 @@ function doPost(e) {
   } finally {
     lock.releaseLock();
   }
-  var r = { vs: vs, castka: castka, osob: osob, listky: listky.join(', '), splatnost: splatnost, lang: lang, a: a, akce: p.akce };
+  var r = { vs: vs, castka: castka, osob: osob, listky: listky.join(', '), splatnost: splatnost, lang: lang, a: a, akce: p.akce, termin: termin };
   if (castka) posli(email, text('platbaPredmet', r), text('platba', r));
   else posli(email, text('potvrzeniPredmet', r), text('potvrzeni', r));
   return json({ ok: true, vs: String(vs), castka: castka, splatnost: castka ? splatnost.toISOString() : '' });
@@ -212,11 +215,16 @@ function listyRezervaci() {
   return SpreadsheetApp.getActive().getSheets().filter(function (x) { return x.getRange(1, 1).getValue() === 'VS'; });
 }
 
+/** Volná místa po termínech: {"19:00": 5, "20:00": 0}; akce bez termínů má jeden termín "". */
 function volno(id, a) {
-  var list = tabulka(id, a, true), data = list ? list.getDataRange().getValues() : [], obsazeno = 0;
-  for (var i = 1; i < data.length; i++)
-    if (data[i][C['Akce']] === id && DRZI_MISTO.indexOf(data[i][C['Stav']]) >= 0) obsazeno += Number(data[i][C['Osob']]) || 0;
-  return Math.max(0, a.kapacita - obsazeno);
+  var list = tabulka(id, a, true), data = list ? list.getDataRange().getValues() : [], out = {};
+  a.terminy.forEach(function (t) { out[t.cas] = t.kapacita; });
+  for (var i = 1; i < data.length; i++) {
+    var t = String(data[i][C['Termín']]);
+    if (data[i][C['Akce']] === id && t in out && DRZI_MISTO.indexOf(data[i][C['Stav']]) >= 0) out[t] -= Number(data[i][C['Osob']]) || 0;
+  }
+  Object.keys(out).forEach(function (t) { out[t] = Math.max(0, out[t]); });
+  return out;
 }
 
 function noveVs() {
@@ -233,7 +241,7 @@ function casAkce(s) {
 function radekData(row, akce) {
   var id = row[C['Akce']], a = akce[id] || { title: row[C['Název akce']], date: '', when: '' };
   return { vs: row[C['VS']], castka: row[C['Kč']], osob: row[C['Osob']], listky: row[C['Vstupenky']], splatnost: row[C['Zaplatit do']],
-           lang: row[C['Jazyk']] || 'cs', a: a, akce: id };
+           lang: row[C['Jazyk']] || 'cs', a: a, akce: id, termin: String(row[C['Termín']] || '') };
 }
 
 function json(o) {
@@ -268,7 +276,8 @@ function text(klic, r) {
   var datum = a.date ? a.date.split('-').map(Number) : null;
   var kdy = datum ? (l === 'cs' ? datum[2] + '. ' + datum[1] + '. ' + datum[0] : l === 'de' ? datum[2] + '.' + datum[1] + '.' + datum[0] : datum[2] + '/' + datum[1] + '/' + datum[0]) : '';
   var nazev = a['title_' + l] || a.title, cas = a['when_' + l] || a.when;
-  var akce = nazev + (kdy ? ', ' + kdy : '') + (cas ? ' (' + cas + ')' : '');
+  var akce = nazev + (kdy ? ', ' + kdy : '') + (cas ? ' (' + cas + ')' : '') +
+             (r.termin ? { cs: ', termín ', en: ', time slot ', de: ', Termin ' }[l] + r.termin : '');
   var do_ = r.splatnost instanceof Date ? Utilities.formatDate(r.splatnost, ZONA, l === 'en' ? 'd/M/yyyy H:mm' : 'd. M. yyyy H:mm') : '';
   var odkaz = WEB + (l === 'cs' ? '' : '?lang=' + l) + '#platba/' + r.vs + '/' + r.castka;
   var listky = String(r.listky || '');

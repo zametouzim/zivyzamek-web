@@ -1,6 +1,15 @@
 {
  "2026-12-31-zkouska-rezervaci": {
-  "kapacita": 10,
+  "terminy": [
+   {
+    "cas": "19:00",
+    "kapacita": 5
+   },
+   {
+    "cas": "20:00",
+    "kapacita": 5
+   }
+  ],
   "uzaverka": "2026-12-30T23:59",
   "ceny": [
    {
