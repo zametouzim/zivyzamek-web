@@ -1,14 +1,31 @@
 {
+  "lang": [
+    "cs",
+    "en",
+    "de"
+  ],
   "title": "Zkouška rezervací",
   "date": "2026-12-31",
+  "end": "",
   "when": "jen zkouška, akce se nekoná",
   "short": "Skrytá testovací akce pro vyzkoušení rezervací. Na webu není vidět.",
-  "text": "Tato akce slouží jen k vyzkoušení rezervací a plateb. **Akce se nekoná.**",
+  "text": "Tato akce slouží jen k vyzkoušení rezervací a plateb. **Akce se nekoná. Test náhledu**",
   "prelozit": false,
-  "skryta": false,
+  "poster": "",
+  "photos": [],
+  "tag": "",
   "rezervace": {
-    "zapnuto": true,
     "kapacita": 10,
+    "terminy": [
+      {
+        "cas": "19:00",
+        "kapacita": 5
+      },
+      {
+        "cas": "20:00",
+        "kapacita": 5
+      }
+    ],
     "uzaverka": "2026-12-30T23:59",
     "ceny": [
       {
@@ -20,17 +37,10 @@
         "cena": 1
       }
     ],
-    "terminy": [
-      {
-        "cas": "19:00",
-        "kapacita": 5
-      },
-      {
-        "cas": "20:00",
-        "kapacita": 5
-      }
-    ]
+    "zapnuto": true
   },
+  "skryta": false,
+  "titleTodo": false,
   "en": {
     "title": "Booking test",
     "when": "test only, the event does not take place",
