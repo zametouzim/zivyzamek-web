@@ -20,6 +20,7 @@ var WEB = 'https://zametouzim.github.io/zivyzamek-web/';  // adresa webu (po př
 var ODESILATEL = 'rezervace@zivyzamektouzim.cz';         // musí být v Gmailu tohoto účtu v „Odesílat poštu jako“, jinak se pošle z Gmailu a přijde upozornění
 var ODPOVEDI = 'info@zivyzamektouzim.cz';                  // kam půjdou odpovědi návštěvníků
 var UPOZORNENI = 'info@zivyzamektouzim.cz';                // kam skript hlásí problémy (Fio, platba po lhůtě)
+var NOVE = 'rezervace@zivyzamektouzim.cz';                 // kam přijde zpráva o každé nové rezervaci (prázdné = nikam)
 var LHUTA_HODIN = 24;                                     // jak dlouho držet nezaplacenou rezervaci
 var UCET = '2301034510/2010';
 var IBAN = 'CZ7920100000002301034510';
@@ -89,6 +90,17 @@ function doPost(e) {
   var r = { vs: vs, castka: castka, osob: osob, listky: listky.join(', '), splatnost: splatnost, lang: lang, a: a, akce: p.akce, termin: termin };
   if (castka) posli(email, text('platbaPredmet', r), text('platba', r));
   else posli(email, text('potvrzeniPredmet', r), text('potvrzeni', r));
+  if (NOVE) {
+    try {
+      var datum = a.date ? a.date.split('-').map(Number) : null;
+      GmailApp.sendEmail(NOVE, 'Nová rezervace ' + vs + ': ' + a.title + (termin ? ' ' + termin : '') + ', ' + osob + ' os.',
+        'Akce: ' + a.title + '\nKdy: ' + (datum ? datum[2] + '. ' + datum[1] + '. ' + datum[0] : '') + (termin ? ', termín ' + termin : a.when ? ', ' + a.when : '') +
+        '\nJméno: ' + jmeno + '\nE-mail: ' + email + '\nTelefon: ' + telefon + '\nVstupenky: ' + listky.join(', ') + '\nOsob: ' + osob +
+        '\nCena: ' + castka + ' Kč' + (castka ? ', zaplatit do ' + Utilities.formatDate(splatnost, ZONA, 'd. M. yyyy H:mm') : ' (zdarma, potvrzeno)') +
+        '\nVS: ' + vs + (poznamka ? '\nPoznámka: ' + poznamka : '') + '\n\nTabulka: ' + SpreadsheetApp.getActive().getUrl(),
+        { name: 'Rezervace na webu', replyTo: email });
+    } catch (err) { console.error(err); }  // rezervace platí i bez téhle zprávy
+  }
   return json({ ok: true, vs: String(vs), castka: castka, splatnost: castka ? splatnost.toISOString() : '' });
 }
 
