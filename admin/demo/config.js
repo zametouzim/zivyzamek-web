@@ -4,6 +4,10 @@ window.DEMO_CONFIG={
  },
  "site_url": "https://zametouzim.github.io/zivyzamek-web/",
  "display_url": "https://zametouzim.github.io/zivyzamek-web/",
+ "slug": {
+  "encoding": "ascii",
+  "clean_accents": true
+ },
  "logo_url": "https://zametouzim.github.io/zivyzamek-web/img/logo.png",
  "media_folder": "img/uploads",
  "public_folder": "img/uploads",

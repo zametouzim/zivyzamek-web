@@ -1102,7 +1102,7 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
     var id=(location.hash||'#domu').slice(1), jump=null;
     if(id==='archiv'){id='program';jump='archiv';}
     if(id==='dotaz'){id='navsteva';jump='dotaz';}
-    if(id.indexOf('akce/')===0){renderDetail(id.slice(5));id='akce';}
+    if(id.indexOf('akce/')===0){var aid=id.slice(5);try{aid=decodeURIComponent(aid)}catch(e){}renderDetail(aid);id='akce';}
     else if(id.indexOf('platba/')===0){var q=id.split('/');detail.innerHTML='<div class="card rez" id="rez"></div>';if(/^\d{1,10}$/.test(q[1])&&+q[2]>0)rezPlatba(document.getElementById('rez'),{vs:q[1],castka:+q[2]});else detail.innerHTML='<p>'+T('Akce nenalezena.')+'</p>';id='akce';}
     else if(id.indexOf('/')>0){jump=id.split('/')[1];id=id.split('/')[0];}
     if(!pages.some(function(p){return p.dataset.page===id})) id='domu';
