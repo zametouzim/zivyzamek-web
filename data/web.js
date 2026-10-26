@@ -237,6 +237,11 @@ window.WEB={
    "logo": "img/partneri/dilna-u-mnicha.png"
   },
   {
+   "nazev": "A.P.S.A. spol. s r.o.",
+   "odkaz": "https://apsa.cz/",
+   "logo": "img/partneri/apsa.png"
+  },
+  {
    "nazev": "Kudyznudy.cz",
    "odkaz": "https://www.kudyznudy.cz/",
    "logo": "img/partneri/kudy-z-nudy.png"
@@ -1084,6 +1089,11 @@ window.L10N={
      "nazev": "Dílna U mnicha",
      "odkaz": "http://www.dilnaumnicha.cz/",
      "logo": "img/partneri/dilna-u-mnicha.png"
+    },
+    {
+     "nazev": "A.P.S.A. spol. s r.o.",
+     "odkaz": "https://apsa.cz/",
+     "logo": "img/partneri/apsa.png"
     },
     {
      "nazev": "Kudyznudy.cz",
@@ -2000,6 +2010,11 @@ window.L10N={
      "nazev": "Dílna U mnicha",
      "odkaz": "http://www.dilnaumnicha.cz/",
      "logo": "img/partneri/dilna-u-mnicha.png"
+    },
+    {
+     "nazev": "A.P.S.A. spol. s r.o.",
+     "odkaz": "https://apsa.cz/",
+     "logo": "img/partneri/apsa.png"
     },
     {
      "nazev": "Kudyznudy.cz",

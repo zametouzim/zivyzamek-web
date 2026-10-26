@@ -304,7 +304,6 @@
   "po domluvě: Pavla +420 724 859 799": "by arrangement: Pavla +420 724 859 799",
   "Pavla Vokurková, předsedkyně<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>": "Pavla Vokurková, chair<br><a href=\"tel:+420724859799\">+420 724 859 799</a><br><a href=\"mailto:zivyzamektouzim@email.cz\">zivyzamektouzim@email.cz</a>",
   "Naskenujte v bankovní aplikaci. Je v něm přednastavený dar 500 Kč, částku můžete v aplikaci změnit.": "Scan it in your banking app. It has a preset gift of CZK 500; you can change the amount in the app.",
-  "Na Výsluní 346, 364 01 Toužim<br>IČO 04690770<br>Spolkový rejstřík: Krajský soud v Plzni, sp. zn. L 7540": "Na Výsluní 346, 364 01 Toužim<br>IČO 04690770<br>Register of associations: Regional Court in Plzeň, file no. L 7540",
   "Předsedkyně": "Chair",
   "Místopředsedkyně": "Vice-chair",
   "Zámecký pán": "Lord of the Castle",
@@ -352,7 +351,6 @@
   "Záhony jsou navržené tak, aby kvetly celoročně, poskytovaly obživu i zázemí hmyzu.": "The beds are designed to flower all year round and to give insects both food and a home.",
   "Pokud jsou dveře zámku otevřené, nebojte se vstoupit, rádi vás uvítáme. Průvodce nejčastěji najdete v Horním zámku, v bývalé konírně.": "If the castle doors are open, don't hesitate to come in, you are very welcome. You will usually find the guides in the Upper Castle, in the former stables.",
   "V březnu 2026 jsme pod hlínou narazili na původní hradební zeď, pravděpodobně z počátku 15. století. V dubnu ji archeologové prozkoumali a zdokumentovali. Aby zůstala chráněná, znovu ji zasypeme a v blízkosti nálezu umístíme jako připomínku informační tabuli s fotkami z archeologického průzkumu.": "In March 2026 we came across the original fortification wall under the soil, probably from the early 15th century. In April archaeologists examined and documented it. To keep it protected, we will cover it over again and, as a reminder, put up an information board with photos from the archaeological survey near the find.",
-  "Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Účet <span id=\"fUcet\">2301034510/2010</span><br><a href=\"https://www.facebook.com/zivyzamek.touzim\" target=\"_blank\" rel=\"noopener\">Facebook</a> · <a href=\"https://www.instagram.com/zivyzamektouzim/\" target=\"_blank\" rel=\"noopener\">Instagram</a>": "Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Account <span id=\"fUcet\">2301034510/2010</span><br><a href=\"https://www.facebook.com/zivyzamek.touzim\" target=\"_blank\" rel=\"noopener\">Facebook</a> · <a href=\"https://www.instagram.com/zivyzamektouzim/\" target=\"_blank\" rel=\"noopener\">Instagram</a>",
   "Instagram": "Instagram",
   "<a class=\"btn\" href=\"#program\">Celý program akcí</a>": "<a class=\"btn\" href=\"#program\">Full programme of events</a>",
   "18. 10. 2026: odkrývání horní hradební zdi": "18 October 2026: uncovering the upper fortification wall",
@@ -361,7 +359,9 @@
   "V říjnu 2026 jsme odkryli část horní hradební zdi. Jde o jinou zeď než nález z března. Do plánu z archeologického průzkumu z roku 1974 jsme ji zakreslili oranžově, červeně je část odkrytá už v roce 1974.": "In October 2026 we uncovered part of the upper fortification wall. It is a different wall from the one found in March. We have marked it in orange on the plan from the 1974 archaeological survey; the part shown in red was already uncovered in 1974.",
   "Plán průzkumu z roku 1974: oranžově odkryté 2026, červeně odkryté 1974": "Plan of the 1974 survey: orange uncovered in 2026, red uncovered in 1974",
   "17. 10. 2026: pohled podél zdi": "17 October 2026: view along the wall",
-  "17. 10. 2026: zeď vedle zakryté plochy": "17 October 2026: the wall next to the covered area"
+  "17. 10. 2026: zeď vedle zakryté plochy": "17 October 2026: the wall next to the covered area",
+  "Na Výsluní 346, 364 01 Toužim<br>IČO 04690770<br>Datová schránka: wttsmga<br>Spolkový rejstřík: Krajský soud v Plzni, sp. zn. L 7540": "Na Výsluní 346, 364 01 Toužim<br>IČO 04690770<br>Data box ID: wttsmga<br>Register of associations: Regional Court in Plzeň, file no. L 7540",
+  "Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Datová schránka: wttsmga<br>Účet <span id=\"fUcet\">2301034510/2010</span><br><a href=\"https://www.facebook.com/zivyzamek.touzim\" target=\"_blank\" rel=\"noopener\">Facebook</a> · <a href=\"https://www.instagram.com/zivyzamektouzim/\" target=\"_blank\" rel=\"noopener\">Instagram</a>": "Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Data box ID: wttsmga<br>Account <span id=\"fUcet\">2301034510/2010</span><br><a href=\"https://www.facebook.com/zivyzamek.touzim\" target=\"_blank\" rel=\"noopener\">Facebook</a> · <a href=\"https://www.instagram.com/zivyzamektouzim/\" target=\"_blank\" rel=\"noopener\">Instagram</a>"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, home",
