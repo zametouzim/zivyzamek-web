@@ -18,8 +18,8 @@
 // ---- Nastavení ----
 var WEB = 'https://zametouzim.github.io/zivyzamek-web/';  // adresa webu (po přechodu na doménu stačí změnit tady)
 var ODESILATEL = 'rezervace@zivyzamektouzim.cz';         // musí být v Gmailu tohoto účtu v „Odesílat poštu jako“, jinak se pošle z Gmailu a přijde upozornění
-var ODPOVEDI = 'zivyzamektouzim@email.cz';                // kam půjdou odpovědi návštěvníků
-var UPOZORNENI = 'zivyzamektouzim@email.cz';              // kam skript hlásí problémy (Fio, platba po lhůtě)
+var ODPOVEDI = 'info@zivyzamektouzim.cz';                  // kam půjdou odpovědi návštěvníků
+var UPOZORNENI = 'info@zivyzamektouzim.cz';                // kam skript hlásí problémy (Fio, platba po lhůtě)
 var LHUTA_HODIN = 24;                                     // jak dlouho držet nezaplacenou rezervaci
 var UCET = '2301034510/2010';
 var IBAN = 'CZ7920100000002301034510';
