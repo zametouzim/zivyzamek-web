@@ -1009,11 +1009,12 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
     h+='<div class="ak-body"><div class="ak-text">'+(a.html?a.html.split('\n').map(function(p){return '<p>'+p+'</p>'}).join(''):a.text?a.text.split('\n').map(function(p){return '<p>'+esc(p)+'</p>'}).join(''):'<p class="tbd">'+T('Bude doplněno.')+'</p>')+'</div>';
     h+=a.poster?'<button class="poster" data-src="'+a.poster+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+a.poster+'" alt="'+T('Plakát')+': '+esc(a.title)+'"></button>':'<div></div>';
     h+='</div>';
-    if(a.rez&&!past(a))h+='<div class="card rez" id="rez"></div>';
+    var rez=a.rez&&!past(a);
+    if(rez)h+='<div class="card rez" id="rez"></div>';
     if(a.photos&&a.photos.length){h+='<div class="ak-gal">'+a.photos.map(function(f,i){return '<button data-i="'+i+'"><img src="'+f+'" alt="'+T('Fotka z akce')+' '+esc(a.title)+'" loading="lazy"></button>'}).join('')+'</div>';}
-    else h+='<p style="color:var(--grey);margin:24px 0 40px">'+T('Fotky doplníme.')+'</p>';
+    else if(!rez)h+='<p style="color:var(--grey);margin:24px 0 40px">'+T('Fotky doplníme.')+'</p>';
     detail.innerHTML=h; curPhotos=a.photos||[];
-    if(a.rez&&!past(a))rezForm(a,document.getElementById('rez'));
+    if(rez)rezForm(a,document.getElementById('rez'));
   }
   function lbShow(i){lbI=(i+lbImgs.length)%lbImgs.length;lb.querySelector('img').src=lbImgs[lbI];var one=lbImgs.length<2;lb.querySelector('.pv').hidden=one;lb.querySelector('.nx').hidden=one;lb.hidden=false}
   function lbOpen(list,i){lbImgs=list;lbShow(i||0)}
