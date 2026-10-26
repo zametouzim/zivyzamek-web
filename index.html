@@ -396,7 +396,7 @@ button.copy{background:none;color:inherit;border:1.5px solid currentColor;font-s
 .pblock.b1 .btn{background:#fbf7ee;color:#356a80;border-color:#fbf7ee}
 footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):hover,.kgrid a:not(.btn):hover{text-decoration:underline}
 .up .ev h2 a,.up .det{text-decoration:none}.up .ev h2 a:hover,.up .det:hover{text-decoration:underline;text-decoration-color:var(--accent)}
-@media (max-width:374px){.bar{gap:8px}.brand img{width:72px}.give-mobile{padding:8px 10px;font-size:15px}.menu-btn{padding:6px 10px}}@media (max-width:339px){.brand img{width:60px}.give-mobile{padding:8px 8px}}.pblock .qr figcaption{opacity:1}</style>
+@media (max-width:374px){.bar{gap:8px}.brand img{width:72px}.give-mobile{padding:8px 10px;font-size:15px}.menu-btn{padding:6px 10px}}@media (max-width:339px){.brand img{width:60px}.give-mobile{padding:8px 8px}}.pblock .qr figcaption{opacity:1}.ak-text .tbd{color:var(--grey);font-style:italic}</style>
 </head>
 <body>
 
@@ -893,9 +893,9 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
 <div class="copy" role="region" aria-label="Autorská práva"><div class="wrap">© <span id="cy">2026</span> Živý zámek Toužim z. s. · Web vytvořil Michal Nedvídek s pomocí Claude (AI od Anthropicu)</div></div>
 
 <div class="lb" id="lb" hidden><img alt=""><button class="x" aria-label="Zavřít">×</button><button class="pv" aria-label="Předchozí">‹</button><button class="nx" aria-label="Další">›</button></div>
-<script src="data/i18n.js?v=ff12d4bd"></script>
-<script src="data/akce.js?v=a38c191a"></script>
-<script src="data/web.js?v=b537d97f"></script>
+<script src="data/i18n.js?v=cb77fd07"></script>
+<script src="data/akce.js?v=5bf5a32d"></script>
+<script src="data/web.js?v=8ee607de"></script>
 <script>
 // Překlad statických textů stránky (data/i18n.js). Jednotka překladu = prvek, který obsahuje jen text a řádkové značky.
 (function(){
@@ -985,7 +985,7 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
     var a=AKCE.filter(function(x){return x.id===id})[0];
     if(!a){detail.innerHTML='<a class="ak-back" href="#archiv">← '+T('Archiv akcí')+'</a><p>'+T('Akce nenalezena.')+'</p>';return}
     var h=(past(a)?'<a class="ak-back" href="#archiv">← '+T('Archiv akcí')+'</a>':'<a class="ak-back" href="#program">← '+T('Program')+'</a>')+'<div class="ak-head"><div class="ak-date">'+dFull(a)+'</div><h1>'+esc(a.title)+(a.titleTodo?' <span class="todo" style="font-size:18px">název?</span>':'')+'</h1>'+(a.when?'<div class="ak-when">'+esc(a.when)+'</div>':'')+'</div>';
-    h+='<div class="ak-body"><div class="ak-text">'+(a.html?a.html.split('\n').map(function(p){return '<p>'+p+'</p>'}).join(''):a.text?a.text.split('\n').map(function(p){return '<p>'+esc(p)+'</p>'}).join(''):'<p><span class="todo">'+T('krátký popis akce')+'</span></p>')+'</div>';
+    h+='<div class="ak-body"><div class="ak-text">'+(a.html?a.html.split('\n').map(function(p){return '<p>'+p+'</p>'}).join(''):a.text?a.text.split('\n').map(function(p){return '<p>'+esc(p)+'</p>'}).join(''):'<p class="tbd">'+T('Bude doplněno.')+'</p>')+'</div>';
     h+=a.poster?'<button class="poster" data-src="'+a.poster+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+a.poster+'" alt="'+T('Plakát')+': '+esc(a.title)+'"></button>':'<div></div>';
     h+='</div>';
     if(a.photos&&a.photos.length){h+='<div class="ak-gal">'+a.photos.map(function(f,i){return '<button data-i="'+i+'"><img src="'+f+'" alt="'+T('Fotka z akce')+' '+esc(a.title)+'" loading="lazy"></button>'}).join('')+'</div>';}

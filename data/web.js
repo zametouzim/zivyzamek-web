@@ -858,7 +858,7 @@ window.L10N={
    "2026-11-01-poznej-pomoz": {
     "title": "Discover & Help",
     "when": "Sunday 9am–4pm",
-    "short": "Part-time job at Toužim Castle",
+    "short": "Volunteer work day at Toužim Castle",
     "html": "Please help us prepare the site for the children’s play area and winterise the castle. You can also support us by bringing along some home-baked treats! Refreshments will be provided for those helping out."
    },
    "2026-12-13": {
@@ -1794,7 +1794,7 @@ window.L10N={
    "2026-11-01-poznej-pomoz": {
     "title": "Entdecke & Hilf",
     "when": "Sonntag 9–16 Uhr",
-    "short": "Aushilfsjob auf dem Schloss Toužim",
+    "short": "Arbeitseinsatz auf Schloss Toužim",
     "html": "Helft uns dabei, den Platz für den Kinderspielbereich vorzubereiten und die Burg winterfest zu machen. Ihr könnt uns auch mit selbstgebackenen Leckereien unterstützen! Für die Helfer ist für Verpflegung gesorgt."
    },
    "2026-12-13": {
