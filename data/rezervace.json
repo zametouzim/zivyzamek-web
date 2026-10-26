@@ -25,6 +25,28 @@
   "date": "2026-11-02",
   "when": ""
  },
+ "2026-12-13": {
+  "terminy": [
+   {
+    "cas": "",
+    "kapacita": 50
+   }
+  ],
+  "uzaverka": "2026-12-11T00:00",
+  "ceny": [
+   {
+    "druh": "Jednotné vstupné",
+    "cena": 50
+   }
+  ],
+  "title": "Vánoční setkání se svařákem",
+  "date": "2026-12-13",
+  "when": "neděle",
+  "title_en": "Christmas get-together with mulled wine",
+  "when_en": "Sunday",
+  "title_de": "Weihnachtstreffen mit Glühwein",
+  "when_de": "Sonntag"
+ },
  "2026-12-31-zkouska-rezervaci": {
   "terminy": [
    {
