@@ -19,8 +19,8 @@
 var WEB = 'https://zametouzim.github.io/zivyzamek-web/';  // adresa webu (po přechodu na doménu stačí změnit tady)
 var ODESILATEL = 'rezervace@zivyzamektouzim.cz';         // musí být v Gmailu tohoto účtu v „Odesílat poštu jako“, jinak se pošle z Gmailu a přijde upozornění
 var ODPOVEDI = 'info@zivyzamektouzim.cz';                  // kam půjdou odpovědi návštěvníků
-var UPOZORNENI = 'info@zivyzamektouzim.cz';                // kam skript hlásí problémy (Fio, platba po lhůtě)
-var NOVE = 'rezervace@zivyzamektouzim.cz';                 // kam přijde zpráva o každé nové rezervaci (prázdné = nikam)
+var UPOZORNENI = 'rezervace@zivyzamektouzim.cz';           // kam skript hlásí problémy (Fio, platba po lhůtě)
+var NOVE = 'rezervace@zivyzamektouzim.cz';                 // kam přijde zpráva o každé nové a zaplacené rezervaci (prázdné = nikam)
 var LHUTA_HODIN = 24;                                     // jak dlouho držet nezaplacenou rezervaci
 var UCET = '2301034510/2010';
 var IBAN = 'CZ7920100000002301034510';
@@ -98,7 +98,7 @@ function doPost(e) {
         '\nJméno: ' + jmeno + '\nE-mail: ' + email + '\nTelefon: ' + telefon + '\nVstupenky: ' + listky.join(', ') + '\nOsob: ' + osob +
         '\nCena: ' + castka + ' Kč' + (castka ? ', zaplatit do ' + Utilities.formatDate(splatnost, ZONA, 'd. M. yyyy H:mm') : ' (zdarma, potvrzeno)') +
         '\nVS: ' + vs + (poznamka ? '\nPoznámka: ' + poznamka : '') + '\n\nTabulka: ' + SpreadsheetApp.getActive().getUrl(),
-        { name: 'Rezervace na webu', replyTo: email });
+        proSpolek(NOVE, email));
     } catch (err) { console.error(err); }  // rezervace platí i bez téhle zprávy
   }
   return json({ ok: true, vs: String(vs), castka: castka, splatnost: castka ? splatnost.toISOString() : '' });
@@ -145,6 +145,15 @@ function hlidejList(list, akce, platby, ted) {
     } else if (row[C['Zaplaceno']] === true && (stav === CEKA || stav === POZDE)) {
       list.getRange(i + 1, C['Stav'] + 1).setValue(POTVRZENO);
       posli(row[C['E-mail']], text('potvrzeniPredmet', r), text('potvrzeni', r));
+      if (NOVE) {
+        try {
+          GmailApp.sendEmail(NOVE, 'Zaplaceno ' + vs + ': ' + row[C['Jméno']] + ', ' + row[C['Název akce']] + (r.termin ? ' ' + r.termin : '') + ', ' + kc + ' Kč',
+            'Rezervace ' + vs + ' je zaplacená a potvrzená, návštěvník dostal potvrzení.\n\nAkce: ' + row[C['Název akce']] + (r.termin ? ', termín ' + r.termin : '') +
+            '\nJméno: ' + row[C['Jméno']] + '\nE-mail: ' + row[C['E-mail']] + '\nVstupenky: ' + row[C['Vstupenky']] + '\nCena: ' + kc + ' Kč' +
+            '\nPlatba: ' + (row[C['Platba']] || 'zaškrtnuto ručně v tabulce') + '\n\nTabulka: ' + SpreadsheetApp.getActive().getUrl(),
+            proSpolek(NOVE, row[C['E-mail']]));
+        } catch (err) { console.error(err); }
+      }
     } else if (stav === CEKA && row[C['Zaplatit do']] instanceof Date && row[C['Zaplatit do']] < ted) {
       list.getRange(i + 1, C['Stav'] + 1).setValue(PROPADLO);
       if (p && p.castka > 0) {
@@ -292,6 +301,14 @@ function posli(komu, predmet, telo) {
   GmailApp.sendEmail(komu, predmet, telo, opt);
 }
 
+/** Zpráva pro spolek na rezervace@ jde přes Seznam (from = alias), jinak ji Gmail nechá u sebe, protože adresu bere jako svoji. */
+function proSpolek(komu, replyTo) {
+  var opt = { name: 'Rezervace na webu' };
+  if (replyTo) opt.replyTo = replyTo;
+  if (komu === ODESILATEL && GmailApp.getAliases().indexOf(ODESILATEL) >= 0) opt.from = ODESILATEL;
+  return opt;
+}
+
 /** Text pro QR Platbu (formát SPD České bankovní asociace), stejný jako na webu. */
 function spd(vs, kc) {
   return 'SPD*1.0*ACC:' + IBAN + '*AM:' + kc.toFixed(2) + '*CC:CZK*X-VS:' + vs + '*MSG:REZERVACE ' + vs;
@@ -308,7 +325,7 @@ function upozorni(predmet, telo, jednouDenne) {
     if (props.getProperty(k) === dnes) return;
     props.setProperty(k, dnes);
   }
-  GmailApp.sendEmail(UPOZORNENI, 'Rezervace: ' + predmet, telo + '\n\nTabulka: ' + SpreadsheetApp.getActive().getUrl(), { name: 'Rezervace na webu' });
+  GmailApp.sendEmail(UPOZORNENI, 'Rezervace: ' + predmet, telo + '\n\nTabulka: ' + SpreadsheetApp.getActive().getUrl(), proSpolek(UPOZORNENI));
 }
 
 // ---- Texty e-mailů (česky, anglicky, německy) ----
