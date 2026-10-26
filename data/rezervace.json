@@ -1,4 +1,30 @@
 {
+ "2026-11-02-zkouška-rezervace-v2": {
+  "terminy": [
+   {
+    "cas": "18:00",
+    "kapacita": 20
+   },
+   {
+    "cas": "20:00",
+    "kapacita": 20
+   }
+  ],
+  "uzaverka": "2026-10-30T22:37",
+  "ceny": [
+   {
+    "druh": "Dospělí",
+    "cena": 5
+   },
+   {
+    "druh": "Děti",
+    "cena": 2
+   }
+  ],
+  "title": "Zkouška rezervace V2",
+  "date": "2026-11-02",
+  "when": ""
+ },
  "2026-12-31-zkouska-rezervaci": {
   "terminy": [
    {
