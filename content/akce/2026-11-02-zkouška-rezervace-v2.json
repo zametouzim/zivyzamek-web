@@ -1,0 +1,56 @@
+{
+  "lang": [
+    "cs",
+    "en",
+    "de"
+  ],
+  "title": "Zkouška rezervace V2",
+  "date": "2026-11-02",
+  "end": "",
+  "when": "",
+  "short": "",
+  "text": "",
+  "prelozit": false,
+  "poster": "",
+  "photos": [],
+  "tag": "",
+  "rezervace": {
+    "zapnuto": true,
+    "kapacita": null,
+    "terminy": [
+      {
+        "cas": "18:00",
+        "kapacita": 20
+      },
+      {
+        "cas": "20:00",
+        "kapacita": 20
+      }
+    ],
+    "uzaverka": "2026-10-30T22:37",
+    "ceny": [
+      {
+        "druh": "Dospělí",
+        "cena": 5
+      },
+      {
+        "druh": "Děti",
+        "cena": 2
+      }
+    ]
+  },
+  "skryta": false,
+  "titleTodo": false,
+  "en": {
+    "title": "",
+    "when": "",
+    "short": "",
+    "text": ""
+  },
+  "de": {
+    "title": "",
+    "when": "",
+    "short": "",
+    "text": ""
+  }
+}
