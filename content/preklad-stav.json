@@ -5241,6 +5241,20 @@
 "9539e1e6a292": "17. 10. 2026: Schloss-CITO"
 }
 },
+"content/web/zahrada.json|de|fotky.8.popis": {
+"cs": "09189cb43b67",
+"out": "74451b108330",
+"radky": {
+"09189cb43b67": "Die mit schwarzer Folie abgedeckte Gartenfläche, im Hintergrund Häuser und Landschaft"
+}
+},
+"content/web/zahrada.json|de|fotky.8.popisek": {
+"cs": "a139f017ee6b",
+"out": "4f1facb05409",
+"radky": {
+"a139f017ee6b": "17. 10. 2026: die Fläche unter Folie"
+}
+},
 "content/web/zahrada.json|de|kroky.0.co": {
 "cs": "877be0d2e3ca",
 "out": "852a82d7f590",
@@ -5491,6 +5505,20 @@
 "out": "4fbaf2082c8a",
 "radky": {
 "9539e1e6a292": "17 October 2026: Castle CITO"
+}
+},
+"content/web/zahrada.json|en|fotky.8.popis": {
+"cs": "09189cb43b67",
+"out": "751a60b857d3",
+"radky": {
+"09189cb43b67": "The garden area covered with black sheeting, houses and countryside in the background"
+}
+},
+"content/web/zahrada.json|en|fotky.8.popisek": {
+"cs": "a139f017ee6b",
+"out": "84b136f0aaf0",
+"radky": {
+"a139f017ee6b": "17 October 2026: the area under sheeting"
 }
 },
 "content/web/zahrada.json|en|kroky.0.co": {
