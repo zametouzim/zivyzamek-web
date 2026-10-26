@@ -232,7 +232,7 @@ window.DEMO_CONFIG={
      "widget": "skryta-akce",
      "required": false,
      "default": false,
-     "hint": "Pro vyzkoušení rezervací. Po zapnutí se tu ukáže odkaz na akci ke zkopírování."
+     "hint": "Hodí se pro akci připravenou dopředu: zveřejníte ji později tak, že přepínač vypnete. Nebo pro vyzkoušení rezervací. Když je zapnuto, ukáže se tu odkaz na akci ke zkopírování."
     },
     {
      "label": "Název je jen pracovní (na webu se zobrazí fialová poznámka „název?“)",
