@@ -59,7 +59,7 @@ function doPost(e) {
   a.ceny.forEach(function (c, i) {
     var n = Math.max(0, Math.min(1000, parseInt(p['pocet_' + i], 10) || 0));
     if (!n) return;
-    osob += n; castka += n * c.cena; listky.push(n + '× ' + c.druh + ' (' + c.cena + ' Kč)');
+    osob += n; castka += n * c.cena; listky.push(n + '× ' + c.druh + (c.cena ? ' (' + c.cena + ' Kč)' : ''));
   });
   if (!osob) return json({ ok: false, chyba: 'udaje' });
   var termin = String(p.termin || '');
@@ -267,8 +267,8 @@ function upozorni(predmet, telo, jednouDenne) {
 // ---- Texty e-mailů (česky, anglicky, německy) ----
 
 var DRUHY = {
-  en: { 'Jednotné vstupné': 'Standard admission', 'Dospělí': 'Adults', 'Děti': 'Children', ' Kč)': ' CZK)' },
-  de: { 'Jednotné vstupné': 'Einheitlicher Eintritt', 'Dospělí': 'Erwachsene', 'Děti': 'Kinder', ' Kč)': ' CZK)' }
+  en: { 'Vstup zdarma': 'Free admission', 'Jednotné vstupné': 'Standard admission', 'Dospělí': 'Adults', 'Děti': 'Children', ' Kč)': ' CZK)' },
+  de: { 'Vstup zdarma': 'Freier Eintritt', 'Jednotné vstupné': 'Einheitlicher Eintritt', 'Dospělí': 'Erwachsene', 'Děti': 'Kinder', ' Kč)': ' CZK)' }
 };
 
 function text(klic, r) {
@@ -276,47 +276,53 @@ function text(klic, r) {
   var datum = a.date ? a.date.split('-').map(Number) : null;
   var kdy = datum ? (l === 'cs' ? datum[2] + '. ' + datum[1] + '. ' + datum[0] : l === 'de' ? datum[2] + '.' + datum[1] + '.' + datum[0] : datum[2] + '/' + datum[1] + '/' + datum[0]) : '';
   var nazev = a['title_' + l] || a.title, cas = a['when_' + l] || a.when;
-  var akce = nazev + (kdy ? ', ' + kdy : '') + (cas ? ' (' + cas + ')' : '') +
-             (r.termin ? { cs: ', termín ', en: ', time slot ', de: ', Termin ' }[l] + r.termin : '');
+  var kdyCele = [kdy, cas, r.termin ? { cs: 'termín ', en: 'time slot ', de: 'Termin ' }[l] + r.termin : ''].filter(String).join(', ');
   var do_ = r.splatnost instanceof Date ? Utilities.formatDate(r.splatnost, ZONA, l === 'en' ? 'd/M/yyyy H:mm' : 'd. M. yyyy H:mm') : '';
   var odkaz = WEB + (l === 'cs' ? '' : '?lang=' + l) + '#platba/' + r.vs + '/' + r.castka;
   var listky = String(r.listky || '');
   if (l !== 'cs') Object.keys(DRUHY[l]).forEach(function (k) { listky = listky.split(k).join(DRUHY[l][k]); });
-  r = Object.assign({}, r, { listky: listky });
+  // řádek se vstupenkami; u akce zdarma jen počet osob
+  var vst = r.castka ? { cs: 'Vstupenky: ', en: 'Tickets: ', de: 'Eintrittskarten: ' }[l] + listky
+                     : { cs: 'Počet osob: ', en: 'Number of people: ', de: 'Anzahl der Personen: ' }[l] + r.osob;
+  var info = {
+    cs: 'Akce: ' + nazev + '\nKdy: ' + kdyCele + '\n' + vst + '\nČíslo rezervace: ' + r.vs,
+    en: 'Event: ' + nazev + '\nWhen: ' + kdyCele + '\n' + vst + '\nBooking number: ' + r.vs,
+    de: 'Veranstaltung: ' + nazev + '\nWann: ' + kdyCele + '\n' + vst + '\nReservierungsnummer: ' + r.vs
+  }[l];
   var podpis = { cs: '\n\nŽivý zámek Toužim z. s.\n' + WEB, en: '\n\nŽivý zámek Toužim z. s.\n' + WEB + '?lang=en', de: '\n\nŽivý zámek Toužim z. s.\n' + WEB + '?lang=de' }[l];
   var T = {
     cs: {
       platbaPredmet: 'Rezervace ' + r.vs + ': zbývá zaplatit',
-      platba: 'Dobrý den,\n\nděkujeme za rezervaci na akci ' + akce + '.\nVstupenky: ' + r.listky + '\n\nRezervace platí až po zaplacení. Prosíme o platbu do ' + do_ + ', jinak rezervace propadne.\n\n' +
+      platba: 'Dobrý den,\n\nděkujeme za rezervaci.\n\n' + info + '\n\nRezervace platí až po zaplacení. Prosíme o platbu do ' + do_ + ', jinak rezervace propadne.\n\n' +
               'Účet: ' + UCET + '\nČástka: ' + r.castka + ' Kč\nVariabilní symbol: ' + r.vs + '\n\nQR kód pro platbu: ' + odkaz +
               '\n\nAž platbu spárujeme, pošleme vám potvrzení. Zaplacené vstupné se nevrací.' + podpis,
       potvrzeniPredmet: 'Rezervace ' + r.vs + ' potvrzena',
-      potvrzeni: 'Dobrý den,\n\nvaše rezervace na akci ' + akce + ' je potvrzená.\nVstupenky: ' + r.listky + '\nČíslo rezervace: ' + r.vs + '\n\nTěšíme se na vás.' + podpis,
+      potvrzeni: 'Dobrý den,\n\nvaše rezervace je potvrzená.\n\n' + info + '\n\nTěšíme se na vás.' + podpis,
       propadloPredmet: 'Rezervace ' + r.vs + ' propadla',
-      propadlo: 'Dobrý den,\n\nrezervace ' + r.vs + ' na akci ' + akce + ' propadla, protože jsme do ' + do_ + ' neobdrželi platbu. Místa jsme uvolnili.\n\n' +
-                'Pokud jste už zaplatili, ozvěte se nám prosím odpovědí na tento e-mail.' + podpis
+      propadlo: 'Dobrý den,\n\nvaše rezervace propadla, protože jsme do ' + do_ + ' neobdrželi platbu. Místa jsme uvolnili.\n\n' + info +
+                '\n\nPokud jste už zaplatili, ozvěte se nám prosím odpovědí na tento e-mail.' + podpis
     },
     en: {
       platbaPredmet: 'Booking ' + r.vs + ': payment due',
-      platba: 'Hello,\n\nthank you for booking ' + akce + '.\nTickets: ' + r.listky + '\n\nThe booking is valid once paid. Please pay by ' + do_ + ', otherwise the booking expires.\n\n' +
+      platba: 'Hello,\n\nthank you for your booking.\n\n' + info + '\n\nThe booking is valid once paid. Please pay by ' + do_ + ', otherwise the booking expires.\n\n' +
               'Account: ' + UCET + ' (IBAN ' + IBAN + ')\nAmount: ' + r.castka + ' CZK\nVariable symbol (reference): ' + r.vs + '\n\nQR code for payment: ' + odkaz +
               '\n\nOnce we match your payment, we will send you a confirmation. Admission fees are non-refundable.' + podpis,
       potvrzeniPredmet: 'Booking ' + r.vs + ' confirmed',
-      potvrzeni: 'Hello,\n\nyour booking for ' + akce + ' is confirmed.\nTickets: ' + r.listky + '\nBooking number: ' + r.vs + '\n\nWe look forward to seeing you.' + podpis,
+      potvrzeni: 'Hello,\n\nyour booking is confirmed.\n\n' + info + '\n\nWe look forward to seeing you.' + podpis,
       propadloPredmet: 'Booking ' + r.vs + ' expired',
-      propadlo: 'Hello,\n\nbooking ' + r.vs + ' for ' + akce + ' has expired because we did not receive payment by ' + do_ + '. The places have been released.\n\n' +
-                'If you have already paid, please reply to this e-mail.' + podpis
+      propadlo: 'Hello,\n\nyour booking has expired because we did not receive payment by ' + do_ + '. The places have been released.\n\n' + info +
+                '\n\nIf you have already paid, please reply to this e-mail.' + podpis
     },
     de: {
       platbaPredmet: 'Reservierung ' + r.vs + ': Zahlung ausstehend',
-      platba: 'Guten Tag,\n\nvielen Dank für Ihre Reservierung für ' + akce + '.\nEintrittskarten: ' + r.listky + '\n\nDie Reservierung gilt erst nach der Zahlung. Bitte zahlen Sie bis ' + do_ + ', sonst verfällt die Reservierung.\n\n' +
+      platba: 'Guten Tag,\n\nvielen Dank für Ihre Reservierung.\n\n' + info + '\n\nDie Reservierung gilt erst nach der Zahlung. Bitte zahlen Sie bis ' + do_ + ', sonst verfällt die Reservierung.\n\n' +
               'Konto: ' + UCET + ' (IBAN ' + IBAN + ')\nBetrag: ' + r.castka + ' CZK\nVariabler Symbol (Referenz): ' + r.vs + '\n\nQR-Code zur Zahlung: ' + odkaz +
               '\n\nSobald wir Ihre Zahlung zugeordnet haben, schicken wir Ihnen eine Bestätigung. Bezahlter Eintritt wird nicht erstattet.' + podpis,
       potvrzeniPredmet: 'Reservierung ' + r.vs + ' bestätigt',
-      potvrzeni: 'Guten Tag,\n\nIhre Reservierung für ' + akce + ' ist bestätigt.\nEintrittskarten: ' + r.listky + '\nReservierungsnummer: ' + r.vs + '\n\nWir freuen uns auf Sie.' + podpis,
+      potvrzeni: 'Guten Tag,\n\nIhre Reservierung ist bestätigt.\n\n' + info + '\n\nWir freuen uns auf Sie.' + podpis,
       propadloPredmet: 'Reservierung ' + r.vs + ' verfallen',
-      propadlo: 'Guten Tag,\n\ndie Reservierung ' + r.vs + ' für ' + akce + ' ist verfallen, weil bis ' + do_ + ' keine Zahlung eingegangen ist. Die Plätze wurden freigegeben.\n\n' +
-                'Falls Sie bereits bezahlt haben, antworten Sie bitte auf diese E-Mail.' + podpis
+      propadlo: 'Guten Tag,\n\nIhre Reservierung ist verfallen, weil bis ' + do_ + ' keine Zahlung eingegangen ist. Die Plätze wurden freigegeben.\n\n' + info +
+                '\n\nFalls Sie bereits bezahlt haben, antworten Sie bitte auf diese E-Mail.' + podpis
     }
   };
   return T[l][klic];

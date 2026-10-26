@@ -518,7 +518,10 @@
   "Vyberte termín": "Choose a time slot",
   "volno": "available",
   "Volná místa celkem": "Places available in total",
-  "Vyberte prosím termín.": "Please choose a time slot."
+  "Vyberte prosím termín.": "Please choose a time slot.",
+  "Počet osob": "Number of people",
+  "Vstup zdarma": "Free admission",
+  "Vstup je zdarma. Po odeslání vám hned přijde potvrzení rezervace e-mailem.": "Admission is free. After you submit, you will receive a booking confirmation by e-mail straight away."
  },
  "title": "Živý zámek Toužim – draft website"
 }

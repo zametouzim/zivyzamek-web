@@ -149,7 +149,7 @@ window.DEMO_CONFIG={
      "widget": "object",
      "required": false,
      "collapsed": true,
-     "hint": "Návštěvník vyplní formulář, zaplatí QR platbou a po spárování platby dostane potvrzení e-mailem. Nezaplacená rezervace po 24 hodinách propadne. Rezervace najdete v Google tabulce Rezervace.",
+     "hint": "Návštěvník vyplní formulář, zaplatí QR platbou (u akce zdarma bez platby) a po spárování platby dostane potvrzení e-mailem. Nezaplacená rezervace po 24 hodinách propadne. Rezervace najdete v Google tabulce Rezervace.",
      "fields": [
       {
        "label": "Zapnout rezervace",
@@ -206,7 +206,7 @@ window.DEMO_CONFIG={
        "widget": "list",
        "required": false,
        "summary": "{{fields.druh}}: {{fields.cena}} Kč",
-       "hint": "Buď Jednotné vstupné, nebo Dospělí a Děti.",
+       "hint": "Buď Jednotné vstupné, nebo Dospělí a Děti. Akce zdarma: ceny nechte prázdné. Návštěvník pak zadá jen počet osob a potvrzení dostane hned e-mailem, bez platby.",
        "fields": [
         {
          "label": "Druh vstupného",
