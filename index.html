@@ -380,7 +380,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 .rez .sum{font-size:19px}.rez .volno{font-weight:700}
 #rezMsg.err{color:var(--accent);font-weight:700}
 .rez .pay{display:flex;flex-wrap:wrap;gap:20px 28px;align-items:flex-start}.rez .pay>div{min-width:0;flex:1 1 240px;display:grid;gap:10px}
-.rez .pay>.qrbox{background:#fff;line-height:0;flex:none;display:block}.rez .qrbox img{width:200px;height:200px;image-rendering:pixelated}
+.rez .pay>.qrbox{background:#fff;line-height:0;flex:none;display:block}.rez .qrbox img{width:240px;height:240px}
 .rez dl{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:0;font-variant-numeric:tabular-nums}.rez dt{color:var(--grey)}.rez dd{margin:0;font-weight:700}
 @media (max-width:760px){.rez .row2{grid-template-columns:1fr}}
 .ak-gal{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 40px}
@@ -1033,14 +1033,14 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
   var REZ_API='https://script.google.com/macros/s/AKfycbwoHtatMzYWLiWDYgda-weVtFDpoX0NuytolvCmY_ffuNhNVjQgyV8RALyEe9M6yhOEVw/exec', REZ_IBAN='CZ7920100000002301034510', REZ_UCET='2301034510/2010';
   function rezSpd(vs,kc){return 'SPD*1.0*ACC:'+REZ_IBAN+'*AM:'+kc.toFixed(2)+'*CC:CZK*X-VS:'+vs+'*MSG:REZERVACE '+vs}
   function rezKc(n){return n.toLocaleString(window.LANG==='cs'?'cs-CZ':window.LANG)+(window.LANG==='cs'?' Kč':' CZK')}
-  function rezQr(cb){if(window.qrcode)return cb();var sc=document.createElement('script');sc.src='js/qrcode.js';sc.onload=cb;document.head.appendChild(sc)}
+  function rezQr(cb){if(window.qrSLogem)return cb();function js(src,f){var sc=document.createElement('script');sc.src=src;sc.onload=f;document.head.appendChild(sc)}js('js/qrcode.js',function(){js('js/qr-logo.js',cb)})}
   function rezPlatba(box,r){
     var h='<span class="eyebrow">'+T('Rezervace')+' '+esc(r.vs)+'</span><h2 class="h3">'+T('Zbývá zaplatit')+'</h2>';
     h+='<div class="pay"><div class="qrbox" id="rezQr" role="img" aria-label="'+T('QR Platba')+'"></div><div><dl><dt>'+T('Účet')+'</dt><dd>'+REZ_UCET+'</dd><dt>'+T('Částka')+'</dt><dd>'+rezKc(r.castka)+'</dd><dt>'+T('Variabilní symbol')+'</dt><dd>'+esc(r.vs)+'</dd>';
     if(r.splatnost)h+='<dt>'+T('Zaplaťte do')+'</dt><dd>'+new Date(r.splatnost).toLocaleString(window.LANG==='cs'?'cs-CZ':window.LANG==='en'?'en-GB':'de-DE',{day:'numeric',month:'numeric',hour:'numeric',minute:'2-digit'})+'</dd>';
     h+='</dl><p>'+T('Naskenujte QR kód v aplikaci banky. Rezervace platí až po zaplacení, potvrzení vám pošleme e-mailem. Nezaplacená rezervace po 24 hodinách propadne.')+'</p><p class="note">'+T('Účet spolku je transparentní, platba na něm bude veřejně vidět.')+'</p></div></div>';
     box.innerHTML=h;
-    rezQr(function(){var q=qrcode(0,'M');q.addData(rezSpd(r.vs,r.castka));q.make();document.getElementById('rezQr').innerHTML=q.createImgTag(6,12)});
+    rezQr(function(){var q=qrSLogem(rezSpd(r.vs,r.castka),10);document.getElementById('rezQr').innerHTML='<img src="'+q.src+'" alt="">'});
   }
   function rezForm(a,box){
     var R=a.rez, now=new Date();
