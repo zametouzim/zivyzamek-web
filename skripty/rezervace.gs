@@ -98,7 +98,7 @@ function doPost(e) {
         '\nJméno: ' + jmeno + '\nE-mail: ' + email + '\nTelefon: ' + telefon + '\nVstupenky: ' + listky.join(', ') + '\nOsob: ' + osob +
         '\nCena: ' + castka + ' Kč' + (castka ? ', zaplatit do ' + Utilities.formatDate(splatnost, ZONA, 'd. M. yyyy H:mm') : ' (zdarma, potvrzeno)') +
         '\nVS: ' + vs + (poznamka ? '\nPoznámka: ' + poznamka : '') + '\n\nTabulka: ' + SpreadsheetApp.getActive().getUrl(),
-        { name: 'Rezervace na webu', replyTo: email });
+        zpravaNove(email));
     } catch (err) { console.error(err); }  // rezervace platí i bez téhle zprávy
   }
   return json({ ok: true, vs: String(vs), castka: castka, splatnost: castka ? splatnost.toISOString() : '' });
@@ -290,6 +290,13 @@ function posli(komu, predmet, telo) {
   }
   opt.htmlBody = '<div style="font:15px/1.5 Arial,sans-serif">' + html.replace(/\n/g, '<br>') + '</div>';
   GmailApp.sendEmail(komu, predmet, telo, opt);
+}
+
+/** Zpráva o nové rezervaci jde přes Seznam (from = alias), jinak ji Gmail nechá u sebe, protože adresu bere jako svoji. */
+function zpravaNove(email) {
+  var opt = { name: 'Rezervace na webu', replyTo: email };
+  if (NOVE === ODESILATEL && GmailApp.getAliases().indexOf(ODESILATEL) >= 0) opt.from = ODESILATEL;
+  return opt;
 }
 
 /** Text pro QR Platbu (formát SPD České bankovní asociace), stejný jako na webu. */
