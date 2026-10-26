@@ -4150,13 +4150,39 @@
 }
 },
 "content/web/partneri.json|de|partneri.10.nazev": {
+"cs": "6c1f82ee8813",
+"out": "6c1f82ee8813",
+"rucne": true
+},
+"content/web/partneri.json|de|partneri.10.popis": {
+"cs": "b203030378c5",
+"out": "58f2b5a60a9c",
+"radky": {
+"b203030378c5": "Grafik und Plakate"
+}
+},
+"content/web/partneri.json|de|partneri.11.nazev": {
+"cs": "2c7d8ac6b9fd",
+"out": "2c7d8ac6b9fd",
+"radky": {
+"2c7d8ac6b9fd": "Půjč a vrať"
+}
+},
+"content/web/partneri.json|de|partneri.12.nazev": {
+"cs": "08d9d7c1ba88",
+"out": "08d9d7c1ba88",
+"radky": {
+"08d9d7c1ba88": "Givt.cz"
+}
+},
+"content/web/partneri.json|de|partneri.13.nazev": {
 "cs": "34858f2ea14c",
 "out": "34858f2ea14c",
 "radky": {
 "34858f2ea14c": "Gabriela Pilná"
 }
 },
-"content/web/partneri.json|de|partneri.10.popis": {
+"content/web/partneri.json|de|partneri.13.popis": {
 "cs": "b203030378c5",
 "out": "58f2b5a60a9c",
 "radky": {
@@ -4185,39 +4211,29 @@
 }
 },
 "content/web/partneri.json|de|partneri.5.nazev": {
-"cs": "76c2e9a1bd47",
-"out": "4dcb1cb219bc",
-"radky": {
-"76c2e9a1bd47": "Kneipe U Havlů, Sokolovna Toužim"
-}
-},
-"content/web/partneri.json|de|partneri.6.nazev": {
-"cs": "60dabb94f8b8",
-"out": "60dabb94f8b8",
-"radky": {
-"60dabb94f8b8": "Postřelí.cz"
-}
-},
-"content/web/partneri.json|de|partneri.7.nazev": {
-"cs": "83ef7e53bc9b",
-"out": "83ef7e53bc9b",
-"radky": {
-"83ef7e53bc9b": "Dílna U mnicha"
-}
-},
-"content/web/partneri.json|de|partneri.8.nazev": {
 "cs": "feb38050d7f2",
 "out": "feb38050d7f2",
-"radky": {
-"feb38050d7f2": "Kudyznudy.cz"
-}
+"rucne": true
+},
+"content/web/partneri.json|de|partneri.6.nazev": {
+"cs": "b412eefaaed8",
+"out": "7756a6bcc834",
+"rucne": true
+},
+"content/web/partneri.json|de|partneri.7.nazev": {
+"cs": "60dabb94f8b8",
+"out": "60dabb94f8b8",
+"rucne": true
+},
+"content/web/partneri.json|de|partneri.8.nazev": {
+"cs": "76c2e9a1bd47",
+"out": "4dcb1cb219bc",
+"rucne": true
 },
 "content/web/partneri.json|de|partneri.9.nazev": {
-"cs": "08d9d7c1ba88",
-"out": "08d9d7c1ba88",
-"radky": {
-"08d9d7c1ba88": "Givt.cz"
-}
+"cs": "83ef7e53bc9b",
+"out": "83ef7e53bc9b",
+"rucne": true
 },
 "content/web/partneri.json|en|partneri.0.nazev": {
 "cs": "d81e9b354778",
@@ -4234,13 +4250,39 @@
 }
 },
 "content/web/partneri.json|en|partneri.10.nazev": {
+"cs": "6c1f82ee8813",
+"out": "6c1f82ee8813",
+"rucne": true
+},
+"content/web/partneri.json|en|partneri.10.popis": {
+"cs": "b203030378c5",
+"out": "c882b7649eef",
+"radky": {
+"b203030378c5": "graphic design and posters"
+}
+},
+"content/web/partneri.json|en|partneri.11.nazev": {
+"cs": "2c7d8ac6b9fd",
+"out": "2c7d8ac6b9fd",
+"radky": {
+"2c7d8ac6b9fd": "Půjč a vrať"
+}
+},
+"content/web/partneri.json|en|partneri.12.nazev": {
+"cs": "08d9d7c1ba88",
+"out": "08d9d7c1ba88",
+"radky": {
+"08d9d7c1ba88": "Givt.cz"
+}
+},
+"content/web/partneri.json|en|partneri.13.nazev": {
 "cs": "34858f2ea14c",
 "out": "34858f2ea14c",
 "radky": {
 "34858f2ea14c": "Gabriela Pilná"
 }
 },
-"content/web/partneri.json|en|partneri.10.popis": {
+"content/web/partneri.json|en|partneri.13.popis": {
 "cs": "b203030378c5",
 "out": "c882b7649eef",
 "radky": {
@@ -4269,39 +4311,29 @@
 }
 },
 "content/web/partneri.json|en|partneri.5.nazev": {
-"cs": "76c2e9a1bd47",
-"out": "f245f3a47a51",
-"radky": {
-"76c2e9a1bd47": "U Havlů pub, Sokolovna Toužim"
-}
-},
-"content/web/partneri.json|en|partneri.6.nazev": {
-"cs": "60dabb94f8b8",
-"out": "60dabb94f8b8",
-"radky": {
-"60dabb94f8b8": "Postřelí.cz"
-}
-},
-"content/web/partneri.json|en|partneri.7.nazev": {
-"cs": "83ef7e53bc9b",
-"out": "83ef7e53bc9b",
-"radky": {
-"83ef7e53bc9b": "Dílna U mnicha"
-}
-},
-"content/web/partneri.json|en|partneri.8.nazev": {
 "cs": "feb38050d7f2",
 "out": "feb38050d7f2",
-"radky": {
-"feb38050d7f2": "Kudyznudy.cz"
-}
+"rucne": true
+},
+"content/web/partneri.json|en|partneri.6.nazev": {
+"cs": "b412eefaaed8",
+"out": "02c1f8404fac",
+"rucne": true
+},
+"content/web/partneri.json|en|partneri.7.nazev": {
+"cs": "60dabb94f8b8",
+"out": "60dabb94f8b8",
+"rucne": true
+},
+"content/web/partneri.json|en|partneri.8.nazev": {
+"cs": "76c2e9a1bd47",
+"out": "f245f3a47a51",
+"rucne": true
 },
 "content/web/partneri.json|en|partneri.9.nazev": {
-"cs": "08d9d7c1ba88",
-"out": "08d9d7c1ba88",
-"radky": {
-"08d9d7c1ba88": "Givt.cz"
-}
+"cs": "83ef7e53bc9b",
+"out": "83ef7e53bc9b",
+"rucne": true
 },
 "content/web/suvenyry.json|de|polozky.0.cena": {
 "cs": "3e52a6b6fdc9",
@@ -4514,11 +4546,9 @@
 }
 },
 "content/web/suvenyry.json|de|uvod": {
-"cs": "8c56b19cd580",
-"out": "9a8a990b0bb6",
-"radky": {
-"8c56b19cd580": "Bei unseren Veranstaltungen, an offenen Wochenenden oder per Post. Bestellungen per E-Mail."
-}
+"cs": "43f33af8f0fb",
+"out": "bfa00cef5df5",
+"rucne": true
 },
 "content/web/suvenyry.json|en|polozky.0.cena": {
 "cs": "3e52a6b6fdc9",
@@ -4731,11 +4761,9 @@
 }
 },
 "content/web/suvenyry.json|en|uvod": {
-"cs": "8c56b19cd580",
-"out": "905a3a329648",
-"radky": {
-"8c56b19cd580": "At our events, on open weekends or by post. Orders by e-mail."
-}
+"cs": "43f33af8f0fb",
+"out": "120b61300698",
+"rucne": true
 },
 "content/web/uvod.json|de|hero.0.alt": {
 "cs": "bcdddc10ca1f",
@@ -4791,6 +4819,20 @@
 "out": "2b5723ac1005",
 "radky": {
 "09284d133017": "Musikabend mit Milan Pitkin und František Nedvěd, 10. 7. 2026"
+}
+},
+"content/web/uvod.json|de|hero.12.alt": {
+"cs": "73faf1f30b15",
+"out": "0a22493a8b28",
+"radky": {
+"73faf1f30b15": "Freiwillige abends am Feuer auf dem Schlossgelände"
+}
+},
+"content/web/uvod.json|de|hero.12.cap": {
+"cs": "772c9ae70596",
+"out": "22f902a3cc11",
+"radky": {
+"772c9ae70596": "Abend am Feuer nach dem Arbeitseinsatz „Kennenlernen & helfen“, 26. 9. 2026"
 }
 },
 "content/web/uvod.json|de|hero.2.alt": {
@@ -4959,6 +5001,20 @@
 "out": "4999d0d3307c",
 "radky": {
 "09284d133017": "Music evening with Milan Pitkin and František Nedvěd, 10 Jul 2026"
+}
+},
+"content/web/uvod.json|en|hero.12.alt": {
+"cs": "73faf1f30b15",
+"out": "321b86b382f3",
+"radky": {
+"73faf1f30b15": "Volunteers by the fire at the castle in the evening"
+}
+},
+"content/web/uvod.json|en|hero.12.cap": {
+"cs": "772c9ae70596",
+"out": "b79bd9aaa047",
+"radky": {
+"772c9ae70596": "Evening by the fire after the Discover & Help work party, 26 September 2026"
 }
 },
 "content/web/uvod.json|en|hero.2.alt": {
@@ -5155,6 +5211,34 @@
 "out": "79c5a2a93b7a",
 "radky": {
 "21d474b23bf9": "Fertige Fläche an der Mauer"
+}
+},
+"content/web/zahrada.json|de|fotky.6.popis": {
+"cs": "a686c7635d48",
+"out": "cee710174abe",
+"radky": {
+"a686c7635d48": "Ein Freiwilliger schaufelt Erde auf ein Sieb"
+}
+},
+"content/web/zahrada.json|de|fotky.6.popisek": {
+"cs": "c20ca8423a74",
+"out": "5789c221cb20",
+"radky": {
+"c20ca8423a74": "27. 9. 2026: Erde sieben"
+}
+},
+"content/web/zahrada.json|de|fotky.7.popis": {
+"cs": "f6c9b298fefb",
+"out": "2db6db5ad8d1",
+"radky": {
+"f6c9b298fefb": "Freiwillige arbeiten in der Erde zwischen Minibagger, Dumper und Mauer"
+}
+},
+"content/web/zahrada.json|de|fotky.7.popisek": {
+"cs": "9539e1e6a292",
+"out": "3f07f3c9c20d",
+"radky": {
+"9539e1e6a292": "17. 10. 2026: Schloss-CITO"
 }
 },
 "content/web/zahrada.json|de|kroky.0.co": {
@@ -5379,6 +5463,34 @@
 "out": "53f9ca504e6a",
 "radky": {
 "21d474b23bf9": "Finished area by the walls"
+}
+},
+"content/web/zahrada.json|en|fotky.6.popis": {
+"cs": "a686c7635d48",
+"out": "6abf726e0ebc",
+"radky": {
+"a686c7635d48": "A volunteer shovels soil onto a screening sieve"
+}
+},
+"content/web/zahrada.json|en|fotky.6.popisek": {
+"cs": "c20ca8423a74",
+"out": "a43b5810e425",
+"radky": {
+"c20ca8423a74": "27 September 2026: sieving soil"
+}
+},
+"content/web/zahrada.json|en|fotky.7.popis": {
+"cs": "f6c9b298fefb",
+"out": "6cb2fdfffc51",
+"radky": {
+"f6c9b298fefb": "Volunteers working in the soil between a mini excavator, a dumper and the wall"
+}
+},
+"content/web/zahrada.json|en|fotky.7.popisek": {
+"cs": "9539e1e6a292",
+"out": "4fbaf2082c8a",
+"radky": {
+"9539e1e6a292": "17 October 2026: Castle CITO"
 }
 },
 "content/web/zahrada.json|en|kroky.0.co": {
