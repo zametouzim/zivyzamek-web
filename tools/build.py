@@ -191,7 +191,54 @@ def images(items, web):
                     fit(src, 1400)
 
 
+def heic():
+    """Fotky z iPhonu (HEIC/HEIF) převede na JPG a v obsahu přepíše cestu, ať je zobrazí každý prohlížeč a dál se zmenší jako ostatní."""
+    try:
+        from PIL import Image, ImageOps
+        import pillow_heif
+        pillow_heif.register_heif_opener()
+    except ImportError:
+        print('pillow-heif není nainstalovaný, fotky HEIC přeskakuji', file=sys.stderr)
+        return
+    done = {}
+    for base, _, files in os.walk('content'):
+        for fn in files:
+            if not fn.endswith('.json'):
+                continue
+            path = os.path.join(base, fn)
+            with open(path, encoding='utf-8') as f:
+                text = f.read()
+            found = set(re.findall(r'"(/?[^"]+\.(?:heic|heif))"', text, re.I))
+            changed = False
+            for src in found:
+                old = src.lstrip('/')
+                if old in done:
+                    text = text.replace('"%s"' % src, '"%s%s"' % ('/' if src.startswith('/') else '', done[old]))
+                    changed = True
+                    continue
+                if not os.path.exists(old):
+                    print('chybí obrázek', old, file=sys.stderr)
+                    continue
+                new = os.path.splitext(old)[0] + '.jpg'
+                n = 2
+                while os.path.exists(new):
+                    new = '%s-%d.jpg' % (os.path.splitext(old)[0], n)
+                    n += 1
+                im = ImageOps.exif_transpose(Image.open(old)).convert('RGB')
+                im.thumbnail((2000, 2000))
+                im.save(new, quality=85, progressive=True, optimize=True)
+                os.remove(old)
+                done[old] = new
+                text = text.replace('"%s"' % src, '"%s%s"' % ('/' if src.startswith('/') else '', new))
+                changed = True
+                print('HEIC převedeno:', old, '->', new)
+            if changed:
+                with open(path, 'w', encoding='utf-8') as f:
+                    f.write(text)
+
+
 def main():
+    heic()
     tr = {l: {} for l in LANGS}
     items = akce(tr)
     uvod, uvod_l = split(load('content/web/uvod.json'))

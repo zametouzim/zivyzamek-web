@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install pillow
+      - run: pip install pillow pillow-heif
       - name: Přeložit nové texty do EN a DE (DeepL, jen když je nastaven klíč DEEPL_KEY)
         env:
           DEEPL_KEY: ${{ secrets.DEEPL_KEY }}
