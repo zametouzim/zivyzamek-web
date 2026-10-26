@@ -25,7 +25,6 @@
   "Co se už povedlo": "Was wir schon geschafft haben",
   "let spolku": "Jahre Verein",
   "akcí a brigád od roku 2015": "Veranstaltungen und Arbeitseinsätze seit 2015",
-  "ročníků Zámeckého CITO": "Jahrgänge Zámecké CITO",
   "ročníků Festivalu na zámku": "Jahrgänge Festival na zámku",
   "Z uzavřeného a zarostlého nádvoří je dnes místo, kde se hraje divadlo, promítá letní kino a slaví se výročí města. Zastřešili jsme pódium, položili podlahu v hradní komnatě, zpřístupnili interiéry Janova hradu a teď obnovujeme zámeckou zahradu.": "Der verschlossene, zugewachsene Schlosshof ist heute ein Ort, an dem Theater gespielt, Sommerkino gezeigt und das Stadtjubiläum gefeiert wird. Wir haben die Bühne überdacht, in der Burgkammer einen Boden verlegt, die Innenräume von Jans Burg zugänglich gemacht, und jetzt erneuern wir den Schlossgarten.",
   "Hlavní projekt": "Hauptprojekt",
@@ -361,7 +360,9 @@
   "17. 10. 2026: pohled podél zdi": "17. 10. 2026: Blick entlang der Mauer",
   "17. 10. 2026: zeď vedle zakryté plochy": "17. 10. 2026: die Mauer neben der abgedeckten Fläche",
   "Na Výsluní 346, 364 01 Toužim<br>IČO 04690770<br>Datová schránka: wttsmga<br>Spolkový rejstřík: Krajský soud v Plzni, sp. zn. L 7540": "Na Výsluní 346, 364 01 Toužim<br>IČO 04690770<br>Datenbox-ID: wttsmga<br>Vereinsregister: Kreisgericht Pilsen, Az. L 7540",
-  "Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Datová schránka: wttsmga<br>Účet <span id=\"fUcet\">2301034510/2010</span><br><a href=\"https://www.facebook.com/zivyzamek.touzim\" target=\"_blank\" rel=\"noopener\">Facebook</a> · <a href=\"https://www.instagram.com/zivyzamektouzim/\" target=\"_blank\" rel=\"noopener\">Instagram</a>": "Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Datenbox-ID: wttsmga<br>Konto <span id=\"fUcet\">2301034510/2010</span><br><a href=\"https://www.facebook.com/zivyzamek.touzim\" target=\"_blank\" rel=\"noopener\">Facebook</a> · <a href=\"https://www.instagram.com/zivyzamektouzim/\" target=\"_blank\" rel=\"noopener\">Instagram</a>"
+  "Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Datová schránka: wttsmga<br>Účet <span id=\"fUcet\">2301034510/2010</span><br><a href=\"https://www.facebook.com/zivyzamek.touzim\" target=\"_blank\" rel=\"noopener\">Facebook</a> · <a href=\"https://www.instagram.com/zivyzamektouzim/\" target=\"_blank\" rel=\"noopener\">Instagram</a>": "Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Datenbox-ID: wttsmga<br>Konto <span id=\"fUcet\">2301034510/2010</span><br><a href=\"https://www.facebook.com/zivyzamek.touzim\" target=\"_blank\" rel=\"noopener\">Facebook</a> · <a href=\"https://www.instagram.com/zivyzamektouzim/\" target=\"_blank\" rel=\"noopener\">Instagram</a>",
+  "eventů Zámecké CITO": "Zámecké-CITO-Events (Aufräumaktion am Schloss)",
+  "Facebook": "Facebook"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, Startseite",

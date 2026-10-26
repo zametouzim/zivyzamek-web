@@ -192,6 +192,11 @@ window.WEB={
     "src": "img/zahrada-IMG_6268.jpg",
     "popisek": "17. 10. 2026: Zámecké CITO",
     "popis": "Dobrovolníci pracují v hlíně mezi minibagrem, dumperem a hradbou"
+   },
+   {
+    "src": "img/zahrada-IMG_6261.jpg",
+    "popisek": "17. 10. 2026: plocha pod fólií",
+    "popis": "Plocha zahrady zakrytá černou fólií, v pozadí domy a krajina"
    }
   ]
  },
@@ -1056,6 +1061,11 @@ window.L10N={
       "src": "img/zahrada-IMG_6268.jpg",
       "popisek": "17 October 2026: Castle CITO",
       "popis": "Volunteers working in the soil between a mini excavator, a dumper and the wall"
+     },
+     {
+      "src": "img/zahrada-IMG_6261.jpg",
+      "popisek": "17 October 2026: the area under sheeting",
+      "popis": "The garden area covered with black sheeting, houses and countryside in the background"
      }
     ]
    },
@@ -1987,6 +1997,11 @@ window.L10N={
       "src": "img/zahrada-IMG_6268.jpg",
       "popisek": "17. 10. 2026: Schloss-CITO",
       "popis": "Freiwillige arbeiten in der Erde zwischen Minibagger, Dumper und Mauer"
+     },
+     {
+      "src": "img/zahrada-IMG_6261.jpg",
+      "popisek": "17. 10. 2026: die Fläche unter Folie",
+      "popis": "Die mit schwarzer Folie abgedeckte Gartenfläche, im Hintergrund Häuser und Landschaft"
      }
     ]
    },
