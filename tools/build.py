@@ -2,7 +2,7 @@
 """Sestaví data webu z obsahu, který se upravuje v administraci.
 
 content/akce/*.json   -> data/akce.js  (window.AKCE, window.ROKY, window.HERO)
-                         data/rezervace.json (akce se zapnutou rezervací; čte ho skript rezervací Google Apps Script)
+                         data/rezervace.json (akce s rezervací; čte ho skript rezervací Google Apps Script)
 content/web/*.json    -> data/web.js   (window.WEB)
 content/stranky/*.json -> data/web.js  (window.WEB.stranky, vlastní stránky v menu)
 Překlady: každý soubor má česká pole v kořeni a anglická/německá pod klíči "en" a "de"
@@ -107,8 +107,8 @@ def akce(tr=None):
 
 
 def rezervace(r, datum):
-    """Rezervace u akce: jen když je zapnutá a má počet míst a aspoň jednu cenu."""
-    if not isinstance(r, dict) or not r.get('zapnuto') or not (r.get('kapacita') or r.get('terminy')):
+    """Rezervace u akce: zapnutá je přidáním oddílu Rezervace v administraci, musí mít počet míst nebo termíny."""
+    if not isinstance(r, dict) or not (r.get('kapacita') or r.get('terminy')):
         return None
     ceny = [{'druh': c['druh'], 'cena': int(c.get('cena') or 0)} for c in r.get('ceny') or [] if c.get('druh')]
     if not ceny:  # akce zdarma: jen počet osob, rezervace se potvrdí hned

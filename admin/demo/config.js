@@ -156,13 +156,6 @@ window.DEMO_CONFIG={
      "hint": "Návštěvník vyplní formulář, zaplatí QR platbou (u akce zdarma bez platby) a po spárování platby dostane potvrzení e-mailem. Nezaplacená rezervace po 24 hodinách propadne. Rezervace najdete v Google tabulce Rezervace.",
      "fields": [
       {
-       "label": "Zapnout rezervace",
-       "name": "zapnuto",
-       "widget": "boolean",
-       "required": false,
-       "default": false
-      },
-      {
        "label": "Počet míst (když akce nemá termíny)",
        "name": "kapacita",
        "widget": "number",

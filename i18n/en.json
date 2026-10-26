@@ -521,7 +521,9 @@
   "Vyberte prosím termín.": "Please choose a time slot.",
   "Počet osob": "Number of people",
   "Vstup zdarma": "Free admission",
-  "Vstup je zdarma. Po odeslání vám hned přijde potvrzení rezervace e-mailem.": "Admission is free. After you submit, you will receive a booking confirmation by e-mail straight away."
+  "Vstup je zdarma. Po odeslání vám hned přijde potvrzení rezervace e-mailem.": "Admission is free. After you submit, you will receive a booking confirmation by e-mail straight away.",
+  "Rezervace do": "Booking until",
+  "Odeslat rezervaci": "Send booking"
  },
  "title": "Živý zámek Toužim – draft website"
 }
