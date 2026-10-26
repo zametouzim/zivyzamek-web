@@ -4029,6 +4029,62 @@
 "5bce17f61fad": "Sunday"
 }
 },
+"content/akce/2026-12-31-zkouska-rezervaci.json|de|short": {
+"cs": "e71719acbcb1",
+"out": "67d1ddd2fa13",
+"radky": {
+"e71719acbcb1": "Versteckte Testveranstaltung zum Ausprobieren der Reservierungen. Auf der Website nicht sichtbar."
+}
+},
+"content/akce/2026-12-31-zkouska-rezervaci.json|de|text": {
+"cs": "8ca617255713",
+"out": "27fa8be2ee27",
+"radky": {
+"8ca617255713": "Diese Veranstaltung dient nur zum Testen von Reservierungen und Zahlungen. **Die Veranstaltung findet nicht statt.**"
+}
+},
+"content/akce/2026-12-31-zkouska-rezervaci.json|de|title": {
+"cs": "e7f0dd7cb119",
+"out": "de183c5aff77",
+"radky": {
+"e7f0dd7cb119": "Reservierungstest"
+}
+},
+"content/akce/2026-12-31-zkouska-rezervaci.json|de|when": {
+"cs": "be64da878962",
+"out": "bf0169117fd6",
+"radky": {
+"be64da878962": "nur Test, die Veranstaltung findet nicht statt"
+}
+},
+"content/akce/2026-12-31-zkouska-rezervaci.json|en|short": {
+"cs": "e71719acbcb1",
+"out": "1997d7c34c87",
+"radky": {
+"e71719acbcb1": "Hidden test event for trying out bookings. Not visible on the website."
+}
+},
+"content/akce/2026-12-31-zkouska-rezervaci.json|en|text": {
+"cs": "8ca617255713",
+"out": "7065a58f2f08",
+"radky": {
+"8ca617255713": "This event is only for testing bookings and payments. **The event does not take place.**"
+}
+},
+"content/akce/2026-12-31-zkouska-rezervaci.json|en|title": {
+"cs": "e7f0dd7cb119",
+"out": "cc0ba06d5c58",
+"radky": {
+"e7f0dd7cb119": "Booking test"
+}
+},
+"content/akce/2026-12-31-zkouska-rezervaci.json|en|when": {
+"cs": "be64da878962",
+"out": "181b0f60a6d8",
+"radky": {
+"be64da878962": "test only, the event does not take place"
+}
+},
 "content/web/navsteva.json|de|kontakty.0.funkce": {
 "cs": "9f1d97588083",
 "out": "29b3d2f97452",
