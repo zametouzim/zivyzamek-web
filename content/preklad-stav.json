@@ -3927,10 +3927,8 @@
 },
 "content/akce/2026-11-01-poznej-pomoz.json|de|title": {
 "cs": "ab142ca785da",
-"out": "f4bef140dfc7",
-"radky": {
-"ab142ca785da": "Erfahren & Helfen"
-}
+"out": "086259389827",
+"rucne": true
 },
 "content/akce/2026-11-01-poznej-pomoz.json|de|when": {
 "cs": "18b68858bd29",
@@ -3953,10 +3951,8 @@
 },
 "content/akce/2026-11-01-poznej-pomoz.json|en|title": {
 "cs": "ab142ca785da",
-"out": "084e81b02604",
-"radky": {
-"ab142ca785da": "Find out more & help"
-}
+"out": "a66ae7cc0072",
+"rucne": true
 },
 "content/akce/2026-11-01-poznej-pomoz.json|en|when": {
 "cs": "18b68858bd29",
