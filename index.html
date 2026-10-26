@@ -919,6 +919,12 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
 <script src="data/akce.js?v=ec552588"></script>
 <script src="data/web.js?v=93fe2953"></script>
 <script>
+// Náhled konceptu z administrace (?nahled=…, viz tools/nahled.py): data konceptu přepíší zveřejněná
+(function(){var n=(location.search.match(/[?&]nahled=([a-z0-9-]{1,80})(?:&|$)/)||[])[1];if(!n)return;window.NAHLED=n;
+['akce','web'].forEach(function(f){document.write('<script src="nahled/'+n+'/data/'+f+'.js?t='+Date.now()+'"><\/script>')});
+document.addEventListener('DOMContentLoaded',function(){var b=document.createElement('div');b.setAttribute('role','status');b.style.cssText='position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#7b3fc4;color:#fff;font:15px/1.4 system-ui,sans-serif;padding:8px 16px;text-align:center';b.textContent='Náhled konceptu z administrace. Na webu zatím není, zveřejní se až tlačítkem Publikovat.';document.body.appendChild(b)})})();
+</script>
+<script>
 // Překlad statických textů stránky (data/i18n.js). Jednotka překladu = prvek, který obsahuje jen text a řádkové značky.
 (function(){
   var INLINE={B:1,I:1,A:1,BR:1,SPAN:1,SMALL:1,STRONG:1,EM:1,SUP:1,SUB:1,ABBR:1,TIME:1,U:1,S:1,MARK:1,Q:1,CITE:1};
