@@ -308,7 +308,6 @@
   "Zámecký pán": "Lord of the Castle",
   "Výroční zpráva 2025": "Annual report 2025 (in Czech)",
   "Výroční zpráva 2024": "Annual report 2024 (in Czech)",
-  "<a href=\"https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim\" target=\"_blank\" rel=\"noopener\">náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</a>": "<a href=\"https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim\" target=\"_blank\" rel=\"noopener\">náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</a>",
   "<a href=\"https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim\" target=\"_blank\" rel=\"noopener\">náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</a><br><span id=\"fSezona\">Otevřené víkendy červenec–září</span>": "<a href=\"https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim\" target=\"_blank\" rel=\"noopener\">náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</a><br><span id=\"fSezona\">Open weekends July–September</span>",
   "Nádvoří zámku, červen 2022": "Castle courtyard, June 2022",
   "Večer na nádvoří, Hradozámecká noc 22. 8. 2026": "Evening in the courtyard, Castle Night, 22 Aug 2026",
@@ -362,7 +361,8 @@
   "Na Výsluní 346, 364 01 Toužim<br>IČO 04690770<br>Datová schránka: wttsmga<br>Spolkový rejstřík: Krajský soud v Plzni, sp. zn. L 7540": "Na Výsluní 346, 364 01 Toužim<br>IČO 04690770<br>Data box ID: wttsmga<br>Register of associations: Regional Court in Plzeň, file no. L 7540",
   "Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Datová schránka: wttsmga<br>Účet <span id=\"fUcet\">2301034510/2010</span><br><a href=\"https://www.facebook.com/zivyzamek.touzim\" target=\"_blank\" rel=\"noopener\">Facebook</a> · <a href=\"https://www.instagram.com/zivyzamektouzim/\" target=\"_blank\" rel=\"noopener\">Instagram</a>": "Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Data box ID: wttsmga<br>Account <span id=\"fUcet\">2301034510/2010</span><br><a href=\"https://www.facebook.com/zivyzamek.touzim\" target=\"_blank\" rel=\"noopener\">Facebook</a> · <a href=\"https://www.instagram.com/zivyzamektouzim/\" target=\"_blank\" rel=\"noopener\">Instagram</a>",
   "eventů Zámecké CITO": "Zámecké CITO events (castle clean-up)",
-  "Facebook": "Facebook"
+  "Facebook": "Facebook",
+  "náměstí Jiřího z Poděbrad 1<br>364 01 Toužim": "náměstí Jiřího z Poděbrad 1<br>364 01 Toužim"
  },
  "attr": {
   "Živý zámek Toužim, úvod": "Živý zámek Toužim, home",
