@@ -1230,11 +1230,11 @@ window.L10N={
    },
    "2016-01-26": {
     "title": "Vortrag: Bilder aus dem Leben eines Schlosses",
-    "html": "Im Infozentrum Toužim fand der Vortrag Obrazy ze života jednoho zámku (Bilder aus dem Leben eines Schlosses) statt, der der Geschichte und baulichen Entwicklung des Schlosses gewidmet war – des ältesten Baudenkmals der Stadt Toužim. Es sprach Jiří Schierl, Mitglied des burgenkundlichen Klub Augusta Sedláčka."
+    "html": "Im Infozentrum Theusing fand der Vortrag Obrazy ze života jednoho zámku (Bilder aus dem Leben eines Schlosses) statt, der der Geschichte und baulichen Entwicklung des Schlosses gewidmet war – des ältesten Baudenkmals der Stadt Theusing. Es sprach Jiří Schierl, Mitglied des burgenkundlichen Klub Augusta Sedláčka."
    },
    "2016-04-02": {
     "title": "Arbeitseinsatz auf dem Schloss",
-    "html": "Der Arbeitseinsatz galt der Verschönerung des Schlosshofs für die Öffentlichkeit von Toužim. Die Freiwilligen verschalten die Türen, die vom Hof in die einsturzgefährdeten Schlossgebäude führen – eine Bedingung der Stadt für die öffentliche Nutzung des Hofs. Auf dem Programm standen außerdem die Säuberung des Zuschauerbereichs und das Verbrennen von Schnittholz."
+    "html": "Der Arbeitseinsatz galt der Verschönerung des Schlosshofs für die Öffentlichkeit von Theusing. Die Freiwilligen verschalten die Türen, die vom Hof in die einsturzgefährdeten Schlossgebäude führen – eine Bedingung der Stadt für die öffentliche Nutzung des Hofs. Auf dem Programm standen außerdem die Säuberung des Zuschauerbereichs und das Verbrennen von Schnittholz."
    },
    "2016-04-30": {
     "title": "Arbeitseinsatz und das erste Hexenbrennen",
@@ -1256,7 +1256,7 @@ window.L10N={
     "title": "Gedenktag für Magister Jan Hus"
    },
    "2016-07-08": {
-    "title": "Tag der Stadt Toužim"
+    "title": "Tag der Stadt Theusing"
    },
    "2016-08-13": {
     "title": "Workshop: Bau von Nistkästen und Futterhäuschen",
@@ -1269,7 +1269,7 @@ window.L10N={
     "title": "Konzert der Band Cerberos und ein Kunstnachmittag"
    },
    "2016-10-15": {
-    "title": "72 Stunden auf Schloss Toužim"
+    "title": "72 Stunden auf Schloss Theusing"
    },
    "2016-12-10": {
     "title": "Weihnachtstreffen mit Glühwein"
@@ -1293,7 +1293,7 @@ window.L10N={
     "html": "Der allererste Kindertag im Schloss. Am Morgen hat uns das Wetter ordentlich erschreckt, am Nachmittag wurde es aber schön und sogar die Sonne kam heraus. Danke allen, die geholfen haben, dass die Kinder den Tag genießen konnten."
    },
    "2017-07-08": {
-    "title": "Historischer Nachmittag auf Schloss Toužim"
+    "title": "Historischer Nachmittag auf Schloss Theusing"
    },
    "2017-07-15": {
     "title": "Schlossfestival 2017 (1. Jahrgang)"
@@ -1308,7 +1308,7 @@ window.L10N={
     "title": "Sommerkino"
    },
    "2017-09-16": {
-    "title": "Toužimer Minifest auf dem Schloss"
+    "title": "Theusinger Minifest auf dem Schloss"
    },
    "2017-10-14": {
     "title": "Schloss-CITO Toužim 2017, Herbst"
@@ -1331,13 +1331,13 @@ window.L10N={
     "title": "Johannisfest"
    },
    "2018-07-06": {
-    "title": "Gedenktag für Magister Jan Hus in Toužim"
+    "title": "Gedenktag für Magister Jan Hus in Theusing"
    },
    "2018-07-07": {
-    "title": "Historischer Nachmittag auf Schloss Toužim"
+    "title": "Historischer Nachmittag auf Schloss Theusing"
    },
    "2018-07-08": {
-    "title": "Tag der Stadt Toužim"
+    "title": "Tag der Stadt Theusing"
    },
    "2018-07-21": {
     "title": "Schlossfestival 2018 (2. Jahrgang)"
@@ -1381,7 +1381,7 @@ window.L10N={
     "title": "Kindertag"
    },
    "2019-06-28": {
-    "title": "Feier zum 550. Gründungsjubiläum der Stadt Toužim"
+    "title": "Feier zum 550. Gründungsjubiläum der Stadt Theusing"
    },
    "2019-07-20": {
     "title": "Schlossfestival 2019 (3. Jahrgang)"
@@ -1432,8 +1432,8 @@ window.L10N={
     "title": "Punkovice im Schloss (3. Jahrgang)"
    },
    "2020-09-12": {
-    "title": "Historischer Tag: Gründung der Stadt Toužim (551 Jahre)",
-    "html": "Ein historischer Nachmittag zum 551. Jahrestag der Gründung von Toužim mit Musik von Cavalla Cannor, der Fechtgruppe Zlatý Grál, der Tänzerin Shahinez und Eva mit ihrer Drehorgel. Höhepunkt war die feierliche Eröffnung einer neuen Kammer mit einer Ausstellung von 130 Ausgaben des Romans „Die Großmutter“ von Božena Němcová."
+    "title": "Historischer Tag: Gründung der Stadt Theusing (551 Jahre)",
+    "html": "Ein historischer Nachmittag zum 551. Jahrestag der Gründung von Theusing mit Musik von Cavalla Cannor, der Fechtgruppe Zlatý Grál, der Tänzerin Shahinez und Eva mit ihrer Drehorgel. Höhepunkt war die feierliche Eröffnung einer neuen Kammer mit einer Ausstellung von 130 Ausgaben des Romans „Die Großmutter“ von Božena Němcová."
    },
    "2020-10-31": {
     "title": "Halloween im Schloss",
@@ -1453,7 +1453,7 @@ window.L10N={
    },
    "2021-07-10": {
     "title": "Historischer Nachmittag: 552 Jahre Stadt",
-    "html": "Eine ganztägige Feier zum 552. Jahrestag der Erhebung Toužims zur Stadt fand im Schlosshof und darüber hinaus statt. Den Auftakt machte das Märchen O prasátku Arturovi des Theaters Kamila, danach traten Cavalla Cannor, die Tänzerin Shahinez, die Fechtgruppen Zlatý Grál und Duellanti sowie Eva mit ihrem Leierkasten auf. Es folgten ein historischer Umzug rund um den Marktplatz, eine Szene zur Übergabe der Stadtgründungsurkunden und die Enthüllung einer neuen Informationstafel. Am Abend spielte im Hof die Gruppe Dáma s hranostajem, und in einem der Gemächer war eine Ausstellung zum 5-jährigen Bestehen des Vereins zu sehen."
+    "html": "Eine ganztägige Feier zum 552. Jahrestag der Erhebung Theusings zur Stadt fand im Schlosshof und darüber hinaus statt. Den Auftakt machte das Märchen O prasátku Arturovi des Theaters Kamila, danach traten Cavalla Cannor, die Tänzerin Shahinez, die Fechtgruppen Zlatý Grál und Duellanti sowie Eva mit ihrem Leierkasten auf. Es folgten ein historischer Umzug rund um den Marktplatz, eine Szene zur Übergabe der Stadtgründungsurkunden und die Enthüllung einer neuen Informationstafel. Am Abend spielte im Hof die Gruppe Dáma s hranostajem, und in einem der Gemächer war eine Ausstellung zum 5-jährigen Bestehen des Vereins zu sehen."
    },
    "2021-07-31": {
     "title": "Fler-Handwerksmarkt im Schloss",
@@ -1469,11 +1469,11 @@ window.L10N={
     "html": "Ein weiterer Jahrgang des Punkfestivals im Schloss und für uns wieder die Party des Jahres. Die Bands spielten, die Fans feierten, schade nur, dass nicht mehr von euch kamen. Also nächstes Jahr Pflicht!"
    },
    "2021-09-12": {
-    "title": "Toužimer Sommer",
+    "title": "Theusinger Sommer",
     "html": "Abschied vom Sommer im Schlosshof: Es gab Musik, frisch gezapftes Bier und Bratwürste."
    },
    "2021-10-09-cce": {
-    "title": "Community Celebration Event im Schloss Toužim",
+    "title": "Community Celebration Event im Schloss Theusing",
     "when": "Samstag · 14:30",
     "html": "Ein Community Celebration Event zum zwanzigjährigen Jubiläum des Geocachings mit Schlossführung und einem Konzert mittelalterlicher Musik."
    },
@@ -1496,19 +1496,19 @@ window.L10N={
    },
    "2022-05-21": {
     "title": "Schloss-CITO, Frühjahr 2022",
-    "html": "Der sechste Jahrgang und neunte Event des Schloss-CITO war der erste, den der Verein nach der Übernahme des Staffelstabs von der Dílna U mnicha ausrichtete. Geocacher und andere Freiwillige trafen sich zur alljährlichen Routine: Aufräumen des Schlosshofs, Schneiden und Verbrennen von Wildaufwuchs und Laubrechen. Bei genügend Helfern war auch der Kampf mit dem berüchtigten „Toužimer Haufen“ auf der Bühne geplant. Als um 11:05 nur ein einziger Geocacher da war, wurde uns schwindelig. Am Ende kamen weniger Leute als sonst, aber es hat sich gelohnt und der Haufen ist geschrumpft."
+    "html": "Der sechste Jahrgang und neunte Event des Schloss-CITO war der erste, den der Verein nach der Übernahme des Staffelstabs von der Dílna U mnicha ausrichtete. Geocacher und andere Freiwillige trafen sich zur alljährlichen Routine: Aufräumen des Schlosshofs, Schneiden und Verbrennen von Wildaufwuchs und Laubrechen. Bei genügend Helfern war auch der Kampf mit dem berüchtigten „Theusinger Haufen“ auf der Bühne geplant. Als um 11:05 nur ein einziger Geocacher da war, wurde uns schwindelig. Am Ende kamen weniger Leute als sonst, aber es hat sich gelohnt und der Haufen ist geschrumpft."
    },
    "2022-05-28": {
-    "title": "Kindertag im Schloss Toužim",
+    "title": "Kindertag im Schloss Theusing",
     "when": "Samstag · 13:00",
-    "html": "Ein Kindertag mit Wettbewerben um Preise, Forsthandwerk und einem Holzxylophon von Lesy ČR – Forstverwaltung Toužim und einem Berg Schaum von der Feuerwehr SDH Toužim. Der Besuch war fantastisch: Keine einzige Wettbewerbskarte blieb leer und alle Preise wurden verteilt. Nach dem Kinderprogramm gab es Abendkonzerte, die das Infozentrum Toužim organisiert hat. Wohl zum ersten Mal in der Geschichte wurden die Kinder früher müde als die Eltern."
+    "html": "Ein Kindertag mit Wettbewerben um Preise, Forsthandwerk und einem Holzxylophon von Lesy ČR – Forstverwaltung Theusing und einem Berg Schaum von der Feuerwehr SDH Toužim. Der Besuch war fantastisch: Keine einzige Wettbewerbskarte blieb leer und alle Preise wurden verteilt. Nach dem Kinderprogramm gab es Abendkonzerte, die das Infozentrum Theusing organisiert hat. Wohl zum ersten Mal in der Geschichte wurden die Kinder früher müde als die Eltern."
    },
    "2022-06-11": {
     "title": "Schlossfestival, 6. Jahrgang",
-    "html": "Das sechste Schloss-Rockfest: Wetter wie im Märchen, Essen und Bier ein Gedicht, und alles lief, wie es sollte. Es spielten Cerberos Heavy Rock, Loretta, Hlahol und Fata Morgana. Promo: Radek Kalinič, Bewirtung: Sokolovna Toužim."
+    "html": "Das sechste Schloss-Rockfest: Wetter wie im Märchen, Essen und Bier ein Gedicht, und alles lief, wie es sollte. Es spielten Cerberos Heavy Rock, Loretta, Hlahol und Fata Morgana. Promo: Radek Kalinič, Bewirtung: Sokolovna Theusing."
    },
    "2022-06-25": {
-    "title": "Historischer Tag: Gründung der Stadt Toužim (553 Jahre)",
+    "title": "Historischer Tag: Gründung der Stadt Theusing (553 Jahre)",
     "html": "Der historische Tag der Stadt mit den Fechtern von SHŠ Zlatý grál, den Tänzerinnen Shahinez, Musik von Cavalla Cannor und Eva mit der Drehorgel. Dazu Falknervorführungen des Vereins TEIR und Peitschenknallen mit Keltoviny."
    },
    "2022-07-23": {
@@ -1548,7 +1548,7 @@ window.L10N={
    },
    "2023-06-03": {
     "title": "Kindertag",
-    "html": "Ein Kindertag mit schönem Wetter, guter Laune und vielen Besuchern. Auf die Kinder warteten Wettbewerbe um Preise, Bastelwerkstätten, ein Berg Schaum von der Feuerwehr SDH Toužim und Handwerksvorführungen von Lesy ČR, dazu spielte die Band Dáma s hranostajem. Die Preise spendeten Jednota COOP, A.P.S.A., Sokolovna Toužim, Vera Gurmet, Jaroslav Kavina, Dong Van Hving und Lékárna Pod smrkem."
+    "html": "Ein Kindertag mit schönem Wetter, guter Laune und vielen Besuchern. Auf die Kinder warteten Wettbewerbe um Preise, Bastelwerkstätten, ein Berg Schaum von der Feuerwehr SDH Toužim und Handwerksvorführungen von Lesy ČR, dazu spielte die Band Dáma s hranostajem. Die Preise spendeten Jednota COOP, A.P.S.A., Sokolovna Theusing, Vera Gurmet, Jaroslav Kavina, Dong Van Hving und Lékárna Pod smrkem."
    },
    "2023-06-17": {
     "title": "Schlossfestival 2023 (7. Jahrgang)",
@@ -1557,7 +1557,7 @@ window.L10N={
    },
    "2023-06-20": {
     "title": "Schlossrätsel für Grundschulen",
-    "html": "Ein Schlossrätsel für Klassen der örtlichen Grundschulen, vorbereitet gemeinsam mit dem Infozentrum Toužim; die Kinder waren aufmerksam und wissbegierig."
+    "html": "Ein Schlossrätsel für Klassen der örtlichen Grundschulen, vorbereitet gemeinsam mit dem Infozentrum Theusing; die Kinder waren aufmerksam und wissbegierig."
    },
    "2023-06-23": {
     "title": "Johannisfest"
@@ -1567,8 +1567,8 @@ window.L10N={
     "html": "Stadtfest mit historischer Musik von Cavalla Cannor, Fechten mit Alia Tempora, den Tänzerinnen Shahinez, Eva mit der Drehorgel und einer Schmiedeesse. In den Kammern begann eine Ausstellung von Puzzlebildern von Jan Policar, geöffnet bis 30. 7."
    },
    "2023-06-28": {
-    "title": "Abschlussfeier der 9. Klassen der Grundschule Toužim",
-    "html": "Die Schüler aller drei neunten Klassen der Toužimer Grundschule feierten bei uns mit ihren Lehrern feierlich ihren Schulabschluss."
+    "title": "Abschlussfeier der 9. Klassen der Grundschule Theusing",
+    "html": "Die Schüler aller drei neunten Klassen der Theusinger Grundschule feierten bei uns mit ihren Lehrern feierlich ihren Schulabschluss."
    },
    "2023-07-15": {
     "title": "Kindernachmittag mit dem Theater Jitule & Dadule",
@@ -1598,7 +1598,7 @@ window.L10N={
    },
    "2024-04-30": {
     "title": "Hexenverbrennung",
-    "html": "Das traditionelle Maibaumaufstellen und Hexenbrennen veranstalteten gemeinsam der SDH Toužim (Freiwillige Feuerwehr Toužim) und Živý zámek Toužim. Am Nachmittag wurden im Schlosshof der Scheiterhaufen vorbereitet und die Haupthexe gebastelt, während auf dem Marktplatz unter Begleitung des Orchesters der ZUŠ Toužim (Kunstschule) die Maibaumspitze geschmückt wurde und für die Kleinsten eine Hüpfburg bereitstand. Nach dem Aufstellen des Maibaums zog das Programm zurück in den Schlosshof, wo der Scheiterhaufen mit der Hexe entzündet wurde und man am Feuer auch Würstchen grillen konnte."
+    "html": "Das traditionelle Maibaumaufstellen und Hexenbrennen veranstalteten gemeinsam der SDH Toužim (Freiwillige Feuerwehr Theusing) und Živý zámek Toužim. Am Nachmittag wurden im Schlosshof der Scheiterhaufen vorbereitet und die Haupthexe gebastelt, während auf dem Marktplatz unter Begleitung des Orchesters der ZUŠ Toužim (Kunstschule) die Maibaumspitze geschmückt wurde und für die Kleinsten eine Hüpfburg bereitstand. Nach dem Aufstellen des Maibaums zog das Programm zurück in den Schlosshof, wo der Scheiterhaufen mit der Hexe entzündet wurde und man am Feuer auch Würstchen grillen konnte."
    },
    "2024-05-18-toulky": {
     "title": "Streifzüge durch die Region mit Jean de Carro",
@@ -1610,15 +1610,15 @@ window.L10N={
    },
    "2024-06-01": {
     "title": "Kindertag",
-    "html": "Kindertag bei jedem Wetter: Wettbewerbe, Werkstätten und Schaum von der Freiwilligen Feuerwehr Toužim, bei Regen im Inneren des Schlosses."
+    "html": "Kindertag bei jedem Wetter: Wettbewerbe, Werkstätten und Schaum von der Freiwilligen Feuerwehr Theusing, bei Regen im Inneren des Schlosses."
    },
    "2024-06-15": {
     "title": "Schlossfestival, 8. Jahrgang",
     "html": "Das achte Schloss-Rockfest, seit 2017 veranstaltet von Kalimero Agency. Leute, Sound, Promo, Bands, Bewirtung und Wetter, alles war erstklassig. Für die Bewirtung sorgte die Hospůdka U Havlů. Hoffentlich schaffen wir es bis zum zehnten Jubiläum!"
    },
    "2024-06-29": {
-    "title": "Stadtfest: 555 Jahre Toužim",
-    "html": "Feier zu 555 Jahren seit der Erhebung Toužims zur Stadt. Fechten mit Alia Tempora, die Tänzerinnen Shahinez, Musik von Cavalla Cannor, ein Schmied, ein Imker, Kreativwerkstätten, Spiele von Jiří Šebesta im Garten und Märchen von Poutník Hroch."
+    "title": "Stadtfest: 555 Jahre Theusing",
+    "html": "Feier zu 555 Jahren seit der Erhebung Theusings zur Stadt. Fechten mit Alia Tempora, die Tänzerinnen Shahinez, Musik von Cavalla Cannor, ein Schmied, ein Imker, Kreativwerkstätten, Spiele von Jiří Šebesta im Garten und Märchen von Poutník Hroch."
    },
    "2024-07-27": {
     "title": "Schlossmarkt",
@@ -1656,7 +1656,7 @@ window.L10N={
    },
    "2025-05-31": {
     "title": "Kindertag",
-    "html": "Wettbewerbe für kleine und größere Kinder mit Belohnung für erfüllte Aufgaben und ein Stand von Lesy ČR. Mitgeholfen haben das CVČ Kačaba und die Kunstschule Toužim."
+    "html": "Wettbewerbe für kleine und größere Kinder mit Belohnung für erfüllte Aufgaben und ein Stand von Lesy ČR. Mitgeholfen haben das CVČ Kačaba und die Kunstschule Theusing."
    },
    "2025-06-21": {
     "title": "Schlossfestival, 9. Jahrgang",
@@ -1664,11 +1664,11 @@ window.L10N={
    },
    "2025-06-28": {
     "title": "Historischer Tag",
-    "html": "Feier zu 556 Jahren Stadt: Theater Jitule a Dadule, Eva mit der Drehorgel, Cavalla Cannor, Jean de Carro, die Tänzerinnen Shahinez, Fechten mit Castra Romana und Alia Tempora, Schmiede, Stelzenläufer und Handwerksstände. Premiere eines Films über Schloss Toužim von MiRo film."
+    "html": "Feier zu 556 Jahren Stadt: Theater Jitule a Dadule, Eva mit der Drehorgel, Cavalla Cannor, Jean de Carro, die Tänzerinnen Shahinez, Fechten mit Castra Romana und Alia Tempora, Schmiede, Stelzenläufer und Handwerksstände. Premiere eines Films über Schloss Theusing von MiRo film."
    },
    "2025-07-26": {
     "title": "Schlossmarkt",
-    "html": "Handwerksstände, eine Brotback-Vorführung, eine Hundeführerin, ein Stand von Maminy s rakovinou (Mütter mit Krebs) und Krankenschwestern der häuslichen Krankenpflege Toužim. Es spielte die Band Longway."
+    "html": "Handwerksstände, eine Brotback-Vorführung, eine Hundeführerin, ein Stand von Maminy s rakovinou (Mütter mit Krebs) und Krankenschwestern der häuslichen Krankenpflege Theusing. Es spielte die Band Longway."
    },
    "2025-08-02": {
     "title": "Pelmel muziky (Musik-Allerlei)",
@@ -1700,7 +1700,7 @@ window.L10N={
    },
    "2026-03-21": {
     "title": "Schlossgelage",
-    "html": "Das Schlossgastmahl war das erste einer Reihe von Gemeinschaftstreffen im Oberen Schloss, gedacht für alle, denen das Schloss Toužim am Herzen liegt. Auf dem Programm stand eine Diskussion darüber, was man im Schloss gern sehen würde, wobei man helfen kann, an welchen Aktivitäten man sich beteiligen möchte und was man mit anderen teilen kann. Das Gastmahl war ein gemeinsames: Zum kleinen Imbiss konnte jeder etwas Gutes mitbringen."
+    "html": "Das Schlossgastmahl war das erste einer Reihe von Gemeinschaftstreffen im Oberen Schloss, gedacht für alle, denen das Schloss Theusing am Herzen liegt. Auf dem Programm stand eine Diskussion darüber, was man im Schloss gern sehen würde, wobei man helfen kann, an welchen Aktivitäten man sich beteiligen möchte und was man mit anderen teilen kann. Das Gastmahl war ein gemeinsames: Zum kleinen Imbiss konnte jeder etwas Gutes mitbringen."
    },
    "2026-03-30": {
     "title": "Beginn der Arbeiten am Schlossgarten",
@@ -1712,11 +1712,11 @@ window.L10N={
    },
    "2026-04-30": {
     "title": "Hexenverbrennung und Maibaumaufstellen",
-    "html": "Aufstellen des Maibaums auf dem Marktplatz von Toužim ab 16 Uhr, danach Hexenverbrennen im Schlosshof ab etwa sechs Uhr abends."
+    "html": "Aufstellen des Maibaums auf dem Marktplatz von Theusing ab 16 Uhr, danach Hexenverbrennen im Schlosshof ab etwa sechs Uhr abends."
    },
    "2026-05-16": {
     "title": "Schloss-CITO, Frühjahr",
-    "html": "Das Frühlingswochenende gehörte dem XVI. Schloss-CITO und am Sonntag dem ersten Arbeitseinsatz Poznej &amp; pomoz (Entdecke &amp; hilf). Der größte Teil der Fläche unter der Mauer wurde geräumt, und entlang der Schlossmauer entstand ein Rosenbeet. Am Nachmittag trat Jean de Carro – Künstlername des Rundfunkpublizisten, Musikers und Erzählers Josef Šorfa – mit seinem Theater- und Musikprogramm Toulky krajem auf, voller Sagen und Liedballaden, darunter die eigens für das Schloss Toužim bestimmte Sage O černém mnichovi (Vom Schwarzen Mönch). Für die Helfer und CITO-Teilnehmer war die Vorstellung kostenlos."
+    "html": "Das Frühlingswochenende gehörte dem XVI. Schloss-CITO und am Sonntag dem ersten Arbeitseinsatz Poznej &amp; pomoz (Entdecke &amp; hilf). Der größte Teil der Fläche unter der Mauer wurde geräumt, und entlang der Schlossmauer entstand ein Rosenbeet. Am Nachmittag trat Jean de Carro – Künstlername des Rundfunkpublizisten, Musikers und Erzählers Josef Šorfa – mit seinem Theater- und Musikprogramm Toulky krajem auf, voller Sagen und Liedballaden, darunter die eigens für das Schloss Theusing bestimmte Sage O černém mnichovi (Vom Schwarzen Mönch). Für die Helfer und CITO-Teilnehmer war die Vorstellung kostenlos."
    },
    "2026-05-30": {
     "title": "Kindertag an Bord",
@@ -1765,7 +1765,7 @@ window.L10N={
    },
    "2026-09-05": {
     "title": "Theater im Schloss: Dívčí válka",
-    "html": "Die dritte Ausgabe des Theater-Minifestivals im Schloss widmete den Nachmittag traditionell den Kindern: Das Divadélko Ondřej spielte das Märchen Rytíř a Ošklivá dáma (Der Ritter und die hässliche Dame), und Jitule a Dadule zeigten eine Seifenblasenshow. Der Abend gehörte Dívčí válka (Der Mägdekrieg) mit F. R. Čech, einer humorvollen Parodie auf die Alten böhmischen Sagen über den Streit zwischen Männern und Frauen, die den Rekord als meistgespieltes Theaterstück Tschechiens hält. Die Veranstaltung fand mit finanzieller Unterstützung der Stadt Toužim statt."
+    "html": "Die dritte Ausgabe des Theater-Minifestivals im Schloss widmete den Nachmittag traditionell den Kindern: Das Divadélko Ondřej spielte das Märchen Rytíř a Ošklivá dáma (Der Ritter und die hässliche Dame), und Jitule a Dadule zeigten eine Seifenblasenshow. Der Abend gehörte Dívčí válka (Der Mägdekrieg) mit F. R. Čech, einer humorvollen Parodie auf die Alten böhmischen Sagen über den Streit zwischen Männern und Frauen, die den Rekord als meistgespieltes Theaterstück Tschechiens hält. Die Veranstaltung fand mit finanzieller Unterstützung der Stadt Theusing statt."
    },
    "2026-09-12": {
     "title": "Punkovice, 9. Jahrgang",
@@ -1800,7 +1800,7 @@ window.L10N={
    "2026-11-01-poznej-pomoz": {
     "title": "Poznej & pomoz (Entdecke & hilf)",
     "when": "Sonntag 9–16 Uhr",
-    "short": "Arbeitseinsatz auf Schloss Toužim",
+    "short": "Arbeitseinsatz auf Schloss Theusing",
     "html": "Helft uns dabei, den Platz für den Kinderspielbereich vorzubereiten und die Burg winterfest zu machen. Ihr könnt uns auch mit selbstgebackenen Leckereien unterstützen! Für die Helfer ist für Verpflegung gesorgt."
    },
    "2026-12-13": {
@@ -1855,7 +1855,7 @@ window.L10N={
      },
      {
       "nazev": "Mini-Modell des Schlosses",
-      "popis": "Modell des Schlosses Toužim im Taschenformat, im Beutel, nummeriert für Sammler.",
+      "popis": "Modell des Schlosses Theusing im Taschenformat, im Beutel, nummeriert für Sammler.",
       "cena": "110 CZK",
       "foto": "img/suvenyry/model.jpg",
       "skladem": true
@@ -1897,7 +1897,7 @@ window.L10N={
      },
      {
       "nazev": "Wandermarke Nr. 2864",
-      "popis": "Zum 555. Jubiläum der Stadt Toužim, limitiert auf 555 Stück.",
+      "popis": "Zum 555. Jubiläum der Stadt Theusing, limitiert auf 555 Stück.",
       "cena": "55 CZK",
       "foto": "img/suvenyry/znamka.jpg",
       "skladem": true
@@ -2019,7 +2019,7 @@ window.L10N={
    },
    "partneri": [
     {
-     "nazev": "Stadt Toužim",
+     "nazev": "Stadt Theusing",
      "odkaz": "https://www.touzim.cz/",
      "logo": "img/partneri/touzim.png"
     },
@@ -2059,7 +2059,7 @@ window.L10N={
      "logo": "img/partneri/postreli.png"
     },
     {
-     "nazev": "Kneipe U Havlů, Sokolovna Toužim",
+     "nazev": "Kneipe U Havlů, Sokolovna Theusing",
      "odkaz": "https://www.facebook.com/restaurace.sokolovna.touzim/",
      "logo": "img/partneri/u-havlu.png"
     },
@@ -2093,8 +2093,8 @@ window.L10N={
    "hero": [
     {
      "src": "img/zamek-uvod.jpg",
-     "alt": "Schloss Toužim, Blick über die Wiese mit Picknickbänken auf die Schlossgebäude",
-     "cap": "Schloss Toužim, März 2020"
+     "alt": "Schloss Theusing, Blick über die Wiese mit Picknickbänken auf die Schlossgebäude",
+     "cap": "Schloss Theusing, März 2020"
     },
     {
      "src": "img/nadvori.jpg",

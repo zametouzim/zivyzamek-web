@@ -11,6 +11,7 @@ co není přeložené, chybí a web použije češtinu.
 Fotky akcí: zmenší na 1000 px a vytvoří náhledy v img/akce/t/.
 Plakáty a fotky suvenýrů: zmenší na 1400 px.
 Ukázková administrace: admin/demo/data.js a admin/demo/config.js.
+Adresy stránek pro vyhledávače (program/, akce/<id>/ …), sitemap.xml a robots.txt: tools/adresy.py.
 Spouští se automaticky na GitHubu po každé změně (.github/workflows/build.yml).
 """
 import html, json, os, re, sys
@@ -304,6 +305,8 @@ def main():
         f.write('window.L10N=%s;\n' % json.dumps(tr, ensure_ascii=False, indent=1))
     demo()
     stamp()
+    import adresy  # skutečné adresy stránek, mapa webu a strukturovaná data (tools/adresy.py)
+    adresy.main()
     print('akce: %d, s fotkami %d, s plakátem %d' % (len(items), sum(1 for a in items if a.get('photos')), sum(1 for a in items if a.get('poster'))))
 
 

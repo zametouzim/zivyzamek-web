@@ -73,6 +73,8 @@ class Preklad:
                 else:
                     vysledky = deepl([zabal(t, md) for t, md, _ in davka], LANGS[l], klic)
                     vysledky = [rozbal(v, md) for v, (_, md, _) in zip(vysledky, davka)]
+                if l == 'de':
+                    vysledky = [theusing(v) for v in vysledky]
                 for v, (_, _, nastav) in zip(vysledky, davka):
                     nastav(v)
 
@@ -92,6 +94,22 @@ def rozbal(text, markdown):
     t = re.sub(r'\]\s*<k>(.*?)</k>', r']\1', t)
     t = re.sub(r'<k>(.*?)</k>', r'\1', t)
     return html.unescape(t)
+
+
+def theusing(t):
+    """V němčině se Toužim jmenuje Theusing (Michal 28. 10. 2026). Beze změny zůstane název spolku
+    (Živý zámek Toužim), poštovní adresa (364 01 Toužim) a české zkratky institucí (ZUŠ Toužim, SDH Toužim)."""
+    if 'Toužim' not in t:
+        return t
+    drz = []
+
+    def schovej(m):
+        drz.append(m.group(0))
+        return '\x00%d\x00' % (len(drz) - 1)
+    t = t.replace('Toužim (Theusing)', 'Theusing (Toužim)')
+    t = re.sub(r'Theusing \(Toužim\)|[Žž]ivý zámek Toužim|\d{3} ?\d{2} Toužim|\b[A-ZČŘŠŽÚŮ]{2,5} Toužim\b|\([^()\s]*Toužim[^()\s]*\)', schovej, t)
+    t = t.replace('Toužim', 'Theusing')
+    return re.sub('\x00(\\d+)\x00', lambda m: drz[int(m.group(1))], t)
 
 
 def deepl(texty, cil, klic):
