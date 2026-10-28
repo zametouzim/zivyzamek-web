@@ -1,27 +1,4 @@
 {
- "2026-11-01-poznej-pomoz": {
-  "terminy": [
-   {
-    "cas": "",
-    "kapacita": 5
-   }
-  ],
-  "uzaverka": "2026-11-01T00:00",
-  "ceny": [
-   {
-    "druh": "Vstup zdarma",
-    "cena": 0
-   }
-  ],
-  "zdarma": true,
-  "title": "Poznej & pomoz",
-  "date": "2026-11-01",
-  "when": "neděle 9–16",
-  "title_en": "Poznej & pomoz (Discover & Help)",
-  "when_en": "Sunday 9am–4pm",
-  "title_de": "Poznej & pomoz (Entdecke & hilf)",
-  "when_de": "Sonntag 9–16 Uhr"
- },
  "2026-12-13": {
   "terminy": [
    {
