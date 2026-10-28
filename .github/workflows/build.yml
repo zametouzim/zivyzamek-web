@@ -3,7 +3,7 @@ name: Sestavení webu
 on:
   push:
     branches: [main]
-    paths: ['content/**', 'img/**', 'i18n/**', 'admin/config.yml', 'tools/build.py', 'tools/preklad.py']
+    paths: ['content/**', 'img/**', 'i18n/**', 'admin/config.yml', 'tools/build.py', 'tools/preklad.py', 'tools/adresy.py', 'index.html']
   workflow_dispatch:
 permissions:
   contents: write
@@ -28,7 +28,9 @@ jobs:
         run: |
           git config user.name "Sestavení webu"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A content data admin/demo admin/config.yml img index.html
+          git add -A content data admin/demo admin/config.yml img index.html sitemap.xml robots.txt
+          # stránky s vlastní adresou (tools/adresy.py): nové, změněné i smazané
+          git add -A $(python -c "import json;print(' '.join(sorted({p.split('/')[0] for p in json.load(open('data/adresy.json'))['stranky']})))") $(git ls-files -- '*/index.html' | grep -v '^admin/' | cut -d/ -f1 | sort -u)
           if git diff --cached --quiet; then echo "beze změn"; exit 0; fi
           git commit -m "Sestavení webu po změně v administraci"
           git push

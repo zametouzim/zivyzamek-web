@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /nahled/
+
+Sitemap: https://www.zivyzamektouzim.cz/sitemap.xml

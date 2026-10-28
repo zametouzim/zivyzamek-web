@@ -25,7 +25,7 @@
           onChange: function (e) { p.onChange(e.target.checked); } }),
         on ? 'Akce je skrytá' : 'Akce je vidět v programu');
       if (!on) return h('div', { className: p.classNameWrapper }, box);
-      var url = web + '#akce/' + s;
+      var url = web + 'akce/' + s + '/';
       return h('div', { className: p.classNameWrapper }, box,
         s ? h('div', { style: { display: 'flex', gap: '8px', marginTop: '10px', flexWrap: 'wrap' } },
               h('input', { type: 'text', readOnly: true, value: url, 'aria-label': 'Odkaz na skrytou akci',
