@@ -14,12 +14,7 @@
   "poster": "/img/plakaty/Vanoce (1).jpg",
   "photos": [],
   "tag": "Pro všechny",
-  "rezervace": {
-    "kapacita": 10,
-    "terminy": [],
-    "uzaverka": "",
-    "ceny": []
-  },
+  "rezervace": null,
   "skryta": false,
   "titleTodo": false,
   "en": {
