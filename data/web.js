@@ -248,7 +248,7 @@ window.WEB={
   },
   {
    "nazev": "Dílna U mnicha",
-   "odkaz": "http://www.dilnaumnicha.cz/",
+   "odkaz": "https://dilnaumnicha.g6.cz",
    "logo": "img/partneri/dilna-u-mnicha.png"
   },
   {
@@ -1123,7 +1123,7 @@ window.L10N={
     },
     {
      "nazev": "Dílna U mnicha",
-     "odkaz": "http://www.dilnaumnicha.cz/",
+     "odkaz": "https://dilnaumnicha.g6.cz",
      "logo": "img/partneri/dilna-u-mnicha.png"
     },
     {
@@ -2065,7 +2065,7 @@ window.L10N={
     },
     {
      "nazev": "Dílna U mnicha",
-     "odkaz": "http://www.dilnaumnicha.cz/",
+     "odkaz": "https://dilnaumnicha.g6.cz",
      "logo": "img/partneri/dilna-u-mnicha.png"
     },
     {
