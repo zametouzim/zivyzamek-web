@@ -7,27 +7,10 @@
 <title>Administrace · Živý zámek Toužim</title>
 <link rel="icon" href="../img/logo.png">
 <link href="config.yml" type="application/yaml" rel="cms-config-url">
-<style>
-#prepni{position:fixed;left:8px;bottom:8px;z-index:99999;background:#16303f;color:#fff;font:13px/1.3 system-ui,sans-serif;padding:6px 10px;border-radius:4px;text-decoration:none}
-</style>
 </head>
 <body>
-<a id="prepni" href="rovnou/">Ukládá se jako koncept · přepnout na ukládání rovnou na web</a>
 <!-- Sveltia CMS: nástupce Decap CMS se stejným nastavením; přihlášení tokenem z GitHubu bez dalšího serveru -->
 <script src="https://unpkg.com/@sveltia/cms@0.224.0/dist/sveltia-cms.js"></script>
 <script src="skryta.js"></script>
-<script>
-// Spolek nemá nikoho, kdo by koncepty schvaloval: dotaz „Odeslat ke kontrole“ po uložení se sám zavře volbou „Později“.
-var cekam=0;
-function bezKontroly(){
-  cekam=0;
-  [].forEach.call(document.querySelectorAll('[role="dialog"],[role="alertdialog"],dialog'),function(d){
-    if(!d.getClientRects().length||!/Odeslat ke kontrole|Send for Review/.test(d.textContent))return;
-    [].some.call(d.querySelectorAll('button'),function(b){if(/^\s*(Později|Later)\s*$/.test(b.textContent)){b.click();return true}});
-  });
-}
-new MutationObserver(function(){if(!cekam)cekam=requestAnimationFrame(bezKontroly)})
-  .observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['open','hidden','aria-hidden','class']});
-</script>
 </body>
 </html>
