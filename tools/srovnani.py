@@ -5,10 +5,10 @@ Michal (28. 10. 2026) chce viditelné úpravy nejdřív vidět na webu a porovna
 než se rozhodne. Kopie má navíc:
   Časté dotazy        na stránkách Zámek a historie a Navštivte nás (krátká odpověď + odkaz na článek)
   Zajímavosti         souhrnná stránka článků (odkaz v patičce)
-  21 článků           každý s vlastní adresou, texty v srovnani/clanky.json (z dokumentu „SEO a GEO články“)
+  21 článků           každý s vlastní adresou, texty v tools/srovnani-clanky.json (z dokumentu „SEO a GEO články“)
 Všechny stránky kopie mají noindex, aby je vyhledávače nebraly jako druhý web.
 Na skutečný web nemá vliv. Spouští se ručně (python3 tools/srovnani.py) po tools/build.py;
-smazat jde celou složku srovnani/.
+smazat jde celou složku srovnani/ (texty článků zůstávají v tools/srovnani-clanky.json).
 """
 import html, json, os, re, sys
 
@@ -64,7 +64,7 @@ def skupina(n):
 
 def main():
     akce, web, l10n, dnes = adresy.nacti()
-    clanky = {c['n']: c for c in json.load(open('srovnani/clanky.json', encoding='utf-8'))}
+    clanky = {c['n']: c for c in json.load(open('tools/srovnani-clanky.json', encoding='utf-8'))}
     s = open('index.html', encoding='utf-8').read()
     if 'class="srov"' in s:
         raise SystemExit('srovnani: index.html už je kopie')
