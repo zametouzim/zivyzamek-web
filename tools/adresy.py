@@ -9,6 +9,8 @@ a každou akci vytvoří složka s kopií index.html, která má:
   canonical a hreflang        hlavní adresa stránky a její jazykové verze (?lang=en|de)
   strukturovaná data          JSON-LD: zámek, spolek, akce (Event)
   viditelnou svou sekci        a u akcí a programu předvyplněný obsah pro roboty bez JavaScriptu
+  jen svůj text               ostatní sekce jsou zabalené v <script type="text/x-sekce">, takže robot na adrese
+                              čte jen obsah té stránky; skript hned za </main> v index.html je vrátí do stránky
 V kořeni webu hlavičku index.html, sitemap.xml a robots.txt. Seznam vytvořených složek je
 v data/adresy.json; složky, které už nemají co obsahovat (smazaná akce), se smažou.
 
@@ -22,6 +24,8 @@ SITE = 'https://www.zivyzamektouzim.cz/'  # adresa ostrého webu (stejná jako u
 OBR = SITE + 'img/og.jpg'
 ZNACKA = re.compile(r'<!--seo:.*?-->\n.*?<!--/seo-->\n', re.S)
 HLAVA = '<!--seo: generuje tools/adresy.py, neupravovat ručně-->\n%s<!--/seo-->\n'
+SEKCE = re.compile(r'^<section data-page="([a-z]+)"( hidden)?>\n.*?^</section>\n', re.S | re.M)
+OBAL = re.compile(r'^<script type="text/x-sekce">\n(.*?)</script>\n', re.S | re.M)
 # složky webu, které nejsou stránky (vlastní stránka z administrace se nesmí jmenovat stejně)
 REZERVOVANE = {'img', 'docs', 'data', 'i18n', 'js', 'admin', 'nahled', 'navod', 'skripty', 'tools', 'content',
                'dotace', 'akce', 'domu', 'platba', 'archiv', 'dotaz'}
@@ -269,6 +273,8 @@ def stranka(zaklad, cesta, hlava, sekce=None, vlozit=None, pfx='', slozky=()):
     for co, cim in (vlozit or {}).items():
         i = co.index('></') + 1
         s = s.replace(co, co[:i] + cim + co[i:], 1)
+    vlastni = sekce or 'domu'
+    s = SEKCE.sub(lambda m: m.group(0) if m.group(1) == vlastni else '<script type="text/x-sekce">\n%s</script>\n' % m.group(0), s)
     if pfx:  # odkazy na stránky webu vedou do kopie
         s = re.sub(r'href="(\./|(?:%s)/[^"]*)"' % '|'.join(map(re.escape, slozky)), lambda m: 'href="%s%s"' % (pfx, m.group(1)), s)
     return s
@@ -368,7 +374,7 @@ def zapis(soubory, manifest):
 
 def main():
     akce, web, l10n, dnes = nacti()
-    zaklad = open('index.html', encoding='utf-8').read()
+    zaklad = OBAL.sub(r'\1', open('index.html', encoding='utf-8').read())  # index.html je i výstup, sekce zase rozbalit
     if not ZNACKA.search(zaklad):
         raise SystemExit('adresy: v index.html chybí <!--seo--> … <!--/seo-->')
     soubory, mapa = sestav(zaklad, akce, web, l10n, dnes)
