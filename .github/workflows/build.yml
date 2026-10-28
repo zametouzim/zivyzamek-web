@@ -33,7 +33,13 @@ jobs:
           git add -A $(python -c "import json;print(' '.join(sorted({p.split('/')[0] for p in json.load(open('data/adresy.json'))['stranky']})))") $(git -c core.quotepath=off ls-files -- '*/index.html' | grep -v '^admin/' | cut -d/ -f1 | sort -u)
           if git diff --cached --quiet; then echo "beze změn"; exit 0; fi
           git commit -m "Sestavení webu po změně v administraci"
-          git push
+          # do main mezitím mohl zapsat jiný běh (náhled konceptu, další uložení) → přidat se za něj a zkusit znovu
+          for i in 1 2 3 4 5; do
+            git push && exit 0
+            sleep $((i * 5))
+            git pull --rebase -X theirs origin main || { git rebase --abort; exit 1; }
+          done
+          exit 1
       - name: Znovu nasadit testovací web
         env:
           GH_TOKEN: ${{ github.token }}
