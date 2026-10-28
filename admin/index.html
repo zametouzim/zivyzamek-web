@@ -10,6 +10,11 @@
 </head>
 <body>
 <!-- Sveltia CMS: nástupce Decap CMS se stejným nastavením; přihlášení tokenem z GitHubu bez dalšího serveru -->
+<script>
+// Editor po uložení zůstane otevřený (kvůli odkazu na skrytou akci). Platí jako výchozí v každém prohlížeči;
+// kdo si v Nastavení → Obsah zapne „Po uložení konceptu zavřít editor“, tomu to zůstane.
+try{var k='sveltia-cms.prefs',v=JSON.parse(localStorage.getItem(k)||'{}');if(!('closeOnSave' in v)){v.closeOnSave=false;localStorage.setItem(k,JSON.stringify(v))}}catch(e){}
+</script>
 <script src="https://unpkg.com/@sveltia/cms@0.224.0/dist/sveltia-cms.js"></script>
 <script src="skryta.js"></script>
 </body>
