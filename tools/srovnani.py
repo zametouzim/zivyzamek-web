@@ -20,9 +20,9 @@ SKUPINY = [('Návštěva', [2, 3, 10, 11, 19]), ('Historie', [1, 4, 5, 6, 7, 12,
            ('Akce a spolek', [8, 9, 13, 14]), ('Zahrada a okolí', [15, 16, 17, 20, 21])]
 FAQ = {
     'zamek': [(1, 'Je v Toužimi hrad, nebo zámek?'), (5, 'Kdo postavil hrad v Toužimi?'), (12, 'Komu zámek patří?'),
-              (6, 'Jaký je rozdíl mezi Horním a Dolním zámkem?'), (7, 'Co je Černý mnich?')],
+              (6, 'Jaký je rozdíl mezi Horním a Dolním zámkem?'), (7, 'Kdo je Černý mnich?')],
     'navsteva': [(2, 'Kdy je zámek otevřený?'), (3, 'Kolik stojí vstupné a prohlídka?'), (10, 'Kde zaparkovat a jak se k zámku dostat?'),
-                 (19, 'Jde zámek navštívit mimo sezónu?'), (11, 'Co na zámku zažijí děti?')],
+                 (19, 'Dá se zámek navštívit mimo sezónu?'), (11, 'Co na zámku zažijí děti?')],
 }
 CSS = '''<style>
 .srov{background:#1f6f4a;color:#fff;font:15px/1.4 var(--font);padding:8px 16px;text-align:center}
