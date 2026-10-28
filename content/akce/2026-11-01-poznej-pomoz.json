@@ -10,10 +10,17 @@
   "when": "neděle 9–16",
   "short": "Brigáda na zámku Toužim",
   "text": "Pomozte nám připravit terén na dětskou hrací zónu a zazimovat hrad. Podpořit nás můžete i pečenou dobrotou! Pro pracanty občerstvení zajištěno.",
-  "prelozit": true,
+  "prelozit": false,
   "poster": "/img/plakaty/Poznej&Pomoc.jpg",
   "photos": [],
   "tag": "Přijďte pomoct",
+  "rezervace": {
+    "kapacita": 5,
+    "terminy": [],
+    "uzaverka": "",
+    "ceny": []
+  },
+  "skryta": true,
   "titleTodo": false,
   "en": {
     "title": "Poznej & pomoz (Discover & Help)",
