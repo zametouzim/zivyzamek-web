@@ -16,5 +16,18 @@
 <!-- Sveltia CMS: nástupce Decap CMS se stejným nastavením; přihlášení tokenem z GitHubu bez dalšího serveru -->
 <script src="https://unpkg.com/@sveltia/cms@0.224.0/dist/sveltia-cms.js"></script>
 <script src="skryta.js"></script>
+<script>
+// Spolek nemá nikoho, kdo by koncepty schvaloval: dotaz „Odeslat ke kontrole“ po uložení se sám zavře volbou „Později“.
+var cekam=0;
+function bezKontroly(){
+  cekam=0;
+  [].forEach.call(document.querySelectorAll('[role="dialog"],[role="alertdialog"],dialog'),function(d){
+    if(!d.getClientRects().length||!/Odeslat ke kontrole|Send for Review/.test(d.textContent))return;
+    [].some.call(d.querySelectorAll('button'),function(b){if(/^\s*(Později|Later)\s*$/.test(b.textContent)){b.click();return true}});
+  });
+}
+new MutationObserver(function(){if(!cekam)cekam=requestAnimationFrame(bezKontroly)})
+  .observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['open','hidden','aria-hidden','class']});
+</script>
 </body>
 </html>
