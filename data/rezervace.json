@@ -1,58 +1,48 @@
 {
- "2026-11-02-zkouška-rezervace-v2": {
+ "2026-11-01-poznej-pomoz": {
   "terminy": [
    {
-    "cas": "18:00",
-    "kapacita": 20
-   },
-   {
-    "cas": "20:00",
-    "kapacita": 20
+    "cas": "",
+    "kapacita": 5
    }
   ],
-  "uzaverka": "2026-10-30T22:37",
+  "uzaverka": "2026-11-01T00:00",
   "ceny": [
    {
-    "druh": "Dospělí",
-    "cena": 5
-   },
-   {
-    "druh": "Děti",
-    "cena": 2
+    "druh": "Vstup zdarma",
+    "cena": 0
    }
   ],
-  "title": "Zkouška rezervace V2",
-  "date": "2026-11-02",
-  "when": ""
+  "zdarma": true,
+  "title": "Poznej & pomoz",
+  "date": "2026-11-01",
+  "when": "neděle 9–16",
+  "title_en": "Poznej & pomoz (Discover & Help)",
+  "when_en": "Sunday 9am–4pm",
+  "title_de": "Poznej & pomoz (Entdecke & hilf)",
+  "when_de": "Sonntag 9–16 Uhr"
  },
- "2026-12-31-zkouska-rezervaci": {
+ "2026-12-13": {
   "terminy": [
    {
-    "cas": "19:00",
-    "kapacita": 5
-   },
-   {
-    "cas": "20:00",
-    "kapacita": 5
+    "cas": "",
+    "kapacita": 10
    }
   ],
-  "uzaverka": "2026-12-30T23:59",
+  "uzaverka": "2026-12-13T00:00",
   "ceny": [
    {
-    "druh": "Dospělí",
-    "cena": 2
-   },
-   {
-    "druh": "Děti",
-    "cena": 1
+    "druh": "Vstup zdarma",
+    "cena": 0
    }
   ],
-  "title": "Zkouška rezervací",
-  "date": "2026-12-31",
-  "when": "jen zkouška, akce se nekoná",
-  "title_en": "Booking test",
-  "when_en": "test only, the event does not take place",
-  "title_de": "Reservierungstest",
-  "when_de": "nur Test, die Veranstaltung findet nicht statt"
+  "zdarma": true,
+  "title": "Vánoční setkání se svařákem",
+  "date": "2026-12-13",
+  "when": "neděle",
+  "title_en": "Christmas get-together with mulled wine",
+  "when_en": "Sunday",
+  "title_de": "Weihnachtstreffen mit Glühwein",
+  "when_de": "Sonntag"
  }
 }

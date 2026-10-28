@@ -866,12 +866,6 @@ window.L10N={
     "when": "Sunday",
     "short": "The traditional end of the season in the courtyard with mulled wine.",
     "html": "14:00 – start\n14:15 – submission of entries for the competition for the best Linzer biscuits\n15:00 – poetry reading by the author, Blanka Lohrová, poetry exhibition\n15:45 – announcement of the winner of the competition for the best Linzer\n16:00 – Rosa Coeli Chamber Choir Christmas Concert\n17:00 – Christmas toast and farewell\nA Christmas craft workshop and a trail exploring Christmas traditions will be available throughout the afternoon."
-   },
-   "2026-12-31-zkouska-rezervaci": {
-    "title": "Booking test",
-    "when": "test only, the event does not take place",
-    "short": "Hidden test event for trying out bookings. Not visible on the website.",
-    "html": "This event is only for testing bookings and payments. <b>The event does not take place.</b>"
    }
   },
   "web": {
@@ -1808,12 +1802,6 @@ window.L10N={
     "when": "Sonntag",
     "short": "Der traditionelle Saisonabschluss im Schlosshof mit Glühwein.",
     "html": "14:00 Uhr – Beginn\n14:15 – Annahme der Proben für den Wettbewerb um das beste Linzer Gebäck\n15:00 – Lesung von Gedichten der Autorin Blanka Lohrová, Ausstellung von Gedichten\n15:45 – Bekanntgabe des Gewinners des Wettbewerbs um die besten Linzer\n16:00 Uhr – Kammerchor „Rosa Coeli“: Weihnachtskonzert\n17:00 Uhr – Weihnachtsumtrunk und Verabschiedung\nDen ganzen Nachmittag über gibt es einen Weihnachtsbastelworkshop und einen Rundgang zu den Weihnachtsbräuchen."
-   },
-   "2026-12-31-zkouska-rezervaci": {
-    "title": "Reservierungstest",
-    "when": "nur Test, die Veranstaltung findet nicht statt",
-    "short": "Versteckte Testveranstaltung zum Ausprobieren der Reservierungen. Auf der Website nicht sichtbar.",
-    "html": "Diese Veranstaltung dient nur zum Testen von Reservierungen und Zahlungen. <b>Die Veranstaltung findet nicht statt.</b>"
    }
   },
   "web": {
