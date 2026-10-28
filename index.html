@@ -946,7 +946,7 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
 <div class="lb" id="lb" hidden><img alt=""><button class="x" aria-label="Zavřít">×</button><button class="pv" aria-label="Předchozí">‹</button><button class="nx" aria-label="Další">›</button></div>
 <script src="data/i18n.js?v=34b1ec15"></script>
 <script src="data/akce.js?v=b9b775be"></script>
-<script src="data/web.js?v=7cc22e45"></script>
+<script src="data/web.js?v=54ed05a8"></script>
 <script>
 // Náhled konceptu z administrace (?nahled=…, viz tools/nahled.py): data konceptu přepíší zveřejněná
 (function(){var n=(location.search.match(/[?&]nahled=([a-z0-9-]{1,80})(?:&|$)/)||[])[1];if(!n)return;window.NAHLED=n;
@@ -1019,7 +1019,7 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
     function e(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
     function link(u){u=String(u||'');return /^(https?:\/\/|#|mailto:|tel:)/.test(u)?u:'#'}
     ST.forEach(function(p){
-      if(document.querySelector('section[data-page="'+p.id+'"]'))return;
+      var old=document.querySelector('section[data-page="'+p.id+'"]');  // na adrese stránky je předvyplněná česky (tools/adresy.py), tady se přestaví v jazyce návštěvníka
       var h='<div class="page-head">'+(p.nadtitulek?'<span class="eyebrow">'+e(p.nadtitulek)+'</span>':'')+'<h1>'+e(p.nazev)+'</h1>'+(p.perex?'<p>'+e(p.perex)+'</p>':'')+'</div><div class="vs">';
       (p.bloky||[]).forEach(function(b){
         if(b.type==='nadpis')h+='<h3>'+e(b.text||'')+'</h3>';
@@ -1029,7 +1029,7 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
         else if(b.type==='tlacitko'&&b.text){var u=link(b.odkaz);h+='<p><a class="btn" href="'+e(u)+'"'+(u.charAt(0)==='#'?'':' target="_blank" rel="noopener"')+'>'+e(b.text)+'</a></p>';}
       });
       var sec=document.createElement('section');sec.dataset.page=p.id;sec.hidden=true;sec.innerHTML='<div class="wrap">'+h+'</div></div>';
-      main.appendChild(sec);
+      if(old)old.parentNode.replaceChild(sec,old);else main.appendChild(sec);
       if(p.v_menu&&give){var a=document.createElement('a');a.setAttribute('href',PFX+p.id+'/');a.textContent=p.menu||p.nazev;give.parentNode.insertBefore(a,give);}
     });
   })();
