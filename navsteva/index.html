@@ -463,6 +463,7 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
 
 <main id="obsah" tabindex="-1">
 <!-- ÚVOD -->
+<script type="text/x-sekce">
 <section data-page="domu" hidden>
   <div class="wrap hero">
     <div class="hero-grid">
@@ -532,8 +533,10 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
     </div>
   </div>
 </section>
+</script>
 
 <!-- PROGRAM -->
+<script type="text/x-sekce">
 <section data-page="program" hidden>
   <div class="wrap">
     <div class="page-head"><span class="eyebrow">Sezóna 2026</span><h1>Program na zámku</h1><p>Akce se většinou odehrávají na nádvoří zámku nebo v útrobách Janova hradu (Horního zámku).</p><p>Změna programu vyhrazena.</p><nav class="subnav" aria-label="Na této stránce"><a href="program/#archiv">Proběhlé akce ↓</a></nav></div>
@@ -548,11 +551,14 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
     </div>
   </div>
 </section>
+</script>
 
 <!-- DETAIL AKCE -->
+<script type="text/x-sekce">
 <section data-page="akce" hidden>
   <div class="wrap" id="akceDetail"></div>
 </section>
+</script>
 
 <!-- NAVŠTĚVA -->
 <section data-page="navsteva">
@@ -611,6 +617,7 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
 </section>
 
 <!-- ZAHRADA -->
+<script type="text/x-sekce">
 <section data-page="zahrada" hidden>
   <div class="wrap">
     <div class="page-head"><span class="eyebrow">Projekt 2025–2027 · s podporou Nadace VIA</span><h1>Zahrada, která odhalila historii</h1><p>Historická zámecká zahrada ležela severně od zámku a v 60. letech ji zastavělo sídliště. Novou odpočinkovou zahradu zakládáme na zarostlé ploše mezi Horním a Dolním zámkem a hradbami. Bude to místo pro odpočinek, hraní dětí i spolkové akce.</p>
@@ -717,8 +724,10 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
     </div>
   </div>
 </section>
+</script>
 
 <!-- ZÁMEK -->
+<script type="text/x-sekce">
 <section data-page="zamek" hidden>
   <div class="wrap">
     <div class="page-head"><span class="eyebrow">Historie</span><h1>Zámek Toužim</h1><p>Nejstarší a nejvýznamnější památka Toužimi. Z proboštství hrad, z hradu zámek, pak desítky let chátrání. Od roku 2015 se do něj vrací život.</p></div>
@@ -788,8 +797,10 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
     <p class="zsrc">Texty a kresby podle brožury a turistických cedulí spolku z roku 2021 (grafika Gabriela Pilná, za podpory Karlovarského kraje).</p>
   </div>
 </section>
+</script>
 
 <!-- SPOLEK -->
+<script type="text/x-sekce">
 <section data-page="spolek" hidden>
   <div class="wrap">
     <div class="page-head"><span class="eyebrow">O nás</span><h1>Spolek Živý zámek Toužim</h1><p>Začali jsme v roce 2015 jako občanská iniciativa, spolek jsme založili v roce 2016. Chceme zámek chránit, ukazovat lidem a postupně ho obnovit ve spolupráci s městem Toužim, které je jeho vlastníkem.</p></div>
@@ -821,8 +832,10 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
     </div>
   </div>
 </section>
+</script>
 
 <!-- PODPOŘTE -->
+<script type="text/x-sekce">
 <section data-page="podporte" hidden>
   <div class="wrap">
     <div class="page-head"><span class="eyebrow">Podpořte nás</span><h1>Bez dobrovolníků a dárců by zámek dál chátral</h1>
@@ -899,7 +912,12 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
     </div>
   </div>
 </section>
+</script>
 </main>
+<script>
+// Text ostatních stránek je v <script type="text/x-sekce"> (tools/adresy.py), aby roboti na každé adrese četli jen její obsah. Tady se vrátí do stránky.
+[].forEach.call(document.querySelectorAll('script[type="text/x-sekce"]'),function(s){s.insertAdjacentHTML('beforebegin',s.textContent);s.remove()});
+</script>
 
 <footer>
   <div class="wrap cols">
