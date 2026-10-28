@@ -29,7 +29,9 @@ REZERVOVANE = {'img', 'docs', 'data', 'i18n', 'js', 'admin', 'nahled', 'navod', 
 ADRESA = {'@type': 'PostalAddress', 'streetAddress': 'náměstí Jiřího z Poděbrad 1', 'postalCode': '364 01',
           'addressLocality': 'Toužim', 'addressCountry': 'CZ'}
 SPOLEK = {'@type': 'NGO', '@id': SITE + '#spolek', 'name': 'Živý zámek Toužim, z. s.', 'alternateName': 'Živý zámek Toužim',
-          'url': SITE, 'logo': SITE + 'img/logo.png', 'email': 'zivyzamektouzim@email.cz', 'foundingDate': '2016',
+          'url': SITE, 'logo': SITE + 'img/logo.png',
+          'address': {'@type': 'PostalAddress', 'streetAddress': 'Na Výsluní 346', 'addressLocality': 'Toužim', 'addressCountry': 'CZ'},
+          'email': 'zivyzamektouzim@email.cz', 'foundingDate': '2016',
           'identifier': {'@type': 'PropertyValue', 'propertyID': 'IČO', 'value': '04690770'},
           'sameAs': ['https://www.facebook.com/zivyzamek.touzim', 'https://www.instagram.com/zivyzamektouzim/']}
 
@@ -129,13 +131,16 @@ def url(cesta):
     return SITE + urllib.parse.quote(cesta)
 
 
-def hlavicka(cesta, meta, ld, noindex=False):
-    """Blok mezi <!--seo--> a <!--/seo--> v hlavičce. cesta = '' (úvod), 'program/', 'akce/x/'."""
+def hlavicka(cesta, meta, ld, noindex=False, pfx=''):
+    """Blok mezi <!--seo--> a <!--/seo--> v hlavičce. cesta = '' (úvod), 'program/', 'akce/x/'.
+    pfx = složka kopie webu (srovnani/); kopie míří obrázky a data do kořene webu a canonical na skutečnou stránku."""
     t, d = meta['cs']
     u = url(cesta)
     r = []
-    if cesta:
-        r.append('<base href="%s">' % ('../' * cesta.count('/')))
+    if pfx + cesta:
+        r.append('<base href="%s">' % ('../' * (pfx + cesta).count('/')))
+    if pfx:
+        r.append('<script>window.PFX=%s</script>' % json.dumps(pfx))
     r.append('<title>%s</title>' % e(t))
     r.append('<meta name="description" content="%s">' % e(d))
     if noindex:
@@ -254,34 +259,39 @@ def program_html(akce, dnes):
     return ''.join(li(a) for a in prijde), ''.join(li(a) for a in bylo)
 
 
-def stranka(zaklad, cesta, hlava, sekce=None, vlozit=None):
+def stranka(zaklad, cesta, hlava, sekce=None, vlozit=None, pfx='', slozky=()):
     s = ZNACKA.sub(lambda m: hlava, zaklad, count=1)
-    if cesta:
-        s = s.replace('href="#obsah"', 'href="%s#obsah"' % cesta, 1)
+    if pfx + cesta:
+        s = s.replace('href="#obsah"', 'href="%s#obsah"' % (pfx + cesta), 1)
     if sekce and sekce != 'domu':
         s = s.replace('<section data-page="domu">', '<section data-page="domu" hidden>', 1)
         s = s.replace('<section data-page="%s" hidden>' % sekce, '<section data-page="%s">' % sekce, 1)
     for co, cim in (vlozit or {}).items():
         i = co.index('></') + 1
         s = s.replace(co, co[:i] + cim + co[i:], 1)
+    if pfx:  # odkazy na stránky webu vedou do kopie
+        s = re.sub(r'href="(\./|(?:%s)/[^"]*)"' % '|'.join(map(re.escape, slozky)), lambda m: 'href="%s%s"' % (pfx, m.group(1)), s)
     return s
 
 
-def main(dnes=None):
-    import datetime
-    dnes = dnes or datetime.date.today().isoformat()
-    os.chdir(ROOT)
-    akce_js, web_js = nacti_js('data/akce.js'), nacti_js('data/web.js')
-    akce, web, l10n = akce_js.get('AKCE', []), web_js.get('WEB', {}), web_js.get('L10N', {})
-    zaklad = open('index.html', encoding='utf-8').read()
-    if not ZNACKA.search(zaklad):
-        raise SystemExit('adresy: v index.html chybí <!--seo--> … <!--/seo-->')
-
-    soubory, mapa = {}, []  # cesta -> obsah; adresy do sitemap.xml
+def sestav(zaklad, akce, web, l10n, dnes, pfx='', navic=(), noindex=False):
+    """Všechny stránky webu: {cesta souboru: obsah} a seznam adres pro mapu webu.
+    navic = [(id sekce, meta, ld)] další stránky, které v zakladu mají vlastní sekci (kopie webu)."""
+    soubory, mapa = {}, []
+    vlastni = []
+    for p in web.get('stranky', []):
+        pid = p.get('id', '')
+        if not re.fullmatch(r'[a-z0-9][a-z0-9-]*', pid) or pid in REZERVOVANE or pid in STRANKY:
+            print('adresy: vlastní stránka „%s“ nemá vlastní adresu (nepovolený název)' % pid)
+            continue
+        vlastni.append(p)
+    slozky = list(STRANKY) + ['akce'] + [p['id'] for p in vlastni] + [n[0] for n in navic]
+    st = lambda cesta, hlava, sekce=None, vlozit=None: stranka(zaklad, cesta, hlava, sekce, vlozit, pfx, slozky)
+    hl = lambda cesta, meta, ld, ni=False: hlavicka(cesta, meta, ld, ni or noindex, pfx)
     graf = {'@context': 'https://schema.org', '@graph': [zamek(web), SPOLEK,
             {'@type': 'WebSite', '@id': SITE + '#web', 'url': SITE, 'name': 'Živý zámek Toužim', 'inLanguage': ['cs', 'en', 'de'],
              'publisher': {'@id': SITE + '#spolek'}}]}
-    soubory['index.html'] = stranka(zaklad, '', hlavicka('', STRANKY['domu'], graf))
+    soubory[pfx + 'index.html'] = st('', hl('', STRANKY['domu'], graf))
     mapa.append('')
     for sid in ('program', 'navsteva', 'zahrada', 'zamek', 'spolek', 'podporte'):
         meta = navsteva_meta(web, l10n) if sid == 'navsteva' else STRANKY[sid]
@@ -295,13 +305,10 @@ def main(dnes=None):
         if sid == 'program':
             nahoru, archiv = program_html(akce, dnes)
             vlozit = {'<ul class="events up" id="upList"></ul>': nahoru, '<ul class="events arch" id="archList"></ul>': archiv}
-        soubory[sid + '/index.html'] = stranka(zaklad, sid + '/', hlavicka(sid + '/', meta, ld), sid, vlozit)
+        soubory[pfx + sid + '/index.html'] = st(sid + '/', hl(sid + '/', meta, ld), sid, vlozit)
         mapa.append(sid + '/')
-    for p in web.get('stranky', []):
-        pid = p.get('id', '')
-        if not re.fullmatch(r'[a-z0-9][a-z0-9-]*', pid) or pid in REZERVOVANE or pid in STRANKY:
-            print('adresy: vlastní stránka „%s“ nemá vlastní adresu (nepovolený název)' % pid)
-            continue
+    for p in vlastni:
+        pid = p['id']
         meta = {'cs': ('%s – Živý zámek Toužim' % p.get('nazev', pid), p.get('perex') or STRANKY['domu']['cs'][1])}
         for l in ('en', 'de'):
             t = next((x for x in ((l10n.get(l) or {}).get('web') or {}).get('stranky', []) if x.get('id') == pid), None)
@@ -309,25 +316,34 @@ def main(dnes=None):
                 meta[l] = ('%s – Živý zámek Toužim' % t['nazev'], t.get('perex') or STRANKY['domu'][l][1])
         ld = {'@context': 'https://schema.org', '@type': 'WebPage', 'name': meta['cs'][0], 'url': url(pid + '/'),
               'isPartOf': {'@id': SITE + '#web'}}
-        soubory[pid + '/index.html'] = stranka(zaklad, pid + '/', hlavicka(pid + '/', meta, ld))
+        soubory[pfx + pid + '/index.html'] = st(pid + '/', hl(pid + '/', meta, ld))
         mapa.append(pid + '/')
+    for sid, meta, ld in navic:
+        soubory[pfx + sid + '/index.html'] = st(sid + '/', hl(sid + '/', meta, ld), sid)
+        mapa.append(sid + '/')
     for a in akce:
         if '/' in a['id'] or a['id'].startswith('.'):
             continue
         c = 'akce/%s/' % a['id']
         vlozit = {'<div class="wrap" id="akceDetail"></div>': detail_html(a, dnes)}
-        soubory[c + 'index.html'] = stranka(zaklad, c, hlavicka(c, akce_meta(a, l10n), udalost(a, c, l10n), noindex=bool(a.get('skryta'))), 'akce', vlozit)
+        soubory[pfx + c + 'index.html'] = st(c, hl(c, akce_meta(a, l10n), udalost(a, c, l10n), bool(a.get('skryta'))), 'akce', vlozit)
         if not a.get('skryta'):
             mapa.append(c)
+    return soubory, mapa
 
-    soubory['sitemap.xml'] = ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-                              + ''.join('<url><loc>%s</loc></url>\n' % e(url(c)) for c in mapa) + '</urlset>\n')
-    soubory['robots.txt'] = 'User-agent: *\nDisallow: /admin/\nDisallow: /nahled/\n\nSitemap: %ssitemap.xml\n' % SITE
 
-    # smazat složky, které už nemají stránku (smazaná akce nebo vlastní stránka)
+def nacti():
+    import datetime
+    os.chdir(ROOT)
+    akce_js, web_js = nacti_js('data/akce.js'), nacti_js('data/web.js')
+    return akce_js.get('AKCE', []), web_js.get('WEB', {}), web_js.get('L10N', {}), datetime.date.today().isoformat()
+
+
+def zapis(soubory, manifest):
+    """Zapíše soubory, smaže stránky ze starého seznamu, které už nejsou, a uloží nový seznam."""
     stare = []
-    if os.path.exists('data/adresy.json'):
-        stare = json.load(open('data/adresy.json', encoding='utf-8')).get('stranky', [])
+    if os.path.exists(manifest):
+        stare = json.load(open(manifest, encoding='utf-8')).get('stranky', [])
     nove = sorted(c for c in soubory if c.endswith('/index.html'))
     for c in stare:
         if c not in soubory and c.endswith('/index.html') and os.path.exists(c):
@@ -344,11 +360,24 @@ def main(dnes=None):
             with open(c, 'w', encoding='utf-8') as f:
                 f.write(obsah)
             zmeneno += 1
-    with open('data/adresy.json', 'w', encoding='utf-8') as f:
+    with open(manifest, 'w', encoding='utf-8') as f:
         json.dump({'stranky': nove}, f, ensure_ascii=False, indent=0)
         f.write('\n')
-    print('adresy: %d stránek, v mapě webu %d, změněno %d souborů' % (len(nove) + 1, len(mapa), zmeneno))
+    return len(nove), zmeneno
 
+
+def main():
+    akce, web, l10n, dnes = nacti()
+    zaklad = open('index.html', encoding='utf-8').read()
+    if not ZNACKA.search(zaklad):
+        raise SystemExit('adresy: v index.html chybí <!--seo--> … <!--/seo-->')
+    soubory, mapa = sestav(zaklad, akce, web, l10n, dnes)
+    soubory['sitemap.xml'] = ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+                              + ''.join('<url><loc>%s</loc></url>\n' % e(url(c)) for c in mapa) + '</urlset>\n')
+    soubory['robots.txt'] = 'User-agent: *\nDisallow: /admin/\nDisallow: /nahled/\n\nSitemap: %ssitemap.xml\n' % SITE
+
+    n, zmeneno = zapis(soubory, 'data/adresy.json')
+    print('adresy: %d stránek, v mapě webu %d, změněno %d souborů' % (n + 1, len(mapa), zmeneno))
 
 if __name__ == '__main__':
     main()

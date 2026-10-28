@@ -15,7 +15,7 @@
 <meta property="og:description" content="Spolek dobrovolníků, který od roku 2015 oživuje zámek v Toužimi. Koncerty, divadlo, letní kino, prohlídky Janova hradu, brigády a obnova zámecké zahrady.">
 <meta property="og:url" content="https://www.zivyzamektouzim.cz/">
 <script>window.META={"en": {"t": "Živý zámek Toužim – events, tours and history of Toužim Castle", "d": "A volunteer association bringing the castle in Toužim back to life since 2015. Concerts, theatre, open-air cinema, tours of Jan's Castle, work days and the restoration of the castle garden."}, "de": {"t": "Živý zámek Toužim – Veranstaltungen, Führungen und Geschichte von Schloss Theusing", "d": "Ein Verein von Freiwilligen, der seit 2015 das Schloss in Theusing (Toužim) wiederbelebt. Konzerte, Theater, Sommerkino, Führungen durch Jans Burg, Arbeitseinsätze und die Erneuerung des Schlossgartens."}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": ["TouristAttraction", "LandmarksOrHistoricalBuildings"], "@id": "https://www.zivyzamektouzim.cz/#zamek", "name": "Zámek Toužim", "description": "Zámek Toužim byl proboštstvím, od roku 1437 gotickým hradem a od 16. století zámkem. Historie, majitelé, podoba areálu kolem roku 1700 a pověst o černém mnichovi.", "url": "https://www.zivyzamektouzim.cz/navsteva/", "image": "https://www.zivyzamektouzim.cz/img/og.jpg", "address": {"@type": "PostalAddress", "streetAddress": "náměstí Jiřího z Poděbrad 1", "postalCode": "364 01", "addressLocality": "Toužim", "addressCountry": "CZ"}, "telephone": "+420724859799", "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "12:00", "validFrom": "2027-07-01", "validThrough": "2027-09-30"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "13:00", "closes": "17:00", "validFrom": "2027-07-01", "validThrough": "2027-09-30"}]}, {"@type": "NGO", "@id": "https://www.zivyzamektouzim.cz/#spolek", "name": "Živý zámek Toužim, z. s.", "alternateName": "Živý zámek Toužim", "url": "https://www.zivyzamektouzim.cz/", "logo": "https://www.zivyzamektouzim.cz/img/logo.png", "email": "zivyzamektouzim@email.cz", "foundingDate": "2016", "identifier": {"@type": "PropertyValue", "propertyID": "IČO", "value": "04690770"}, "sameAs": ["https://www.facebook.com/zivyzamek.touzim", "https://www.instagram.com/zivyzamektouzim/"]}, {"@type": "WebSite", "@id": "https://www.zivyzamektouzim.cz/#web", "url": "https://www.zivyzamektouzim.cz/", "name": "Živý zámek Toužim", "inLanguage": ["cs", "en", "de"], "publisher": {"@id": "https://www.zivyzamektouzim.cz/#spolek"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": ["TouristAttraction", "LandmarksOrHistoricalBuildings"], "@id": "https://www.zivyzamektouzim.cz/#zamek", "name": "Zámek Toužim", "description": "Zámek Toužim byl proboštstvím, od roku 1437 gotickým hradem a od 16. století zámkem. Historie, majitelé, podoba areálu kolem roku 1700 a pověst o černém mnichovi.", "url": "https://www.zivyzamektouzim.cz/navsteva/", "image": "https://www.zivyzamektouzim.cz/img/og.jpg", "address": {"@type": "PostalAddress", "streetAddress": "náměstí Jiřího z Poděbrad 1", "postalCode": "364 01", "addressLocality": "Toužim", "addressCountry": "CZ"}, "telephone": "+420724859799", "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "12:00", "validFrom": "2027-07-01", "validThrough": "2027-09-30"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "13:00", "closes": "17:00", "validFrom": "2027-07-01", "validThrough": "2027-09-30"}]}, {"@type": "NGO", "@id": "https://www.zivyzamektouzim.cz/#spolek", "name": "Živý zámek Toužim, z. s.", "alternateName": "Živý zámek Toužim", "url": "https://www.zivyzamektouzim.cz/", "logo": "https://www.zivyzamektouzim.cz/img/logo.png", "address": {"@type": "PostalAddress", "streetAddress": "Na Výsluní 346", "addressLocality": "Toužim", "addressCountry": "CZ"}, "email": "zivyzamektouzim@email.cz", "foundingDate": "2016", "identifier": {"@type": "PropertyValue", "propertyID": "IČO", "value": "04690770"}, "sameAs": ["https://www.facebook.com/zivyzamek.touzim", "https://www.instagram.com/zivyzamektouzim/"]}, {"@type": "WebSite", "@id": "https://www.zivyzamektouzim.cz/#web", "url": "https://www.zivyzamektouzim.cz/", "name": "Živý zámek Toužim", "inLanguage": ["cs", "en", "de"], "publisher": {"@id": "https://www.zivyzamektouzim.cz/#spolek"}}]}</script>
 <!--/seo-->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Živý zámek Toužim">
@@ -993,6 +993,8 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
 </script>
 <script>
 (function(){
+  // PFX: kopie webu ve složce (srovnani/, viz tools/srovnani.py) má odkazy o tu složku delší
+  var PFX=window.PFX||'';
   // vlastní stránky z administrace (data/web.js): sekce a odkaz v menu
   (function(){
     var ST=(window.WEB||{}).stranky||[], main=document.querySelector('main'), give=document.querySelector('nav.main a.give');
@@ -1010,13 +1012,13 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
       });
       var sec=document.createElement('section');sec.dataset.page=p.id;sec.hidden=true;sec.innerHTML='<div class="wrap">'+h+'</div></div>';
       main.appendChild(sec);
-      if(p.v_menu&&give){var a=document.createElement('a');a.setAttribute('href',p.id+'/');a.textContent=p.menu||p.nazev;give.parentNode.insertBefore(a,give);}
+      if(p.v_menu&&give){var a=document.createElement('a');a.setAttribute('href',PFX+p.id+'/');a.textContent=p.menu||p.nazev;give.parentNode.insertBefore(a,give);}
     });
   })();
   var AKCE=(window.AKCE||[]).slice().sort(function(a,b){return a.date<b.date?1:-1});
   var pages=[].slice.call(document.querySelectorAll('section[data-page]'));
   // skutečné adresy stránek: kořen webu je složka s index.html (podstránky mají <base href="../">, viz tools/adresy.py)
-  var KOREN=new URL('.',document.baseURI).pathname;
+  var KOREN=new URL('.',document.baseURI).pathname+PFX;
   var CESTA=(function(){var r=location.pathname.indexOf(KOREN)===0?location.pathname.slice(KOREN.length):'';r=r.replace(/index\.html$/,'').replace(/\/$/,'');try{r=decodeURIComponent(r)}catch(e){}return r||'domu'})();
   function trasa(h){if(h==='archiv'||h==='dotaz'||/^(akce|platba)\//.test(h))return true;var p=h.split('/')[0];return p!=='akce'&&pages.some(function(s){return s.dataset.page===p})}
   function cesta(id){
@@ -1054,8 +1056,8 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
   var detail=document.getElementById('akceDetail'), lb=document.getElementById('lb'), lbImgs=[], lbI=0, curPhotos=[];
   function renderDetail(id){
     var a=AKCE.filter(function(x){return x.id===id})[0];
-    if(!a){detail.innerHTML='<a class="ak-back" href="program/#archiv">← '+T('Archiv akcí')+'</a><p>'+T('Akce nenalezena.')+'</p>';return}
-    var h=(past(a)?'<a class="ak-back" href="program/#archiv">← '+T('Archiv akcí')+'</a>':'<a class="ak-back" href="program/">← '+T('Program')+'</a>')+'<div class="ak-head"><div class="ak-date">'+dFull(a)+'</div><h1>'+esc(a.title)+(a.titleTodo?' <span class="todo" style="font-size:18px">název?</span>':'')+'</h1>'+(a.when?'<div class="ak-when">'+esc(a.when)+'</div>':'')+'</div>';
+    if(!a){detail.innerHTML='<a class="ak-back" href="'+PFX+'program/#archiv">← '+T('Archiv akcí')+'</a><p>'+T('Akce nenalezena.')+'</p>';return}
+    var h=(past(a)?'<a class="ak-back" href="'+PFX+'program/#archiv">← '+T('Archiv akcí')+'</a>':'<a class="ak-back" href="'+PFX+'program/">← '+T('Program')+'</a>')+'<div class="ak-head"><div class="ak-date">'+dFull(a)+'</div><h1>'+esc(a.title)+(a.titleTodo?' <span class="todo" style="font-size:18px">název?</span>':'')+'</h1>'+(a.when?'<div class="ak-when">'+esc(a.when)+'</div>':'')+'</div>';
     h+='<div class="ak-body"><div class="ak-text">'+(a.html?a.html.split('\n').map(function(p){return '<p>'+p+'</p>'}).join(''):a.text?a.text.split('\n').map(function(p){return '<p>'+esc(p)+'</p>'}).join(''):'<p class="tbd">'+T('Bude doplněno.')+'</p>')+'</div>';
     h+=a.poster?'<button class="poster" data-src="'+a.poster+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+a.poster+'" alt="'+T('Plakát')+': '+esc(a.title)+'"></button>':'<div></div>';
     h+='</div>';
@@ -1161,7 +1163,7 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
     var h=location.hash.slice(1), id=CESTA, jump=null;
     try{h=decodeURIComponent(h)}catch(e){}
     if(h){if(trasa(h))id=h;else jump=h;}
-    if(id!==CESTA&&CESTA==='domu'&&!window.NAHLED){var c=cesta(id);if(c){var u=new URL(c,location.href);u.search=location.search;location.replace(u.href);return}}
+    if(id!==CESTA&&CESTA==='domu'&&!window.NAHLED){var c=cesta(id);if(c){var u=new URL(PFX+c,document.baseURI);u.search=location.search;location.replace(u.href);return}}
     if(id==='archiv'){id='program';jump='archiv';}
     if(id==='dotaz'){id='navsteva';jump='dotaz';}
     if(id.indexOf('akce/')===0){var aid=id.slice(5);try{aid=decodeURIComponent(aid)}catch(e){}renderDetail(aid);id='akce';}
@@ -1170,7 +1172,7 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
     if(!pages.some(function(p){return p.dataset.page===id})) id='domu';
     pages.forEach(function(p){p.hidden=p.dataset.page!==id});
     var navId=id==='akce'?'program':id;
-    links.forEach(function(a){ if(a.getAttribute('href')===(navId==='domu'?'./':navId+'/')) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
+    links.forEach(function(a){ if(a.getAttribute('href')===PFX+(navId==='domu'?'./':navId+'/')) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
     nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); lb.hidden=true;
     window.scrollTo(0,0);
     if(jump){var t=document.getElementById(jump);if(t)setTimeout(function(){t.scrollIntoView({block:'start'})},0);}
@@ -1183,14 +1185,14 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
   var MES=window.LANG==='cs'?['ledna','února','března','dubna','května','června','července','srpna','září','října','listopadu','prosince']:[0,1,2,3,4,5,6,7,8,9,10,11].map(function(i){return new Date(2026,i,15).toLocaleDateString(window.LANG,{month:'long'})});
   function cal(a){var s=a.date.split('-'),dot=EN?'':'.',t=(+s[2])+dot;if(a.end){var e=a.end.split('-');t+='–'+(+e[2])+dot;}return '<b>'+t+'</b><span>'+MES[+s[1]-1]+'</span>'+(a.when?'<small>'+esc(a.when.split(' · ')[0])+'</small>':'')}
   if(hu)hu.innerHTML=up.length?up.slice(0,4).map(function(a){
-    return '<a class="upcard" href="akce/'+a.id+'/"><div class="cal">'+cal(a)+'</div><div class="tx"><h3>'+esc(a.title)+'</h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<span class="go">'+T('Detail')+' →</span></div>'+(a.poster?'<img class="pt" src="'+(a.posterT||a.poster)+'" alt="" loading="lazy">':'')+'</a>';
+    return '<a class="upcard" href="'+PFX+'akce/'+a.id+'/"><div class="cal">'+cal(a)+'</div><div class="tx"><h3>'+esc(a.title)+'</h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<span class="go">'+T('Detail')+' →</span></div>'+(a.poster?'<img class="pt" src="'+(a.posterT||a.poster)+'" alt="" loading="lazy">':'')+'</a>';
   }).join(''):'<p>'+T('Program na další sezónu připravujeme. Sledujte náš Facebook.')+'</p>';
   var brig=document.getElementById('brigList');
   if(brig){var bb=up.filter(function(a){return a.tag==='Přijďte pomoct'}).slice(0,3);
-    brig.innerHTML=bb.length?bb.map(function(a){return '<li><a href="akce/'+a.id+'/"><span class="bd">'+dd(a)+'</span><span><b>'+esc(a.title)+'</b>'+(a.when?'<br><small>'+esc(a.when)+'</small>':'')+'</span>'+(a.poster?'<img src="'+(a.posterT||a.poster)+'" alt="" loading="lazy">':'<span></span>')+'</a></li>'}).join(''):'<li>'+T('Termíny dalších brigád zveřejníme v programu a na Facebooku.')+'</li>';}
+    brig.innerHTML=bb.length?bb.map(function(a){return '<li><a href="'+PFX+'akce/'+a.id+'/"><span class="bd">'+dd(a)+'</span><span><b>'+esc(a.title)+'</b>'+(a.when?'<br><small>'+esc(a.when)+'</small>':'')+'</span>'+(a.poster?'<img src="'+(a.posterT||a.poster)+'" alt="" loading="lazy">':'<span></span>')+'</a></li>'}).join(''):'<li>'+T('Termíny dalších brigád zveřejníme v programu a na Facebooku.')+'</li>';}
   var RK=window.ROKY||{}, rok=String(today.getFullYear()), sezona=RK[rok];
   if(ul)ul.innerHTML=up.length?up.map(function(a){
-    return '<li class="ev"><div class="d">'+dd(a)+(a.when?'<small style="display:block;font-size:15px;color:var(--grey);font-family:var(--font);font-weight:400">'+esc(a.when)+'</small>':'')+'</div><div><h2 class="h3"><a href="akce/'+a.id+'/">'+esc(a.title)+'</a></h2>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<a class="det" href="akce/'+a.id+'/">'+T('Detail akce')+' →</a></div>'+(a.poster?'<button class="pz" data-src="'+a.poster+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+(a.posterT||a.poster)+'" alt="'+T('Plakát')+': '+esc(a.title)+'" loading="lazy"></button>':'<span></span>')+(a.tag?'<span class="tag '+(a.tagc||'')+'">'+esc(T(a.tag))+'</span>':'<span></span>')+'</li>';
+    return '<li class="ev"><div class="d">'+dd(a)+(a.when?'<small style="display:block;font-size:15px;color:var(--grey);font-family:var(--font);font-weight:400">'+esc(a.when)+'</small>':'')+'</div><div><h2 class="h3"><a href="'+PFX+'akce/'+a.id+'/">'+esc(a.title)+'</a></h2>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<a class="det" href="'+PFX+'akce/'+a.id+'/">'+T('Detail akce')+' →</a></div>'+(a.poster?'<button class="pz" data-src="'+a.poster+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+(a.posterT||a.poster)+'" alt="'+T('Plakát')+': '+esc(a.title)+'" loading="lazy"></button>':'<span></span>')+(a.tag?'<span class="tag '+(a.tagc||'')+'">'+esc(T(a.tag))+'</span>':'<span></span>')+'</li>';
   }).join(''):'<li class="ev"><div><p>'+T('Program na další sezónu připravujeme. Sledujte náš Facebook.')+'</p></div></li>';
   if(ul&&sezona)ul.insertAdjacentHTML('afterbegin','<li class="ev pin"><div class="d">'+rok+'</div><div><h2 class="h3">'+T('Plakát sezóny')+' '+rok+'</h2><p>'+T('Celý program roku na jednom plakátu. Klikněte pro zvětšení.')+'</p></div><button class="pz" data-src="'+sezona+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+sezona+'" alt="'+T('Plakát sezóny')+' '+rok+'" loading="lazy"></button><span></span></li>');
 
@@ -1203,7 +1205,7 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
     [].forEach.call(yearsEl.children,function(b){b.setAttribute('aria-selected',b.dataset.y===y?'true':'false')});
     list.innerHTML=done.filter(function(a){return a.date.slice(0,4)===y}).map(function(a){
       var th=a.photos&&a.photos[0]?a.photos[0].replace('img/akce/','img/akce/t/'):(a.posterT||a.poster);
-      return '<li class="ev past"><a class="evl" href="akce/'+a.id+'/"><div class="d">'+d(a.date)+'</div><div><h3>'+esc(a.title)+'</h3><div class="meta">'+[a.poster?T('plakát'):'',a.photos&&a.photos.length?nFoto(a.photos.length):''].filter(Boolean).join(' · ')+'</div></div>'+(th?'<img class="th" src="'+th+'" alt="" loading="lazy">':'<span></span>')+'</a></li>';
+      return '<li class="ev past"><a class="evl" href="'+PFX+'akce/'+a.id+'/"><div class="d">'+d(a.date)+'</div><div><h3>'+esc(a.title)+'</h3><div class="meta">'+[a.poster?T('plakát'):'',a.photos&&a.photos.length?nFoto(a.photos.length):''].filter(Boolean).join(' · ')+'</div></div>'+(th?'<img class="th" src="'+th+'" alt="" loading="lazy">':'<span></span>')+'</a></li>';
     }).join('');
     var R=window.ROKY||{}; if(R[y]) list.insertAdjacentHTML('afterbegin','<li class="ev past"><a class="evl" href="'+R[y]+'" target="_blank" rel="noopener"><div class="d">'+y+'</div><div><h3>'+T('Plakát sezóny')+' '+y+'</h3><div class="meta">'+T('celý program roku')+'</div></div><img class="th" src="'+R[y]+'" alt="" loading="lazy" style="object-fit:cover;object-position:top"></a></li>');
   }
