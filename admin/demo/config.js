@@ -163,7 +163,7 @@ window.DEMO_CONFIG={
        "value_type": "int",
        "min": 1,
        "required": false,
-       "hint": "Navýšit jde kdykoli, web i rezervace to převezmou zhruba do 10 minut po uložení."
+       "hint": "Vyplňte buď toto číslo, nebo termíny níže. Když má akce termíny, toto číslo se nepoužije. Navýšit jde kdykoli, web i rezervace to převezmou zhruba do 10 minut po uložení."
       },
       {
        "label": "Termíny (skupiny)",
@@ -171,7 +171,7 @@ window.DEMO_CONFIG={
        "widget": "list",
        "required": false,
        "summary": "{{fields.cas}}: {{fields.kapacita}} míst",
-       "hint": "Jen když se akce dělí na skupiny, např. prohlídky v 19:00, 20:00 a 21:00. Každý termín má vlastní počet míst a návštěvník si vybere. Počet míst jde kdykoli navýšit.",
+       "hint": "Jen když se akce dělí na skupiny, např. prohlídky v 19:00, 20:00 a 21:00. Každý termín má vlastní počet míst a návštěvník si vybere; horní Počet míst se pak nepoužije. Počet míst jde kdykoli navýšit.",
        "fields": [
         {
          "label": "Čas nebo název skupiny",
