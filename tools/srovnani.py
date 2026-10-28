@@ -106,7 +106,7 @@ def main():
             '<li><a href="@@%s/"><b>%s</b><span>%s</span></a></li>' % (clanky[n]['slug'], html.escape(clanky[n]['h1']), html.escape(clanky[n]['meta']))
             for n in ns))
     sekce += ('<section data-page="zajimavosti" hidden>\n  <div class="wrap">\n    <div class="page-head"><span class="eyebrow">Zajímavosti</span>'
-              '<h1>Co se o zámku Toužim ptáte</h1><p>Krátké články o historii zámku, návštěvě, akcích a zahradě.</p></div>\n    %s\n  </div>\n</section>\n') % seznam
+              '<h1>Co vás zajímá o zámku Toužim</h1><p>Krátké články o historii zámku, návštěvě, akcích a zahradě.</p></div>\n    %s\n  </div>\n</section>\n') % seznam
     s = s.replace('<!-- SPOLEK -->', sekce + '<!-- SPOLEK -->', 1)
     # odkaz v patičce
     s = s.replace('<p><a href="navsteva/#dotaz">Napište nám →</a></p></div>', '<p><a href="navsteva/#dotaz">Napište nám →</a></p><p><a href="@@zajimavosti/">Zajímavosti o zámku →</a></p></div>', 1)
