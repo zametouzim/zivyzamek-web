@@ -1,5 +1,12 @@
 {
  "html": {
+  "Přihlásit se k odběru": "Sign up",
+  "Novinky e-mailem": "News by e-mail",
+  "Odebírat novinky": "Subscribe to news",
+  "Pozvánky na akce, brigády a sbírky spolku vám pošleme e-mailem. Odhlásit se jde jedním kliknutím v každém e-mailu.": "We will send you invitations to events, volunteer days and fundraisers by e-mail. You can unsubscribe with one click in every e-mail.",
+  "Jméno (nepovinné)": "First name (optional)",
+  "Příjmení (nepovinné)": "Last name (optional)",
+  "E-mail a jméno použijeme jen k zasílání novinek spolku a nikomu je nepředáme. Správce údajů: Živý zámek Toužim z. s., IČO 04690770.": "We will use your e-mail and name only to send you news from the association and will not share them with anyone. Data controller: Živý zámek Toužim z. s., ID No. 04690770.",
   "Náhled návrhu nového webu, ne skutečný web. Fialově jsou místa, kde ještě chybí informace.": "Preview of a draft for the new website, not the live site. Purple marks places where information is still missing.",
   "Podpořit ♥": "Support ♥",
   "Menu": "Menu",
@@ -440,6 +447,10 @@
   "Odkrytá zeď mezi černou fólií a svahem, v pozadí zámecká budova": "The uncovered wall between black sheeting and a slope, with a castle building in the background"
  },
  "js": {
+  "Vyplňte prosím platný e-mail.": "Please enter a valid e-mail address.",
+  "Tato adresa už novinky odebírá.": "This address is already subscribed.",
+  "Děkujeme. Poslali jsme vám e-mail s odkazem, kterým odběr potvrdíte.": "Thank you. We have sent you an e-mail with a link to confirm your subscription.",
+  "Přihlášení se nepodařilo. Zkuste to prosím později.": "Subscription failed. Please try again later.",
   "Akce nenalezena.": "Event not found.",
   "Archiv akcí": "Event archive",
   "Detail": "Details",
