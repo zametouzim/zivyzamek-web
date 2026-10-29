@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zámek a historie – náhled</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
+<style>
+/* Barvy ze sezónního plakátu 2026 (tmavě modrá, korálová, žlutá) na teplém podkladu jako omítka zámku; linky z loga jako dělicí prvek; písmo Calibri → Carlito, data úzkým písmem jako na plakátu */
+:root{
+  --paper:#fbf7ee; --panel:#f3ead6; --ink:#16303f; --grey:#4e5b62; --line:#16303f;
+  --accent:#c22f4d; --accent-ink:#ffffff; --sun:#f3ee8a; --cta-bg:#356a80; --cta-ink:#fbf7ee; --sun-ink:#16303f; --navy:#16303f; --navy-ink:#fbf7ee;
+  --todo:#7b3fc4; --todo-strong:#6a32ad; --todo-ink:#ffffff;
+  --font:"Carlito","Calibri","Segoe UI",system-ui,sans-serif;
+  --cond:"Barlow Condensed","Arial Narrow","Carlito",sans-serif;
+  --logo-filter:none;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0f2129; --panel:#16303f; --ink:#f6f0e2; --grey:#b9c3c7; --line:#f6f0e2;
+  --accent:#ff7189; --accent-ink:#0f2129; --sun:#e9e37c; --cta-bg:#e9e37c; --cta-ink:#0f2129; --sun-ink:#0f2129; --navy:#0a171d; --navy-ink:#f6f0e2;
+  --todo:#c9a2ff; --todo-strong:#c9a2ff; --todo-ink:#0f2129; --logo-filter:invert(1); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0f2129; --panel:#16303f; --ink:#f6f0e2; --grey:#b9c3c7; --line:#f6f0e2;
+  --accent:#ff7189; --accent-ink:#0f2129; --sun:#e9e37c; --cta-bg:#e9e37c; --cta-ink:#0f2129; --sun-ink:#0f2129; --navy:#0a171d; --navy-ink:#f6f0e2;
+  --todo:#c9a2ff; --todo-strong:#c9a2ff; --todo-ink:#0f2129; --logo-filter:invert(1); color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--paper);color:var(--ink);font-family:var(--font);font-size:18px;line-height:1.55;margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
+h1,h2,h3{line-height:1.08;text-wrap:balance;margin:0;font-weight:700}
+h2,.page-head h1,.ak-head h1{font-size:clamp(34px,5vw,54px);letter-spacing:-.01em}
+h3,h2.h3{font-size:23px;letter-spacing:0}
+p{margin:0;max-width:62ch}
+.page-head p{max-width:80ch}
+.eyebrow{font-family:var(--cond);font-weight:600;font-size:17px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.todo{color:var(--todo);border-bottom:1px dashed var(--todo);font-style:italic}
+
+.skip{position:absolute;left:8px;top:-60px;z-index:100;background:var(--navy);color:var(--navy-ink);padding:12px 16px;font-weight:700;text-decoration:none}
+.skip:focus{top:8px}
+main:focus{outline:none}
+.proto{background:var(--todo);color:var(--todo-ink);font-size:14px;text-align:center;padding:8px 16px}
+
+/* hlavička */
+header.top{border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);background:var(--paper);z-index:10}
+.bar{display:flex;align-items:center;gap:24px;min-height:72px}
+.brand{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
+.brand img{width:92px;height:auto;filter:var(--logo-filter)}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.main a{text-decoration:none;padding:8px 12px;font-size:17px;border-bottom:3px solid transparent}
+nav.main a[aria-current="page"]{border-bottom-color:var(--accent);font-weight:700}
+nav.main a.give{background:var(--accent);color:var(--accent-ink);border:0;margin-left:8px;font-weight:700}
+.menu-btn{display:none;margin-left:auto;background:none;border:1px solid var(--line);color:var(--ink);font:inherit;padding:6px 14px;cursor:pointer}
+@media (max-width:860px){
+  .menu-btn{display:block}
+  nav.main{display:none;position:absolute;left:0;right:0;top:100%;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;padding:8px 16px 16px}
+  nav.main.open{display:flex}
+  nav.main{padding:4px 16px 20px;gap:0}
+  nav.main a{padding:14px 4px;font-size:19px;border-bottom:1px solid color-mix(in srgb,var(--line) 15%,transparent);display:flex;justify-content:space-between}
+  nav.main a::after{content:"›";font-size:22px;line-height:1;color:var(--accent)}
+  nav.main a[aria-current="page"]{border-bottom-color:color-mix(in srgb,var(--line) 15%,transparent);color:var(--accent)}
+  nav.main a.give{display:none}
+  .give-mobile{display:inline-flex!important}
+}
+.give-mobile{white-space:nowrap;display:none;align-items:center;gap:6px;margin-left:auto;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;font-size:16px;padding:8px 14px}
+.give-mobile+.menu-btn{margin-left:0}
+.theme-btn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;flex-shrink:0;background:none;border:1px solid var(--line);color:var(--ink);cursor:pointer;padding:0}
+.theme-btn .i-sun{display:none}
+.lang{position:relative;flex-shrink:0}
+.lang-btn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;background:none;border:1px solid var(--line);color:var(--ink);cursor:pointer;padding:0}
+.lang-menu{position:absolute;right:0;top:calc(100% + 6px);z-index:20;display:flex;flex-direction:column;min-width:150px;background:var(--paper);border:1px solid var(--line);box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.lang-menu[hidden]{display:none}
+.lang-menu a{text-decoration:none;color:var(--ink);padding:12px 16px;font-size:17px}
+.lang-menu a+a{border-top:1px solid color-mix(in srgb,var(--line) 15%,transparent)}
+.lang-menu a.cur{color:var(--accent);font-weight:700}
+html.tr-wait body{opacity:0}
+.dark-on .theme-btn .i-sun{display:block}
+.dark-on .theme-btn .i-moon{display:none}
+@media (max-width:860px){.lang{order:3}.theme-btn{order:3;width:44px;height:44px}.menu-btn{order:4}.bar{gap:8px}}
+@media (max-width:440px){.brand img{width:76px}.lang-btn,.theme-btn{width:40px!important;height:40px!important}.give-mobile{padding:8px 10px}.menu-btn{padding:6px 10px}}
+
+/* stav sezóny */
+.hours{display:grid;gap:0;margin-top:8px;border-bottom:1px solid color-mix(in srgb,currentColor 25%,transparent);margin-bottom:12px}
+.hours .hr{display:flex;justify-content:space-between;align-items:center;gap:12px 20px;padding:14px 0;border-top:1px solid color-mix(in srgb,currentColor 25%,transparent)}
+.hours .hr>div{display:grid;gap:2px}
+.hours .hk{font-weight:700;color:var(--sun);font-size:18px}
+.hours .ht{font-size:17px}
+.hours .pr{font-family:var(--cond);font-weight:600;font-size:22px;white-space:nowrap;text-align:right}
+@media (max-width:620px){.hours .hr{flex-direction:column;align-items:flex-start;gap:6px}.hours .pr{text-align:left}}
+.season{background:var(--sun);color:var(--sun-ink);height:10px}
+.ink-v,.ink-h{z-index:0}
+.season .wrap{display:flex;gap:8px 20px;flex-wrap:wrap;align-items:baseline;padding-block:10px;font-size:16px}
+.season b{font-family:var(--cond);font-weight:600;font-size:18px;letter-spacing:.06em;text-transform:uppercase}
+.season .tag-l{opacity:.85}
+@media (max-width:620px){.season .tag-l{font-size:14px}}
+.otevreno{font-size:17px;background:var(--panel);border-left:4px solid var(--sun);padding:14px 18px;margin-top:22px;line-height:1.5}
+.otevreno b{font-family:var(--cond);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-right:4px}
+.otevreno a{color:inherit;font-weight:700;white-space:nowrap}
+
+main section[data-page]{padding-block:0 96px}
+[id^="g-"]{scroll-margin-top:90px}
+.page-head{padding-block:56px 40px;display:grid;gap:16px}
+
+/* hero */
+.hero{padding-block:40px 0}
+.hero-grid{display:grid;grid-template-columns:5fr 7fr;align-items:stretch;position:relative}
+.hero-copy{background:var(--navy);color:var(--navy-ink);padding:40px;display:grid;gap:22px;align-content:end;position:relative}
+.hero-copy .eyebrow{color:var(--sun)}
+.hero-copy h1{font-size:clamp(42px,5.6vw,76px);letter-spacing:-.02em}
+.hero-copy .sub{font-size:clamp(22px,2.4vw,30px);font-weight:700;color:var(--sun);opacity:1;line-height:1.2;margin-top:-8px}
+.hero-copy p{font-size:20px;opacity:.9}
+.hero-photo{margin:0;position:relative;min-width:0}
+.hero-photo img{display:block;width:100%;height:100%;min-height:360px;object-fit:cover}
+.hero-photo figcaption{position:absolute;left:12px;bottom:12px;background:var(--paper);color:var(--ink);font-size:14px;padding:4px 10px}
+.ink-v{position:absolute;width:1px;background:var(--line);pointer-events:none;left:-14px;top:-28px;bottom:-40px}
+.ink-h{position:absolute;height:1px;background:var(--line);pointer-events:none;left:-48px;right:34%;bottom:-14px}
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-copy{padding:28px 22px}
+  .hero-photo img{min-height:0;aspect-ratio:4/3}
+  .ink-v,.ink-h{display:none}
+}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;font-size:18px;font-weight:700;text-decoration:none;border:1.5px solid currentColor;background:none;color:inherit;font-family:inherit;cursor:pointer}
+.docs{list-style:none;padding:0;margin:0 0 10px}.docs li{padding:7px 0;border-bottom:1px solid color-mix(in srgb,currentColor 15%,transparent)}.docs a,.doclinks a{font-weight:700;color:inherit;text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.docs small{opacity:.7;margin-left:4px}
+.btn.fill{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+
+.block{display:grid;grid-template-columns:260px 1fr;gap:32px;padding-block:64px 0;border-top:1px solid var(--line);margin-top:72px}
+.block>.lab{display:grid;gap:10px;align-content:start}
+.block>.body{min-width:0;display:grid;gap:24px}
+.block.full{grid-template-columns:1fr;gap:24px}
+@media (max-width:860px){.block{grid-template-columns:1fr;gap:20px;padding-block:40px 0;margin-top:48px}}
+
+/* program */
+.events{list-style:none;margin:0;padding:0;display:grid}
+.ev{display:grid;grid-template-columns:140px 1fr auto;gap:24px;padding:18px 0;border-bottom:1px solid color-mix(in srgb,var(--line) 22%,transparent);align-items:baseline}
+.ev:first-child{border-top:1px solid color-mix(in srgb,var(--line) 22%,transparent)}
+.ev .d{font-family:var(--cond);font-weight:600;font-size:30px;line-height:1;color:var(--accent);font-variant-numeric:tabular-nums}
+.ev .d small{display:block;font-family:var(--font);font-weight:400;font-size:14px;color:var(--grey);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
+.ev h3,.ev h2.h3{font-size:22px}
+.ev>*,.evl>*{min-width:0}.ev h3,.ev h2.h3,.ev p{overflow-wrap:break-word;hyphens:auto}
+.ev p{color:var(--grey);font-size:17px;margin-top:4px}
+.ev.past .d{color:var(--grey)}
+.tag{font-family:var(--cond);font-weight:600;font-size:15px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);padding:3px 9px;white-space:nowrap}
+.three>.card{display:flex;flex-direction:column}.three>.card>a:last-child{margin-top:auto}
+.tag.help{background:var(--sun);color:var(--sun-ink);border-color:var(--sun)}
+.tag.kids{background:var(--navy);color:var(--navy-ink);border-color:var(--navy)}
+@media (max-width:620px){.ev{grid-template-columns:1fr;gap:6px}.ev .tag{justify-self:start}}
+
+.photos{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+.photos figure{margin:0;min-width:0}
+.photos img{display:block;width:100%;height:100%;object-fit:cover}
+.photos figcaption{font-size:14px;color:var(--grey);padding-top:6px}
+.p-a{grid-column:span 7}.p-b{grid-column:span 5}.p-h{grid-column:span 6}
+.photos .r{aspect-ratio:4/3;overflow:hidden}
+.photos .p-full{grid-column:1/-1}.photos .p-full .r{aspect-ratio:auto}
+@media (max-width:700px){.photos{grid-template-columns:1fr 1fr}.photos figure{grid-column:span 1}.p-a,.p-h{grid-column:span 2}}
+
+.nums{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.nums div{padding:24px 20px;border-left:1px solid color-mix(in srgb,var(--line) 22%,transparent);display:grid;gap:4px}
+.nums div:first-child{border-left:0;padding-left:0}
+.nums b{font-family:var(--cond);font-weight:600;font-size:clamp(48px,6vw,72px);line-height:.9;color:var(--accent);font-variant-numeric:tabular-nums}
+.nums span{color:var(--grey);font-size:16px}
+@media (max-width:700px){.nums{grid-template-columns:1fr 1fr}.nums div:nth-child(3){border-left:0;padding-left:0}}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.five{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}.five>*{min-width:0}.five>.card{display:flex;flex-direction:column}.five>.card>a:last-child{margin-top:auto}
+@media (max-width:1200px){.five{grid-template-columns:repeat(3,1fr)}}@media (max-width:760px){.five{grid-template-columns:1fr 1fr}}@media (max-width:480px){.five{grid-template-columns:1fr}}
+/* čtyři kartičky Zapojte se: na střídačku tmavá a světlá, stejné v obou režimech */
+.card.k1{background:#356a80;color:#fbf7ee}.card.k2{background:#f3ee8a;color:#16303f}.card.k3{background:#c22f4d;color:#ffffff}.card.k4{background:#f3ead6;color:#16303f}.card.k5{background:#16303f;color:#fbf7ee}
+.card.k1 a,.card.k2 a,.card.k3 a,.card.k4 a,.card.k5 a{color:inherit}
+.pblock{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:28px;align-items:start;padding:32px;margin-top:24px;scroll-margin-top:90px}.pblock>*{min-width:0}.pblock h2{margin:0}.pblock .pt{display:grid;gap:14px;align-content:start}.pblock>figure{margin:0}.pblock>figure img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}.pblock.b3{grid-template-columns:1fr}.pblock .qr{flex-wrap:wrap}.pblock .qr figcaption{flex:1 1 200px}
+@media (max-width:760px){.pblock{grid-template-columns:1fr;padding:22px}}
+.pblock.b1{background:var(--cta-bg);color:var(--cta-ink)}.pblock.b2{background:var(--panel)}.pblock.b3{background:var(--navy);color:var(--navy-ink)}.pblock.b4{background:var(--panel)}
+.pblock .sub2{display:grid;grid-template-columns:1fr 1fr;gap:20px}@media (max-width:760px){.pblock .sub2{grid-template-columns:1fr}}
+.pblock .givt{background:color-mix(in srgb,currentColor 8%,transparent);padding:18px;display:grid;gap:12px;align-content:start}
+.brig{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:10px}.brig a{display:grid;grid-template-columns:auto 1fr 64px;gap:12px;align-items:center;color:inherit;text-decoration:none;background:color-mix(in srgb,currentColor 10%,transparent);padding:8px 10px}.brig a:hover b{text-decoration:underline}.brig img{width:64px;height:64px;object-fit:cover;object-position:top}.brig .bd{font-family:var(--cond);font-weight:600;font-size:20px;white-space:nowrap}
+.up .ev.pin{background:var(--panel);padding:18px;border-bottom:0;margin-bottom:8px}
+.card.via{background:#ffffff;color:#111111;border-top:8px solid #fe6a01}.card.via img{width:150px;height:auto}.card.via h3{color:#111111}
+.vy .qr img{width:130px}
+.two>*,.three>*{min-width:0}
+@media (max-width:760px){.two,.three{grid-template-columns:1fr}}
+.card{background:var(--panel);padding:28px;display:grid;gap:14px;align-content:start}
+.ask{margin-top:32px;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:28px}
+.ask>div{display:grid;gap:12px;justify-items:start;align-content:start}
+.ask.open #askOpen{display:none}
+.ask h3{margin:.2em 0}
+.ask form{display:grid;gap:14px}
+.ask form[hidden]{display:none}
+.ask:not(.open){grid-template-columns:1fr}
+.ask label{display:grid;gap:4px;font-weight:700;font-size:16px}
+.ask input,.ask textarea{font:inherit;font-weight:400;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);padding:10px 12px;border-radius:0;width:100%;box-sizing:border-box}
+.ask textarea{resize:vertical}
+.ask .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ask .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.ask .note,.ask .gdpr{margin:0;font-size:14px;color:var(--grey)}
+.ask .gdpr{font-size:12.5px}
+.ask .send{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.ask .bad{border-color:var(--accent);outline:1px solid var(--accent)}
+#askMsg.err{color:var(--accent);font-weight:700}
+#askMsg.ok{font-weight:700}
+@media (max-width:760px){.ask{grid-template-columns:1fr}.ask .row2{grid-template-columns:1fr}}
+.card.navy{background:var(--navy);color:var(--navy-ink)}
+.card.sun{background:var(--cta-bg);color:var(--cta-ink)}
+
+dl.facts{display:grid;grid-template-columns:auto 1fr;gap:10px 24px;margin:0}
+dl.facts dt{color:var(--grey)}
+.card.navy dl.facts dt{color:inherit;opacity:.75}
+dl.facts dd{margin:0}
+@media (max-width:480px){dl.facts{grid-template-columns:1fr;gap:2px}dl.facts dd{margin-bottom:10px}}
+
+
+.zfig{margin:0 0 20px;background:#fff;padding:12px;border-radius:6px}
+.zfig img{display:block;width:100%;height:auto}
+.zlegend{columns:3 240px;column-gap:28px;margin:0 0 40px;padding-left:28px;font-size:15px;line-height:1.5}
+.zdesc{gap:28px 40px}.zdesc h3{margin:0 0 6px}.zdesc p{margin:0}
+.zown{grid-template-columns:170px 1fr;max-width:640px}
+.zlegenda p{margin:0;max-width:72ch}
+.zsrc{font-size:14px;color:var(--grey);margin-top:24px}
+.timeline{list-style:none;margin:0;padding:0 0 0 28px;position:relative;display:grid;gap:22px}
+.timeline::before{content:"";position:absolute;left:6px;top:8px;bottom:-30px;width:1px;background:var(--line)}
+.timeline li{position:relative;display:grid;grid-template-columns:140px 1fr;gap:16px}
+.timeline li::before{content:"";position:absolute;left:-28px;top:14px;width:14px;height:1px;background:var(--line)}
+.timeline b{font-family:var(--cond);font-weight:600;font-size:24px;color:var(--accent)}
+@media (max-width:620px){.timeline li{grid-template-columns:1fr;gap:2px}}
+
+.steps{list-style:none;margin:0;padding:0;display:grid}
+.steps li{display:grid;grid-template-columns:28px 150px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid color-mix(in srgb,var(--line) 18%,transparent);align-items:baseline}
+.steps .m{width:14px;height:14px;border:2px solid var(--accent);border-radius:50%;display:inline-block;transform:translateY(2px)}
+.steps .done .m{background:var(--accent)}
+.steps .now .m{background:linear-gradient(90deg,var(--accent) 50%,transparent 50%)}
+.steps .now{font-weight:700}
+.steps .when{color:var(--grey);font-variant-numeric:tabular-nums}
+@media (max-width:620px){.steps li{grid-template-columns:24px 1fr;gap:2px 10px}.steps .m{grid-row:1/3}.steps li>span:last-child{grid-column:2}}
+
+.acct{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.qr{display:flex;gap:16px;align-items:center;margin:16px 0 4px}.qr img{width:150px;height:auto;flex:none;background:#fff;padding:6px;border-radius:6px}.qr figcaption{font-size:15px;opacity:.85}
+.acct code{font-family:var(--cond);font-size:clamp(30px,4vw,40px);font-weight:600;letter-spacing:.02em;font-variant-numeric:tabular-nums;user-select:all}
+.copy{font:inherit;font-size:15px;padding:6px 12px;border:1px solid currentColor;background:none;color:inherit;cursor:pointer}
+
+.goods{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.goods .g{background:var(--panel);display:flex;flex-direction:column}
+.goods .gi{aspect-ratio:4/3;background:color-mix(in srgb,var(--navy) 10%,transparent);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.goods .gi img{width:100%;height:100%;object-fit:contain}
+.photos img,.card .pan img{cursor:zoom-in}
+.card.kontakt{margin-top:24px}.kgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:20px 28px}.kgrid h3{font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:var(--grey);margin:0 0 6px;font-weight:600}.kgrid p{margin:0 0 8px}.kgrid a{white-space:nowrap}@media(max-width:900px){.kgrid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.kgrid{grid-template-columns:1fr}}
+.one>.card{display:grid;grid-template-columns:3fr 2fr;column-gap:28px;align-content:start}.one>.card>.lidi{grid-column:2;grid-row:1/span 3;margin-top:0}@media (max-width:760px){.one>.card{grid-template-columns:1fr}.one>.card>.lidi{grid-column:auto;grid-row:auto;margin-top:16px}}
+.card .lidi{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;align-items:start}.card .lidi .pan{margin:0;max-width:none}.card .lidi .pan img{aspect-ratio:1;object-fit:cover}
+.card .pan{margin:16px 0 0;max-width:280px}.card .pan img{display:block;width:100%;height:auto}.card .pan figcaption{font-size:14px;color:var(--grey);padding-top:6px}
+.goods .g.out{opacity:.55}
+.goods .gi span{color:var(--todo-strong);font-style:italic;font-size:14px}
+.goods .gt{padding:12px 14px 16px;display:grid;gap:4px}
+.goods .gt span{font-weight:700;font-size:17px;line-height:1.25}
+.goods .gt p{font-size:14px;color:var(--grey);line-height:1.4}
+.goods b{font-family:var(--cond);font-weight:600;font-size:22px;color:var(--accent)}
+@media (max-width:620px){.goods{grid-template-columns:1fr 1fr;gap:10px}.goods .gt p{display:none}}
+
+.partners{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.partners>*{overflow:hidden;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:6px;height:96px;padding:14px;color:#16303f;text-decoration:none;font-weight:700;font-size:17px;text-align:center}
+.partners img{display:block;width:auto;height:auto;max-width:100%;max-height:68px;object-fit:contain}
+.partners a:focus-visible{outline:2px solid var(--accent)}
+
+.subnav{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.vs{max-width:760px;padding-bottom:64px}
+.vs h3{font-size:28px;margin:40px 0 12px}
+.vs p{margin:0 0 14px}
+.vs figure{margin:28px 0}
+.vs figure img{display:block;width:100%;height:auto}
+.vs figcaption{color:var(--grey);font-size:16px;margin-top:6px}
+.vs .gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;margin:28px 0}
+.vs .gal button{padding:0;border:0;background:none;cursor:zoom-in}
+.vs .gal img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.vs .btn{margin:16px 0}
+.subnav a{font-family:var(--cond);font-weight:600;font-size:17px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:1px solid var(--line);padding:5px 12px;min-height:44px;display:inline-flex;align-items:center}
+.subnav a:hover{background:var(--sun);color:var(--sun-ink);border-color:var(--sun)}
+.p-c3{grid-column:span 4}
+@media (max-width:700px){.p-c3{grid-column:span 1}.p-c3:last-child{grid-column:span 2}}
+.feat{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.feat>div{display:grid;gap:6px;align-content:start;border-top:3px solid var(--accent);padding-top:14px;min-width:0}
+.feat b{font-family:var(--cond);font-weight:600;font-size:44px;line-height:1;color:var(--accent)}
+.feat p{color:var(--grey);font-size:16px}
+@media (max-width:860px){.feat{grid-template-columns:1fr 1fr}}
+.plants{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.plants>div{background:var(--panel);padding:20px;display:grid;gap:8px;align-content:start;min-width:0}
+@media (max-width:760px){.plants{grid-template-columns:1fr}}
+.ev-poster{display:grid;grid-template-columns:1fr 150px;gap:20px;align-items:start;min-width:0}
+.ev-poster>div{min-width:0}
+.ev-poster img{width:150px;display:block;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+@media (max-width:620px){.ev-poster{grid-template-columns:1fr}.ev-poster img{width:60%}}
+.pband{background:#fff;border-top:1px solid var(--line);padding-block:28px 32px}
+.pband h2{margin:0 0 16px;font-family:var(--cond);font-weight:600;font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:#c22f4d}
+.pfoot{grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px}
+.pfoot>*{height:72px;padding:10px;background:none;font-size:15px}
+.pfoot img{max-height:52px}
+@media (max-width:620px){.pfoot{grid-template-columns:repeat(3,1fr)}.pfoot>*{height:60px;padding:6px;font-size:14px}.pfoot img{max-height:44px}}
+footer{background:var(--navy);color:var(--navy-ink);padding-block:48px 40px}
+.copy{background:var(--navy);color:var(--navy-ink);font-size:14px;padding-block:16px 24px}.copy .wrap{opacity:.75}
+footer .cols{display:grid;grid-template-columns:200px 1fr 1fr 1fr;gap:32px;font-size:16px}
+footer .cols>*{min-width:0}
+footer img{width:160px;filter:invert(1)}
+footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--sun)}
+@media (max-width:760px){footer .cols{grid-template-columns:1fr 1fr}}
+[id]{scroll-margin-top:100px}
+.upcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:14px}
+@media (max-width:620px){.upcards{grid-template-columns:1fr}}
+.upcard{display:grid;grid-template-columns:92px 1fr auto;background:var(--panel);color:inherit;text-decoration:none;border-left:4px solid var(--accent);min-height:120px;transition:transform .15s}
+.upcard:hover{transform:translateY(-2px)}
+.upcard .cal{background:var(--navy);color:var(--navy-ink);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px 6px;gap:2px}
+.upcard .cal b{font-family:var(--cond);font-weight:600;font-size:30px;line-height:1;color:var(--sun)}
+.upcard .cal span{font-size:14px;text-transform:uppercase;letter-spacing:.06em}
+.upcard .cal small{font-size:14px;opacity:.85}
+.upcard .tx{padding:14px 16px;display:grid;gap:5px;align-content:start;min-width:0}
+.upcard h3{font-size:20px;line-height:1.2}
+.upcard p{font-size:15px;color:var(--grey);line-height:1.4}
+.upcard .go{font-weight:700;font-size:15px}
+.upcard .pt{width:96px;height:auto;align-self:center;margin:12px 12px 12px 0;display:block;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+@media (max-width:620px){.upcard{grid-template-columns:78px 1fr auto}.upcard .cal b{font-size:24px}.upcard .pt{width:72px;margin:10px 10px 10px 0}.upcard h3{font-size:18px}}
+.more{display:flex;gap:24px;flex-wrap:wrap;margin-top:18px;font-weight:700}
+.more a{color:inherit;display:inline-flex;align-items:center;min-height:44px}
+.card>a:not(.btn),.ak-back{display:inline-flex;align-items:center;min-height:44px}
+.give-mobile,.menu-btn{min-height:44px}
+.up .ev{grid-template-columns:140px 1fr 150px 104px;align-items:start}.up .ev .tag{white-space:normal;text-align:center;justify-self:stretch}
+.up .ev h3 a{color:inherit;text-decoration:none}.up .ev h3 a:hover{text-decoration:underline;text-decoration-color:var(--accent)}
+.up .pz{padding:0;border:0;background:none;cursor:zoom-in;display:block;width:150px}
+.up .pz img{width:100%;display:block;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+.up .det{display:inline-flex;align-items:center;min-height:44px;margin-top:2px;font-weight:700;color:inherit}
+@media (max-width:760px){.up .ev{grid-template-columns:1fr}.up .pz{width:160px}.up .ev .tag{justify-self:start}}
+.ak-when{color:var(--grey);font-size:17px;margin-top:4px}
+.ak-body .poster{padding:0;border:0;background:none;cursor:zoom-in;display:block}
+.years{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.years button{font-family:var(--cond);font-weight:600;font-size:18px;letter-spacing:.04em;background:none;color:inherit;border:1px solid color-mix(in srgb,var(--line) 40%,transparent);padding:6px 14px;min-height:44px;min-width:44px;cursor:pointer}
+.years button[aria-selected="true"]{background:var(--navy);color:var(--navy-ink);border-color:var(--navy)}
+.arch .ev{grid-template-columns:110px 1fr 96px;align-items:center;padding:12px 0}
+.arch a.evl{display:contents;color:inherit;text-decoration:none}
+.arch .ev:hover h3{text-decoration:underline;text-decoration-color:var(--accent)}
+.arch .ev .d{font-size:24px}
+.arch .th{width:96px;height:72px;object-fit:cover;display:block;background:var(--panel)}
+.arch .meta{color:var(--grey);font-size:15px;margin-top:2px}
+@media (max-width:620px){.arch .ev{grid-template-columns:1fr 80px;gap:4px 12px}.arch .ev .d{grid-column:1}.arch .ev>div:nth-child(2){grid-column:1}.arch .th{grid-column:2;grid-row:1/span 2;width:80px;height:60px}}
+.ak-back{margin:28px 0 10px;font-weight:700;color:inherit}
+.ak-head h1{font-size:clamp(32px,4.5vw,52px)}
+.ak-date{font-family:var(--cond);font-weight:600;font-size:22px;color:var(--accent);letter-spacing:.04em}
+.ak-body{display:grid;grid-template-columns:1fr 300px;gap:32px;margin-top:20px;align-items:start}
+.ak-body .poster img{width:100%;display:block;box-shadow:0 2px 12px rgba(0,0,0,.15)}
+.ak-text p{font-size:19px;margin-bottom:12px}
+.rez{margin:28px 0 8px;scroll-margin-top:90px}
+.rez h2{margin:0}.rez p{margin:0}
+.rez form{display:grid;gap:14px}
+.rez label{display:grid;gap:4px;font-weight:700;font-size:16px}
+.rez input,.rez textarea{font:inherit;font-weight:400;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);padding:10px 12px;border-radius:0;width:100%;box-sizing:border-box}
+.rez .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rez .terminy{border:0;margin:0;padding:0;display:grid;gap:8px}.rez .terminy legend{font-weight:700;font-size:16px;margin-bottom:6px;padding:0}
+.rez .terminy label{display:flex;align-items:center;gap:10px;font-weight:400;padding:10px 12px;border:1.5px solid var(--line);background:var(--paper);cursor:pointer}
+.rez .terminy label:has(input:disabled){opacity:.55;cursor:default}.rez .terminy label:has(input:checked){outline:2px solid var(--accent)}
+.rez .terminy input{width:auto;margin:0;accent-color:var(--accent)}.rez .terminy span{margin-left:auto;color:var(--grey);font-size:15px}
+.rez .ceny{display:flex;flex-wrap:wrap;gap:14px}.rez .ceny label{flex:0 1 180px}
+.rez .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.rez .note,.rez .gdpr{font-size:14px;color:var(--grey)}.rez .gdpr{font-size:12.5px}
+.rez .send{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.rez .bad{border-color:var(--accent);outline:1px solid var(--accent)}
+.rez .info{display:grid;gap:4px;margin:10px 0 18px}.rez #rezOpen{justify-self:start;width:auto}.rez #rezOpen[hidden],.rez form[hidden]{display:none}
+.rez .sum{font-size:19px}.rez .volno{font-weight:700}
+#rezMsg.err{color:var(--accent);font-weight:700}
+.rez .pay{display:flex;flex-wrap:wrap;gap:20px 28px;align-items:flex-start}.rez .pay>div{min-width:0;flex:1 1 240px;display:grid;gap:10px}
+.rez .pay>.qrbox{background:#fff;line-height:0;flex:none;display:block}.rez .qrbox img{width:240px;height:240px}
+.rez dl{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:0;font-variant-numeric:tabular-nums}.rez dt{color:var(--grey)}.rez dd{margin:0;font-weight:700}
+@media (max-width:760px){.rez .row2{grid-template-columns:1fr}}
+.ak-gal{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 40px}
+.ak-gal button{padding:0;border:0;background:none;cursor:zoom-in;max-width:100%}
+.ak-gal img{height:220px;width:auto;max-width:100%;object-fit:contain;display:block}
+@media(max-width:600px){.ak-gal img{height:150px}}
+@media (max-width:760px){.ak-body{grid-template-columns:1fr}}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.9);display:flex;align-items:center;justify-content:center;z-index:100;padding:16px}
+.lb[hidden]{display:none}
+.lb img{max-width:100%;max-height:100%;object-fit:contain}
+.lb button{position:absolute;background:rgba(255,255,255,.15);color:#fff;border:0;font-size:28px;width:48px;height:48px;cursor:pointer}
+.lb .x{top:12px;right:12px}.lb .pv{left:12px;top:50%}.lb .nx{right:12px;top:50%}
+.hero-photo{overflow:hidden}
+.hero-photo img{transition:opacity 1.2s ease}
+.hero-photo img.slide{position:absolute;inset:0;opacity:0}
+.hero-photo img.slide.on{opacity:1}
+.hero-photo img.slide:first-of-type{position:relative}
+@media (prefers-reduced-motion:reduce){.hero-photo img{transition:none}}
+
+.card.kdo{background:#356a80;color:#fbf7ee}.card.kdo .lidi figcaption{color:#fbf7ee;opacity:.85}
+.via .vlogo{display:inline-block}
+.kgrid>div:first-child{grid-row:span 2}.kgrid .kpis{grid-column:2/-1;border-top:1px solid var(--line);padding-top:16px}
+.kbtn{display:flex;flex-wrap:wrap;gap:10px}.kbtn .btn{margin:0}
+@media (max-width:1000px){.kgrid>div:first-child{grid-row:auto}.kgrid .kpis{grid-column:1/-1}}
+.pblock.b1.b1,.pblock.b2.b2,.pblock.b3.b3,.pblock.b4.b4{--line:rgba(0,0,0,.18)}
+.pblock.b1.b1{background:#356a80;color:#fbf7ee}.pblock.b2.b2{background:#f3ee8a;color:#16303f}.pblock.b3.b3{background:#c22f4d;color:#ffffff}.pblock.b4.b4{background:#f3ead6;color:#16303f}
+.pblock.b1.b1 a:not(.btn),.pblock.b2.b2 a:not(.btn),.pblock.b3.b3 a:not(.btn),.pblock.b4.b4 a:not(.btn){color:inherit}
+.pblock.b1 .eyebrow,.pblock.b2 .eyebrow,.pblock.b3 .eyebrow,.pblock.b4 .eyebrow{color:inherit!important;opacity:1}
+.pblock.b3 .btn.fill{background:#ffffff;color:#16303f;border-color:#ffffff}.pblock.b3 .givt{background:rgba(0,0,0,.14)}
+.brig{gap:0}.brig a{background:none;border:0;border-top:1px solid currentColor;padding:10px 0}.brig li:last-child a{border-bottom:1px solid currentColor}
+.pblock.b3 .givt{background:none;border:0;border-top:1px solid currentColor;padding:16px 0 0}
+button.copy{background:none;color:inherit;border:1.5px solid currentColor;font-size:15px;font-weight:700;padding:8px 14px}
+.pblock.b3 button.copy{background:#ffffff;color:#c22f4d;border-color:#ffffff}
+.pblock.b1 .btn{background:#fbf7ee;color:#356a80;border-color:#fbf7ee}
+footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):hover,.kgrid a:not(.btn):hover{text-decoration:underline}
+.up .ev h2 a,.up .det{text-decoration:none}.up .ev h2 a:hover,.up .det:hover{text-decoration:underline;text-decoration-color:var(--accent)}
+@media (max-width:374px){.lang-btn,.theme-btn{width:38px!important;height:38px!important}.bar{gap:6px}.brand img{width:64px}.give-mobile{padding:8px 8px;font-size:15px}.menu-btn{padding:6px 8px}}@media (max-width:339px){.brand img{width:54px}.give-mobile{padding:7px 6px;font-size:14px}}.pblock .qr figcaption{opacity:1}.ak-text .tbd{color:var(--grey);font-style:italic}.pblock>figure figcaption{font-size:14px;padding-top:6px;color:inherit}</style><style>
+.srov{background:#1f6f4a;color:#fff;font:15px/1.4 var(--font);padding:8px 16px;text-align:center}
+.srov a{color:#fff;font-weight:700}
+.faq{display:grid;border-top:2px solid var(--line);margin-bottom:24px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:16px 40px 16px 0;font-family:var(--cond);font-size:22px;font-weight:600;position:relative;min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:12px;font-size:28px;color:var(--accent)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin:0 0 18px;max-width:70ch}
+.faq details a{color:var(--accent)}
+.crumbs{font-size:15px;color:var(--grey);padding-top:28px;margin:0}.crumbs a{color:var(--accent)}
+.clanek{max-width:72ch;padding-bottom:48px}.clanek p,.clanek li{font-size:19px;line-height:1.6}.clanek p{margin:0 0 18px}
+.clanek .odp{font-size:21px;background:var(--panel);padding:20px 22px;border-left:6px solid var(--accent)}
+.clanek a{color:var(--accent)}.clanek ul,.clanek ol{margin:0 0 18px;padding-left:24px}
+.clanek table{border-collapse:collapse;margin:0 0 18px}.clanek td{border-bottom:1px solid var(--line);padding:6px 10px;vertical-align:top}
+.souv{border-top:2px solid var(--line);padding-top:16px;margin-top:32px}.souv h2{font-family:var(--cond);font-size:22px;margin:0 0 8px}
+.souv ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+.zaj{list-style:none;padding:0;margin:0 0 8px;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.zaj a{display:block;background:var(--panel);padding:18px 20px;color:var(--ink);text-decoration:none;height:100%}
+.zaj a:hover b,.zaj a:focus-visible b{text-decoration:underline}
+.zaj b{display:block;font-family:var(--cond);font-size:21px;margin-bottom:4px}
+.zaj span{display:block;font-size:15px;line-height:1.45;color:var(--grey)}
+.zcat{font-family:var(--cond);text-transform:uppercase;letter-spacing:.08em;font-size:15px;color:var(--accent);margin:32px 0 12px}
+.clanek h2{font-family:var(--cond);font-size:28px;line-height:1.15;margin:36px 0 12px}
+.clanek .fakta{background:var(--panel);padding:18px 22px;margin:0 0 24px}
+.clanek .fakta h2{font-size:21px;margin:0 0 10px}
+.clanek .fakta dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;margin:0;font-size:17px;line-height:1.45}
+.clanek .fakta dt{font-weight:700}.clanek .fakta dd{margin:0}
+@media(max-width:560px){.clanek .fakta dl{grid-template-columns:1fr;gap:0}.clanek .fakta dd{margin-bottom:8px}}
+.clanek figure{margin:8px 0 28px}.clanek .foto img{display:block;width:100%;height:auto}
+.clanek figcaption{font-size:15px;line-height:1.4;color:var(--grey);margin-top:8px}.clanek .zfig figcaption{color:#555}
+.clanek sup.zc{font-size:.68em;line-height:0;margin-left:1px}.clanek sup.zc a{text-decoration:none;padding:0 1px}
+.clanek .zdroje{border-top:2px solid var(--line);margin-top:36px}
+.clanek .zdroje li,.clanek .zdroje p{font-size:16px;line-height:1.5}.clanek .zdroje li{margin-bottom:6px;scroll-margin-top:96px}
+.clanek .zdroje li:target{background:var(--panel)}
+</style><style>
+.zaj span a{display:inline;background:none;padding:0;height:auto;color:var(--red,#c22f4d);text-decoration:underline}
+.ukazka-pruh{background:#1f6f4a;color:#fff;text-align:center;padding:8px 16px;font-size:15px}
+.zodp{max-width:72ch;margin:0 0 24px}.zodp p{font-size:21px;line-height:1.55;background:var(--panel);padding:20px 22px;border-left:6px solid var(--accent);margin:0}
+.nakres{background:#f3ead6;padding:10px;margin:0 0 40px;max-width:900px}.nakres svg{display:block;width:100%;height:auto}
+.nakres figcaption{color:#4e5b62;font-size:15px;padding:6px 4px 0}
+.zcl{max-width:72ch}.zcl p,p.zcl{font-size:19px;line-height:1.6;margin:0 0 18px}.zcl a,p.zcl a,.faq a{color:var(--accent)}
+.zobsah{font-size:17px;margin:0 0 14px;line-height:1.8}.zobsah a{color:var(--accent)}
+.zslov{margin:0 0 32px;max-width:72ch;border:1px solid rgba(22,48,63,.18);padding:10px 16px}.zslov summary{cursor:pointer;font-weight:700}.zslov dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;margin:12px 0 4px}.zslov dt{font-weight:700}.zslov dd{margin:0}@media(max-width:600px){.zslov dl{grid-template-columns:1fr}.zslov dd{margin-bottom:6px}}
+[id]{scroll-margin-top:90px}
+details.zart{border-top:1px solid rgba(22,48,63,.18);padding:26px 0 22px}
+details.zart>summary{list-style:none;display:block}details.zart>summary::-webkit-details-marker{display:none}
+details.zart h2{margin:6px 0 10px}.zperex{font-size:19px;line-height:1.6;max-width:72ch;margin:0 0 10px}
+.zdal{display:none;gap:6px;align-items:center;font-weight:700;color:var(--accent)}.zdal::after{content:"▾"}details[open]>summary .zdal::after{content:"▴"}
+.zz{display:none}details[open]>summary .zo{display:none}details[open]>summary .zz{display:inline}
+.zbody{padding-top:8px}h3.zsub{font-size:26px;margin:44px 0 14px}.zbody h4{font-size:19px;margin:20px 0 8px}
+.zbody .timeline{margin-top:8px}.zvse{display:none;font:inherit;font-size:15px;background:none;border:1px solid rgba(22,48,63,.3);color:inherit;padding:4px 10px;cursor:pointer;margin-left:6px}
+@media (max-width:760px){details.zart>summary{cursor:pointer}.zdal{display:inline-flex}.zvse{display:inline-block}h3.zsub{font-size:22px;margin-top:32px}}
+.foto{margin:8px 0 28px;max-width:900px}.foto img{display:block;width:100%;height:auto}.foto figcaption{font-size:15px;color:var(--grey);margin-top:8px}
+sup.zc{font-size:.68em;line-height:0;margin-left:1px}sup.zc a{color:var(--accent);text-decoration:none;padding:0 1px}
+.zaj div{display:block;background:var(--panel);padding:18px 20px;height:100%}
+.zzdroje.zpojmy{margin-top:-48px;border-top:0;padding-top:0}.zpojmy dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;margin:12px 0 4px;font-size:16px}.zpojmy dt{font-weight:700}.zpojmy dd{margin:0}@media(max-width:600px){.zpojmy dl{grid-template-columns:1fr}}
+.zzdroje{margin:56px 0 64px;border-top:2px solid var(--line);padding-top:12px}
+.zzdroje summary{cursor:pointer;font-family:var(--cond);font-weight:600;font-size:22px}
+.zzdroje li,.zzdroje p{font-size:16px;line-height:1.5}.zzdroje li{margin-bottom:6px;scroll-margin-top:96px}.zzdroje a{color:var(--accent)}
+.zzdroje li:target{background:var(--panel)}
+</style>
+</head><body>
+<div class="ukazka-pruh">Pracovní verze nové stránky Zámek a historie k připomínkám. Stránka není v menu a vyhledávače ji neindexují.</div>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="../../" aria-label="Živý zámek Toužim, úvod"><img src="img/logo.png" alt="Živý zámek Toužim" width="900" height="677"></a>
+    <a class="give-mobile" href="../../podporte/">Podpořit ♥</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav class="main" id="mainNav" aria-label="Hlavní menu">
+      <a href="../../program/">Program</a>
+      <a href="../../navsteva/">Navštivte nás</a>
+      <a href="../../zahrada/">Zámecká zahrada</a>
+      <a href="./" aria-current="page">Zámek a historie</a>
+      <a href="../../spolek/">Spolek</a>
+      <a href="../../podporte/" class="give">Podpořte nás</a>
+    </nav>
+  </div>
+</header>
+<main id="obsah"><section data-page="zamek">
+  <div class="wrap">
+    <div class="page-head"><span class="eyebrow">Historie</span><h1>Zámek Toužim</h1><p>Nejstarší a nejvýznamnější památka Toužimi. Z proboštství hrad, z hradu zámek, pak desítky let chátrání. Od roku 2015 se do něj vrací život.</p></div>
+    
+    <div class="zodp"><p><b>Zámek Toužim</b> je historický areál v centru Toužimi v Karlovarském kraji. Je kulturní památkou a patří městu<sup class="zc"><a href="#zz1">1</a></sup>.</p><p><b>Hrad, nebo zámek? Obojí.</b> Starší částí je Horní zámek, kterému se říká Janův hrad, mladší částí Dolní neboli Nový zámek<sup class="zc"><a href="#zz1">1</a>,<a href="#zz2">2</a></sup>.</p></div>
+
+    
+    <nav class="zobsah" aria-label="Obsah stránky"><b>Na stránce:</b> <a href="#dejiny">Dějiny zámku</a> · <a href="#areal">Horní a Dolní zámek</a> · <a href="#opevneni">Hradby a archeologie</a> · <a href="#povesti">Pověsti</a> · <a href="#zamek-dnes">Zámek dnes</a> · <a href="#pamatky">Památky Toužimi</a> · <a href="#zajimavosti">Zajímavosti</a> <button type="button" class="zvse" id="zVse">Rozbalit vše</button></nav>
+
+    
+    <details class="zart" id="dejiny"><summary><span class="eyebrow">Dějiny</span><h2>Dějiny zámku</h2><p class="zperex">Od dvorce ve 12. století přes hrad Vřesoviců a renesanční zámek po chátrání a návrat života po roce 2015.</p><span class="zdal"><span class="zo">Číst dál</span><span class="zz">Sbalit</span></span></summary><div class="zbody">
+      <ol class="timeline">
+      <li><b>2. pol. 12. stol.</b><span>Krajinu na horním toku Střely dostává od panovníka velmož Jiří z Milevska. Na místě zámku staví dvorec, pojmenovaný asi po prvním správci Túžimovi („vytoužený syn“).</span></li>
+      <li><b>1187</b><span>Jiří zakládá premonstrátský klášter v Milevsku a odkáže mu i Toužimsko. Premonstráti mění dvorec na proboštství s kostelem sv. Jana Křtitele.</span></li>
+      <li><b>1354</b><span>První písemná zmínka o Toužimi.</span></li>
+      <li><b>1394</b><span>Proboštství vyplenili šlechtici bojující proti králi Václavu IV. a zajali probošta Jiřího.</span></li>
+      <li><b>1437</b><span>Král Zikmund dává panství do zástavy husitskému hejtmanovi Jakoubkovi z Vřesovic. Se synem Janem přestavují proboštství na gotický hrad, dnešní jádro Horního zámku (Janův hrad).</span></li>
+      <li><b>1469</b><span>Král Jiří z Poděbrad povoluje měšťanům vypleněné Útviny postavit u hradu nové opevněné město. Vzniká Toužim.</span></li>
+      <li><b>kolem 1490</b><span>Panství získávají páni z Plavna. Přistavují pozdně gotický palác a v 1. polovině 16. století hrad renesančně přestavují: vzniká Horní a Dolní zámek, poplužní dvůr a zahrada s kašnou.</span></li>
+      <li><b>1565</b><span>Panství dědí Lobkovicové z Hasištejna.</span></li>
+      <li><b>1620</b><span>Zámek i město vyhořely. O tři roky později kupuje panství vévoda Julius Jindřich Sasko-Lauenburský a přestavuje zámek na raně barokní sídlo s parkem a letohrádkem. Zaniká kostel sv. Jana Křtitele, na jeho místě stojí kaplička sv. Kříže.</span></li>
+      <li><b>1652</b><span>Další požár. Při obnově vzniká nový panský pivovar.</span></li>
+      <li><b>1689</b><span>Panství dědí bádenská markrabata. Zámek už neslouží jako sídlo šlechty, jen hospodářství a správě.</span></li>
+      <li><b>1752</b><span>Zámek znovu vyhořel. Dolní zámek dostává dnešní pozdně barokní podobu.</span></li>
+      <li><b>1789</b><span>Panství připadá panovníkovi. Část chátrajícího zámku je zbořena.</span></li>
+      <li><b>1829</b><span>Horní zámek přichází o celé horní patro s věží a obě křídla. Zaniká i zahrada s letohrádkem.</span></li>
+      <li><b>1837</b><span>Panství kupuje v dražbě vévoda Alfred Beaufort-Spontin. Rod ho drží až do roku 1945.</span></li>
+      <li><b>1945</b><span>Zámek přechází na stát. Využívá ho armáda, státní statek, okresní národní výbor a později město.</span></li>
+      <li><b>1964</b><span>Kvůli panelovému sídlišti jsou zbořeny některé hospodářské budovy.</span></li>
+      <li><b>1989</b><span>Obnova, připravovaná od 70. let, se úplně zastavuje.</span></li>
+      <li><b>1998</b><span>Město zámek prodává soukromé osobě. Zámek chátrá a ničí ho vandalové.</span></li>
+      <li><b>2009</b><span>Město Toužim získává zámek zpět jako ruinu.</span></li>
+      <li><b>2015</b><span>První dobrovolnická brigáda na nádvoří.</span></li>
+      <li><b>2016</b><span>Vzniká spolek Živý zámek Toužim.</span></li>
+      <li><b>2026</b><span>Objev hradební zdi z 15. století.</span></li>
+    </ol>
+      <h3 class="zsub" id="stavebni-vyvoj">Jak se zámek stavěl a měnil (1200–1965)</h3>
+      <figure class="zfig"><img src="img/zamek/stavebni-vyvoj.jpg" alt="Devět kreseb stavebního vývoje zámku od roku 1200 do roku 1965" loading="lazy" width="870" height="651"></figure>
+      <h3 class="zsub" id="majitele">Majitelé a jejich erby</h3>
+      <figure class="zfig"><img src="img/zamek/erby.jpg" alt="Erby: markrabí Bádenští, vévodové Beaufort-Spontini, vévodové ze Saska-Lauenburska, rytíři z Vřesovic, Lobkovicové z Hasištejna, páni z Plavna" loading="lazy" width="827" height="122"></figure>
+    <dl class="facts zown">
+      <dt>do 1437</dt><dd>premonstráti z Milevska</dd>
+      <dt>1437–kolem 1490</dt><dd>Vřesovicové (zástava)</dd>
+      <dt>kolem 1490–1565</dt><dd>páni z Plavna, od 1538 dědičně</dd>
+      <dt>1565–1623</dt><dd>Lobkovicové z Hasištejna</dd>
+      <dt>1623–1689</dt><dd>vévodové Sasko-Lauenburští</dd>
+      <dt>1689–1789</dt><dd>bádenská markrabata</dd>
+      <dt>1789–1837</dt><dd>panovník (královská komora)</dd>
+      <dt>1837–1945</dt><dd>Beaufort-Spontinové</dd>
+      <dt>od 1945</dt><dd>stát, později město Toužim (1998–2009 soukromý majitel)</dd>
+    </dl>
+    </div></details>
+
+    <details class="zart" id="areal"><summary><span class="eyebrow">Areál</span><h2>Horní a Dolní zámek</h2><p class="zperex">Z rozsáhlého panského sídla se dochovalo hlavně jádro: Horní a Dolní zámek, panský pivovar, kašna, kaplička sv. Kříže a část poplužního dvora. Na kresbě jsou žlutě zvýrazněné dochované části.</p><span class="zdal"><span class="zo">Číst dál</span><span class="zz">Sbalit</span></span></summary><div class="zbody">
+      <h3 class="zsub" id="kolem-1700">Jak zámek vypadal kolem roku 1700</h3>
+    <figure class="zfig"><img src="img/zamek/rekonstrukce-1700.jpg" alt="Kresebná rekonstrukce areálu zámku kolem roku 1700 s očíslovanými budovami" loading="lazy" width="1087" height="472"></figure>
+    <ol class="zlegend">
+      <li>Horní zámek (Janův hrad), rezidence</li><li>Dolní zámek, úřední dům</li><li>Dolní městská brána s masnými krámy a zámeckou zbrojnicí</li><li>Jízdárna</li><li>Panská sladovna a pivovar</li><li>Kašna</li><li>Kaplička sv. Kříže</li><li>Dům zahradníka</li><li>Zámecká zahrada</li><li>Zámecký sad</li><li>Letohrádek (lusthaus)</li><li>Vodní nádrž s vodotrysky</li><li>Nádvoří poplužního dvora</li><li>Čeledník s chlévy</li><li>Sýpka</li><li>Stodola</li><li>Stáje</li><li>Holubník</li><li>Vodní nádrž</li><li>Dům hejtmana, správce poplužního dvora</li><li>Tržiště (náměstí) s měšťanskými domy</li>
+    </ol>
+    <div class="two zdesc">
+      <div><h4>Pivovar, kašna a kaplička</h4><p>Panský pivovar stál v zahradě nejpozději od roku 1661, dochoval se jeho sklep. Dnešní budova pivovaru je barokní novostavba z doby po roce 1752. Před ní stojí kamenná kašna ze zámecké zahrady. Kaplička sv. Kříže nahradila proboštský kostel sv. Jana Křtitele.</p></div>
+      <div><h4>Zámecká zahrada</h4><p>Byla založena severně od zámku snad už před rokem 1620 a po roce 1625 výrazně rozšířena. Francouzský park s vodními nádržemi, vodotrysky, sadem, domem zahradníka a renesančním letohrádkem obklopovala kamenná zeď. V 19. století zahrada zanikla, dnes je většina její plochy zastavěná sídlištěm.</p></div>
+      <div><h4>Poplužní dvůr</h4><p>Založen před rokem 1544 severovýchodně od zámku. Kromě hospodářství sloužil i obraně: tříkřídlý komplex u hradební zdi tvořil mohutnou baštu se střílnami. Patřil k němu čeledník, chlévy, sýpka, stodola, stáje, kočárovna, hejtmanství a holubník. Východním křídlem vedla Židovská brána do ghetta na Předměstí.</p></div>
+      <div><h4>Dolní brána, rybník a mlýn</h4><p>Dolní neboli Rybářská brána měla v 17. století v patře zámeckou zbrojnici, zbořena byla v roce 1847. Zámecký rybník v údolí Střely byl součástí opevnění města a zanikl po povodni na konci 19. století. Dochovala se hráz se splavem a kamenným dvouobloukovým můstkem. Zámecký mlýn zanikl po roce 1960.</p></div>
+    </div>
+
+    
+    
+      <h3 class="zsub" id="januv-hrad">Janův hrad</h3>
+    <div class="zcl">
+      <p>Horní zámek je nejstarší částí areálu. Ukrývá románsko-gotické torzo proboštství, obytnou věž hradu a pozdně gotický palác, který byl kolem roku 1544 renesančně rozšířen<sup class="zc"><a href="#zz2">2</a></sup>. Jméno nese po Janovi z Vřesovic, který tu nechal postavit pevný hrad<sup class="zc"><a href="#zz7">7</a></sup>. Na přímluvu Jana II. z Vřesovic, zástavního majitele hradu, pak král Jiří z Poděbrad v roce 1469 povolil založit u hradu nové město<sup class="zc"><a href="#zz3">3</a></sup>.</p>
+      <p>Hrad vznikl po roce 1437 přestavbou obytné stavby proboštství. Na západní a jižní straně se z něj dochovaly hradby s válcovou baštou a vstupní brána. Renesanční přestavba z něj udělala honosný zámek, který pak znovu upravovali po požárech v letech 1620, 1652 a 1752.</p>
+      <p>Na počátku 19. století, kdy už zámek nesloužil šlechtě, ale hospodářství, se horní patro včetně věže sneslo a zbořilo se i jižní křídlo. Část zámku pak sloužila jako panské kanceláře a byty toužimských měšťanů<sup class="zc"><a href="#zz4">4</a></sup>.</p>
+      <p>Památkový katalog ho vede jako „Janův zámek, tzv. Horní hrad“<sup class="zc"><a href="#zz5">5</a></sup>. Pozor na záměnu: Janův hrad stojí i u Lednice. Ten je ale o několik století mladší, stavět se začal v roce 1801 jako lovecký zámeček Lichtenštejnů<sup class="zc"><a href="#zz9">9</a></sup>. Kdo hledá ten toužimský, ať přidá „Toužim“.</p>
+    </div>
+
+    
+      <h3 class="zsub" id="novy-zamek">Dolní neboli Nový zámek</h3>
+    <div class="zcl">
+      <p>„Nový“ neznamená nedávný. Jméno ho jen odlišuje od staršího Janova hradu. Vznikl renesanční přestavbou gotického předhradí. Portál je datovaný rokem 1544, další úpravy přišly v letech 1576–1578 a po požárech v 17. století<sup class="zc"><a href="#zz2">2</a></sup>. Hlavní průčelí obrací k náměstí<sup class="zc"><a href="#zz6">6</a></sup>.</p>
+      <p>Na dvoře má pilířové arkády, v patře později zazděné. Když se podíváte pozorně, tvar oblouků je ve zdi pořád vidět<sup class="zc"><a href="#zz6">6</a></sup>. Severní křídlo, zbořené v 19. století, kdysi propojovalo oba zámky<sup class="zc"><a href="#zz2">2</a></sup>. Zůstala z něj jen jízdárna.</p>
+      <p>Dolní zámek sloužil správě panství. Po požárech v 17. století v něm vznikl malovaný trámový strop, dnešní podobu má z pozdně barokních úprav po roce 1752. Ve sklepení byla cisterna na vodu. Na nádvoří stojí sokl sloupu sv. Jana Nepomuckého z roku 1800.</p>
+    </div>
+    <figure class="foto"><img src="img/foto/arkady.jpg" width="960" height="720" loading="lazy" alt="Dvůr Dolního zámku s arkádami v přízemí a zazděnými oblouky v patře"><figcaption>Dvůr Dolního zámku v roce 2015. Zazděné oblouky v patře jsou dobře vidět.</figcaption></figure>
+    <figure class="foto"><img src="img/foto/pohlednice.jpg" width="1400" height="980" loading="lazy" alt="Černobílá pohlednice: zámek u náměstí s kašnou"><figcaption>Zámek od náměstí na staré pohlednici.</figcaption></figure>
+
+    
+    </div></details>
+
+    <details class="zart" id="opevneni"><summary><span class="eyebrow">Obrana</span><h2>Hradby a archeologie</h2><p class="zperex">Hradby hradu a dnešního zámku postupně odkrýváme od roku 2026 při zakládání zámecké zahrady. Průzkum pokračuje a článek budeme doplňovat.</p><span class="zdal"><span class="zo">Číst dál</span><span class="zz">Sbalit</span></span></summary><div class="zbody">
+    
+    <figure class="foto" style="max-width:480px"><img src="img/foto/zed.jpg" width="720" height="960" loading="lazy" alt="Vysoká kamenná zeď ve svahu pod zámeckou budovou"><figcaption>Kamenná zeď ve svahu pod zámkem, 2015.</figcaption></figure>
+
+    
+      <h3 class="zsub" id="archeologie">Archeologický průzkum 2026</h3>
+      <div class="zcl">
+      <p>Při zakládání zámecké zahrady jsme v roce 2026 odkryli dvě různé hradební zdi.</p>
+      <h4>Zeď z jara 2026</h4>
+      <p>V březnu jsme pod hlínou narazili na původní hradební zeď, pravděpodobně z počátku 15. století. V dubnu ji archeologové prozkoumali a zdokumentovali. Aby zůstala chráněná, znovu ji zasypeme a u nálezu umístíme informační tabuli s fotkami z průzkumu.</p>
+      </div>
+      <figure class="foto"><img src="img/zed/2026-04-03-a.jpg" loading="lazy" alt="Odkrytá kamenná koruna zdi v rozkopané ploše, v pozadí minibagr" width="1300" height="975"><figcaption>3. 4. 2026: odkrytá koruna zdi</figcaption></figure>
+      <div class="zcl">
+      <h4>Horní hradební zeď</h4>
+      <p>V říjnu jsme odkryli část horní hradební zdi. Jde o jinou zeď než nález z března. Kus téže zdi odkryl už archeologický průzkum v roce 1974. Na konci října ji místní historik zaměřil a výkop rozšířil o další úsek.</p>
+      </div>
+      <figure class="foto"><img src="img/zed/plan-1974.jpg" loading="lazy" alt="Plán archeologického průzkumu z roku 1974 s oranžově vyznačenou částí zdi odkrytou v roce 2026 a červeně částí odkrytou v roce 1974" width="911" height="579"><figcaption>Plán průzkumu z roku 1974: oranžově odkryté 2026, červeně odkryté 1974</figcaption></figure>
+      <figure class="foto"><img src="img/zed/2026-10-18-zed.jpg" loading="lazy" alt="Odkrytý kamenný základ zdi s měřítkem v rozkopané hlíně" width="1300" height="975"><figcaption>18. 10. 2026: odkrytá horní hradební zeď</figcaption></figure>
+    </div></details>
+
+    <details class="zart" id="povesti"><summary><span class="eyebrow">Pověsti</span><h2>Pověsti o zámku</h2><p class="zperex">Tři příběhy: o chamtivém proboštovi Dluhošovi, který jako černý mnich bloudí podzemím, a o dvou děsivých hostech v zámeckém sále.</p><span class="zdal"><span class="zo">Číst dál</span><span class="zz">Sbalit</span></span></summary><div class="zbody">
+    <div class="card navy zlegenda">
+      <span class="eyebrow" style="color:var(--sun)">Zámecká legenda</span>
+      <h3>Černý mnich</h3>
+      <p>Kdysi dávno, v době přemyslovských králů, spravoval toužimský klášterní statek probošt Dluhoš. Byl velice schopný, ale také velmi chamtivý. Na úkor poddaných i kláštera se obohacoval a nastřádané jmění schovával ve sklepení svého domu. O Dluhošově konání se dozvěděl sám opat. Přijel s bratry kanovníky do Toužimi probošta vyslechnout, ten se bohatství nechtěl vzdát a své činy dál popíral. Za trest Dluhoše oblékli do černého roucha a jako „černou ovci“ řádu jej, i s nakradeným pokladem, zazdili v podzemí proboštství.</p>
+      <p>Z klášterního statku se stal hrad, z hradu zámek. V podzemí napříč staletími bloudí duše „černého mnicha“, jehož vysvobodí až člověk čistých úmyslů, který Dluhošův poklad najde a věnuje potřebným.</p>
+    </div>
+    
+    <div class="two" style="margin-top:24px">
+      <div class="card"><span class="eyebrow">Pověst</span><h3>Nezvaný host</h3><p>Na plese na zámku odmítla dáma opilého pána slovy: „Raději bych tancovala s čertem!“ Pak s ní tančil neznámý host a krátce po půlnoci odešel. Teprve tehdy si všichni všimli, že má místo jedné nohy kopyto<sup class="zc"><a href="#zz8">8</a></sup>.</p></div>
+      <div class="card"><span class="eyebrow">Pověst</span><h3>Pámbůsnámi na zámku</h3><p>Po půlnoci se v zámeckém sále objevila děsivá postava a bouchala kopyty do podlahy. Hosté utekli a parket se propadl. Co se tam doopravdy stalo, se neví. Pověst zapsal Josef Russ v roce 1936 pod názvem „Der Gottseibeiuns im Schlosse zu Theussing“<sup class="zc"><a href="#zz8">8</a></sup>.</p></div>
+    </div>
+
+    
+    </div></details>
+
+    <details class="zart" id="zamek-dnes"><summary><span class="eyebrow">Současnost</span><h2>Zámek dnes</h2><p class="zperex">V roce 2011 byly obě zámecké budovy nestabilní zříceniny. Silný vítr tehdy strhl část střechy Horního zámku a z Dolního zámku zloději kradli měděnou krytinu<sup class="zc"><a href="#zz2">2</a></sup>.</p><span class="zdal"><span class="zo">Číst dál</span><span class="zz">Sbalit</span></span></summary><div class="zbody">
+    
+      <h3 class="zsub" id="od-roku-2015">Jak se zámek znovu otevřel</h3>
+      <div class="zcl">
+      <p>V letech 2014 a 2015 zkoumal Mikuláš Tichý toužimské komunity a lidé mu opakovaně říkali, že je zámek „černá díra“ uprostřed města. Inspirací mu byla obnova Skoků, za kterou stojí Jiří Schierl. V červnu 2015 se na komunitním setkání sešlo asi 60 lidí a ještě to léto začaly brigády na nádvoří. Z této iniciativy vznikl spolek Živý zámek Toužim, zapsaný 28. ledna 2016. Deset let ho jako předseda vedl Michal Nedvídek, od července 2026 je předsedkyní Pavla Vokurková.</p>
+      <p>Zámek patří městu a nádvoří otvíráme lidem s jeho souhlasem. Podmínkou bylo zatarasit vchody do nebezpečných budov, takže jsme na prvních brigádách stavěli plot a zábrany, čistili nádvoří od náletů a spravovali lavičky a stoly. V létě 2016 byly poprvé otevřené víkendy s prohlídkou nádvoří.</p>
+      </div>
+      <h3 class="zsub" id="co-se-udelalo">Co se od té doby udělalo</h3>
+      <div class="zcl">
+      <p>Většinu práce odvedli dobrovolníci na brigádách, s pomocí města a dárců. Na konci srpna 2019 jsme za devět dní postavili zastřešení pódia. Zámecká komnata dostala v roce 2019 novou podlahu a dnes jsou v ní informační panely, obrazy a osvětlení. V roce 2020 jsme zprovoznili první komnatu v hradu.</p>
+      <p>S městem vzniklo zábradlí na baště nad Karlovarskou ulicí (2021) a toalety s tekoucí vodou (2024). Pro rozbitá okna vznikly v roce 2023 s Infocentrem a základní školou malované desky. V roce 2024 udělal Archeologický ústav AV ČR geofyzikální průzkum nádvoří a pivovaru.</p>
+      <p>Od jara 2026 zakládáme <a href="../../zahrada/">zámeckou zahradu</a>. Při práci jsme narazili na středověké zdivo, víc je v článku <a href="#archeologie">Hradby a archeologie</a>.</p>
+      </div>
+      <h3 class="zsub" id="opravy">Opravy budov</h3>
+      <div class="zcl">
+      <p>Opravy budov se zatím týkají hlavně pivovaru a Janova hradu. Pivovar má novou střechu, fasády a okna. Na Janově hradu se zpevnila koruna zdí, vyzdily se propadlé klenby, šachta točitého schodiště a štíty a obnovený krov má zatím provizorní plechovou střechu. Dolní zámek dál chátrá. Má provizorní střechu a na nárožích statické poruchy. Národní památkový ústav proto areál vede mezi ohroženými památkami<sup class="zc"><a href="#zz1">1</a></sup>.</p>
+      </div>
+      <h3 class="zsub" id="akce-behem-roku">Akce během roku</h3>
+      <div class="zcl">
+      <p>Sezóna začíná 30. dubna pálením čarodějnic a stavěním máje se SDH Toužim. Na jaře a na podzim je Zámecké CITO, brigáda s geocachery. Dál přichází Dětský den, rockový Festival na zámku, Historický den k výročí povýšení Toužimi na město, Zámecký jarmark, Punkovice a Divadlo na zámku. Od roku 2025 se zámek zapojuje do Hradozámecké noci Národního památkového ústavu. Rok končí Halloweenem a Vánočním setkáním, které se poprvé konalo už v prosinci 2015. Aktuální termíny jsou v <a href="../../program/">Programu</a>.</p>
+      <p>Pomáhá nám město Toužim, Technické služby města Toužim, dobrovolní hasiči (SDH Toužim), Lesy ČR, Dílna U mnicha, geocacheři a řada dalších lidí. Zahradu podpořila Nadace Via.</p>
+      </div>
+      <div class="zcl">
+      <p>Kdy a jak se na zámek podívat, najdete na stránce <a href="../../navsteva/">Navštivte nás</a>. Jak se záchranou pomoct, je na stránce <a href="../../podporte/">Podpořte nás</a>.</p>
+    </div>
+
+    
+    </div></details>
+
+    <details class="zart" id="pamatky"><summary><span class="eyebrow">Město</span><h2>Památky Toužimi</h2><p class="zperex">Historické jádro Toužimi je od roku 1992 památkovou zónou<sup class="zc"><a href="#zz3">3</a></sup>. Kromě zámku v něm stojí radnice, kašna, morový sloup, děkanský kostel a měšťanské domy, které mají často gotické sklepy.</p><span class="zdal"><span class="zo">Číst dál</span><span class="zz">Sbalit</span></span></summary><div class="zbody">
+      <h3 class="zsub" id="mestske-hradby">Hradby a brány města</h3>
+      <div class="zcl"><p>Hrad tu byl dřív než město. Toužim vznikla v roce 1469 jako nové opevněné město přímo u hradu a obě opevnění na sebe navazovala<sup class="zc"><a href="#zz3">3</a></sup>.</p></div><div class="zcl">
+      <p>Na jižní a západní straně chránila město kromě hradeb i krajina: svah a podmáčená niva Střely, kterou záhy zaplavil Zámecký rybník. Na opačných stranách, otevřených do mírně stoupajícího terénu, stála za hradbou ještě parkánová zeď a před ní příkop se zemním valem. Nároží hlídaly bašty nebo věže<sup class="zc"><a href="#zz3">3</a></sup>.</p>
+      <p>Do města se vcházelo třemi branami. Horní měla městskou věž, Kostelní byla věžovitá. Nejzajímavější byla Dolní brána u opevnění hradu, podobná Bechyňské bráně v Táboře: měla patro se střílnami a průjezd chráněný předbraním<sup class="zc"><a href="#zz3">3</a></sup>.</p>
+      <p>Od západu, odkud přišla zkáza Útviny, se šlo po koruně hráze Zámeckého rybníka. Cesta se na ní lomila, přerušoval ji úzký můstek přes splav a pak vedla zpět podél břehu k bráně. Kdo přicházel, byl celou dobu na dostřel ze střílen hradu i Dolní brány<sup class="zc"><a href="#zz3">3</a></sup>.</p>
+    </div>
+      <h3 class="zsub" id="zbytky-hradeb">Co zbylo z hradeb a bran</h3>
+      <div class="zcl">
+      <p>Dolní bráně se říkalo také Rybářská nebo Loketská, Horní bráně Plzeňská. Čtvrtou, malou Židovskou neboli Dvorskou branou se chodilo přes panský dvůr na severní předměstí<sup class="zc"><a href="#zz16">16</a></sup>.</p>
+      <p>Žádná z bran se nedochovala. Rybářskou a Horní bránu zbořili po požáru města v roce 1847, protože překážely nové císařské silnici z Plzně do Lokte. Kostelní brána při stejném požáru přišla o patro. Nové hrázděné patro pak sloužilo jako synagoga, a když v roce 1872 hořelo znovu, zbořili bránu celou. Židovská brána zanikla s asanací panského dvora v 60. letech 20. století<sup class="zc"><a href="#zz16">16</a></sup>.</p>
+      <p>Z hradeb zůstal souvislý pás na západní a jižní straně města, místy až pět metrů vysoký. Dnes často drží zahrady a dvory nebo slouží jako základ domů. Další kusy stojí za kostelem, ve dvorech domů čp. 56 až 58 a v zahradách na severní straně náměstí. V Karlovarské ulici u čp. 344 jsou vidět zbytky základů u Rybářské brány. Na příkop dodnes upomíná starý název části ulice Pod Brankou: Na Příkopu<sup class="zc"><a href="#zz16">16</a></sup>.</p>
+      </div>
+      <h3 class="zsub" id="namesti">Náměstí: radnice, kašna a morový sloup</h3>
+      <div class="zcl">
+      <p><b>Radnice čp. 35</b> je pozdně gotická, nejspíš z 2. poloviny 15. století<sup class="zc"><a href="#zz17">17</a></sup>. Po požárech v letech 1620, 1652, 1752 a 1872 ji vždy přestavěli. Kamenná znaková deska nad vchodem zbyla z portálu z doby po roce 1500. V přízemí jsou klenuté síně a černá kuchyně. Ve sklepě se dochovala temnice a vzácně i zbytek dřevěného bednění, na kterém se stavěla klenba. V roce 2004 dostala radnice zpátky klasicistně-empírovou podobu<sup class="zc"><a href="#zz2">2</a>,<a href="#zz17">17</a></sup>.</p>
+      <p><b>Kašnu na náměstí</b> napájel městský vodovod, dřevěným potrubím z Rourového rybníka<sup class="zc"><a href="#zz2">2</a></sup>. Žulová nádrž měří asi 3,9 × 3,9 metru. Uprostřed původně stál sloup se dvěma kulovitými mísami. Kolem roku 1930 ho nahradil dnešní tři metry vysoký pískovcový pylon od místního sochaře Karla Fuchse. Zdobí ho kruhové reliéfy květů a voda teče otvory ve dvou z nich<sup class="zc"><a href="#zz2">2</a>,<a href="#zz20">20</a></sup>.</p>
+      <p><b>Morový sloup</b> se sochou Panny Marie je z roku 1705, letopočet je vytesaný na podstavci. Panna Marie má korunu a žezlo a na pravé ruce drží Ježíška s jablkem s pozlaceným křížkem. Hlavici sloupu zdobí okřídlené hlavičky andílků<sup class="zc"><a href="#zz19">19</a></sup>. Sochy svatých Josefa, Floriána, Jana Nepomuckého a Jana Křtitele v rozích jsou zřejmě o něco mladší. Na železných konzolách podstavců kdysi visely lucerny<sup class="zc"><a href="#zz2">2</a></sup>.</p>
+      </div>
+      <h3 class="zsub" id="kostel">Kostel Narození Panny Marie</h3>
+      <div class="zcl">
+      <p>Kostel založili asi po roce 1488. Z gotické stavby zbyla severní věž. V letech 1738–1742 ho barokně přestavěl stavitel Johann Schmied z Útviny a po požárech v letech 1774–1778 a 1872 ho znovu obnovili. Uvnitř jsou nástěnné malby J. J. Kramolína z roku 1778: malované hlavní a dva boční oltáře<sup class="zc"><a href="#zz2">2</a></sup>. Severní kapli Ecce Homo postavil už v roce 1699 J. Socka, jižní kaple přibyla podle návrhu H. A. Biedtermanna<sup class="zc"><a href="#zz18">18</a></sup>.</p>
+      <p>K areálu kostela patří ohradní zeď se dvěma branami<sup class="zc"><a href="#zz18">18</a></sup>. Stojí u něj stará fara čp. 64/65, škola čp. 8 a bývalá márnice, dnes kaple Olivetské hory<sup class="zc"><a href="#zz2">2</a></sup>. Děkanství čp. 19 postavili barokně ve stejných letech jako kostel, na místě středověké fary<sup class="zc"><a href="#zz12">12</a></sup>.</p>
+      </div>
+      <h3 class="zsub" id="domy">Měšťanské domy a starý pivovar</h3>
+      <div class="zcl">
+      <p><b>Steinbachův dům čp. 51</b> stojí v Plzeňské ulici, která vedla z náměstí k Horní bráně. Má pozdně gotické kamenné jádro. Jméno má po Antonínu Steinbachovi z Kranichsteinu, vrchním hejtmanovi sasko-lauenburských panství, kterému patřil ve 2. polovině 17. století. Ve starší listině se mu říká „Velký zelený“ nebo „Velká zeleň“. Po požárech v letech 1485, 1620, 1652, 1752 a 1847 ho vždy přestavěli. Jeho renesanční portál s erbem, Steinbachovým monogramem a letopočtem 1657 odvezli v roce 1907 na zámek v Bečově a v roce 1927 na hrad Loket<sup class="zc"><a href="#zz10">10</a></sup>.</p>
+      <p>Nárožní <b>panský dům čp. 53</b> v téže ulici stál už před rokem 1661. Po požáru roku 1847 z něj vznikl dům pro panské úředníky. Na fasádu tehdy přenesli ze zbořené Horní brány hodiny a erbovní desku z roku 1661 se znaky saského vévody Julia Jindřicha a jeho manželky Anny Magdaleny z Lobkovic. Hodinový stroj zničil požár domu v roce 1896, erb restaurovali v roce 2004<sup class="zc"><a href="#zz11">11</a>,<a href="#zz16">16</a></sup>.</p>
+      <p><b>Dům čp. 43</b> na náměstí má kamenný renesanční portál, který sem v roce 1907 přenesli z domu čp. 50. V klenáku je letopočet 1600, monogram G.S.S. a znamení cechu sladovníků s chmelovými lístky<sup class="zc"><a href="#zz2">2</a>,<a href="#zz22">22</a></sup>.</p>
+      <p><b>Dům čp. 58</b> si jako jediný v Toužimi zachoval původní dispozici širokého měšťanského domu: vstupní síň neboli mázhaus, síň s renesančním portálkem a černou kuchyni<sup class="zc"><a href="#zz2">2</a></sup>.</p>
+      <p><b>Domy čp. 56 a 57</b> mají gotický sklep a v přízemí síň s renesanční klenbou s hřebínky. <b>Dům čp. 98</b>, kdysi součást radnice, má v přízemí renesanční klenbu<sup class="zc"><a href="#zz2">2</a></sup>.</p>
+      <p>V bývalém panském zájezdním hostinci <b>čp. 7</b> zůstaly tři nástěnné malby z roku 1932 se starou i tehdejší Toužimí. Při demolici domu <b>čp. 102</b> se našla kamenná dlažba, základy pece a keramika a sklo ze 16. až 18. století<sup class="zc"><a href="#zz2">2</a></sup>.</p>
+      <p><b>Starý obecní pivovar čp. 69</b> má pod zemí rozsáhlé pivovarské sklepy s vodními cisternami z 15. století<sup class="zc"><a href="#zz2">2</a></sup>.</p>
+      </div>
+      <h3 class="zsub" id="mimo-namesti">Mimo náměstí</h3>
+      <div class="zcl">
+      <p>Druhá toužimská <b>kašna</b> stojí v areálu zámku, v bývalé zámecké zahradě před pivovarem mezi čtyřmi stromy. Na stejném místě ji zachycuje mapa z roku 1841 a čtvercovou kašnu má už plán zámeckého pivovaru z 2. poloviny 17. století. Kámen uprostřed nese stopy po části, která se nedochovala<sup class="zc"><a href="#zz21">21</a></sup>.</p>
+      <p>Pod zámkem se dochoval zbytek <b>barokního kamenného mostku</b> ze 17. století se dvěma klenutými oblouky. Dnes slouží jako sklep sousední zahrady<sup class="zc"><a href="#zz14">14</a></sup>.</p>
+      <p><b>Kaplička svaté Anny</b>, německy Radinger-Kapelle, je drobná barokní stavba z 18. století, jen asi 2,5 metru široká. Klenbu uvnitř má vymalovanou jako noční nebe s hvězdami a pod omítkou se skrývá nápis „Renoviert 1922“<sup class="zc"><a href="#zz15">15</a></sup>.</p>
+      <p>Na Plzeňském předměstí stojí <b>škola čp. 330</b> z roku 1923 od karlovarského architekta Karla Ernstbergera, žáka Otto Wagnera. Každá strana budovy má jinou fasádu. V nikách jsou reliéfy učících se dětí a na východním štítu postavy muže a ženy, které představují vzdělanost a moudrost. Výzdobu udělal pravděpodobně Willi Russ z Krásna. Budova dodnes slouží jako škola<sup class="zc"><a href="#zz13">13</a></sup>.</p>
+      </div>
+    </div></details>
+
+
+    <div class="page-head" style="margin-top:56px"><span class="eyebrow">Zajímavosti</span><h2 id="zajimavosti">Zajímavosti o zámku</h2></div>
+    <ul class="zaj"><li><div><b>Město pojmenované po hradu</b><span>Když král v roce 1469 dovolil měšťanům z Útviny postavit nové město, dostalo jméno po hradu: Toužim.</span></div></li><li><div><b>Znak po Útvině</b><span>Nová Toužim převzala práva vypálené Útviny i její městský znak. Nový znak dostala v roce 1478.</span></div></li><li><div><b>Město podle plánu</b><span>Toužim se stavěla „na zeleném drnu“. Proto má pravoúhlé ulice a náměstí trochu mimo střed.</span></div></li><li><div><b>Kostel proti hradu</b><span>V opačném rohu města než hrad stál farní kostel s obrannou věží.</span></div></li><li><div><b>Panství za 468 100 zlatých</b><span>Tolik v roce 1837 zaplatil v dražbě vévoda Alfred Beaufort-Spontini, belgický šlechtic, který do Čech přišel před Napoleonem.</span></div></li><li><div><b>Pivovar jako továrna</b><span>V 19. století byl zámecký pivovar spolu s cihelnou a pilou jediným „průmyslovým“ podnikem ve městě. V roce 1901 ho modernizovali.</span></div></li><li><div><b>Strop v úkrytu</b><span>Malovaný trámový strop Dolního zámku je kvůli ochraně uložený mimo areál.</span></div></li><li><div><b>Barokní zázemí</b><span>Hospodářské budovy zámku jsou v podstatě barokní, v 19. století je jen upravovali.</span></div></li><li><div><b>Z vojáka rytířem</b><span>Antonín Steinbach (1615–1674) za třicetileté války spravoval toužimské panství a zbohatl. Koupil Líšťany a v roce 1664 se stal rytířem „z&nbsp;Kranichsteinu“. Připomíná ho dům čp. 51. Víc o něm: <a href="https://www.listany.cz/obec/informace-o-obci/historie/listany/" rel="noopener">obec Líšťany</a>, <a href="https://de.wikipedia.org/wiki/Steinbach_von_Kranichstein" rel="noopener">Wikipedie (německy)</a>.</span></div></li><li><div><b>Lokomotiva po silnici</b><span>První lokomotiva přijela do Toužimi 14. června 1898 po silnici, na voze taženém osmi páry koní. Aby trať vedla přes město, dali na ni Toužimští 200 000 zlatých.</span></div></li><li><div><b>Konec zámeckého piva</b><span>Vařit se v pivovaru přestalo brzy po první světové válce. Pivo se tu pak už jen stáčelo, až do konce druhé světové války, kdy pivovar vyhořel.</span></div></li><li><div><b>Nejstarší krov ve městě</b><span>Průzkumy na zámku našly barokní krov. Je to nejstarší dochovaný krov v Toužimi.</span></div></li></ul>
+<details class="zzdroje"><summary>Zdroje (22)</summary><ol><li id="zz1">Národní památkový ústav, Ohrožené památky: <a href="https://www.npu.cz/cs/ohrozene-pamatky/8535-touzim-areal-zamku" rel="noopener">Toužim, areál zámku</a></li><li id="zz2">Toužimské noviny 6/2011: <a href="https://www.touzim.cz/e_download.php?file=data%2Feditor%2F92cs_22.pdf&amp;original=TN+6-11.pdf" rel="noopener">Stručný průvodce městskou památkovou zónou</a></li><li id="zz3">Toužimské noviny 5/2011: <a href="https://www.touzim.cz/e_download.php?file=data%2Feditor%2F92cs_21.pdf&amp;original=TN+5-11.pdf" rel="noopener">Jak vzniklo naše město Toužim</a></li><li id="zz4">Město Toužim: <a href="https://www.touzim.cz/modules/file_storage/download.php?file=71081a5f%7C478&amp;inline=1" rel="noopener">Toužim 19. a počátku 20. století</a></li><li id="zz5">Památkový katalog NPÚ: <a href="https://pamatkovykatalog.cz/januv-zamek-tzv-horni-hrad-17695229" rel="noopener">Janův zámek, tzv. Horní hrad</a></li><li id="zz6">Památkový katalog NPÚ: <a href="https://www.pamatkovykatalog.cz/novy-zamek-17695018" rel="noopener">Nový zámek</a></li><li id="zz7">Památky a příroda Karlovarska: <a href="https://www.pamatkyaprirodakarlovarska.cz/touzim-hrad-a-zamek/" rel="noopener">Toužim – hrad a zámek</a></li><li id="zz8">Cesta za pověstí, projekt žáků ZŠ Toužim: <a href="https://zapovesti.estranky.cz/clanky/povesti/povesti-a-legendy-touzimska.html" rel="noopener">Pověsti a legendy Toužimska</a></li><li id="zz9">Národní památkový ústav, Janův hrad (Lednice): <a href="https://www.januv-hrad.cz/cs/o-hradu/historie" rel="noopener">Historie</a></li><li id="zz10">Památkový katalog NPÚ: <a href="https://pamatkovykatalog.cz/mestansky-dum-steinbachuv-19553801" rel="noopener">Měšťanský dům Steinbachův</a></li><li id="zz11">Památkový katalog NPÚ: <a href="https://pamatkovykatalog.cz/pansky-dum-15213568" rel="noopener">Panský dům</a></li><li id="zz12">Památkový katalog NPÚ: <a href="https://pamatkovykatalog.cz/dekanstvi-20242124" rel="noopener">Děkanství</a></li><li id="zz13">Památkový katalog NPÚ: <a href="https://pamatkovykatalog.cz/skola-12539520" rel="noopener">Škola</a></li><li id="zz14">Památkový katalog NPÚ: <a href="https://pamatkovykatalog.cz/silnicni-most-mostek-15267752" rel="noopener">Silniční most – mostek</a></li><li id="zz15">Památkový katalog NPÚ: <a href="https://pamatkovykatalog.cz/kaplicka-sv-anny-tzv-radynska-14487885" rel="noopener">Kaplička sv. Anny, tzv. Radyňská</a></li><li id="zz16">Památkový katalog NPÚ: <a href="https://pamatkovykatalog.cz/mestske-opevneni-20995655" rel="noopener">Městské opevnění</a></li><li id="zz17">Památkový katalog NPÚ: <a href="https://pamatkovykatalog.cz/radnice-21020226" rel="noopener">Radnice</a></li><li id="zz18">Památkový katalog NPÚ: <a href="https://pamatkovykatalog.cz/kostel-narozeni-panny-marie-15264957" rel="noopener">Kostel Narození Panny Marie</a></li><li id="zz19">Památkový katalog NPÚ: <a href="https://pamatkovykatalog.cz/sloup-se-sochou-panny-marie-15324550" rel="noopener">Sloup se sochou Panny Marie</a></li><li id="zz20">Památkový katalog NPÚ: <a href="https://pamatkovykatalog.cz/kasna-14443545" rel="noopener">Kašna (náměstí)</a></li><li id="zz21">Památkový katalog NPÚ: <a href="https://pamatkovykatalog.cz/kasna-15331833" rel="noopener">Kašna (areál zámku)</a></li><li id="zz22">Památkový katalog NPÚ: <a href="https://pamatkovykatalog.cz/mestansky-dum-20569277" rel="noopener">Měšťanský dům čp. 43</a></li></ol><p>Ostatní texty a kresby podle brožury a turistických cedulí spolku z roku 2021. Zdroje ověřeny 29. 10. 2026.</p></details>
+    <details class="zzdroje zpojmy"><summary>Jména a pojmy</summary><dl>
+      <dt>Zámek Toužim</dt><dd>Celý historický areál.</dd>
+      <dt>Janův hrad, Horní zámek</dt><dd>Starší část areálu. V Památkovém katalogu vedená jako „Janův zámek, tzv. Horní hrad“<sup class="zc"><a href="#zz5">5</a></sup>.</dd>
+      <dt>Nový zámek, Dolní zámek</dt><dd>Mladší renesanční část, průčelím k náměstí<sup class="zc"><a href="#zz6">6</a></sup>.</dd>
+      <dt>Hradba</dt><dd>Hlavní obranná zeď kolem hradu nebo města.</dd>
+      <dt>Parkán</dt><dd>Pás mezi hlavní hradbou a nižší předsunutou zdí.</dd>
+      <dt>Bašta</dt><dd>Věž nebo výstupek vysunutý z hradby, odkud šlo střílet podél zdi.</dd>
+      <dt>Příkop a val</dt><dd>Vykopaná rýha a navršená zemina před hradbami.</dd>
+    </dl></details>
+  </div>
+</section></main>
+<footer>
+  <div class="wrap cols">
+    <div><img src="img/logo.png" alt="Živý zámek Toužim" width="900" height="677"></div>
+    <div><h2>Zámek Toužim</h2><p><a href="https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim" target="_blank" rel="noopener">náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</a><br><span id="fSezona">Otevřené víkendy červenec–září</span></p></div>
+    <div><h2>Kontakt</h2><p id="fKontakt">Pavla Vokurková, předsedkyně<br>+420 724 859 799<br>zivyzamektouzim@email.cz</p><p><a href="../../navsteva/#dotaz">Napište nám →</a></p></div>
+    <div><h2>Spolek</h2><p>Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Datová schránka: wttsmga<br>Účet <span id="fUcet">2301034510/2010</span><br><a href="https://www.facebook.com/zivyzamek.touzim" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/zivyzamektouzim/" target="_blank" rel="noopener">Instagram</a></p></div>
+  </div>
+</footer>
+<script>(function(){var m=document.getElementById('menuBtn'),n=document.getElementById('mainNav');
+if(m&&n)m.addEventListener('click',function(){var o=n.classList.toggle('open');m.setAttribute('aria-expanded',o?'true':'false')});
+var pc=window.matchMedia('(min-width: 761px)');
+function nastav(){document.querySelectorAll('details.zart').forEach(function(d){if(pc.matches)d.open=true;});}
+nastav();if(pc.addEventListener)pc.addEventListener('change',function(){if(pc.matches)nastav();else document.querySelectorAll('details.zart').forEach(function(d){d.open=false;});});
+document.querySelectorAll('details.zart>summary').forEach(function(su){su.addEventListener('click',function(e){if(pc.matches&&!e.target.closest('a'))e.preventDefault();});});
+function otevri(){var h=decodeURIComponent(location.hash.slice(1));if(!h)return;var el=document.getElementById(h);if(!el)return;var d=el.tagName==='DETAILS'?el:el.closest('details');while(d){d.open=true;d=d.parentElement?d.parentElement.closest('details'):null;}el.scrollIntoView();}
+window.addEventListener('hashchange',otevri);otevri();window.addEventListener('load',otevri);
+document.querySelectorAll('.zobsah a').forEach(function(a){a.addEventListener('click',function(){setTimeout(otevri,0);});});
+var v=document.getElementById('zVse');if(v)v.addEventListener('click',function(){var z=document.querySelectorAll('details.zart'),o=[].some.call(z,function(d){return !d.open});z.forEach(function(d){d.open=o});v.textContent=o?'Sbalit vše':'Rozbalit vše';});
+document.querySelectorAll('sup.zc a').forEach(function(a){a.addEventListener('click',function(){var d=document.querySelector('.zzdroje');if(d)d.open=true;});});})();</script>
+</body></html>
