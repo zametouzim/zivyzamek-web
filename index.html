@@ -213,7 +213,7 @@ main section[data-page]{padding-block:0 96px}
 .card{background:var(--panel);padding:28px;display:grid;gap:14px;align-content:start}
 .ask{margin-top:32px;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:28px}
 .ask>div{display:grid;gap:12px;justify-items:start;align-content:start}
-.ask.open #askOpen{display:none}
+.ask.open #askOpen,.ask.open #newsOpen{display:none}
 .ask h3{margin:.2em 0}
 .ask form{display:grid;gap:14px}
 .ask form[hidden]{display:none}
@@ -605,16 +605,17 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
         <p class="gdpr">Jméno a kontakt použijeme jen k odpovědi na váš dotaz a nikomu je nepředáme. Správce údajů: Živý zámek Toužim z. s., IČO 04690770.</p>
       </form>
     </div>
-    <div class="card ask open" id="novinky" hidden>
-      <div><span class="eyebrow">Novinky e-mailem</span><h2 class="h3">Odebírat novinky</h2><p>Pozvánky na akce, brigády a sbírky spolku vám pošleme e-mailem. Odhlásit se jde jedním kliknutím v každém e-mailu.</p></div>
-      <form id="newsForm" novalidate>
+    <div class="card ask" id="novinky" hidden>
+      <div><span class="eyebrow">Novinky e-mailem</span><h2 class="h3">Odebírat novinky</h2><p>Pozvánky na akce, brigády a sbírky spolku vám pošleme e-mailem. Odhlásit se jde jedním kliknutím v každém e-mailu.</p>
+        <button class="btn fill" type="button" id="newsOpen" aria-expanded="false" aria-controls="newsForm">Přihlásit se k odběru</button></div>
+      <form id="newsForm" novalidate hidden>
         <label><span>E-mail</span><input name="email" type="email" autocomplete="email" required></label>
         <div class="row2">
           <label><span>Jméno (nepovinné)</span><input name="jmeno" autocomplete="given-name"></label>
           <label><span>Příjmení (nepovinné)</span><input name="prijmeni" autocomplete="family-name"></label>
         </div>
         <label class="hp" aria-hidden="true"><span>Nevyplňujte</span><input name="web" tabindex="-1" autocomplete="off"></label>
-        <div class="send"><button class="btn fill" type="submit">Odebírat novinky</button><span id="newsMsg" role="status"></span></div>
+        <div class="send"><button class="btn fill" type="submit">Odeslat</button><span id="newsMsg" role="status"></span></div>
         <p class="gdpr">E-mail a jméno použijeme jen k zasílání novinek spolku a nikomu je nepředáme. Správce údajů: Živý zámek Toužim z. s., IČO 04690770.</p>
       </form>
     </div>
@@ -1278,7 +1279,8 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
   })();
   // Odebírat novinky: zatím skryté, ukáže se jen na adrese navsteva/#novinky (newsletter ve zkoušce)
   (function(){
-    var card=document.getElementById('novinky'), f=document.getElementById('newsForm'), msg=document.getElementById('newsMsg');
+    var card=document.getElementById('novinky'), f=document.getElementById('newsForm'), msg=document.getElementById('newsMsg'), ob=document.getElementById('newsOpen');
+    ob.addEventListener('click',function(){f.hidden=false;card.classList.add('open');ob.setAttribute('aria-expanded','true');f.elements.email.focus();});
     function ukaz(){if(location.hash!=='#novinky')return;card.hidden=false;card.scrollIntoView({block:'start'});}
     window.addEventListener('hashchange',ukaz);ukaz();
     function say(t,c){msg.textContent=t;msg.className=c||'';}
