@@ -229,6 +229,8 @@ main section[data-page]{padding-block:0 96px}
 .ask .bad{border-color:var(--accent);outline:1px solid var(--accent)}
 #askMsg.err{color:var(--accent);font-weight:700}
 #askMsg.ok{font-weight:700}
+#newsMsg.err{color:var(--accent);font-weight:700}
+#newsMsg.ok{font-weight:700}
 @media (max-width:760px){.ask{grid-template-columns:1fr}.ask .row2{grid-template-columns:1fr}}
 .card.navy{background:var(--navy);color:var(--navy-ink)}
 .card.sun{background:var(--cta-bg);color:var(--cta-ink)}
@@ -601,6 +603,19 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
         <p class="note">Vyplňte prosím e-mail nebo telefon, ať vám můžeme odpovědět.</p>
         <div class="send"><button class="btn fill" type="submit">Odeslat</button><span id="askMsg" role="status"></span></div>
         <p class="gdpr">Jméno a kontakt použijeme jen k odpovědi na váš dotaz a nikomu je nepředáme. Správce údajů: Živý zámek Toužim z. s., IČO 04690770.</p>
+      </form>
+    </div>
+    <div class="card ask open" id="novinky" hidden>
+      <div><span class="eyebrow">Novinky e-mailem</span><h2 class="h3">Odebírat novinky</h2><p>Pozvánky na akce, brigády a sbírky spolku vám pošleme e-mailem. Odhlásit se jde jedním kliknutím v každém e-mailu.</p></div>
+      <form id="newsForm" novalidate>
+        <label><span>E-mail</span><input name="email" type="email" autocomplete="email" required></label>
+        <div class="row2">
+          <label><span>Jméno (nepovinné)</span><input name="jmeno" autocomplete="given-name"></label>
+          <label><span>Příjmení (nepovinné)</span><input name="prijmeni" autocomplete="family-name"></label>
+        </div>
+        <label class="hp" aria-hidden="true"><span>Nevyplňujte</span><input name="web" tabindex="-1" autocomplete="off"></label>
+        <div class="send"><button class="btn fill" type="submit">Odebírat novinky</button><span id="newsMsg" role="status"></span></div>
+        <p class="gdpr">E-mail a jméno použijeme jen k zasílání novinek spolku a nikomu je nepředáme. Správce údajů: Živý zámek Toužim z. s., IČO 04690770.</p>
       </form>
     </div>
     <div class="two" style="margin-top:32px;align-items:start">
@@ -1258,6 +1273,26 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
         if(!d.ok)throw 0;f.reset();say(T('Děkujeme, zpráva odešla. Ozveme se co nejdřív.'),'ok');
       }).catch(function(){
         say(T('Zprávu se nepodařilo odeslat. Napište nám prosím na zivyzamektouzim@email.cz.'),'err');
+      }).then(function(){b.disabled=false;});
+    });
+  })();
+  // Odebírat novinky: zatím skryté, ukáže se jen na adrese navsteva/#novinky (newsletter ve zkoušce)
+  (function(){
+    var card=document.getElementById('novinky'), f=document.getElementById('newsForm'), msg=document.getElementById('newsMsg');
+    function ukaz(){if(location.hash!=='#novinky')return;card.hidden=false;card.scrollIntoView({block:'start'});}
+    window.addEventListener('hashchange',ukaz);ukaz();
+    function say(t,c){msg.textContent=t;msg.className=c||'';}
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var em=f.elements.email;em.classList.remove('bad');em.removeAttribute('aria-invalid');
+      if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em.value.trim())){em.classList.add('bad');em.setAttribute('aria-invalid','true');em.focus();say(T('Vyplňte prosím platný e-mail.'),'err');return;}
+      var b=f.querySelector('button');b.disabled=true;say(T('Odesílám…'));
+      var data=new URLSearchParams(new FormData(f));data.append('jazyk',window.LANG);
+      fetch('https://script.google.com/macros/s/AKfycbx1rfD4DDTHOj_BaOpGGOx9SKJj8hObTB0pPwnO_oqgeS_v5wbOo4exNavaOlTTHv1e/exec',{method:'POST',body:data}).then(function(r){return r.json()}).then(function(d){
+        if(!d.ok)throw 0;
+        f.reset();say(d.stav==='uz'?T('Tato adresa už novinky odebírá.'):T('Děkujeme. Poslali jsme vám e-mail s odkazem, kterým odběr potvrdíte.'),'ok');
+      }).catch(function(){
+        say(T('Přihlášení se nepodařilo. Zkuste to prosím později.'),'err');
       }).then(function(){b.disabled=false;});
     });
   })();
