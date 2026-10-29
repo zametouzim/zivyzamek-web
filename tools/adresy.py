@@ -263,6 +263,28 @@ def program_html(akce, dnes):
     return ''.join(li(a) for a in prijde), ''.join(li(a) for a in bylo)
 
 
+def vlastni_html(p):
+    """Sekce vlastní stránky z administrace v HTML, stejně jako ji skládá skript v index.html (ten ji pak přestaví v jazyce návštěvníka)."""
+    odkaz = lambda u: u if re.match(r'(https?://|#|mailto:|tel:)', u or '') else '#'
+    h = '<div class="page-head">%s<h1>%s</h1>%s</div><div class="vs">' % (
+        '<span class="eyebrow">%s</span>' % e(p['nadtitulek']) if p.get('nadtitulek') else '', e(p.get('nazev', '')),
+        '<p>%s</p>' % e(p['perex']) if p.get('perex') else '')
+    for b in p.get('bloky') or []:
+        t = b.get('type')
+        if t == 'nadpis':
+            h += '<h3>%s</h3>' % e(b.get('text', ''))
+        elif t == 'text':
+            h += ''.join('<p>%s</p>' % r for r in (b.get('html') or '').split('\n'))
+        elif t == 'fotka' and b.get('src'):
+            h += '<figure><img src="%s" alt="%s" loading="lazy">%s</figure>' % (
+                e(b['src']), e(b.get('popisek', '')), '<figcaption>%s</figcaption>' % e(b['popisek']) if b.get('popisek') else '')
+        elif t == 'galerie' and b.get('fotky'):
+            h += '<div class="gal">%s</div>' % ''.join('<img src="%s" alt="" loading="lazy">' % e(f) for f in b['fotky'])
+        elif t == 'tlacitko' and b.get('text'):
+            h += '<p><a class="btn" href="%s">%s</a></p>' % (e(odkaz(b.get('odkaz'))), e(b['text']))
+    return '<section data-page="%s">\n<div class="wrap">%s</div></div>\n</section>\n' % (p['id'], h)
+
+
 def stranka(zaklad, cesta, hlava, sekce=None, vlozit=None, pfx='', slozky=()):
     s = ZNACKA.sub(lambda m: hlava, zaklad, count=1)
     if pfx + cesta:
@@ -322,7 +344,8 @@ def sestav(zaklad, akce, web, l10n, dnes, pfx='', navic=(), noindex=False):
                 meta[l] = ('%s – Živý zámek Toužim' % t['nazev'], t.get('perex') or STRANKY['domu'][l][1])
         ld = {'@context': 'https://schema.org', '@type': 'WebPage', 'name': meta['cs'][0], 'url': url(pid + '/'),
               'isPartOf': {'@id': SITE + '#web'}}
-        soubory[pfx + pid + '/index.html'] = st(pid + '/', hl(pid + '/', meta, ld))
+        z = zaklad.replace('</main>\n', vlastni_html(p) + '</main>\n', 1)
+        soubory[pfx + pid + '/index.html'] = stranka(z, pid + '/', hl(pid + '/', meta, ld), pid, None, pfx, slozky)
         mapa.append(pid + '/')
     for sid, meta, ld in navic:
         soubory[pfx + sid + '/index.html'] = st(sid + '/', hl(sid + '/', meta, ld), sid)
