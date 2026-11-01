@@ -218,6 +218,7 @@ main section[data-page]{padding-block:0 96px}
 .ask h3{margin:.2em 0}
 .ask form{display:grid;gap:14px}
 .ask form[hidden],.ask[hidden]{display:none}
+.asks{margin-top:32px}.asks .ask{margin-top:0;grid-template-columns:1fr}
 .ask:not(.open){grid-template-columns:1fr}
 .ask label{display:grid;gap:4px;font-weight:700;font-size:16px}
 .ask input,.ask textarea{font:inherit;font-weight:400;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);padding:10px 12px;border-radius:0;width:100%;box-sizing:border-box}
@@ -591,6 +592,7 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
         </div>
       </div>
     </div>
+    <div class="two asks">
     <div class="card ask" id="dotaz">
       <div><span class="eyebrow">Napište nám</span><h2 class="h3">Máte dotaz?</h2><p>Chcete se na něco zeptat, domluvit prohlídku mimo sezónu nebo přijít pomoct? Napište nám, ozveme se.</p>
         <button class="btn fill" type="button" id="askOpen" aria-expanded="false" aria-controls="askForm">Napsat dotaz</button></div>
@@ -620,6 +622,7 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
         <div class="send"><button class="btn fill" type="submit">Odeslat</button><span id="newsMsg" role="status"></span></div>
         <p class="gdpr">E-mail a jméno použijeme jen k zasílání novinek spolku a nikomu je nepředáme. Správce údajů: Živý zámek Toužim z. s., IČO 04690770.</p>
       </form>
+    </div>
     </div>
     <div class="two" style="margin-top:32px;align-items:start">
       <figure class="zfig" style="margin:0"><img src="img/zamek/mapka-arealu-2022.jpg" alt="Mapka zámeckého areálu: přístupné venkovní a vnitřní prostory a nepřístupné části" loading="lazy"></figure>
