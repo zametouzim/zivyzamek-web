@@ -841,7 +841,7 @@ window.L10N={
     "title": "17th Castle CITO and Get to Know & Help",
     "when": "Sat 10–16 · Sun 10–17",
     "short": "Saturday: clean-up around the castle and help with the garden, with live music by Longway. Sunday: weeding work party on the slope for the children’s play features.",
-    "html": "<b>Saturday 17 Oct, 10:00–16:00: 17th Castle CITO.</b> We will clean up the area around the castle and above all help build the castle garden. A small exhibition about geocaching, event CWG for 10 CZK. The castle band Longway plays all day.\n<b>Sunday 18 Oct, 10:00–17:00: Get to Know &amp; Help weeding work party.</b> Help us clear the slope for the children’s play features and move the castle garden a step further together.\nRefreshments on both days: goulash, sausages, bread, coffee, tea, beer and soft drinks."
+    "html": "They say strong experiences need time to sink in ❤️ So we only went to look at the result on Sunday morning. The feeling was the same and we nearly cried at how much got done on Saturday 🍀🏰 If ten people came to every work party, the progress would be incredible.\nThank you to the geocachers who came to the CITO, and we are really happy that local people joined in this time too. We hope they will spread the enthusiasm for this huge piece of work around Toužim and that there will be more of us next time 🍀\nOn Sunday there was so much work that we didn't even take photos 🫣 Thank you to everyone who lent a hand and to those who brought something tasty. The goulash was wonderful 😋"
    },
    "2026-10-25": {
     "title": "Children’s work party: raking leaves",
@@ -853,7 +853,7 @@ window.L10N={
     "title": "Halloween at the castle",
     "when": "Saturday · 14:30–17:00",
     "short": "Haunted cellar, workshops, lantern parade and a contest for the most beautiful pumpkin. In the evening, a trail for adults.",
-    "html": "<b>14:30–17:00</b> haunted cellar, Boo chamber, workshops and games in the courtyard, face painting.\n<b>17:00</b> lantern parade through the town, the route is suitable for prams.\n<b>Contest for the most beautiful carved pumpkin:</b> register by 16:30 with the lord of the castle, winners announced at 16:45.\nVisitors in costumes welcome. Refreshments available, admission by donation.\n<b>New this year: Halloween trail for adults from 18:30.</b> Register by 24 Oct at zivyzamektouzim@email.cz, admission 100 CZK. Not for the faint-hearted."
+    "html": "The courtyard was teeming with all kinds of creatures 🧟👻🧛🏻💀 Young and old tried out all sorts of tasks and gave their brains a workout 😉🏰 There was a spooky trail, workshops, jumping into the pile of leaves, carved pumpkins and a lantern parade.\nWe are delighted by the huge turnout. Have a look at what a wonderful time we all had 👋 And after dark, strange things happened on the trail for adults… 👻"
    },
    "2026-11-01-poznej-pomoz": {
     "title": "Poznej & pomoz (Discover & Help)",
@@ -1777,7 +1777,7 @@ window.L10N={
     "title": "XVII. Schloss-CITO und Kennenlernen & Mithelfen",
     "when": "Sa 10–16 · So 10–17",
     "short": "Samstag: Aufräumen rund um das Schloss und Hilfe im Garten, es spielt Longway. Sonntag: Jäteinsatz am Hang für die Spielelemente für Kinder.",
-    "html": "<b>Samstag, 17. 10., 10:00–16:00: XVII. Schloss-CITO.</b> Wir räumen die Umgebung des Schlosses auf und helfen vor allem beim Bau des Schlossgartens. Kleine Ausstellung zum Geocaching, Event-CWG für 10 CZK. Den ganzen Tag spielt die Schlossband Longway.\n<b>Sonntag, 18. 10., 10:00–17:00: Jäteinsatz Kennenlernen &amp; Mithelfen.</b> Helfen Sie beim Aufräumen des Hangs für die Spielelemente für Kinder und bringen wir den Schlossgarten gemeinsam einen Schritt weiter.\nVerpflegung an beiden Tagen: Gulasch, Würstchen, Bratwurst, Brot, Kaffee, Tee, Bier und Limonade."
+    "html": "Starke Erlebnisse soll man ja erst sacken lassen ❤️ Also haben wir uns das Ergebnis erst am Sonntagmorgen angeschaut. Das Gefühl war dasselbe, und wir hätten fast geweint, was am Samstag alles geschafft wurde 🍀🏰 Wenn zu jedem Arbeitseinsatz zehn Leute kämen, wären die Fortschritte unglaublich.\nDanke den Geocachern, die zum CITO gekommen sind, und wir freuen uns sehr, dass diesmal auch Einheimische dabei waren. Wir hoffen, dass sie die Begeisterung für dieses riesige Stück Arbeit in Theusing verbreiten und wir beim nächsten Mal mehr sind 🍀\nAm Sonntag hatten wir vor lauter Arbeit nicht einmal Zeit für Fotos 🫣 Danke allen, die mit angepackt haben, und allen, die etwas Leckeres mitgebracht haben. Das Gulasch war wunderbar 😋"
    },
    "2026-10-25": {
     "title": "Kindereinsatz: Laub rechen",
@@ -1789,7 +1789,7 @@ window.L10N={
     "title": "Halloween auf dem Schloss",
     "when": "Samstag · 14:30–17:00",
     "short": "Gruselkeller, Bastelwerkstätten, Laternenumzug und Wettbewerb um den schönsten Kürbis. Am Abend ein Pfad für Erwachsene.",
-    "html": "<b>14:30–17:00</b> Gruselkeller, Buh-Kammer, Bastelwerkstätten und Spiele im Schlosshof, Kinderschminken.\n<b>17:00</b> Laternenumzug durch die Stadt, die Strecke ist kinderwagentauglich.\n<b>Wettbewerb um den schönsten geschnitzten Kürbis:</b> Anmeldung bis 16:30 beim Schlossherrn, Siegerehrung um 16:45.\nBesucher in Kostümen sind willkommen. Für Verpflegung ist gesorgt, Eintritt: freiwillige Spende.\n<b>Dieses Jahr neu: Halloween-Pfad für Erwachsene ab 18:30.</b> Anmeldung bis 24. 10. unter zivyzamektouzim@email.cz, Eintritt 100 CZK. Nichts für schwache Nerven."
+    "html": "Im Schlosshof wimmelte es von allerlei Gestalten 🧟👻🧛🏻💀 Groß und Klein probierten die verschiedensten Aufgaben aus und zerbrachen sich die Köpfe 😉🏰 Es gab einen Gruselpfad, Bastelwerkstätten, Sprünge in den Laubhaufen, geschnitzte Kürbisse und einen Laternenumzug.\nWir freuen uns über das riesige Interesse. Schaut mal, wie toll wir es alle hatten 👋 Und nach Einbruch der Dunkelheit geschahen auf dem Pfad für Erwachsene seltsame Dinge… 👻"
    },
    "2026-11-01-poznej-pomoz": {
     "title": "Poznej & pomoz (Entdecke & hilf)",

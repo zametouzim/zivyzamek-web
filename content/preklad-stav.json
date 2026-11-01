@@ -3745,13 +3745,9 @@
 }
 },
 "content/akce/2026-10-17.json|de|text": {
-"cs": "cdb77f20edbb",
-"out": "2de08949edc8",
-"radky": {
-"02b4b169fca5": "**Samstag, 17. 10., 10:00–16:00: XVII. Schloss-CITO.** Wir räumen die Umgebung des Schlosses auf und helfen vor allem beim Bau des Schlossgartens. Kleine Ausstellung zum Geocaching, Event-CWG für 10 CZK. Den ganzen Tag spielt die Schlossband Longway.",
-"91fad971081f": "**Sonntag, 18. 10., 10:00–17:00: Jäteinsatz Kennenlernen & Mithelfen.** Helfen Sie beim Aufräumen des Hangs für die Spielelemente für Kinder und bringen wir den Schlossgarten gemeinsam einen Schritt weiter.",
-"b37f7ba84782": "Verpflegung an beiden Tagen: Gulasch, Würstchen, Bratwurst, Brot, Kaffee, Tee, Bier und Limonade."
-}
+"cs": "4435d847a6b5",
+"out": "1da372fb9532",
+"rucne": true
 },
 "content/akce/2026-10-17.json|de|title": {
 "cs": "2879aea4001b",
@@ -3775,13 +3771,9 @@
 }
 },
 "content/akce/2026-10-17.json|en|text": {
-"cs": "cdb77f20edbb",
-"out": "ba54bd287452",
-"radky": {
-"02b4b169fca5": "**Saturday 17 Oct, 10:00–16:00: 17th Castle CITO.** We will clean up the area around the castle and above all help build the castle garden. A small exhibition about geocaching, event CWG for 10 CZK. The castle band Longway plays all day.",
-"91fad971081f": "**Sunday 18 Oct, 10:00–17:00: Get to Know & Help weeding work party.** Help us clear the slope for the children’s play features and move the castle garden a step further together.",
-"b37f7ba84782": "Refreshments on both days: goulash, sausages, bread, coffee, tea, beer and soft drinks."
-}
+"cs": "4435d847a6b5",
+"out": "c31d15b7117b",
+"rucne": true
 },
 "content/akce/2026-10-17.json|en|title": {
 "cs": "2879aea4001b",
@@ -3857,15 +3849,9 @@
 }
 },
 "content/akce/2026-10-31.json|de|text": {
-"cs": "9679363020ed",
-"out": "d966d9f69684",
-"radky": {
-"64758cac38cf": "**17:00** Laternenumzug durch die Stadt, die Strecke ist kinderwagentauglich.",
-"93c4009d0ec7": "**Wettbewerb um den schönsten geschnitzten Kürbis:** Anmeldung bis 16:30 beim Schlossherrn, Siegerehrung um 16:45.",
-"dae4ee48c7a6": "**14:30–17:00** Gruselkeller, Buh-Kammer, Bastelwerkstätten und Spiele im Schlosshof, Kinderschminken.",
-"fa42b552db2f": "Besucher in Kostümen sind willkommen. Für Verpflegung ist gesorgt, Eintritt: freiwillige Spende.",
-"fbc2c1285507": "**Dieses Jahr neu: Halloween-Pfad für Erwachsene ab 18:30.** Anmeldung bis 24. 10. unter zivyzamektouzim@email.cz, Eintritt 100 CZK. Nichts für schwache Nerven."
-}
+"cs": "a74c523514be",
+"out": "8ffa96a8974f",
+"rucne": true
 },
 "content/akce/2026-10-31.json|de|title": {
 "cs": "0be5eb1c58e3",
@@ -3889,15 +3875,9 @@
 }
 },
 "content/akce/2026-10-31.json|en|text": {
-"cs": "9679363020ed",
-"out": "d45292a6a5dc",
-"radky": {
-"64758cac38cf": "**17:00** lantern parade through the town, the route is suitable for prams.",
-"93c4009d0ec7": "**Contest for the most beautiful carved pumpkin:** register by 16:30 with the lord of the castle, winners announced at 16:45.",
-"dae4ee48c7a6": "**14:30–17:00** haunted cellar, Boo chamber, workshops and games in the courtyard, face painting.",
-"fa42b552db2f": "Visitors in costumes welcome. Refreshments available, admission by donation.",
-"fbc2c1285507": "**New this year: Halloween trail for adults from 18:30.** Register by 24 Oct at zivyzamektouzim@email.cz, admission 100 CZK. Not for the faint-hearted."
-}
+"cs": "a74c523514be",
+"out": "4d125b64e323",
+"rucne": true
 },
 "content/akce/2026-10-31.json|en|title": {
 "cs": "0be5eb1c58e3",
