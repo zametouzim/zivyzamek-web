@@ -2,13 +2,13 @@ window.DEMO_CONFIG={
  "backend": {
   "name": "test-repo"
  },
- "site_url": "https://zametouzim.github.io/zivyzamek-web/",
- "display_url": "https://zametouzim.github.io/zivyzamek-web/",
+ "site_url": "https://www.zivyzamektouzim.cz/",
+ "display_url": "https://www.zivyzamektouzim.cz/",
  "slug": {
   "encoding": "ascii",
   "clean_accents": true
  },
- "logo_url": "https://zametouzim.github.io/zivyzamek-web/img/logo.png",
+ "logo_url": "https://www.zivyzamektouzim.cz/img/logo.png",
  "media_folder": "img/uploads",
  "public_folder": "img/uploads",
  "collections": [
