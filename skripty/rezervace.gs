@@ -356,58 +356,74 @@ function text(klic, r) {
     en: 'Event: ' + nazev + '\nWhen: ' + kdyCele + '\n' + vst + '\nBooking number: ' + r.vs,
     de: 'Veranstaltung: ' + nazev + '\nWann: ' + kdyCele + '\n' + vst + '\nReservierungsnummer: ' + r.vs
   }[l];
-  var podpis = { cs: '\n\nŽivý zámek Toužim z. s.\n' + WEB, en: '\n\nŽivý zámek Toužim z. s.\n' + WEB + '?lang=en', de: '\n\nŽivý zámek Toužim z. s.\n' + WEB + '?lang=de' }[l];
+  var podpis = {
+    cs: '\n\nS přátelským pozdravem\nŽivý zámek Toužim z. s.\n' + WEB,
+    en: '\n\nKind regards\nŽivý zámek Toužim z. s.\n' + WEB + '?lang=en',
+    de: '\n\nMit freundlichen Grüßen\nŽivý zámek Toužim z. s.\n' + WEB + '?lang=de'
+  }[l];
   var T = {
     cs: {
-      platbaPredmet: 'Rezervace ' + r.vs + ': zbývá zaplatit',
-      platba: 'Dobrý den,\n\nděkujeme za rezervaci.\n\n' + info + '\n\nRezervace platí až po zaplacení. Prosíme o platbu do ' + do_ + ', jinak rezervace propadne.\n\n' +
-              'Účet: ' + UCET + '\nČástka: ' + r.castka + ' Kč\nVariabilní symbol: ' + r.vs + '\n\nQR kód pro platbu: ' + odkaz +
-              '\n\nAž platbu spárujeme, pošleme vám potvrzení. Zaplacené vstupné se nevrací.' + podpis,
-      potvrzeniPredmet: 'Rezervace ' + r.vs + ' potvrzena',
-      potvrzeni: 'Dobrý den,\n\nvaše rezervace je potvrzená.\n\n' + info + '\n\nTěšíme se na vás.' + podpis,
-      nedoplatekPredmet: 'Rezervace ' + r.vs + ': chybí doplatit ' + chybi + ' Kč',
-      nedoplatek: 'Dobrý den,\n\nk vaší rezervaci přišlo ' + r.zaplaceno + ' Kč, cena je ' + r.castka + ' Kč. Chybí doplatit ' + chybi + ' Kč.\n\n' + info +
-                  '\n\nDoplaťte prosím do ' + do_ + ' se stejným variabilním symbolem, jinak rezervace propadne.\n\n' +
-                  'Účet: ' + UCET + '\nČástka: ' + chybi + ' Kč\nVariabilní symbol: ' + r.vs + '\n\nQR kód pro doplatek: ' + odkazDoplatek + podpis,
-      propadloCast: 'Dobrý den,\n\nvaše rezervace propadla, protože jsme do ' + do_ + ' neobdrželi celou částku. Přišlo ' + r.zaplaceno + ' z ' + r.castka +
-                    ' Kč. Místa jsme uvolnili.\n\n' + info + '\n\nKvůli vrácení zaplacené částky se vám ozveme.' + podpis,
-      propadloPredmet: 'Rezervace ' + r.vs + ' propadla',
-      propadlo: 'Dobrý den,\n\nvaše rezervace propadla, protože jsme do ' + do_ + ' neobdrželi platbu. Místa jsme uvolnili.\n\n' + info +
-                '\n\nPokud jste už zaplatili, ozvěte se nám prosím odpovědí na tento e-mail.' + podpis
+      platbaPredmet: 'Děkujeme za rezervaci č. ' + r.vs,
+      platba: 'Dobrý den,\n\nmoc děkujeme za vaši rezervaci, velmi nás těší, že se k nám chystáte.\n\n' + info +
+              '\n\nAbychom vám místa mohli pevně podržet, prosíme vás o úhradu do ' + do_ + '. Kdyby platba do té doby nedorazila, rezervace se bohužel sama zruší a místa nabídneme dalším zájemcům.\n\n' +
+              'Účet: ' + UCET + '\nČástka: ' + r.castka + ' Kč\nVariabilní symbol: ' + r.vs + '\n\nNejjednodušší je naskenovat tento QR kód v aplikaci vaší banky: ' + odkaz +
+              '\n\nJakmile platbu přijmeme, pošleme vám potvrzení. Prosíme o pochopení, že zaplacené vstupné už nevracíme.\n\nKdybyste cokoli potřebovali, stačí odpovědět na tento e-mail.' + podpis,
+      potvrzeniPredmet: 'Vaše rezervace č. ' + r.vs + ' je potvrzená',
+      potvrzeni: 'Dobrý den,\n\nděkujeme, vaše rezervace je potvrzená a místa máte pevně zajištěná.\n\n' + info +
+                 '\n\nMoc se na vás těšíme. Pokud byste nakonec nemohli přijít, dejte nám prosím vědět odpovědí na tento e-mail, ať můžeme místo nabídnout někomu dalšímu.' + podpis,
+      nedoplatekPredmet: 'Rezervace č. ' + r.vs + ': prosíme o doplacení ' + chybi + ' Kč',
+      nedoplatek: 'Dobrý den,\n\nděkujeme za platbu k vaší rezervaci. Dorazilo nám ' + r.zaplaceno + ' Kč, celková cena je ale ' + r.castka + ' Kč, takže zbývá doplatit ' + chybi + ' Kč. To se snadno stane, třeba při překlepu v částce.\n\n' + info +
+                  '\n\nProsíme vás o doplacení do ' + do_ + ' se stejným variabilním symbolem, aby rezervace zůstala platná.\n\n' +
+                  'Účet: ' + UCET + '\nČástka: ' + chybi + ' Kč\nVariabilní symbol: ' + r.vs + '\n\nQR kód pro doplatek: ' + odkazDoplatek +
+                  '\n\nDěkujeme a v případě nejasností stačí odpovědět na tento e-mail.' + podpis,
+      propadloCast: 'Dobrý den,\n\nje nám líto, ale do ' + do_ + ' k vaší rezervaci nedorazila celá částka (přišlo ' + r.zaplaceno + ' z ' + r.castka +
+                    ' Kč), a proto jsme rezervaci museli zrušit a místa uvolnit.\n\n' + info +
+                    '\n\nZaplacenou částku vám samozřejmě vrátíme, ozveme se vám kvůli tomu co nejdříve. Pokud máte o akci stále zájem, budeme rádi, když si na webu vytvoříte novou rezervaci, dokud jsou volná místa.' + podpis,
+      propadloPredmet: 'Rezervace č. ' + r.vs + ' byla zrušena',
+      propadlo: 'Dobrý den,\n\nje nám líto, ale do ' + do_ + ' jsme k vaší rezervaci neobdrželi platbu, a proto jsme ji museli zrušit a místa uvolnit dalším zájemcům.\n\n' + info +
+                '\n\nPokud jste už zaplatili, omlouváme se a prosíme, ozvěte se nám odpovědí na tento e-mail, vše rádi dořešíme. A pokud o akci stále máte zájem, budeme rádi, když si na webu vytvoříte novou rezervaci, dokud jsou volná místa.' + podpis
     },
     en: {
-      platbaPredmet: 'Booking ' + r.vs + ': payment due',
-      platba: 'Hello,\n\nthank you for your booking.\n\n' + info + '\n\nThe booking is valid once paid. Please pay by ' + do_ + ', otherwise the booking expires.\n\n' +
-              'Account: ' + UCET + ' (IBAN ' + IBAN + ')\nAmount: ' + r.castka + ' CZK\nVariable symbol (reference): ' + r.vs + '\n\nQR code for payment: ' + odkaz +
-              '\n\nOnce we match your payment, we will send you a confirmation. Admission fees are non-refundable.' + podpis,
-      potvrzeniPredmet: 'Booking ' + r.vs + ' confirmed',
-      potvrzeni: 'Hello,\n\nyour booking is confirmed.\n\n' + info + '\n\nWe look forward to seeing you.' + podpis,
-      nedoplatekPredmet: 'Booking ' + r.vs + ': ' + chybi + ' CZK still due',
-      nedoplatek: 'Hello,\n\nwe have received ' + r.zaplaceno + ' CZK for your booking, the price is ' + r.castka + ' CZK. ' + chybi + ' CZK is still due.\n\n' + info +
-                  '\n\nPlease pay the rest by ' + do_ + ' with the same variable symbol, otherwise the booking expires.\n\n' +
-                  'Account: ' + UCET + ' (IBAN ' + IBAN + ')\nAmount: ' + chybi + ' CZK\nVariable symbol (reference): ' + r.vs + '\n\nQR code for the remaining payment: ' + odkazDoplatek + podpis,
-      propadloCast: 'Hello,\n\nyour booking has expired because we did not receive the full amount by ' + do_ + '. We received ' + r.zaplaceno + ' of ' + r.castka +
-                    ' CZK. The places have been released.\n\n' + info + '\n\nWe will contact you about refunding the amount you paid.' + podpis,
-      propadloPredmet: 'Booking ' + r.vs + ' expired',
-      propadlo: 'Hello,\n\nyour booking has expired because we did not receive payment by ' + do_ + '. The places have been released.\n\n' + info +
-                '\n\nIf you have already paid, please reply to this e-mail.' + podpis
+      platbaPredmet: 'Thank you for your booking no. ' + r.vs,
+      platba: 'Hello,\n\nthank you very much for your booking, we are delighted that you are coming to see us.\n\n' + info +
+              '\n\nSo that we can hold your places for you, please pay by ' + do_ + '. Unfortunately, if the payment does not arrive by then, the booking will be cancelled automatically and the places offered to others.\n\n' +
+              'Account: ' + UCET + ' (IBAN ' + IBAN + ')\nAmount: ' + r.castka + ' CZK\nVariable symbol (reference): ' + r.vs + '\n\nThe easiest way is to scan this QR code in your banking app: ' + odkaz +
+              '\n\nAs soon as we receive your payment, we will send you a confirmation. Please understand that admission fees are non-refundable.\n\nIf you need anything at all, simply reply to this e-mail.' + podpis,
+      potvrzeniPredmet: 'Your booking no. ' + r.vs + ' is confirmed',
+      potvrzeni: 'Hello,\n\nthank you, your booking is confirmed and your places are reserved.\n\n' + info +
+                 '\n\nWe are very much looking forward to seeing you. If you find you cannot come after all, please let us know by replying to this e-mail so that we can offer the place to someone else.' + podpis,
+      nedoplatekPredmet: 'Booking no. ' + r.vs + ': please pay the remaining ' + chybi + ' CZK',
+      nedoplatek: 'Hello,\n\nthank you for your payment for your booking. We have received ' + r.zaplaceno + ' CZK, but the total price is ' + r.castka + ' CZK, so ' + chybi + ' CZK is still due. This can easily happen, for example with a typo in the amount.\n\n' + info +
+                  '\n\nPlease pay the rest by ' + do_ + ' with the same variable symbol so that your booking remains valid.\n\n' +
+                  'Account: ' + UCET + ' (IBAN ' + IBAN + ')\nAmount: ' + chybi + ' CZK\nVariable symbol (reference): ' + r.vs + '\n\nQR code for the remaining payment: ' + odkazDoplatek +
+                  '\n\nThank you, and if anything is unclear, simply reply to this e-mail.' + podpis,
+      propadloCast: 'Hello,\n\nwe are sorry, but the full amount for your booking did not arrive by ' + do_ + ' (we received ' + r.zaplaceno + ' of ' + r.castka +
+                    ' CZK), so we had to cancel the booking and release the places.\n\n' + info +
+                    '\n\nWe will of course refund the amount you paid and will contact you about it as soon as possible. If you are still interested in the event, we would be glad if you made a new booking on our website while places are available.' + podpis,
+      propadloPredmet: 'Booking no. ' + r.vs + ' has been cancelled',
+      propadlo: 'Hello,\n\nwe are sorry, but we did not receive payment for your booking by ' + do_ + ', so we had to cancel it and release the places to others.\n\n' + info +
+                '\n\nIf you have already paid, we apologise and kindly ask you to get in touch by replying to this e-mail, we will be happy to sort it out. And if you are still interested in the event, we would be glad if you made a new booking on our website while places are available.' + podpis
     },
     de: {
-      platbaPredmet: 'Reservierung ' + r.vs + ': Zahlung ausstehend',
-      platba: 'Guten Tag,\n\nvielen Dank für Ihre Reservierung.\n\n' + info + '\n\nDie Reservierung gilt erst nach der Zahlung. Bitte zahlen Sie bis ' + do_ + ', sonst verfällt die Reservierung.\n\n' +
-              'Konto: ' + UCET + ' (IBAN ' + IBAN + ')\nBetrag: ' + r.castka + ' CZK\nVariabler Symbol (Referenz): ' + r.vs + '\n\nQR-Code zur Zahlung: ' + odkaz +
-              '\n\nSobald wir Ihre Zahlung zugeordnet haben, schicken wir Ihnen eine Bestätigung. Bezahlter Eintritt wird nicht erstattet.' + podpis,
-      potvrzeniPredmet: 'Reservierung ' + r.vs + ' bestätigt',
-      potvrzeni: 'Guten Tag,\n\nIhre Reservierung ist bestätigt.\n\n' + info + '\n\nWir freuen uns auf Sie.' + podpis,
-      nedoplatekPredmet: 'Reservierung ' + r.vs + ': noch ' + chybi + ' CZK offen',
-      nedoplatek: 'Guten Tag,\n\nfür Ihre Reservierung sind ' + r.zaplaceno + ' CZK eingegangen, der Preis beträgt ' + r.castka + ' CZK. Es fehlen noch ' + chybi + ' CZK.\n\n' + info +
-                  '\n\nBitte zahlen Sie den Rest bis ' + do_ + ' mit demselben variablen Symbol, sonst verfällt die Reservierung.\n\n' +
-                  'Konto: ' + UCET + ' (IBAN ' + IBAN + ')\nBetrag: ' + chybi + ' CZK\nVariabler Symbol (Referenz): ' + r.vs + '\n\nQR-Code für die Restzahlung: ' + odkazDoplatek + podpis,
-      propadloCast: 'Guten Tag,\n\nIhre Reservierung ist verfallen, weil bis ' + do_ + ' nicht der volle Betrag eingegangen ist. Eingegangen sind ' + r.zaplaceno + ' von ' + r.castka +
-                    ' CZK. Die Plätze wurden freigegeben.\n\n' + info + '\n\nWegen der Rückerstattung des bezahlten Betrags melden wir uns bei Ihnen.' + podpis,
-      propadloPredmet: 'Reservierung ' + r.vs + ' verfallen',
-      propadlo: 'Guten Tag,\n\nIhre Reservierung ist verfallen, weil bis ' + do_ + ' keine Zahlung eingegangen ist. Die Plätze wurden freigegeben.\n\n' + info +
-                '\n\nFalls Sie bereits bezahlt haben, antworten Sie bitte auf diese E-Mail.' + podpis
+      platbaPredmet: 'Vielen Dank für Ihre Reservierung Nr. ' + r.vs,
+      platba: 'Guten Tag,\n\nvielen herzlichen Dank für Ihre Reservierung, wir freuen uns sehr, dass Sie uns besuchen möchten.\n\n' + info +
+              '\n\nDamit wir die Plätze fest für Sie reservieren können, bitten wir Sie um Zahlung bis ' + do_ + '. Sollte die Zahlung bis dahin nicht eingehen, wird die Reservierung leider automatisch storniert und die Plätze werden anderen Interessenten angeboten.\n\n' +
+              'Konto: ' + UCET + ' (IBAN ' + IBAN + ')\nBetrag: ' + r.castka + ' CZK\nVariabler Symbol (Referenz): ' + r.vs + '\n\nAm einfachsten scannen Sie diesen QR-Code in Ihrer Banking-App: ' + odkaz +
+              '\n\nSobald Ihre Zahlung eingegangen ist, schicken wir Ihnen eine Bestätigung. Bitte haben Sie Verständnis dafür, dass bezahlter Eintritt nicht erstattet wird.\n\nWenn Sie etwas brauchen, antworten Sie einfach auf diese E-Mail.' + podpis,
+      potvrzeniPredmet: 'Ihre Reservierung Nr. ' + r.vs + ' ist bestätigt',
+      potvrzeni: 'Guten Tag,\n\nvielen Dank, Ihre Reservierung ist bestätigt und Ihre Plätze sind fest reserviert.\n\n' + info +
+                 '\n\nWir freuen uns sehr auf Sie. Falls Sie doch nicht kommen können, geben Sie uns bitte mit einer Antwort auf diese E-Mail Bescheid, damit wir den Platz jemand anderem anbieten können.' + podpis,
+      nedoplatekPredmet: 'Reservierung Nr. ' + r.vs + ': bitte zahlen Sie noch ' + chybi + ' CZK',
+      nedoplatek: 'Guten Tag,\n\nvielen Dank für Ihre Zahlung zu Ihrer Reservierung. Bei uns sind ' + r.zaplaceno + ' CZK eingegangen, der Gesamtpreis beträgt jedoch ' + r.castka + ' CZK, es fehlen also noch ' + chybi + ' CZK. Das kann leicht passieren, zum Beispiel durch einen Tippfehler beim Betrag.\n\n' + info +
+                  '\n\nBitte zahlen Sie den Rest bis ' + do_ + ' mit demselben variablen Symbol, damit Ihre Reservierung gültig bleibt.\n\n' +
+                  'Konto: ' + UCET + ' (IBAN ' + IBAN + ')\nBetrag: ' + chybi + ' CZK\nVariabler Symbol (Referenz): ' + r.vs + '\n\nQR-Code für die Restzahlung: ' + odkazDoplatek +
+                  '\n\nVielen Dank, und bei Unklarheiten antworten Sie einfach auf diese E-Mail.' + podpis,
+      propadloCast: 'Guten Tag,\n\nes tut uns leid, aber bis ' + do_ + ' ist für Ihre Reservierung nicht der volle Betrag eingegangen (eingegangen sind ' + r.zaplaceno + ' von ' + r.castka +
+                    ' CZK), daher mussten wir die Reservierung stornieren und die Plätze freigeben.\n\n' + info +
+                    '\n\nDen bezahlten Betrag erstatten wir Ihnen selbstverständlich zurück und melden uns deswegen so bald wie möglich bei Ihnen. Wenn Sie weiterhin Interesse an der Veranstaltung haben, freuen wir uns, wenn Sie auf unserer Website eine neue Reservierung vornehmen, solange Plätze frei sind.' + podpis,
+      propadloPredmet: 'Reservierung Nr. ' + r.vs + ' wurde storniert',
+      propadlo: 'Guten Tag,\n\nes tut uns leid, aber bis ' + do_ + ' ist für Ihre Reservierung keine Zahlung eingegangen, daher mussten wir sie stornieren und die Plätze für andere Interessenten freigeben.\n\n' + info +
+                '\n\nFalls Sie bereits bezahlt haben, entschuldigen wir uns und bitten Sie, sich mit einer Antwort auf diese E-Mail bei uns zu melden, wir klären das gerne. Und wenn Sie weiterhin Interesse an der Veranstaltung haben, freuen wir uns, wenn Sie auf unserer Website eine neue Reservierung vornehmen, solange Plätze frei sind.' + podpis
     }
   };
   return T[l][klic];
