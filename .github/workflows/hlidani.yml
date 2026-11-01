@@ -1,0 +1,43 @@
+# Hlídání ostrého webu: každé 3 hodiny zkontroluje stránky, certifikát, přesměrování a skripty Google (tools/hlidani.py).
+# Při problému otevře hlášení (issue) „Web má problém“, GitHub o něm pošle e-mail. Když se web spraví, hlášení samo zavře.
+name: Hlídání webu
+on:
+  schedule:
+    - cron: '17 */3 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+concurrency: hlidani
+jobs:
+  hlidani:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - id: kontrola
+        run: python tools/hlidani.py
+        continue-on-error: true
+      - name: Otevřít nebo zavřít hlášení
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VYSLEDEK: ${{ steps.kontrola.outcome }}
+        run: |
+          cislo=$(gh issue list --state open --label hlidani --json number --jq '.[0].number // empty')
+          if [ "$VYSLEDEK" = "success" ]; then
+            if [ -n "$cislo" ]; then gh issue close "$cislo" --comment "Web je znovu v pořádku."; fi
+            exit 0
+          fi
+          gh label create hlidani --color B60205 --description "Automatické hlídání webu" 2>/dev/null || true
+          if [ -n "$cislo" ]; then
+            # stejný problém trvá: připsat komentář jen jednou za den, ať nechodí e-mail každé 3 hodiny
+            posledni=$(gh issue view "$cislo" --json comments,createdAt --jq '(.comments[-1].createdAt // .createdAt)')
+            if [ $(( $(date +%s) - $(date -d "$posledni" +%s) )) -gt 86000 ]; then
+              gh issue comment "$cislo" --body-file hlidani-vysledek.md
+            fi
+          else
+            gh issue create --title "Web má problém" --label hlidani --body-file hlidani-vysledek.md
+          fi
+          exit 1
