@@ -779,7 +779,7 @@ window.L10N={
    },
    "2026-05-16": {
     "title": "Castle CITO, spring",
-    "html": "The spring weekend belonged to the 16th Castle CITO and, on Sunday, the first Poznej &amp; pomoz (Discover &amp; Help) work party. Most of the area below the wall was cleared and a rose bed was planted along the castle wall. In the afternoon Jean de Carro, the stage name of radio journalist, musician and storyteller Josef Šorfa, performed his theatre-and-music show Toulky krajem, full of legends and song ballads, including the legend O černém mnichovi (Of the Black Monk) written specially for the castle in Toužim. The show was free for the volunteers and CITO participants."
+    "html": "The spring weekend belonged to the 16th Castle CITO and, on Sunday, the first Discover &amp; Help work party. Most of the area below the wall was cleared and a rose bed was planted along the castle wall. In the afternoon Jean de Carro, the stage name of radio journalist, musician and storyteller Josef Šorfa, performed his theatre-and-music show Toulky krajem, full of legends and song ballads, including the legend O černém mnichovi (Of the Black Monk) written specially for the castle in Toužim. The show was free for the volunteers and CITO participants."
    },
    "2026-05-30": {
     "title": "Children's Day on board",
@@ -839,11 +839,11 @@ window.L10N={
     "html": "The afternoon of the garden work party was given over to celebrating the society's 10 years, with a cake, music by Pedro and certificates presented to honorary members of the castle retinue. In the evening we sat by the fire with a guitar; during the day the first castle flower nursery was also started."
    },
    "2026-09-26": {
-    "title": "Poznej & pomoz (Discover & Help): work party at the castle",
+    "title": "Discover & Help: work party at the castle",
     "html": "Another garden work party during European Heritage Days. The first castle flower nursery was started, and on Saturday we celebrated the society's 10 years."
    },
    "2026-10-17": {
-    "title": "17th Castle CITO and Get to Know & Help",
+    "title": "17th Castle CITO and Discover & Help",
     "when": "Sat 10–16 · Sun 10–17",
     "short": "Saturday: clean-up around the castle and help with the garden, with live music by Longway. Sunday: weeding work party on the slope for the children’s play features.",
     "html": "They say strong experiences need time to sink in ❤️ So we only went to look at the result on Sunday morning. The feeling was the same and we nearly cried at how much got done on Saturday 🍀🏰 If ten people came to every work party, the progress would be incredible.\nThank you to the geocachers who came to the CITO, and we are really happy that local people joined in this time too. We hope they will spread the enthusiasm for this huge piece of work around Toužim and that there will be more of us next time 🍀\nOn Sunday there was so much work that we didn't even take photos 🫣 Thank you to everyone who lent a hand and to those who brought something tasty. The goulash was wonderful 😋"
@@ -861,13 +861,13 @@ window.L10N={
     "html": "The courtyard was teeming with all kinds of creatures 🧟👻🧛🏻💀 Young and old tried out all sorts of tasks and gave their brains a workout 😉🏰 There was a spooky trail, workshops, jumping into the pile of leaves, carved pumpkins and a lantern parade.\nWe are delighted by the huge turnout. Have a look at what a wonderful time we all had 👋 And after dark, strange things happened on the trail for adults… 👻"
    },
    "2026-11-01-poznej-pomoz": {
-    "title": "Poznej & pomoz (Discover & Help)",
+    "title": "Discover & Help",
     "when": "Sunday 9am–4pm",
     "short": "Volunteer work day at Toužim Castle",
     "html": "Please help us prepare the site for the children’s play area and winterise the castle. You can also support us by bringing along some home-baked treats! Refreshments will be provided for those helping out."
    },
    "2026-11-21-poznej-pomoz": {
-    "title": "Find out more & help",
+    "title": "Discover & Help",
     "when": "Sat–Sun 9am–4pm",
     "short": "The last bit of work before hibernation!",
     "html": "<b>The last bit of work before hibernation!</b>\nBuilding flowerbeds, tidying up the slope for the children’s play area and preparing the castle for winter. You’re welcome to come along, even if you just want to make some tea or bring along a tasty treat :-)\n<b>Soup straight from the cauldron and something to warm everyone up!</b>\nWe look forward to seeing you!"
@@ -1726,7 +1726,7 @@ window.L10N={
    },
    "2026-05-16": {
     "title": "Schloss-CITO, Frühjahr",
-    "html": "Das Frühlingswochenende gehörte dem XVI. Schloss-CITO und am Sonntag dem ersten Arbeitseinsatz Poznej &amp; pomoz (Entdecke &amp; hilf). Der größte Teil der Fläche unter der Mauer wurde geräumt, und entlang der Schlossmauer entstand ein Rosenbeet. Am Nachmittag trat Jean de Carro – Künstlername des Rundfunkpublizisten, Musikers und Erzählers Josef Šorfa – mit seinem Theater- und Musikprogramm Toulky krajem auf, voller Sagen und Liedballaden, darunter die eigens für das Schloss Theusing bestimmte Sage O černém mnichovi (Vom Schwarzen Mönch). Für die Helfer und CITO-Teilnehmer war die Vorstellung kostenlos."
+    "html": "Das Frühlingswochenende gehörte dem XVI. Schloss-CITO und am Sonntag dem ersten Arbeitseinsatz Entdecke &amp; hilf. Der größte Teil der Fläche unter der Mauer wurde geräumt, und entlang der Schlossmauer entstand ein Rosenbeet. Am Nachmittag trat Jean de Carro – Künstlername des Rundfunkpublizisten, Musikers und Erzählers Josef Šorfa – mit seinem Theater- und Musikprogramm Toulky krajem auf, voller Sagen und Liedballaden, darunter die eigens für das Schloss Theusing bestimmte Sage O černém mnichovi (Vom Schwarzen Mönch). Für die Helfer und CITO-Teilnehmer war die Vorstellung kostenlos."
    },
    "2026-05-30": {
     "title": "Kindertag an Bord",
@@ -1786,11 +1786,11 @@ window.L10N={
     "html": "Der Nachmittag des Garteneinsatzes gehörte der Feier zu 10 Jahren Vereinsarbeit, mit Torte, Musik von Pedro und der Übergabe von Urkunden an Ehrenmitglieder des Schlossgefolges. Am Abend saßen wir mit Gitarre am Feuer; tagsüber entstand außerdem die erste Blumenbaumschule des Schlosses."
    },
    "2026-09-26": {
-    "title": "Poznej & pomoz (Entdecke & hilf): Einsatz im Schloss",
+    "title": "Entdecke & hilf: Einsatz im Schloss",
     "html": "Ein weiterer Garteneinsatz während der Tage des europäischen Kulturerbes. Es entstand die erste Blumenbaumschule des Schlosses, und am Samstag feierten wir 10 Jahre Vereinsarbeit."
    },
    "2026-10-17": {
-    "title": "XVII. Schloss-CITO und Kennenlernen & Mithelfen",
+    "title": "XVII. Schloss-CITO und Entdecke & hilf",
     "when": "Sa 10–16 · So 10–17",
     "short": "Samstag: Aufräumen rund um das Schloss und Hilfe im Garten, es spielt Longway. Sonntag: Jäteinsatz am Hang für die Spielelemente für Kinder.",
     "html": "Starke Erlebnisse soll man ja erst sacken lassen ❤️ Also haben wir uns das Ergebnis erst am Sonntagmorgen angeschaut. Das Gefühl war dasselbe, und wir hätten fast geweint, was am Samstag alles geschafft wurde 🍀🏰 Wenn zu jedem Arbeitseinsatz zehn Leute kämen, wären die Fortschritte unglaublich.\nDanke den Geocachern, die zum CITO gekommen sind, und wir freuen uns sehr, dass diesmal auch Einheimische dabei waren. Wir hoffen, dass sie die Begeisterung für dieses riesige Stück Arbeit in Theusing verbreiten und wir beim nächsten Mal mehr sind 🍀\nAm Sonntag hatten wir vor lauter Arbeit nicht einmal Zeit für Fotos 🫣 Danke allen, die mit angepackt haben, und allen, die etwas Leckeres mitgebracht haben. Das Gulasch war wunderbar 😋"
@@ -1808,13 +1808,13 @@ window.L10N={
     "html": "Im Schlosshof wimmelte es von allerlei Gestalten 🧟👻🧛🏻💀 Groß und Klein probierten die verschiedensten Aufgaben aus und zerbrachen sich die Köpfe 😉🏰 Es gab einen Gruselpfad, Bastelwerkstätten, Sprünge in den Laubhaufen, geschnitzte Kürbisse und einen Laternenumzug.\nWir freuen uns über das riesige Interesse. Schaut mal, wie toll wir es alle hatten 👋 Und nach Einbruch der Dunkelheit geschahen auf dem Pfad für Erwachsene seltsame Dinge… 👻"
    },
    "2026-11-01-poznej-pomoz": {
-    "title": "Poznej & pomoz (Entdecke & hilf)",
+    "title": "Entdecke & hilf",
     "when": "Sonntag 9–16 Uhr",
     "short": "Arbeitseinsatz auf Schloss Theusing",
     "html": "Helft uns dabei, den Platz für den Kinderspielbereich vorzubereiten und die Burg winterfest zu machen. Ihr könnt uns auch mit selbstgebackenen Leckereien unterstützen! Für die Helfer ist für Verpflegung gesorgt."
    },
    "2026-11-21-poznej-pomoz": {
-    "title": "Erfahren & Helfen",
+    "title": "Entdecke & hilf",
     "when": "Sa – So 9 – 16 Uhr",
     "short": "Der letzte Aushilfseinsatz vor dem Winterschlaf!",
     "html": "<b>Der letzte Aushilfsjob vor dem Winterschlaf!</b>\nBeete anlegen, den Hang für den Kinderspielplatz fertig herrichten und die Burg winterfest machen. Ihr seid herzlich willkommen, auch wenn ihr nur Tee kochen oder etwas Leckeres mitbringen möchtet :-)\n<b>Suppe aus dem Kessel und etwas zum Aufwärmen für jeden Helfer!</b>\nWir freuen uns auf Sie!"
@@ -2169,7 +2169,7 @@ window.L10N={
     {
      "src": "img/h-2026-ohen.jpg",
      "alt": "Freiwillige abends am Feuer auf dem Schlossgelände",
-     "cap": "Abend am Feuer nach dem Arbeitseinsatz „Kennenlernen & helfen“, 26. 9. 2026"
+     "cap": "Abend am Feuer nach dem Arbeitseinsatz Entdecke & hilf, 26. 9. 2026"
     }
    ],
    "stranky": []
