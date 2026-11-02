@@ -72,7 +72,7 @@ footer .cols{display:grid;grid-template-columns:200px 1fr 1fr 1fr;gap:32px;font-
 footer .cols>*{min-width:0;overflow-wrap:break-word}
 footer img{width:160px;max-width:100%;filter:invert(1)}
 footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--sun)}
-@media (max-width:1000px){footer .cols{grid-template-columns:1fr 1fr}}@media (max-width:560px){footer .cols{grid-template-columns:1fr;gap:24px}footer img{width:130px}}
+@media (max-width:1000px){footer .cols{grid-template-columns:1fr 1fr}}@media (max-width:560px){footer .cols{gap:24px 16px;font-size:clamp(12px,calc((100vw - 48px)/23),16px)}footer h2{font-size:clamp(12px,calc((100vw - 48px)/22),16px)}footer img{width:120px;max-width:100%}}
 
 /* Dotační kalendář: stejné tokeny jako web; jemné linky = 20 % barvy textu */
 :root{--soft:color-mix(in srgb,var(--ink) 18%,transparent);--bar:var(--cta-bg);--est:color-mix(in srgb,var(--ink) 45%,transparent)}
