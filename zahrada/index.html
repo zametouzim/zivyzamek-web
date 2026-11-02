@@ -126,7 +126,7 @@ html.tr-wait body{opacity:0}
 @media (max-width:620px){.season .tag-l{font-size:14px}}
 .otevreno{font-size:17px;background:var(--panel);border-left:4px solid var(--sun);padding:14px 18px;margin-top:22px;line-height:1.5}
 .otevreno b{font-family:var(--cond);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-right:4px}
-.otevreno a{color:inherit;font-weight:700;white-space:nowrap}
+.otevreno a{color:inherit;text-decoration:none;font-weight:700;white-space:nowrap}
 
 main section[data-page]{padding-block:0 96px}
 [id^="g-"]{scroll-margin-top:90px}
@@ -340,6 +340,9 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 @media (max-width:620px){.upcards{grid-template-columns:1fr}}
 .upcard{display:grid;grid-template-columns:92px 1fr auto;background:var(--panel);color:inherit;text-decoration:none;border-left:4px solid var(--accent);min-height:120px;transition:transform .15s}
 .upcard:hover{transform:translateY(-2px)}
+.upcard.empty .cal svg{width:34px;height:34px;color:var(--sun)}
+.upcard.empty .go{display:flex;flex-wrap:wrap;gap:6px 18px}
+.upcard.empty .go a{color:inherit;text-decoration:none}
 .upcard .cal{background:var(--navy);color:var(--navy-ink);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px 6px;gap:2px}
 .upcard .cal b{font-family:var(--cond);font-weight:600;font-size:30px;line-height:1;color:var(--sun)}
 .upcard .cal span{font-size:14px;text-transform:uppercase;letter-spacing:.06em}
@@ -351,7 +354,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 .upcard .pt{width:96px;height:auto;align-self:center;margin:12px 12px 12px 0;display:block;box-shadow:0 2px 8px rgba(0,0,0,.25)}
 @media (max-width:620px){.upcard{grid-template-columns:78px 1fr auto}.upcard .cal b{font-size:24px}.upcard .pt{width:72px;margin:10px 10px 10px 0}.upcard h3{font-size:18px}}
 .more{display:flex;gap:24px;flex-wrap:wrap;margin-top:18px;font-weight:700}
-.more a{color:inherit;display:inline-flex;align-items:center;min-height:44px}
+.more a{color:inherit;text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
 .card>a:not(.btn),.ak-back{display:inline-flex;align-items:center;min-height:44px}
 .give-mobile,.menu-btn{min-height:44px}
 .up .ev{grid-template-columns:140px 1fr 150px 104px;align-items:start}.up .ev .tag{white-space:normal;text-align:center;justify-self:stretch}
@@ -518,7 +521,7 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
         <figure style="margin:0"><img src="img/zahrada-plochy.jpg" alt="Upravená plocha zahrady u hradeb" style="width:100%;display:block;aspect-ratio:4/3;object-fit:cover"></figure>
         <div style="display:grid;gap:16px;align-content:start">
           <p>Zarostlý kout mezi Horním a Dolním zámkem měníme na odpočinkovou zahradu se záhony, lípou uprostřed a herním svahem pro děti. Při práci jsme objevili hradební zeď z 15. století.</p>
-          <p><b>Stav v říjnu 2026:</b> spodní polovina je srovnaná a první dva záhony vytyčené.</p>
+          <p><b>Stav v listopadu 2026:</b> spodní polovina je srovnaná, horní uklizená a stavíme bednění prvního záhonu.</p>
           <div class="ctas"><a class="btn" href="zahrada/">Celý projekt</a></div>
         </div>
       </div>
@@ -676,7 +679,8 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
           <li class="done"><span class="m"></span><span class="when">03/2026</span><span>Začátek prací a objev hradební zdi</span></li>
           <li class="done"><span class="m"></span><span class="when">04/2026</span><span>Archeologický průzkum, Dny dobrovolnictví (40 lidí, 20 % plochy)</span></li>
           <li class="done"><span class="m"></span><span class="when">05–09/2026</span><span>Pět brigád, spodní polovina srovnaná pod fólií, vytyčené dva záhony</span></li>
-          <li class="now"><span class="m"></span><span class="when">10/2026</span><span>Úklid horní poloviny a herní svah, brigáda 17.–18. 10.</span></li>
+          <li class="done"><span class="m"></span><span class="when">10/2026</span><span>Úklid horní poloviny zahrady a svahu</span></li>
+          <li class="now"><span class="m"></span><span class="when">11/2026</span><span>Stavíme bednění prvního záhonu (so 7. 11.) a modelujeme herní svah pro děti (21.–22. 11.)</span></li>
           <li><span class="m"></span><span class="when">duben 2027</span><span>Betonové základy pod všechny čtyři záhony</span></li>
           <li><span class="m"></span><span class="when">duben–květen 2027</span><span>Kamenné zídky záhonů</span></li>
           <li><span class="m"></span><span class="when">léto 2027</span><span>Hlína, výsadba, lípa, herní prvky, mlatové cesty</span></li>
@@ -964,9 +968,9 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
 <div class="copy" role="region" aria-label="Autorská práva"><div class="wrap">© <span id="cy">2026</span> Živý zámek Toužim z. s. · Web vytvořil Michal Nedvídek</div></div>
 
 <div class="lb" id="lb" hidden><img alt=""><button class="x" aria-label="Zavřít">×</button><button class="pv" aria-label="Předchozí">‹</button><button class="nx" aria-label="Další">›</button></div>
-<script src="data/i18n.js?v=252798af"></script>
+<script src="data/i18n.js?v=b3a57f0a"></script>
 <script src="data/akce.js?v=65ed12a6"></script>
-<script src="data/web.js?v=29cf4398"></script>
+<script src="data/web.js?v=3a4dc8e0"></script>
 <script>
 // Náhled konceptu z administrace (?nahled=…, viz tools/nahled.py): data konceptu přepíší zveřejněná
 (function(){var n=(location.search.match(/[?&]nahled=([a-z0-9-]{1,80})(?:&|$)/)||[])[1];if(!n)return;window.NAHLED=n;
@@ -1220,18 +1224,20 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
   var up=AKCE.filter(function(a){return !past(a)&&!a.skryta}).reverse();
   function dd(a){var s=a.date.split('-');if(EN){if(!a.end)return d(a.date);var e=a.end.split('-');return (+s[2])+'–'+(+e[2])+' '+mon(+e[1])}if(!a.end)return (+s[2])+'. '+(+s[1])+'.';var e=a.end.split('-');return (+s[2])+'.–'+(+e[2])+'. '+(+e[1])+'.'}
   var hu=document.getElementById('homeUp'), ul=document.getElementById('upList');
+  // žádná zveřejněná akce: místo karet pozvánka k odběru novinek (zobrazí se samo, jakmile poslední akce proběhne)
+  var PRAZDNO='<div class="upcard empty"><div class="cal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="1"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><div class="tx"><h3>'+T('Další akce připravujeme')+'</h3><p>'+T('Jakmile je ohlásíme, najdete je tady. Pozvánky vám můžeme posílat e-mailem.')+'</p><span class="go"><a href="'+PFX+'navsteva/#novinky">'+T('Odebírat novinky')+' →</a><a href="https://www.facebook.com/zivyzamek.touzim" target="_blank" rel="noopener">Facebook →</a></span></div></div>';
   var MES=window.LANG==='cs'?['ledna','února','března','dubna','května','června','července','srpna','září','října','listopadu','prosince']:[0,1,2,3,4,5,6,7,8,9,10,11].map(function(i){return new Date(2026,i,15).toLocaleDateString(window.LANG,{month:'long'})});
   function cal(a){var s=a.date.split('-'),dot=EN?'':'.',t=(+s[2])+dot;if(a.end){var e=a.end.split('-');t+='–'+(+e[2])+dot;}return '<b>'+t+'</b><span>'+MES[+s[1]-1]+'</span>'+(a.when?'<small>'+esc(a.when.split(' · ')[0])+'</small>':'')}
   if(hu)hu.innerHTML=up.length?up.slice(0,4).map(function(a){
     return '<a class="upcard" href="'+PFX+'akce/'+a.id+'/"><div class="cal">'+cal(a)+'</div><div class="tx"><h3>'+esc(a.title)+'</h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<span class="go">'+T('Detail')+' →</span></div>'+(a.poster?'<img class="pt" src="'+(a.posterT||a.poster)+'" alt="" loading="lazy">':'')+'</a>';
-  }).join(''):'<p>'+T('Program na další sezónu připravujeme. Sledujte náš Facebook.')+'</p>';
+  }).join(''):PRAZDNO;
   var brig=document.getElementById('brigList');
   if(brig){var bb=up.filter(function(a){return a.tag==='Přijďte pomoct'}).slice(0,3);
     brig.innerHTML=bb.length?bb.map(function(a){return '<li><a href="'+PFX+'akce/'+a.id+'/"><span class="bd">'+dd(a)+'</span><span><b>'+esc(a.title)+'</b>'+(a.when?'<br><small>'+esc(a.when)+'</small>':'')+'</span>'+(a.poster?'<img src="'+(a.posterT||a.poster)+'" alt="" loading="lazy">':'<span></span>')+'</a></li>'}).join(''):'<li>'+T('Termíny dalších brigád zveřejníme v programu a na Facebooku.')+'</li>';}
   var RK=window.ROKY||{}, rok=String(today.getFullYear()), sezona=RK[rok];
   if(ul)ul.innerHTML=up.length?up.map(function(a){
     return '<li class="ev"><div class="d">'+dd(a)+(a.when?'<small style="display:block;font-size:15px;color:var(--grey);font-family:var(--font);font-weight:400">'+esc(a.when)+'</small>':'')+'</div><div><h2 class="h3"><a href="'+PFX+'akce/'+a.id+'/">'+esc(a.title)+'</a></h2>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<a class="det" href="'+PFX+'akce/'+a.id+'/">'+T('Detail akce')+' →</a></div>'+(a.poster?'<button class="pz" data-src="'+a.poster+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+(a.posterT||a.poster)+'" alt="'+T('Plakát')+': '+esc(a.title)+'" loading="lazy"></button>':'<span></span>')+(a.tag?'<span class="tag '+(a.tagc||'')+'">'+esc(T(a.tag))+'</span>':'<span></span>')+'</li>';
-  }).join(''):'<li class="ev"><div><p>'+T('Program na další sezónu připravujeme. Sledujte náš Facebook.')+'</p></div></li>';
+  }).join(''):'<li class="ev" style="display:block">'+PRAZDNO+'</li>';
   if(ul&&sezona)ul.insertAdjacentHTML('afterbegin','<li class="ev pin"><div class="d">'+rok+'</div><div><h2 class="h3">'+T('Plakát sezóny')+' '+rok+'</h2><p>'+T('Celý program roku na jednom plakátu. Klikněte pro zvětšení.')+'</p></div><button class="pz" data-src="'+sezona+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+sezona+'" alt="'+T('Plakát sezóny')+' '+rok+'" loading="lazy"></button><span></span></li>');
 
   // archiv: roky a seznam

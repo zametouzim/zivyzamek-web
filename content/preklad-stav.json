@@ -5311,6 +5311,20 @@
 "03d7ab9c0e1c": "09/2025"
 }
 },
+"content/web/zahrada.json|de|kroky.10.co": {
+"cs": "e55c980c71c8",
+"out": "7e203d230fdb",
+"radky": {
+"e55c980c71c8": "Erde, Bepflanzung, Linde, Spielelemente, Kieswege"
+}
+},
+"content/web/zahrada.json|de|kroky.10.kdy": {
+"cs": "fdf13709b9a2",
+"out": "51f3205d29fd",
+"radky": {
+"fdf13709b9a2": "Sommer 2027"
+}
+},
 "content/web/zahrada.json|de|kroky.2.co": {
 "cs": "ba5b4e1e3487",
 "out": "30306677f5d6",
@@ -5354,11 +5368,9 @@
 }
 },
 "content/web/zahrada.json|de|kroky.5.co": {
-"cs": "b4e503d3441a",
-"out": "8c4d19ff23c8",
-"radky": {
-"b4e503d3441a": "Aufräumen der oberen Hälfte und des Spielhangs, Arbeitseinsatz 17.–18. 10."
-}
+"cs": "01b9d8f94ba0",
+"out": "f3ba374b5858",
+"rucne": true
 },
 "content/web/zahrada.json|de|kroky.5.kdy": {
 "cs": "437fcec40ba2",
@@ -5368,60 +5380,44 @@
 }
 },
 "content/web/zahrada.json|de|kroky.6.co": {
-"cs": "cca196f12ab4",
-"out": "ddf214821ff8",
-"radky": {
-"cca196f12ab4": "Rankgitter aus Draht für Rosen an der Mauer des Unteren Schlosses"
-}
+"cs": "03e2ddb4e310",
+"out": "122157ec8f4c",
+"rucne": true
 },
 "content/web/zahrada.json|de|kroky.6.kdy": {
-"cs": "e19a5c431a05",
-"out": "b039fa578658",
-"radky": {
-"e19a5c431a05": "März–April 2027"
-}
+"cs": "b1fcc1321867",
+"out": "b1fcc1321867",
+"rucne": true
 },
 "content/web/zahrada.json|de|kroky.7.co": {
-"cs": "bcb14075b7f2",
-"out": "b4010acb5baa",
-"radky": {
-"bcb14075b7f2": "Betonfundamente unter allen vier Beeten"
-}
+"cs": "cca196f12ab4",
+"out": "ddf214821ff8",
+"rucne": true
 },
 "content/web/zahrada.json|de|kroky.7.kdy": {
-"cs": "a8bc5dd71091",
-"out": "570145aa538c",
-"radky": {
-"a8bc5dd71091": "April 2027"
-}
+"cs": "e19a5c431a05",
+"out": "b039fa578658",
+"rucne": true
 },
 "content/web/zahrada.json|de|kroky.8.co": {
-"cs": "714cfdcb9290",
-"out": "f32ab3deba4d",
-"radky": {
-"714cfdcb9290": "Steinmauern der Beete"
-}
+"cs": "bcb14075b7f2",
+"out": "b4010acb5baa",
+"rucne": true
 },
 "content/web/zahrada.json|de|kroky.8.kdy": {
-"cs": "6b74e8f8abf4",
-"out": "b2c42f194587",
-"radky": {
-"6b74e8f8abf4": "April–Mai 2027"
-}
+"cs": "a8bc5dd71091",
+"out": "570145aa538c",
+"rucne": true
 },
 "content/web/zahrada.json|de|kroky.9.co": {
-"cs": "e55c980c71c8",
-"out": "7e203d230fdb",
-"radky": {
-"e55c980c71c8": "Erde, Bepflanzung, Linde, Spielelemente, Kieswege"
-}
+"cs": "714cfdcb9290",
+"out": "f32ab3deba4d",
+"rucne": true
 },
 "content/web/zahrada.json|de|kroky.9.kdy": {
-"cs": "fdf13709b9a2",
-"out": "51f3205d29fd",
-"radky": {
-"fdf13709b9a2": "Sommer 2027"
-}
+"cs": "6b74e8f8abf4",
+"out": "b2c42f194587",
+"rucne": true
 },
 "content/web/zahrada.json|en|fotky.0.popis": {
 "cs": "a397fcbccc56",
@@ -5577,6 +5573,20 @@
 "03d7ab9c0e1c": "09/2025"
 }
 },
+"content/web/zahrada.json|en|kroky.10.co": {
+"cs": "e55c980c71c8",
+"out": "ee5233a9e2e7",
+"radky": {
+"e55c980c71c8": "Soil, planting, linden tree, play features, gravel paths"
+}
+},
+"content/web/zahrada.json|en|kroky.10.kdy": {
+"cs": "fdf13709b9a2",
+"out": "a347e4f0d764",
+"radky": {
+"fdf13709b9a2": "summer 2027"
+}
+},
 "content/web/zahrada.json|en|kroky.2.co": {
 "cs": "ba5b4e1e3487",
 "out": "2225e5936b84",
@@ -5620,11 +5630,9 @@
 }
 },
 "content/web/zahrada.json|en|kroky.5.co": {
-"cs": "b4e503d3441a",
-"out": "ecfa8402334b",
-"radky": {
-"b4e503d3441a": "Clearing the upper half and the play slope, work party 17–18 Oct"
-}
+"cs": "01b9d8f94ba0",
+"out": "7735001fec21",
+"rucne": true
 },
 "content/web/zahrada.json|en|kroky.5.kdy": {
 "cs": "437fcec40ba2",
@@ -5634,59 +5642,43 @@
 }
 },
 "content/web/zahrada.json|en|kroky.6.co": {
-"cs": "cca196f12ab4",
-"out": "c52226acc610",
-"radky": {
-"cca196f12ab4": "Wire trellis for roses on the Lower Castle wall"
-}
+"cs": "03e2ddb4e310",
+"out": "9acbc94a0d26",
+"rucne": true
 },
 "content/web/zahrada.json|en|kroky.6.kdy": {
-"cs": "e19a5c431a05",
-"out": "409467e8bbc5",
-"radky": {
-"e19a5c431a05": "March–April 2027"
-}
+"cs": "b1fcc1321867",
+"out": "b1fcc1321867",
+"rucne": true
 },
 "content/web/zahrada.json|en|kroky.7.co": {
-"cs": "bcb14075b7f2",
-"out": "9fd68d69d989",
-"radky": {
-"bcb14075b7f2": "Concrete foundations under all four beds"
-}
+"cs": "cca196f12ab4",
+"out": "c52226acc610",
+"rucne": true
 },
 "content/web/zahrada.json|en|kroky.7.kdy": {
-"cs": "a8bc5dd71091",
-"out": "570145aa538c",
-"radky": {
-"a8bc5dd71091": "April 2027"
-}
+"cs": "e19a5c431a05",
+"out": "409467e8bbc5",
+"rucne": true
 },
 "content/web/zahrada.json|en|kroky.8.co": {
-"cs": "714cfdcb9290",
-"out": "b884c24d13a1",
-"radky": {
-"714cfdcb9290": "Stone walls of the beds"
-}
+"cs": "bcb14075b7f2",
+"out": "9fd68d69d989",
+"rucne": true
 },
 "content/web/zahrada.json|en|kroky.8.kdy": {
-"cs": "6b74e8f8abf4",
-"out": "6ba8e98cb0ce",
-"radky": {
-"6b74e8f8abf4": "April–May 2027"
-}
+"cs": "a8bc5dd71091",
+"out": "570145aa538c",
+"rucne": true
 },
 "content/web/zahrada.json|en|kroky.9.co": {
-"cs": "e55c980c71c8",
-"out": "ee5233a9e2e7",
-"radky": {
-"e55c980c71c8": "Soil, planting, linden tree, play features, gravel paths"
-}
+"cs": "714cfdcb9290",
+"out": "b884c24d13a1",
+"rucne": true
 },
 "content/web/zahrada.json|en|kroky.9.kdy": {
-"cs": "fdf13709b9a2",
-"out": "a347e4f0d764",
-"radky": {
-"fdf13709b9a2": "summer 2027"
-}
+"cs": "6b74e8f8abf4",
+"out": "6ba8e98cb0ce",
+"rucne": true
 }
 }
