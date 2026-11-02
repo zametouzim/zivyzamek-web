@@ -1,0 +1,7 @@
+{
+ "_popis": "Pevné překlady pro automatický překlad (tools/preklad.py). Klíč = regulární výraz pro český text (bez ohledu na velká písmena), hodnoty = přesný překlad, DeepL ho nezmění.",
+ "Poznej\\s*(?:&|a)\\s*pomoz": {
+  "en": "Discover & Help",
+  "de": "Entdecke & hilf"
+ }
+}
