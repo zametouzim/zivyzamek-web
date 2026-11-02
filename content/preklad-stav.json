@@ -3277,9 +3277,9 @@
 },
 "content/akce/2026-05-16.json|de|text": {
 "cs": "5167e2af14a2",
-"out": "87d30e535ff8",
+"out": "20e61ee5576f",
 "radky": {
-"5167e2af14a2": "Das Frühlingswochenende gehörte dem XVI. Schloss-CITO und am Sonntag dem ersten Arbeitseinsatz Poznej & pomoz (Entdecke & hilf). Der größte Teil der Fläche unter der Mauer wurde geräumt, und entlang der Schlossmauer entstand ein Rosenbeet. Am Nachmittag trat Jean de Carro – Künstlername des Rundfunkpublizisten, Musikers und Erzählers Josef Šorfa – mit seinem Theater- und Musikprogramm Toulky krajem auf, voller Sagen und Liedballaden, darunter die eigens für das Schloss Theusing bestimmte Sage O černém mnichovi (Vom Schwarzen Mönch). Für die Helfer und CITO-Teilnehmer war die Vorstellung kostenlos."
+"5167e2af14a2": "Das Frühlingswochenende gehörte dem XVI. Schloss-CITO und am Sonntag dem ersten Arbeitseinsatz Entdecke & hilf. Der größte Teil der Fläche unter der Mauer wurde geräumt, und entlang der Schlossmauer entstand ein Rosenbeet. Am Nachmittag trat Jean de Carro – Künstlername des Rundfunkpublizisten, Musikers und Erzählers Josef Šorfa – mit seinem Theater- und Musikprogramm Toulky krajem auf, voller Sagen und Liedballaden, darunter die eigens für das Schloss Theusing bestimmte Sage O černém mnichovi (Vom Schwarzen Mönch). Für die Helfer und CITO-Teilnehmer war die Vorstellung kostenlos."
 }
 },
 "content/akce/2026-05-16.json|de|title": {
@@ -3291,9 +3291,9 @@
 },
 "content/akce/2026-05-16.json|en|text": {
 "cs": "5167e2af14a2",
-"out": "4ce25ca7fb38",
+"out": "1d9a765714c7",
 "radky": {
-"5167e2af14a2": "The spring weekend belonged to the 16th Castle CITO and, on Sunday, the first Poznej & pomoz (Discover & Help) work party. Most of the area below the wall was cleared and a rose bed was planted along the castle wall. In the afternoon Jean de Carro, the stage name of radio journalist, musician and storyteller Josef Šorfa, performed his theatre-and-music show Toulky krajem, full of legends and song ballads, including the legend O černém mnichovi (Of the Black Monk) written specially for the castle in Toužim. The show was free for the volunteers and CITO participants."
+"5167e2af14a2": "The spring weekend belonged to the 16th Castle CITO and, on Sunday, the first Discover & Help work party. Most of the area below the wall was cleared and a rose bed was planted along the castle wall. In the afternoon Jean de Carro, the stage name of radio journalist, musician and storyteller Josef Šorfa, performed his theatre-and-music show Toulky krajem, full of legends and song ballads, including the legend O černém mnichovi (Of the Black Monk) written specially for the castle in Toužim. The show was free for the volunteers and CITO participants."
 }
 },
 "content/akce/2026-05-16.json|en|title": {
@@ -3718,9 +3718,9 @@
 },
 "content/akce/2026-09-26.json|de|title": {
 "cs": "f238379d5a85",
-"out": "8f8d2b0644d1",
+"out": "be0c95d3196b",
 "radky": {
-"f238379d5a85": "Poznej & pomoz (Entdecke & hilf): Einsatz im Schloss"
+"f238379d5a85": "Entdecke & hilf: Einsatz im Schloss"
 }
 },
 "content/akce/2026-09-26.json|en|text": {
@@ -3732,9 +3732,9 @@
 },
 "content/akce/2026-09-26.json|en|title": {
 "cs": "f238379d5a85",
-"out": "ccb1cb8d3ccf",
+"out": "0cad79a3fd2a",
 "radky": {
-"f238379d5a85": "Poznej & pomoz (Discover & Help): work party at the castle"
+"f238379d5a85": "Discover & Help: work party at the castle"
 }
 },
 "content/akce/2026-10-17.json|de|short": {
@@ -3751,9 +3751,9 @@
 },
 "content/akce/2026-10-17.json|de|title": {
 "cs": "2879aea4001b",
-"out": "a8baace4450c",
+"out": "dc471d951689",
 "radky": {
-"2879aea4001b": "XVII. Schloss-CITO und Kennenlernen & Mithelfen"
+"2879aea4001b": "XVII. Schloss-CITO und Entdecke & hilf"
 }
 },
 "content/akce/2026-10-17.json|de|when": {
@@ -3777,9 +3777,9 @@
 },
 "content/akce/2026-10-17.json|en|title": {
 "cs": "2879aea4001b",
-"out": "7714ca5b0e46",
+"out": "6ad2daefcec4",
 "radky": {
-"2879aea4001b": "17th Castle CITO and Get to Know & Help"
+"2879aea4001b": "17th Castle CITO and Discover & Help"
 }
 },
 "content/akce/2026-10-17.json|en|when": {
@@ -3907,7 +3907,7 @@
 },
 "content/akce/2026-11-01-poznej-pomoz.json|de|title": {
 "cs": "ab142ca785da",
-"out": "086259389827",
+"out": "bf7a47d2acb7",
 "rucne": true
 },
 "content/akce/2026-11-01-poznej-pomoz.json|de|when": {
@@ -3931,7 +3931,7 @@
 },
 "content/akce/2026-11-01-poznej-pomoz.json|en|title": {
 "cs": "ab142ca785da",
-"out": "a66ae7cc0072",
+"out": "d87869bee5cf",
 "rucne": true
 },
 "content/akce/2026-11-01-poznej-pomoz.json|en|when": {
@@ -3960,9 +3960,9 @@
 },
 "content/akce/2026-11-21-poznej-pomoz.json|de|title": {
 "cs": "ab142ca785da",
-"out": "f4bef140dfc7",
+"out": "bf7a47d2acb7",
 "radky": {
-"ab142ca785da": "Erfahren & Helfen"
+"ab142ca785da": "Entdecke & hilf"
 }
 },
 "content/akce/2026-11-21-poznej-pomoz.json|de|when": {
@@ -3991,9 +3991,9 @@
 },
 "content/akce/2026-11-21-poznej-pomoz.json|en|title": {
 "cs": "ab142ca785da",
-"out": "084e81b02604",
+"out": "d87869bee5cf",
 "radky": {
-"ab142ca785da": "Find out more & help"
+"ab142ca785da": "Discover & Help"
 }
 },
 "content/akce/2026-11-21-poznej-pomoz.json|en|when": {
@@ -4920,9 +4920,9 @@
 },
 "content/web/uvod.json|de|hero.12.cap": {
 "cs": "772c9ae70596",
-"out": "22f902a3cc11",
+"out": "c306b41228f8",
 "radky": {
-"772c9ae70596": "Abend am Feuer nach dem Arbeitseinsatz „Kennenlernen & helfen“, 26. 9. 2026"
+"772c9ae70596": "Abend am Feuer nach dem Arbeitseinsatz Entdecke & hilf, 26. 9. 2026"
 }
 },
 "content/web/uvod.json|de|hero.2.alt": {

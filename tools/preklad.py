@@ -19,6 +19,18 @@ LANGS = {'en': 'EN-GB', 'de': 'DE'}
 EMPTY = (None, '', [], {})
 
 
+def slovnik():
+    """Pevné překlady názvů (i18n/slovnik.json), např. značka brigád Poznej & pomoz."""
+    cesta = os.path.join(ROOT, 'i18n', 'slovnik.json')
+    if not os.path.exists(cesta):
+        return []
+    d = json.load(open(cesta, encoding='utf-8'))
+    return [(re.compile(k, re.I), v) for k, v in d.items() if not k.startswith('_')]
+
+
+SLOVNIK = slovnik()
+
+
 def config():
     s = open(os.path.join(ROOT, 'admin', 'config.yml'), encoding='utf-8').read()
     return json.loads(s[s.index('{'):])
@@ -69,9 +81,9 @@ class Preklad:
             for i in range(0, len(polozky), 40):
                 davka = polozky[i:i + 40]
                 if test:
-                    vysledky = ['[%s] %s' % (l, t) for t, _, _ in davka]
+                    vysledky = ['[%s] %s' % (l, rozbal(zabal(t, False, l), False)) for t, _, _ in davka]
                 else:
-                    vysledky = deepl([zabal(t, md) for t, md, _ in davka], LANGS[l], klic)
+                    vysledky = deepl([zabal(t, md, l) for t, md, _ in davka], LANGS[l], klic)
                     vysledky = [rozbal(v, md) for v, (_, md, _) in zip(vysledky, davka)]
                 if l == 'de':
                     vysledky = [theusing(v) for v in vysledky]
@@ -79,9 +91,13 @@ class Preklad:
                     nastav(v)
 
 
-def zabal(text, markdown):
-    """Text pro DeepL v XML: adresy odkazů a zalomení řádků se nepřekládají."""
+def zabal(text, markdown, l=None):
+    """Text pro DeepL v XML: adresy odkazů, zalomení řádků a názvy ze slovníku se nepřekládají."""
+    for vzor, preklad in SLOVNIK:
+        if l in preklad:
+            text = vzor.sub('\x01%s\x02' % preklad[l], text)
     t = html.escape(text, quote=False)
+    t = t.replace('\x01', '<k>').replace('\x02', '</k>')
     if markdown:
         t = re.sub(r'\]\(([^)\s]+)\)', lambda m: ']<k>(%s)</k>' % m.group(1), t)
     # časy (14:00, 9:30) DeepL nepřevádí na „2.00 pm“, aby byl program jednotný
