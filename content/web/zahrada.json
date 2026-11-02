@@ -32,7 +32,12 @@
     },
     {
       "kdy": "10/2026",
-      "co": "Úklid horní poloviny a herní svah, brigáda 17.–18. 10.",
+      "co": "Úklid horní poloviny zahrady a svahu",
+      "stav": "hotovo"
+    },
+    {
+      "kdy": "11/2026",
+      "co": "Stavíme bednění prvního záhonu (so 7. 11.) a modelujeme herní svah pro děti (21.–22. 11.)",
       "stav": "probíhá"
     },
     {
@@ -132,7 +137,12 @@
       },
       {
         "kdy": "10/2026",
-        "co": "Clearing the upper half and the play slope, work party 17–18 Oct",
+        "co": "Clearing the upper half of the garden and the slope",
+        "stav": "hotovo"
+      },
+      {
+        "kdy": "11/2026",
+        "co": "Building the formwork for the first bed (Sat 7 Nov) and shaping the children’s play slope (21–22 Nov)",
         "stav": "probíhá"
       },
       {
@@ -233,7 +243,12 @@
       },
       {
         "kdy": "10/2026",
-        "co": "Aufräumen der oberen Hälfte und des Spielhangs, Arbeitseinsatz 17.–18. 10.",
+        "co": "Aufräumen der oberen Gartenhälfte und des Hangs",
+        "stav": "hotovo"
+      },
+      {
+        "kdy": "11/2026",
+        "co": "Wir bauen die Schalung für das erste Beet (Sa 7. 11.) und modellieren den Spielhang für Kinder (21.–22. 11.)",
         "stav": "probíhá"
       },
       {
