@@ -9,7 +9,7 @@
   "end": "2026-11-22",
   "when": "so - ne 9 - 16h",
   "short": "Poslední brigáda před zimním spánkem!",
-  "text": "Zdění záhonů, dočištění svahu pro dětskou hrací zónu a příprava hradu na zimu. Vítáni jste, i kdybyste chtěli vařit čaj nebo přinést něco dobrého na zub :-) \n\n**Polévka z kotlíku a něco na zahřátí pro každého pomocníka!** \n\nTěšíme se na Vás!",
+  "text": "**Poslední brigáda před zimním spánkem!**\n\nZdění záhonů, dočištění svahu pro dětskou hrací zónu a příprava hradu na zimu. Vítáni jste, i kdybyste chtěli vařit čaj nebo přinést něco dobrého na zub :-) \n\n**Polévka z kotlíku a něco na zahřátí pro každého pomocníka!** \n\nTěšíme se na Vás!",
   "prelozit": true,
   "poster": "/img/plakaty/Poznej&Pomoc_21_22_11.jpg",
   "photos": [],
@@ -18,15 +18,15 @@
   "skryta": true,
   "titleTodo": false,
   "en": {
-    "title": "Find out more & help",
-    "when": "Sat–Sun 9am–4pm",
-    "short": "The last bit of work before hibernation!",
-    "text": "Building flowerbeds, tidying up the slope for the children’s play area and preparing the castle for winter. You’re welcome to come along, even if you just want to make some tea or bring along a tasty treat :-)\n\n**Soup straight from the cauldron and something to warm everyone up!**\n\nWe look forward to seeing you!"
+    "title": "",
+    "when": "",
+    "short": "",
+    "text": ""
   },
   "de": {
-    "title": "Erfahren & Helfen",
-    "when": "Sa – So 9 – 16 Uhr",
-    "short": "Der letzte Aushilfseinsatz vor dem Winterschlaf!",
-    "text": "Beete anlegen, den Hang für den Kinderspielplatz fertig herrichten und die Burg winterfest machen. Ihr seid herzlich willkommen, auch wenn ihr nur Tee kochen oder etwas Leckeres mitbringen möchtet :-)\n\n**Suppe aus dem Kessel und etwas zum Aufwärmen für jeden Helfer!**\n\nWir freuen uns auf Sie!"
+    "title": "",
+    "when": "",
+    "short": "",
+    "text": ""
   }
 }
