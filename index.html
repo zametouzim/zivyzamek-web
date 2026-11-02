@@ -111,8 +111,8 @@ html.tr-wait body{opacity:0}
 
 /* stav sezóny */
 .hours{display:grid;gap:0;margin-top:8px;border-bottom:1px solid color-mix(in srgb,currentColor 25%,transparent);margin-bottom:12px}
-.hours .hr{display:flex;justify-content:space-between;align-items:center;gap:12px 20px;padding:14px 0;border-top:1px solid color-mix(in srgb,currentColor 25%,transparent)}
-.hours .hr>div{display:grid;gap:2px}
+.hours .hr{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 20px;padding:14px 0;border-top:1px solid color-mix(in srgb,currentColor 25%,transparent)}
+.hours .hr>div{display:grid;gap:2px;flex:1 1 220px}
 .hours .hk{font-weight:700;color:var(--sun);font-size:18px}
 .hours .ht{font-size:17px}
 .hours .pr{font-family:var(--cond);font-weight:600;font-size:22px;white-space:nowrap;text-align:right}
@@ -330,8 +330,8 @@ dl.facts dd{margin:0}
 footer{background:var(--navy);color:var(--navy-ink);padding-block:48px 40px}
 .copy{background:var(--navy);color:var(--navy-ink);font-size:14px;padding-block:16px 24px}.copy .wrap{opacity:.75}
 footer .cols{display:grid;grid-template-columns:200px 1fr 1fr 1fr;gap:32px;font-size:16px}
-footer .cols>*{min-width:0}
-footer img{width:160px;filter:invert(1)}
+footer .cols>*{min-width:0;overflow-wrap:break-word}
+footer img{width:160px;max-width:100%;filter:invert(1)}
 footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--sun)}
 @media (max-width:760px){footer .cols{grid-template-columns:1fr 1fr}}
 [id]{scroll-margin-top:100px}
@@ -946,7 +946,7 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
   <div class="wrap cols">
     <div><img src="img/logo.png" alt="Živý zámek Toužim"></div>
     <div><h2>Zámek Toužim</h2><p><a href="https://mapy.cz/zakladni?q=n%C3%A1m%C4%9Bst%C3%AD%20Ji%C5%99%C3%ADho%20z%20Pod%C4%9Bbrad%201%2C%20Tou%C5%BEim" target="_blank" rel="noopener">náměstí Jiřího z Poděbrad 1<br>364 01 Toužim</a><br><span id="fSezona">Otevřené víkendy červenec–září</span></p></div>
-    <div><h2>Kontakt</h2><p id="fKontakt">Pavla Vokurková, předsedkyně<br><a href="tel:+420724859799">+420 724 859 799</a><br><a href="mailto:zivyzamektouzim@email.cz">zivyzamektouzim@email.cz</a></p><p><a href="navsteva/#dotaz">Napište nám →</a></p></div>
+    <div><h2>Kontakt</h2><p id="fKontakt">Pavla Vokurková, předsedkyně<br><a href="tel:+420724859799">+420 724 859 799</a><br><a href="mailto:zivyzamektouzim@email.cz">zivyzamektouzim@<wbr>email.cz</a></p><p><a href="navsteva/#dotaz">Napište nám →</a></p></div>
     <div><h2>Spolek</h2><p>Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Datová schránka: wttsmga<br>Účet <span id="fUcet">2301034510/2010</span><br><a href="https://www.facebook.com/zivyzamek.touzim" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/zivyzamektouzim/" target="_blank" rel="noopener">Instagram</a></p></div>
   </div>
 </footer>
@@ -1019,7 +1019,7 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
     var md=document.querySelector('meta[name="description"]'), M=(window.META||{})[window.LANG];
     if(M){document.title=M.t;if(md)md.content=M.d}
     else{if(D.title)document.title=D.title;if(md&&D.attr[norm(md.content)])md.content=D.attr[norm(md.content)];}
-  }finally{document.documentElement.classList.remove('tr-wait')}
+  }finally{document.documentElement.classList.remove('tr-wait');if(window.vejdi)setTimeout(window.vejdi,0)}
 })();
 // přepínač jazyků: zachová stránku (adresu i hash)
 (function(){
@@ -1228,7 +1228,13 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
   var PRAZDNO='<div class="upcard empty"><div class="cal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="1"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><div class="tx"><h3>'+T('Další akce připravujeme')+'</h3><p>'+T('Jakmile je ohlásíme, najdete je tady. Pozvánky vám můžeme posílat e-mailem.')+'</p><span class="go"><a href="'+PFX+'navsteva/#novinky">'+T('Odebírat novinky')+' →</a><a href="https://www.facebook.com/zivyzamek.touzim" target="_blank" rel="noopener">Facebook →</a></span></div></div>';
   var MES=window.LANG==='cs'?['ledna','února','března','dubna','května','června','července','srpna','září','října','listopadu','prosince']:[0,1,2,3,4,5,6,7,8,9,10,11].map(function(i){return new Date(2026,i,15).toLocaleDateString(window.LANG,{month:'long'})});
   // čas v rámečku s datem: pomlčky bez mezer a jednotka u čísla, ať se řádek nezalomí uprostřed („9 – 16 / Uhr“)
-  function cas(w){return esc(w).replace(/\s*[-–]\s*/g,'\u2060–\u2060').replace(/(\d)\s+(?=(Uhr|h|hod\.?|am|pm)\b)/g,'$1\u00a0')}
+  // Nadpis, který se nevejde do sloupce (dlouhé slovo, hlavně v němčině), se zmenší, dokud se nevejde
+  function vejdi(){document.querySelectorAll('h1,h2').forEach(function(h){if(!h.offsetParent)return;h.style.fontSize='';var p=h.parentElement,i=0;
+    while(i++<14&&(h.scrollWidth>h.clientWidth+1||h.getBoundingClientRect().width>p.clientWidth+1)){var f=parseFloat(getComputedStyle(h).fontSize);if(f<=20)break;h.style.fontSize=(f*0.94)+'px'}})}
+  window.vejdi=vejdi;var vt;addEventListener('resize',function(){clearTimeout(vt);vt=setTimeout(vejdi,150)});addEventListener('load',vejdi);addEventListener('hashchange',function(){setTimeout(vejdi,50)});if(document.fonts)document.fonts.ready.then(vejdi);setTimeout(vejdi,0);
+  function cas(w){var g=esc(w).split(/\s*[,;]\s*/).filter(Boolean).map(function(x){return x.replace(/\s*[-–]\s*/g,'⁠–⁠').replace(/(\d)\s+(?=(Uhr|h|hod\.?|am|pm)\b)/g,'$1 ')});
+    // jeden den: den nahoře, čas pod ním; víc dnů s různými časy: každý den na vlastním řádku i se svým časem
+    return g.length>1?g.map(function(x){return x.replace(/([^\d\s])\s+(?=\d)/,'$1 ')}).join('<br>'):(g[0]||'').replace(/([^\d\s])\s+(?=\d)/,'$1<br>')}
   function cal(a){var s=a.date.split('-'),dot=EN?'':'.',t=(+s[2])+dot;if(a.end){var e=a.end.split('-');t+='\u2060–\u2060'+(+e[2])+dot;}return '<b'+(a.end?' class="r"':'')+'>'+t+'</b><span>'+MES[+s[1]-1]+'</span>'+(a.when?'<small>'+cas(a.when.split(' · ')[0])+'</small>':'')}
   if(hu)hu.innerHTML=up.length?up.slice(0,4).map(function(a){
     return '<a class="upcard" href="'+PFX+'akce/'+a.id+'/"><div class="cal">'+cal(a)+'</div><div class="tx"><h3>'+esc(a.title)+'</h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<span class="go">'+T('Detail')+' →</span></div>'+(a.poster?'<img class="pt" src="'+(a.posterT||a.poster)+'" alt="" loading="lazy">':'')+'</a>';
@@ -1329,7 +1335,7 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
   var MES=window.LANG==='cs'?['ledna','února','března','dubna','května','června','července','srpna','září','října','listopadu','prosince']:[0,1,2,3,4,5,6,7,8,9,10,11].map(function(i){return new Date(2026,i,15).toLocaleDateString(window.LANG,{month:'long'})});
   var od=NV?NV.sezona_od:7, doo=NV?NV.sezona_do:9, tel=NV&&NV.kontakty[0]?NV.kontakty[0].telefon:'+420 724 859 799';
   if(NV){
-    document.getElementById('fKontakt').innerHTML=NV.kontakty.map(function(k){return esc(k.jmeno)+', '+esc(k.funkce)+'<br><a href="tel:'+esc(k.telefon.replace(/\s/g,''))+'">'+esc(k.telefon)+'</a>'}).join('<br>')+'<br><a href="mailto:'+esc(NV.email)+'">'+esc(NV.email)+'</a>';
+    document.getElementById('fKontakt').innerHTML=NV.kontakty.map(function(k){return esc(k.jmeno)+', '+esc(k.funkce)+'<br><a href="tel:'+esc(k.telefon.replace(/\s/g,''))+'">'+esc(k.telefon)+'</a>'}).join('<br>')+'<br><a href="mailto:'+esc(NV.email)+'">'+esc(NV.email).replace('@','@<wbr>')+'</a>';
     document.getElementById('fSezona').textContent=NV.sezona;
     document.getElementById('fUcet').textContent=NV.ucet;
     var ac=document.getElementById('acct'); if(ac)ac.textContent=NV.ucet;
