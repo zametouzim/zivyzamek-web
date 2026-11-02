@@ -3941,6 +3941,66 @@
 "18b68858bd29": "Sunday 9am–4pm"
 }
 },
+"content/akce/2026-11-21-poznej-pomoz.json|de|short": {
+"cs": "e2a720ab70a7",
+"out": "26684b8a4d93",
+"radky": {
+"e2a720ab70a7": "Der letzte Aushilfseinsatz vor dem Winterschlaf!"
+}
+},
+"content/akce/2026-11-21-poznej-pomoz.json|de|text": {
+"cs": "b93107714e7b",
+"out": "8aef952ffca7",
+"radky": {
+"6fc8328de155": "**Suppe aus dem Kessel und etwas zum Aufwärmen für jeden Helfer!**",
+"716c1d4dc8c7": "Wir freuen uns auf Sie!",
+"d095806f7a31": "Beete anlegen, den Hang für den Kinderspielplatz fertig herrichten und die Burg winterfest machen. Ihr seid herzlich willkommen, auch wenn ihr nur Tee kochen oder etwas Leckeres mitbringen möchtet :-)"
+}
+},
+"content/akce/2026-11-21-poznej-pomoz.json|de|title": {
+"cs": "ab142ca785da",
+"out": "f4bef140dfc7",
+"radky": {
+"ab142ca785da": "Erfahren & Helfen"
+}
+},
+"content/akce/2026-11-21-poznej-pomoz.json|de|when": {
+"cs": "e85e456c5f25",
+"out": "4be4527bdc6f",
+"radky": {
+"e85e456c5f25": "Sa – So 9 – 16 Uhr"
+}
+},
+"content/akce/2026-11-21-poznej-pomoz.json|en|short": {
+"cs": "e2a720ab70a7",
+"out": "da3853678500",
+"radky": {
+"e2a720ab70a7": "The last bit of work before hibernation!"
+}
+},
+"content/akce/2026-11-21-poznej-pomoz.json|en|text": {
+"cs": "b93107714e7b",
+"out": "5441b1a4c3d1",
+"radky": {
+"6fc8328de155": "**Soup straight from the cauldron and something to warm everyone up!**",
+"716c1d4dc8c7": "We look forward to seeing you!",
+"d095806f7a31": "Building flowerbeds, tidying up the slope for the children’s play area and preparing the castle for winter. You’re welcome to come along, even if you just want to make some tea or bring along a tasty treat :-)"
+}
+},
+"content/akce/2026-11-21-poznej-pomoz.json|en|title": {
+"cs": "ab142ca785da",
+"out": "084e81b02604",
+"radky": {
+"ab142ca785da": "Find out more & help"
+}
+},
+"content/akce/2026-11-21-poznej-pomoz.json|en|when": {
+"cs": "e85e456c5f25",
+"out": "639e6cda9c92",
+"radky": {
+"e85e456c5f25": "Sat–Sun 9am–4pm"
+}
+},
 "content/akce/2026-12-13.json|de|short": {
 "cs": "15b71191c647",
 "out": "3dbaae2b8f5c",

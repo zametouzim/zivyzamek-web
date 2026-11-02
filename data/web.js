@@ -866,6 +866,12 @@ window.L10N={
     "short": "Volunteer work day at Toužim Castle",
     "html": "Please help us prepare the site for the children’s play area and winterise the castle. You can also support us by bringing along some home-baked treats! Refreshments will be provided for those helping out."
    },
+   "2026-11-21-poznej-pomoz": {
+    "title": "Find out more & help",
+    "when": "Sat–Sun 9am–4pm",
+    "short": "The last bit of work before hibernation!",
+    "html": "Building flowerbeds, tidying up the slope for the children’s play area and preparing the castle for winter. You’re welcome to come along, even if you just want to make some tea or bring along a tasty treat :-)\n<b>Soup straight from the cauldron and something to warm everyone up!</b>\nWe look forward to seeing you!"
+   },
    "2026-12-13": {
     "title": "Christmas get-together with mulled wine",
     "when": "Sunday",
@@ -1806,6 +1812,12 @@ window.L10N={
     "when": "Sonntag 9–16 Uhr",
     "short": "Arbeitseinsatz auf Schloss Theusing",
     "html": "Helft uns dabei, den Platz für den Kinderspielbereich vorzubereiten und die Burg winterfest zu machen. Ihr könnt uns auch mit selbstgebackenen Leckereien unterstützen! Für die Helfer ist für Verpflegung gesorgt."
+   },
+   "2026-11-21-poznej-pomoz": {
+    "title": "Erfahren & Helfen",
+    "when": "Sa – So 9 – 16 Uhr",
+    "short": "Der letzte Aushilfseinsatz vor dem Winterschlaf!",
+    "html": "Beete anlegen, den Hang für den Kinderspielplatz fertig herrichten und die Burg winterfest machen. Ihr seid herzlich willkommen, auch wenn ihr nur Tee kochen oder etwas Leckeres mitbringen möchtet :-)\n<b>Suppe aus dem Kessel und etwas zum Aufwärmen für jeden Helfer!</b>\nWir freuen uns auf Sie!"
    },
    "2026-12-13": {
     "title": "Weihnachtstreffen mit Glühwein",
