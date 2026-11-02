@@ -3949,9 +3949,10 @@
 }
 },
 "content/akce/2026-11-21-poznej-pomoz.json|de|text": {
-"cs": "b93107714e7b",
-"out": "8aef952ffca7",
+"cs": "5b340a3012a6",
+"out": "bc45d397b458",
 "radky": {
+"6275cdaebfa9": "**Der letzte Aushilfsjob vor dem Winterschlaf!**",
 "6fc8328de155": "**Suppe aus dem Kessel und etwas zum Aufwärmen für jeden Helfer!**",
 "716c1d4dc8c7": "Wir freuen uns auf Sie!",
 "d095806f7a31": "Beete anlegen, den Hang für den Kinderspielplatz fertig herrichten und die Burg winterfest machen. Ihr seid herzlich willkommen, auch wenn ihr nur Tee kochen oder etwas Leckeres mitbringen möchtet :-)"
@@ -3979,9 +3980,10 @@
 }
 },
 "content/akce/2026-11-21-poznej-pomoz.json|en|text": {
-"cs": "b93107714e7b",
-"out": "5441b1a4c3d1",
+"cs": "5b340a3012a6",
+"out": "b4b41fc04e65",
 "radky": {
+"6275cdaebfa9": "**The last bit of work before hibernation!**",
 "6fc8328de155": "**Soup straight from the cauldron and something to warm everyone up!**",
 "716c1d4dc8c7": "We look forward to seeing you!",
 "d095806f7a31": "Building flowerbeds, tidying up the slope for the children’s play area and preparing the castle for winter. You’re welcome to come along, even if you just want to make some tea or bring along a tasty treat :-)"

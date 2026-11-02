@@ -870,7 +870,7 @@ window.L10N={
     "title": "Find out more & help",
     "when": "Sat–Sun 9am–4pm",
     "short": "The last bit of work before hibernation!",
-    "html": "Building flowerbeds, tidying up the slope for the children’s play area and preparing the castle for winter. You’re welcome to come along, even if you just want to make some tea or bring along a tasty treat :-)\n<b>Soup straight from the cauldron and something to warm everyone up!</b>\nWe look forward to seeing you!"
+    "html": "<b>The last bit of work before hibernation!</b>\nBuilding flowerbeds, tidying up the slope for the children’s play area and preparing the castle for winter. You’re welcome to come along, even if you just want to make some tea or bring along a tasty treat :-)\n<b>Soup straight from the cauldron and something to warm everyone up!</b>\nWe look forward to seeing you!"
    },
    "2026-12-13": {
     "title": "Christmas get-together with mulled wine",
@@ -1817,7 +1817,7 @@ window.L10N={
     "title": "Erfahren & Helfen",
     "when": "Sa – So 9 – 16 Uhr",
     "short": "Der letzte Aushilfseinsatz vor dem Winterschlaf!",
-    "html": "Beete anlegen, den Hang für den Kinderspielplatz fertig herrichten und die Burg winterfest machen. Ihr seid herzlich willkommen, auch wenn ihr nur Tee kochen oder etwas Leckeres mitbringen möchtet :-)\n<b>Suppe aus dem Kessel und etwas zum Aufwärmen für jeden Helfer!</b>\nWir freuen uns auf Sie!"
+    "html": "<b>Der letzte Aushilfsjob vor dem Winterschlaf!</b>\nBeete anlegen, den Hang für den Kinderspielplatz fertig herrichten und die Burg winterfest machen. Ihr seid herzlich willkommen, auch wenn ihr nur Tee kochen oder etwas Leckeres mitbringen möchtet :-)\n<b>Suppe aus dem Kessel und etwas zum Aufwärmen für jeden Helfer!</b>\nWir freuen uns auf Sie!"
    },
    "2026-12-13": {
     "title": "Weihnachtstreffen mit Glühwein",
