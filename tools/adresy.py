@@ -214,13 +214,21 @@ def udalost(a, cesta, tr):
           'location': {'@type': 'Place', '@id': SITE + '#zamek', 'name': 'Zámek Toužim', 'address': ADRESA},
           'organizer': {'@type': 'NGO', '@id': SITE + '#spolek', 'name': 'Živý zámek Toužim, z. s.', 'url': SITE},
           'url': url(cesta)}
-    popis = a.get('short') or text(a.get('html'), 300)
-    if popis:
-        ld['description'] = popis
-    obr = [SITE + a['poster']] if a.get('poster') else []
-    obr += [SITE + f for f in (a.get('photos') or [])[:3]]
-    if obr:
-        ld['image'] = obr
+    # Google (Search Console) chce u akce popis, obrázek, účinkujícího a vstupné; co nevíme, nevymýšlíme
+    ld['description'] = a.get('short') or text(a.get('html'), 300) or '%s na zámku Toužim, %s.' % (a['title'], datum(a, 'cs'))
+    # obrázek = plakát akce; bez plakátu fotky z akce, jinak náhledový obrázek webu
+    obr = [SITE + a['poster'].lstrip('/')] if a.get('poster') else [SITE + f.lstrip('/') for f in (a.get('photos') or [])[:3]]
+    ld['image'] = obr or [SITE + 'img/og.jpg']
+    ld['performer'] = {'@type': 'Organization', 'name': 'Živý zámek Toužim, z. s.', 'url': SITE}
+    # vstupné: skutečné ceny jen u akcí s rezervací (omezený počet míst), jinak akce zdarma (Michal 4. 11. 2026;
+    # dobrovolné vstupné se neuvádí)
+    rez = a.get('rezervace') or {}
+    ceny = [c for c in (rez.get('ceny') or [] if isinstance(rez, dict) else []) if isinstance(c, dict) and c.get('cena')]
+    nab = [{'@type': 'Offer', 'name': c.get('druh') or 'Vstupné', 'price': c['cena'], 'priceCurrency': 'CZK',
+            'url': url(cesta), 'availability': 'https://schema.org/InStock'} for c in ceny]
+    ld['offers'] = nab or {'@type': 'Offer', 'price': 0, 'priceCurrency': 'CZK', 'url': url(cesta),
+                           'availability': 'https://schema.org/InStock'}
+    ld['isAccessibleForFree'] = not nab
     return dict({'@context': 'https://schema.org'}, **ld)
 
 
