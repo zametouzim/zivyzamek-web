@@ -90,10 +90,10 @@ def akce(tr=None):
             if v in (None, '', [], False):
                 continue
             o[k] = v
-        # účinkující: [{jmeno, typ: Osoba|Skupina}] (starší zápis = jen jméno → Osoba)
+        # účinkující: [{jmeno, typ = druh z administrace}] (starší zápis = jen jméno → Jiný jednotlivec)
         if o.get('ucinkujici'):
-            o['ucinkujici'] = [u for u in ({'jmeno': (x.get('jmeno') or '').strip(), 'typ': x.get('typ') or 'Osoba'}
-                                           if isinstance(x, dict) else {'jmeno': str(x).strip(), 'typ': 'Osoba'}
+            o['ucinkujici'] = [u for u in ({'jmeno': (x.get('jmeno') or '').strip(), 'typ': x.get('typ') or 'Jiný jednotlivec'}
+                                           if isinstance(x, dict) else {'jmeno': str(x).strip(), 'typ': 'Jiný jednotlivec'}
                                            for x in o['ucinkujici']) if u['jmeno']]
             if not o['ucinkujici']:
                 del o['ucinkujici']

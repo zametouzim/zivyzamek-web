@@ -95,20 +95,35 @@
        "widget": "string"
       },
       {
-       "label": "Osoba, nebo skupina?",
+       "label": "Druh účinkujícího",
        "name": "typ",
        "widget": "select",
        "options": [
-        "Osoba",
-        "Skupina"
+        "Hudebník / zpěvák (sólo)",
+        "Básník / autor (autorské čtení)",
+        "Herec / recitátor / vypravěč",
+        "Přednášející / průvodce",
+        "Lektor (dílna, cvičení)",
+        "Kouzelník / žonglér / artista",
+        "DJ",
+        "Jiný jednotlivec",
+        "Sbor",
+        "Kapela",
+        "Orchestr / komorní soubor",
+        "Divadelní soubor",
+        "Taneční soubor",
+        "Folklorní soubor",
+        "Šermířská / historická skupina",
+        "Škola / ZUŠ",
+        "Jiná skupina"
        ],
-       "default": "Osoba",
-       "hint": "Skupina = sbor, kapela, divadlo, soubor apod."
+       "default": "Jiný jednotlivec",
+       "hint": "Vyberte, co nejlépe sedí. Na webu se neukazuje, slouží pro Google."
       }
      ],
      "required": false,
      "i18n": "duplicate",
-     "hint": "Jen u kulturních akcí: každého účinkujícího zvlášť (např. Blanka Lohrová = Osoba, Komorní sbor Rosa Coeli = Skupina). Zobrazí se na stránce akce a dostane je Google. U brigád nechte prázdné."
+     "hint": "Jen u kulturních akcí: každého účinkujícího zvlášť (např. Blanka Lohrová = Básník / autor, Komorní sbor Rosa Coeli = Sbor). Zobrazí se na stránce akce a dostane je Google. U brigád nechte prázdné."
     },
     {
      "label": "Krátký text na kartičku v programu",

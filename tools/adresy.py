@@ -207,6 +207,29 @@ def navsteva_meta(web, l10n):
     return m
 
 
+# druh účinkujícího z administrace (admin/config.yml) → typ podle schema.org; neznámý = Person
+DRUH_UCINKUJICIHO = {
+    'Hudebník / zpěvák (sólo)': 'Person',
+    'Básník / autor (autorské čtení)': 'Person',
+    'Herec / recitátor / vypravěč': 'Person',
+    'Přednášející / průvodce': 'Person',
+    'Lektor (dílna, cvičení)': 'Person',
+    'Kouzelník / žonglér / artista': 'Person',
+    'DJ': 'Person',
+    'Jiný jednotlivec': 'Person',
+    'Sbor': 'MusicGroup',
+    'Kapela': 'MusicGroup',
+    'Orchestr / komorní soubor': 'MusicGroup',
+    'Divadelní soubor': 'TheaterGroup',
+    'Taneční soubor': 'DanceGroup',
+    'Folklorní soubor': 'PerformingGroup',
+    'Šermířská / historická skupina': 'PerformingGroup',
+    'Škola / ZUŠ': 'PerformingGroup',
+    'Jiná skupina': 'PerformingGroup',
+    'Osoba': 'Person', 'Skupina': 'PerformingGroup',
+}
+
+
 def udalost(a, cesta, tr):
     ld = {'@type': 'Event', 'name': a['title'], 'startDate': a['date'], 'endDate': a.get('end') or a['date'],
           'eventAttendanceMode': 'https://schema.org/OfflineEventAttendanceMode',
@@ -221,8 +244,7 @@ def udalost(a, cesta, tr):
     ld['image'] = obr or [SITE + 'img/og.jpg']
     # účinkující z administrace (kulturní akce); bez nich spolek (brigády apod.)
     jm = [u for u in (a.get('ucinkujici') or []) if isinstance(u, dict) and u.get('jmeno')]
-    ld['performer'] = [{'@type': 'PerformingGroup' if u.get('typ') == 'Skupina' else 'Person', 'name': u['jmeno']}
-                       for u in jm] or \
+    ld['performer'] = [{'@type': DRUH_UCINKUJICIHO.get(u.get('typ'), 'Person'), 'name': u['jmeno']} for u in jm] or \
         {'@type': 'Organization', 'name': 'Živý zámek Toužim, z. s.', 'url': SITE}
     # vstupné: skutečné ceny jen u akcí s rezervací (omezený počet míst), jinak akce zdarma (Michal 4. 11. 2026;
     # dobrovolné vstupné se neuvádí)
