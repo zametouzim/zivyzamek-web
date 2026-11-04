@@ -206,7 +206,7 @@ main section[data-page]{padding-block:0 96px}
 .pblock .sub2{display:grid;grid-template-columns:1fr 1fr;gap:20px}@media (max-width:760px){.pblock .sub2{grid-template-columns:1fr}}
 .pblock .givt{background:color-mix(in srgb,currentColor 8%,transparent);padding:18px;display:grid;gap:12px;align-content:start}
 .brig{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:10px}.brig a{display:grid;grid-template-columns:auto 1fr 64px;gap:12px;align-items:center;color:inherit;text-decoration:none;background:color-mix(in srgb,currentColor 10%,transparent);padding:8px 10px}.brig a:hover b{text-decoration:underline}.brig img{width:64px;height:64px;object-fit:cover;object-position:top}.brig .bd{font-family:var(--cond);font-weight:600;font-size:20px;white-space:nowrap}
-.up .ev.pin{background:var(--panel);padding:18px;border-bottom:0;margin-bottom:8px}
+.up .ev.pin{background:var(--panel);padding:18px;margin-inline:-18px;border-bottom:0;margin-bottom:8px}@media (max-width:620px){.up .ev.pin{padding-inline:16px;margin-inline:-16px}}
 .card.via{background:#ffffff;color:#111111;border-top:8px solid #fe6a01}.card.via img{width:150px;height:auto}.card.via h3{color:#111111}
 .vy .qr img{width:130px}
 .two>*,.three>*{min-width:0}
@@ -544,7 +544,7 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
 <script type="text/x-sekce">
 <section data-page="program" hidden>
   <div class="wrap">
-    <div class="page-head"><span class="eyebrow">Sezóna 2026</span><h1>Program na zámku</h1><p>Akce se většinou odehrávají na nádvoří zámku nebo v útrobách Janova hradu (Horního zámku).</p><p>Změna programu vyhrazena.</p><nav class="subnav" aria-label="Na této stránce"><a href="program/#archiv">Proběhlé akce ↓</a></nav></div>
+    <div class="page-head"><span class="eyebrow">Sezóna 2026</span><h1>Program na zámku</h1><p>Akce se většinou odehrávají na nádvoří zámku nebo v útrobách Janova hradu (Horního zámku).</p><p>Změna programu vyhrazena.</p></div>
     <ul class="events up" id="upList"></ul>
 
     <div class="block" id="archiv">
