@@ -969,8 +969,8 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
 <div class="copy" role="region" aria-label="Autorská práva"><div class="wrap">© <span id="cy">2026</span> Živý zámek Toužim z.&nbsp;s. · Web vytvořil Michal Nedvídek</div></div>
 
 <div class="lb" id="lb" hidden><img alt=""><button class="x" aria-label="Zavřít">×</button><button class="pv" aria-label="Předchozí">‹</button><button class="nx" aria-label="Další">›</button></div>
-<script src="data/i18n.js?v=77fbee1c"></script>
-<script src="data/akce.js?v=df8ca6d3"></script>
+<script src="data/i18n.js?v=2667bc4a"></script>
+<script src="data/akce.js?v=0646bfb5"></script>
 <script src="data/web.js?v=6a409caf"></script>
 <script>
 // Náhled konceptu z administrace (?nahled=…, viz tools/nahled.py): data konceptu přepíší zveřejněná
@@ -1100,7 +1100,7 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
   function renderDetail(id){
     var a=AKCE.filter(function(x){return x.id===id})[0];
     if(!a){detail.innerHTML='<a class="ak-back" href="'+PFX+'program/#archiv">← '+T('Archiv akcí')+'</a><p>'+T('Akce nenalezena.')+'</p>';return}
-    var h=(past(a)?'<a class="ak-back" href="'+PFX+'program/#archiv">← '+T('Archiv akcí')+'</a>':'<a class="ak-back" href="'+PFX+'program/">← '+T('Program')+'</a>')+'<div class="ak-head"><div class="ak-date">'+dFull(a)+'</div><h1>'+esc(a.title)+(a.titleTodo?' <span class="todo" style="font-size:18px">název?</span>':'')+'</h1>'+(a.when?'<div class="ak-when">'+esc(a.when)+'</div>':'')+(a.ucinkujici&&a.ucinkujici.length?'<div class="ak-who"><b>'+T('Účinkují')+':</b> '+a.ucinkujici.map(esc).join(', ')+'</div>':'')+'</div>';
+    var h=(past(a)?'<a class="ak-back" href="'+PFX+'program/#archiv">← '+T('Archiv akcí')+'</a>':'<a class="ak-back" href="'+PFX+'program/">← '+T('Program')+'</a>')+'<div class="ak-head"><div class="ak-date">'+dFull(a)+'</div><h1>'+esc(a.title)+(a.titleTodo?' <span class="todo" style="font-size:18px">název?</span>':'')+'</h1>'+(a.when?'<div class="ak-when">'+esc(a.when)+'</div>':'')+(a.ucinkujici&&a.ucinkujici.length?'<div class="ak-who"><b>'+T('Účinkují')+':</b> '+a.ucinkujici.map(function(u){return esc(u.jmeno)}).join(', ')+'</div>':'')+'</div>';
     h+='<div class="ak-body"><div class="ak-text">'+(a.html?a.html.split('\n').map(function(p){return '<p>'+p+'</p>'}).join(''):a.text?a.text.split('\n').map(function(p){return '<p>'+esc(p)+'</p>'}).join(''):'<p class="tbd">'+T('Bude doplněno.')+'</p>')+'</div>';
     h+=a.poster?'<button class="poster" data-src="'+a.poster+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+a.poster+'" alt="'+T('Plakát')+': '+esc(a.title)+'"></button>':'<div></div>';
     h+='</div>';

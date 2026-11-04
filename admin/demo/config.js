@@ -78,6 +78,33 @@ window.DEMO_CONFIG={
      "i18n": true
     },
     {
+     "label": "Účinkující (nepovinné)",
+     "name": "ucinkujici",
+     "widget": "list",
+     "summary": "{{fields.jmeno}} ({{fields.typ}})",
+     "fields": [
+      {
+       "label": "Jméno",
+       "name": "jmeno",
+       "widget": "string"
+      },
+      {
+       "label": "Osoba, nebo skupina?",
+       "name": "typ",
+       "widget": "select",
+       "options": [
+        "Osoba",
+        "Skupina"
+       ],
+       "default": "Osoba",
+       "hint": "Skupina = sbor, kapela, divadlo, soubor apod."
+      }
+     ],
+     "required": false,
+     "i18n": "duplicate",
+     "hint": "Jen u kulturních akcí: každého účinkujícího zvlášť (např. Blanka Lohrová = Osoba, Komorní sbor Rosa Coeli = Skupina). Zobrazí se na stránce akce a dostane je Google. U brigád nechte prázdné."
+    },
+    {
      "label": "Krátký text na kartičku v programu",
      "name": "short",
      "widget": "string",

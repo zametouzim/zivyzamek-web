@@ -220,9 +220,9 @@ def udalost(a, cesta, tr):
     obr = [SITE + a['poster'].lstrip('/')] if a.get('poster') else [SITE + f.lstrip('/') for f in (a.get('photos') or [])[:3]]
     ld['image'] = obr or [SITE + 'img/og.jpg']
     # účinkující z administrace (kulturní akce); bez nich spolek (brigády apod.)
-    jm = [j.strip() for j in (a.get('ucinkujici') or []) if isinstance(j, str) and j.strip()]
-    skup = re.compile(r'sbor|kapel|band|divad|soubor|orchestr|kvartet|trio|duo|spolek|škol|ZUŠ|SDH', re.I)
-    ld['performer'] = [{'@type': 'PerformingGroup' if skup.search(j) else 'Person', 'name': j} for j in jm] or \
+    jm = [u for u in (a.get('ucinkujici') or []) if isinstance(u, dict) and u.get('jmeno')]
+    ld['performer'] = [{'@type': 'PerformingGroup' if u.get('typ') == 'Skupina' else 'Person', 'name': u['jmeno']}
+                       for u in jm] or \
         {'@type': 'Organization', 'name': 'Živý zámek Toužim, z. s.', 'url': SITE}
     # vstupné: skutečné ceny jen u akcí s rezervací (omezený počet míst), jinak akce zdarma (Michal 4. 11. 2026;
     # dobrovolné vstupné se neuvádí)
