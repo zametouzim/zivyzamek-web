@@ -126,6 +126,30 @@
      "hint": "Jen u kulturních akcí: každého účinkujícího zvlášť (např. Blanka Lohrová = Básník / autor, Komorní sbor Rosa Coeli = Sbor). Zobrazí se na stránce akce a dostane je Google. U brigád nechte prázdné."
     },
     {
+     "label": "Vstupné",
+     "name": "vstupne",
+     "widget": "select",
+     "options": [
+      "Neuvádět",
+      "Dobrovolné",
+      "Dobrovolné, doporučená částka",
+      "Placené (podle rezervace)"
+     ],
+     "default": "Neuvádět",
+     "required": false,
+     "i18n": "duplicate",
+     "hint": "Neuvádět = řádek se vstupným se na stránce akce neukáže (brigády). Dobrovolné = kasička. Doporučená částka = dobrovolné s doporučenou částkou, vyplňte ji níže. Placené = ceny se vypíšou z rezervace."
+    },
+    {
+     "label": "Doporučená částka v Kč (jen u „Dobrovolné, doporučená částka“)",
+     "name": "vstupne_castka",
+     "widget": "number",
+     "value_type": "int",
+     "min": 1,
+     "required": false,
+     "i18n": "duplicate"
+    },
+    {
      "label": "Krátký text na kartičku v programu",
      "name": "short",
      "widget": "string",

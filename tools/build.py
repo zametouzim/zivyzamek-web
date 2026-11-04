@@ -85,7 +85,7 @@ def akce(tr=None):
                 x['html'] = md(t['text'])
             if x and tr is not None:
                 tr[l].setdefault('akce', {})[fn[:-5]] = x
-        for k in ('date', 'title', 'end', 'when', 'ucinkujici', 'short', 'poster', 'photos', 'tag', 'titleTodo', 'skryta'):
+        for k in ('date', 'title', 'end', 'when', 'ucinkujici', 'vstupne', 'vstupne_castka', 'short', 'poster', 'photos', 'tag', 'titleTodo', 'skryta'):
             v = a.get(k)
             if v in (None, '', [], False):
                 continue
@@ -97,6 +97,14 @@ def akce(tr=None):
                                            for x in o['ucinkujici']) if u['jmeno']]
             if not o['ucinkujici']:
                 del o['ucinkujici']
+        # vstupné: Neuvádět = nic (řádek se neukáže), doporučená částka bez čísla = jen dobrovolné
+        if o.get('vstupne') == 'Neuvádět':
+            del o['vstupne']
+        if o.get('vstupne') != 'Dobrovolné, doporučená částka':
+            o.pop('vstupne_castka', None)
+        elif not o.get('vstupne_castka'):
+            o['vstupne'] = 'Dobrovolné'
+            o.pop('vstupne_castka', None)
         o['date'] = str(o['date'])[:10]
         if o.get('end'):
             o['end'] = str(o['end'])[:10]

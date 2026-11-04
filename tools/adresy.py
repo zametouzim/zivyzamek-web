@@ -252,8 +252,16 @@ def udalost(a, cesta, tr):
     ceny = [c for c in (rez.get('ceny') or [] if isinstance(rez, dict) else []) if isinstance(c, dict) and c.get('cena')]
     nab = [{'@type': 'Offer', 'name': c.get('druh') or 'Vstupné', 'price': c['cena'], 'priceCurrency': 'CZK',
             'url': url(cesta), 'availability': 'https://schema.org/InStock'} for c in ceny]
-    ld['offers'] = nab or {'@type': 'Offer', 'price': 0, 'priceCurrency': 'CZK', 'url': url(cesta),
-                           'availability': 'https://schema.org/InStock'}
+    # dobrovolné / doporučené vstupné: Google zná jen cenu, cena 0 = vstup bez povinné platby (dokumentace Googlu);
+    # doporučenou částku dáváme jen do názvu, aby nevypadala jako povinné vstupné
+    nazev = {'Dobrovolné': 'Vstupné dobrovolné'}.get(a.get('vstupne'))
+    if a.get('vstupne') == 'Dobrovolné, doporučená částka' and a.get('vstupne_castka'):
+        nazev = 'Vstupné dobrovolné, doporučeno %s Kč' % a['vstupne_castka']
+    zdarma = {'@type': 'Offer', 'price': 0, 'priceCurrency': 'CZK', 'url': url(cesta),
+              'availability': 'https://schema.org/InStock'}
+    if nazev:
+        zdarma = dict(zdarma, name=nazev)
+    ld['offers'] = nab or zdarma
     ld['isAccessibleForFree'] = not nab
     return dict({'@context': 'https://schema.org'}, **ld)
 
