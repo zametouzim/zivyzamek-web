@@ -85,7 +85,7 @@ def akce(tr=None):
                 x['html'] = md(t['text'])
             if x and tr is not None:
                 tr[l].setdefault('akce', {})[fn[:-5]] = x
-        for k in ('date', 'title', 'end', 'when', 'short', 'poster', 'photos', 'tag', 'titleTodo', 'skryta'):
+        for k in ('date', 'title', 'end', 'when', 'ucinkujici', 'short', 'poster', 'photos', 'tag', 'titleTodo', 'skryta'):
             v = a.get(k)
             if v in (None, '', [], False):
                 continue

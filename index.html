@@ -364,6 +364,7 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 .up .det{display:inline-flex;align-items:center;min-height:44px;margin-top:2px;font-weight:700;color:inherit}
 @media (max-width:760px){.up .ev{grid-template-columns:1fr}.up .pz{width:160px}.up .ev .tag{justify-self:start}}
 .ak-when{color:var(--grey);font-size:17px;margin-top:4px}
+.ak-who{font-size:17px;margin-top:6px}.ak-who b{font-weight:700}
 .ak-body .poster{padding:0;border:0;background:none;cursor:zoom-in;display:block}
 .years{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
 .years button{font-family:var(--cond);font-weight:600;font-size:18px;letter-spacing:.04em;background:none;color:inherit;border:1px solid color-mix(in srgb,var(--line) 40%,transparent);padding:6px 14px;min-height:44px;min-width:44px;cursor:pointer}
@@ -1099,7 +1100,7 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
   function renderDetail(id){
     var a=AKCE.filter(function(x){return x.id===id})[0];
     if(!a){detail.innerHTML='<a class="ak-back" href="'+PFX+'program/#archiv">← '+T('Archiv akcí')+'</a><p>'+T('Akce nenalezena.')+'</p>';return}
-    var h=(past(a)?'<a class="ak-back" href="'+PFX+'program/#archiv">← '+T('Archiv akcí')+'</a>':'<a class="ak-back" href="'+PFX+'program/">← '+T('Program')+'</a>')+'<div class="ak-head"><div class="ak-date">'+dFull(a)+'</div><h1>'+esc(a.title)+(a.titleTodo?' <span class="todo" style="font-size:18px">název?</span>':'')+'</h1>'+(a.when?'<div class="ak-when">'+esc(a.when)+'</div>':'')+'</div>';
+    var h=(past(a)?'<a class="ak-back" href="'+PFX+'program/#archiv">← '+T('Archiv akcí')+'</a>':'<a class="ak-back" href="'+PFX+'program/">← '+T('Program')+'</a>')+'<div class="ak-head"><div class="ak-date">'+dFull(a)+'</div><h1>'+esc(a.title)+(a.titleTodo?' <span class="todo" style="font-size:18px">název?</span>':'')+'</h1>'+(a.when?'<div class="ak-when">'+esc(a.when)+'</div>':'')+(a.ucinkujici&&a.ucinkujici.length?'<div class="ak-who"><b>'+T('Účinkují')+':</b> '+a.ucinkujici.map(esc).join(', ')+'</div>':'')+'</div>';
     h+='<div class="ak-body"><div class="ak-text">'+(a.html?a.html.split('\n').map(function(p){return '<p>'+p+'</p>'}).join(''):a.text?a.text.split('\n').map(function(p){return '<p>'+esc(p)+'</p>'}).join(''):'<p class="tbd">'+T('Bude doplněno.')+'</p>')+'</div>';
     h+=a.poster?'<button class="poster" data-src="'+a.poster+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+a.poster+'" alt="'+T('Plakát')+': '+esc(a.title)+'"></button>':'<div></div>';
     h+='</div>';
