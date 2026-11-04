@@ -1,6 +1,28 @@
 {
   "title": "Punkovice, 9. ročník",
   "date": "2026-09-12",
+  "ucinkujici": [
+    {
+      "jmeno": "Výblitek",
+      "typ": "Kapela"
+    },
+    {
+      "jmeno": "Vypitý lahváče",
+      "typ": "Kapela"
+    },
+    {
+      "jmeno": "ŠpuntQaně",
+      "typ": "Kapela"
+    },
+    {
+      "jmeno": "Plesnivý fazole",
+      "typ": "Kapela"
+    },
+    {
+      "jmeno": "P.U.M.",
+      "typ": "Kapela"
+    }
+  ],
   "text": "Hráli Výblitek (místo KT Bandits), Vypitý lahváče, ŠpuntQaně, Plesnivý fazole a P.U.M. Podepsaný plakát se vydražil za 1 000 Kč.",
   "poster": "img/plakaty/2026_punkovice.jpg",
   "photos": [
