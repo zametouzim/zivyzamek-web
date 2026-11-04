@@ -832,7 +832,7 @@ window.L10N={
    },
    "2026-09-12": {
     "title": "Punkovice, 9th year",
-    "html": "Výblitek (replacing KT Bandits), Vypitý lahváče, ŠpuntQaně, Plesnivý fazole and P.U.M. played. A signed poster was auctioned for CZK 1,000."
+    "html": "PUNKOVICE 2026 was a proper blast… 😜 Výblitek stepped in for KT Bandits.\nThe auction of a signed poster, a \"tradition\" since last year, was a lively one again, and in the end it went to the brand-new generation… a tiny punk girl, for a lovely CZK 1,000 ❤️🤞🏻\nThanks to everyone for coming, for supporting live music and for your kindness… Long live punk, and may it never die 🤘🏻"
    },
    "2026-09-26-oslava": {
     "title": "Celebrating 10 years of Živý zámek Toužim",
@@ -1779,7 +1779,7 @@ window.L10N={
    },
    "2026-09-12": {
     "title": "Punkovice, 9. Jahrgang",
-    "html": "Es spielten Výblitek (anstelle von KT Bandits), Vypitý lahváče, ŠpuntQaně, Plesnivý fazole und P.U.M. Ein signiertes Plakat wurde für 1 000 Kč versteigert."
+    "html": "Die PUNKOVICE 2026 war richtig klasse… 😜 Anstelle von KT Bandits spielte Výblitek.\nDie Versteigerung eines signierten Plakats, seit letztem Jahr eine „Tradition“, war wieder spannend, und am Ende ging der Zuschlag an die ganz neue Generation… eine kleine Punkerin, für stolze 1 000 CZK ❤️🤞🏻\nDanke an alle für den Besuch, für die Unterstützung von Live-Musik und für die Menschlichkeit… Es lebe der Punk, und möge er nie untergehen 🤘🏻"
    },
    "2026-09-26-oslava": {
     "title": "Feier zu 10 Jahren Živý zámek Toužim",
