@@ -320,6 +320,99 @@
    "i18n": true
   },
   {
+   "name": "tipy",
+   "label": "Tipy z okolí",
+   "label_singular": "tip z okolí",
+   "folder": "content/tipy",
+   "create": true,
+   "delete": true,
+   "format": "json",
+   "extension": "json",
+   "slug": "{{fields.datum}}-{{slug}}",
+   "identifier_field": "nazev",
+   "summary": "{{datum | date('D. M. YYYY')}}  ·  {{nazev}}",
+   "sortable_fields": {
+    "fields": [
+     "datum",
+     "nazev"
+    ],
+    "default": {
+     "field": "datum",
+     "direction": "descending"
+    }
+   },
+   "description": "Plakáty akcí sousedních obcí na hlavní stránce (společná propagace). Tip se ukáže mezi našimi akcemi v jiné barvě a po svém datu sám zmizí. V Programu, kalendáři ani v newsletteru není.",
+   "editor": {
+    "preview": false
+   },
+   "i18n": true,
+   "fields": [
+    {
+     "label": "Plakát",
+     "name": "plakat",
+     "widget": "image",
+     "required": true,
+     "media_folder": "/img/tipy",
+     "public_folder": "img/tipy",
+     "choose_url": false
+    },
+    {
+     "label": "Název akce",
+     "name": "nazev",
+     "widget": "string",
+     "i18n": true,
+     "required": [
+      "cs"
+     ],
+     "maxlength": 40,
+     "hint": "Nejvýš 40 znaků, ať je karta stejně vysoká jako naše."
+    },
+    {
+     "label": "Datum",
+     "name": "datum",
+     "widget": "datetime",
+     "format": "YYYY-MM-DD",
+     "date_format": "D. M. YYYY",
+     "time_format": false,
+     "picker_utc": true,
+     "hint": "Po tomhle dni tip sám zmizí."
+    },
+    {
+     "label": "Čas (nepovinné)",
+     "name": "cas",
+     "widget": "string",
+     "required": false,
+     "i18n": true,
+     "hint": "Např. „sobota 16h“"
+    },
+    {
+     "label": "Popisek (nepovinné)",
+     "name": "popisek",
+     "widget": "string",
+     "required": false,
+     "i18n": true,
+     "maxlength": 40,
+     "hint": "Např. „Dům kultury Teplá“. Nejvýš 40 znaků."
+    },
+    {
+     "label": "Odkaz na pořadatele (nepovinné)",
+     "name": "odkaz",
+     "widget": "string",
+     "required": false,
+     "i18n": "duplicate",
+     "hint": "Odkaz na akci na Facebooku, Instagramu nebo web pořadatele. Na webu se místo adresy ukáže „Akce na Facebooku ↗“, „Na Instagramu ↗“ nebo „Web pořadatele ↗“. Bez odkazu se ukáže „Plakát →“."
+    },
+    {
+     "label": "Přeložit automaticky do EN/DE",
+     "name": "prelozit",
+     "widget": "boolean",
+     "required": false,
+     "default": true,
+     "hint": "Po uložení doplní chybějící angličtinu a němčinu (DeepL). Když je vypnuté, překlad se neudělá a EN/DE můžete napsat sami. Ruční překlady se nikdy nepřepisují. Kredit DeepL: Zbývá 996 898 z 1 000 000 znaků (stav 2. 11. 2026)."
+    }
+   ]
+  },
+  {
    "name": "stranky",
    "label": "Bloky na stránkách",
    "files": [

@@ -122,6 +122,31 @@ def akce(tr=None):
     return items
 
 
+def tipy():
+    """Tipy z okolí: plakáty akcí sousedních obcí na hlavní stránce. Česky vždy, anglicky a německy jen s hotovým překladem názvu."""
+    items = []
+    if not os.path.isdir('content/tipy'):
+        return items
+    for fn in sorted(os.listdir('content/tipy')):
+        if not fn.endswith('.json'):
+            continue
+        a, loc = split(load('content/tipy/' + fn))
+        if not (a.get('nazev') and a.get('plakat') and a.get('datum')):
+            continue
+        o = {'id': fn[:-5], 'nazev': str(a['nazev']).strip(), 'datum': str(a['datum'])[:10], 'plakat': a['plakat']}
+        for k in ('cas', 'popisek'):
+            if str(a.get(k) or '').strip():
+                o[k] = str(a[k]).strip()
+        odkaz = str(a.get('odkaz') or '').strip()
+        if odkaz:
+            o['odkaz'] = odkaz if re.match(r'https?://', odkaz) else 'https://' + odkaz
+        for l, t in loc.items():
+            if str(t.get('nazev') or '').strip():
+                o[l] = {k: str(t[k]).strip() for k in ('nazev', 'cas', 'popisek') if str(t.get(k) or '').strip()}
+        items.append(o)
+    return sorted(items, key=lambda t: t['datum'])
+
+
 def rezervace(r, datum):
     """Rezervace u akce: zapnutá je přidáním oddílu Rezervace v administraci, musí mít počet míst nebo termíny."""
     if not isinstance(r, dict) or not (r.get('kapacita') or r.get('terminy')):
@@ -183,7 +208,7 @@ def stranka_l(o, t):
     return x
 
 
-def images(items, web):
+def images(items, web, tips=()):
     try:
         from PIL import Image, ImageOps
     except ImportError:
@@ -218,6 +243,16 @@ def images(items, web):
                     im.save(t, quality=80, progressive=True, optimize=True)
                 a['posterT'] = t
         sdileni(a, Image, ImageOps)
+    for t in tips:  # plakát tipu z okolí: zmenšit a malý náhled na kartu
+        fit(t['plakat'], 1400)
+        n = os.path.join(os.path.dirname(t['plakat']), 'n', os.path.basename(t['plakat']))
+        if os.path.exists(t['plakat']):
+            if not os.path.exists(n) or os.path.getmtime(n) < os.path.getmtime(t['plakat']):
+                os.makedirs(os.path.dirname(n), exist_ok=True)
+                im = ImageOps.exif_transpose(Image.open(t['plakat'])).convert('RGB')
+                im.thumbnail((320, 640))
+                im.save(n, quality=80, progressive=True, optimize=True)
+            t['plakatT'] = n
     for g in web['suvenyry'].get('polozky', []):
         if g.get('foto'):
             fit(g['foto'], 1000)
@@ -328,13 +363,15 @@ def main():
         tr[l]['web'] = web_l[l]
     for o in web['stranky']:
         del o['_tr']
-    images(items, web)
+    tips = tipy()
+    images(items, web, tips)
     j = lambda o: json.dumps(o, ensure_ascii=False)
     with open('data/akce.js', 'w', encoding='utf-8') as f:
         f.write('// Generováno z content/ (tools/build.py). Neupravovat ručně, akce se upravují v administraci.\n')
         f.write('window.ROKY=%s;\n' % j({r['rok']: r['plakat'] for r in uvod.get('roky', [])}))
         f.write('window.HERO=%s;\n' % json.dumps(uvod.get('hero', []), ensure_ascii=False, indent=1))
         f.write('window.AKCE=[\n' + ',\n'.join(j(a) for a in items) + '\n];\n')
+        f.write('window.TIPY=%s;\n' % j(tips))
     with open('data/rezervace.json', 'w', encoding='utf-8') as f:
         rez = {}
         for a in items:

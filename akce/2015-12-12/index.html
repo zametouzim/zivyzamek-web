@@ -38,7 +38,7 @@
 /* Barvy ze sezónního plakátu 2026 (tmavě modrá, korálová, žlutá) na teplém podkladu jako omítka zámku; linky z loga jako dělicí prvek; písmo Calibri → Carlito, data úzkým písmem jako na plakátu */
 :root{
   --paper:#fbf7ee; --panel:#f3ead6; --ink:#16303f; --grey:#4e5b62; --line:#16303f;
-  --accent:#c22f4d; --accent-ink:#ffffff; --sun:#f3ee8a; --cta-bg:#356a80; --cta-ink:#fbf7ee; --sun-ink:#16303f; --navy:#16303f; --navy-ink:#fbf7ee;
+  --accent:#c22f4d; --accent-ink:#ffffff; --sun:#f3ee8a; --cta-bg:#356a80; --cta-ink:#fbf7ee; --sun-ink:#16303f; --navy:#16303f; --navy-ink:#fbf7ee; --tip:#356a80; --tip-cal:#356a80;
   --todo:#7b3fc4; --todo-strong:#6a32ad; --todo-ink:#ffffff;
   --font:"Carlito","Calibri","Segoe UI",system-ui,sans-serif;
   --cond:"Barlow Condensed","Arial Narrow","Carlito",sans-serif;
@@ -46,11 +46,11 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --paper:#0f2129; --panel:#16303f; --ink:#f6f0e2; --grey:#b9c3c7; --line:#f6f0e2;
-  --accent:#ff7189; --accent-ink:#0f2129; --sun:#e9e37c; --cta-bg:#e9e37c; --cta-ink:#0f2129; --sun-ink:#0f2129; --navy:#0a171d; --navy-ink:#f6f0e2;
+  --accent:#ff7189; --accent-ink:#0f2129; --sun:#e9e37c; --cta-bg:#e9e37c; --cta-ink:#0f2129; --sun-ink:#0f2129; --navy:#0a171d; --navy-ink:#f6f0e2; --tip:#6fa3b8; --tip-cal:#2b5566;
   --todo:#c9a2ff; --todo-strong:#c9a2ff; --todo-ink:#0f2129; --logo-filter:invert(1); color-scheme:dark}}
 :root[data-theme="dark"]{
   --paper:#0f2129; --panel:#16303f; --ink:#f6f0e2; --grey:#b9c3c7; --line:#f6f0e2;
-  --accent:#ff7189; --accent-ink:#0f2129; --sun:#e9e37c; --cta-bg:#e9e37c; --cta-ink:#0f2129; --sun-ink:#0f2129; --navy:#0a171d; --navy-ink:#f6f0e2;
+  --accent:#ff7189; --accent-ink:#0f2129; --sun:#e9e37c; --cta-bg:#e9e37c; --cta-ink:#0f2129; --sun-ink:#0f2129; --navy:#0a171d; --navy-ink:#f6f0e2; --tip:#6fa3b8; --tip-cal:#2b5566;
   --todo:#c9a2ff; --todo-strong:#c9a2ff; --todo-ink:#0f2129; --logo-filter:invert(1); color-scheme:dark}
 
 *{box-sizing:border-box}
@@ -354,6 +354,13 @@ footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;
 .upcard p{font-size:15px;color:var(--grey);line-height:1.4}
 .upcard .go{font-weight:700;font-size:15px}
 .upcard .pt{width:96px;height:auto;align-self:center;margin:12px 12px 12px 0;display:block;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.upcard.tip{background:color-mix(in srgb,var(--tip) 12%,var(--paper));border-left-color:var(--tip)}.upcard.tip:hover{transform:none}
+.upcard.tip .cal{background:var(--tip-cal);color:#fbf7ee}.upcard.tip .cal b{color:#fbf7ee}
+.upcard.tip .cal .tipl{font-family:var(--cond);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:12px;line-height:1.1;color:var(--sun);margin-bottom:4px;max-width:100%}
+.upcard.tip h3,.upcard.tip p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.upcard.tip .go{font:inherit;font-weight:700;font-size:15px;border:0;background:none;padding:0;color:inherit;text-align:left;justify-self:start;cursor:pointer;text-decoration:none}
+.upcard.tip .go:hover{text-decoration:underline;text-decoration-color:var(--tip)}
+.upcard.tip button.pt{padding:0;border:0;background:none;cursor:zoom-in}.upcard.tip button.pt img{width:100%;height:auto;display:block}
 @media (max-width:620px){.upcard{grid-template-columns:78px 1fr auto}.upcard .cal b{font-size:24px}.upcard .cal b.r{font-size:20px}.upcard .pt{width:72px;margin:10px 10px 10px 0}.upcard h3{font-size:18px}}
 .more{display:flex;gap:24px;flex-wrap:wrap;margin-top:18px;font-weight:700}
 .more a{color:inherit;text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
@@ -972,9 +979,9 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
 <div class="copy" role="region" aria-label="Autorská práva"><div class="wrap">© <span id="cy">2026</span> Živý zámek Toužim z.&nbsp;s. · Web vytvořil Michal Nedvídek</div></div>
 
 <div class="lb" id="lb" hidden><img alt=""><button class="x" aria-label="Zavřít">×</button><button class="pv" aria-label="Předchozí">‹</button><button class="nx" aria-label="Další">›</button></div>
-<script src="data/i18n.js?v=63eb7c4d"></script>
-<script src="data/akce.js?v=c822fa07"></script>
-<script src="data/web.js?v=642a0041"></script>
+<script src="data/i18n.js?v=1d2aae56"></script>
+<script src="data/akce.js?v=6533335e"></script>
+<script src="data/web.js?v=7eabb5c7"></script>
 <script>
 // Náhled konceptu z administrace (?nahled=…, viz tools/nahled.py): data konceptu přepíší zveřejněná
 (function(){var n=(location.search.match(/[?&]nahled=([a-z0-9-]{1,80})(?:&|$)/)||[])[1];if(!n)return;window.NAHLED=n;
@@ -1245,9 +1252,20 @@ function cas(w){var g=esc(w).split(/\s*[,;]\s*/).filter(Boolean).map(function(x)
     // jeden den: den nahoře, čas pod ním; víc dnů s různými časy: každý den na vlastním řádku i se svým časem
     return g.length>1?g.map(function(x){return x.replace(/([^\d\s])\s+(?=\d)/,'$1 ')}).join('<br>'):(g[0]||'').replace(/([^\d\s])\s+(?=\d)/,'$1<br>')}
   function cal(a){var s=a.date.split('-'),dot=EN?'':'.',t=(+s[2])+dot;if(a.end){var e=a.end.split('-');t+='\u2060–\u2060'+(+e[2])+dot;}return '<b'+(a.end?' class="r"':'')+'>'+t+'</b><span>'+MES[+s[1]-1]+'</span>'+(a.when?'<small>'+cas(a.when.split(' · ')[0])+'</small>':'')}
-  if(hu)hu.innerHTML=up.length?up.slice(0,4).map(function(a){
-    return '<a class="upcard" href="'+PFX+'akce/'+a.id+'/"><div class="cal">'+cal(a)+'</div><div class="tx"><h3>'+esc(a.title)+'</h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<span class="go">'+T('Detail')+' →</span></div>'+(a.poster?'<img class="pt" src="'+(a.posterT||a.poster)+'" alt="" loading="lazy">':'')+'</a>';
-  }).join(''):PRAZDNO;
+  function karta(a){
+    return '<a class="upcard" href="'+PFX+'akce/'+a.id+'/"><div class="cal">'+cal(a)+'</div><div class="tx"><h3>'+esc(a.title)+'</h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<span class="go">'+T('Detail')+' →</span></div>'+(a.poster?'<img class="pt" src="'+(a.posterT||a.poster)+'" alt="" loading="lazy">':'')+'</a>'}
+  // tipy z okolí: akce sousedních obcí, jen na úvodu (ne v programu, kalendáři ani datech pro Google), nejvýš 2
+  function tipKarta(t){var x=window.LANG==='cs'?t:t[window.LANG];if(!x)return '';
+    var s=t.datum.split('-'),h='',g;
+    try{h=new URL(t.odkaz).hostname.replace(/^www\.|^m\./,'')}catch(e){}
+    if(t.odkaz)g='<a class="go" href="'+esc(t.odkaz)+'" target="_blank" rel="noopener">'+(/(^|\.)(facebook\.com|fb\.com|fb\.me)$/.test(h)?T('Akce na Facebooku'):/(^|\.)instagram\.com$/.test(h)?T('Na Instagramu'):T('Web pořadatele'))+' ↗</a>';
+    else g='<button type="button" class="go pz" data-src="'+t.plakat+'">'+T('Plakát')+' →</button>';
+    return '<div class="upcard tip"><div class="cal"><span class="tipl">'+T('Tip z okolí')+'</span><b>'+(+s[2])+(EN?'':'.')+'</b><span>'+MES[+s[1]-1]+'</span>'+(x.cas?'<small>'+cas(x.cas)+'</small>':'')+'</div><div class="tx"><h3>'+esc(x.nazev)+'</h3>'+(x.popisek?'<p>'+esc(x.popisek)+'</p>':'')+g+'</div><button type="button" class="pz pt" data-src="'+t.plakat+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+(t.plakatT||t.plakat)+'" alt="'+T('Plakát')+': '+esc(x.nazev)+'" loading="lazy"></button></div>'}
+  var dnes=today.getFullYear()+'-'+('0'+(today.getMonth()+1)).slice(-2)+'-'+('0'+today.getDate()).slice(-2);
+  var tipy=(window.TIPY||[]).filter(function(t){return t.datum>=dnes&&(window.LANG==='cs'||t[window.LANG])}).slice(0,2);
+  if(hu){var nase=up.slice(0,4).map(function(a){return {d:a.date,h:karta(a)}}),vse=nase.concat(tipy.map(function(t){return {d:t.datum,t:1,h:tipKarta(t)}}));
+    vse.sort(function(a,b){return a.d<b.d?-1:a.d>b.d?1:(a.t||0)-(b.t||0)});
+    hu.innerHTML=(nase.length?'':PRAZDNO)+vse.map(function(k){return k.h}).join('');}
   var brig=document.getElementById('brigList');
   if(brig){var bb=up.filter(function(a){return a.tag==='Přijďte pomoct'}).slice(0,3);
     brig.innerHTML=bb.length?bb.map(function(a){return '<li><a href="'+PFX+'akce/'+a.id+'/"><span class="bd">'+dd(a)+'</span><span><b>'+esc(a.title)+'</b>'+(a.when?'<br><small>'+esc(a.when)+'</small>':'')+'</span>'+(a.poster?'<img src="'+(a.posterT||a.poster)+'" alt="" loading="lazy">':'<span></span>')+'</a></li>'}).join(''):'<li>'+T('Termíny dalších brigád zveřejníme v programu a na Facebooku.')+'</li>';}
