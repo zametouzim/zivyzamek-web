@@ -80,6 +80,12 @@ nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
 nav.main a{text-decoration:none;padding:8px 12px;font-size:17px;border-bottom:3px solid transparent}
 nav.main a[aria-current="page"]{border-bottom-color:var(--accent);font-weight:700}
 nav.main a.give{background:var(--accent);color:var(--accent-ink);border:0;margin-left:8px;font-weight:700}
+.has-sub{position:relative;display:flex}
+.has-sub>a::after{content:"";display:inline-block;width:0;height:0;margin-left:7px;vertical-align:3px;border:4px solid transparent;border-top:5px solid currentColor;border-bottom:0;opacity:.7}
+.has-sub .sub{display:none;position:absolute;top:100%;left:0;min-width:210px;background:var(--paper);border:1px solid var(--line);padding:6px 0;z-index:20;flex-direction:column;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.has-sub:hover .sub,.has-sub:focus-within .sub{display:flex}
+nav.main .sub a{border-bottom:0;padding:11px 16px;white-space:nowrap;font-weight:400}
+nav.main .sub a:hover,nav.main .sub a:focus-visible{background:var(--panel);text-decoration:underline;text-decoration-color:var(--accent)}
 .menu-btn{display:none;margin-left:auto;background:none;border:1px solid var(--line);color:var(--ink);font:inherit;padding:6px 14px;cursor:pointer}
 @media (max-width:860px){
   .menu-btn{display:block}
@@ -90,6 +96,10 @@ nav.main a.give{background:var(--accent);color:var(--accent-ink);border:0;margin
   nav.main a::after{content:"›";font-size:22px;line-height:1;color:var(--accent)}
   nav.main a[aria-current="page"]{border-bottom-color:color-mix(in srgb,var(--line) 15%,transparent);color:var(--accent)}
   nav.main a.give{display:none}
+  .has-sub{display:block}.has-sub>a::after{width:auto;height:auto;margin:0;border:0;vertical-align:baseline;opacity:1}
+  .has-sub .sub{display:flex;position:static;min-width:0;border:0;box-shadow:none;background:none;padding:0 0 0 18px}
+  nav.main .sub a{padding:12px 4px;font-size:17px;white-space:normal;border-bottom:1px solid color-mix(in srgb,var(--line) 15%,transparent)}
+  nav.main .sub a:hover{background:none}
   .give-mobile{display:inline-flex!important}
 }
 .give-mobile{white-space:nowrap;display:none;align-items:center;gap:6px;margin-left:auto;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;font-size:16px;padding:8px 14px}
@@ -457,7 +467,7 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
     <a class="give-mobile" href="podporte/">Podpořit ♥</a>
     <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
     <nav class="main" id="mainNav" aria-label="Hlavní menu">
-      <a href="program/">Program</a>
+      <div class="has-sub"><a href="program/">Program</a><div class="sub"><a href="program/#brzy">Brzy na zámku</a><a href="program/#archiv">Archiv akcí</a></div></div>
       <a href="navsteva/">Navštivte nás</a>
       <a href="zahrada/">Zámecká zahrada</a>
       <a href="zamek/">Zámek a historie</a>
@@ -551,7 +561,7 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
 <script type="text/x-sekce">
 <section data-page="program" hidden>
   <div class="wrap">
-    <div class="page-head"><span class="eyebrow">Sezóna 2026</span><h1>Program na zámku</h1><p>Akce se většinou odehrávají na nádvoří zámku nebo v útrobách Janova hradu (Horního zámku).</p><p>Změna programu vyhrazena.</p></div>
+    <div class="page-head" id="brzy"><span class="eyebrow">Sezóna 2026</span><h1>Program na zámku</h1><p>Akce se většinou odehrávají na nádvoří zámku nebo v útrobách Janova hradu (Horního zámku).</p><p>Změna programu vyhrazena.</p></div>
     <ul class="events up" id="upList"></ul>
     <a class="det to-arch" id="toArch" hidden></a>
 
@@ -977,7 +987,7 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
 <div class="copy" role="region" aria-label="Autorská práva"><div class="wrap">© <span id="cy">2026</span> Živý zámek Toužim z.&nbsp;s. · Web vytvořil Michal Nedvídek</div></div>
 
 <div class="lb" id="lb" hidden><img alt=""><button class="x" aria-label="Zavřít">×</button><button class="pv" aria-label="Předchozí">‹</button><button class="nx" aria-label="Další">›</button></div>
-<script src="data/i18n.js?v=1d2aae56"></script>
+<script src="data/i18n.js?v=81b71680"></script>
 <script src="data/akce.js?v=6533335e"></script>
 <script src="data/web.js?v=7eabb5c7"></script>
 <script>
@@ -1208,6 +1218,7 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
     });
   }
 
+  var prvni=true;
   function show(){
     setTimeout(zoomPrep,0);
     // stránka podle adresy (/program/, /akce/…/); hash je místo na stránce, nebo stará adresa s mřížkou (#program)
@@ -1225,8 +1236,11 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
     var navId=id==='akce'?'program':id;
     links.forEach(function(a){ if(a.getAttribute('href')===PFX+(navId==='domu'?'./':navId+'/')) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
     nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); lb.hidden=true;
-    window.scrollTo(0,0);
-    if(jump){var t=document.getElementById(jump);if(t)setTimeout(function(){t.scrollIntoView({block:'start'})},0);}
+    // skok na místo stránky (#archiv, #brzy): při načtení hned, na stejné stránce plynule; po dočtení obrázků se dorovná, pokud se mezitím obsah posunul
+    var t=jump&&document.getElementById(jump),prv=prvni;prvni=false;
+    if(!t){window.scrollTo({top:0,behavior:'instant'});return}
+    setTimeout(function(){t.scrollIntoView({block:'start',behavior:prv?'instant':'smooth'});var y0=scrollY;
+      if(prv&&document.readyState!=='complete')addEventListener('load',function(){if(scrollY===y0&&Math.abs(t.getBoundingClientRect().top-100)>30)t.scrollIntoView({block:'start',behavior:'instant'})},{once:true});},0);
   }
 
   // nejbližší akce: karty na úvodu a seznam v programu
@@ -1292,6 +1306,8 @@ function cas(w){var g=esc(w).split(/\s*[,;]\s*/).filter(Boolean).map(function(x)
   if(years.length)renderYear(years[0]);
 
   window.addEventListener('hashchange',show); show();
+  // podnabídka Programu: po kliknutí zavřít; na stejné stránce se stejnou mřížkou (#archiv znovu) jen dojet na místo
+  nav.addEventListener('click',function(e){var a=e.target.closest('.sub a');if(!a)return;a.blur();var u=new URL(a.href);if(u.pathname===location.pathname&&u.hash===location.hash){var t=document.getElementById(u.hash.slice(1));if(t){e.preventDefault();t.scrollIntoView({block:'start',behavior:'smooth'});nav.classList.remove('open');btn.setAttribute('aria-expanded','false')}}});
   btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false')});
   (function(){
     var f=document.getElementById('askForm'), msg=document.getElementById('askMsg');
