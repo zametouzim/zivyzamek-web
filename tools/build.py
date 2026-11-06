@@ -217,6 +217,7 @@ def images(items, web):
                     im.thumbnail((320, 640))
                     im.save(t, quality=80, progressive=True, optimize=True)
                 a['posterT'] = t
+        sdileni(a, Image, ImageOps)
     for g in web['suvenyry'].get('polozky', []):
         if g.get('foto'):
             fit(g['foto'], 1000)
@@ -227,6 +228,37 @@ def images(items, web):
             for src in [b.get('src')] + (b.get('fotky') or []):
                 if src:
                     fit(src, 1400)
+
+
+def sdileni(a, Image, ImageOps):
+    """Obrázek 1200 × 630 pro sdílení akce (Facebook, WhatsApp): plakát celý na rozmazaném podkladu z plakátu,
+    bez plakátu první fotka z akce. Bez obojího se sdílí obecný obrázek webu (img/og.jpg)."""
+    src = a.get('poster') or next(iter(a.get('photos') or []), None)
+    if not src or not os.path.exists(src):
+        return
+    # v názvu otisk zdroje: po výměně plakátu vznikne nový obrázek (a Facebook nevezme starý z mezipaměti)
+    import hashlib, glob
+    otisk = hashlib.sha1(open(src, 'rb').read()).hexdigest()[:8]
+    cil = 'img/sdileni/%s-%s.jpg' % (a['id'], otisk)
+    a['share'] = cil
+    for stary in glob.glob('img/sdileni/%s-*.jpg' % glob.escape(a['id'])):
+        if stary != cil and re.fullmatch(r'[0-9a-f]{8}', stary[len('img/sdileni/%s-' % a['id']):-4]):
+            os.remove(stary)
+    if os.path.exists(cil):
+        return
+    from PIL import ImageFilter, ImageEnhance
+    W, H = 1200, 630
+    im = ImageOps.exif_transpose(Image.open(src)).convert('RGB')
+    if a.get('poster'):
+        pod = ImageOps.fit(im, (W // 8, H // 8)).filter(ImageFilter.GaussianBlur(3)).resize((W, H), Image.LANCZOS)
+        out = ImageEnhance.Brightness(pod).enhance(0.55)
+        pl = im.copy()
+        pl.thumbnail((W - 80, H - 60), Image.LANCZOS)
+        out.paste(pl, ((W - pl.width) // 2, (H - pl.height) // 2))
+    else:
+        out = ImageOps.fit(im, (W, H), Image.LANCZOS)
+    os.makedirs(os.path.dirname(cil), exist_ok=True)
+    out.save(cil, quality=82, progressive=True, optimize=True)
 
 
 def heic():

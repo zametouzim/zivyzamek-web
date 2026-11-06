@@ -17,7 +17,7 @@ v data/adresy.json; složky, které už nemají co obsahovat (smazaná akce), se
 Spouští ho tools/build.py (po každé změně v administraci), jde spustit i samostatně.
 Data čte z data/akce.js a data/web.js, takže build.py musí běžet dřív.
 """
-import html, json, os, re, shutil, urllib.parse
+import hashlib, html, json, os, re, shutil, urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = 'https://www.zivyzamektouzim.cz/'  # adresa ostrého webu (stejná jako u og:image v index.html)
@@ -135,7 +135,10 @@ def url(cesta):
     return SITE + urllib.parse.quote(cesta)
 
 
-def hlavicka(cesta, meta, ld, noindex=False, pfx=''):
+OG_ALT = 'Zámek Toužim, pohled přes trávník s lavicemi na zámecké budovy'
+
+
+def hlavicka(cesta, meta, ld, noindex=False, pfx='', obr=None):
     """Blok mezi <!--seo--> a <!--/seo--> v hlavičce. cesta = '' (úvod), 'program/', 'akce/x/'.
     pfx = složka kopie webu (srovnani/); kopie míří obrázky a data do kořene webu a canonical na skutečnou stránku."""
     t, d = meta['cs']
@@ -156,9 +159,16 @@ def hlavicka(cesta, meta, ld, noindex=False, pfx=''):
     r.append('<meta property="og:title" content="%s">' % e(t))
     r.append('<meta property="og:description" content="%s">' % e(d))
     r.append('<meta property="og:url" content="%s">' % u)
+    # obrázek při sdílení: u akce její plakát nebo fotka (tools/build.py, img/sdileni/), jinak obecný obrázek webu
+    o_src, o_alt = obr or (OBR, OG_ALT)
+    r.append('<meta property="og:image" content="%s">' % e(o_src))
+    r.append('<meta property="og:image:width" content="1200">')
+    r.append('<meta property="og:image:height" content="630">')
+    r.append('<meta property="og:image:alt" content="%s">' % e(o_alt))
     preklad = {l: {'t': meta[l][0], 'd': meta[l][1]} for l in ('en', 'de') if meta.get(l)}
     r.append('<script>window.META=%s</script>' % json.dumps(preklad, ensure_ascii=False).replace('</', '<\\/'))
-    r.append('<script type="application/ld+json">%s</script>' % json.dumps(ld, ensure_ascii=False).replace('</', '<\\/'))
+    for x in (ld if isinstance(ld, list) else [ld]):
+        r.append('<script type="application/ld+json">%s</script>' % json.dumps(x, ensure_ascii=False).replace('</', '<\\/'))
     return HLAVA % ''.join(x + '\n' for x in r)
 
 
@@ -283,10 +293,22 @@ def akce_meta(a, tr):
     return m
 
 
+def drobecky(a, cesta, dnes):
+    """Drobečková navigace pro Google: Program › (Archiv akcí ›) název akce, stejně jako nahoře na stránce akce."""
+    kroky = [('Program', url('program/'))]
+    if (a.get('end') or a['date']) < dnes:
+        kroky.append(('Archiv akcí', url('program/') + '#archiv'))
+    kroky.append((a['title'], url(cesta)))
+    return {'@context': 'https://schema.org', '@type': 'BreadcrumbList',
+            'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': n, 'item': u} for i, (n, u) in enumerate(kroky)]}
+
+
 def detail_html(a, dnes):
     """Obsah detailu akce pro roboty bez JavaScriptu (skript na stránce ho nahradí stejným obsahem)."""
     probehla = (a.get('end') or a['date']) < dnes
-    h = ('<a class="ak-back" href="program/#archiv">← Archiv akcí</a>' if probehla else '<a class="ak-back" href="program/">← Program</a>')
+    h = ('<nav class="ak-back drob" aria-label="Kde jste"><a href="program/">Program</a><span aria-hidden="true">›</span>'
+         + ('<a href="program/#archiv">Archiv akcí</a><span aria-hidden="true">›</span>' if probehla else '')
+         + '<span class="drob-t" aria-current="page">%s</span></nav>' % e(a['title']))
     h += '<div class="ak-head"><div class="ak-date">%s</div><h1>%s</h1>%s</div>' % (
         datum(a), e(a['title']), '<div class="ak-when">%s</div>' % e(a['when']) if a.get('when') else '')
     h += '<div class="ak-body"><div class="ak-text">%s</div>' % (
@@ -335,7 +357,7 @@ def sestav(zaklad, akce, web, l10n, dnes, pfx='', navic=(), noindex=False):
         vlastni.append(p)
     slozky = list(STRANKY) + ['akce'] + [p['id'] for p in vlastni] + [n[0] for n in navic]
     st = lambda cesta, hlava, sekce=None, vlozit=None: stranka(zaklad, cesta, hlava, sekce, vlozit, pfx, slozky)
-    hl = lambda cesta, meta, ld, ni=False: hlavicka(cesta, meta, ld, ni or noindex, pfx)
+    hl = lambda cesta, meta, ld, ni=False, obr=None: hlavicka(cesta, meta, ld, ni or noindex, pfx, obr)
     graf = {'@context': 'https://schema.org', '@graph': [zamek(web), SPOLEK,
             {'@type': 'WebSite', '@id': SITE + '#web', 'url': SITE, 'name': 'Živý zámek Toužim', 'inLanguage': ['cs', 'en', 'de'],
              'publisher': {'@id': SITE + '#spolek'}}]}
@@ -374,7 +396,9 @@ def sestav(zaklad, akce, web, l10n, dnes, pfx='', navic=(), noindex=False):
             continue
         c = 'akce/%s/' % a['id']
         vlozit = {'<div class="wrap" id="akceDetail"></div>': detail_html(a, dnes)}
-        soubory[pfx + c + 'index.html'] = st(c, hl(c, akce_meta(a, l10n), udalost(a, c, l10n), bool(a.get('skryta'))), 'akce', vlozit)
+        obr = (SITE + a['share'], 'Plakát: %s' % a['title'] if a.get('poster') else a['title']) if a.get('share') else None
+        ld = [udalost(a, c, l10n), drobecky(a, c, dnes)]
+        soubory[pfx + c + 'index.html'] = st(c, hl(c, akce_meta(a, l10n), ld, bool(a.get('skryta')), obr), 'akce', vlozit)
         if not a.get('skryta'):
             mapa.append(c)
     return soubory, mapa
@@ -387,7 +411,22 @@ def nacti():
     return akce_js.get('AKCE', []), web_js.get('WEB', {}), web_js.get('L10N', {}), datetime.date.today().isoformat()
 
 
-def zapis(soubory, manifest):
+def posledni_zmeny(soubory, mapa, dnes, manifest):
+    """Datum poslední změny každé stránky v mapě webu (lastmod pro Google): otisk obsahu stránky se pamatuje
+    v data/adresy.json; když se obsah změní, platí dnešní datum. Čísla verzí skriptů (?v=…) se nepočítají."""
+    stare = {}
+    if os.path.exists(manifest):
+        stare = json.load(open(manifest, encoding='utf-8')).get('zmeny', {})
+    nove = {}
+    for c in mapa:
+        obsah = re.sub(r'\?v=[0-9a-f]+', '', soubory[c + 'index.html'])
+        otisk = hashlib.sha1(obsah.encode('utf-8')).hexdigest()[:12]
+        o = stare.get(c)
+        nove[c] = o if o and o[0] == otisk else [otisk, dnes]
+    return nove
+
+
+def zapis(soubory, manifest, zmeny=None):
     """Zapíše soubory, smaže stránky ze starého seznamu, které už nejsou, a uloží nový seznam."""
     stare = []
     if os.path.exists(manifest):
@@ -409,7 +448,7 @@ def zapis(soubory, manifest):
                 f.write(obsah)
             zmeneno += 1
     with open(manifest, 'w', encoding='utf-8') as f:
-        json.dump({'stranky': nove}, f, ensure_ascii=False, indent=0)
+        json.dump({'stranky': nove, 'zmeny': zmeny or {}}, f, ensure_ascii=False, indent=0)
         f.write('\n')
     return len(nove), zmeneno
 
@@ -420,11 +459,13 @@ def main():
     if not ZNACKA.search(zaklad):
         raise SystemExit('adresy: v index.html chybí <!--seo--> … <!--/seo-->')
     soubory, mapa = sestav(zaklad, akce, web, l10n, dnes)
+    zmeny = posledni_zmeny(soubory, mapa, dnes, 'data/adresy.json')
     soubory['sitemap.xml'] = ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-                              + ''.join('<url><loc>%s</loc></url>\n' % e(url(c)) for c in mapa) + '</urlset>\n')
+                              + ''.join('<url><loc>%s</loc><lastmod>%s</lastmod></url>\n' % (e(url(c)), zmeny[c][1]) for c in mapa)
+                              + '</urlset>\n')
     soubory['robots.txt'] = 'User-agent: *\nDisallow: /admin/\nDisallow: /nahled/\n\nSitemap: %ssitemap.xml\n' % SITE
 
-    n, zmeneno = zapis(soubory, 'data/adresy.json')
+    n, zmeneno = zapis(soubory, 'data/adresy.json', zmeny)
     print('adresy: %d stránek, v mapě webu %d, změněno %d souborů' % (n + 1, len(mapa), zmeneno))
 
 if __name__ == '__main__':
