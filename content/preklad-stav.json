@@ -3654,11 +3654,9 @@
 }
 },
 "content/akce/2026-09-12.json|de|text": {
-"cs": "4004b4dc98d8",
-"out": "bd73d3a617ac",
-"radky": {
-"4004b4dc98d8": "Es spielten Výblitek (anstelle von KT Bandits), Vypitý lahváče, ŠpuntQaně, Plesnivý fazole und P.U.M. Ein signiertes Plakat wurde für 1 000 Kč versteigert."
-}
+"cs": "e0581fb40cad",
+"out": "cbaa538fb1d8",
+"rucne": true
 },
 "content/akce/2026-09-12.json|de|title": {
 "cs": "19549100900e",
@@ -3668,11 +3666,9 @@
 }
 },
 "content/akce/2026-09-12.json|en|text": {
-"cs": "4004b4dc98d8",
-"out": "b9f30c29d769",
-"radky": {
-"4004b4dc98d8": "Výblitek (replacing KT Bandits), Vypitý lahváče, ŠpuntQaně, Plesnivý fazole and P.U.M. played. A signed poster was auctioned for CZK 1,000."
-}
+"cs": "e0581fb40cad",
+"out": "886b1a969430",
+"rucne": true
 },
 "content/akce/2026-09-12.json|en|title": {
 "cs": "19549100900e",

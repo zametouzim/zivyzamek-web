@@ -17,7 +17,7 @@ v data/adresy.json; složky, které už nemají co obsahovat (smazaná akce), se
 Spouští ho tools/build.py (po každé změně v administraci), jde spustit i samostatně.
 Data čte z data/akce.js a data/web.js, takže build.py musí běžet dřív.
 """
-import html, json, os, re, shutil, urllib.parse
+import hashlib, html, json, os, re, shutil, urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = 'https://www.zivyzamektouzim.cz/'  # adresa ostrého webu (stejná jako u og:image v index.html)
@@ -135,7 +135,10 @@ def url(cesta):
     return SITE + urllib.parse.quote(cesta)
 
 
-def hlavicka(cesta, meta, ld, noindex=False, pfx=''):
+OG_ALT = 'Zámek Toužim, pohled přes trávník s lavicemi na zámecké budovy'
+
+
+def hlavicka(cesta, meta, ld, noindex=False, pfx='', obr=None):
     """Blok mezi <!--seo--> a <!--/seo--> v hlavičce. cesta = '' (úvod), 'program/', 'akce/x/'.
     pfx = složka kopie webu (srovnani/); kopie míří obrázky a data do kořene webu a canonical na skutečnou stránku."""
     t, d = meta['cs']
@@ -156,9 +159,16 @@ def hlavicka(cesta, meta, ld, noindex=False, pfx=''):
     r.append('<meta property="og:title" content="%s">' % e(t))
     r.append('<meta property="og:description" content="%s">' % e(d))
     r.append('<meta property="og:url" content="%s">' % u)
+    # obrázek při sdílení: u akce její plakát nebo fotka (tools/build.py, img/sdileni/), jinak obecný obrázek webu
+    o_src, o_alt = obr or (OBR, OG_ALT)
+    r.append('<meta property="og:image" content="%s">' % e(o_src))
+    r.append('<meta property="og:image:width" content="1200">')
+    r.append('<meta property="og:image:height" content="630">')
+    r.append('<meta property="og:image:alt" content="%s">' % e(o_alt))
     preklad = {l: {'t': meta[l][0], 'd': meta[l][1]} for l in ('en', 'de') if meta.get(l)}
     r.append('<script>window.META=%s</script>' % json.dumps(preklad, ensure_ascii=False).replace('</', '<\\/'))
-    r.append('<script type="application/ld+json">%s</script>' % json.dumps(ld, ensure_ascii=False).replace('</', '<\\/'))
+    for x in (ld if isinstance(ld, list) else [ld]):
+        r.append('<script type="application/ld+json">%s</script>' % json.dumps(x, ensure_ascii=False).replace('</', '<\\/'))
     return HLAVA % ''.join(x + '\n' for x in r)
 
 
@@ -207,6 +217,29 @@ def navsteva_meta(web, l10n):
     return m
 
 
+# druh účinkujícího z administrace (admin/config.yml) → typ podle schema.org; neznámý = Person
+DRUH_UCINKUJICIHO = {
+    'Hudebník / zpěvák (sólo)': 'Person',
+    'Básník / autor (autorské čtení)': 'Person',
+    'Herec / recitátor / vypravěč': 'Person',
+    'Přednášející / průvodce': 'Person',
+    'Lektor (dílna, cvičení)': 'Person',
+    'Kouzelník / žonglér / artista': 'Person',
+    'DJ': 'Person',
+    'Jiný jednotlivec': 'Person',
+    'Sbor': 'MusicGroup',
+    'Kapela': 'MusicGroup',
+    'Orchestr / komorní soubor': 'MusicGroup',
+    'Divadelní soubor': 'TheaterGroup',
+    'Taneční soubor': 'DanceGroup',
+    'Folklorní soubor': 'PerformingGroup',
+    'Šermířská / historická skupina': 'PerformingGroup',
+    'Škola / ZUŠ': 'PerformingGroup',
+    'Jiná skupina': 'PerformingGroup',
+    'Osoba': 'Person', 'Skupina': 'PerformingGroup',
+}
+
+
 def udalost(a, cesta, tr):
     ld = {'@type': 'Event', 'name': a['title'], 'startDate': a['date'], 'endDate': a.get('end') or a['date'],
           'eventAttendanceMode': 'https://schema.org/OfflineEventAttendanceMode',
@@ -219,15 +252,26 @@ def udalost(a, cesta, tr):
     # obrázek = plakát akce; bez plakátu fotky z akce, jinak náhledový obrázek webu
     obr = [SITE + a['poster'].lstrip('/')] if a.get('poster') else [SITE + f.lstrip('/') for f in (a.get('photos') or [])[:3]]
     ld['image'] = obr or [SITE + 'img/og.jpg']
-    ld['performer'] = {'@type': 'Organization', 'name': 'Živý zámek Toužim, z. s.', 'url': SITE}
+    # účinkující z administrace (kulturní akce); bez nich spolek (brigády apod.)
+    jm = [u for u in (a.get('ucinkujici') or []) if isinstance(u, dict) and u.get('jmeno')]
+    ld['performer'] = [{'@type': DRUH_UCINKUJICIHO.get(u.get('typ'), 'Person'), 'name': u['jmeno']} for u in jm] or \
+        {'@type': 'Organization', 'name': 'Živý zámek Toužim, z. s.', 'url': SITE}
     # vstupné: skutečné ceny jen u akcí s rezervací (omezený počet míst), jinak akce zdarma (Michal 4. 11. 2026;
     # dobrovolné vstupné se neuvádí)
     rez = a.get('rezervace') or {}
     ceny = [c for c in (rez.get('ceny') or [] if isinstance(rez, dict) else []) if isinstance(c, dict) and c.get('cena')]
     nab = [{'@type': 'Offer', 'name': c.get('druh') or 'Vstupné', 'price': c['cena'], 'priceCurrency': 'CZK',
             'url': url(cesta), 'availability': 'https://schema.org/InStock'} for c in ceny]
-    ld['offers'] = nab or {'@type': 'Offer', 'price': 0, 'priceCurrency': 'CZK', 'url': url(cesta),
-                           'availability': 'https://schema.org/InStock'}
+    # dobrovolné / doporučené vstupné: Google zná jen cenu, cena 0 = vstup bez povinné platby (dokumentace Googlu);
+    # doporučenou částku dáváme jen do názvu, aby nevypadala jako povinné vstupné
+    nazev = {'Dobrovolné': 'Vstupné dobrovolné'}.get(a.get('vstupne'))
+    if a.get('vstupne') == 'Dobrovolné, doporučená částka' and a.get('vstupne_castka'):
+        nazev = 'Vstupné dobrovolné, doporučeno %s Kč' % a['vstupne_castka']
+    zdarma = {'@type': 'Offer', 'price': 0, 'priceCurrency': 'CZK', 'url': url(cesta),
+              'availability': 'https://schema.org/InStock'}
+    if nazev:
+        zdarma = dict(zdarma, name=nazev)
+    ld['offers'] = nab or zdarma
     ld['isAccessibleForFree'] = not nab
     return dict({'@context': 'https://schema.org'}, **ld)
 
@@ -249,10 +293,22 @@ def akce_meta(a, tr):
     return m
 
 
+def drobecky(a, cesta, dnes):
+    """Drobečková navigace pro Google: Program › (Archiv akcí ›) název akce, stejně jako nahoře na stránce akce."""
+    kroky = [('Program', url('program/'))]
+    if (a.get('end') or a['date']) < dnes:
+        kroky.append(('Archiv akcí', url('program/') + '#archiv'))
+    kroky.append((a['title'], url(cesta)))
+    return {'@context': 'https://schema.org', '@type': 'BreadcrumbList',
+            'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': n, 'item': u} for i, (n, u) in enumerate(kroky)]}
+
+
 def detail_html(a, dnes):
     """Obsah detailu akce pro roboty bez JavaScriptu (skript na stránce ho nahradí stejným obsahem)."""
     probehla = (a.get('end') or a['date']) < dnes
-    h = ('<a class="ak-back" href="program/#archiv">← Archiv akcí</a>' if probehla else '<a class="ak-back" href="program/">← Program</a>')
+    h = ('<nav class="ak-back drob" aria-label="Kde jste"><a href="program/">Program</a><span aria-hidden="true">›</span>'
+         + ('<a href="program/#archiv">Archiv akcí</a><span aria-hidden="true">›</span>' if probehla else '')
+         + '<span class="drob-t" aria-current="page">%s</span></nav>' % e(a['title']))
     h += '<div class="ak-head"><div class="ak-date">%s</div><h1>%s</h1>%s</div>' % (
         datum(a), e(a['title']), '<div class="ak-when">%s</div>' % e(a['when']) if a.get('when') else '')
     h += '<div class="ak-body"><div class="ak-text">%s</div>' % (
@@ -269,6 +325,28 @@ def program_html(akce, dnes):
     li = lambda a: '<li class="ev"><div class="d">%s</div><div><h2 class="h3"><a href="akce/%s/">%s</a></h2></div></li>' % (
         datum(a), e(a['id']), e(a['title']))
     return ''.join(li(a) for a in prijde), ''.join(li(a) for a in bylo)
+
+
+def vlastni_html(p):
+    """Sekce vlastní stránky z administrace v HTML, stejně jako ji skládá skript v index.html (ten ji pak přestaví v jazyce návštěvníka)."""
+    odkaz = lambda u: u if re.match(r'(https?://|#|mailto:|tel:)', u or '') else '#'
+    h = '<div class="page-head">%s<h1>%s</h1>%s</div><div class="vs">' % (
+        '<span class="eyebrow">%s</span>' % e(p['nadtitulek']) if p.get('nadtitulek') else '', e(p.get('nazev', '')),
+        '<p>%s</p>' % e(p['perex']) if p.get('perex') else '')
+    for b in p.get('bloky') or []:
+        t = b.get('type')
+        if t == 'nadpis':
+            h += '<h3>%s</h3>' % e(b.get('text', ''))
+        elif t == 'text':
+            h += ''.join('<p>%s</p>' % r for r in (b.get('html') or '').split('\n'))
+        elif t == 'fotka' and b.get('src'):
+            h += '<figure><img src="%s" alt="%s" loading="lazy">%s</figure>' % (
+                e(b['src']), e(b.get('popisek', '')), '<figcaption>%s</figcaption>' % e(b['popisek']) if b.get('popisek') else '')
+        elif t == 'galerie' and b.get('fotky'):
+            h += '<div class="gal">%s</div>' % ''.join('<img src="%s" alt="" loading="lazy">' % e(f) for f in b['fotky'])
+        elif t == 'tlacitko' and b.get('text'):
+            h += '<p><a class="btn" href="%s">%s</a></p>' % (e(odkaz(b.get('odkaz'))), e(b['text']))
+    return '<section data-page="%s">\n<div class="wrap">%s</div></div>\n</section>\n' % (p['id'], h)
 
 
 def stranka(zaklad, cesta, hlava, sekce=None, vlozit=None, pfx='', slozky=()):
@@ -301,7 +379,7 @@ def sestav(zaklad, akce, web, l10n, dnes, pfx='', navic=(), noindex=False):
         vlastni.append(p)
     slozky = list(STRANKY) + ['akce'] + [p['id'] for p in vlastni] + [n[0] for n in navic]
     st = lambda cesta, hlava, sekce=None, vlozit=None: stranka(zaklad, cesta, hlava, sekce, vlozit, pfx, slozky)
-    hl = lambda cesta, meta, ld, ni=False: hlavicka(cesta, meta, ld, ni or noindex, pfx)
+    hl = lambda cesta, meta, ld, ni=False, obr=None: hlavicka(cesta, meta, ld, ni or noindex, pfx, obr)
     graf = {'@context': 'https://schema.org', '@graph': [zamek(web), SPOLEK,
             {'@type': 'WebSite', '@id': SITE + '#web', 'url': SITE, 'name': 'Živý zámek Toužim', 'inLanguage': ['cs', 'en', 'de'],
              'publisher': {'@id': SITE + '#spolek'}}]}
@@ -330,7 +408,8 @@ def sestav(zaklad, akce, web, l10n, dnes, pfx='', navic=(), noindex=False):
                 meta[l] = ('%s – Živý zámek Toužim' % t['nazev'], t.get('perex') or STRANKY['domu'][l][1])
         ld = {'@context': 'https://schema.org', '@type': 'WebPage', 'name': meta['cs'][0], 'url': url(pid + '/'),
               'isPartOf': {'@id': SITE + '#web'}}
-        soubory[pfx + pid + '/index.html'] = st(pid + '/', hl(pid + '/', meta, ld))
+        z = zaklad.replace('</main>\n', vlastni_html(p) + '</main>\n', 1)
+        soubory[pfx + pid + '/index.html'] = stranka(z, pid + '/', hl(pid + '/', meta, ld), pid, None, pfx, slozky)
         mapa.append(pid + '/')
     for sid, meta, ld in navic:
         soubory[pfx + sid + '/index.html'] = st(sid + '/', hl(sid + '/', meta, ld), sid)
@@ -340,7 +419,9 @@ def sestav(zaklad, akce, web, l10n, dnes, pfx='', navic=(), noindex=False):
             continue
         c = 'akce/%s/' % a['id']
         vlozit = {'<div class="wrap" id="akceDetail"></div>': detail_html(a, dnes)}
-        soubory[pfx + c + 'index.html'] = st(c, hl(c, akce_meta(a, l10n), udalost(a, c, l10n), bool(a.get('skryta'))), 'akce', vlozit)
+        obr = (SITE + a['share'], 'Plakát: %s' % a['title'] if a.get('poster') else a['title']) if a.get('share') else None
+        ld = [udalost(a, c, l10n), drobecky(a, c, dnes)]
+        soubory[pfx + c + 'index.html'] = st(c, hl(c, akce_meta(a, l10n), ld, bool(a.get('skryta')), obr), 'akce', vlozit)
         if not a.get('skryta'):
             mapa.append(c)
     return soubory, mapa
@@ -353,7 +434,22 @@ def nacti():
     return akce_js.get('AKCE', []), web_js.get('WEB', {}), web_js.get('L10N', {}), datetime.date.today().isoformat()
 
 
-def zapis(soubory, manifest):
+def posledni_zmeny(soubory, mapa, dnes, manifest):
+    """Datum poslední změny každé stránky v mapě webu (lastmod pro Google): otisk obsahu stránky se pamatuje
+    v data/adresy.json; když se obsah změní, platí dnešní datum. Čísla verzí skriptů (?v=…) se nepočítají."""
+    stare = {}
+    if os.path.exists(manifest):
+        stare = json.load(open(manifest, encoding='utf-8')).get('zmeny', {})
+    nove = {}
+    for c in mapa:
+        obsah = re.sub(r'\?v=[0-9a-f]+', '', soubory[c + 'index.html'])
+        otisk = hashlib.sha1(obsah.encode('utf-8')).hexdigest()[:12]
+        o = stare.get(c)
+        nove[c] = o if o and o[0] == otisk else [otisk, dnes]
+    return nove
+
+
+def zapis(soubory, manifest, zmeny=None):
     """Zapíše soubory, smaže stránky ze starého seznamu, které už nejsou, a uloží nový seznam."""
     stare = []
     if os.path.exists(manifest):
@@ -375,7 +471,7 @@ def zapis(soubory, manifest):
                 f.write(obsah)
             zmeneno += 1
     with open(manifest, 'w', encoding='utf-8') as f:
-        json.dump({'stranky': nove}, f, ensure_ascii=False, indent=0)
+        json.dump({'stranky': nove, 'zmeny': zmeny or {}}, f, ensure_ascii=False, indent=0)
         f.write('\n')
     return len(nove), zmeneno
 
@@ -386,11 +482,13 @@ def main():
     if not ZNACKA.search(zaklad):
         raise SystemExit('adresy: v index.html chybí <!--seo--> … <!--/seo-->')
     soubory, mapa = sestav(zaklad, akce, web, l10n, dnes)
+    zmeny = posledni_zmeny(soubory, mapa, dnes, 'data/adresy.json')
     soubory['sitemap.xml'] = ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-                              + ''.join('<url><loc>%s</loc></url>\n' % e(url(c)) for c in mapa) + '</urlset>\n')
+                              + ''.join('<url><loc>%s</loc><lastmod>%s</lastmod></url>\n' % (e(url(c)), zmeny[c][1]) for c in mapa)
+                              + '</urlset>\n')
     soubory['robots.txt'] = 'User-agent: *\nDisallow: /admin/\nDisallow: /nahled/\n\nSitemap: %ssitemap.xml\n' % SITE
 
-    n, zmeneno = zapis(soubory, 'data/adresy.json')
+    n, zmeneno = zapis(soubory, 'data/adresy.json', zmeny)
     print('adresy: %d stránek, v mapě webu %d, změněno %d souborů' % (n + 1, len(mapa), zmeneno))
 
 if __name__ == '__main__':

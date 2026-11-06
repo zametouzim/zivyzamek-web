@@ -85,11 +85,26 @@ def akce(tr=None):
                 x['html'] = md(t['text'])
             if x and tr is not None:
                 tr[l].setdefault('akce', {})[fn[:-5]] = x
-        for k in ('date', 'title', 'end', 'when', 'short', 'poster', 'photos', 'tag', 'titleTodo', 'skryta'):
+        for k in ('date', 'title', 'end', 'when', 'ucinkujici', 'vstupne', 'vstupne_castka', 'short', 'poster', 'photos', 'tag', 'titleTodo', 'skryta'):
             v = a.get(k)
             if v in (None, '', [], False):
                 continue
             o[k] = v
+        # účinkující: [{jmeno, typ = druh z administrace}] (starší zápis = jen jméno → Jiný jednotlivec)
+        if o.get('ucinkujici'):
+            o['ucinkujici'] = [u for u in ({'jmeno': (x.get('jmeno') or '').strip(), 'typ': x.get('typ') or 'Jiný jednotlivec'}
+                                           if isinstance(x, dict) else {'jmeno': str(x).strip(), 'typ': 'Jiný jednotlivec'}
+                                           for x in o['ucinkujici']) if u['jmeno']]
+            if not o['ucinkujici']:
+                del o['ucinkujici']
+        # vstupné: Neuvádět = nic (řádek se neukáže), doporučená částka bez čísla = jen dobrovolné
+        if o.get('vstupne') == 'Neuvádět':
+            del o['vstupne']
+        if o.get('vstupne') != 'Dobrovolné, doporučená částka':
+            o.pop('vstupne_castka', None)
+        elif not o.get('vstupne_castka'):
+            o['vstupne'] = 'Dobrovolné'
+            o.pop('vstupne_castka', None)
         o['date'] = str(o['date'])[:10]
         if o.get('end'):
             o['end'] = str(o['end'])[:10]
@@ -105,6 +120,31 @@ def akce(tr=None):
         items.append(o)
     items.sort(key=lambda a: (a['date'], a['id']))
     return items
+
+
+def tipy():
+    """Tipy z okolí: plakáty akcí sousedních obcí na hlavní stránce. Česky vždy, anglicky a německy jen s hotovým překladem názvu."""
+    items = []
+    if not os.path.isdir('content/tipy'):
+        return items
+    for fn in sorted(os.listdir('content/tipy')):
+        if not fn.endswith('.json'):
+            continue
+        a, loc = split(load('content/tipy/' + fn))
+        if not (a.get('nazev') and a.get('plakat') and a.get('datum')):
+            continue
+        o = {'id': fn[:-5], 'nazev': str(a['nazev']).strip(), 'datum': str(a['datum'])[:10], 'plakat': a['plakat']}
+        for k in ('cas', 'popisek'):
+            if str(a.get(k) or '').strip():
+                o[k] = str(a[k]).strip()
+        odkaz = str(a.get('odkaz') or '').strip()
+        if odkaz:
+            o['odkaz'] = odkaz if re.match(r'https?://', odkaz) else 'https://' + odkaz
+        for l, t in loc.items():
+            if str(t.get('nazev') or '').strip():
+                o[l] = {k: str(t[k]).strip() for k in ('nazev', 'cas', 'popisek') if str(t.get(k) or '').strip()}
+        items.append(o)
+    return sorted(items, key=lambda t: t['datum'])
 
 
 def rezervace(r, datum):
@@ -168,7 +208,7 @@ def stranka_l(o, t):
     return x
 
 
-def images(items, web):
+def images(items, web, tips=()):
     try:
         from PIL import Image, ImageOps
     except ImportError:
@@ -202,6 +242,17 @@ def images(items, web):
                     im.thumbnail((320, 640))
                     im.save(t, quality=80, progressive=True, optimize=True)
                 a['posterT'] = t
+        sdileni(a, Image, ImageOps)
+    for t in tips:  # plakát tipu z okolí: zmenšit a malý náhled na kartu
+        fit(t['plakat'], 1400)
+        n = os.path.join(os.path.dirname(t['plakat']), 'n', os.path.basename(t['plakat']))
+        if os.path.exists(t['plakat']):
+            if not os.path.exists(n) or os.path.getmtime(n) < os.path.getmtime(t['plakat']):
+                os.makedirs(os.path.dirname(n), exist_ok=True)
+                im = ImageOps.exif_transpose(Image.open(t['plakat'])).convert('RGB')
+                im.thumbnail((320, 640))
+                im.save(n, quality=80, progressive=True, optimize=True)
+            t['plakatT'] = n
     for g in web['suvenyry'].get('polozky', []):
         if g.get('foto'):
             fit(g['foto'], 1000)
@@ -212,6 +263,37 @@ def images(items, web):
             for src in [b.get('src')] + (b.get('fotky') or []):
                 if src:
                     fit(src, 1400)
+
+
+def sdileni(a, Image, ImageOps):
+    """Obrázek 1200 × 630 pro sdílení akce (Facebook, WhatsApp): plakát celý na rozmazaném podkladu z plakátu,
+    bez plakátu první fotka z akce. Bez obojího se sdílí obecný obrázek webu (img/og.jpg)."""
+    src = a.get('poster') or next(iter(a.get('photos') or []), None)
+    if not src or not os.path.exists(src):
+        return
+    # v názvu otisk zdroje: po výměně plakátu vznikne nový obrázek (a Facebook nevezme starý z mezipaměti)
+    import hashlib, glob
+    otisk = hashlib.sha1(open(src, 'rb').read()).hexdigest()[:8]
+    cil = 'img/sdileni/%s-%s.jpg' % (a['id'], otisk)
+    a['share'] = cil
+    for stary in glob.glob('img/sdileni/%s-*.jpg' % glob.escape(a['id'])):
+        if stary != cil and re.fullmatch(r'[0-9a-f]{8}', stary[len('img/sdileni/%s-' % a['id']):-4]):
+            os.remove(stary)
+    if os.path.exists(cil):
+        return
+    from PIL import ImageFilter, ImageEnhance
+    W, H = 1200, 630
+    im = ImageOps.exif_transpose(Image.open(src)).convert('RGB')
+    if a.get('poster'):
+        pod = ImageOps.fit(im, (W // 8, H // 8)).filter(ImageFilter.GaussianBlur(3)).resize((W, H), Image.LANCZOS)
+        out = ImageEnhance.Brightness(pod).enhance(0.55)
+        pl = im.copy()
+        pl.thumbnail((W - 80, H - 60), Image.LANCZOS)
+        out.paste(pl, ((W - pl.width) // 2, (H - pl.height) // 2))
+    else:
+        out = ImageOps.fit(im, (W, H), Image.LANCZOS)
+    os.makedirs(os.path.dirname(cil), exist_ok=True)
+    out.save(cil, quality=82, progressive=True, optimize=True)
 
 
 def heic():
@@ -281,13 +363,15 @@ def main():
         tr[l]['web'] = web_l[l]
     for o in web['stranky']:
         del o['_tr']
-    images(items, web)
+    tips = tipy()
+    images(items, web, tips)
     j = lambda o: json.dumps(o, ensure_ascii=False)
     with open('data/akce.js', 'w', encoding='utf-8') as f:
         f.write('// Generováno z content/ (tools/build.py). Neupravovat ručně, akce se upravují v administraci.\n')
         f.write('window.ROKY=%s;\n' % j({r['rok']: r['plakat'] for r in uvod.get('roky', [])}))
         f.write('window.HERO=%s;\n' % json.dumps(uvod.get('hero', []), ensure_ascii=False, indent=1))
         f.write('window.AKCE=[\n' + ',\n'.join(j(a) for a in items) + '\n];\n')
+        f.write('window.TIPY=%s;\n' % j(tips))
     with open('data/rezervace.json', 'w', encoding='utf-8') as f:
         rez = {}
         for a in items:
