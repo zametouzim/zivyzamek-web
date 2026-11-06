@@ -4123,6 +4123,48 @@
 "be64da878962": "test only, the event does not take place"
 }
 },
+"content/tipy/2026-11-07-heligonky-ales-rusnaka.json|de|cas": {
+"cs": "ed66be34b077",
+"out": "8e8fa7ec12ce",
+"radky": {
+"ed66be34b077": "Samstag 16 Uhr"
+}
+},
+"content/tipy/2026-11-07-heligonky-ales-rusnaka.json|de|nazev": {
+"cs": "84b597d27324",
+"out": "749f4784769e",
+"radky": {
+"84b597d27324": "Steirische Harmonika: Aleš Rusňák"
+}
+},
+"content/tipy/2026-11-07-heligonky-ales-rusnaka.json|de|popisek": {
+"cs": "da7c84be66c2",
+"out": "4f4fa9c14ea3",
+"radky": {
+"da7c84be66c2": "Kulturhaus Teplá"
+}
+},
+"content/tipy/2026-11-07-heligonky-ales-rusnaka.json|en|cas": {
+"cs": "ed66be34b077",
+"out": "62847cc401e4",
+"radky": {
+"ed66be34b077": "Saturday 4pm"
+}
+},
+"content/tipy/2026-11-07-heligonky-ales-rusnaka.json|en|nazev": {
+"cs": "84b597d27324",
+"out": "44556fff0376",
+"radky": {
+"84b597d27324": "Button accordions: Aleš Rusňák"
+}
+},
+"content/tipy/2026-11-07-heligonky-ales-rusnaka.json|en|popisek": {
+"cs": "da7c84be66c2",
+"out": "f13543123405",
+"radky": {
+"da7c84be66c2": "House of Culture, Teplá"
+}
+},
 "content/web/navsteva.json|de|kontakty.0.funkce": {
 "cs": "9f1d97588083",
 "out": "29b3d2f97452",
