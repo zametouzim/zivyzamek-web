@@ -1053,7 +1053,7 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
     function e(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
     function link(u){u=String(u||'');return /^(https?:\/\/|#|mailto:|tel:)/.test(u)?u:'#'}
     ST.forEach(function(p){
-      if(document.querySelector('section[data-page="'+p.id+'"]'))return;
+      var old=document.querySelector('section[data-page="'+p.id+'"]');  // na adrese stránky je předvyplněná česky (tools/adresy.py), tady se přestaví v jazyce návštěvníka
       var h='<div class="page-head">'+(p.nadtitulek?'<span class="eyebrow">'+e(p.nadtitulek)+'</span>':'')+'<h1>'+e(p.nazev)+'</h1>'+(p.perex?'<p>'+e(p.perex)+'</p>':'')+'</div><div class="vs">';
       (p.bloky||[]).forEach(function(b){
         if(b.type==='nadpis')h+='<h3>'+e(b.text||'')+'</h3>';
@@ -1063,7 +1063,7 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
         else if(b.type==='tlacitko'&&b.text){var u=link(b.odkaz);h+='<p><a class="btn" href="'+e(u)+'"'+(u.charAt(0)==='#'?'':' target="_blank" rel="noopener"')+'>'+e(b.text)+'</a></p>';}
       });
       var sec=document.createElement('section');sec.dataset.page=p.id;sec.hidden=true;sec.innerHTML='<div class="wrap">'+h+'</div></div>';
-      main.appendChild(sec);
+      if(old)old.parentNode.replaceChild(sec,old);else main.appendChild(sec);
       if(p.v_menu&&give){var a=document.createElement('a');a.setAttribute('href',PFX+p.id+'/');a.textContent=p.menu||p.nazev;give.parentNode.insertBefore(a,give);}
     });
   })();
@@ -1253,7 +1253,7 @@ function cas(w){var g=esc(w).split(/\s*[,;]\s*/).filter(Boolean).map(function(x)
   function cal(a){var s=a.date.split('-'),dot=EN?'':'.',t=(+s[2])+dot;if(a.end){var e=a.end.split('-');t+='\u2060–\u2060'+(+e[2])+dot;}return '<b'+(a.end?' class="r"':'')+'>'+t+'</b><span>'+MES[+s[1]-1]+'</span>'+(a.when?'<small>'+cas(a.when.split(' · ')[0])+'</small>':'')}
   function karta(a){
     return '<a class="upcard" href="'+PFX+'akce/'+a.id+'/"><div class="cal">'+cal(a)+'</div><div class="tx"><h3>'+esc(a.title)+'</h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<span class="go">'+T('Detail')+' →</span></div>'+(a.poster?'<img class="pt" src="'+(a.posterT||a.poster)+'" alt="" loading="lazy">':'')+'</a>'}
-  // tipy z okolí: akce sousedních obcí, jen na úvodu (ne v programu, kalendáři ani datech pro Google), nejvýš 2
+  // tipy z okolí: akce sousedních obcí, jen na úvodu pod našimi akcemi (ne v programu, kalendáři ani datech pro Google), nejvýš 2
   function tipKarta(t){var x=window.LANG==='cs'?t:t[window.LANG];if(!x)return '';
     var s=t.datum.split('-'),h='',g;
     try{h=new URL(t.odkaz).hostname.replace(/^www\.|^m\./,'')}catch(e){}
@@ -1262,9 +1262,8 @@ function cas(w){var g=esc(w).split(/\s*[,;]\s*/).filter(Boolean).map(function(x)
     return '<div class="upcard tip"><div class="cal"><span class="tipl">'+T('Tip z okolí')+'</span><b>'+(+s[2])+(EN?'':'.')+'</b><span>'+MES[+s[1]-1]+'</span>'+(x.cas?'<small>'+cas(x.cas)+'</small>':'')+'</div><div class="tx"><h3>'+esc(x.nazev)+'</h3>'+(x.popisek?'<p>'+esc(x.popisek)+'</p>':'')+g+'</div><button type="button" class="pz pt" data-src="'+t.plakat+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+(t.plakatT||t.plakat)+'" alt="'+T('Plakát')+': '+esc(x.nazev)+'" loading="lazy"></button></div>'}
   var dnes=today.getFullYear()+'-'+('0'+(today.getMonth()+1)).slice(-2)+'-'+('0'+today.getDate()).slice(-2);
   var tipy=(window.TIPY||[]).filter(function(t){return t.datum>=dnes&&(window.LANG==='cs'||t[window.LANG])}).slice(0,2);
-  if(hu){var nase=up.slice(0,4).map(function(a){return {d:a.date,h:karta(a)}}),vse=nase.concat(tipy.map(function(t){return {d:t.datum,t:1,h:tipKarta(t)}}));
-    vse.sort(function(a,b){return a.d<b.d?-1:a.d>b.d?1:(a.t||0)-(b.t||0)});
-    hu.innerHTML=(nase.length?'':PRAZDNO)+vse.map(function(k){return k.h}).join('');}
+  // naše akce první, tipy z okolí až pod nimi (seřazené podle data už z build.py)
+  if(hu)hu.innerHTML=(up.length?up.slice(0,4).map(karta).join(''):PRAZDNO)+tipy.map(tipKarta).join('');
   var brig=document.getElementById('brigList');
   if(brig){var bb=up.filter(function(a){return a.tag==='Přijďte pomoct'}).slice(0,3);
     brig.innerHTML=bb.length?bb.map(function(a){return '<li><a href="'+PFX+'akce/'+a.id+'/"><span class="bd">'+dd(a)+'</span><span><b>'+esc(a.title)+'</b>'+(a.when?'<br><small>'+esc(a.when)+'</small>':'')+'</span>'+(a.poster?'<img src="'+(a.posterT||a.poster)+'" alt="" loading="lazy">':'<span></span>')+'</a></li>'}).join(''):'<li>'+T('Termíny dalších brigád zveřejníme v programu a na Facebooku.')+'</li>';}
