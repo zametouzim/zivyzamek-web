@@ -85,9 +85,16 @@ nav.main a.give{background:var(--accent);color:var(--accent-ink);border:0;margin
 .has-sub{position:relative;display:flex}
 .has-sub>a::after{content:"";display:inline-block;width:0;height:0;margin-left:7px;vertical-align:3px;border:4px solid transparent;border-top:5px solid currentColor;border-bottom:0;opacity:.7}
 .has-sub .sub{display:none;position:absolute;top:100%;left:0;min-width:210px;background:var(--paper);border:1px solid var(--line);padding:6px 0;z-index:20;flex-direction:column;box-shadow:0 8px 20px rgba(0,0,0,.18)}
-.has-sub:hover .sub,.has-sub:focus-within .sub{display:flex}
+.has-sub:hover .sub,.has-sub:focus-within .sub,.has-sub.open .sub{display:flex}
+@media (hover:none){.has-sub:hover .sub,.has-sub:focus-within .sub{display:none}.has-sub.open .sub{display:flex}}
 nav.main .sub a{border-bottom:0;padding:11px 16px;white-space:nowrap;font-weight:400}
 nav.main .sub a:hover,nav.main .sub a:focus-visible{background:var(--panel);text-decoration:underline;text-decoration-color:var(--accent)}
+.jpruh{background:var(--navy);color:var(--navy-ink);border-bottom:1px solid var(--line)}
+.jpruh .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding-block:8px;font-size:16px}
+.jpruh p{margin:0;flex:1 1 220px;min-width:0;max-width:none}
+.jpruh a{color:var(--sun);font-weight:700;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.jpruh a:hover{text-decoration:underline}
+.jpruh button{background:none;border:1px solid currentColor;color:inherit;width:44px;height:44px;font-size:22px;line-height:1;cursor:pointer;flex:none}
 .menu-btn{display:none;margin-left:auto;background:none;border:1px solid var(--line);color:var(--ink);font:inherit;padding:6px 14px;cursor:pointer}
 @media (max-width:860px){
   .menu-btn{display:block}
@@ -1308,8 +1315,12 @@ function cas(w){var g=esc(w).split(/\s*[,;]\s*/).filter(Boolean).map(function(x)
   if(years.length)renderYear(years[0]);
 
   window.addEventListener('hashchange',show); show();
+  // tablet (bez myši, široké menu): první klepnutí na Program otevře podnabídku, druhé otevře stránku; klepnutí jinam ji zavře
+  var hs=nav.querySelector('.has-sub');
+  if(hs){hs.firstElementChild.addEventListener('click',function(e){if(!matchMedia('(hover: none)').matches||getComputedStyle(btn).display!=='none'||hs.classList.contains('open'))return;e.preventDefault();e.stopImmediatePropagation();hs.classList.add('open');this.setAttribute('aria-expanded','true')},true);
+    document.addEventListener('click',function(e){if(!hs.contains(e.target)){hs.classList.remove('open');hs.firstElementChild.removeAttribute('aria-expanded')}});}
   // podnabídka Programu: po kliknutí zavřít; na stejné stránce se stejnou mřížkou (#archiv znovu) jen dojet na místo
-  nav.addEventListener('click',function(e){var a=e.target.closest('.sub a');if(!a)return;a.blur();var u=new URL(a.href);if(u.pathname===location.pathname&&u.hash===location.hash){var t=document.getElementById(u.hash.slice(1));if(t){e.preventDefault();t.scrollIntoView({block:'start',behavior:'smooth'});nav.classList.remove('open');btn.setAttribute('aria-expanded','false')}}});
+  nav.addEventListener('click',function(e){var a=e.target.closest('.sub a');if(!a)return;a.blur();if(hs)hs.classList.remove('open');var u=new URL(a.href);if(u.pathname===location.pathname&&u.hash===location.hash){var t=document.getElementById(u.hash.slice(1));if(t){e.preventDefault();t.scrollIntoView({block:'start',behavior:'smooth'});nav.classList.remove('open');btn.setAttribute('aria-expanded','false')}}});
   btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false')});
   (function(){
     var f=document.getElementById('askForm'), msg=document.getElementById('askMsg');
@@ -1429,5 +1440,24 @@ function cas(w){var g=esc(w).split(/\s*[,;]\s*/).filter(Boolean).map(function(x)
 })();
 </script>
 <!-- Cloudflare Web Analytics (měření návštěvnosti bez cookies) --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d454580401b042cfa157b151aa6a708b"}'></script><!-- End Cloudflare Web Analytics -->
+<script>
+// Proužek pro cizince: jen na české verzi, jen když prohlížeč nemá mezi jazyky češtinu ani slovenštinu; nic nepřesměruje, po přepnutí nebo zavření už se neukáže
+(function(){try{
+  if(window.LANG!=='cs'||/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent))return;
+  try{if(localStorage.getItem('jazykPruh'))return}catch(e){}
+  var ls=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']).map(function(l){return String(l).toLowerCase()});
+  if(!ls[0]||ls.some(function(l){return /^(cs|sk)\b/.test(l)}))return;
+  var de=ls.some(function(l){return /^de\b/.test(l)})&&!ls.slice(0,ls.findIndex(function(l){return /^de\b/.test(l)})).some(function(l){return /^en\b/.test(l)});
+  var L=de?{l:'de',t:'Diese Seite gibt es auch auf Deutsch.',a:'Auf Deutsch lesen',x:'Schließen'}:{l:'en',t:'This website is also available in English.',a:'Read in English',x:'Close'};
+  var u=location.pathname+'?lang='+L.l+location.hash;
+  var d=document.createElement('aside');d.className='jpruh';d.setAttribute('data-notr','');d.setAttribute('lang',L.l);d.setAttribute('aria-label',L.a);
+  d.innerHTML='<div class="wrap"><p>'+L.t+' <a href="'+u+'" hreflang="'+L.l+'">'+L.a+' →</a></p><button type="button" aria-label="'+L.x+'">×</button></div>';
+  function pryc(){try{localStorage.setItem('jazykPruh','1')}catch(e){}}
+  d.querySelector('a').addEventListener('click',pryc);
+  d.querySelector('button').addEventListener('click',function(){pryc();d.remove()});
+  document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('a[data-lang]'))pryc()});
+  var h=document.querySelector('header.top');h.parentNode.insertBefore(d,h);
+}catch(e){}})();
+</script>
 </body>
 </html>
