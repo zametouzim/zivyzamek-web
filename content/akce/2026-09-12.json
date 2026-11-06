@@ -34,10 +34,58 @@
   ],
   "en": {
     "title": "Punkovice, 9th year",
-    "text": "The ninth Punkovice. Výblitek stepped in for KT Bandits at the last minute, the weather was kind, and once again a signed poster was auctioned. Thank you to everyone who came!"
+    "text": "The ninth Punkovice. Výblitek stepped in for KT Bandits at the last minute, the weather was kind, and once again a signed poster was auctioned. Thank you to everyone who came!",
+    "ucinkujici": [
+      {
+        "jmeno": "Výblitek",
+        "typ": "Kapela"
+      },
+      {
+        "jmeno": "Vypitý lahváče",
+        "typ": "Kapela"
+      },
+      {
+        "jmeno": "ŠpuntQaně",
+        "typ": "Kapela"
+      },
+      {
+        "jmeno": "Plesnivý fazole",
+        "typ": "Kapela"
+      },
+      {
+        "jmeno": "P.U.M.",
+        "typ": "Kapela"
+      }
+    ],
+    "vstupne": "Dobrovolné, doporučená částka",
+    "vstupne_castka": 200
   },
   "de": {
     "title": "Punkovice, 9. Jahrgang",
-    "text": "Die neunten Punkovice. Výblitek sprang kurzfristig für KT Bandits ein, das Wetter spielte mit, und auch dieses Jahr wurde ein signiertes Plakat versteigert. Danke an alle, die gekommen sind!"
+    "text": "Die neunten Punkovice. Výblitek sprang kurzfristig für KT Bandits ein, das Wetter spielte mit, und auch dieses Jahr wurde ein signiertes Plakat versteigert. Danke an alle, die gekommen sind!",
+    "ucinkujici": [
+      {
+        "jmeno": "Výblitek",
+        "typ": "Kapela"
+      },
+      {
+        "jmeno": "Vypitý lahváče",
+        "typ": "Kapela"
+      },
+      {
+        "jmeno": "ŠpuntQaně",
+        "typ": "Kapela"
+      },
+      {
+        "jmeno": "Plesnivý fazole",
+        "typ": "Kapela"
+      },
+      {
+        "jmeno": "P.U.M.",
+        "typ": "Kapela"
+      }
+    ],
+    "vstupne": "Dobrovolné, doporučená částka",
+    "vstupne_castka": 200
   }
 }
