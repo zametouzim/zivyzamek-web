@@ -25,7 +25,7 @@
   ],
   "vstupne": "Dobrovolné, doporučená částka",
   "vstupne_castka": 200,
-  "text": "Devátý ročník Punkovic. Zahráli Výblitek, Vypitý lahváče, ŠpuntQaně, Plesnivý fazole a P.U.M., Výblitek přitom na poslední chvíli zaskočil za KT Bandits. Počasí přálo a i letos se dražil podepsaný plakát. Děkujeme všem, kdo dorazili!",
+  "text": "Devátý ročník Punkovic. Výblitek na poslední chvíli zaskočil za KT Bandits, počasí přálo a i letos se dražil podepsaný plakát. Děkujeme všem, kdo dorazili!",
   "poster": "img/plakaty/2026_punkovice.jpg",
   "photos": [
     "img/akce/2026-09-12-1.jpg",
@@ -34,10 +34,10 @@
   ],
   "en": {
     "title": "Punkovice, 9th year",
-    "text": "The ninth Punkovice. Výblitek, Vypitý lahváče, ŠpuntQaně, Plesnivý fazole and P.U.M. played, with Výblitek stepping in for KT Bandits at the last minute. The weather was kind, and once again a signed poster was auctioned. Thank you to everyone who came!"
+    "text": "The ninth Punkovice. Výblitek stepped in for KT Bandits at the last minute, the weather was kind, and once again a signed poster was auctioned. Thank you to everyone who came!"
   },
   "de": {
     "title": "Punkovice, 9. Jahrgang",
-    "text": "Die neunten Punkovice. Es spielten Výblitek, Vypitý lahváče, ŠpuntQaně, Plesnivý fazole und P.U.M., wobei Výblitek kurzfristig für KT Bandits einsprang. Das Wetter spielte mit, und auch dieses Jahr wurde ein signiertes Plakat versteigert. Danke an alle, die gekommen sind!"
+    "text": "Die neunten Punkovice. Výblitek sprang kurzfristig für KT Bandits ein, das Wetter spielte mit, und auch dieses Jahr wurde ein signiertes Plakat versteigert. Danke an alle, die gekommen sind!"
   }
 }
