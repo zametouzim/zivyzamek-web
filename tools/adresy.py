@@ -240,6 +240,25 @@ DRUH_UCINKUJICIHO = {
 }
 
 
+ZVEREJNENO = {}  # id akce -> datum, kdy se akce poprvé objevila na webu (pamatuje se v data/adresy.json)
+
+
+def s_pasmem(cas):
+    """Uzávěrka rezervace '2026-12-31T18:00' jako čas s pásmem Prahy (letní / zimní čas)."""
+    import datetime
+    from zoneinfo import ZoneInfo
+    d = datetime.datetime.fromisoformat(str(cas)[:16]).replace(tzinfo=ZoneInfo('Europe/Prague'))
+    return d.isoformat(timespec='minutes')
+
+
+def zverejneni(akce, dnes, manifest):
+    """Datum zveřejnění každé akce: co už je v data/adresy.json, zůstává; nová akce dostane dnešní datum."""
+    stare = {}
+    if os.path.exists(manifest):
+        stare = json.load(open(manifest, encoding='utf-8')).get('zverejneno', {})
+    return {a['id']: stare.get(a['id']) or dnes for a in akce}
+
+
 def udalost(a, cesta, tr):
     ld = {'@type': 'Event', 'name': a['title'], 'startDate': a['date'], 'endDate': a.get('end') or a['date'],
           'eventAttendanceMode': 'https://schema.org/OfflineEventAttendanceMode',
@@ -271,6 +290,13 @@ def udalost(a, cesta, tr):
               'availability': 'https://schema.org/InStock'}
     if nazev:
         zdarma = dict(zdarma, name=nazev)
+    # platnost vstupného (Michal 7. 11. 2026): od zveřejnění akce na webu (nejpozději od jejího začátku, kvůli
+    # archivu doplněnému zpětně), u akce s rezervací do uzávěrky rezervací
+    platnost = {'validFrom': min(ZVEREJNENO.get(a['id']) or a['date'], a['date'])}
+    if isinstance(rez, dict) and rez.get('uzaverka'):
+        platnost['validThrough'] = s_pasmem(rez['uzaverka'])
+    nab = [dict(o, **platnost) for o in nab]
+    zdarma = dict(zdarma, **platnost)
     ld['offers'] = nab or zdarma
     ld['isAccessibleForFree'] = not nab
     return dict({'@context': 'https://schema.org'}, **ld)
@@ -449,7 +475,7 @@ def posledni_zmeny(soubory, mapa, dnes, manifest):
     return nove
 
 
-def zapis(soubory, manifest, zmeny=None):
+def zapis(soubory, manifest, zmeny=None, zverejneno=None):
     """Zapíše soubory, smaže stránky ze starého seznamu, které už nejsou, a uloží nový seznam."""
     stare = []
     if os.path.exists(manifest):
@@ -471,7 +497,7 @@ def zapis(soubory, manifest, zmeny=None):
                 f.write(obsah)
             zmeneno += 1
     with open(manifest, 'w', encoding='utf-8') as f:
-        json.dump({'stranky': nove, 'zmeny': zmeny or {}}, f, ensure_ascii=False, indent=0)
+        json.dump({'stranky': nove, 'zmeny': zmeny or {}, 'zverejneno': zverejneno or {}}, f, ensure_ascii=False, indent=0)
         f.write('\n')
     return len(nove), zmeneno
 
@@ -481,6 +507,7 @@ def main():
     zaklad = OBAL.sub(r'\1', open('index.html', encoding='utf-8').read())  # index.html je i výstup, sekce zase rozbalit
     if not ZNACKA.search(zaklad):
         raise SystemExit('adresy: v index.html chybí <!--seo--> … <!--/seo-->')
+    ZVEREJNENO.update(zverejneni(akce, dnes, 'data/adresy.json'))
     soubory, mapa = sestav(zaklad, akce, web, l10n, dnes)
     zmeny = posledni_zmeny(soubory, mapa, dnes, 'data/adresy.json')
     soubory['sitemap.xml'] = ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -488,7 +515,7 @@ def main():
                               + '</urlset>\n')
     soubory['robots.txt'] = 'User-agent: *\nDisallow: /admin/\nDisallow: /nahled/\n\nSitemap: %ssitemap.xml\n' % SITE
 
-    n, zmeneno = zapis(soubory, 'data/adresy.json', zmeny)
+    n, zmeneno = zapis(soubory, 'data/adresy.json', zmeny, ZVEREJNENO)
     print('adresy: %d stránek, v mapě webu %d, změněno %d souborů' % (n + 1, len(mapa), zmeneno))
 
 if __name__ == '__main__':
