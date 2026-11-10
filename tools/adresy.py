@@ -6,7 +6,7 @@ Web je jedna stránka (index.html), která přepíná sekce. Vyhledávače ale �
 a každou akci vytvoří složka s kopií index.html, která má:
   <base href="../">          odkazy na obrázky, data a skripty vedou do kořene webu
   vlastní titulek a popis      (cs v hlavičce, en/de ve window.META, dosadí je překlad stránky)
-  canonical a hreflang        hlavní adresa stránky a její jazykové verze (?lang=en|de)
+  canonical a hreflang        hlavní adresa stránky a její jazykové verze (/en/…, /de/…; stará ?lang=en přesměruje)
   strukturovaná data          JSON-LD: zámek, spolek, akce (Event)
   viditelnou svou sekci        a u akcí a programu předvyplněný obsah pro roboty bez JavaScriptu
   jen svůj text               ostatní sekce jsou zabalené v <script type="text/x-sekce">, takže robot na adrese
@@ -27,7 +27,7 @@ HLAVA = '<!--seo: generuje tools/adresy.py, neupravovat ručně-->\n%s<!--/seo--
 SEKCE = re.compile(r'^<section data-page="([a-z]+)"( hidden)?>\n.*?^</section>\n', re.S | re.M)
 OBAL = re.compile(r'^<script type="text/x-sekce">\n(.*?)</script>\n', re.S | re.M)
 # složky webu, které nejsou stránky (vlastní stránka z administrace se nesmí jmenovat stejně)
-REZERVOVANE = {'img', 'docs', 'data', 'i18n', 'js', 'admin', 'nahled', 'navod', 'skripty', 'tools', 'content',
+REZERVOVANE = {'en', 'de', 'img', 'docs', 'data', 'i18n', 'js', 'admin', 'nahled', 'navod', 'skripty', 'tools', 'content',
                'dotace', 'akce', 'domu', 'platba', 'archiv', 'dotaz'}
 
 ADRESA = {'@type': 'PostalAddress', 'streetAddress': 'náměstí Jiřího z Poděbrad 1', 'postalCode': '364 01',
@@ -138,27 +138,30 @@ def url(cesta):
 OG_ALT = 'Zámek Toužim, pohled přes trávník s lavicemi na zámecké budovy'
 
 
-def hlavicka(cesta, meta, ld, noindex=False, pfx='', obr=None):
+def hlavicka(cesta, meta, ld, noindex=False, pfx='', obr=None, jazyk='cs'):
     """Blok mezi <!--seo--> a <!--/seo--> v hlavičce. cesta = '' (úvod), 'program/', 'akce/x/'.
     pfx = složka kopie webu (srovnani/); kopie míří obrázky a data do kořene webu a canonical na skutečnou stránku."""
-    t, d = meta['cs']
+    t, d = meta.get(jazyk) or meta['cs']
     u = url(cesta)
     r = []
     if pfx + cesta:
         r.append('<base href="%s">' % ('../' * (pfx + cesta).count('/')))
     if pfx:
         r.append('<script>window.PFX=%s</script>' % json.dumps(pfx))
+    if jazyk != 'cs':  # anglická a německá verze: vlastní adresa /en/…, /de/… (Google je zařadí jako samostatné stránky)
+        r.append('<script>window.JAZYK=%s</script>' % json.dumps(jazyk))
     r.append('<title>%s</title>' % e(t))
     r.append('<meta name="description" content="%s">' % e(d))
     if noindex:
         r.append('<meta name="robots" content="noindex">')
-    r.append('<link rel="canonical" href="%s">' % u)
+    vlastni = url(pfx + cesta) if jazyk != 'cs' else u
+    r.append('<link rel="canonical" href="%s">' % vlastni)
     for l in ('cs', 'en', 'de'):
-        r.append('<link rel="alternate" hreflang="%s" href="%s">' % (l, u + ('' if l == 'cs' else '?lang=' + l)))
+        r.append('<link rel="alternate" hreflang="%s" href="%s">' % (l, url(('' if l == 'cs' else l + '/') + cesta)))
     r.append('<link rel="alternate" hreflang="x-default" href="%s">' % u)
     r.append('<meta property="og:title" content="%s">' % e(t))
     r.append('<meta property="og:description" content="%s">' % e(d))
-    r.append('<meta property="og:url" content="%s">' % u)
+    r.append('<meta property="og:url" content="%s">' % vlastni)
     # obrázek při sdílení: u akce její plakát nebo fotka (tools/build.py, img/sdileni/), jinak obecný obrázek webu
     o_src, o_alt = obr or (OBR, OG_ALT)
     r.append('<meta property="og:image" content="%s">' % e(o_src))
@@ -375,8 +378,11 @@ def vlastni_html(p):
     return '<section data-page="%s">\n<div class="wrap">%s</div></div>\n</section>\n' % (p['id'], h)
 
 
-def stranka(zaklad, cesta, hlava, sekce=None, vlozit=None, pfx='', slozky=()):
+def stranka(zaklad, cesta, hlava, sekce=None, vlozit=None, pfx='', slozky=(), jazyk='cs'):
     s = ZNACKA.sub(lambda m: hlava, zaklad, count=1)
+    if jazyk != 'cs':
+        s = s.replace('<html lang="cs">', '<html lang="%s">' % jazyk, 1)
+        s = s.replace('<meta property="og:locale" content="cs_CZ">', '<meta property="og:locale" content="%s">' % {'en': 'en_GB', 'de': 'de_DE'}[jazyk], 1)
     if pfx + cesta:
         s = s.replace('href="#obsah"', 'href="%s#obsah"' % (pfx + cesta), 1)
     if sekce and sekce != 'domu':
@@ -389,10 +395,14 @@ def stranka(zaklad, cesta, hlava, sekce=None, vlozit=None, pfx='', slozky=()):
     s = SEKCE.sub(lambda m: m.group(0) if m.group(1) == vlastni else '<script type="text/x-sekce">\n%s</script>\n' % m.group(0), s)
     if pfx:  # odkazy na stránky webu vedou do kopie
         s = re.sub(r'href="(\./|(?:%s)/[^"]*)"' % '|'.join(map(re.escape, slozky)), lambda m: 'href="%s%s"' % (pfx, m.group(1)), s)
+    # přepínač jazyků: skutečné adresy téže stránky (odkazy jsou vůči kořeni webu, <base>)
+    for l in ('cs', 'en', 'de'):
+        cil = ('' if l == 'cs' else l + '/') + cesta
+        s = s.replace('href="?lang=%s" data-lang="%s"' % (l, l), 'href="%s" data-lang="%s"' % (cil or './', l), 1)
     return s
 
 
-def sestav(zaklad, akce, web, l10n, dnes, pfx='', navic=(), noindex=False):
+def sestav(zaklad, akce, web, l10n, dnes, pfx='', navic=(), noindex=False, jazyk='cs'):
     """Všechny stránky webu: {cesta souboru: obsah} a seznam adres pro mapu webu.
     navic = [(id sekce, meta, ld)] další stránky, které v zakladu mají vlastní sekci (kopie webu)."""
     soubory, mapa = {}, []
@@ -404,8 +414,8 @@ def sestav(zaklad, akce, web, l10n, dnes, pfx='', navic=(), noindex=False):
             continue
         vlastni.append(p)
     slozky = list(STRANKY) + ['akce'] + [p['id'] for p in vlastni] + [n[0] for n in navic]
-    st = lambda cesta, hlava, sekce=None, vlozit=None: stranka(zaklad, cesta, hlava, sekce, vlozit, pfx, slozky)
-    hl = lambda cesta, meta, ld, ni=False, obr=None: hlavicka(cesta, meta, ld, ni or noindex, pfx, obr)
+    st = lambda cesta, hlava, sekce=None, vlozit=None: stranka(zaklad, cesta, hlava, sekce, vlozit, pfx, slozky, jazyk)
+    hl = lambda cesta, meta, ld, ni=False, obr=None: hlavicka(cesta, meta, ld, ni or noindex, pfx, obr, jazyk)
     graf = {'@context': 'https://schema.org', '@graph': [zamek(web), SPOLEK,
             {'@type': 'WebSite', '@id': SITE + '#web', 'url': SITE, 'name': 'Živý zámek Toužim', 'inLanguage': ['cs', 'en', 'de'],
              'publisher': {'@id': SITE + '#spolek'}}]}
@@ -435,7 +445,7 @@ def sestav(zaklad, akce, web, l10n, dnes, pfx='', navic=(), noindex=False):
         ld = {'@context': 'https://schema.org', '@type': 'WebPage', 'name': meta['cs'][0], 'url': url(pid + '/'),
               'isPartOf': {'@id': SITE + '#web'}}
         z = zaklad.replace('</main>\n', vlastni_html(p) + '</main>\n', 1)
-        soubory[pfx + pid + '/index.html'] = stranka(z, pid + '/', hl(pid + '/', meta, ld), pid, None, pfx, slozky)
+        soubory[pfx + pid + '/index.html'] = stranka(z, pid + '/', hl(pid + '/', meta, ld), pid, None, pfx, slozky, jazyk)
         mapa.append(pid + '/')
     for sid, meta, ld in navic:
         soubory[pfx + sid + '/index.html'] = st(sid + '/', hl(sid + '/', meta, ld), sid)
@@ -502,6 +512,22 @@ def zapis(soubory, manifest, zmeny=None, zverejneno=None):
     return len(nove), zmeneno
 
 
+# staré adresy z původního webu, které Google ještě zkouší (Search Console, 404): cesta -> nová stránka
+PRESMEROVANI = {
+    'hradozamecka-noc/': 'akce/2026-08-22/',
+    'odmeny/': 'podporte/#pomoc-suvenyry',
+}
+
+
+def presmerovani(cil):
+    """GitHub Pages neumí serverové přesměrování: okamžité meta refresh + canonical Google bere jako trvalé."""
+    cesta, _, kotva = cil.partition('#')
+    u = e(url(cesta) + ('#' + kotva if kotva else ''))
+    return ('<!doctype html><html lang="cs"><head><meta charset="utf-8"><title>Přesměrování</title>'
+            '<link rel="canonical" href="%s"><meta http-equiv="refresh" content="0; url=%s">'
+            '</head><body><p><a href="%s">Pokračujte sem</a></p></body></html>\n') % (u, u, u)
+
+
 def main():
     akce, web, l10n, dnes = nacti()
     zaklad = OBAL.sub(r'\1', open('index.html', encoding='utf-8').read())  # index.html je i výstup, sekce zase rozbalit
@@ -509,10 +535,16 @@ def main():
         raise SystemExit('adresy: v index.html chybí <!--seo--> … <!--/seo-->')
     ZVEREJNENO.update(zverejneni(akce, dnes, 'data/adresy.json'))
     soubory, mapa = sestav(zaklad, akce, web, l10n, dnes)
+    for l in ('en', 'de'):  # anglická a německá verze každé stránky na vlastní adrese
+        s, m = sestav(zaklad, akce, web, l10n, dnes, pfx=l + '/', jazyk=l)
+        soubory.update(s)
+        mapa += [l + '/' + c for c in m]
     zmeny = posledni_zmeny(soubory, mapa, dnes, 'data/adresy.json')
     soubory['sitemap.xml'] = ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
                               + ''.join('<url><loc>%s</loc><lastmod>%s</lastmod></url>\n' % (e(url(c)), zmeny[c][1]) for c in mapa)
                               + '</urlset>\n')
+    for stara, cil in PRESMEROVANI.items():
+        soubory[stara + 'index.html'] = presmerovani(cil)
     soubory['robots.txt'] = 'User-agent: *\nDisallow: /admin/\nDisallow: /nahled/\n\nSitemap: %ssitemap.xml\n' % SITE
 
     n, zmeneno = zapis(soubory, 'data/adresy.json', zmeny, ZVEREJNENO)

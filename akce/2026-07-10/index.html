@@ -10,8 +10,8 @@
 <meta name="description" content="Hudební večer s Milanem Pitkinem a Františkem Nedvědem (zámek Toužim, 10. 7.">
 <link rel="canonical" href="https://www.zivyzamektouzim.cz/akce/2026-07-10/">
 <link rel="alternate" hreflang="cs" href="https://www.zivyzamektouzim.cz/akce/2026-07-10/">
-<link rel="alternate" hreflang="en" href="https://www.zivyzamektouzim.cz/akce/2026-07-10/?lang=en">
-<link rel="alternate" hreflang="de" href="https://www.zivyzamektouzim.cz/akce/2026-07-10/?lang=de">
+<link rel="alternate" hreflang="en" href="https://www.zivyzamektouzim.cz/en/akce/2026-07-10/">
+<link rel="alternate" hreflang="de" href="https://www.zivyzamektouzim.cz/de/akce/2026-07-10/">
 <link rel="alternate" hreflang="x-default" href="https://www.zivyzamektouzim.cz/akce/2026-07-10/">
 <meta property="og:title" content="Hudební večer s Milanem Pitkinem a Františkem Nedvědem, 10. 7. 2026 – Živý zámek Toužim">
 <meta property="og:description" content="Hudební večer s Milanem Pitkinem a Františkem Nedvědem (zámek Toužim, 10. 7.">
@@ -32,7 +32,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
-<script>(function(){var l=(location.search.match(/[?&]lang=(en|de)\b/)||[])[1]||'cs';window.LANG=l;if(l!=='cs'){document.documentElement.lang=l;document.documentElement.classList.add('tr-wait');setTimeout(function(){document.documentElement.classList.remove('tr-wait')},2500);}})();</script>
+<script>(function(){/* jazyk: anglická a německá verze mají vlastní adresy /en/… a /de/… (window.JAZYK z tools/adresy.py); stará adresa ?lang=en přesměruje */var q=location.search,m=(q.match(/[?&]lang=(en|de)\b/)||[])[1],j=window.JAZYK||'',k=new URL('.',document.baseURI).pathname,z=k+(j?j+'/':''),r=location.pathname.indexOf(z)===0?location.pathname.slice(z.length):'';window.jazykUrl=function(x){return k+(x==='cs'?'':x+'/')+r+location.hash};if(!j&&m&&!/[?&]nahled=/.test(q)){window.LANG=m;location.replace(window.jazykUrl(m));return}var l=j||m||'cs';window.LANG=l;if(l!=='cs'){document.documentElement.lang=l;document.documentElement.classList.add('tr-wait');setTimeout(function(){document.documentElement.classList.remove('tr-wait')},2500);}})();</script>
 <script>try{var t=localStorage.getItem("vzhled");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script>
 <style>
 /* Barvy ze sezónního plakátu 2026 (tmavě modrá, korálová, žlutá) na teplém podkladu jako omítka zámku; linky z loga jako dělicí prvek; písmo Calibri → Carlito, data úzkým písmem jako na plakátu */
@@ -487,7 +487,7 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
     </nav>
     <div class="lang" data-notr>
       <button class="lang-btn" id="langBtn" type="button" aria-expanded="false" aria-controls="langMenu" aria-label="Jazyk · Language · Sprache" title="Jazyk · Language · Sprache"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></button>
-      <div class="lang-menu" id="langMenu" hidden><a href="?lang=cs" data-lang="cs" lang="cs" hreflang="cs">Česky</a><a href="?lang=en" data-lang="en" lang="en" hreflang="en">English</a><a href="?lang=de" data-lang="de" lang="de" hreflang="de">Deutsch</a></div>
+      <div class="lang-menu" id="langMenu" hidden><a href="akce/2026-07-10/" data-lang="cs" lang="cs" hreflang="cs">Česky</a><a href="en/akce/2026-07-10/" data-lang="en" lang="en" hreflang="en">English</a><a href="de/akce/2026-07-10/" data-lang="de" lang="de" hreflang="de">Deutsch</a></div>
     </div>
     <button class="theme-btn" id="themeBtn" type="button" aria-label="Přepnout na tmavý vzhled" title="Světlý / tmavý vzhled">
       <svg class="i-moon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
@@ -1052,7 +1052,7 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
 })();
 // přepínač jazyků: zachová stránku (adresu i hash)
 (function(){
-  function upd(){[].forEach.call(document.querySelectorAll('a[data-lang]'),function(a){var l=a.dataset.lang;a.href=location.pathname+(l==='cs'?'':'?lang='+l)+location.hash;a.classList.toggle('cur',l===window.LANG)})}
+  function upd(){[].forEach.call(document.querySelectorAll('a[data-lang]'),function(a){var l=a.dataset.lang;a.href=window.jazykUrl(l);a.classList.toggle('cur',l===window.LANG)})}
   upd();window.addEventListener('hashchange',upd);
   // zeměkoule: rozbalí nabídku jazyků, zavře se klikem jinam nebo klávesou Esc
   var lb=document.getElementById('langBtn'),lm=document.getElementById('langMenu');
@@ -1102,7 +1102,7 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
   document.addEventListener('click',function(e){
     if(e.defaultPrevented||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
     var a=e.target.closest('a[href]');if(!a||a.target||a.hasAttribute('data-jump')||a.hasAttribute('data-lang'))return;
-    if(!window.NAHLED&&window.LANG==='cs')return;
+    if(!window.NAHLED&&(window.LANG==='cs'||window.JAZYK))return;
     var u=new URL(a.href);if(u.origin!==location.origin||u.pathname.indexOf(KOREN)!==0)return;
     var r=u.pathname.slice(KOREN.length).replace(/index\.html$/,'');
     if(r&&!/^[^.]+\/$/.test(r))return;
@@ -1277,9 +1277,11 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
 function cas(w){var g=esc(w).split(/\s*[,;]\s*/).filter(Boolean).map(function(x){return x.replace(/\s*[-–]\s*/g,'⁠–⁠').replace(/(\d)\s+(?=(Uhr|h|hod\.?|am|pm)\b)/g,'$1 ')});
     // jeden den: den nahoře, čas pod ním; víc dnů s různými časy: každý den na vlastním řádku i se svým časem
     return g.length>1?g.map(function(x){return x.replace(/([^\d\s])\s+(?=\d)/,'$1 ')}).join('<br>'):(g[0]||'').replace(/([^\d\s])\s+(?=\d)/,'$1<br>')}
+  /* adresa detailu akce (lomítko a uvozovku nepsat v řetězci za sebou: Google to četl jako odkaz) */
+  function odkazAkce(a){return PFX+'akce/'+a.id+'/'}
   function cal(a){var s=a.date.split('-'),dot=EN?'':'.',t=(+s[2])+dot;if(a.end){var e=a.end.split('-');t+='\u2060–\u2060'+(+e[2])+dot;}return '<b'+(a.end?' class="r"':'')+'>'+t+'</b><span>'+MES[+s[1]-1]+'</span>'+(a.when?'<small>'+cas(a.when.split(' · ')[0])+'</small>':'')}
   function karta(a){
-    return '<a class="upcard" href="'+PFX+'akce/'+a.id+'/"><div class="cal">'+cal(a)+'</div><div class="tx"><h3>'+esc(a.title)+'</h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<span class="go">'+T('Detail')+' →</span></div>'+(a.poster?'<img class="pt" src="'+(a.posterT||a.poster)+'" alt="" loading="lazy">':'')+'</a>'}
+    return '<a class="upcard" href="'+odkazAkce(a)+'"><div class="cal">'+cal(a)+'</div><div class="tx"><h3>'+esc(a.title)+'</h3>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<span class="go">'+T('Detail')+' →</span></div>'+(a.poster?'<img class="pt" src="'+(a.posterT||a.poster)+'" alt="" loading="lazy">':'')+'</a>'}
   // tipy z okolí: akce sousedních obcí, jen na úvodu pod našimi akcemi (ne v programu, kalendáři ani datech pro Google), nejvýš 2
   function tipKarta(t){var x=window.LANG==='cs'?t:t[window.LANG];if(!x)return '';
     var s=t.datum.split('-'),h='',g;
@@ -1293,10 +1295,10 @@ function cas(w){var g=esc(w).split(/\s*[,;]\s*/).filter(Boolean).map(function(x)
   if(hu)hu.innerHTML=(up.length?up.slice(0,4).map(karta).join(''):PRAZDNO)+tipy.map(tipKarta).join('');
   var brig=document.getElementById('brigList');
   if(brig){var bb=up.filter(function(a){return a.tag==='Přijďte pomoct'}).slice(0,3);
-    brig.innerHTML=bb.length?bb.map(function(a){return '<li><a href="'+PFX+'akce/'+a.id+'/"><span class="bd">'+dd(a)+'</span><span><b>'+esc(a.title)+'</b>'+(a.when?'<br><small>'+esc(a.when)+'</small>':'')+'</span>'+(a.poster?'<img src="'+(a.posterT||a.poster)+'" alt="" loading="lazy">':'<span></span>')+'</a></li>'}).join(''):'<li>'+T('Termíny dalších brigád zveřejníme v programu a na Facebooku.')+'</li>';}
+    brig.innerHTML=bb.length?bb.map(function(a){return '<li><a href="'+odkazAkce(a)+'"><span class="bd">'+dd(a)+'</span><span><b>'+esc(a.title)+'</b>'+(a.when?'<br><small>'+esc(a.when)+'</small>':'')+'</span>'+(a.poster?'<img src="'+(a.posterT||a.poster)+'" alt="" loading="lazy">':'<span></span>')+'</a></li>'}).join(''):'<li>'+T('Termíny dalších brigád zveřejníme v programu a na Facebooku.')+'</li>';}
   var RK=window.ROKY||{}, rok=String(today.getFullYear()), sezona=RK[rok];
   if(ul)ul.innerHTML=up.length?up.map(function(a){
-    return '<li class="ev"><div class="d">'+dd(a)+(a.when?'<small style="display:block;font-size:15px;color:var(--grey);font-family:var(--font);font-weight:400">'+cas(a.when)+'</small>':'')+'</div><div><h2 class="h3"><a href="'+PFX+'akce/'+a.id+'/">'+esc(a.title)+'</a></h2>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<a class="det" href="'+PFX+'akce/'+a.id+'/">'+T('Detail akce')+' →</a></div>'+(a.poster?'<button class="pz" data-src="'+a.poster+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+(a.posterT||a.poster)+'" alt="'+T('Plakát')+': '+esc(a.title)+'" loading="lazy"></button>':'<span></span>')+(a.tag?'<span class="tag '+(a.tagc||'')+'">'+esc(T(a.tag))+'</span>':'<span></span>')+'</li>';
+    return '<li class="ev"><div class="d">'+dd(a)+(a.when?'<small style="display:block;font-size:15px;color:var(--grey);font-family:var(--font);font-weight:400">'+cas(a.when)+'</small>':'')+'</div><div><h2 class="h3"><a href="'+odkazAkce(a)+'">'+esc(a.title)+'</a></h2>'+(a.short?'<p>'+esc(a.short)+'</p>':'')+'<a class="det" href="'+odkazAkce(a)+'">'+T('Detail akce')+' →</a></div>'+(a.poster?'<button class="pz" data-src="'+a.poster+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+(a.posterT||a.poster)+'" alt="'+T('Plakát')+': '+esc(a.title)+'" loading="lazy"></button>':'<span></span>')+(a.tag?'<span class="tag '+(a.tagc||'')+'">'+esc(T(a.tag))+'</span>':'<span></span>')+'</li>';
   }).join(''):'<li class="ev" style="display:block">'+PRAZDNO+'</li>';
   if(ul&&sezona)ul.insertAdjacentHTML('afterbegin','<li class="ev pin"><div class="d">'+rok+'</div><div><h2 class="h3">'+T('Plakát sezóny')+' '+rok+'</h2><p>'+T('Celý program roku na jednom plakátu. Klikněte pro zvětšení.')+'</p></div><button class="pz" data-src="'+sezona+'" aria-label="'+T('Zvětšit plakát')+'"><img src="'+sezona+'" alt="'+T('Plakát sezóny')+' '+rok+'" loading="lazy"></button><span></span></li>');
 
@@ -1310,7 +1312,7 @@ function cas(w){var g=esc(w).split(/\s*[,;]\s*/).filter(Boolean).map(function(x)
     [].forEach.call(yearsEl.children,function(b){b.setAttribute('aria-selected',b.dataset.y===y?'true':'false')});
     list.innerHTML=done.filter(function(a){return a.date.slice(0,4)===y}).map(function(a){
       var th=a.photos&&a.photos[0]?a.photos[0].replace('img/akce/','img/akce/t/'):(a.posterT||a.poster);
-      return '<li class="ev past"><a class="evl" href="'+PFX+'akce/'+a.id+'/"><div class="d">'+d(a.date)+'</div><div><h3>'+esc(a.title)+'</h3><div class="meta">'+[a.poster?T('plakát'):'',a.photos&&a.photos.length?nFoto(a.photos.length):''].filter(Boolean).join(' · ')+'</div></div>'+(th?'<img class="th" src="'+th+'" alt="" loading="lazy">':'<span></span>')+'</a></li>';
+      return '<li class="ev past"><a class="evl" href="'+odkazAkce(a)+'"><div class="d">'+d(a.date)+'</div><div><h3>'+esc(a.title)+'</h3><div class="meta">'+[a.poster?T('plakát'):'',a.photos&&a.photos.length?nFoto(a.photos.length):''].filter(Boolean).join(' · ')+'</div></div>'+(th?'<img class="th" src="'+th+'" alt="" loading="lazy">':'<span></span>')+'</a></li>';
     }).join('');
     var R=window.ROKY||{}; if(R[y]) list.insertAdjacentHTML('afterbegin','<li class="ev past"><a class="evl" href="'+R[y]+'" target="_blank" rel="noopener"><div class="d">'+y+'</div><div><h3>'+T('Plakát sezóny')+' '+y+'</h3><div class="meta">'+T('celý program roku')+'</div></div><img class="th" src="'+R[y]+'" alt="" loading="lazy" style="object-fit:cover;object-position:top"></a></li>');
   }
@@ -1456,7 +1458,7 @@ function cas(w){var g=esc(w).split(/\s*[,;]\s*/).filter(Boolean).map(function(x)
   if(!ls[0]||ls.some(function(l){return /^(cs|sk)\b/.test(l)}))return;
   var de=ls.some(function(l){return /^de\b/.test(l)})&&!ls.slice(0,ls.findIndex(function(l){return /^de\b/.test(l)})).some(function(l){return /^en\b/.test(l)});
   var L=de?{l:'de',t:'Diese Seite gibt es auch auf Deutsch.',a:'Auf Deutsch lesen',x:'Schließen'}:{l:'en',t:'This website is also available in English.',a:'Read in English',x:'Close'};
-  var u=location.pathname+'?lang='+L.l+location.hash;
+  var u=window.jazykUrl(L.l);
   var d=document.createElement('aside');d.className='jpruh';d.setAttribute('data-notr','');d.setAttribute('lang',L.l);d.setAttribute('aria-label',L.a);
   d.innerHTML='<div class="wrap"><p>'+L.t+' <a href="'+u+'" hreflang="'+L.l+'">'+L.a+' →</a></p><button type="button" aria-label="'+L.x+'">×</button></div>';
   function pryc(){try{localStorage.setItem('jazykPruh','1')}catch(e){}}
