@@ -502,6 +502,21 @@ def zapis(soubory, manifest, zmeny=None, zverejneno=None):
     return len(nove), zmeneno
 
 
+# staré adresy z původního webu, které Google ještě zkouší (Search Console, 404): cesta -> nová stránka
+PRESMEROVANI = {
+    'hradozamecka-noc/': 'akce/2026-08-22/',
+    'odmeny/': 'podporte/',
+}
+
+
+def presmerovani(cil):
+    """GitHub Pages neumí serverové přesměrování: okamžité meta refresh + canonical Google bere jako trvalé."""
+    u = e(url(cil))
+    return ('<!doctype html><html lang="cs"><head><meta charset="utf-8"><title>Přesměrování</title>'
+            '<link rel="canonical" href="%s"><meta http-equiv="refresh" content="0; url=%s">'
+            '</head><body><p><a href="%s">Pokračujte sem</a></p></body></html>\n') % (u, u, u)
+
+
 def main():
     akce, web, l10n, dnes = nacti()
     zaklad = OBAL.sub(r'\1', open('index.html', encoding='utf-8').read())  # index.html je i výstup, sekce zase rozbalit
@@ -513,6 +528,8 @@ def main():
     soubory['sitemap.xml'] = ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
                               + ''.join('<url><loc>%s</loc><lastmod>%s</lastmod></url>\n' % (e(url(c)), zmeny[c][1]) for c in mapa)
                               + '</urlset>\n')
+    for stara, cil in PRESMEROVANI.items():
+        soubory[stara + 'index.html'] = presmerovani(cil)
     soubory['robots.txt'] = 'User-agent: *\nDisallow: /admin/\nDisallow: /nahled/\n\nSitemap: %ssitemap.xml\n' % SITE
 
     n, zmeneno = zapis(soubory, 'data/adresy.json', zmeny, ZVEREJNENO)
