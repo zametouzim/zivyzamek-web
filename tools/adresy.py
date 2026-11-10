@@ -511,7 +511,8 @@ PRESMEROVANI = {
 
 def presmerovani(cil):
     """GitHub Pages neumí serverové přesměrování: okamžité meta refresh + canonical Google bere jako trvalé."""
-    u = e(url(cil))
+    cesta, _, kotva = cil.partition('#')
+    u = e(url(cesta) + ('#' + kotva if kotva else ''))
     return ('<!doctype html><html lang="cs"><head><meta charset="utf-8"><title>Přesměrování</title>'
             '<link rel="canonical" href="%s"><meta http-equiv="refresh" content="0; url=%s">'
             '</head><body><p><a href="%s">Pokračujte sem</a></p></body></html>\n') % (u, u, u)
