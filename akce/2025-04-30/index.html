@@ -10,8 +10,8 @@
 <meta name="description" content="Pálení čarodějnic a stavění máje (zámek Toužim, 30. 4. 2025) Stavění máje a vatra se třemi čarodějnicemi, které vyrobily děti z kroužků CVČ Kačaba.">
 <link rel="canonical" href="https://www.zivyzamektouzim.cz/akce/2025-04-30/">
 <link rel="alternate" hreflang="cs" href="https://www.zivyzamektouzim.cz/akce/2025-04-30/">
-<link rel="alternate" hreflang="en" href="https://www.zivyzamektouzim.cz/akce/2025-04-30/?lang=en">
-<link rel="alternate" hreflang="de" href="https://www.zivyzamektouzim.cz/akce/2025-04-30/?lang=de">
+<link rel="alternate" hreflang="en" href="https://www.zivyzamektouzim.cz/en/akce/2025-04-30/">
+<link rel="alternate" hreflang="de" href="https://www.zivyzamektouzim.cz/de/akce/2025-04-30/">
 <link rel="alternate" hreflang="x-default" href="https://www.zivyzamektouzim.cz/akce/2025-04-30/">
 <meta property="og:title" content="Pálení čarodějnic a stavění máje, 30. 4. 2025 – Živý zámek Toužim">
 <meta property="og:description" content="Pálení čarodějnic a stavění máje (zámek Toužim, 30. 4. 2025) Stavění máje a vatra se třemi čarodějnicemi, které vyrobily děti z kroužků CVČ Kačaba.">
@@ -32,7 +32,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
-<script>(function(){var l=(location.search.match(/[?&]lang=(en|de)\b/)||[])[1]||'cs';window.LANG=l;if(l!=='cs'){document.documentElement.lang=l;document.documentElement.classList.add('tr-wait');setTimeout(function(){document.documentElement.classList.remove('tr-wait')},2500);}})();</script>
+<script>(function(){/* jazyk: anglická a německá verze mají vlastní adresy /en/… a /de/… (window.JAZYK z tools/adresy.py); stará adresa ?lang=en přesměruje */var q=location.search,m=(q.match(/[?&]lang=(en|de)\b/)||[])[1],j=window.JAZYK||'',k=new URL('.',document.baseURI).pathname,z=k+(j?j+'/':''),r=location.pathname.indexOf(z)===0?location.pathname.slice(z.length):'';window.jazykUrl=function(x){return k+(x==='cs'?'':x+'/')+r+location.hash};if(!j&&m&&!/[?&]nahled=/.test(q)){window.LANG=m;location.replace(window.jazykUrl(m));return}var l=j||m||'cs';window.LANG=l;if(l!=='cs'){document.documentElement.lang=l;document.documentElement.classList.add('tr-wait');setTimeout(function(){document.documentElement.classList.remove('tr-wait')},2500);}})();</script>
 <script>try{var t=localStorage.getItem("vzhled");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script>
 <style>
 /* Barvy ze sezónního plakátu 2026 (tmavě modrá, korálová, žlutá) na teplém podkladu jako omítka zámku; linky z loga jako dělicí prvek; písmo Calibri → Carlito, data úzkým písmem jako na plakátu */
@@ -487,7 +487,7 @@ footer a:not(.btn),.kgrid a:not(.btn){text-decoration:none}footer a:not(.btn):ho
     </nav>
     <div class="lang" data-notr>
       <button class="lang-btn" id="langBtn" type="button" aria-expanded="false" aria-controls="langMenu" aria-label="Jazyk · Language · Sprache" title="Jazyk · Language · Sprache"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></button>
-      <div class="lang-menu" id="langMenu" hidden><a href="?lang=cs" data-lang="cs" lang="cs" hreflang="cs">Česky</a><a href="?lang=en" data-lang="en" lang="en" hreflang="en">English</a><a href="?lang=de" data-lang="de" lang="de" hreflang="de">Deutsch</a></div>
+      <div class="lang-menu" id="langMenu" hidden><a href="akce/2025-04-30/" data-lang="cs" lang="cs" hreflang="cs">Česky</a><a href="en/akce/2025-04-30/" data-lang="en" lang="en" hreflang="en">English</a><a href="de/akce/2025-04-30/" data-lang="de" lang="de" hreflang="de">Deutsch</a></div>
     </div>
     <button class="theme-btn" id="themeBtn" type="button" aria-label="Přepnout na tmavý vzhled" title="Světlý / tmavý vzhled">
       <svg class="i-moon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
@@ -1052,7 +1052,7 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
 })();
 // přepínač jazyků: zachová stránku (adresu i hash)
 (function(){
-  function upd(){[].forEach.call(document.querySelectorAll('a[data-lang]'),function(a){var l=a.dataset.lang;a.href=location.pathname+(l==='cs'?'':'?lang='+l)+location.hash;a.classList.toggle('cur',l===window.LANG)})}
+  function upd(){[].forEach.call(document.querySelectorAll('a[data-lang]'),function(a){var l=a.dataset.lang;a.href=window.jazykUrl(l);a.classList.toggle('cur',l===window.LANG)})}
   upd();window.addEventListener('hashchange',upd);
   // zeměkoule: rozbalí nabídku jazyků, zavře se klikem jinam nebo klávesou Esc
   var lb=document.getElementById('langBtn'),lm=document.getElementById('langMenu');
@@ -1102,7 +1102,7 @@ document.addEventListener('DOMContentLoaded',function(){var b=document.createEle
   document.addEventListener('click',function(e){
     if(e.defaultPrevented||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
     var a=e.target.closest('a[href]');if(!a||a.target||a.hasAttribute('data-jump')||a.hasAttribute('data-lang'))return;
-    if(!window.NAHLED&&window.LANG==='cs')return;
+    if(!window.NAHLED&&(window.LANG==='cs'||window.JAZYK))return;
     var u=new URL(a.href);if(u.origin!==location.origin||u.pathname.indexOf(KOREN)!==0)return;
     var r=u.pathname.slice(KOREN.length).replace(/index\.html$/,'');
     if(r&&!/^[^.]+\/$/.test(r))return;
@@ -1458,7 +1458,7 @@ function cas(w){var g=esc(w).split(/\s*[,;]\s*/).filter(Boolean).map(function(x)
   if(!ls[0]||ls.some(function(l){return /^(cs|sk)\b/.test(l)}))return;
   var de=ls.some(function(l){return /^de\b/.test(l)})&&!ls.slice(0,ls.findIndex(function(l){return /^de\b/.test(l)})).some(function(l){return /^en\b/.test(l)});
   var L=de?{l:'de',t:'Diese Seite gibt es auch auf Deutsch.',a:'Auf Deutsch lesen',x:'Schließen'}:{l:'en',t:'This website is also available in English.',a:'Read in English',x:'Close'};
-  var u=location.pathname+'?lang='+L.l+location.hash;
+  var u=window.jazykUrl(L.l);
   var d=document.createElement('aside');d.className='jpruh';d.setAttribute('data-notr','');d.setAttribute('lang',L.l);d.setAttribute('aria-label',L.a);
   d.innerHTML='<div class="wrap"><p>'+L.t+' <a href="'+u+'" hreflang="'+L.l+'">'+L.a+' →</a></p><button type="button" aria-label="'+L.x+'">×</button></div>';
   function pryc(){try{localStorage.setItem('jazykPruh','1')}catch(e){}}
