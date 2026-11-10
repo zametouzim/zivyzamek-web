@@ -505,7 +505,7 @@ def zapis(soubory, manifest, zmeny=None, zverejneno=None):
 # staré adresy z původního webu, které Google ještě zkouší (Search Console, 404): cesta -> nová stránka
 PRESMEROVANI = {
     'hradozamecka-noc/': 'akce/2026-08-22/',
-    'odmeny/': 'podporte/',
+    'odmeny/': 'podporte/#pomoc-suvenyry',
 }
 
 
