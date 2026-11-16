@@ -516,6 +516,8 @@ def zapis(soubory, manifest, zmeny=None, zverejneno=None):
 PRESMEROVANI = {
     'hradozamecka-noc/': 'akce/2026-08-22/',
     'odmeny/': 'podporte/#pomoc-suvenyry',
+    'suvenyry/': 'podporte/#pomoc-suvenyry',
+    'uskutecnene-akce/': 'program/#archiv',
 }
 
 
