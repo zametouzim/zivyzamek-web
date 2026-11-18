@@ -301,9 +301,9 @@ footer{background:var(--navy);color:var(--navy-ink);padding-block:48px 40px}
 .copy{background:var(--navy);color:var(--navy-ink);font-size:14px;padding-block:16px 24px}.copy .wrap{opacity:.75}
 footer .cols{display:grid;grid-template-columns:200px 1fr 1fr 1fr;gap:32px;font-size:16px}
 footer .cols>*{min-width:0}
-footer img{width:160px;filter:invert(1)}
+footer img{width:160px;max-width:100%;height:auto;filter:invert(1)}
 footer h2{margin:0 0 8px;font-family:var(--cond);font-weight:600;font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--sun)}
-@media (max-width:760px){footer .cols{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){footer .cols{grid-template-columns:1fr 1fr}}@media (max-width:560px){footer .cols{gap:24px 16px}footer img{width:120px}}
 [id]{scroll-margin-top:100px}
 .upcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:14px}
 @media (max-width:620px){.upcards{grid-template-columns:1fr}}
@@ -465,6 +465,12 @@ sup.zc{font-size:.68em;line-height:0;margin-left:1px}sup.zc a{color:var(--accent
 .zzdroje summary{cursor:pointer;font-family:var(--cond);font-weight:600;font-size:22px}
 .zzdroje li,.zzdroje p{font-size:16px;line-height:1.5}.zzdroje li{margin-bottom:6px;scroll-margin-top:96px}.zzdroje a{color:var(--accent)}
 .zzdroje li:target{background:var(--panel)}
+.zsubnav{margin:8px 0 10px}.zvse-p{margin:0 0 14px}.zvse{margin-left:0}
+.zkonec{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;margin:32px 0 0;padding-top:14px;border-top:1px solid var(--line);font-size:17px}
+.zkonec a{color:var(--accent);font-weight:700;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}.zkonec a:hover{text-decoration:underline}
+.znahoru{position:fixed;right:16px;bottom:16px;z-index:9;display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;background:var(--paper);color:var(--ink);border:1px solid var(--line);font-size:22px;font-weight:700;text-decoration:none;opacity:0;visibility:hidden;transition:opacity .2s}
+.znahoru.on{opacity:1;visibility:visible}.znahoru:hover{background:var(--sun);color:var(--sun-ink);border-color:var(--sun)}
+@media (prefers-reduced-motion:reduce){.znahoru{transition:none}}
 </style>
 </head><body>
 <div class="ukazka-pruh">Pracovní verze nové stránky Zámek a historie k připomínkám. Stránka není v menu a vyhledávače ji neindexují.</div>
@@ -490,7 +496,7 @@ sup.zc{font-size:.68em;line-height:0;margin-left:1px}sup.zc a{color:var(--accent
     <div class="zodp"><p><b>Zámek Toužim</b> je historický areál v centru Toužimi v Karlovarském kraji. Je kulturní památkou a patří městu<sup class="zc"><a href="#zz1">1</a></sup>.</p><p><b>Hrad, nebo zámek? Obojí.</b> Starší částí je Horní zámek, kterému se říká Janův hrad, mladší částí Dolní neboli Nový zámek<sup class="zc"><a href="#zz1">1</a>,<a href="#zz2">2</a></sup>.</p></div>
 
     
-    <nav class="zobsah" aria-label="Obsah stránky"><b>Na stránce:</b> <a href="#dejiny">Dějiny zámku</a> · <a href="#areal">Horní a Dolní zámek</a> · <a href="#opevneni">Hradby a archeologie</a> · <a href="#povesti">Pověsti</a> · <a href="#zamek-dnes">Zámek dnes</a> · <a href="#pamatky">Památky Toužimi</a> · <a href="#zajimavosti">Zajímavosti</a> <button type="button" class="zvse" id="zVse">Rozbalit vše</button></nav>
+    <nav class="subnav zsubnav" id="obsah-stranky" aria-label="Na této stránce"><a href="#dejiny">Dějiny zámku</a><a href="#areal">Horní a Dolní zámek</a><a href="#opevneni">Hradby a archeologie</a><a href="#povesti">Pověsti</a><a href="#zamek-dnes">Zámek dnes</a><a href="#pamatky">Památky Toužimi</a><a href="#zajimavosti">Zajímavosti</a></nav><p class="zvse-p"><button type="button" class="zvse" id="zVse">Rozbalit vše</button></p>
 
     
     <details class="zart" id="dejiny"><summary><span class="eyebrow">Dějiny</span><h2>Dějiny zámku</h2><p class="zperex">Od dvorce ve 12. století přes hrad Vřesoviců a renesanční zámek po chátrání a návrat života po roce 2015.</p><span class="zdal"><span class="zo">Číst dál</span><span class="zz">Sbalit</span></span></summary><div class="zbody">
@@ -542,7 +548,7 @@ sup.zc{font-size:.68em;line-height:0;margin-left:1px}sup.zc a{color:var(--accent
       <dt>1837–1945</dt><dd>Beaufort-Spontinové</dd>
       <dt>od 1945</dt><dd>stát, později město Toužim (1998–2009 soukromý majitel)</dd>
     </dl>
-    </div></details>
+    <p class="zkonec"><a href="#obsah-stranky">↑ Zpět na obsah</a><a href="#areal">Další: Horní a Dolní zámek →</a></p></div></details>
 
     <details class="zart" id="areal"><summary><span class="eyebrow">Areál</span><h2>Horní a Dolní zámek</h2><p class="zperex">Z rozsáhlého panského sídla se dochovalo hlavně jádro: Horní a Dolní zámek, panský pivovar, kašna, kaplička sv. Kříže a část poplužního dvora. Na kresbě jsou žlutě zvýrazněné dochované části.</p><span class="zdal"><span class="zo">Číst dál</span><span class="zz">Sbalit</span></span></summary><div class="zbody">
       <h3 class="zsub" id="kolem-1700">Jak zámek vypadal kolem roku 1700</h3>
@@ -578,7 +584,7 @@ sup.zc{font-size:.68em;line-height:0;margin-left:1px}sup.zc a{color:var(--accent
     <figure class="foto"><img src="img/foto/pohlednice.jpg" width="1400" height="980" loading="lazy" alt="Černobílá pohlednice: zámek u náměstí s kašnou"><figcaption>Zámek od náměstí na staré pohlednici.</figcaption></figure>
 
     
-    </div></details>
+    <p class="zkonec"><a href="#obsah-stranky">↑ Zpět na obsah</a><a href="#opevneni">Další: Hradby a archeologie →</a></p></div></details>
 
     <details class="zart" id="opevneni"><summary><span class="eyebrow">Obrana</span><h2>Hradby a archeologie</h2><p class="zperex">Hradby hradu a dnešního zámku postupně odkrýváme od roku 2026 při zakládání zámecké zahrady. Průzkum pokračuje a článek budeme doplňovat.</p><span class="zdal"><span class="zo">Číst dál</span><span class="zz">Sbalit</span></span></summary><div class="zbody">
     
@@ -598,7 +604,7 @@ sup.zc{font-size:.68em;line-height:0;margin-left:1px}sup.zc a{color:var(--accent
       </div>
       <figure class="foto"><img src="img/zed/plan-1974.jpg" loading="lazy" alt="Plán archeologického průzkumu z roku 1974 s oranžově vyznačenou částí zdi odkrytou v roce 2026 a červeně částí odkrytou v roce 1974" width="911" height="579"><figcaption>Plán průzkumu z roku 1974: oranžově odkryté 2026, červeně odkryté 1974</figcaption></figure>
       <figure class="foto"><img src="img/zed/2026-10-18-zed.jpg" loading="lazy" alt="Odkrytý kamenný základ zdi s měřítkem v rozkopané hlíně" width="1300" height="975"><figcaption>18. 10. 2026: odkrytá horní hradební zeď</figcaption></figure>
-    </div></details>
+    <p class="zkonec"><a href="#obsah-stranky">↑ Zpět na obsah</a><a href="#povesti">Další: Pověsti →</a></p></div></details>
 
     <details class="zart" id="povesti"><summary><span class="eyebrow">Pověsti</span><h2>Pověsti o zámku</h2><p class="zperex">Tři příběhy: o chamtivém proboštovi Dluhošovi, který jako černý mnich bloudí podzemím, a o dvou děsivých hostech v zámeckém sále.</p><span class="zdal"><span class="zo">Číst dál</span><span class="zz">Sbalit</span></span></summary><div class="zbody">
     <div class="card navy zlegenda">
@@ -614,7 +620,7 @@ sup.zc{font-size:.68em;line-height:0;margin-left:1px}sup.zc a{color:var(--accent
     </div>
 
     
-    </div></details>
+    <p class="zkonec"><a href="#obsah-stranky">↑ Zpět na obsah</a><a href="#zamek-dnes">Další: Zámek dnes →</a></p></div></details>
 
     <details class="zart" id="zamek-dnes"><summary><span class="eyebrow">Současnost</span><h2>Zámek dnes</h2><p class="zperex">V roce 2011 byly obě zámecké budovy nestabilní zříceniny. Silný vítr tehdy strhl část střechy Horního zámku a z Dolního zámku zloději kradli měděnou krytinu<sup class="zc"><a href="#zz2">2</a></sup>.</p><span class="zdal"><span class="zo">Číst dál</span><span class="zz">Sbalit</span></span></summary><div class="zbody">
     
@@ -643,7 +649,7 @@ sup.zc{font-size:.68em;line-height:0;margin-left:1px}sup.zc a{color:var(--accent
     </div>
 
     
-    </div></details>
+    <p class="zkonec"><a href="#obsah-stranky">↑ Zpět na obsah</a><a href="#pamatky">Další: Památky Toužimi →</a></p></div></details>
 
     <details class="zart" id="pamatky"><summary><span class="eyebrow">Město</span><h2>Památky Toužimi</h2><p class="zperex">Historické jádro Toužimi je od roku 1992 památkovou zónou<sup class="zc"><a href="#zz3">3</a></sup>. Kromě zámku v něm stojí radnice, kašna, morový sloup, děkanský kostel a měšťanské domy, které mají často gotické sklepy.</p><span class="zdal"><span class="zo">Číst dál</span><span class="zz">Sbalit</span></span></summary><div class="zbody">
       <h3 class="zsub" id="mestske-hradby">Hradby a brány města</h3>
@@ -686,7 +692,7 @@ sup.zc{font-size:.68em;line-height:0;margin-left:1px}sup.zc a{color:var(--accent
       <p><b>Kaplička svaté Anny</b>, německy Radinger-Kapelle, je drobná barokní stavba z 18. století, jen asi 2,5 metru široká. Klenbu uvnitř má vymalovanou jako noční nebe s hvězdami a pod omítkou se skrývá nápis „Renoviert 1922“<sup class="zc"><a href="#zz15">15</a></sup>.</p>
       <p>Na Plzeňském předměstí stojí <b>škola čp. 330</b> z roku 1923 od karlovarského architekta Karla Ernstbergera, žáka Otto Wagnera. Každá strana budovy má jinou fasádu. V nikách jsou reliéfy učících se dětí a na východním štítu postavy muže a ženy, které představují vzdělanost a moudrost. Výzdobu udělal pravděpodobně Willi Russ z Krásna. Budova dodnes slouží jako škola<sup class="zc"><a href="#zz13">13</a></sup>.</p>
       </div>
-    </div></details>
+    <p class="zkonec"><a href="#obsah-stranky">↑ Zpět na obsah</a><a href="#zajimavosti">Další: Zajímavosti →</a></p></div></details>
 
 
     <div class="page-head" style="margin-top:56px"><span class="eyebrow">Zajímavosti</span><h2 id="zajimavosti">Zajímavosti o zámku</h2></div>
@@ -711,6 +717,7 @@ sup.zc{font-size:.68em;line-height:0;margin-left:1px}sup.zc a{color:var(--accent
     <div><h2>Spolek</h2><p>Živý zámek Toužim z. s.<br>Na Výsluní 346, Toužim<br>IČO 04690770<br>Datová schránka: wttsmga<br>Účet <span id="fUcet">2301034510/2010</span><br><a href="https://www.facebook.com/zivyzamek.touzim" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/zivyzamektouzim/" target="_blank" rel="noopener">Instagram</a></p></div>
   </div>
 </footer>
+<a class="znahoru" id="zNahoru" href="#obsah" aria-label="Nahoru na začátek stránky" title="Nahoru">↑</a>
 <script>(function(){var m=document.getElementById('menuBtn'),n=document.getElementById('mainNav');
 if(m&&n)m.addEventListener('click',function(){var o=n.classList.toggle('open');m.setAttribute('aria-expanded',o?'true':'false')});
 var pc=window.matchMedia('(min-width: 761px)');
@@ -719,6 +726,8 @@ nastav();if(pc.addEventListener)pc.addEventListener('change',function(){if(pc.ma
 document.querySelectorAll('details.zart>summary').forEach(function(su){su.addEventListener('click',function(e){if(pc.matches&&!e.target.closest('a'))e.preventDefault();});});
 function otevri(){var h=decodeURIComponent(location.hash.slice(1));if(!h)return;var el=document.getElementById(h);if(!el)return;var d=el.tagName==='DETAILS'?el:el.closest('details');while(d){d.open=true;d=d.parentElement?d.parentElement.closest('details'):null;}el.scrollIntoView();}
 window.addEventListener('hashchange',otevri);otevri();window.addEventListener('load',otevri);
+var up=document.getElementById('zNahoru');if(up){var ft=document.querySelector('footer');var ukaz=function(){up.classList.toggle('on',window.scrollY>700&&(!ft||ft.getBoundingClientRect().top>window.innerHeight-60))};window.addEventListener('scroll',ukaz,{passive:true});ukaz();up.addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});history.replaceState(null,'',location.pathname+location.search);});}
+document.querySelectorAll('.zkonec a,.zsubnav a').forEach(function(a){a.addEventListener('click',function(){setTimeout(otevri,0);});});
 document.querySelectorAll('.zobsah a').forEach(function(a){a.addEventListener('click',function(){setTimeout(otevri,0);});});
 var v=document.getElementById('zVse');if(v)v.addEventListener('click',function(){var z=document.querySelectorAll('details.zart'),o=[].some.call(z,function(d){return !d.open});z.forEach(function(d){d.open=o});v.textContent=o?'Sbalit vše':'Rozbalit vše';});
 document.querySelectorAll('sup.zc a').forEach(function(a){a.addEventListener('click',function(){var d=document.querySelector('.zzdroje');if(d)d.open=true;});});})();</script>
