@@ -870,7 +870,7 @@ window.L10N={
     "title": "Discover & Help",
     "when": "Sat–Sun 9am–4pm",
     "short": "The last bit of work before hibernation!",
-    "html": "<b>The last bit of work before hibernation!</b>\nBuilding flowerbeds, tidying up the slope for the children’s play area and preparing the castle for winter. You’re welcome to come along, even if you just want to make some tea or bring along a tasty treat :-)\n<b>Soup straight from the cauldron and something to warm everyone up!</b>\nWe look forward to seeing you!"
+    "html": "The weekend volunteer work is now behind us.\nWe finished off the refurbishment of the children’s play area, covered the whole garden with weed barrier fabric, weighted it down with stones, and tidied up part of the Upper Castle in preparation for winter\nA tried-and-tested bunch! Thanks to Méďa for the warming cabbage soup, to Jirka Hudeček for the brilliant potato pancakes, and to Nikola Schindler for this year’s first batch of Christmas biscuits\nWe’d like to thank Bolid M for the excellent barter arrangement and <a href=\"https://www.pujcavrat.cz/\" target=\"_blank\" rel=\"noopener\">Půjč a vrať</a> for their incredibly warm hospitality.\nLet’s hope we can carry on just as successfully next year"
    },
    "2026-12-13": {
     "title": "Christmas get-together with mulled wine",
@@ -1817,7 +1817,7 @@ window.L10N={
     "title": "Entdecke & hilf",
     "when": "Sa – So 9 – 16 Uhr",
     "short": "Der letzte Aushilfseinsatz vor dem Winterschlaf!",
-    "html": "<b>Der letzte Aushilfsjob vor dem Winterschlaf!</b>\nBeete anlegen, den Hang für den Kinderspielplatz fertig herrichten und die Burg winterfest machen. Ihr seid herzlich willkommen, auch wenn ihr nur Tee kochen oder etwas Leckeres mitbringen möchtet :-)\n<b>Suppe aus dem Kessel und etwas zum Aufwärmen für jeden Helfer!</b>\nWir freuen uns auf Sie!"
+    "html": "Der Wochenendjob liegt hinter uns.\nWir haben die Gestaltung des Bereichs für die Kinderzone abgeschlossen, den gesamten Garten mit Unkrautfolie abgedeckt, diese mit Steinen beschwert und einen Teil des Oberen Schlosses winterfest gemacht.\nEin bewährtes Team! Vielen Dank an Méďa für die wärmende Kohlsuppe, an Jirka Hudeček für die leckeren Kartoffelpuffer und an Nikola Schindler für das erste Weihnachtsgebäck dieses Jahres.\nWir bedanken uns bei der Firma Bolid M für den großartigen Tauschhandel und bei <a href=\"https://www.pujcavrat.cz/\" target=\"_blank\" rel=\"noopener\">Verleih „Půjč a vrať“</a> für die unglaublich herzliche Betreuung.\nHoffentlich können wir nächstes Jahr genauso erfolgreich weitermachen"
    },
    "2026-12-13": {
     "title": "Weihnachtstreffen mit Glühwein",
