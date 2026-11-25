@@ -187,19 +187,13 @@ window.DEMO_CONFIG={
     {
      "label": "Fotky",
      "name": "photos",
-     "widget": "list",
+     "widget": "image",
+     "multiple": true,
      "required": false,
-     "collapsed": false,
-     "add_to_top": false,
-     "field": {
-      "label": "Fotka",
-      "name": "foto",
-      "widget": "image",
-      "required": true,
-      "media_folder": "/img/akce",
-      "public_folder": "img/akce",
-      "choose_url": false
-     }
+     "media_folder": "/img/akce",
+     "public_folder": "img/akce",
+     "choose_url": false,
+     "hint": "Fotky můžete vybrat nebo přetáhnout víc najednou. Pořadí změníte přetažením."
     },
     {
      "label": "Štítek",
@@ -972,18 +966,14 @@ window.DEMO_CONFIG={
         {
          "label": "Fotky",
          "name": "fotky",
-         "widget": "list",
-         "field": {
-          "widget": "image",
-          "media_folder": "/img/stranky",
-          "public_folder": "img/stranky",
-          "choose_url": false,
-          "label": "Fotka",
-          "name": "src",
-          "i18n": "duplicate"
-         },
-         "i18n": true,
-         "required": true
+         "widget": "image",
+         "multiple": true,
+         "media_folder": "/img/stranky",
+         "public_folder": "img/stranky",
+         "choose_url": false,
+         "i18n": "duplicate",
+         "required": true,
+         "hint": "Fotky můžete vybrat nebo přetáhnout víc najednou."
         }
        ]
       },
