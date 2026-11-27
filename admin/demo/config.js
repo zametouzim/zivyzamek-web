@@ -173,7 +173,7 @@ window.DEMO_CONFIG={
      "widget": "boolean",
      "required": false,
      "default": true,
-     "hint": "Po uložení doplní chybějící angličtinu a němčinu (DeepL). Když je vypnuté, překlad se neudělá a EN/DE můžete napsat sami. Ruční překlady se nikdy nepřepisují. Kredit DeepL: Zbývá 995 982 z 1 000 000 znaků (stav 24. 11. 2026)."
+     "hint": "Po uložení doplní chybějící angličtinu a němčinu (DeepL). Když je vypnuté, překlad se neudělá a EN/DE můžete napsat sami. Ruční překlady se nikdy nepřepisují. Kredit DeepL: Zbývá 1 000 000 z 1 000 000 znaků (stav 27. 11. 2026)."
     },
     {
      "label": "Plakát",
@@ -393,7 +393,7 @@ window.DEMO_CONFIG={
      "widget": "boolean",
      "required": false,
      "default": true,
-     "hint": "Po uložení doplní chybějící angličtinu a němčinu (DeepL). Když je vypnuté, překlad se neudělá a EN/DE můžete napsat sami. Ruční překlady se nikdy nepřepisují. Kredit DeepL: Zbývá 995 982 z 1 000 000 znaků (stav 24. 11. 2026)."
+     "hint": "Po uložení doplní chybějící angličtinu a němčinu (DeepL). Když je vypnuté, překlad se neudělá a EN/DE můžete napsat sami. Ruční překlady se nikdy nepřepisují. Kredit DeepL: Zbývá 1 000 000 z 1 000 000 znaků (stav 27. 11. 2026)."
     }
    ]
   },
@@ -1008,7 +1008,7 @@ window.DEMO_CONFIG={
      "widget": "boolean",
      "required": false,
      "default": true,
-     "hint": "Po uložení doplní chybějící angličtinu a němčinu (DeepL). Když je vypnuté, překlad se neudělá a EN/DE můžete napsat sami. Ruční překlady se nikdy nepřepisují. Kredit DeepL: Zbývá 995 982 z 1 000 000 znaků (stav 24. 11. 2026)."
+     "hint": "Po uložení doplní chybějící angličtinu a němčinu (DeepL). Když je vypnuté, překlad se neudělá a EN/DE můžete napsat sami. Ruční překlady se nikdy nepřepisují. Kredit DeepL: Zbývá 1 000 000 z 1 000 000 znaků (stav 27. 11. 2026)."
     }
    ],
    "editor": {
