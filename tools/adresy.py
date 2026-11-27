@@ -95,6 +95,75 @@ STRANKY = {
                'Kommen Sie zu einem Arbeitseinsatz, bringen Sie Verpflegung oder Material, spenden Sie, werden Sie Mitglied oder kaufen Sie ein Souvenir. Jede Hilfe bringt das Schloss in Theusing zurück ins Leben.'),
     },
 }
+# Články stránky Zámek a historie: každý rozbalovací článek má i vlastní adresu /zamek/<článek>/ s vlastním titulkem,
+# popisem a obrázkem pro sdílení (img/historie/sdileni/, 1200×630). Na adrese článku robot čte jen ten článek
+# (ostatní jsou zabalené v <script type="text/x-sekce">); návštěvník vidí celou stránku s rozbaleným článkem.
+CLANKY = {
+    'dejiny': {
+        'obr': ('img/historie/sdileni/dejiny.jpg', 'Erby rodů, které vlastnily zámek Toužim'),
+        'cs': ('Dějiny zámku Toužim – od proboštství po současnost',
+               'Toužimský zámek byl dvorcem, proboštstvím, hradem Vřesoviců a renesančním zámkem. Majitelé, přestavby, úpadek a návrat života po roce 2015.'),
+        'en': ('History of Toužim Castle – from provostry to the present',
+               'Toužim Castle was a manor, a provostry, the castle of the Vřesovec family and a Renaissance château. Its owners, rebuilds, decline and revival after 2015.'),
+        'de': ('Geschichte von Schloss Theusing – von der Propstei bis heute',
+               'Schloss Theusing war Hof, Propstei, Burg der Familie Vřesovec und Renaissanceschloss. Besitzer, Umbauten, Verfall und neues Leben nach 2015.'),
+    },
+    'areal': {
+        'obr': ('img/historie/sdileni/areal.jpg', 'Kresebná rekonstrukce areálu zámku Toužim kolem roku 1700'),
+        'cs': ('Horní a Dolní zámek Toužim – podoba areálu kolem roku 1700',
+               'Co zbylo z panského sídla v Toužimi: Horní zámek (Janův hrad), Dolní zámek, pivovar, kašna, kaplička sv. Kříže a poplužní dvůr. Kresba areálu kolem roku 1700.'),
+        'en': ('Upper and Lower Castle in Toužim – the site around 1700',
+               "What remains of the manor in Toužim: the Upper Castle (Jan's Castle), the Lower Castle, the brewery, the fountain, the Holy Cross chapel and the farmyard. A drawing of the site around 1700."),
+        'de': ('Oberes und Unteres Schloss Theusing – das Areal um 1700',
+               'Was vom Herrensitz in Theusing blieb: das Obere Schloss (Jans Burg), das Untere Schloss, die Brauerei, der Brunnen, die Heilig-Kreuz-Kapelle und der Meierhof. Zeichnung des Areals um 1700.'),
+    },
+    '20-stoleti': {
+        'obr': ('img/historie/sdileni/20-stoleti.jpg', 'Letecký snímek Toužimi se zámkem z roku 1938'),
+        'cs': ('Zámek Toužim ve 20. století – kasárna, knihovna, oslavy',
+               'Po válce kasárna, později knihovna, osvětová beseda a prodejna nábytku. Oslavy 500 let města v roce 1969 s výstavou v zámeckém sále. Dobové fotky.'),
+        'en': ('Toužim Castle in the 20th century – barracks, library, celebrations',
+               'After the war barracks, later a library, a cultural centre and a furniture shop. The 1969 celebrations of 500 years of the town with an exhibition in the castle hall. Period photos.'),
+        'de': ('Schloss Theusing im 20. Jahrhundert – Kaserne, Bibliothek, Feiern',
+               'Nach dem Krieg Kaserne, später Bibliothek, Kulturhaus und Möbelgeschäft. Die 500-Jahr-Feier der Stadt 1969 mit einer Ausstellung im Schlosssaal. Historische Fotos.'),
+    },
+    'zamek-dnes': {
+        'obr': ('img/historie/sdileni/zamek-dnes.jpg', 'Horní zámek Toužim s propadlou střechou v roce 2011'),
+        'cs': ('Zámek Toužim dnes – oživení, opravy a akce',
+               'V roce 2011 byly obě zámecké budovy zříceniny. Jak se zámek v roce 2015 znovu otevřel, co se od té doby opravilo a jaké akce na něm pořádáme.'),
+        'en': ('Toužim Castle today – revival, repairs and events',
+               'In 2011 both castle buildings were ruins. How the castle reopened in 2015, what has been repaired since and which events we hold there.'),
+        'de': ('Schloss Theusing heute – Wiederbelebung, Reparaturen, Veranstaltungen',
+               '2011 waren beide Schlossgebäude Ruinen. Wie das Schloss 2015 wieder geöffnet wurde, was seitdem repariert wurde und welche Veranstaltungen wir dort ausrichten.'),
+    },
+    'archeologie': {
+        'obr': ('img/historie/sdileni/archeologie.jpg', 'Odkrytá hradební zeď při zakládání zámecké zahrady v Toužimi'),
+        'cs': ('Archeologie na zámku Toužim – odkryté hradební zdi',
+               'Při zakládání zámecké zahrady v Toužimi jsme odkryli dvě hradební zdi hradu. Co jsme našli, fotky z výkopu a jak průzkum pokračuje.'),
+        'en': ('Archaeology at Toužim Castle – uncovered defensive walls',
+               'While creating the castle garden in Toužim we uncovered two defensive walls of the castle. What we found, photos from the dig and how the survey continues.'),
+        'de': ('Archäologie im Schloss Theusing – freigelegte Wehrmauern',
+               'Beim Anlegen des Schlossgartens in Theusing haben wir zwei Wehrmauern der Burg freigelegt. Was wir gefunden haben, Fotos von der Grabung und wie es weitergeht.'),
+    },
+    'pamatky': {
+        'obr': ('img/historie/sdileni/pamatky.jpg', 'Letecký pohled na Toužim'),
+        'cs': ('Památky Toužimi – památková zóna, zámek, kašna a kostel',
+               'Historické jádro Toužimi je památkovou zónou. Zámek, radnice, kašna, morový sloup, děkanský kostel a měšťanské domy s gotickými sklepy.'),
+        'en': ('Sights of Toužim – the heritage zone, castle, fountain and church',
+               'The historic centre of Toužim is a protected heritage zone. The castle, town hall, fountain, plague column, deanery church and burghers’ houses with Gothic cellars.'),
+        'de': ('Sehenswürdigkeiten von Theusing – Denkmalzone, Schloss, Brunnen, Kirche',
+               'Der historische Kern von Theusing ist Denkmalzone. Schloss, Rathaus, Brunnen, Pestsäule, Dekanatskirche und Bürgerhäuser mit gotischen Kellern.'),
+    },
+    'povesti': {
+        'obr': ('img/historie/sdileni/povesti.jpg', 'Komiks o černém mnichovi Dluhošovi, první strana'),
+        'cs': ('Pověsti o zámku Toužim – černý mnich Dluhoš',
+               'Pověst o chamtivém proboštovi Dluhošovi, který jako černý mnich bloudí podzemím zámku Toužim, a o dvou děsivých hostech v zámeckém sále. I jako komiks.'),
+        'en': ('Legends of Toužim Castle – Dluhoš the Black Monk',
+               'The legend of greedy Provost Dluhoš, who wanders the tunnels under Toužim Castle as the Black Monk, and of two terrifying guests in the castle hall. Also as a comic.'),
+        'de': ('Sagen vom Schloss Theusing – der schwarze Mönch Dluhoš',
+               'Die Sage vom habgierigen Propst Dluhoš, der als schwarzer Mönch durch die Gänge unter Schloss Theusing irrt, und von zwei unheimlichen Gästen im Schlosssaal. Auch als Comic.'),
+    },
+}
+ZAMEK_ZVEREJNENO = '2026-11-27'
 MESICE = {'en': 'January February March April May June July August September October November December'.split(),
           'de': 'Januar Februar März April Mai Juni Juli August September Oktober November Dezember'.split()}
 ZNACKA_WEBU = {'cs': 'Živý zámek Toužim', 'en': 'Živý zámek Toužim', 'de': 'Živý zámek Toužim'}
@@ -402,6 +471,42 @@ def stranka(zaklad, cesta, hlava, sekce=None, vlozit=None, pfx='', slozky=(), ja
     return s
 
 
+def zamek_clanek(zaklad, cid):
+    """index.html pro adresu článku /zamek/<cid>/: článek rozbalený a jako hlavní nadpis stránky; úvod, ostatní články
+    a zajímavosti zabalené (robot je na adrese článku nečte, skript v index.html je návštěvníkovi vrátí na místo)."""
+    a = zaklad.index('<section data-page="zamek" hidden>')
+    b = zaklad.index('\n</section>\n', a)
+    s = zaklad[a:b]
+    obal = lambda t: '<script type="text/x-sekce">%s</script>' % t
+    s = s.replace('<h1>Zámek Toužim</h1>', '<p class="zh1">Zámek Toužim</p>', 1)
+    for od, do in (('<div class="zuvod">', '<nav class="subnav zsubnav"'),
+                   ('<div class="page-head" style="margin-top:56px">', '<details class="zzdroje">')):
+        i, j = s.index(od), s.index(do)
+        kus = s[i:j].rstrip()
+        s = s[:i] + obal(kus) + s[i + len(kus):]
+
+    def clanek(m):
+        if m.group(1) != cid:
+            return obal(m.group(0))
+        t = m.group(0).replace('<details class="zart" id="%s">' % cid, '<details class="zart" id="%s" open>' % cid, 1)
+        return t.replace('<h2>', '<h1 class="zh">', 1).replace('</h2>', '</h1>', 1)
+    s = re.sub(r'<details class="zart" id="([a-z0-9-]+)">.*?</div></details>', clanek, s, flags=re.S)
+    return zaklad[:a] + s + zaklad[b:]
+
+
+def zamek_clanky_ld(cid, cesta, jazyk):
+    t, d = CLANKY[cid].get(jazyk) or CLANKY[cid]['cs']
+    hlavni = {'cs': 'Zámek Toužim a jeho historie', 'en': 'Toužim Castle and its history', 'de': 'Schloss Theusing und seine Geschichte'}
+    return [{'@context': 'https://schema.org', '@type': 'Article', 'headline': t, 'description': d,
+             'image': SITE + CLANKY[cid]['obr'][0], 'url': url(cesta), 'mainEntityOfPage': url(cesta),
+             'inLanguage': jazyk, 'datePublished': ZAMEK_ZVEREJNENO,
+             'author': {'@id': SITE + '#spolek'}, 'publisher': SPOLEK, 'about': {'@id': SITE + '#zamek'},
+             'isPartOf': {'@type': 'WebPage', 'url': url('zamek/'), 'name': hlavni.get(jazyk, hlavni['cs'])}},
+            {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+                {'@type': 'ListItem', 'position': 1, 'name': hlavni.get(jazyk, hlavni['cs']), 'item': url('zamek/')},
+                {'@type': 'ListItem', 'position': 2, 'name': t, 'item': url(cesta)}]}]
+
+
 def sestav(zaklad, akce, web, l10n, dnes, pfx='', navic=(), noindex=False, jazyk='cs'):
     """Všechny stránky webu: {cesta souboru: obsah} a seznam adres pro mapu webu.
     navic = [(id sekce, meta, ld)] další stránky, které v zakladu mají vlastní sekci (kopie webu)."""
@@ -433,8 +538,17 @@ def sestav(zaklad, akce, web, l10n, dnes, pfx='', navic=(), noindex=False, jazyk
         if sid == 'program':
             nahoru, archiv = program_html(akce, dnes)
             vlozit = {'<ul class="events up" id="upList"></ul>': nahoru, '<ul class="events arch" id="archList"></ul>': archiv}
+        if sid == 'zamek':
+            ld['hasPart'] = [{'@type': 'Article', 'headline': CLANKY[c]['cs'][0], 'url': url('zamek/%s/' % c)} for c in CLANKY]
         soubory[pfx + sid + '/index.html'] = st(sid + '/', hl(sid + '/', meta, ld), sid, vlozit)
         mapa.append(sid + '/')
+        if sid == 'zamek':  # každý článek stránky na vlastní adrese
+            for cid, cl in CLANKY.items():
+                c = 'zamek/%s/' % cid
+                obr = (SITE + cl['obr'][0], cl['obr'][1])
+                soubory[pfx + c + 'index.html'] = stranka(zamek_clanek(zaklad, cid), c, hl(c, cl, zamek_clanky_ld(cid, c, jazyk), obr=obr),
+                                                          'zamek', None, pfx, slozky, jazyk)
+                mapa.append(c)
     for p in vlastni:
         pid = p['id']
         meta = {'cs': ('%s – Živý zámek Toužim' % p.get('nazev', pid), p.get('perex') or STRANKY['domu']['cs'][1])}
